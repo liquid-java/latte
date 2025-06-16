@@ -40,7 +40,9 @@ public class AppTest {
             Arguments.of("src/test/examples/searching_state_space/TimerTaskCannotReschedule.java"),
             Arguments.of("src/test/examples/searching_state_space/ResultSetNoNext.java"),
             Arguments.of("src/test/examples/searching_state_space/ResultSetForwardOnly.java"),
-            Arguments.of("src/test/examples/stack_overflow/MediaRecord.java")
+            Arguments.of("src/test/examples/stack_overflow/MediaRecord.java"),
+            Arguments.of("src/test/examples/MyNodeInvocationIf.java"),
+            Arguments.of("src/test/examples/MyNodeIfInvocationPermission.java")
         );
     }
 
