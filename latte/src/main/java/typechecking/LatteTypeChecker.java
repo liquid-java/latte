@@ -534,11 +534,21 @@ public class LatteTypeChecker  extends LatteAbstractChecker {
 		PermissionEnvironment thenPermEnv = permEnv.cloneLast();
 		exitScopes();
 
-		enterScopes();
-		super.visitCtBlock(ifElement.getElseStatement());
-		SymbolicEnvironment elseSymbEnv = symbEnv.cloneLast();
-		PermissionEnvironment elsePermEnv = permEnv.cloneLast();
-		exitScopes();
+		SymbolicEnvironment elseSymbEnv;
+    	PermissionEnvironment elsePermEnv;
+
+		if (ifElement.getElseStatement() != null) {
+			//Else statement
+			enterScopes();
+			super.visitCtBlock(ifElement.getElseStatement());
+			elseSymbEnv = symbEnv.cloneLast();
+			elsePermEnv = permEnv.cloneLast();
+			exitScopes();
+		} else {
+			//No Else statement
+			elseSymbEnv = symbEnv.cloneLast();
+			elsePermEnv = permEnv.cloneLast();
+		}
 
 		joining(thenSymbEnv, thenPermEnv, elseSymbEnv, elsePermEnv);
 	}
