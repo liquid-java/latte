@@ -522,6 +522,8 @@ public class LatteTypeChecker  extends LatteAbstractChecker {
 			visitCtVariableRead((CtVariableRead<?>)condition);
 		} else if (condition instanceof CtFieldRead){
 			visitCtFieldRead((CtFieldRead<?>)condition);
+		} else if (condition instanceof CtInvocation) {
+			visitCtInvocation((CtInvocation<?>) condition);
 		} else {
 			logError("Cannot evaluate the condition of the if statement: " + condition.toString(), condition);
 		}
