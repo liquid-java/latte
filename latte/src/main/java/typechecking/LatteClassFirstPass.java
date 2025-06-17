@@ -4,11 +4,7 @@ import context.ClassLevelMaps;
 import context.PermissionEnvironment;
 import context.SymbolicEnvironment;
 import context.UniquenessAnnotation;
-import spoon.reflect.declaration.CtClass;
-import spoon.reflect.declaration.CtConstructor;
-import spoon.reflect.declaration.CtElement;
-import spoon.reflect.declaration.CtField;
-import spoon.reflect.declaration.CtMethod;
+import spoon.reflect.declaration.*;
 import spoon.reflect.reference.CtTypeReference;
 
 public class LatteClassFirstPass extends LatteAbstractChecker{
@@ -54,6 +50,10 @@ public class LatteClassFirstPass extends LatteAbstractChecker{
 
 	@Override
 	public <T> void visitCtMethod(CtMethod<T> m) {
+		CtTypeReference<?> type = ((CtType<?>) m.getParent()).getTypeErasure();
+		if(maps.hasExternalMethodParamPermissions(type, m.getSimpleName(), m.getParameters().size())) {
+			return;
+		}
 		logInfo("Visiting method: " + m.getSimpleName(), m);
 		maps.addMethod((CtClass<?>) m.getParent(), m);
 		super.visitCtMethod(m);
