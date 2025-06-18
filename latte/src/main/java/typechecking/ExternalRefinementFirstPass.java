@@ -22,6 +22,8 @@ import java.util.*;
  */
 public class ExternalRefinementFirstPass extends LatteAbstractChecker {
 
+    private CtTypeReference<?> currentExtRefTarget = null;
+
     public ExternalRefinementFirstPass(SymbolicEnvironment symbEnv,
                                        PermissionEnvironment permEnv,
                                        ClassLevelMaps maps) {
@@ -34,31 +36,22 @@ public class ExternalRefinementFirstPass extends LatteAbstractChecker {
     public <T> void visitCtInterface(CtInterface<T> ctInterface) {
         logInfo("Visiting interface: " + ctInterface.getSimpleName(), ctInterface);
         // @ExternalRefinementsFor annotation check
-        boolean hasAnnotation = ctInterface.getAnnotations().stream().anyMatch(ann ->
-                ann.getAnnotationType().getQualifiedName().equals("specification.ExternalRefinementsFor")
-        );
+        CtAnnotation<?> ann = ctInterface.getAnnotation(ctInterface.getFactory().Type().createReference("specification.ExternalRefinementsFor"));
 
-        if (!hasAnnotation) {
+        if (ann == null) {
             return;
         }
 
-        CtTypeReference<?> targetRef = null;
-        for (CtAnnotation<? extends Annotation> annotation : ctInterface.getAnnotations()) {
-            if (annotation.getAnnotationType().getQualifiedName().equals("specification.ExternalRefinementsFor")) {
-                CtExpression<?> expr = annotation.getValues().get("value");
+        CtExpression<?> expr = ann.getValues().get("value");
 
-                if (expr instanceof CtLiteral<?> && ((CtLiteral<?>) expr).getValue() instanceof String) {
-                    targetRef = ctInterface.getFactory().Type().createReference((String) ((CtLiteral<?>) expr).getValue());
-                } else {
-                    logWarning("Expected a string literal in @ExternalRefinementsFor");
-                    return;
-                }
-
-                break;
-            }
+        if (expr instanceof CtLiteral<?> && ((CtLiteral<?>) expr).getValue() instanceof String) {
+            currentExtRefTarget = ctInterface.getFactory().Type().createReference((String) ((CtLiteral<?>) expr).getValue());
+        } else {
+            logWarning("Expected a string literal in @ExternalRefinementsFor");
+            return;
         }
 
-        if (targetRef == null) {
+        if (currentExtRefTarget == null) {
             logWarning("No target class specified in @ExternalRefinementsFor");
             return;
         }
@@ -68,14 +61,19 @@ public class ExternalRefinementFirstPass extends LatteAbstractChecker {
             scan(ctInterface.getMethods());
         }
         super.visitCtInterface(ctInterface);
+
+        currentExtRefTarget = null;
     }
 
     @Override
     public <T> void visitCtMethod(CtMethod<T> method) {
         logInfo("Visiting method: " + method.getSimpleName(), method);
-        CtTypeReference<?> declaringClass = method.getDeclaringType().getReference();
 
-        // Skip if it has a body — it's not external
+        if (currentExtRefTarget == null) {
+            logInfo("?????????????????????????");
+            return;
+        }
+
         CtBlock<?> body = method.getBody();
         if (body != null && !body.isImplicit()) return;
 
@@ -89,7 +87,13 @@ public class ExternalRefinementFirstPass extends LatteAbstractChecker {
 
         Pair<String, Integer> methodSig = Pair.of(method.getSimpleName(), parameters.size());
 
-        maps.addExternalMethodParamPermissions(declaringClass, methodSig.getLeft(), methodSig.getRight(), paramAnnotations);
+        logInfo("Registering external refinements for: " + currentExtRefTarget, method);
+        maps.addExternalMethodParamPermissions(
+                currentExtRefTarget, methodSig.getLeft(), methodSig.getRight(), paramAnnotations
+        );
+        super.visitCtMethod(method);
+
+        logInfo("SSSSSSSSSSSS + " + currentExtRefTarget);
 
         logInfo("Collected annotations for method: " + methodSig + " => " + paramAnnotations, method);
         super.visitCtMethod(method);

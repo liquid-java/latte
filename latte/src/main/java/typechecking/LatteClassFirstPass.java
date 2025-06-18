@@ -4,6 +4,8 @@ import context.ClassLevelMaps;
 import context.PermissionEnvironment;
 import context.SymbolicEnvironment;
 import context.UniquenessAnnotation;
+import spoon.reflect.code.CtExpression;
+import spoon.reflect.code.CtLiteral;
 import spoon.reflect.declaration.*;
 import spoon.reflect.reference.CtTypeReference;
 
@@ -51,8 +53,22 @@ public class LatteClassFirstPass extends LatteAbstractChecker{
 	@Override
 	public <T> void visitCtMethod(CtMethod<T> m) {
 		CtTypeReference<?> type = ((CtType<?>) m.getParent()).getTypeErasure();
-		if(maps.hasExternalMethodParamPermissions(type, m.getSimpleName(), m.getParameters().size())) {
-			return;
+		CtType<?> parentType = (CtType<?>) m.getParent();
+		if(parentType instanceof CtInterface){
+			CtAnnotation<?> ann = parentType.getAnnotation(
+					parentType.getFactory().Type().createReference("specification.ExternalRefinementsFor")
+			);
+			if (ann != null) {
+				CtExpression<?> expr = ann.getValues().get("value");
+
+				if (expr instanceof CtLiteral<?> && ((CtLiteral<?>) expr).getValue() instanceof String) {
+					String refinedClassName = (String) ((CtLiteral<?>) expr).getValue();
+					CtTypeReference<?> refinedTypeRef = parentType.getFactory().Type().createReference(refinedClassName);
+					if(maps.hasExternalMethodParamPermissions(refinedTypeRef, m.getSimpleName(), m.getParameters().size()))
+						logInfo("External refinement match found for: " + m.getSimpleName() + " in refined class: " + refinedClassName);
+						return;
+				}
+			}
 		}
 		logInfo("Visiting method: " + m.getSimpleName(), m);
 		maps.addMethod((CtClass<?>) m.getParent(), m);
