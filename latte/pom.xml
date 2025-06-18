@@ -16,9 +16,23 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <version.spoon>10.4.2</version.spoon>
+    <antlr4.plugin.version>4.5</antlr4.plugin.version>
+    <antlr4.version>4.5</antlr4.version>
   </properties>
 
   <dependencies>
+
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr4-runtime</artifactId>
+      <version>${antlr4.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.antlr</groupId>
+        <artifactId>antlr4-maven-plugin</artifactId>
+        <version>${antlr4.plugin.version}</version>
+    </dependency>
+
 
     <dependency>
       <groupId>com.google.code.gson</groupId>
@@ -136,6 +150,25 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+        <plugin>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4-maven-plugin</artifactId>
+            <version>${antlr.plugin.version}</version>
+            <configuration>
+                <sourceDirectory>${basedir}/src/main/java/refinements</sourceDirectory>
+                <outputDirectory>${basedir}/src/main/java/refinements</outputDirectory>
+                <package>refinements</package>
+                <visitor>true</visitor>
+                <listener>true</listener>
+            </configuration>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>antlr4</goal>
+                    </goals>
+                </execution>
+            </executions>
         </plugin>
       </plugins>
     </pluginManagement>
