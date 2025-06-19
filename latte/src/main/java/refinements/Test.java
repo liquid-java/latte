@@ -1,6 +1,7 @@
 package refinements;
 
 import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
 // import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
@@ -10,29 +11,29 @@ import org.antlr.v4.runtime.tree.ParseTree;
 
 public class Test {
 
-    // public static void main(String[] args) {
-    //     String input = "a + b < 10";
+    public static void main(String[] args) {
+        String input = "a + b < 10 + c.y";
 
-    //     // // Create input stream (modern way)
-    //     CharStream inputStream = CharStreams.fromString(input);
+        // // Create input stream (modern way)
+        CharStream inputStream = CharStreams.fromString(input);
         
-    //     // Create lexer
-    //     RefinementsLanguageLexer lexer = new RefinementsLanguageLexer(inputStream);
+        // Create lexer
+        RefinementsLanguageLexer lexer = new RefinementsLanguageLexer(inputStream);
         
-    //     // Create token stream
-    //     CommonTokenStream tokens = new CommonTokenStream(lexer);
+        // Create token stream
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
         
-    //     // Create parser
-    //     RefinementsLanguageParser parser = new RefinementsLanguageParser(tokens);
+        // Create parser
+        RefinementsLanguageParser parser = new RefinementsLanguageParser(tokens);
         
-    //     // Parse starting from your grammar's start rule
-    //     // Replace 'program' with your actual start rule name
-    //     ParseTree tree = parser.program(); // Change 'program' to your start rule
+        // Parse starting from your grammar's start rule
+        // Replace 'program' with your actual start rule name
+        ParseTree tree = parser.prog(); // Change 'program' to your start rule
         
-    //     // Print the parse tree
-    //     System.out.println("Parse Tree:");
-    //     System.out.println(tree.toStringTree(parser));
+        // Print the parse tree
+        System.out.println("Parse Tree:");
+        System.out.println(tree.toStringTree(parser));
         
-    // }
+    }
     
 }
