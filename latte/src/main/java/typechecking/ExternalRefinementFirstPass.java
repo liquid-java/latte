@@ -88,6 +88,8 @@ public class ExternalRefinementFirstPass extends LatteAbstractChecker {
         Pair<String, Integer> methodSig = Pair.of(method.getSimpleName(), parameters.size());
 
         logInfo("Registering external refinements for: " + currentExtRefTarget, method);
+
+        maps.addExternalMethod(currentExtRefTarget, method);
         maps.addExternalMethodParamPermissions(
                 currentExtRefTarget, methodSig.getLeft(), methodSig.getRight(), paramAnnotations
         );
