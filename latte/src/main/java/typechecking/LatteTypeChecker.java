@@ -201,12 +201,8 @@ public class LatteTypeChecker  extends LatteAbstractChecker {
 
 		List<SymbolicValue> paramSymbValues = new ArrayList<>();
 
-		logInfo("CCCCCCCC000000000 : " + m);
-
 		if (m == null){
 			CtExecutableReference<?> execRef = invocation.getExecutable();
-
-			logInfo("BBBBBBBB + " + e + " + " + execRef.getSimpleName() + " + " + invocation.getArguments().size());
 
 			if (maps.hasExternalMethodParamPermissions(e, execRef.getSimpleName(), invocation.getArguments().size())) {
 				List<UniquenessAnnotation> externalParams = maps.getExternalMethodParamPermissions(
@@ -228,7 +224,6 @@ public class LatteTypeChecker  extends LatteAbstractChecker {
 					paramSymbValues.add(vv);
 				}
 				m = maps.getExternalCtMethod(e, metName, invocation.getArguments().size());
-				logInfo("CCCCCC222222 : " + m);
 			} else {
 				logInfo("Cannot find method {" + metName + "} for {} in the context");
 				return;
@@ -252,7 +247,6 @@ public class LatteTypeChecker  extends LatteAbstractChecker {
 				paramSymbValues.add(vv);
 			}
 		}
-		logInfo("CCCCCCCC111111 : " + m);
 		// distinct(Δ′, {𝜈𝑖 : borrowed ≤ 𝛼𝑖 })
 		// distinct(Δ, 𝑆) ⇐⇒ ∀𝜈, 𝜈′ ∈ 𝑆 : Δ ⊢ 𝜈 ⇝ 𝜈′ =⇒ 𝜈 = 𝜈′
 		List<SymbolicValue> check_distinct = new ArrayList<>();

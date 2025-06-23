@@ -70,7 +70,6 @@ public class ExternalRefinementFirstPass extends LatteAbstractChecker {
         logInfo("Visiting method: " + method.getSimpleName(), method);
 
         if (currentExtRefTarget == null) {
-            logInfo("?????????????????????????");
             return;
         }
 
@@ -94,8 +93,6 @@ public class ExternalRefinementFirstPass extends LatteAbstractChecker {
                 currentExtRefTarget, methodSig.getLeft(), methodSig.getRight(), paramAnnotations
         );
         super.visitCtMethod(method);
-
-        logInfo("SSSSSSSSSSSS + " + currentExtRefTarget);
 
         logInfo("Collected annotations for method: " + methodSig + " => " + paramAnnotations, method);
         super.visitCtMethod(method);
