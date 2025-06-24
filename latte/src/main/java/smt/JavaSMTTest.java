@@ -1,13 +1,13 @@
 package smt;
 
-import org.sosy_lab.java_smt.SolverContextFactory;
-import org.sosy_lab.java_smt.SolverContextFactory.Solvers;
-import org.sosy_lab.java_smt.api.*;
-import org.sosy_lab.java_smt.api.NumeralFormula.IntegerFormula;
+import com.microsoft.z3.*;
 
+/**
+ * Simple Java program to test Z3 SMT solver with a specific implication.
+ */
 public class JavaSMTTest {
     public static void main(String[] args) {
-        System.out.println("Testing JavaSMT with bundled Z3...");
+        System.out.println("Testing Z3 Turnkey (with bundled natives)...");
         
         try {
             // Test the specific query: x == 0 -> x > -1
@@ -19,119 +19,120 @@ public class JavaSMTTest {
         }
     }
     
-    public static void testImplication() throws Exception {
+    public static void testImplication() {
         System.out.println("Checking: x == 0 -> x > -1");
+        // Translation to z3 of the expression above is the following:
         
-        // Create solver context with Z3 (bundled, no installation needed)
-        try (SolverContext context = SolverContextFactory.createSolverContext(
-                SolverContextFactory.Solvers.Z3)) {
-            
-            // Get formula manager
-            FormulaManager fmgr = context.getFormulaManager();
-            IntegerFormulaManager ifmgr = fmgr.getIntegerFormulaManager();
-            BooleanFormulaManager bfmgr = fmgr.getBooleanFormulaManager();
+        try (Context ctx = new Context()) {
             
             // Create integer variable x
-            IntegerFormula x = ifmgr.makeVariable("x");
+            IntExpr x = ctx.mkIntConst("x");
             
             // Create the expressions
-            BooleanFormula xEquals0 = ifmgr.equal(x, ifmgr.makeNumber(0));           // x == 0
-            BooleanFormula xGreaterThanMinus1 = ifmgr.greaterThan(x, ifmgr.makeNumber(-1)); // x > -1
+            BoolExpr xEquals0 = ctx.mkEq(x, ctx.mkInt(0));          // x == 0
+            BoolExpr xGreaterThanMinus1 = ctx.mkGt(x, ctx.mkInt(-1)); // x > -1
             
             // Create the implication: x == 0 -> x > -1
-            BooleanFormula implication = bfmgr.implication(xEquals0, xGreaterThanMinus1);
+            BoolExpr implication = ctx.mkImplies(xEquals0, xGreaterThanMinus1);
             
-            // Create prover (for checking validity)
-            try (ProverEnvironment prover = context.newProverEnvironment()) {
-                
-                // Check if implication is valid by checking if its negation is unsat
-                prover.push(bfmgr.not(implication));
-                
-                boolean isUnsat = prover.isUnsat();
-                
-                if (isUnsat) {
-                    System.out.println("✓ VALID: The implication x == 0 -> x > -1 is always true");
-                } else {
-                    System.out.println("✗ INVALID: The implication is not always true");
-                    
-                    // Get counterexample
-                    try (Model model = prover.getModel()) {
-                        System.out.println("Counterexample: x = " + model.evaluate(x));
-                    }
-                }
-                
-                prover.pop();
+            // Create solver
+            Solver solver = ctx.mkSolver();
+            
+            // Check if implication is valid (tautology)
+            // We do this by checking if the negation is unsatisfiable
+            solver.add(ctx.mkNot(implication));
+            
+            Status result = solver.check();
+            
+            System.out.println("Result: " + result);
+            
+            if (result == Status.UNSATISFIABLE) {
+                System.out.println("✓ VALID: The implication x == 0 -> x > -1 is always true");
+            } else if (result == Status.SATISFIABLE) {
+                System.out.println("✗ INVALID: Found a counterexample");
+                Model model = solver.getModel();
+                System.out.println("Counterexample: x = " + model.evaluate(x, false));
+            } else {
+                System.out.println("? UNKNOWN");
             }
             
             // Also test satisfiability of the implication itself
             System.out.println("\nTesting satisfiability of the implication...");
-            try (ProverEnvironment prover = context.newProverEnvironment()) {
-                prover.push(implication);
-                
-                boolean isSat = !prover.isUnsat();
-                System.out.println("Satisfiability: " + (isSat ? "SAT" : "UNSAT"));
-                
-                if (isSat) {
-                    try (Model model = prover.getModel()) {
-                        System.out.println("Example where implication holds: x = " + model.evaluate(x));
-                    }
-                }
+            Solver solver2 = ctx.mkSolver();
+            solver2.add(implication);
+            
+            Status sat_result = solver2.check();
+            System.out.println("Satisfiability: " + sat_result);
+            
+            if (sat_result == Status.SATISFIABLE) {
+                Model model = solver2.getModel();
+                System.out.println("Example where implication holds: x = " + model.evaluate(x, false));
             }
+            
+        } catch (Exception e) {
+            System.err.println("Error in test: " + e.getMessage());
+            e.printStackTrace();
         }
     }
     
-    // Additional method to test multiple queries
-    public static void testMultipleQueries() throws Exception {
-        System.out.println("\n=== Testing Multiple Queries ===");
+    // Test multiple implications
+    public static void testMultipleImplications() {
+        System.out.println("\n=== Testing Multiple Implications ===");
         
-        try (SolverContext context = SolverContextFactory.createSolverContext(Solvers.Z3)) {
-            FormulaManager fmgr = context.getFormulaManager();
-            IntegerFormulaManager ifmgr = fmgr.getIntegerFormulaManager();
-            BooleanFormulaManager bfmgr = fmgr.getBooleanFormulaManager();
+        String[] queries = {
+            "x == 0 -> x > -1",
+            "x > 5 -> x > 0",
+            "x == 0 -> x < 0"
+        };
+        
+        for (String query : queries) {
+            System.out.println("\nTesting: " + query);
+            boolean result = checkImplication(query);
+            System.out.println("Result: " + (result ? "VALID" : "INVALID"));
+        }
+    }
+    
+    private static boolean checkImplication(String description) {
+        try (Context ctx = new Context()) {
+            IntExpr x = ctx.mkIntConst("x");
+            BoolExpr implication = null;
             
-            IntegerFormula x = ifmgr.makeVariable("x");
-            
-            // Test different implications
-            String[] descriptions = {
-                "x == 0 -> x > -1",
-                "x > 5 -> x > 0", 
-                "x == 0 -> x < 0"
-            };
-            
-            BooleanFormula[] implications = {
-                // x == 0 -> x > -1
-                bfmgr.implication(
-                    ifmgr.equal(x, ifmgr.makeNumber(0)),
-                    ifmgr.greaterThan(x, ifmgr.makeNumber(-1))
-                ),
-                // x > 5 -> x > 0
-                bfmgr.implication(
-                    ifmgr.greaterThan(x, ifmgr.makeNumber(5)),
-                    ifmgr.greaterThan(x, ifmgr.makeNumber(0))
-                ),
-                // x == 0 -> x < 0
-                bfmgr.implication(
-                    ifmgr.equal(x, ifmgr.makeNumber(0)),
-                    ifmgr.lessThan(x, ifmgr.makeNumber(0))
-                )
-            };
-            
-            for (int i = 0; i < descriptions.length; i++) {
-                System.out.println("\nTesting: " + descriptions[i]);
-                
-                try (ProverEnvironment prover = context.newProverEnvironment()) {
-                    prover.push(bfmgr.not(implications[i]));
-                    boolean isValid = prover.isUnsat();
-                    
-                    System.out.println("Result: " + (isValid ? "VALID" : "INVALID"));
-                    
-                    if (!isValid) {
-                        try (Model model = prover.getModel()) {
-                            System.out.println("Counterexample: x = " + model.evaluate(x));
-                        }
-                    }
-                }
+            // Build specific implications
+            if (description.contains("x == 0 -> x > -1")) {
+                implication = ctx.mkImplies(
+                    ctx.mkEq(x, ctx.mkInt(0)),
+                    ctx.mkGt(x, ctx.mkInt(-1))
+                );
+            } else if (description.contains("x > 5 -> x > 0")) {
+                implication = ctx.mkImplies(
+                    ctx.mkGt(x, ctx.mkInt(5)),
+                    ctx.mkGt(x, ctx.mkInt(0))
+                );
+            } else if (description.contains("x == 0 -> x < 0")) {
+                implication = ctx.mkImplies(
+                    ctx.mkEq(x, ctx.mkInt(0)),
+                    ctx.mkLt(x, ctx.mkInt(0))
+                );
             }
+            
+            if (implication == null) return false;
+            
+            Solver solver = ctx.mkSolver();
+            solver.add(ctx.mkNot(implication));
+            
+            Status result = solver.check();
+            
+            if (result == Status.SATISFIABLE) {
+                Model model = solver.getModel();
+                System.out.println("  Counterexample: x = " + model.evaluate(x, false));
+                return false;
+            }
+            
+            return result == Status.UNSATISFIABLE;
+            
+        } catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
+            return false;
         }
     }
 }

@@ -2,13 +2,13 @@ package refinements;
 
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
-// import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 
-// import refinements.antlr.RefinementsLanguageLexer;
-// import refinements.antlr.RefinementsLanguageParser;
-
+/**
+ * Test class for the Refinements Language parser.
+ * This class demonstrates how to parse a simple expression using ANTLR.
+ */
 public class TestRefinementsLanguage {
 
     public static void main(String[] args) {
