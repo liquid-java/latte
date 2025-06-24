@@ -66,9 +66,9 @@ public class LatteClassFirstPass extends LatteAbstractChecker{
 					CtTypeReference<?> refinedTypeRef = parentType.getFactory().Type().createReference(refinedClassName);
 					if(maps.hasExternalMethodParamPermissions(refinedTypeRef, m.getSimpleName(), m.getParameters().size()))
 						logInfo("External refinement match found for: " + m.getSimpleName() + " in refined class: " + refinedClassName);
-						return;
 				}
 			}
+			return;
 		}
 		logInfo("Visiting method: " + m.getSimpleName(), m);
 		maps.addMethod((CtClass<?>) m.getParent(), m);
