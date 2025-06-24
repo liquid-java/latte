@@ -12,7 +12,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
 public class TestRefinementsLanguage {
 
     public static void main(String[] args) {
-        String input = "a < 10";
+        String input = "10";
 
         // // Create input stream (modern way)
         CharStream inputStream = CharStreams.fromString(input);

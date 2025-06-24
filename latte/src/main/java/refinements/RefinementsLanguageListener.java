@@ -210,13 +210,27 @@ public interface RefinementsLanguageListener extends ParseTreeListener {
 	 */
 	void exitTargetInvocation(RefinementsLanguageParser.TargetInvocationContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link RefinementsLanguageParser#literal}.
+	 * Enter a parse tree produced by the {@code litBool}
+	 * labeled alternative in {@link RefinementsLanguageParser#literal}.
 	 * @param ctx the parse tree
 	 */
-	void enterLiteral(RefinementsLanguageParser.LiteralContext ctx);
+	void enterLitBool(RefinementsLanguageParser.LitBoolContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link RefinementsLanguageParser#literal}.
+	 * Exit a parse tree produced by the {@code litBool}
+	 * labeled alternative in {@link RefinementsLanguageParser#literal}.
 	 * @param ctx the parse tree
 	 */
-	void exitLiteral(RefinementsLanguageParser.LiteralContext ctx);
+	void exitLitBool(RefinementsLanguageParser.LitBoolContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code litInt}
+	 * labeled alternative in {@link RefinementsLanguageParser#literal}.
+	 * @param ctx the parse tree
+	 */
+	void enterLitInt(RefinementsLanguageParser.LitIntContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code litInt}
+	 * labeled alternative in {@link RefinementsLanguageParser#literal}.
+	 * @param ctx the parse tree
+	 */
+	void exitLitInt(RefinementsLanguageParser.LitIntContext ctx);
 }

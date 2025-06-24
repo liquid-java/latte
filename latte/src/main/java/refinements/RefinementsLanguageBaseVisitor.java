@@ -137,5 +137,12 @@ public class RefinementsLanguageBaseVisitor<T> extends AbstractParseTreeVisitor<
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitLiteral(RefinementsLanguageParser.LiteralContext ctx) { return visitChildren(ctx); }
+	@Override public T visitLitBool(RefinementsLanguageParser.LitBoolContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitLitInt(RefinementsLanguageParser.LitIntContext ctx) { return visitChildren(ctx); }
 }

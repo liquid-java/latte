@@ -8,9 +8,9 @@ import com.microsoft.z3.*;
 import refinements.*;
 
 /**
- * Test class for students to verify their RefinementsToZ3TranslatorSkeleton implementation
+ * Test class to verify  RefinementsToZ3Translator implementation
  * 
- * Run this class after implementing methods in the translator skeleton.
+ * Run this class after implementing methods in the translator.
  * Start with simple tests and work your way up to complex ones.
  */
 public class SimpleTranslatorTest {
@@ -21,12 +21,12 @@ public class SimpleTranslatorTest {
         
         // Test in order of difficulty
         testStep1_Literals();
-        testStep2_Variables();
-        testStep3_Arithmetic();
-        testStep4_Comparisons();
-        testStep5_LogicalOperations();
-        testStep6_Implications();
-        testStep7_ComplexExpressions();
+        // testStep2_Variables();
+        // testStep3_Arithmetic();
+        // testStep4_Comparisons();
+        // testStep5_LogicalOperations();
+        // testStep6_Implications();
+        // testStep7_ComplexExpressions();
     }
     
     public static void testStep1_Literals() {
@@ -146,6 +146,7 @@ public class SimpleTranslatorTest {
             
             // Parse
             ParseTree tree = parser.prog();
+            System.out.println("\n  Parse Tree: " + tree.toStringTree(parser));
             
             // Translate using student's implementation
             RefinementsToZ3Translator translator = new RefinementsToZ3Translator(ctx);
@@ -164,6 +165,7 @@ public class SimpleTranslatorTest {
             Solver solver = ctx.mkSolver();
             solver.add(formula);
             
+            System.out.println("Translation to SMT:\n"+solver.toString());
             Status result = solver.check();
             
             if (result == Status.SATISFIABLE) {

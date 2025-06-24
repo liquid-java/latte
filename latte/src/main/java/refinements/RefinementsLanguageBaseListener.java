@@ -221,13 +221,25 @@ public class RefinementsLanguageBaseListener implements RefinementsLanguageListe
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLiteral(RefinementsLanguageParser.LiteralContext ctx) { }
+	@Override public void enterLitBool(RefinementsLanguageParser.LitBoolContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLiteral(RefinementsLanguageParser.LiteralContext ctx) { }
+	@Override public void exitLitBool(RefinementsLanguageParser.LitBoolContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLitInt(RefinementsLanguageParser.LitIntContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLitInt(RefinementsLanguageParser.LitIntContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

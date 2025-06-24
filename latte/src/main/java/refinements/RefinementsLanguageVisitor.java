@@ -129,9 +129,17 @@ public interface RefinementsLanguageVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitTargetInvocation(RefinementsLanguageParser.TargetInvocationContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link RefinementsLanguageParser#literal}.
+	 * Visit a parse tree produced by the {@code litBool}
+	 * labeled alternative in {@link RefinementsLanguageParser#literal}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitLiteral(RefinementsLanguageParser.LiteralContext ctx);
+	T visitLitBool(RefinementsLanguageParser.LitBoolContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code litInt}
+	 * labeled alternative in {@link RefinementsLanguageParser#literal}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLitInt(RefinementsLanguageParser.LitIntContext ctx);
 }

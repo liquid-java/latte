@@ -2,9 +2,6 @@ grammar RefinementsLanguage;
 
 
 prog: pred | ;
-// start:
-// 		pred	#startPred
-// 	;
 
 
 pred:
@@ -30,7 +27,7 @@ operand:
 
 
 leafs:
-		'(' leafs ')'	#litGroup
+		'(' leafs ')'				#litGroup
 	|	literal						#lit
 	| 	ID 							#var
 	|	ID '.' ID			        #targetInvocation
@@ -38,8 +35,9 @@ leafs:
 
 
 literal:
-		BOOL
-	|	INT;
+		BOOL	#litBool
+	|	INT		#litInt
+	;
 
 
 
