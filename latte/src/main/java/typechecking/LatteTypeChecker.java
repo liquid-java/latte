@@ -27,6 +27,7 @@ import spoon.reflect.declaration.CtConstructor;
 import spoon.reflect.declaration.CtElement;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtParameter;
+import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtFieldReference;
 import spoon.reflect.reference.CtLocalVariableReference;
 import spoon.reflect.reference.CtTypeReference;
@@ -198,30 +199,54 @@ public class LatteTypeChecker  extends LatteAbstractChecker {
 		CtMethod<?> m = maps.getCtMethod(klass, metName, 
 			invocation.getArguments().size());
 
-		if (m == null){
-			logInfo("Cannot find method {" + metName + "} for {} in the context");
-			return;
-		}
 		List<SymbolicValue> paramSymbValues = new ArrayList<>();
 
-		for (int i = 0; i < paramSize; i++){
-			CtExpression<?> arg = invocation.getArguments().get(i);
-			// Γ; Δ; Σ ⊢ 𝑒1, ... , 𝑒𝑛 ⇓ 𝜈1, ... , 𝜈𝑛 ⊣ Γ′; Δ′; Σ′ 
-			SymbolicValue vv = (SymbolicValue) arg.getMetadata(EVAL_KEY);
-			if (vv == null) logError("Symbolic value for constructor argument not found", invocation);
-			
-			CtParameter<?> p = m.getParameters().get(i);
-			UniquenessAnnotation expectedUA = new UniquenessAnnotation(p);
-			UniquenessAnnotation vvPerm = permEnv.get(vv);
-			
-			logInfo(String.format("Checking constructor argument %s:%s, %s <= %s", p.getSimpleName(), vv, vvPerm, expectedUA));
-			// Σ′ ⊢ 𝑒1, ... , 𝑒𝑛 : 𝛼1, ... , 𝛼𝑛 ⊣ Σ′′
-			if (!permEnv.usePermissionAs(vv, vvPerm, expectedUA))
-				logError(String.format("Expected %s but got %s", expectedUA, vvPerm), arg);
+		if (m == null){
+			CtExecutableReference<?> execRef = invocation.getExecutable();
 
-			paramSymbValues.add(vv);
+			if (maps.hasExternalMethodParamPermissions(e, execRef.getSimpleName(), invocation.getArguments().size())) {
+				List<UniquenessAnnotation> externalParams = maps.getExternalMethodParamPermissions(
+						e, execRef.getSimpleName(), invocation.getArguments().size());
+
+				for (int i = 0; i < invocation.getArguments().size(); i++) {
+					CtExpression<?> arg = invocation.getArguments().get(i);
+
+					UniquenessAnnotation expectedUA = externalParams.get(i);
+
+					SymbolicValue vv = (SymbolicValue) arg.getMetadata(EVAL_KEY);
+					if (vv == null) logError("Symbolic value for constructor argument not found", invocation);
+
+					UniquenessAnnotation vvPerm = permEnv.get(vv);
+
+					if (!permEnv.usePermissionAs(vv, vvPerm, expectedUA))
+						logError(String.format("Expected %s but got %s in the external refinement", expectedUA, vvPerm), arg);
+
+					paramSymbValues.add(vv);
+				}
+				m = maps.getExternalCtMethod(e, metName, invocation.getArguments().size());
+			} else {
+				logInfo("Cannot find method {" + metName + "} for {} in the context");
+				return;
+			}
+		} else {
+			for (int i = 0; i < paramSize; i++){
+				CtExpression<?> arg = invocation.getArguments().get(i);
+				// Γ; Δ; Σ ⊢ 𝑒1, ... , 𝑒𝑛 ⇓ 𝜈1, ... , 𝜈𝑛 ⊣ Γ′; Δ′; Σ′
+				SymbolicValue vv = (SymbolicValue) arg.getMetadata(EVAL_KEY);
+				if (vv == null) logError("Symbolic value for constructor argument not found", invocation);
+
+				CtParameter<?> p = m.getParameters().get(i);
+				UniquenessAnnotation expectedUA = new UniquenessAnnotation(p);
+				UniquenessAnnotation vvPerm = permEnv.get(vv);
+
+				logInfo(String.format("Checking constructor argument %s:%s, %s <= %s", p.getSimpleName(), vv, vvPerm, expectedUA));
+				// Σ′ ⊢ 𝑒1, ... , 𝑒𝑛 : 𝛼1, ... , 𝛼𝑛 ⊣ Σ′′
+				if (!permEnv.usePermissionAs(vv, vvPerm, expectedUA))
+					logError(String.format("Expected %s but got %s", expectedUA, vvPerm), arg);
+
+				paramSymbValues.add(vv);
+			}
 		}
-		
 		// distinct(Δ′, {𝜈𝑖 : borrowed ≤ 𝛼𝑖 })
 		// distinct(Δ, 𝑆) ⇐⇒ ∀𝜈, 𝜈′ ∈ 𝑆 : Δ ⊢ 𝜈 ⇝ 𝜈′ =⇒ 𝜈 = 𝜈′
 		List<SymbolicValue> check_distinct = new ArrayList<>();

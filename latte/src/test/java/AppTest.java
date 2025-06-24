@@ -45,7 +45,8 @@ public class AppTest {
             Arguments.of("src/test/examples/MyNodeIfNoElse.java"),
             Arguments.of("src/test/examples/MyNodeIfPermissionCheck.java"),
             Arguments.of("src/test/examples/MyNodeInvocationIf.java"),
-            Arguments.of("src/test/examples/MyNodeIfInvocationPermission.java")
+            Arguments.of("src/test/examples/MyNodeIfInvocationPermission.java"),
+            Arguments.of("src/test/examples/LinkedListRefinement.java")
         );
     }
 
@@ -66,7 +67,8 @@ public class AppTest {
             Arguments.of("src/test/examples/MyStackFieldAssignMethod.java", "UNIQUE but got SHARED"),
             Arguments.of("src/test/examples/FieldAccessNoThis.java", "UNIQUE but got SHARED"),
             Arguments.of("src/test/examples/FieldAccessRightNoThis.java", "FREE but got UNIQUE"),
-            Arguments.of("src/test/examples/MyNodeIncorrectIfPermission.java", "Expected UNIQUE but got SHARED")
+            Arguments.of("src/test/examples/MyNodeIncorrectIfPermission.java", "Expected UNIQUE but got SHARED"),
+            Arguments.of("src/test/examples/LinkedListRefinementIncorrect.java", "FREE but got UNIQUE")
         );
     }
 

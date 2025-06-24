@@ -27,6 +27,7 @@ public class LatteProcessor extends AbstractProcessor<CtPackage> {
         
         if (!visitedPackages.contains(pkg)) {
             visitedPackages.add(pkg);
+            pkg.accept(new ExternalRefinementFirstPass( se, pe, mtc));
             pkg.accept(new LatteClassFirstPass( se, pe, mtc));
             pkg.accept(new LatteTypeChecker( se, pe, mtc));
         }

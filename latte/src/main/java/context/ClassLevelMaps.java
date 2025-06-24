@@ -7,19 +7,20 @@ import java.util.Map;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import spoon.reflect.declaration.CtClass;
-import spoon.reflect.declaration.CtConstructor;
-import spoon.reflect.declaration.CtField;
-import spoon.reflect.declaration.CtMethod;
+import spoon.reflect.declaration.*;
 import spoon.reflect.reference.CtTypeReference;
 
-public class ClassLevelMaps {
+public class
+ClassLevelMaps {
    
     static ClassLevelMaps instance;
     Map<CtTypeReference<?>, CtClass<?>> typeClassMap;
     Map<CtClass<?>, Map<String, CtField<?>>> classFields;
     Map<CtClass<?>, Map<Integer, CtConstructor<?>>> classConstructors;
     Map<CtClass<?>, Map<Pair<String, Integer>, CtMethod<?>>> classMethods;
+
+    Map<CtTypeReference<?>, Map<Pair<String, Integer>, CtMethod<?>>> externalMethods;
+    Map<CtTypeReference<?>, Map<Pair<String, Integer>, List<UniquenessAnnotation>>> externalMethodParamPermissions;
     
 
 
@@ -28,6 +29,9 @@ public class ClassLevelMaps {
         classFields = new HashMap<CtClass<?>, Map<String, CtField<?>>>();
         classConstructors = new HashMap<>();
         classMethods = new HashMap<>();
+
+        externalMethods = new HashMap<>();
+        externalMethodParamPermissions = new HashMap<>();
     }
 
     public CtClass<?> getClassFrom(CtTypeReference<?> type) {
@@ -241,6 +245,62 @@ public class ClassLevelMaps {
         }
 	}
 
+    public void addExternalMethod(CtTypeReference<?> klass, CtMethod<?> method) {
+        Pair<String, Integer> mPair = Pair.of(method.getSimpleName(), method.getParameters().size());
+        if (externalMethods.containsKey(klass)){
+            Map<Pair<String, Integer>, CtMethod<?>> m = externalMethods.get(klass);
+            m.put(mPair, method);
+        } else {
+            Map<Pair<String, Integer>, CtMethod<?>> m = new HashMap<Pair<String, Integer>, CtMethod<?>>();
+            m.put(mPair, method);
+            externalMethods.put(klass, m);
+        }
+    }
 
+    public void addExternalMethodParamPermissions(
+            CtTypeReference<?> typeRef,
+            String methodName,
+            int numParams,
+            List<UniquenessAnnotation> paramAnnotations
+    ) {
+        if (externalMethodParamPermissions == null)
+            externalMethodParamPermissions = new HashMap<>();
 
+        Pair<String, Integer> methodSig = Pair.of(methodName, numParams);
+        externalMethodParamPermissions
+                .computeIfAbsent(typeRef, k -> new HashMap<>())
+                .put(methodSig, paramAnnotations);
+    }
+
+    public List<UniquenessAnnotation> getExternalMethodParamPermissions(
+            CtTypeReference<?> clazz, String methodName, int arity) {
+        Map<Pair<String, Integer>, List<UniquenessAnnotation>> methodMap = externalMethodParamPermissions.get(clazz);
+        if (methodMap == null) return null;
+        return methodMap.get(Pair.of(methodName, arity));
+    }
+
+    public boolean hasExternalMethodParamPermissions(
+            CtTypeReference<?> clazz, String methodName, int arity) {
+
+        Map<Pair<String, Integer>, List<UniquenessAnnotation>> methodMap =
+                externalMethodParamPermissions.get(clazz);
+
+        if (methodMap == null) return false;
+
+        return methodMap.containsKey(Pair.of(methodName, arity));
+    }
+    public CtMethod<?> getExternalCtMethod(CtTypeReference<?> klass, String methodName, int numParams) {
+        Pair<String, Integer> mPair = Pair.of(methodName, numParams);
+        if (externalMethods.containsKey(klass)){
+            Map<Pair<String, Integer>, CtMethod<?>> m = externalMethods.get(klass);
+            if (m.containsKey(mPair)){
+                return m.get(mPair);
+            }
+        }
+        return null;
+    }
+
+    public Object getExternaRefinementsMap() {
+        return externalMethodParamPermissions;
+    }
 }
