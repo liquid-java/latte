@@ -17,13 +17,6 @@ public interface RefinementsLanguageVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitProg(RefinementsLanguageParser.ProgContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code startPred}
-	 * labeled alternative in {@link RefinementsLanguageParser#start}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitStartPred(RefinementsLanguageParser.StartPredContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code predGroup}
 	 * labeled alternative in {@link RefinementsLanguageParser#pred}.
 	 * @param ctx the parse tree
@@ -101,13 +94,6 @@ public interface RefinementsLanguageVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitOpGroup(RefinementsLanguageParser.OpGroupContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code opMinus}
-	 * labeled alternative in {@link RefinementsLanguageParser#operand}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitOpMinus(RefinementsLanguageParser.OpMinusContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code opSub}
 	 * labeled alternative in {@link RefinementsLanguageParser#operand}.
 	 * @param ctx the parse tree
@@ -116,28 +102,28 @@ public interface RefinementsLanguageVisitor<T> extends ParseTreeVisitor<T> {
 	T visitOpSub(RefinementsLanguageParser.OpSubContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code litGroup}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitLitGroup(RefinementsLanguageParser.LitGroupContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code lit}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitLit(RefinementsLanguageParser.LitContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code var}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitVar(RefinementsLanguageParser.VarContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code targetInvocation}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */

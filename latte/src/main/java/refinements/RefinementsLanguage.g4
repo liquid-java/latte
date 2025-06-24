@@ -1,10 +1,10 @@
 grammar RefinementsLanguage;
 
 
-prog: start | ;
-start:
-		pred	#startPred
-	;
+prog: pred | ;
+// start:
+// 		pred	#startPred
+// 	;
 
 
 pred:
@@ -21,17 +21,16 @@ exp:
 	;
 
 operand:
-		literalExpression			#opLiteral
+		leafs						#opLiteral
 	|	operand ARITHOP	operand		#opArith
 	|	operand '-'	operand			#opSub
-	|	'-' operand					#opMinus
 	|	'!' operand					#opNot
 	|	'(' operand ')'				#opGroup
 	;
 
 
-literalExpression:
-		'(' literalExpression ')'	#litGroup
+leafs:
+		'(' leafs ')'	#litGroup
 	|	literal						#lit
 	| 	ID 							#var
 	|	ID '.' ID			        #targetInvocation
@@ -44,9 +43,13 @@ literal:
 
 
 
-LOGOP   : '&&'|'||'| '-->';
-BOOLOP	 : '=='|'!='|'>='|'>'|'<='|'<';
-ARITHOP : '+'|'*'|'/'|'%';//|'-';
+LOGOP   : '&&'|'||';
+BOOLOP	 : '=='|'<='|'<';
+ARITHOP : '+'|'*'|'/';//|'-';
+
+// 𝑐 | 𝑥 | 𝑥 .𝑓 | 𝑒 + 𝑒 | ! 𝑒
+// | 𝑒 * 𝑒 | 𝑒 / 𝑒 | 𝑒 == 𝑒 | 𝑒 < 𝑒 | 𝑒 || 𝑒 | 𝑒 && 𝑒
+// | 𝑥 (𝑥)
 
 BOOL    : 'true' | 'false';
 ID_UPPER: ([A-Z][a-zA-Z0-9]*);

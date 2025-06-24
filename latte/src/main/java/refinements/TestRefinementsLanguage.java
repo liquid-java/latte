@@ -9,10 +9,10 @@ import org.antlr.v4.runtime.tree.ParseTree;
 // import refinements.antlr.RefinementsLanguageLexer;
 // import refinements.antlr.RefinementsLanguageParser;
 
-public class Test {
+public class TestRefinementsLanguage {
 
     public static void main(String[] args) {
-        String input = "a + b < 10 + c.y";
+        String input = "a < 10";
 
         // // Create input stream (modern way)
         CharStream inputStream = CharStreams.fromString(input);

@@ -29,18 +29,6 @@ public class RefinementsLanguageBaseListener implements RefinementsLanguageListe
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStartPred(RefinementsLanguageParser.StartPredContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitStartPred(RefinementsLanguageParser.StartPredContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterPredGroup(RefinementsLanguageParser.PredGroupContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -168,18 +156,6 @@ public class RefinementsLanguageBaseListener implements RefinementsLanguageListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitOpGroup(RefinementsLanguageParser.OpGroupContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterOpMinus(RefinementsLanguageParser.OpMinusContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitOpMinus(RefinementsLanguageParser.OpMinusContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

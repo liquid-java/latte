@@ -18,18 +18,6 @@ public interface RefinementsLanguageListener extends ParseTreeListener {
 	 */
 	void exitProg(RefinementsLanguageParser.ProgContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code startPred}
-	 * labeled alternative in {@link RefinementsLanguageParser#start}.
-	 * @param ctx the parse tree
-	 */
-	void enterStartPred(RefinementsLanguageParser.StartPredContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code startPred}
-	 * labeled alternative in {@link RefinementsLanguageParser#start}.
-	 * @param ctx the parse tree
-	 */
-	void exitStartPred(RefinementsLanguageParser.StartPredContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code predGroup}
 	 * labeled alternative in {@link RefinementsLanguageParser#pred}.
 	 * @param ctx the parse tree
@@ -162,18 +150,6 @@ public interface RefinementsLanguageListener extends ParseTreeListener {
 	 */
 	void exitOpGroup(RefinementsLanguageParser.OpGroupContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code opMinus}
-	 * labeled alternative in {@link RefinementsLanguageParser#operand}.
-	 * @param ctx the parse tree
-	 */
-	void enterOpMinus(RefinementsLanguageParser.OpMinusContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code opMinus}
-	 * labeled alternative in {@link RefinementsLanguageParser#operand}.
-	 * @param ctx the parse tree
-	 */
-	void exitOpMinus(RefinementsLanguageParser.OpMinusContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code opSub}
 	 * labeled alternative in {@link RefinementsLanguageParser#operand}.
 	 * @param ctx the parse tree
@@ -187,49 +163,49 @@ public interface RefinementsLanguageListener extends ParseTreeListener {
 	void exitOpSub(RefinementsLanguageParser.OpSubContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code litGroup}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 */
 	void enterLitGroup(RefinementsLanguageParser.LitGroupContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code litGroup}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 */
 	void exitLitGroup(RefinementsLanguageParser.LitGroupContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code lit}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 */
 	void enterLit(RefinementsLanguageParser.LitContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code lit}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 */
 	void exitLit(RefinementsLanguageParser.LitContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code var}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 */
 	void enterVar(RefinementsLanguageParser.VarContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code var}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 */
 	void exitVar(RefinementsLanguageParser.VarContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code targetInvocation}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 */
 	void enterTargetInvocation(RefinementsLanguageParser.TargetInvocationContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code targetInvocation}
-	 * labeled alternative in {@link RefinementsLanguageParser#literalExpression}.
+	 * labeled alternative in {@link RefinementsLanguageParser#leafs}.
 	 * @param ctx the parse tree
 	 */
 	void exitTargetInvocation(RefinementsLanguageParser.TargetInvocationContext ctx);
