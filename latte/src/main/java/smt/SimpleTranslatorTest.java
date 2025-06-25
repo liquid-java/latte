@@ -102,7 +102,7 @@ public class SimpleTranslatorTest {
         try (Context ctx = new Context()) {
             
             // Try to translate the expression
-            BoolExpr result = translateExpression(expression, ctx);
+            Expr result = translateExpression(expression, ctx);
             
             if (result != null) {
                 System.out.println("✅ SUCCESS");
@@ -126,7 +126,7 @@ public class SimpleTranslatorTest {
     /**
      * Translate expression using student's implementation
      */
-    private static BoolExpr translateExpression(String expression, Context ctx) {
+    private static Expr translateExpression(String expression, Context ctx) {
         try {
             // Parse with ANTLR
             CharStream input = CharStreams.fromString(expression);
@@ -160,7 +160,7 @@ public class SimpleTranslatorTest {
     /**
      * Try to find a satisfying model for the expression
      */
-    private static void tryFindModel(BoolExpr formula, Context ctx) {
+    private static void tryFindModel(Expr formula, Context ctx) {
         try {
             Solver solver = ctx.mkSolver();
             solver.add(formula);
@@ -213,7 +213,7 @@ public class SimpleTranslatorTest {
             System.out.print("  Checking validity of: " + impl + " ... ");
             
             try (Context ctx = new Context()) {
-                BoolExpr formula = translateExpression(impl, ctx);
+                Expr formula = translateExpression(impl, ctx);
                 
                 if (formula != null) {
                     Solver solver = ctx.mkSolver();

@@ -27,12 +27,12 @@ public class RefinementsToZ3Translator extends RefinementsLanguageBaseVisitor<Ex
      * Main entry point - translate a parse tree to a Z3 formula
      * This method is already complete.
      */
-    public BoolExpr translate(ParseTree tree) {
+    public Expr translate(ParseTree tree) {
         Expr result = visit(tree);        
-        if (result instanceof BoolExpr) {
-            return (BoolExpr) result;
+        if (result != null) {
+            return result;
         } else {
-            throw new IllegalArgumentException("Root expression must be boolean, got: " + result.getClass());
+            throw new IllegalArgumentException("Root expression must be expression, got: " + result.getClass());
         }
     }
 
@@ -45,16 +45,25 @@ public class RefinementsToZ3Translator extends RefinementsLanguageBaseVisitor<Ex
     // Implement visitor methods for elements in the grammar
     // =================================================================
 
-    public Expr visitLitBool(RefinementsLanguageParser.ProgContext ctx) {
-        System.out.println("Visiting boolean literal: " + ctx.getText());
-        // Handle boolean literals (true/false)
-        String text = ctx.getText();
-        if (text.equals("true")) {
+    @Override
+    public Expr visitLitBool(RefinementsLanguageParser.LitBoolContext ctx) {
+        if (ctx.getText().equals("true")) {
             return z3Context.mkTrue();
-        } else if (text.equals("false")) {
+        } else {
             return z3Context.mkFalse();
-        } else 
-            throw new IllegalArgumentException("Unknown boolean literal: " + text);
+        }
+    }
+
+    @Override
+    public Expr visitLitInt(RefinementsLanguageParser.LitIntContext ctx) {
+        String intText = ctx.getText().replace("_", ""); // sanitize e.g., 1_000
+        int value = Integer.parseInt(intText);
+        return z3Context.mkInt(value);
+    }
+
+    @Override
+    public Expr visitLit(RefinementsLanguageParser.LitContext ctx) {
+        return visit(ctx.literal());  // Delegate to litBool or litInt
     }
 
 
