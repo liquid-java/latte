@@ -66,5 +66,24 @@ public class RefinementsToZ3Translator extends RefinementsLanguageBaseVisitor<Ex
         return visit(ctx.literal());  // Delegate to litBool or litInt
     }
 
+    @Override
+    public Expr visitVar(RefinementsLanguageParser.VarContext ctx) {
+        String varName = ctx.getText();
+
+        // Look up if we've already created a Z3 variable for this name
+        if (variableMap.containsKey(varName)) {
+            return variableMap.get(varName);
+        }
+
+        // If not, create a fresh Z3 integer variable (default assumption)
+        // Later you could refine this to support booleans too if needed.
+        Expr z3Var = z3Context.mkIntConst(varName);
+
+        // Store it in the map so it’s reused consistently
+        variableMap.put(varName, z3Var);
+
+        return z3Var;
+    }
+
 
 }

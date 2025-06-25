@@ -21,7 +21,7 @@ public class SimpleTranslatorTest {
         
         // Test in order of difficulty
         testStep1_Literals();
-        // testStep2_Variables();
+        testStep2_Variables();
         // testStep3_Arithmetic();
         // testStep4_Comparisons();
         // testStep5_LogicalOperations();
@@ -106,7 +106,7 @@ public class SimpleTranslatorTest {
             
             if (result != null) {
                 System.out.println("✅ SUCCESS");
-                System.out.println("    Z3 Formula: " + result);
+                System.out.println("    Z3 Formula: " + result + ": " + result.getClass().getSimpleName());
                 
                 // For non-tautologies, try to find a model
                 if (!expression.contains("->")) {
