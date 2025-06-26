@@ -113,5 +113,33 @@ public class RefinementsToZ3Translator extends RefinementsLanguageBaseVisitor<Ex
         }
     }
 
+    @Override
+    public Expr visitExpBool(RefinementsLanguageParser.ExpBoolContext ctx) {
+        Expr left = visit(ctx.exp(0));
+        Expr right = visit(ctx.exp(1));
+        String op = ctx.BOOLOP().getText();
+
+        if (!(left instanceof ArithExpr) || !(right instanceof ArithExpr)) {
+            throw new IllegalArgumentException("Both sides of a comparison must be arithmetic expressions.");
+        }
+
+        ArithExpr leftArith = (ArithExpr) left;
+        ArithExpr rightArith = (ArithExpr) right;
+
+        switch (op) {
+            case "==":
+                return z3Context.mkEq(leftArith, rightArith);
+            case "<":
+                return z3Context.mkLt(leftArith, rightArith);
+            case "<=":
+                return z3Context.mkLe(leftArith, rightArith);
+            case ">":
+                return z3Context.mkGt(leftArith, rightArith);
+            case ">=":
+                return z3Context.mkGe(leftArith, rightArith);
+            default:
+                throw new UnsupportedOperationException("Unknown boolean operator: " + op);
+        }
+    }
 
 }
