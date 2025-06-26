@@ -22,7 +22,7 @@ public class SimpleTranslatorTest {
         // Test in order of difficulty
         testStep1_Literals();
         testStep2_Variables();
-        // testStep3_Arithmetic();
+        testStep3_Arithmetic();
         // testStep4_Comparisons();
         // testStep5_LogicalOperations();
         // testStep6_Implications();

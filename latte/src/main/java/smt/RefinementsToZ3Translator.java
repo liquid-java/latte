@@ -85,5 +85,33 @@ public class RefinementsToZ3Translator extends RefinementsLanguageBaseVisitor<Ex
         return z3Var;
     }
 
+    @Override
+    public Expr visitOpArith(RefinementsLanguageParser.OpArithContext ctx) {
+        // Visit the left and right operands
+        Expr left = visit(ctx.operand(0));
+        Expr right = visit(ctx.operand(1));
+        String op = ctx.ARITHOP().getText();
+
+        // Ensure both sides are arithmetic expressions
+        if (!(left instanceof ArithExpr) || !(right instanceof ArithExpr)) {
+            throw new IllegalArgumentException("Operands must be arithmetic expressions");
+        }
+
+        ArithExpr leftArith = (ArithExpr) left;
+        ArithExpr rightArith = (ArithExpr) right;
+
+        // Dispatch based on operator
+        switch (op) {
+            case "+":
+                return z3Context.mkAdd(leftArith, rightArith);
+            case "*":
+                return z3Context.mkMul(leftArith, rightArith);
+            case "/":
+                return z3Context.mkDiv(leftArith, rightArith); // Integer division
+            default:
+                throw new UnsupportedOperationException("Unknown arithmetic operator: " + op);
+        }
+    }
+
 
 }
