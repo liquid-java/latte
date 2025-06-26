@@ -54,6 +54,18 @@ public interface RefinementsLanguageListener extends ParseTreeListener {
 	 */
 	void exitPredExp(RefinementsLanguageParser.PredExpContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code predImplies}
+	 * labeled alternative in {@link RefinementsLanguageParser#pred}.
+	 * @param ctx the parse tree
+	 */
+	void enterPredImplies(RefinementsLanguageParser.PredImpliesContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code predImplies}
+	 * labeled alternative in {@link RefinementsLanguageParser#pred}.
+	 * @param ctx the parse tree
+	 */
+	void exitPredImplies(RefinementsLanguageParser.PredImpliesContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code predLogic}
 	 * labeled alternative in {@link RefinementsLanguageParser#pred}.
 	 * @param ctx the parse tree

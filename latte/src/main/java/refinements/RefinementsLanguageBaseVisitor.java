@@ -46,6 +46,13 @@ public class RefinementsLanguageBaseVisitor<T> extends AbstractParseTreeVisitor<
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
+	@Override public T visitPredImplies(RefinementsLanguageParser.PredImpliesContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
 	@Override public T visitPredLogic(RefinementsLanguageParser.PredLogicContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}

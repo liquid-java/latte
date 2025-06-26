@@ -65,6 +65,18 @@ public class RefinementsLanguageBaseListener implements RefinementsLanguageListe
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterPredImplies(RefinementsLanguageParser.PredImpliesContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPredImplies(RefinementsLanguageParser.PredImpliesContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterPredLogic(RefinementsLanguageParser.PredLogicContext ctx) { }
 	/**
 	 * {@inheritDoc}

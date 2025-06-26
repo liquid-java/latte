@@ -38,6 +38,13 @@ public interface RefinementsLanguageVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPredExp(RefinementsLanguageParser.PredExpContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code predImplies}
+	 * labeled alternative in {@link RefinementsLanguageParser#pred}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPredImplies(RefinementsLanguageParser.PredImpliesContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code predLogic}
 	 * labeled alternative in {@link RefinementsLanguageParser#pred}.
 	 * @param ctx the parse tree

@@ -174,4 +174,15 @@ public class RefinementsToZ3Translator extends RefinementsLanguageBaseVisitor<Ex
         }
     }
 
+    @Override
+    public Expr visitPredImplies(RefinementsLanguageParser.PredImpliesContext ctx) {
+        Expr left = visit(ctx.pred(0));
+        Expr right = visit(ctx.pred(1));
+
+        if (!(left instanceof BoolExpr) || !(right instanceof BoolExpr)) {
+            throw new IllegalArgumentException("Implication requires boolean expressions.");
+        }
+
+        return z3Context.mkImplies((BoolExpr) left, (BoolExpr) right);
+    }
 }

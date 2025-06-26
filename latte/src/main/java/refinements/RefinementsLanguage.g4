@@ -8,6 +8,7 @@ pred:
 		'(' pred ')'				#predGroup
 	|	'!' pred					#predNegate
 	|	pred LOGOP pred 			#predLogic
+	|   pred '->' pred              #predImplies
 	|	exp							#predExp
 	;
 
