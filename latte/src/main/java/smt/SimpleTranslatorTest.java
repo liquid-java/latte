@@ -80,7 +80,7 @@ public class SimpleTranslatorTest {
         System.out.println("\n🔸 STEP 6: Testing Implications");
         System.out.println("Implement: visitImplication");
         
-        //testExpression("x == 0 -> x > -1", "Should create implication");
+        testExpression("x == 0 -> x <= 1", "Should create implication");
         testExpression("x > 5 -> x > 0", "Should create implication");
     }
     
@@ -89,7 +89,7 @@ public class SimpleTranslatorTest {
         System.out.println("All methods should work together");
         
         testExpression("(x > 0 && y > 0) -> (x + y > 0)", "Complex implication");
-        //testExpression("x == 0 -> (x > -1 && x < 1)", "Implication with AND");
+        testExpression("x == 0 -> (x > (0 - 1) && x < 1)", "Implication with AND");
         testExpression("(x + y == 10) && (x > y)", "Conjunction of constraints");
     }
     
