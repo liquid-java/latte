@@ -142,4 +142,36 @@ public class RefinementsToZ3Translator extends RefinementsLanguageBaseVisitor<Ex
         }
     }
 
+    @Override
+    public Expr visitPredNegate(RefinementsLanguageParser.PredNegateContext ctx) {
+        Expr inner = visit(ctx.pred());
+        if (!(inner instanceof BoolExpr)) {
+            throw new IllegalArgumentException("Negation requires a boolean expression.");
+        }
+        return z3Context.mkNot((BoolExpr) inner);
+    }
+
+    @Override
+    public Expr visitPredLogic(RefinementsLanguageParser.PredLogicContext ctx) {
+        Expr left = visit(ctx.pred(0));
+        Expr right = visit(ctx.pred(1));
+        String op = ctx.LOGOP().getText();
+
+        if (!(left instanceof BoolExpr) || !(right instanceof BoolExpr)) {
+            throw new IllegalArgumentException("Logical operations require boolean expressions.");
+        }
+
+        BoolExpr leftBool = (BoolExpr) left;
+        BoolExpr rightBool = (BoolExpr) right;
+
+        switch (op) {
+            case "&&":
+                return z3Context.mkAnd(leftBool, rightBool);
+            case "||":
+                return z3Context.mkOr(leftBool, rightBool);
+            default:
+                throw new UnsupportedOperationException("Unknown logical operator: " + op);
+        }
+    }
+
 }

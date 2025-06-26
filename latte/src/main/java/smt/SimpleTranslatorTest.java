@@ -24,7 +24,7 @@ public class SimpleTranslatorTest {
         testStep2_Variables();
         testStep3_Arithmetic();
         testStep4_Comparisons();
-        // testStep5_LogicalOperations();
+        testStep5_LogicalOperations();
         // testStep6_Implications();
         // testStep7_ComplexExpressions();
     }
