@@ -185,4 +185,24 @@ public class RefinementsToZ3Translator extends RefinementsLanguageBaseVisitor<Ex
 
         return z3Context.mkImplies((BoolExpr) left, (BoolExpr) right);
     }
+
+    @Override
+    public Expr visitExpGroup(RefinementsLanguageParser.ExpGroupContext ctx) {
+        return visit(ctx.exp());
+    }
+
+    @Override
+    public Expr visitPredGroup(RefinementsLanguageParser.PredGroupContext ctx) {
+        return visit(ctx.pred());
+    }
+
+    @Override
+    public Expr visitOpGroup(RefinementsLanguageParser.OpGroupContext ctx) {
+        return visit(ctx.operand());
+    }
+
+    @Override
+    public Expr visitLitGroup(RefinementsLanguageParser.LitGroupContext ctx) {
+        return visit(ctx.leafs());
+    }
 }

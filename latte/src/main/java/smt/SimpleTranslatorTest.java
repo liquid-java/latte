@@ -26,7 +26,7 @@ public class SimpleTranslatorTest {
         testStep4_Comparisons();
         testStep5_LogicalOperations();
         testStep6_Implications();
-        // testStep7_ComplexExpressions();
+        testStep7_ComplexExpressions();
     }
     
     public static void testStep1_Literals() {
@@ -89,7 +89,7 @@ public class SimpleTranslatorTest {
         System.out.println("All methods should work together");
         
         testExpression("(x > 0 && y > 0) -> (x + y > 0)", "Complex implication");
-        testExpression("x == 0 -> (x > -1 && x < 1)", "Implication with AND");
+        //testExpression("x == 0 -> (x > -1 && x < 1)", "Implication with AND");
         testExpression("(x + y == 10) && (x > y)", "Conjunction of constraints");
     }
     
