@@ -4,6 +4,8 @@ import java.lang.annotation.Annotation;
 
 import spoon.reflect.declaration.CtAnnotation;
 import spoon.reflect.declaration.CtElement;
+import spoon.reflect.declaration.CtTypedElement;
+import spoon.reflect.reference.CtTypeReference;
 
 /**
  * Matched the annotation to the uniqueness enum type type
@@ -30,9 +32,19 @@ public class UniquenessAnnotation {
 			 }
 	        
 	    }
+		if (element instanceof CtTypedElement){ // TODO: change for typed param here when changing java version
+			CtTypedElement<?> typed = (CtTypedElement<?>) element;
+			CtTypeReference<?> typeRef = typed.getType();  
+			if(typeRef != null && typeRef.isPrimitive())
+				this.annotation = Uniqueness.IMMUTABLE;                                                                           
+		}
 		if (annotation == null) this.annotation = Uniqueness.SHARED; //Default
 	}
 	
+	public static UniquenessAnnotation forPrimitives() {
+		return new UniquenessAnnotation(Uniqueness.IMMUTABLE);
+	}
+
 	public UniquenessAnnotation(Uniqueness at) {	
 		annotation = at;
 	}
@@ -64,6 +76,10 @@ public class UniquenessAnnotation {
 	
 	public boolean isBottom() {
 		return annotation.equals(Uniqueness.BOTTOM);
+	}
+
+	public boolean isImmutable() {
+		return annotation.equals(Uniqueness.IMMUTABLE);
 	}
 
 	public boolean isLessEqualThan(Uniqueness other) {

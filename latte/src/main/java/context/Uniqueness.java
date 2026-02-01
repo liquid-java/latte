@@ -5,7 +5,8 @@ public enum Uniqueness {
     SHARED (2),
     UNIQUE (3),
     BORROWED (4),
-    FREE (5);
+    IMMUTABLE(5),
+    FREE (6);
     // ALIAS (6),
 
     private final int order;
