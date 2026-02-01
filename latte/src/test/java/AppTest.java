@@ -45,7 +45,8 @@ public class AppTest {
             Arguments.of("src/test/examples/MyNodeIfNoElse.java"),
             Arguments.of("src/test/examples/MyNodeIfPermissionCheck.java"),
             Arguments.of("src/test/examples/MyNodeInvocationIf.java"),
-            Arguments.of("src/test/examples/MyNodeIfInvocationPermission.java")
+            Arguments.of("src/test/examples/MyNodeIfInvocationPermission.java"),
+            Arguments.of("src/test/examples/PQNode.java")
         );
     }
 

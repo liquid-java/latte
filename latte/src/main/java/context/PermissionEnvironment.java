@@ -117,6 +117,11 @@ public class PermissionEnvironment {
                     return true;
                 }
                 break;
+            case IMMUTABLE:
+                if (vPerm.isGreaterEqualThan(Uniqueness.IMMUTABLE)){
+                    return true;
+                }
+                break;
             case SHARED:
                 if (vPerm.annotationEquals(Uniqueness.SHARED) || vPerm.annotationEquals(Uniqueness.FREE)){
                     add(v, new UniquenessAnnotation(Uniqueness.SHARED));
