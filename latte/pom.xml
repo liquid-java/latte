@@ -16,9 +16,23 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <version.spoon>10.4.2</version.spoon>
+    <antlr4.version>4.13.1</antlr4.version>
   </properties>
 
   <dependencies>
+    <!-- Z3-Turnkey: Z3 with bundled native libraries -->
+    <dependency>
+        <groupId>tools.aqua</groupId>
+        <artifactId>z3-turnkey</artifactId>
+        <version>4.12.2.1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr4-runtime</artifactId>
+      <version>${antlr4.version}</version>
+    </dependency>
+    <!-- REMOVED: antlr4-maven-plugin should not be a dependency -->
 
     <dependency>
       <groupId>com.google.code.gson</groupId>
@@ -35,23 +49,21 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>5.11.4</version> <!-- Version is fine -->
+      <version>5.11.4</version>
       <scope>test</scope>
     </dependency>
 
-    <!-- JUnit Jupiter Params (for Parameterized tests) -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
-      <version>5.11.4</version> <!-- Same version for consistency -->
+      <version>5.11.4</version>
       <scope>test</scope>
     </dependency>
 
-    <!-- JUnit Jupiter Engine (for running tests) -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.11.4</version> <!-- Same version for consistency -->
+      <version>5.11.4</version>
       <scope>test</scope>
     </dependency>
 
@@ -89,7 +101,6 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Spoon Core Dependency -->
     <dependency>
       <groupId>fr.inria.gforge.spoon</groupId>
       <artifactId>spoon-core</artifactId>
@@ -115,7 +126,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M5</version> <!-- Updated to newer version for better JUnit 5 support -->
+          <version>3.0.0-M5</version>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
@@ -139,5 +150,31 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    
+    <!-- MOVED ANTLR PLUGIN HERE - outside of pluginManagement -->
+    <plugins>
+      <plugin>
+        <groupId>org.antlr</groupId>
+        <artifactId>antlr4-maven-plugin</artifactId>
+        <version>${antlr4.version}</version>
+        <configuration>
+          <sourceDirectory>${basedir}/src/main/java/refinements</sourceDirectory>
+          <outputDirectory>${basedir}/src/main/java/refinements</outputDirectory>
+          <arguments>
+            <argument>-package</argument>
+            <argument>refinements</argument>
+          </arguments>
+          <visitor>true</visitor>
+          <listener>true</listener>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>antlr4</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 </project>
