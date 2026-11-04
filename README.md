@@ -1,203 +1,107 @@
-# Latte: Lightweight Aliasing Tracking for Java
+# Latte and Liquid Type Checking
 
-Latte is a lightweight static analysis tool for tracking aliasing in Java programs. This tool allows you to annotate your programs with permissions where aliases are tracked to prevent bugs related to unexpected object references and side effects.
+Latte now runs as an ownership and aliasing pass before an independently implemented refinement checker. Both passes use the same Spoon AST. The old mutable checker has been replaced; no LiquidJava verifier implementation was copied.
 
-For more details, check our [research paper](https://arxiv.org/pdf/2309.05637).
-Test our VSCode Plugin in the Codespaces of the project [latte-vscode](https://github.com/CatarinaGamboa/latte-vscode).
+The verifier now covers floating-point arithmetic, exception and switch flow, deferred bodies, recursive aliases, allocation recency, inherited contracts, field-backed state, arrays and loop/effect analysis. The imported suite has **165 exact matches out of 311 inputs**; this is not full LiquidJava compatibility. All 410 upstream Java fixtures are preserved. See [compatibility status](docs/compatibility.md) for the implemented behavior, policy differences and precision limits.
 
-## Overview
+## Build and run
 
-Latte enables developers to identify and track aliasing relationships in their Java code using a permission-based type system. The tool statically verifies aliasing properties to help prevent common concurrency and memory management bugs.
+Use JDK 17 or newer and Maven 3.9 or newer:
 
-## Latte Annotations System
-
-Latte uses annotations to specify the permissions of fields and parameters to track their uniqueness properties and the aliases that are created throughout the program:
-
-- For parameters:
-  - `@Free` - For parameters that are globally unique. When a caller passes an argument to a `@Free` parameter, they cannot observe that value again.
-  - `@Borrowed` - For parameters that are unique in the callee's scope but may be stored elsewhere on the heap or stack.
-- For fields:
-  - `@Unique` - For fields that cannot be aliased with other fields.
-- For both:
-  - `@Shared` - For parameters or fields that can be shared, so they have no uniqueness guarantees.
-
-Local variables are not annotated and start with a default annotation that allows them to take the assignment's permissions.
-
-## Project Structure
-
-```
-latte/
-├── src/
-│   └── main/
-│       └── java/
-│           ├── latte/
-│           │   └── App.java  # Main application entry point
-│           └── examples/         # Test examples for the analysis
-│   └── test/
-│       └── java/
-│           ├── AppTest.java # Creating JUnit tests
-│       └── examples/ # Java classes to be used in the JUnit tests
-
+```sh
+cd latte
+mvn clean verify -Pcompatibility
+java -jar target/latte-cli.jar ../examples/refinements/LocalAliases.java
+java -jar target/latte-cli.jar ../examples/refinements/StaleAliasRejected.java
 ```
 
-## Getting Started
+The first example succeeds. The second reports a state refinement failure and exits with status 1. Add `--explain` to include the proof obligation and solver counterexample. Each path is a separate analysis; pass a source directory to analyze related classes together. Parsing failure and unsupported analysis also produce a nonzero exit status.
 
-### Prerequisites
+The small library jar is `target/latte-0.0.1-SNAPSHOT.jar`. The runnable `latte-cli.jar` also includes Spoon and Z3, including the native solver libraries supplied by `z3-turnkey`.
 
-- Java 11 or higher
-- Maven
+`mvn test` runs 465 tests, including the focused tests, legacy Latte regressions and 165 promoted upstream regression inputs. A separate imported-fixture test enforces the intentional fresh-reference comparison difference. `mvn verify -Pcompatibility` also runs **every** imported input and writes `target/liquidjava-compatibility.json`. A successful build does not mean that all upstream expectations match.
 
-### Prerequisites
+## Ownership policy
 
-- Java 11 or higher
-- Maven
+| Value | Refinements |
+| --- | --- |
+| Java primitive | Allowed |
+| Locally allocated object, including controlled local aliases | Allowed |
+| `@Borrowed` parameter | Allowed while the borrow remains valid |
+| `@Unique` object or field | Allowed while ownership remains controlled |
+| `@Free` argument | Allowed; transfer consumes all aliases in the caller |
+| Unannotated reference parameter or field | Shared by default; rejected |
+| Explicitly `@Shared` local or object | Rejected |
+| Object passed to unknown code or otherwise escaping local control | Shared; further refinements rejected |
 
-### Installation
+Local declarations and assignments preserve object identity. An alias is not a fresh object. Refinement state updates through one alias are visible through the others. Borrowing does not mean purity: a mutating borrowed call invalidates affected object state. A borrowed object cannot escape through a shared store or unknown call.
 
-Clone the repository and build with Maven:
+Lambdas and bound method references hold their captures as heap references. Creating a local closure preserves the captured objects' permissions. Escaping the closure, or a containing object, propagates sharing to its reachable captures. Borrowed captures are allowed locally and rejected if the closure escapes or is transferred to an owning parameter. Known local invocations check the current captured state and propagate mutations to other aliases, including across loop iterations. See [local capture examples](examples/refinements/LocalCaptures.java). Callbacks whose execution is hidden behind another method, and escaped callbacks, are checked with conservative state assumptions.
 
-```bash
-git clone https://github.com/CatarinaGamboa/latte.git
-cd latte/latte
-mvn clean install
-```
+Source constructors apply the same parameter permission, transfer and distinctness rules as methods. Arguments stored in fields retain their aliases, including through `this(...)` and `super(...)` delegation. A `@Free` argument becomes usable through its new owner while its old caller aliases remain consumed. Constructor argument mutations invalidate affected refinement state; instance initializer effects are included. See [constructor examples](examples/refinements/ConstructorAliases.java).
 
-To use Latte in your Java projects, you need to:
-1. Add the latte.jar to your project dependencies
-2. Import the specifications in your files (e.g., `import specification.Free`)
+Latte can infer ownership releases at `@Free` arguments and returns when the old owner is provably unobservable. An abandoned local container need not have its owned field explicitly cleared before its child moves. Surviving aliases, external owners, callbacks, exception cleanup and possible finalization prevent that inference. This only forgets ownership edges in the analysis: Java fields and their refinement values are not changed to `null`. See [the rule and conservative boundaries](docs/compatibility.md#inferred-ownership-releases) and [checked examples](examples/refinements/InferredOwnershipRelease.java).
 
+**Known Latte limitation: branch-dependent aliases.** Latte joins possible aliases without retaining the condition selecting each one. A variable that may refer to either a local object or a shared object remains classified as shared even inside a later matching guard. This can reject safe code. See the [limitation and workaround](docs/compatibility.md#latte-limitation-branch-dependent-aliases) and the [checked example](examples/refinements/BranchOwnershipLimit.java).
 
-### Usage
+**Known Latte limitation: repeated allocations.** When the same allocation expression executes repeatedly, Latte merges older instances into a summary classified as shared. An older object retained in a local variable can therefore lose refinement eligibility even though it never escapes. See the [limitation and example](docs/compatibility.md#latte-limitation-repeated-allocations).
 
-Run the tool against your Java code by executing the main application:
-
-```bash
-java -cp target/latte-umbrella-1.0.0.jar latte.latte_umbrella.App [options] <file-to-analyze>
-```
-
-## Running Examples
-
-The project includes example files to test the analysis capabilities:
-
-```bash
-# Run the analysis on a specific example
-java -cp target/latte-umbrella-1.0.0.jar latte.latte_umbrella.App src/main/java/examples/Example1.java
-```
-
-## Example
-
-Here is an example of Java classes using the Latte annotations:
+Ownership annotations do not upgrade a shared value into a unique one. A primitive refinement also cannot depend on mutable ghost state reached through a shared reference.
 
 ```java
-class Node {
-    @Unique Object value;   // Field value is Unique
-    @Unique Node next;      // Field next is Unique
+import liquidjava.specification.Refinement;
+import specification.Borrowed;
 
+class Example {
+    void borrow(@Borrowed @Refinement("_ != null") Object value) {}
 
-    public Node (@Free Object value, @Free Node next) {
-        // We can assign @Free objects to Unique fields given that they have no aliases
-        this.value = value; 
-        this.next = next;
-    }
-}
-
-public class MyStack {
-
-    @Unique Node root;          // Field root is Unique		
-    
-    public MyStack(@Free Node root) {
-        this.root = root;       // Since root is @Free we can assign it to root:@Unique		
-    }
-    
-    void push(@Free Object value) {	
-        Node r;                 // Local variables start with a default annotation that allows
-        Node n;                 // them to take the assignment's permissions
-        
-        r = this.root; 			// r is an alias to this.root with permission @Unique
-        this.root = null; 		// Nullify this.root so there is only one pointer to the 
-                                // value of the root, no other aliases
-        n = new Node(value, r); // Create new root with values that have no aliases. The constructors  
-                                // always return an new object that is @Free 
-        this.root = n; 			// Replace root with a new value that is @Free and so can be assigned 
-                                // to an @Unique field
+    void example() {
+        Object original = new Object();
+        @Refinement("_ != null") Object alias = original;
+        borrow(alias);
     }
 }
 ```
 
-## Testing
+[Examples](examples/refinements) cover accepted local aliases, unique and borrowed references, rejected shared references, escapes, stale aliases, field-backed state, arrays, floating-point behavior, control flow and inherited/deferred contracts. Their expected diagnostic kinds and lines are checked by the test suite.
 
-Tests can be run using Maven:
+## AST handoff and embedding
 
-```bash
-mvn test
+```java
+var result = latte.api.Verification.verify("src/main/java");
+for (var local : result.model().getElements(
+        new spoon.reflect.visitor.filter.TypeFilter<>(
+            spoon.reflect.code.CtLocalVariable.class))) {
+    latte.analysis.LatteFacts.on(local).ifPresent(facts -> {
+        System.out.println(facts.permission());
+        System.out.println(facts.after().aliases(facts.value()));
+    });
+}
 ```
 
-You can also test the tool directly on the example files:
+`LatteFacts.KEY` is `latte.analysis.facts.v1`. Evaluated expressions, declarations and statements retain immutable `before` and `after` ownership stores and their reference identity. `LiquidTypeChecking` reads this metadata; it does not rerun ownership analysis. These facts belong to a particular AST and source position. Reanalyze after editing the AST. An unvisited or unsupported node must not be treated as having a successful ownership proof.
 
-```bash
-java -cp target/latte-umbrella-1.0.0.jar latte.latte_umbrella.App src/main/java/examples/MyStack.java
-```
+`MutationEffects.KEY` is `latte.analysis.effects.v1`. Source method declarations retain immutable summaries of the receiver, parameters and global storage they can change, including transitive calls and source overrides.
 
-## Contributing
+`ConstructionFacts.KEY` is `latte.analysis.construction.v1`. Constructor calls retain mappings from transferred ownership identities to their consumed caller identities, allowing the refinement pass to preserve state under the new owner. Constructor evaluation uses call-specific bindings without overwriting the declaration's published facts.
 
-We welcome contributions to Latte! Here's how to get started:
+`OwnershipRelease.KEY` is `latte.analysis.release.v1`. Calls and returns record the ownership edges forgotten because their owners cannot be observed. Their `LatteFacts.after` contains the resulting ownership graph; the metadata does not describe runtime writes or establish null-valued fields.
 
-### Development Workflow
+`ClosureFacts.KEY` is `latte.analysis.closure.v1`. Closures record their captured binding names and whether execution can be deferred or escape. Capture references are stored as immutable `capture:` heap edges in `LatteFacts`. `ClosureInvocation.KEY` is `latte.analysis.closure.call.v1`; local calls retain their possible closure targets, captured references, mutations, ownership transfers and separate body facts for each invocation. LiquidTypeChecking reads these facts from the same AST.
 
-1. **Create a new branch for your feature:**
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
+`Verification.Result` retains the model and structured, source-located diagnostics. Analysis does not rewrite source files. The old `api.App.launcher` entry point delegates to this pipeline.
 
-2. **Make your changes and commit them:**
-   ```bash
-   git add .
-   git commit -m "Description of your changes"
-   ```
+## Implementation
 
-3. **Set the upstream branch and push your changes:**
-   ```bash
-   git push --set-upstream origin feature/your-feature-name
-   ```
+The state stores, points-to sets, predicates and proof results are immutable Java records. Transfer functions produce new states. Spoon supplies declarations, source positions and Java syntax; Z3 is confined to the proof adapter. The orchestration keeps per-analysis diagnostic lists and symbol indexes, with no process-global verification context.
 
-4. **Create a Pull Request:**
-   - Go to the repository on GitHub
-   - Click on "Pull Requests" > "New Pull Request"
-   - Select your branch
-   - Fill in the PR template with details about your changes
-   - Request a review from a team member
+- `latte.analysis`: permissions, heap reachability, aliases and AST metadata.
+- `latte.refinement`: predicate parsing/resolution, contracts, Java arithmetic, symbolic flow and the solver adapter.
+- `latte.api`: the two-pass pipeline, diagnostics and CLI.
+- `liquidjava.specification`: freshly defined annotation API with familiar LiquidJava syntax.
 
-5. **Address review feedback** and update your PR as needed
+External refinements are deliberately deferred. Recursive paths, older loop allocations, unknown calls and exceptions are conservatively approximated; loop inference supports a finite set of inductive bounds. Recursive constructor expansion requires a finite heap summary and currently reports `UNSUPPORTED`. Constructors without source bodies retain conservative effects. These approximations can reject valid programs. Unsupported constructs and solver timeouts are failures. The checker remains a prototype, and the complete compatibility report is the source of truth for port coverage.
 
-### Code Standards
+Run `mvn spotless:apply` after editing Java. Formatting is checked by `mvn verify` and CI.
 
-- Follow Java code conventions
-- Write unit tests for new functionality
-- Update documentation for any changes
-
-## Known Limitations
-
-The tool is still under active development, and some features are limited:
-
-- Does not support if statements without else branches
-- Limited verification of aliases related to while loops
-- Limited support for complex collections and generics
-
-## Future Work
-
-We are continuously improving Latte to support more complex Java patterns and enhance the aliasing tracking capabilities.
-
-## Contributing Issues
-
-If you encounter any problems while using Latte, please add an Issue to the repository with:
-- A description of the problem
-- Code sample that demonstrates the issue
-- Expected vs. actual behavior
-
-## License
-
-[Your license here]
-
-## Contact
-
-[Your contact information here]
+The repository uses the [MIT license](latte/LICENSE.md). Imported fixtures retain their [upstream license](latte/src/test/resources/liquidjava/LICENSE) and [provenance](latte/src/test/resources/liquidjava/provenance.json).

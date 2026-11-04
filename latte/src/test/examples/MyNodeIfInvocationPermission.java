@@ -27,7 +27,7 @@ class MyNode {
         Object o1 = new Object();
         Node n2 = new Node();
 
-        if (this.test(n, o1, n2)) {
+        if (this.test2(n, o1, n2)) {
             this.value = v2;
         } else {
             this.value = v2;
