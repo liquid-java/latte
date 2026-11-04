@@ -35,12 +35,17 @@ final class ReturnAliases {
     var methods =
         model.getElements(new TypeFilter<>(CtExecutable.class)).stream()
             .filter(e -> e instanceof CtMethod<?> || e instanceof CtConstructor<?>)
+            .filter(e -> !ExternalSpecifications.isLibrary(e))
             .toList();
     Map<CtExecutable<?>, Set<Path>> summaries = Map.of();
     for (; ; ) {
       var next = new HashMap<>(summaries);
       for (CtExecutable<?> method : methods) {
         var paths = new HashSet<>(summaries.getOrDefault(method, Set.of()));
+        if (ExternalSpecifications.isSpecification(method)) {
+          next.put(method, Set.of());
+          continue;
+        }
         for (var returned : method.getElements(new TypeFilter<>(CtReturn.class)))
           if (returned.getParent(CtExecutable.class) == method)
             paths.addAll(
@@ -103,7 +108,7 @@ final class ReturnAliases {
       return Set.copyOf(paths);
     }
     if (expression instanceof CtInvocation<?> call) {
-      var declaration = call.getExecutable().getDeclaration();
+      var declaration = ExternalSpecifications.resolve(call.getExecutable());
       if (declaration == null) return Set.of(new Path(EXTERNAL, List.of()));
       if (Annotations.permission(declaration) == Permission.FREE)
         return Set.of(new Path(FRESH, List.of()));

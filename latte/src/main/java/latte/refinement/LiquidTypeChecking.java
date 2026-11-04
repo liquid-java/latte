@@ -95,6 +95,7 @@ public final class LiquidTypeChecking {
       }
       model.getElements(new TypeFilter<>(CtExecutable.class)).stream()
           .filter(e -> e instanceof CtMethod<?> || e instanceof CtConstructor<?>)
+          .filter(e -> !ExternalSpecifications.isLibrary(e))
           .forEach(
               e -> {
                 try {
@@ -104,7 +105,28 @@ public final class LiquidTypeChecking {
                 }
               });
       for (var field : model.getElements(new TypeFilter<>(CtField.class)))
-        if (Annotations.has(field, "Refinement")) eligible(field, field);
+        if (Annotations.has(field, "Refinement")
+            && eligible(field, field)
+            && ExternalSpecifications.isSpecification(field)) {
+          var receiver = reference(field, "external-field:" + Annotations.key(field));
+          referenceTypes.put(receiver, ExternalSpecifications.owner(field.getDeclaringType()));
+          var state = TypingState.empty().bind("this", receiver);
+          var scope = new Scope(null, null, Map.of(), state);
+          var value = fresh("field", sort(field.getType()));
+          for (String text : Annotations.strings(field, "Refinement", "value"))
+            try {
+              prover.validate(
+                  predicate(
+                      text,
+                      Map.of("_", value, field.getSimpleName(), value),
+                      state,
+                      state,
+                      scope,
+                      field));
+            } catch (IllegalArgumentException | com.microsoft.z3.Z3Exception failure) {
+              report(Diagnostic.Kind.SYNTAX, failure.getMessage(), field);
+            }
+        }
     }
     return diagnostics.stream().distinct().toList();
   }
@@ -115,7 +137,7 @@ public final class LiquidTypeChecking {
     executable.getParameters().forEach(p -> declarations.put(p.getSimpleName(), p));
     CtType<?> type = executable.getParent(CtType.class);
     var fields =
-        type == null
+        type == null || ExternalSpecifications.isSpecification(executable)
             ? List.<CtField<?>>of()
             : executable instanceof CtConstructor<?> ? type.getFields() : visibleFields(type);
     fields.forEach(f -> declarations.put(f.getSimpleName(), f));
@@ -128,7 +150,7 @@ public final class LiquidTypeChecking {
     var scope = new Scope(executable, contract, Map.copyOf(declarations), null);
     var state = TypingState.empty();
     var receiver = reference(executable, "this:" + Annotations.key(executable));
-    if (type != null) referenceTypes.put(receiver, type.getQualifiedName());
+    if (type != null) referenceTypes.put(receiver, ExternalSpecifications.owner(type));
     state =
         state.bind("this", receiver).version(receiverName(receiver), fresh("state", Term.Sort.REF));
     state = state.assume(Term.binary("!=", receiver, Term.NULL));
@@ -226,6 +248,17 @@ public final class LiquidTypeChecking {
     }
     try {
       scope = new Scope(executable, contract, scope.declarations(), state);
+      if (ExternalSpecifications.isSpecification(executable)) {
+        var result =
+            ExternalSpecifications.constructor(executable)
+                ? receiver
+                : fresh("result", sort(((CtMethod<?>) executable).getType()));
+        for (String text : Annotations.strings(contract, "Refinement", "value"))
+          prover.validate(
+              predicate(
+                  text, Map.of("_", result, "return", result), state, state, scope, contract));
+        return;
+      }
       if (executable == contract && executable instanceof CtMethod<?> method)
         checkOverride(method, scope);
       var completion = statement(executable.getBody(), state, scope);
@@ -570,9 +603,10 @@ public final class LiquidTypeChecking {
           for (String identity : target.mutations()) modified.put(reference(call, identity), "*");
         continue;
       }
-      var declaration = call.getExecutable().getDeclaration();
+      var declaration = ExternalSpecifications.resolve(call.getExecutable());
       if (declaration == null) return havoc(state, scope);
       var effects = MutationEffects.on(declaration);
+      if (effects.globals()) return havoc(state, scope);
       String post =
           String.join(
               " ", Annotations.strings(Contracts.source(declaration), "StateRefinement", "to"));
@@ -581,6 +615,17 @@ public final class LiquidTypeChecking {
         if (receiver == null) return havoc(state, scope);
         modified.merge(receiver, post + modifiedFields(declaration), (a, b) -> a + " " + b);
       }
+      for (int i = 0; i < call.getArguments().size(); i++)
+        if (effects.parameter(i)) {
+          var argument = loopReference(call.getArguments().get(i), state);
+          if (argument == null) return havoc(state, scope);
+          modified.put(argument, "*");
+        }
+    }
+    for (CtConstructorCall<?> call : loop.getElements(new TypeFilter<>(CtConstructorCall.class))) {
+      if (call.getType().getQualifiedName().equals("java.lang.Object")) continue;
+      var effects = MutationEffects.on(ExternalSpecifications.resolve(call.getExecutable()));
+      if (effects.globals()) return havoc(state, scope);
       for (int i = 0; i < call.getArguments().size(); i++)
         if (effects.parameter(i)) {
           var argument = loopReference(call.getArguments().get(i), state);
@@ -923,7 +968,7 @@ public final class LiquidTypeChecking {
     if (expression instanceof CtThisAccess<?> || expression instanceof CtSuperAccess<?>)
       return new Evaluation(before, before.values().get("this"));
     if (expression instanceof CtFieldRead<?> field) {
-      var declaration = field.getVariable().getDeclaration();
+      var declaration = ExternalSpecifications.resolve(field.getVariable());
       if (field.getVariable().getSimpleName().equals("length")
           && field.getTarget() != null
           && field.getTarget().getType() != null
@@ -957,6 +1002,26 @@ public final class LiquidTypeChecking {
         fieldValue = fieldValue(declaration, receiver.value(), receiver.state());
       if (fieldValue == null) fieldValue = fresh("field", sort(field.getType()));
       var after = receiver.state().assume(bounds(fieldValue, field.getType()));
+      if (ExternalSpecifications.isSpecification(declaration)
+          && Annotations.has(declaration, "Refinement")
+          && eligible(declaration, field)) {
+        for (String text : Annotations.strings(declaration, "Refinement", "value"))
+          after =
+              after.assume(
+                  predicate(
+                      text,
+                      Map.of(
+                          "_",
+                          fieldValue,
+                          declaration.getSimpleName(),
+                          fieldValue,
+                          "this",
+                          receiver.value()),
+                      after,
+                      after,
+                      scope,
+                      declaration));
+      }
       if (sort(field.getType()) == Term.Sort.REF) {
         var referenceValue = value(field, field.getType());
         after =
@@ -1393,7 +1458,8 @@ public final class LiquidTypeChecking {
                   : state.values().getOrDefault(ClosureFacts.RECEIVER, Term.NULL);
           var actual = unbound ? values.subList(1, values.size()) : values;
           var nodes = unbound ? arguments.subList(1, arguments.size()) : arguments;
-          var declaration = Contracts.source(reference.getExecutable().getDeclaration());
+          var declaration =
+              Contracts.source(ExternalSpecifications.resolve(reference.getExecutable()));
           if (reference.getExecutable().isConstructor()) {
             bound = result;
             state =
@@ -1452,7 +1518,7 @@ public final class LiquidTypeChecking {
 
   private void methodReference(
       CtExecutableReferenceExpression<?, ?> reference, TypingState captured, Scope scope) {
-    var target = reference.getExecutable().getDeclaration();
+    var target = ExternalSpecifications.resolve(reference.getExecutable());
     var type = reference.getType() == null ? null : reference.getType().getTypeDeclaration();
     if (target == null || type == null) return;
     var functional =
@@ -1590,7 +1656,10 @@ public final class LiquidTypeChecking {
 
   private Location location(CtExpression<?> target, TypingState state, Scope scope) {
     if (target instanceof CtVariableAccess<?> variable) {
-      var declaration = variable.getVariable().getDeclaration();
+      var declaration =
+          target instanceof CtFieldAccess<?> field
+              ? ExternalSpecifications.resolve(field.getVariable())
+              : variable.getVariable().getDeclaration();
       String key =
           declaration == null
               ? variable.getVariable().getSimpleName()
@@ -1687,14 +1756,15 @@ public final class LiquidTypeChecking {
     if (local.isPresent() && !local.get().targets().isEmpty())
       return invokeClosure(
           local.get(), receiver.value(), argumentValues, arguments, call, state, scope);
-    var declaration = Contracts.source(reference.getDeclaration());
-    boolean constructor = call instanceof CtConstructorCall<?>;
+    var declaration = Contracts.source(ExternalSpecifications.resolve(reference));
+    boolean allocation = call instanceof CtConstructorCall<?>;
+    boolean constructor = reference.isConstructor();
     Term result =
-        constructor || sort(JavaTypes.result(call)) == Term.Sort.REF
+        allocation || sort(JavaTypes.result(call)) == Term.Sort.REF
             ? value(call, JavaTypes.result(call))
             : fresh("return", sort(JavaTypes.result(call)));
     state = state.assume(aliasMembership(result));
-    if (constructor) {
+    if (allocation) {
       receiver = new Evaluation(state, result);
       state = allocateObject(call, result, JavaTypes.result(call), state);
     }
@@ -1713,7 +1783,7 @@ public final class LiquidTypeChecking {
         possibleThrow(thrownType.getQualifiedName(), state, call);
       return new Evaluation(state.assume(bounds(result, JavaTypes.result(call))), result);
     }
-    var choices = Contracts.sources(reference.getDeclaration());
+    var choices = Contracts.sources(ExternalSpecifications.resolve(reference));
     if (choices.size() == 1) {
       var applied =
           applyContract(
@@ -1791,7 +1861,11 @@ public final class LiquidTypeChecking {
       CtExpression<?> call,
       TypingState state,
       Scope scope) {
-    for (var thrownType : declaration.getThrownTypes())
+    for (var thrownType :
+        ExternalSpecifications.binding(declaration)
+            .map(ExternalSpecifications.Binding::actual)
+            .orElse(declaration)
+            .getThrownTypes())
       possibleThrow(thrownType.getQualifiedName(), havoc(state, scope), call);
     if (mayThrow(declaration))
       possibleThrow("java.lang.RuntimeException", havoc(state, scope), call);
@@ -1817,7 +1891,7 @@ public final class LiquidTypeChecking {
       }
     }
     var clauses = Annotations.named(declaration, "StateRefinement");
-    if (constructor && clauses.isEmpty()) {
+    if (constructor && clauses.isEmpty() && !ExternalSpecifications.isSpecification(declaration)) {
       String type = referenceTypes.get(receiver.value());
       var states =
           contracts.states().getOrDefault(type, List.of()).stream()
@@ -1946,7 +2020,9 @@ public final class LiquidTypeChecking {
     }
     // An unmodeled element set can include any previously read shared object.
     if (affected.keySet().stream().anyMatch(Reference::summarizesElements))
-      return havocObjects(state);
+      // The callee's receiver postcondition already describes its final state, even when
+      // an unknown argument element could alias it. Other potentially aliased objects lose facts.
+      return havocObjects(state).version(receiverName(receiver), versionOf(receiver, state));
     for (var effect : affected.entrySet()) {
       var object = reference(call, effect.getKey());
       if (object.equals(receiver) || !state.versions().containsKey(receiverName(object))) continue;
@@ -2150,7 +2226,8 @@ public final class LiquidTypeChecking {
   }
 
   private static boolean mayThrow(CtExecutable<?> executable) {
-    if (executable.getBody() == null) return true;
+    if (executable.getBody() == null || ExternalSpecifications.isSpecification(executable))
+      return true;
     return executable.getBody().getElements(new TypeFilter<>(CtElement.class)).stream()
         .anyMatch(
             e ->

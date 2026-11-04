@@ -22,8 +22,17 @@ public final class Verification {
   }
 
   public static Result verify(String path) {
+    return verify(List.of(path), List.of());
+  }
+
+  /**
+   * Analyze application sources and external specifications together, with optional library JARs.
+   */
+  public static Result verify(List<String> paths, List<String> classpath) {
     var launcher = launcher();
-    launcher.addInputResource(path);
+    if (!classpath.isEmpty())
+      launcher.getEnvironment().setSourceClasspath(classpath.toArray(String[]::new));
+    paths.forEach(launcher::addInputResource);
     return verify(launcher);
   }
 

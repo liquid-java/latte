@@ -17,6 +17,8 @@ final class ConstantValues {
     if (!name.contains(".")) {
       CtType<?> owner = site instanceof CtType<?> type ? type : site.getParent(CtType.class);
       if (owner != null) {
+        if (latte.analysis.ExternalSpecifications.isSpecification(owner))
+          return resolve(latte.analysis.ExternalSpecifications.owner(owner) + "." + name, site);
         var field = owner.getField(name);
         if (field != null && field.isStatic() && field.isFinal())
           return expression(field.getDefaultExpression(), new HashSet<>());

@@ -128,10 +128,8 @@ class VerificationTest {
   }
 
   @Test
-  void externalRefinementsAreExplicitlyUnsupported() {
-    rejects(
-        "@ExternalRefinementsFor(\"java.util.List\") interface Sample {}",
-        Diagnostic.Kind.UNSUPPORTED);
+  void externalRefinementDeclarationsAreSupported() {
+    accepts("@ExternalRefinementsFor(\"java.util.List\") interface Sample {}");
   }
 
   @Test
