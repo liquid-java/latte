@@ -49,6 +49,24 @@ public final class MutationEffects {
 
   public static Effect on(CtExecutable<?> method) {
     if (method != null && method.getMetadata(KEY) instanceof Effect effect) return effect;
+    var external = ExternalSpecifications.binding(method);
+    if (external.isPresent()) {
+      var roots = new HashMap<Integer, Set<String>>();
+      var actual = external.get().actual();
+      boolean receiver = !(actual instanceof CtMethod<?> m) || !m.isStatic();
+      var clauses = Annotations.named(method, "StateRefinement");
+      if (receiver
+          && (clauses.isEmpty()
+              || clauses.stream()
+                  .anyMatch(
+                      clause ->
+                          Annotations.strings(clause.getValues().get("to")).stream()
+                              .anyMatch(text -> !text.isBlank())))) roots.put(-1, Set.of("*"));
+      for (int i = 0; i < method.getParameters().size(); i++)
+        if (!method.getParameters().get(i).getType().isPrimitive()) roots.put(i, Set.of("*"));
+      // Ownership and receiver transitions do not promise purity of application global storage.
+      return new Effect(roots, true);
+    }
     var roots = new HashMap<Integer, Set<String>>();
     roots.put(-1, Set.of("*"));
     if (method != null)
@@ -61,10 +79,15 @@ public final class MutationEffects {
     var methods =
         model.getElements(new TypeFilter<>(CtExecutable.class)).stream()
             .filter(e -> e instanceof CtMethod<?> || e instanceof CtConstructor<?>)
+            .filter(e -> !ExternalSpecifications.isLibrary(e))
             .toList();
+    methods.forEach(method -> method.putMetadata(KEY, null));
     Map<CtExecutable<?>, Effect> effects = new HashMap<>();
     for (CtExecutable<?> method : methods) {
-      var effect = method.getBody() == null ? on(method) : new Effect(Map.of(), false);
+      var effect =
+          method.getBody() == null || ExternalSpecifications.isSpecification(method)
+              ? on(method)
+              : new Effect(Map.of(), false);
       if (Annotations.named(method, "StateRefinement").stream()
           .anyMatch(
               a ->
@@ -75,7 +98,7 @@ public final class MutationEffects {
     for (; ; ) {
       var next = new HashMap<>(effects);
       for (CtExecutable<?> method : methods) {
-        if (method.getBody() == null) continue;
+        if (method.getBody() == null || ExternalSpecifications.isSpecification(method)) continue;
         var effect = effects.get(method);
         if (method instanceof CtConstructor<?> constructor)
           for (var field : constructor.getDeclaringType().getFields())
@@ -93,7 +116,7 @@ public final class MutationEffects {
         for (var write : elements(method, CtArrayWrite.class))
           effect = add(effect, aliases.origins(write.getTarget(), method), "[]");
         for (CtInvocation<?> call : elements(method, CtInvocation.class)) {
-          var declaration = call.getExecutable().getDeclaration();
+          var declaration = ExternalSpecifications.resolve(call.getExecutable());
           if (call.getExecutable().isConstructor()
               && call.getExecutable()
                   .getDeclaringType()
@@ -117,7 +140,7 @@ public final class MutationEffects {
               effect = add(effect, aliases.origins(argument, method), "*");
         }
         for (CtConstructorCall<?> call : elements(method, CtConstructorCall.class)) {
-          var declaration = call.getExecutable().getDeclaration();
+          var declaration = ExternalSpecifications.resolve(call.getExecutable());
           if (call.getType() != null
               && call.getType().getQualifiedName().equals("java.lang.Object")) continue;
           var callee =

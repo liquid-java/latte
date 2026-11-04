@@ -8,6 +8,8 @@ The pipeline checks refinements on parameters, locals, fields, assignments, call
 
 The follow-up implementation adds:
 
+- External library contracts shared by Latte and LiquidTypeChecking, including ownership, overloads, constructors, inherited members, fields, state transitions and reference predicates. A per-model registry validates Java signatures and publishes bindings on the Spoon AST. The CLI and embedding API accept library classpaths and multiple source inputs. See [external specifications](external-refinements.md).
+
 - IEEE 754 `float` and `double` arithmetic, rounding, signed zero, NaN, infinities, Java remainder, numeric promotion and narrowing conversions. Java integral operations retain finite-width overflow, signed division/remainder and masked shift counts.
 - Explicit normal, return, throw, break, continue and yield completions. Catches and finally blocks preserve the state at the relevant completion; finally can replace an earlier return. Resource closing, switch fall-through, switch expressions and common implicit exceptions are modeled. Deferred lambda bodies and method references are checked against their functional contracts.
 - Compositional return-alias summaries, including local assignments, conditional returns, delegated returns and recursion. A finite path domain widens recursive paths to reachable subgraphs. Allocation recency distinguishes the newest object at a site from older instances. The original `MyNodeComplete` regression now passes.
@@ -28,12 +30,12 @@ Abstract ghost transitions remain specifications. Their consistency, preconditio
 
 At this checkpoint:
 
-- **165 of 311** imported inputs match the upstream expected diagnostics exactly. The earlier checkpoint had 166; fresh-reference reasoning now intentionally differs on one more fixture, described below.
-- All 165 exact matches are required parameterized tests in `supported-inputs.txt`. `ReferenceFreshnessTest` separately requires the corrected diagnostics for the unchanged reference-comparison fixture.
-- **465 tests** cover these imported inputs, focused regressions, examples and the legacy Latte suite.
+- **180 of 311** imported inputs match the upstream expected diagnostics exactly. External specifications add 15 exact matches to the previous 165. Fresh-reference reasoning retains the intentional difference described below.
+- All 180 exact matches are required parameterized tests in `supported-inputs.txt`. `ReferenceFreshnessTest` separately requires the corrected diagnostics for the unchanged reference-comparison fixture.
+- **522 tests** cover these imported inputs, focused regressions, examples and the legacy Latte suite.
 - Every imported input completes without an uncaught analysis exception.
 - Every upstream negative input is rejected, except the two explicit semantic differences below.
-- The only `UNSUPPORTED` diagnostics in the complete imported audit concern external refinements, appearing in 60 inputs. This does not mean that all other inputs match upstream expectations.
+- External declarations are checked instead of rejected wholesale. Exact-match accounting still distinguishes ownership-policy differences, invalid specifications and precision limits.
 
 Run from `latte/`:
 
@@ -52,7 +54,7 @@ mvn exec:java -Dexec.mainClass=latte.compatibility.CompatibilityAudit \
 
 ## Compatibility differences and precision limits
 
-External refinement specifications remain intentionally deferred. Shared reference refinements are rejected under the requested ownership policy. Existing upstream examples with unannotated reference parameters, shared fields or externally managed objects need suitable ownership contracts before their object-state refinements can be retained.
+External refinement specifications now bind to actual Java library declarations for both passes; see [the contract guide](external-refinements.md). Invalid targets and member signatures are errors, including fixtures where upstream expected only a warning. Shared reference refinements are rejected under the requested ownership policy. Existing upstream examples with unannotated reference parameters, shared fields or externally managed objects need suitable ownership contracts before their object-state refinements can be retained.
 
 Some upstream expectations assume mathematical arithmetic for Java expressions. The new checker rejects those claims when overflow or IEEE rounding supplies a counterexample. Examples include `CorrectFunctionDeclarations`, `CorrectOperatorAssignments`, `CorrectSimpleIfElse` and `CorrectChars`. Predicate-only decimal expressions use mathematical reals; when combined with a floating Java value, they are converted to that floating sort.
 
@@ -65,7 +67,7 @@ These are named exceptions to the negative-input gate, not exceptions for entire
 
 `ErrorIfReferenceComparison.java` still reports its two feasible double-close errors (lines 30 and 39). Its third expected error, at line 21, assumes that a preexisting parameter can equal a newly allocated object. Java allocation freshness rules out that branch. The unchanged fixture is checked by a dedicated regression test and remains a mismatch in the upstream diagnostic audit.
 
-Reference-array examples are in `examples/refinements/ReferenceArrayAliases.java`. Known local elements remain refinable, including borrowed and unique objects. Arbitrary index expressions are summarized by Latte and constrained by symbolic select/store operations in LiquidTypeChecking; this can lose ownership precision. Unknown external elements and implicit rows of multidimensional allocations remain shared summaries, with distinct possible values on different reads. Mutations involving unknown element sets conservatively invalidate object state. Explicit nested array initializers retain their individual array identities. Library containers such as `ArrayList` still require external ownership and alias contracts; this array fix does not add those contracts.
+Reference-array examples are in `examples/refinements/ReferenceArrayAliases.java`. Known local elements remain refinable, including borrowed and unique objects. Arbitrary index expressions are summarized by Latte and constrained by symbolic select/store operations in LiquidTypeChecking; this can lose ownership precision. Unknown external elements and implicit rows of multidimensional allocations remain shared summaries, with distinct possible values on different reads. Mutations involving unknown element sets conservatively invalidate object state. Explicit nested array initializers retain their individual array identities. Library containers such as `ArrayList` can now have external ownership and state contracts. These do not infer arbitrary element ownership or aliases from a size specification.
 
 The analysis remains conservative. Recursive return paths widen after four field steps. Older objects at a repeated allocation site are summarized as shared, so refinements requiring their individual identities may be rejected. Loop inference uses a finite set of candidate bounds rather than arbitrary invariants. Exception and unknown-call effects can lose precision. Unspecified field updates are invalidated rather than inferred as exact method postconditions. Multiple inherited cases guarantee the facts common to the applicable alternatives. Solver timeouts are verification failures, never successful proofs.
 

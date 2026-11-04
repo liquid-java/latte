@@ -3,6 +3,7 @@ package latte.refinement;
 import java.util.*;
 import java.util.regex.Pattern;
 import latte.analysis.Annotations;
+import latte.analysis.ExternalSpecifications;
 import latte.api.Diagnostic;
 import spoon.reflect.CtModel;
 import spoon.reflect.declaration.*;
@@ -44,10 +45,21 @@ public record Contracts(
     var fields = new HashMap<String, CtField<?>>();
     var ancestors = new HashMap<String, List<String>>();
     var diagnostics = new ArrayList<Diagnostic>();
+    var external = ExternalSpecifications.on(model.getRootPackage());
+    external
+        .specifications()
+        .values()
+        .forEach(
+            specification ->
+                ancestors.put(
+                    specification.target().getQualifiedName(),
+                    hierarchy(specification.target(), new LinkedHashSet<>())));
     for (CtType<?> type : model.getElements(new TypeFilter<>(CtType.class))) {
-      ancestors.put(type.getQualifiedName(), hierarchy(type, new LinkedHashSet<>()));
+      String owner = ExternalSpecifications.owner(type);
+      if (!ExternalSpecifications.isSpecification(type))
+        ancestors.put(owner, hierarchy(type, new LinkedHashSet<>()));
       for (var field : type.getFields())
-        if (!field.isStatic()) {
+        if (!ExternalSpecifications.isStatic(field)) {
           String name = qualify(field, field.getSimpleName());
           fields.put(name, field);
           functions.put(
@@ -61,16 +73,16 @@ public record Contracts(
         if (names.size() != new HashSet<>(names).size())
           diagnostics.add(Diagnostic.at(Diagnostic.Kind.SYNTAX, "Duplicate state name", type));
         states.put(
-            type.getQualifiedName(),
+            owner,
             Annotations.named(type, "StateSet").stream()
                 .map(
                     a ->
                         Annotations.strings(a.getValues().get("value")).stream()
-                            .map(n -> type.getQualifiedName() + "#" + n)
+                            .map(n -> owner + "#" + n)
                             .toList())
                 .toList());
         for (String name : names) {
-          String qualified = type.getQualifiedName() + "#" + name;
+          String qualified = owner + "#" + name;
           functions.put(qualified, new Prover.Function(List.of(Term.Sort.REF), Term.Sort.BOOL));
           ghosts.add(qualified);
         }
@@ -89,10 +101,6 @@ public record Contracts(
             }
           }
       }
-      if (Annotations.has(element, "ExternalRefinementsFor"))
-        diagnostics.add(
-            Diagnostic.at(
-                Diagnostic.Kind.UNSUPPORTED, "External refinements are not implemented", element));
       for (String text : Annotations.strings(element, "RefinementAlias", "value")) {
         try {
           var match =
@@ -181,11 +189,16 @@ public record Contracts(
 
   public static String qualify(CtElement element, String name) {
     var type = element instanceof CtType<?> t ? t : element.getParent(CtType.class);
-    return type == null ? name : type.getQualifiedName() + "#" + name;
+    return type == null ? name : ExternalSpecifications.owner(type) + "#" + name;
   }
 
   public static List<CtExecutable<?>> sources(CtExecutable<?> executable) {
     if (executable == null) return List.of();
+    if (!annotated(executable)) {
+      var external = ExternalSpecifications.resolve(executable.getReference());
+      if (external != executable && ExternalSpecifications.isSpecification(external))
+        return List.of(external);
+    }
     if (!(executable instanceof CtMethod<?> method) || annotated(method))
       return List.of(executable);
     var inherited = inherited(method);
@@ -214,6 +227,7 @@ public record Contracts(
                         && !candidate.isPrivate()
                         && candidate.getParameters().size() == method.getParameters().size())
             .filter(candidate -> method.isOverriding(candidate))
+            .map(candidate -> ExternalSpecifications.resolve(candidate.getReference()))
             .filter(Contracts::annotated)
             .toList();
     if (!matches.isEmpty()) {
@@ -231,9 +245,10 @@ public record Contracts(
   }
 
   public static boolean annotated(CtExecutable<?> executable) {
-    return Annotations.has(executable, "Refinement")
-        || Annotations.has(executable, "StateRefinement")
-        || executable.getParameters().stream().anyMatch(p -> Annotations.has(p, "Refinement"));
+    return executable != null
+        && (Annotations.has(executable, "Refinement")
+            || Annotations.has(executable, "StateRefinement")
+            || executable.getParameters().stream().anyMatch(p -> Annotations.has(p, "Refinement")));
   }
 
   public static Term.Sort sort(String type) {

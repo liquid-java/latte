@@ -55,6 +55,8 @@ public final class LatteAnalysis {
 
   public List<Diagnostic> analyze(CtModel model) {
     diagnostics.clear();
+    var external = ExternalSpecifications.collect(model);
+    diagnostics.addAll(external.diagnostics());
     evaluations.clear();
     activeConstructors.clear();
     closures.clear();
@@ -81,8 +83,20 @@ public final class LatteAnalysis {
                     f -> f.getReference().getQualifiedName(),
                     Annotations::permission,
                     (a, b) -> a));
+    var declaredFields = new HashMap<>(fieldPermissions);
+    external
+        .specifications()
+        .forEach(
+            (owner, specification) ->
+                specification
+                    .fields()
+                    .forEach(
+                        (name, field) ->
+                            declaredFields.put(owner + "#" + name, Annotations.permission(field))));
+    fieldPermissions = Map.copyOf(declaredFields);
     model.getElements(new TypeFilter<>(CtExecutable.class)).stream()
         .filter(e -> e instanceof CtMethod<?> || e instanceof CtConstructor<?>)
+        .filter(e -> !ExternalSpecifications.isLibrary(e))
         .forEach(this::executable);
     model
         .getElements(new TypeFilter<>(CtField.class))
@@ -120,10 +134,12 @@ public final class LatteAnalysis {
       initial = after;
     }
     var after =
-        executable instanceof CtConstructor<?> constructor
-            ? constructorBody(
-                constructor, defaults(constructor.getDeclaringType(), receiver, initial), scope)
-            : statement(executable.getBody(), initial, scope).state();
+        ExternalSpecifications.isSpecification(executable)
+            ? initial
+            : executable instanceof CtConstructor<?> constructor
+                ? constructorBody(
+                    constructor, defaults(constructor.getDeclaringType(), receiver, initial), scope)
+                : statement(executable.getBody(), initial, scope).state();
     new LatteFacts(initial, after, receiver).attach(executable);
   }
 
@@ -187,7 +203,7 @@ public final class LatteAnalysis {
       if (!statements.isEmpty()
           && statements.get(0) instanceof CtInvocation<?> invocation
           && invocation.getExecutable().isConstructor()) {
-        var target = invocation.getExecutable().getDeclaration();
+        var target = ExternalSpecifications.resolve(invocation.getExecutable());
         delegated =
             target instanceof CtConstructor<?> other
                 && other.getDeclaringType().equals(constructor.getDeclaringType());
@@ -210,14 +226,16 @@ public final class LatteAnalysis {
   }
 
   private Evaluation construct(
-      CtConstructor<?> declaration,
+      CtExecutable<?> declaration,
       Reference receiver,
       List<CtExpression<?>> nodes,
       List<Reference> values,
       FlowState before,
       CtElement call) {
     var state = arguments(nodes, values, declaration, before, call);
-    if (declaration == null || declaration.getBody() == null) {
+    if (!(declaration instanceof CtConstructor<?> constructor)
+        || declaration.getBody() == null
+        || ExternalSpecifications.isSpecification(declaration)) {
       var roots = values.stream().reduce(receiver, Reference::join);
       return new Evaluation(state.havocHeap(roots, Annotations.key(call)), receiver);
     }
@@ -247,7 +265,7 @@ public final class LatteAnalysis {
       }
       state =
           constructorBody(
-              declaration, state, new Scope(declaration, receiver.objects().iterator().next()));
+              constructor, state, new Scope(declaration, receiver.objects().iterator().next()));
       var restored = new HashMap<>(bindings);
       var shadowed = new HashSet<String>();
       shadowed.add("this");
@@ -535,7 +553,7 @@ public final class LatteAnalysis {
             facts(field.getTarget())
                 .map(LatteFacts::value)
                 .orElse(Reference.object(scope.receiver()));
-        var declaration = field.getVariable().getDeclaration();
+        var declaration = ExternalSpecifications.resolve(field.getVariable());
         var expected = Annotations.permission(declaration);
         if (!receiver.scalar() && after.permission(receiver) == Permission.SHARED)
           expected = Permission.SHARED;
@@ -568,7 +586,7 @@ public final class LatteAnalysis {
         state = evaluated.state();
         arguments.add(evaluated.value());
       }
-      var declaration = call.getExecutable().getDeclaration();
+      var declaration = ExternalSpecifications.resolve(call.getExecutable());
       var value = Reference.object(allocation("new:", call));
       state = state.fresh(value, Permission.FREE);
       var allocatedType =
@@ -578,8 +596,8 @@ public final class LatteAnalysis {
       if (mayFinalize(allocatedType, true)) finalizableObjects.addAll(value.objects());
       var constructor = declaration instanceof CtConstructor<?> c ? c : null;
       if (constructor != null) state = defaults(constructor.getDeclaringType(), value, state);
-      state = releaseArguments(arguments, value, constructor, state, call, scope);
-      result = construct(constructor, value, call.getArguments(), arguments, state, call);
+      state = releaseArguments(arguments, value, declaration, state, call, scope);
+      result = construct(declaration, value, call.getArguments(), arguments, state, call);
     } else if (expression instanceof CtInvocation<?> call) {
       var receiver =
           call.getExecutable().isConstructor()
@@ -592,7 +610,7 @@ public final class LatteAnalysis {
         state = evaluated.state();
         arguments.add(evaluated.value());
       }
-      var declaration = call.getExecutable().getDeclaration();
+      var declaration = ExternalSpecifications.resolve(call.getExecutable());
       state = releaseArguments(arguments, receiver.value(), declaration, state, call, scope);
       var localClosure =
           call.getExecutable().isConstructor()
@@ -611,12 +629,7 @@ public final class LatteAnalysis {
                         .equals("java.lang.Object")
                 ? new Evaluation(state, receiver.value())
                 : construct(
-                    declaration instanceof CtConstructor<?> c ? c : null,
-                    receiver.value(),
-                    call.getArguments(),
-                    arguments,
-                    state,
-                    call);
+                    declaration, receiver.value(), call.getArguments(), arguments, state, call);
         remember(expression, new LatteFacts(before, result.state(), result.value()));
         return result;
       } else if (declaration == null) {
@@ -809,7 +822,7 @@ public final class LatteAnalysis {
       }
       var child = Reference.object(identity + "." + reference.getQualifiedName());
       if (mayFinalize(field.getType())) finalizableObjects.addAll(child.objects());
-      var permission = Annotations.permission(reference.getDeclaration());
+      var permission = Annotations.permission(ExternalSpecifications.resolve(reference));
       if (reference.isStatic() || state.permission(singleton) == Permission.SHARED)
         permission = Permission.SHARED;
       state =
@@ -886,7 +899,10 @@ public final class LatteAnalysis {
       }
       value = value.join(current);
     }
-    if (paths.isEmpty() && (declaration == null || declaration.getBody() == null)) {
+    if (paths.isEmpty()
+        && (declaration == null
+            || declaration.getBody() == null
+            || ExternalSpecifications.isSpecification(declaration))) {
       value = fresh.join(receiver);
       for (var argument : arguments) value = value.join(argument);
       state = state.allocate(fresh, permission);
@@ -1204,7 +1220,7 @@ public final class LatteAnalysis {
           }
         } else if (closure.expression()
             instanceof CtExecutableReferenceExpression<?, ?> reference) {
-          var declaration = reference.getExecutable().getDeclaration();
+          var declaration = ExternalSpecifications.resolve(reference.getExecutable());
           boolean unbound =
               reference.getTarget() instanceof CtTypeAccess<?>
                   && !reference.getExecutable().isStatic()
@@ -1227,7 +1243,7 @@ public final class LatteAnalysis {
             var constructor = declaration instanceof CtConstructor<?> c ? c : null;
             if (constructor != null)
               state = defaults(constructor.getDeclaringType(), allocated, state);
-            var constructed = construct(constructor, allocated, nodes, values, state, call);
+            var constructed = construct(declaration, allocated, nodes, values, state, call);
             state =
                 Annotations.permission(functional) == Permission.FREE
                     ? constructed.state()

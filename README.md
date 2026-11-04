@@ -2,7 +2,7 @@
 
 Latte now runs as an ownership and aliasing pass before an independently implemented refinement checker. Both passes use the same Spoon AST. The old mutable checker has been replaced; no LiquidJava verifier implementation was copied.
 
-The verifier now covers floating-point arithmetic, exception and switch flow, deferred bodies, recursive aliases, allocation recency, inherited contracts, field-backed state, arrays and loop/effect analysis. The imported suite has **165 exact matches out of 311 inputs**; this is not full LiquidJava compatibility. All 410 upstream Java fixtures are preserved. See [compatibility status](docs/compatibility.md) for the implemented behavior, policy differences and precision limits.
+The verifier now covers floating-point arithmetic, exception and switch flow, deferred bodies, recursive aliases, allocation recency, inherited contracts, field-backed state, arrays and loop/effect analysis. The imported suite has **180 exact matches out of 311 inputs**; this is not full LiquidJava compatibility. All 410 upstream Java fixtures are preserved. See [compatibility status](docs/compatibility.md) for the implemented behavior, policy differences and precision limits.
 
 ## Build and run
 
@@ -19,7 +19,7 @@ The first example succeeds. The second reports a state refinement failure and ex
 
 The small library jar is `target/latte-0.0.1-SNAPSHOT.jar`. The runnable `latte-cli.jar` also includes Spoon and Z3, including the native solver libraries supplied by `z3-turnkey`.
 
-`mvn test` runs 465 tests, including the focused tests, legacy Latte regressions and 165 promoted upstream regression inputs. A separate imported-fixture test enforces the intentional fresh-reference comparison difference. `mvn verify -Pcompatibility` also runs **every** imported input and writes `target/liquidjava-compatibility.json`. A successful build does not mean that all upstream expectations match.
+`mvn test` runs 522 tests, including the focused tests, legacy Latte regressions and 180 promoted upstream regression inputs. A separate imported-fixture test enforces the intentional fresh-reference comparison difference. `mvn verify -Pcompatibility` also runs **every** imported input and writes `target/liquidjava-compatibility.json`. A successful build does not mean that all upstream expectations match.
 
 ## Ownership policy
 
@@ -65,6 +65,10 @@ class Example {
 
 [Examples](examples/refinements) cover accepted local aliases, unique and borrowed references, rejected shared references, escapes, stale aliases, field-backed state, arrays, floating-point behavior, control flow and inherited/deferred contracts. Their expected diagnostic kinds and lines are checked by the test suite.
 
+## External Java libraries
+
+Use `@ExternalRefinementsFor` to provide ownership and refinement contracts for JDK or third-party library methods, constructors and fields. Both passes resolve the same contracts on the Spoon AST. See the [external contract guide](docs/external-refinements.md) and [checked examples](examples/refinements/ExternalLibraryContracts.java). Use `--classpath` for library JARs; multiple input paths are analyzed together.
+
 ## AST handoff and embedding
 
 ```java
@@ -100,7 +104,7 @@ The state stores, points-to sets, predicates and proof results are immutable Jav
 - `latte.api`: the two-pass pipeline, diagnostics and CLI.
 - `liquidjava.specification`: freshly defined annotation API with familiar LiquidJava syntax.
 
-External refinements are deliberately deferred. Recursive paths, older loop allocations, unknown calls and exceptions are conservatively approximated; loop inference supports a finite set of inductive bounds. Recursive constructor expansion requires a finite heap summary and currently reports `UNSUPPORTED`. Constructors without source bodies retain conservative effects. These approximations can reject valid programs. Unsupported constructs and solver timeouts are failures. The checker remains a prototype, and the complete compatibility report is the source of truth for port coverage.
+External library contracts are supported through `@ExternalRefinementsFor`; see [syntax, ownership rules and classpath usage](docs/external-refinements.md). Recursive paths, older loop allocations, unknown calls and exceptions are conservatively approximated; loop inference supports a finite set of inductive bounds. Recursive constructor expansion requires a finite heap summary and currently reports `UNSUPPORTED`. Constructors without source bodies retain conservative effects. These approximations can reject valid programs. Unsupported constructs and solver timeouts are failures. The checker remains a prototype, and the complete compatibility report is the source of truth for port coverage.
 
 Run `mvn spotless:apply` after editing Java. Formatting is checked by `mvn verify` and CI.
 
