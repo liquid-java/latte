@@ -1,0 +1,1185 @@
+{
+  "name": "javax.imageio.spi",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.imageio.spi.IIORegistry",
+      "kind": "class",
+      "parents": [
+        "javax.imageio.spi.ServiceRegistry"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/IIORegistry.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/IIORegistry.java",
+      "sourceSha256": "3f93086ef5a8503e027195812efdda6800e6dea28f7a81864da3230d64a7fddb",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getDefaultInstance()",
+          "result": "javax.imageio.spi.IIORegistry",
+          "declaredBy": "javax.imageio.spi.IIORegistry",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerApplicationClasspathSpis()",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.IIORegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.spi.IIOServiceProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.imageio.spi.RegisterableService"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/IIOServiceProvider.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/IIOServiceProvider.java",
+      "sourceSha256": "379c64358b316abfb7e546262e28b575ec8925a51a2378ca1f6543beb045561f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.IIOServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.IIOServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription(java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.IIOServiceProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVendorName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.IIOServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.IIOServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onDeregistration(javax.imageio.spi.ServiceRegistry,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.IIOServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onRegistration(javax.imageio.spi.ServiceRegistry,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.IIOServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "vendorName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.IIOServiceProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "version",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.IIOServiceProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.spi.ImageInputStreamSpi",
+      "kind": "class",
+      "parents": [
+        "javax.imageio.spi.IIOServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/ImageInputStreamSpi.java",
+      "sourceSha256": "7a37a67a717d6271aed9f10fe5b2440f5c06fd8ddc17887a512f876fe98f1ea3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageInputStreamSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageInputStreamSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canUseCacheFile()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageInputStreamSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createInputStreamInstance(java.lang.Object)",
+          "result": "javax.imageio.stream.ImageInputStream",
+          "declaredBy": "javax.imageio.spi.ImageInputStreamSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createInputStreamInstance(java.lang.Object,boolean,java.io.File)",
+          "result": "javax.imageio.stream.ImageInputStream",
+          "declaredBy": "javax.imageio.spi.ImageInputStreamSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInputClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.imageio.spi.ImageInputStreamSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "inputClass",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.imageio.spi.ImageInputStreamSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "needsCacheFile()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageInputStreamSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.spi.ImageOutputStreamSpi",
+      "kind": "class",
+      "parents": [
+        "javax.imageio.spi.IIOServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/ImageOutputStreamSpi.java",
+      "sourceSha256": "3c2b60e12f92b2bc27773c34ed081b29e5508c5af035ffa9863429811c8e149e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageOutputStreamSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageOutputStreamSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canUseCacheFile()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageOutputStreamSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createOutputStreamInstance(java.lang.Object)",
+          "result": "javax.imageio.stream.ImageOutputStream",
+          "declaredBy": "javax.imageio.spi.ImageOutputStreamSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createOutputStreamInstance(java.lang.Object,boolean,java.io.File)",
+          "result": "javax.imageio.stream.ImageOutputStream",
+          "declaredBy": "javax.imageio.spi.ImageOutputStreamSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.imageio.spi.ImageOutputStreamSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "needsCacheFile()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageOutputStreamSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "outputClass",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.imageio.spi.ImageOutputStreamSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.spi.ImageReaderSpi",
+      "kind": "class",
+      "parents": [
+        "javax.imageio.spi.ImageReaderWriterSpi"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/ImageReaderSpi.java",
+      "sourceSha256": "ab05cdd9d9b264332b47fd993d12e56952307b4eac8c44dc33568c608de94e7b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,java.lang.Class[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "STANDARD_INPUT_TYPE",
+          "result": "java.lang.Class[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canDecodeInput(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createReaderInstance()",
+          "result": "javax.imageio.ImageReader",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createReaderInstance(java.lang.Object)",
+          "result": "javax.imageio.ImageReader",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageWriterSpiNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInputTypes()",
+          "result": "java.lang.Class[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "inputTypes",
+          "result": "java.lang.Class[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isOwnReader(javax.imageio.ImageReader)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "writerSpiNames",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.spi.ImageReaderWriterSpi",
+      "kind": "class",
+      "parents": [
+        "javax.imageio.spi.IIOServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/ImageReaderWriterSpi.java",
+      "sourceSha256": "69a90685f49f12fd807563cc46c269c580a8727d8518999a801188f750785ea0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "MIMETypes",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "extraImageMetadataFormatClassNames",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "extraImageMetadataFormatNames",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "extraStreamMetadataFormatClassNames",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "extraStreamMetadataFormatNames",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getExtraImageMetadataFormatNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExtraStreamMetadataFormatNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileSuffixes()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormatNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageMetadataFormat(java.lang.String)",
+          "result": "javax.imageio.metadata.IIOMetadataFormat",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMIMETypes()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNativeImageMetadataFormatName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNativeStreamMetadataFormatName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPluginClassName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStreamMetadataFormat(java.lang.String)",
+          "result": "javax.imageio.metadata.IIOMetadataFormat",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isStandardImageMetadataFormatSupported()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isStandardStreamMetadataFormatSupported()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "names",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "nativeImageMetadataFormatClassName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "nativeImageMetadataFormatName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "nativeStreamMetadataFormatClassName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "nativeStreamMetadataFormatName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "pluginClassName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "suffixes",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "supportsStandardImageMetadataFormat",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "supportsStandardStreamMetadataFormat",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageReaderWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.spi.ImageTranscoderSpi",
+      "kind": "class",
+      "parents": [
+        "javax.imageio.spi.IIOServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/ImageTranscoderSpi.java",
+      "sourceSha256": "e6328db67b0ffbfc5c0549c94812e744a7cdc9740b6d4b0106591add5b3f4604",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageTranscoderSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageTranscoderSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createTranscoderInstance()",
+          "result": "javax.imageio.ImageTranscoder",
+          "declaredBy": "javax.imageio.spi.ImageTranscoderSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReaderServiceProviderName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.ImageTranscoderSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWriterServiceProviderName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.spi.ImageTranscoderSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.spi.ImageWriterSpi",
+      "kind": "class",
+      "parents": [
+        "javax.imageio.spi.ImageReaderWriterSpi"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/ImageWriterSpi.java",
+      "sourceSha256": "2aa5a606c8d090d992473257a84eb55c86cf2c178d204485757f34a174845ede",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,java.lang.Class[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "STANDARD_OUTPUT_TYPE",
+          "result": "java.lang.Class[]",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canEncodeImage(java.awt.image.RenderedImage)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canEncodeImage(javax.imageio.ImageTypeSpecifier)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createWriterInstance()",
+          "result": "javax.imageio.ImageWriter",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createWriterInstance(java.lang.Object)",
+          "result": "javax.imageio.ImageWriter",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageReaderSpiNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputTypes()",
+          "result": "java.lang.Class[]",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFormatLossless()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOwnWriter(javax.imageio.ImageWriter)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "outputTypes",
+          "result": "java.lang.Class[]",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "readerSpiNames",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.spi.ImageWriterSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.spi.RegisterableService",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/RegisterableService.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/RegisterableService.java",
+      "sourceSha256": "a336aa11fb1bc34f41f57310ee9265e6e006c6e5bff47aadd8b306f2858c7ff2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "onDeregistration(javax.imageio.spi.ServiceRegistry,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.RegisterableService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onRegistration(javax.imageio.spi.ServiceRegistry,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.RegisterableService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.spi.ServiceRegistry",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/ServiceRegistry.java",
+      "sourceSha256": "50b5936b4bf475fc4331cdf88db08116099b68347cace83257bac72df22e5a06",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Iterator)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "deregisterAll()",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "deregisterAll(java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "deregisterServiceProvider(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "deregisterServiceProvider(java.lang.Object,java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "finalize()",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCategories()",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServiceProviderByClass(java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServiceProviders(java.lang.Class,boolean)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServiceProviders(java.lang.Class,javax.imageio.spi.ServiceRegistry$Filter,boolean)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupProviders(java.lang.Class)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupProviders(java.lang.Class,java.lang.ClassLoader)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerServiceProvider(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerServiceProvider(java.lang.Object,java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerServiceProviders(java.util.Iterator)",
+          "result": "void",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOrdering(java.lang.Class,java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unsetOrdering(java.lang.Class,java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.spi.ServiceRegistry$Filter",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.Filter.html",
+      "sourceEntry": "java.desktop/javax/imageio/spi/ServiceRegistry.java",
+      "sourceSha256": "50b5936b4bf475fc4331cdf88db08116099b68347cace83257bac72df22e5a06",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "filter(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.spi.ServiceRegistry$Filter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

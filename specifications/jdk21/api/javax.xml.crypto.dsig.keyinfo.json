@@ -1,0 +1,513 @@
+{
+  "name": "javax.xml.crypto.dsig.keyinfo",
+  "module": "java.xml.crypto",
+  "types": [
+    {
+      "target": "javax.xml.crypto.dsig.keyinfo.KeyInfo",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.crypto.XMLStructure"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.java",
+      "sourceSha256": "92cda6e01bce063a80c6467d98752c26a774243f5da06f040f1c5c859403f1d9",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getContent()",
+          "result": "java.util.List",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "marshal(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.java",
+      "sourceSha256": "c8c959deee698a94787cdb10dd72fca458ec98f8972e5e44a5d6baacff9e6305",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance()",
+          "result": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMechanismType()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURIDereferencer()",
+          "result": "javax.xml.crypto.URIDereferencer",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFeatureSupported(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newKeyInfo(java.util.List)",
+          "result": "javax.xml.crypto.dsig.keyinfo.KeyInfo",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newKeyInfo(java.util.List,java.lang.String)",
+          "result": "javax.xml.crypto.dsig.keyinfo.KeyInfo",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newKeyName(java.lang.String)",
+          "result": "javax.xml.crypto.dsig.keyinfo.KeyName",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newKeyValue(java.security.PublicKey)",
+          "result": "javax.xml.crypto.dsig.keyinfo.KeyValue",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newPGPData(byte[])",
+          "result": "javax.xml.crypto.dsig.keyinfo.PGPData",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newPGPData(byte[],byte[],java.util.List)",
+          "result": "javax.xml.crypto.dsig.keyinfo.PGPData",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newPGPData(byte[],java.util.List)",
+          "result": "javax.xml.crypto.dsig.keyinfo.PGPData",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newRetrievalMethod(java.lang.String)",
+          "result": "javax.xml.crypto.dsig.keyinfo.RetrievalMethod",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newRetrievalMethod(java.lang.String,java.lang.String,java.util.List)",
+          "result": "javax.xml.crypto.dsig.keyinfo.RetrievalMethod",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newX509Data(java.util.List)",
+          "result": "javax.xml.crypto.dsig.keyinfo.X509Data",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newX509IssuerSerial(java.lang.String,java.math.BigInteger)",
+          "result": "javax.xml.crypto.dsig.keyinfo.X509IssuerSerial",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unmarshalKeyInfo(javax.xml.crypto.XMLStructure)",
+          "result": "javax.xml.crypto.dsig.keyinfo.KeyInfo",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyInfoFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.keyinfo.KeyName",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.crypto.XMLStructure"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyName.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyName.java",
+      "sourceSha256": "08c2b4c523f6961519d875ce57595b9163f00b1033ad70e6659f7ec54f02eb03",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyName",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.keyinfo.KeyValue",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.crypto.XMLStructure"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.java",
+      "sourceSha256": "fe7aeb8ee967ba795d543e3fbc3bb2ade5405c68a275bc3d8c925d5b30a5cfb8",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "DSA_TYPE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyValue",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EC_TYPE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyValue",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RSA_TYPE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyValue",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicKey()",
+          "result": "java.security.PublicKey",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.KeyValue",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.keyinfo.PGPData",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.crypto.XMLStructure"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.java",
+      "sourceSha256": "8f8c9fa70288084d48fc942eed5b23969869df7c729fc8347c42ab392586ac1c",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "TYPE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.PGPData",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getExternalElements()",
+          "result": "java.util.List",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.PGPData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeyId()",
+          "result": "byte[]",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.PGPData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeyPacket()",
+          "result": "byte[]",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.PGPData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.keyinfo.RetrievalMethod",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.crypto.URIReference",
+        "javax.xml.crypto.XMLStructure"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.java",
+      "sourceSha256": "9afcecd0eca38b75aafdb665f4d31de5f13d33b5c0dc6e9a1e4dd7ce3e816ee8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "dereference(javax.xml.crypto.XMLCryptoContext)",
+          "result": "javax.xml.crypto.Data",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.RetrievalMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransforms()",
+          "result": "java.util.List",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.RetrievalMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURI()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.RetrievalMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.keyinfo.X509Data",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.crypto.XMLStructure"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.java",
+      "sourceSha256": "f2ae2b03082bd661146532fa09db33f54b24db2ea3ebafec1870f7a98a813bbc",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "RAW_X509_CERTIFICATE_TYPE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.X509Data",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TYPE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.X509Data",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getContent()",
+          "result": "java.util.List",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.X509Data",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.keyinfo.X509IssuerSerial",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.crypto.XMLStructure"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.java",
+      "sourceSha256": "17c6024ca63a2146e9aa933364c892243a29ce6141400455b519649a1d97ecf3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getIssuerName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.X509IssuerSerial",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSerialNumber()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "javax.xml.crypto.dsig.keyinfo.X509IssuerSerial",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

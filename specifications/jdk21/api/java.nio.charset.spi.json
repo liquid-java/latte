@@ -1,0 +1,48 @@
+{
+  "name": "java.nio.charset.spi",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.nio.charset.spi.CharsetProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/spi/CharsetProvider.html",
+      "sourceEntry": "java.base/java/nio/charset/spi/CharsetProvider.java",
+      "sourceSha256": "b6ff8e8f3002c7269c069ca98688d40870f5de19d2123af418dacd686507d216",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.charset.spi.CharsetProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "charsetForName(java.lang.String)",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.spi.CharsetProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "charsets()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.nio.charset.spi.CharsetProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

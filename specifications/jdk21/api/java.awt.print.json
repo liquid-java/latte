@@ -1,0 +1,863 @@
+{
+  "name": "java.awt.print",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "java.awt.print.Book",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.print.Pageable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/print/Book.html",
+      "sourceEntry": "java.desktop/java/awt/print/Book.java",
+      "sourceSha256": "a0df34ab39aa24372df1f646d7ab6c1d33615e78affe719736a3903e4714cb47",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.print.Book",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "append(java.awt.print.Printable,java.awt.print.PageFormat)",
+          "result": "void",
+          "declaredBy": "java.awt.print.Book",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "append(java.awt.print.Printable,java.awt.print.PageFormat,int)",
+          "result": "void",
+          "declaredBy": "java.awt.print.Book",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumberOfPages()",
+          "result": "int",
+          "declaredBy": "java.awt.print.Book",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getPageFormat(int)",
+          "result": "java.awt.print.PageFormat",
+          "declaredBy": "java.awt.print.Book",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintable(int)",
+          "result": "java.awt.print.Printable",
+          "declaredBy": "java.awt.print.Book",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPage(int,java.awt.print.Printable,java.awt.print.PageFormat)",
+          "result": "void",
+          "declaredBy": "java.awt.print.Book",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.print.PageFormat",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/print/PageFormat.html",
+      "sourceEntry": "java.desktop/java/awt/print/PageFormat.java",
+      "sourceSha256": "96d46a580979fb70460b5bec8b2731e026e64021021882ae0c8ee470eff5e2fb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "LANDSCAPE",
+          "result": "int",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PORTRAIT",
+          "result": "int",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REVERSE_LANDSCAPE",
+          "result": "int",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHeight()",
+          "result": "double",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageableHeight()",
+          "result": "double",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageableWidth()",
+          "result": "double",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageableX()",
+          "result": "double",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageableY()",
+          "result": "double",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMatrix()",
+          "result": "double[]",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOrientation()",
+          "result": "int",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPaper()",
+          "result": "java.awt.print.Paper",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWidth()",
+          "result": "double",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOrientation(int)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPaper(java.awt.print.Paper)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.print.Pageable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/print/Pageable.html",
+      "sourceEntry": "java.desktop/java/awt/print/Pageable.java",
+      "sourceSha256": "3fd3c44680d2cf5e7b5bab9e50d68423466078a4b9b773a8be286b411d5f2543",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "UNKNOWN_NUMBER_OF_PAGES",
+          "result": "int",
+          "declaredBy": "java.awt.print.Pageable",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumberOfPages()",
+          "result": "int",
+          "declaredBy": "java.awt.print.Pageable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPageFormat(int)",
+          "result": "java.awt.print.PageFormat",
+          "declaredBy": "java.awt.print.Pageable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintable(int)",
+          "result": "java.awt.print.Printable",
+          "declaredBy": "java.awt.print.Pageable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.print.Paper",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/print/Paper.html",
+      "sourceEntry": "java.desktop/java/awt/print/Paper.java",
+      "sourceSha256": "1daa228d593727e98b670fec0a7903ff4e69a30823960427d475fa7119d47fa6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.print.Paper",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.print.Paper",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHeight()",
+          "result": "double",
+          "declaredBy": "java.awt.print.Paper",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageableHeight()",
+          "result": "double",
+          "declaredBy": "java.awt.print.Paper",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageableWidth()",
+          "result": "double",
+          "declaredBy": "java.awt.print.Paper",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageableX()",
+          "result": "double",
+          "declaredBy": "java.awt.print.Paper",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageableY()",
+          "result": "double",
+          "declaredBy": "java.awt.print.Paper",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWidth()",
+          "result": "double",
+          "declaredBy": "java.awt.print.Paper",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setImageableArea(double,double,double,double)",
+          "result": "void",
+          "declaredBy": "java.awt.print.Paper",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSize(double,double)",
+          "result": "void",
+          "declaredBy": "java.awt.print.Paper",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.print.Printable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/print/Printable.html",
+      "sourceEntry": "java.desktop/java/awt/print/Printable.java",
+      "sourceSha256": "e9c607823bf1f47c4401d090290fa5e2cb0af5f2ea28bd4f14c704aa936981f0",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NO_SUCH_PAGE",
+          "result": "int",
+          "declaredBy": "java.awt.print.Printable",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PAGE_EXISTS",
+          "result": "int",
+          "declaredBy": "java.awt.print.Printable",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "print(java.awt.Graphics,java.awt.print.PageFormat,int)",
+          "result": "int",
+          "declaredBy": "java.awt.print.Printable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.print.PrinterAbortException",
+      "kind": "class",
+      "parents": [
+        "java.awt.print.PrinterException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/print/PrinterAbortException.html",
+      "sourceEntry": "java.desktop/java/awt/print/PrinterAbortException.java",
+      "sourceSha256": "700817937422f7c8df8a1f222e3b4fc518e3571a1d12cf2038c9753a6cab50bf",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterAbortException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterAbortException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.print.PrinterException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/print/PrinterException.html",
+      "sourceEntry": "java.desktop/java/awt/print/PrinterException.java",
+      "sourceSha256": "a505ca1075ac6879d946078090b6c59768b164697d78dfe0be9bb0ab5056b73d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.print.PrinterGraphics",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/print/PrinterGraphics.html",
+      "sourceEntry": "java.desktop/java/awt/print/PrinterGraphics.java",
+      "sourceSha256": "bd92a3e50fa5584c779f53268f1682fd404f8d01b4541451f7bee4cdee8c8072",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getPrinterJob()",
+          "result": "java.awt.print.PrinterJob",
+          "declaredBy": "java.awt.print.PrinterGraphics",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.print.PrinterIOException",
+      "kind": "class",
+      "parents": [
+        "java.awt.print.PrinterException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/print/PrinterIOException.html",
+      "sourceEntry": "java.desktop/java/awt/print/PrinterIOException.java",
+      "sourceSha256": "b6bc78e070d86ddc42946371632c9fc2da625f70091f8ae023f842923c9feab9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.IOException)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterIOException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "java.awt.print.PrinterIOException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIOException()",
+          "result": "java.io.IOException",
+          "declaredBy": "java.awt.print.PrinterIOException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.print.PrinterJob",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/print/PrinterJob.html",
+      "sourceEntry": "java.desktop/java/awt/print/PrinterJob.java",
+      "sourceSha256": "2e40997a145be04e6cb784d1ccbf2f9d53d34be753f1dfd1589ebd100b27c0a8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "cancel()",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "defaultPage()",
+          "result": "java.awt.print.PageFormat",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "defaultPage(java.awt.print.PageFormat)",
+          "result": "java.awt.print.PageFormat",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCopies()",
+          "result": "int",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJobName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPageFormat(javax.print.attribute.PrintRequestAttributeSet)",
+          "result": "java.awt.print.PageFormat",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintService()",
+          "result": "javax.print.PrintService",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrinterJob()",
+          "result": "java.awt.print.PrinterJob",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUserName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCancelled()",
+          "result": "boolean",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupPrintServices()",
+          "result": "javax.print.PrintService[]",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupStreamPrintServices(java.lang.String)",
+          "result": "javax.print.StreamPrintServiceFactory[]",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "pageDialog(java.awt.print.PageFormat)",
+          "result": "java.awt.print.PageFormat",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "pageDialog(javax.print.attribute.PrintRequestAttributeSet)",
+          "result": "java.awt.print.PageFormat",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "print()",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "print(javax.print.attribute.PrintRequestAttributeSet)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printDialog()",
+          "result": "boolean",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printDialog(javax.print.attribute.PrintRequestAttributeSet)",
+          "result": "boolean",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCopies(int)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setJobName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPageable(java.awt.print.Pageable)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPrintService(javax.print.PrintService)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPrintable(java.awt.print.Printable)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPrintable(java.awt.print.Printable,java.awt.print.PageFormat)",
+          "result": "void",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validatePage(java.awt.print.PageFormat)",
+          "result": "java.awt.print.PageFormat",
+          "declaredBy": "java.awt.print.PrinterJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

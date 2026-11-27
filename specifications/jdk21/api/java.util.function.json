@@ -1,0 +1,1230 @@
+{
+  "name": "java.util.function",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.util.function.BiConsumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/BiConsumer.html",
+      "sourceEntry": "java.base/java/util/function/BiConsumer.java",
+      "sourceSha256": "a6aeb7e3fc47903199ffd5db79d99ece11402a7d8d5336105370ae5171df1e9d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.function.BiConsumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "andThen(java.util.function.BiConsumer)",
+          "result": "java.util.function.BiConsumer",
+          "declaredBy": "java.util.function.BiConsumer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.BiFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/BiFunction.html",
+      "sourceEntry": "java.base/java/util/function/BiFunction.java",
+      "sourceSha256": "4cc8916f3529f2d308cd9d04a2debc9bfa823d71f7249ba5ef98d25b8d3f47b2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "andThen(java.util.function.Function)",
+          "result": "java.util.function.BiFunction",
+          "declaredBy": "java.util.function.BiFunction",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "apply(java.lang.Object,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.function.BiFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.BiPredicate",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/BiPredicate.html",
+      "sourceEntry": "java.base/java/util/function/BiPredicate.java",
+      "sourceSha256": "f2d7329fcc478ad54fc6c67053a83e7ea2f1e58a370b92004d849a9d7c5579cb",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "and(java.util.function.BiPredicate)",
+          "result": "java.util.function.BiPredicate",
+          "declaredBy": "java.util.function.BiPredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negate()",
+          "result": "java.util.function.BiPredicate",
+          "declaredBy": "java.util.function.BiPredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "or(java.util.function.BiPredicate)",
+          "result": "java.util.function.BiPredicate",
+          "declaredBy": "java.util.function.BiPredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "test(java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.function.BiPredicate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.BinaryOperator",
+      "kind": "interface",
+      "parents": [
+        "java.util.function.BiFunction"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/BinaryOperator.html",
+      "sourceEntry": "java.base/java/util/function/BinaryOperator.java",
+      "sourceSha256": "a4f475ce561ff65f32b05990b0476ba1db22bc207ece9c7c910d9113acffb4ec",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "maxBy(java.util.Comparator)",
+          "result": "java.util.function.BinaryOperator",
+          "declaredBy": "java.util.function.BinaryOperator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minBy(java.util.Comparator)",
+          "result": "java.util.function.BinaryOperator",
+          "declaredBy": "java.util.function.BinaryOperator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.BooleanSupplier",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/BooleanSupplier.html",
+      "sourceEntry": "java.base/java/util/function/BooleanSupplier.java",
+      "sourceSha256": "b5e9d2eb5da8cc6d756404ee6d9c9c028d8f2b99661a1468c52edc6105ed3d4a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAsBoolean()",
+          "result": "boolean",
+          "declaredBy": "java.util.function.BooleanSupplier",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.Consumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html",
+      "sourceEntry": "java.base/java/util/function/Consumer.java",
+      "sourceSha256": "78ad089a7f066f07815a9eaa4aed9214c24891633e9e3f66c266cf477a0d8377",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.function.Consumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "andThen(java.util.function.Consumer)",
+          "result": "java.util.function.Consumer",
+          "declaredBy": "java.util.function.Consumer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.DoubleBinaryOperator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/DoubleBinaryOperator.html",
+      "sourceEntry": "java.base/java/util/function/DoubleBinaryOperator.java",
+      "sourceSha256": "0ec647e453d7790ea3273b20dfd0bd8a7e7d5b5604fefcd101535f6a08fe82a1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsDouble(double,double)",
+          "result": "double",
+          "declaredBy": "java.util.function.DoubleBinaryOperator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.DoubleConsumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/DoubleConsumer.html",
+      "sourceEntry": "java.base/java/util/function/DoubleConsumer.java",
+      "sourceSha256": "77c42e3127e3b0e0d74a137bc01abc74b2ea0944b2a30d523a25d3d3a8d81b85",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(double)",
+          "result": "void",
+          "declaredBy": "java.util.function.DoubleConsumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "andThen(java.util.function.DoubleConsumer)",
+          "result": "java.util.function.DoubleConsumer",
+          "declaredBy": "java.util.function.DoubleConsumer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.DoubleFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/DoubleFunction.html",
+      "sourceEntry": "java.base/java/util/function/DoubleFunction.java",
+      "sourceSha256": "0388cc22d638aa2a4726464ae7d5cf967bc3d77cd1150fd65afd2bdce484c03d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "apply(double)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.function.DoubleFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.DoublePredicate",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/DoublePredicate.html",
+      "sourceEntry": "java.base/java/util/function/DoublePredicate.java",
+      "sourceSha256": "95e3f377a97c451300e644953da3a32808d9cdae6f40f82fb7ed3d132d3035e5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "and(java.util.function.DoublePredicate)",
+          "result": "java.util.function.DoublePredicate",
+          "declaredBy": "java.util.function.DoublePredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negate()",
+          "result": "java.util.function.DoublePredicate",
+          "declaredBy": "java.util.function.DoublePredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "or(java.util.function.DoublePredicate)",
+          "result": "java.util.function.DoublePredicate",
+          "declaredBy": "java.util.function.DoublePredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "test(double)",
+          "result": "boolean",
+          "declaredBy": "java.util.function.DoublePredicate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.DoubleSupplier",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/DoubleSupplier.html",
+      "sourceEntry": "java.base/java/util/function/DoubleSupplier.java",
+      "sourceSha256": "16890367737b9de76f34ded1ab6698860da72df64c9ef3cc4d426a2d4df7b288",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAsDouble()",
+          "result": "double",
+          "declaredBy": "java.util.function.DoubleSupplier",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.DoubleToIntFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/DoubleToIntFunction.html",
+      "sourceEntry": "java.base/java/util/function/DoubleToIntFunction.java",
+      "sourceSha256": "938dfc9dcdb256be304a74e7e941f559e6dd68ddc4ce376fce029915419632f1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsInt(double)",
+          "result": "int",
+          "declaredBy": "java.util.function.DoubleToIntFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.DoubleToLongFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/DoubleToLongFunction.html",
+      "sourceEntry": "java.base/java/util/function/DoubleToLongFunction.java",
+      "sourceSha256": "ccf4da172771d607430533b2b5c1b60caafa79e6e3ee8d36ff6c88face14c270",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsLong(double)",
+          "result": "long",
+          "declaredBy": "java.util.function.DoubleToLongFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.DoubleUnaryOperator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/DoubleUnaryOperator.html",
+      "sourceEntry": "java.base/java/util/function/DoubleUnaryOperator.java",
+      "sourceSha256": "ca09aa89b468a5c4ee61d83e6b68b0e872521dfbba5a0a4551b55bca565e37d3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "andThen(java.util.function.DoubleUnaryOperator)",
+          "result": "java.util.function.DoubleUnaryOperator",
+          "declaredBy": "java.util.function.DoubleUnaryOperator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "applyAsDouble(double)",
+          "result": "double",
+          "declaredBy": "java.util.function.DoubleUnaryOperator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compose(java.util.function.DoubleUnaryOperator)",
+          "result": "java.util.function.DoubleUnaryOperator",
+          "declaredBy": "java.util.function.DoubleUnaryOperator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "identity()",
+          "result": "java.util.function.DoubleUnaryOperator",
+          "declaredBy": "java.util.function.DoubleUnaryOperator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.Function",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Function.html",
+      "sourceEntry": "java.base/java/util/function/Function.java",
+      "sourceSha256": "e571de19d29164230773b9d1e532179c0dd5b41250e461999c0fe34d529b99e6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "andThen(java.util.function.Function)",
+          "result": "java.util.function.Function",
+          "declaredBy": "java.util.function.Function",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "apply(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.function.Function",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compose(java.util.function.Function)",
+          "result": "java.util.function.Function",
+          "declaredBy": "java.util.function.Function",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "identity()",
+          "result": "java.util.function.Function",
+          "declaredBy": "java.util.function.Function",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.IntBinaryOperator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/IntBinaryOperator.html",
+      "sourceEntry": "java.base/java/util/function/IntBinaryOperator.java",
+      "sourceSha256": "2d5bfab3de207112ea2e2d6ac3f51a6fd2a9aa8bf56a27274aa50b90b14bb575",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsInt(int,int)",
+          "result": "int",
+          "declaredBy": "java.util.function.IntBinaryOperator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.IntConsumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/IntConsumer.html",
+      "sourceEntry": "java.base/java/util/function/IntConsumer.java",
+      "sourceSha256": "7d463566778f2338a2e66d008acce2907e526713c7b19b6e1c6310d3cbe1b433",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(int)",
+          "result": "void",
+          "declaredBy": "java.util.function.IntConsumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "andThen(java.util.function.IntConsumer)",
+          "result": "java.util.function.IntConsumer",
+          "declaredBy": "java.util.function.IntConsumer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.IntFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/IntFunction.html",
+      "sourceEntry": "java.base/java/util/function/IntFunction.java",
+      "sourceSha256": "4d2e85c28eef9014d5342434074dae1b68406ac9d2c7f3c92b144f9cc60b9b0b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "apply(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.function.IntFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.IntPredicate",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/IntPredicate.html",
+      "sourceEntry": "java.base/java/util/function/IntPredicate.java",
+      "sourceSha256": "cbcf51f3ddb3bbcf9366b569cf0deb79b67e9c8dcbe2712e9b638d5a3e17ba5f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "and(java.util.function.IntPredicate)",
+          "result": "java.util.function.IntPredicate",
+          "declaredBy": "java.util.function.IntPredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negate()",
+          "result": "java.util.function.IntPredicate",
+          "declaredBy": "java.util.function.IntPredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "or(java.util.function.IntPredicate)",
+          "result": "java.util.function.IntPredicate",
+          "declaredBy": "java.util.function.IntPredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "test(int)",
+          "result": "boolean",
+          "declaredBy": "java.util.function.IntPredicate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.IntSupplier",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/IntSupplier.html",
+      "sourceEntry": "java.base/java/util/function/IntSupplier.java",
+      "sourceSha256": "0fca715b63eb03b7488a0b5f3ac4c84270558c4468494eac6f5381abf3e7d186",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAsInt()",
+          "result": "int",
+          "declaredBy": "java.util.function.IntSupplier",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.IntToDoubleFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/IntToDoubleFunction.html",
+      "sourceEntry": "java.base/java/util/function/IntToDoubleFunction.java",
+      "sourceSha256": "e968563552ffe844992056f147fbbdc3cf60e97a1d9ae1f8eb558bca4f7cf42b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsDouble(int)",
+          "result": "double",
+          "declaredBy": "java.util.function.IntToDoubleFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.IntToLongFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/IntToLongFunction.html",
+      "sourceEntry": "java.base/java/util/function/IntToLongFunction.java",
+      "sourceSha256": "2d454498e92edcdb875e8ae56e3e6149d3019b451310428c163fa6c93ff6ebf7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsLong(int)",
+          "result": "long",
+          "declaredBy": "java.util.function.IntToLongFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.IntUnaryOperator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/IntUnaryOperator.html",
+      "sourceEntry": "java.base/java/util/function/IntUnaryOperator.java",
+      "sourceSha256": "407c35090820829e94da0ad53642ac2f9bdf672e5fee60f803c9c02cb4a66e05",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "andThen(java.util.function.IntUnaryOperator)",
+          "result": "java.util.function.IntUnaryOperator",
+          "declaredBy": "java.util.function.IntUnaryOperator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "applyAsInt(int)",
+          "result": "int",
+          "declaredBy": "java.util.function.IntUnaryOperator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compose(java.util.function.IntUnaryOperator)",
+          "result": "java.util.function.IntUnaryOperator",
+          "declaredBy": "java.util.function.IntUnaryOperator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "identity()",
+          "result": "java.util.function.IntUnaryOperator",
+          "declaredBy": "java.util.function.IntUnaryOperator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.LongBinaryOperator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/LongBinaryOperator.html",
+      "sourceEntry": "java.base/java/util/function/LongBinaryOperator.java",
+      "sourceSha256": "8fc71b4515a859fd1a0e1895df3f623d74f52e1039815047ee1709b6263dcb44",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsLong(long,long)",
+          "result": "long",
+          "declaredBy": "java.util.function.LongBinaryOperator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.LongConsumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/LongConsumer.html",
+      "sourceEntry": "java.base/java/util/function/LongConsumer.java",
+      "sourceSha256": "dce550710f1ad99466f720061511d50018eaab0cf7c587816931195c7a0a9a7c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(long)",
+          "result": "void",
+          "declaredBy": "java.util.function.LongConsumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "andThen(java.util.function.LongConsumer)",
+          "result": "java.util.function.LongConsumer",
+          "declaredBy": "java.util.function.LongConsumer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.LongFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/LongFunction.html",
+      "sourceEntry": "java.base/java/util/function/LongFunction.java",
+      "sourceSha256": "40a2f4fed5360350ef7b1965d49224d807c9add4ac17d92321aba4435019e5c5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "apply(long)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.function.LongFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.LongPredicate",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/LongPredicate.html",
+      "sourceEntry": "java.base/java/util/function/LongPredicate.java",
+      "sourceSha256": "aa3ffa1da1609247fda8ca24651e528a7d5717485234f4389f38a309dd17c4c7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "and(java.util.function.LongPredicate)",
+          "result": "java.util.function.LongPredicate",
+          "declaredBy": "java.util.function.LongPredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negate()",
+          "result": "java.util.function.LongPredicate",
+          "declaredBy": "java.util.function.LongPredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "or(java.util.function.LongPredicate)",
+          "result": "java.util.function.LongPredicate",
+          "declaredBy": "java.util.function.LongPredicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "test(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.function.LongPredicate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.LongSupplier",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/LongSupplier.html",
+      "sourceEntry": "java.base/java/util/function/LongSupplier.java",
+      "sourceSha256": "6002f516f751f76973f82f1dd935c64148da7ae98b6ecfcf4232eebb0b875397",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAsLong()",
+          "result": "long",
+          "declaredBy": "java.util.function.LongSupplier",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.LongToDoubleFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/LongToDoubleFunction.html",
+      "sourceEntry": "java.base/java/util/function/LongToDoubleFunction.java",
+      "sourceSha256": "a496a5618f15303f7bd0bd1629895dbb63667c36fa8a865390a14385cd1f7791",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsDouble(long)",
+          "result": "double",
+          "declaredBy": "java.util.function.LongToDoubleFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.LongToIntFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/LongToIntFunction.html",
+      "sourceEntry": "java.base/java/util/function/LongToIntFunction.java",
+      "sourceSha256": "3d288ccaa2b76a784346bf4ea10023526a7559bfa3165b8812083991c13814f7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsInt(long)",
+          "result": "int",
+          "declaredBy": "java.util.function.LongToIntFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.LongUnaryOperator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/LongUnaryOperator.html",
+      "sourceEntry": "java.base/java/util/function/LongUnaryOperator.java",
+      "sourceSha256": "2bbd2806740461d140fc9af45d12c2f9f18c87286943fca87567caa86495f2b6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "andThen(java.util.function.LongUnaryOperator)",
+          "result": "java.util.function.LongUnaryOperator",
+          "declaredBy": "java.util.function.LongUnaryOperator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "applyAsLong(long)",
+          "result": "long",
+          "declaredBy": "java.util.function.LongUnaryOperator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compose(java.util.function.LongUnaryOperator)",
+          "result": "java.util.function.LongUnaryOperator",
+          "declaredBy": "java.util.function.LongUnaryOperator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "identity()",
+          "result": "java.util.function.LongUnaryOperator",
+          "declaredBy": "java.util.function.LongUnaryOperator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.ObjDoubleConsumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/ObjDoubleConsumer.html",
+      "sourceEntry": "java.base/java/util/function/ObjDoubleConsumer.java",
+      "sourceSha256": "544bb0fbaa621f044200a81c128a799ae41bbc03e5669672714d7cf9ace0bff4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(java.lang.Object,double)",
+          "result": "void",
+          "declaredBy": "java.util.function.ObjDoubleConsumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.ObjIntConsumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/ObjIntConsumer.html",
+      "sourceEntry": "java.base/java/util/function/ObjIntConsumer.java",
+      "sourceSha256": "387e38e6400fb8fc76e64688359ef42992c0aac196eb998bf5369dea017255e8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "java.util.function.ObjIntConsumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.ObjLongConsumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/ObjLongConsumer.html",
+      "sourceEntry": "java.base/java/util/function/ObjLongConsumer.java",
+      "sourceSha256": "63c2d24794da33a8834c7fda233da8044e8eb12433f407036c7ca091fcc0758d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(java.lang.Object,long)",
+          "result": "void",
+          "declaredBy": "java.util.function.ObjLongConsumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.Predicate",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Predicate.html",
+      "sourceEntry": "java.base/java/util/function/Predicate.java",
+      "sourceSha256": "a5f4ddfaa690778a992661d9546b85b87290a7135e1feac1be45aced1beb1970",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "and(java.util.function.Predicate)",
+          "result": "java.util.function.Predicate",
+          "declaredBy": "java.util.function.Predicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEqual(java.lang.Object)",
+          "result": "java.util.function.Predicate",
+          "declaredBy": "java.util.function.Predicate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negate()",
+          "result": "java.util.function.Predicate",
+          "declaredBy": "java.util.function.Predicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "not(java.util.function.Predicate)",
+          "result": "java.util.function.Predicate",
+          "declaredBy": "java.util.function.Predicate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "or(java.util.function.Predicate)",
+          "result": "java.util.function.Predicate",
+          "declaredBy": "java.util.function.Predicate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "test(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.function.Predicate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.Supplier",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Supplier.html",
+      "sourceEntry": "java.base/java/util/function/Supplier.java",
+      "sourceSha256": "171d5ee2ab1288ee3d90379e0be7bd54f1cbae8669a8de9d2b730f67204da3a4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.function.Supplier",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.ToDoubleBiFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/ToDoubleBiFunction.html",
+      "sourceEntry": "java.base/java/util/function/ToDoubleBiFunction.java",
+      "sourceSha256": "4323d35d9e2a693e732c553a590a1e4d9b03f58e3473be909368eaa9992cf3d7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsDouble(java.lang.Object,java.lang.Object)",
+          "result": "double",
+          "declaredBy": "java.util.function.ToDoubleBiFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.ToDoubleFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/ToDoubleFunction.html",
+      "sourceEntry": "java.base/java/util/function/ToDoubleFunction.java",
+      "sourceSha256": "f749ae8b4b0cb370f785430a0c19be8cef78bb4cb13cca2d020fef8628eb2bb0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsDouble(java.lang.Object)",
+          "result": "double",
+          "declaredBy": "java.util.function.ToDoubleFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.ToIntBiFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/ToIntBiFunction.html",
+      "sourceEntry": "java.base/java/util/function/ToIntBiFunction.java",
+      "sourceSha256": "0d48eadeba6f062b1b70142b3dc99f783a959154fee1c2a9913542f5aa251d4b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsInt(java.lang.Object,java.lang.Object)",
+          "result": "int",
+          "declaredBy": "java.util.function.ToIntBiFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.ToIntFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/ToIntFunction.html",
+      "sourceEntry": "java.base/java/util/function/ToIntFunction.java",
+      "sourceSha256": "12c3e49fc4a611de2c385a81e62cf95054ad0e5e9566511b661680ea3db88f64",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsInt(java.lang.Object)",
+          "result": "int",
+          "declaredBy": "java.util.function.ToIntFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.ToLongBiFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/ToLongBiFunction.html",
+      "sourceEntry": "java.base/java/util/function/ToLongBiFunction.java",
+      "sourceSha256": "8b86956cd3d9029f34e3337bfc10d719a88e8c51d2de8981cee8d291d2f2e1cd",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsLong(java.lang.Object,java.lang.Object)",
+          "result": "long",
+          "declaredBy": "java.util.function.ToLongBiFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.ToLongFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/ToLongFunction.html",
+      "sourceEntry": "java.base/java/util/function/ToLongFunction.java",
+      "sourceSha256": "ff0e767ba23360196f186f633fc3519a8f7296a8310087446872a1f557a1e864",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyAsLong(java.lang.Object)",
+          "result": "long",
+          "declaredBy": "java.util.function.ToLongFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.function.UnaryOperator",
+      "kind": "interface",
+      "parents": [
+        "java.util.function.Function"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/UnaryOperator.html",
+      "sourceEntry": "java.base/java/util/function/UnaryOperator.java",
+      "sourceSha256": "9f399c093fa3aff83456d7b2653ac91e0b49e84c7e5e33f8b70be3296a236f84",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "identity()",
+          "result": "java.util.function.UnaryOperator",
+          "declaredBy": "java.util.function.UnaryOperator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -603,6 +603,16 @@ public final class LiquidTypeChecking {
           for (String identity : target.mutations()) modified.put(reference(call, identity), "*");
         continue;
       }
+      var viewOperation = ViewFacts.operation(call);
+      if (viewOperation.isPresent()) {
+        if (Set.of(
+                ViewFacts.Operation.SIZE,
+                ViewFacts.Operation.EMPTY,
+                ViewFacts.Operation.GET,
+                ViewFacts.Operation.SUBVIEW)
+            .contains(viewOperation.get())) continue;
+        return havoc(state, scope);
+      }
       var declaration = ExternalSpecifications.resolve(call.getExecutable());
       if (declaration == null) return havoc(state, scope);
       var effects = MutationEffects.on(declaration);
@@ -648,7 +658,10 @@ public final class LiquidTypeChecking {
       if (!change.getValue().equals("*") && !change.getValue().isBlank())
         state = state.assume(frame(change.getKey(), change.getValue(), state, old));
     }
-    return havocFields(state, scope);
+    return loop.getElements(new TypeFilter<>(CtFieldWrite.class)).stream()
+            .anyMatch(write -> write.getVariable().isStatic())
+        ? havocFields(state, scope)
+        : state;
   }
 
   private Term loopReference(CtExpression<?> expression, TypingState state) {
@@ -1752,6 +1765,8 @@ public final class LiquidTypeChecking {
         && !reference.isConstructor()
         && target != null
         && !(target instanceof CtTypeAccess<?>)) state = nonnull(receiver.value(), state, call);
+    if (call instanceof CtInvocation<?> invocation && ViewFacts.operation(invocation).isPresent())
+      return viewCall(invocation, receiver.value(), argumentValues, state, scope);
     var local = closureInvocation(call);
     if (local.isPresent() && !local.get().targets().isEmpty())
       return invokeClosure(
@@ -1861,14 +1876,24 @@ public final class LiquidTypeChecking {
       CtExpression<?> call,
       TypingState state,
       Scope scope) {
+    var exceptional =
+        ExternalSummaries.effects(declaration).isPresent()
+            ? explicitEffects(
+                declaration,
+                arguments,
+                argumentValues,
+                target,
+                receiver.value(),
+                state,
+                false,
+                call)
+            : havoc(state, scope);
     for (var thrownType :
         ExternalSpecifications.binding(declaration)
             .map(ExternalSpecifications.Binding::actual)
             .orElse(declaration)
-            .getThrownTypes())
-      possibleThrow(thrownType.getQualifiedName(), havoc(state, scope), call);
-    if (mayThrow(declaration))
-      possibleThrow("java.lang.RuntimeException", havoc(state, scope), call);
+            .getThrownTypes()) possibleThrow(thrownType.getQualifiedName(), exceptional, call);
+    if (mayThrow(declaration)) possibleThrow("java.lang.RuntimeException", exceptional, call);
     for (int i = 0; i < Math.min(argumentValues.size(), declaration.getParameters().size()); i++)
       argumentValues.set(
           i, convert(argumentValues.get(i), declaration.getParameters().get(i).getType()));
@@ -1978,7 +2003,11 @@ public final class LiquidTypeChecking {
             || MutationEffects.on(declaration).globals())) {
       state = advance(receiver.value(), state);
     }
-    if (mayMutate(declaration)) {
+    if (ExternalSummaries.effects(declaration).isPresent()) {
+      state =
+          explicitEffects(
+              declaration, arguments, argumentValues, target, receiver.value(), state, true, call);
+    } else if (mayMutate(declaration)) {
       var effects = MutationEffects.on(declaration);
       var roots = new ArrayList<Map.Entry<CtExpression<?>, Term>>();
       for (int i = 0; i < arguments.size(); i++)
@@ -1989,16 +2018,263 @@ public final class LiquidTypeChecking {
       state = havocReachable(call, roots, receiver.value(), state);
     }
     // An ordinary method can write fields even when its contract only describes its result.
-    if (mayMutate(declaration)) {
+    if (mayMutate(declaration) && ExternalSummaries.effects(declaration).isEmpty()) {
       state = havocFields(state, scope);
     }
     state = registerObject(result, JavaTypes.result(call), state);
+    var view = ViewFacts.on(call);
+    if (view.isPresent()) {
+      state = allocateObject(call, result, JavaTypes.result(call), state);
+      var summary = view.get().specification();
+      var backing =
+          summary.backing() < 0 ? receiver.value() : argumentValues.get(summary.backing());
+      state =
+          createView(
+              call,
+              result,
+              backing,
+              argumentValues.get(summary.from()),
+              argumentValues.get(summary.toExclusive()),
+              state);
+    }
     bindings.put("_", result);
     for (String text : Annotations.strings(declaration, "Refinement", "value"))
       if (sort(JavaTypes.result(call)) != Term.Sort.REF
-          || Annotations.permission(declaration).refinable())
+          || Annotations.permission(declaration).refinable()
+          || ExternalSummaries.view(declaration).isPresent()
+              && facts(call).map(LatteFacts::refinable).orElse(false))
         state = state.assume(predicate(text, bindings, state, state, scope, declaration));
     return new Evaluation(state.assume(bounds(result, JavaTypes.result(call))), result);
+  }
+
+  private TypingState explicitEffects(
+      CtExecutable<?> declaration,
+      List<CtExpression<?>> arguments,
+      List<Term> values,
+      CtExpression<?> target,
+      Term receiver,
+      TypingState state,
+      boolean receiverHandled,
+      CtElement call) {
+    var effects = MutationEffects.on(declaration);
+    var affected = new HashMap<String, Term>();
+    for (var entry : effects.roots().entrySet()) {
+      int index = entry.getKey();
+      var node = index < 0 ? target : arguments.get(index);
+      var value = index < 0 ? receiver : values.get(index);
+      var ownership = facts(node);
+      if (ownership.isEmpty()) {
+        if (!(index < 0 && receiverHandled)) state = advance(value, state);
+        continue;
+      }
+      for (String identity : ownership.get().value().objects()) {
+        var ids =
+            entry.getValue().contains("*")
+                ? ownership.get().after().reachable(Reference.object(identity))
+                : Set.of(identity);
+        for (String id : ids)
+          affected.merge(id, Term.equal(value, reference(call, identity)), Term::or);
+      }
+    }
+    for (var entry : affected.entrySet()) {
+      var value = reference(call, entry.getKey());
+      if (receiverHandled && value.equals(receiver)) continue;
+      var guard =
+          receiverHandled
+              ? Term.and(entry.getValue(), Term.binary("!=", value, receiver))
+              : entry.getValue();
+      var next = new Term.Choice(guard, fresh("state", Term.Sort.REF), versionOf(value, state));
+      state = state.version(receiverName(value), next);
+    }
+    return state;
+  }
+
+  private Term listSize(Term list, TypingState state, CtElement site) {
+    var view = ListViewState.on(list, state);
+    if (view.isPresent()) return view.get().length();
+    var type = referenceTypes.get(list);
+    if (type == null) return null;
+    var specifications = ExternalSpecifications.on(site).specifications();
+    for (var owner :
+        ExternalSpecifications.lineage(site.getFactory().Type().createReference(type))) {
+      var specification = specifications.get(owner.getQualifiedName());
+      if (specification == null || !specification.methods().containsKey("size()")) continue;
+      var observer = specification.methods().get("size()").contract();
+      for (String text : Annotations.strings(observer, "Refinement", "value")) {
+        var projection = resultProjection(PredicateParser.parse(text));
+        if (projection != null && !names(projection).contains("_"))
+          return predicates.resolve(projection, Map.of("this", list), state, state, observer, 0);
+      }
+    }
+    return null;
+  }
+
+  /**
+   * Only an unconditional result equality defines a size projection; guards/disjunctions do not.
+   */
+  private Term resultProjection(Term predicate) {
+    if (!(predicate instanceof Term.Binary binary)) return null;
+    if (binary.operator().equals("&&")) {
+      var left = resultProjection(binary.left());
+      return left != null ? left : resultProjection(binary.right());
+    }
+    if (!binary.operator().equals("==")) return null;
+    if (binary.left() instanceof Term.Name name && name.value().equals("_")) return binary.right();
+    if (binary.right() instanceof Term.Name name && name.value().equals("_")) return binary.left();
+    return null;
+  }
+
+  private Term validView(Term view, TypingState state, Set<Term> visited) {
+    Term valid = Term.TRUE;
+    while (ListViewState.on(view, state).isPresent()) {
+      if (!visited.add(view)) return Term.FALSE;
+      var relation = ListViewState.on(view, state).orElseThrow();
+      valid =
+          Term.and(
+              valid, Term.equal(relation.expectedVersion(), versionOf(relation.backing(), state)));
+      view = relation.backing();
+    }
+    return valid;
+  }
+
+  private TypingState createView(
+      CtElement call, Term view, Term backing, Term from, Term to, TypingState state) {
+    if (ListViewState.on(backing, state).isPresent())
+      obligation(state, validView(backing, state, new HashSet<>()), call, Diagnostic.Kind.STATE);
+    var range = Term.and(Term.binary(">=", from, Term.integer(0)), Term.binary(">=", to, from));
+    var size = listSize(backing, state, call);
+    if (size != null) range = Term.and(range, Term.binary("<=", to, size));
+    // ReturnsView is a normal-return relationship; ordinary parameter refinements specify
+    // a non-throwing call domain. Invalid ranges may throw without producing a view.
+    possibleThrow("java.lang.IndexOutOfBoundsException", state.assume(Term.not(range)), call);
+    state =
+        state
+            .assume(range)
+            .assume(Term.binary("!=", view, Term.NULL))
+            .assume(Term.binary("!=", view, backing));
+    return new ListViewState(backing, from, Term.binary("-", to, from), versionOf(backing, state))
+        .store(view, state);
+  }
+
+  private Term viewRoot(Term view, TypingState state) {
+    var seen = new HashSet<Term>();
+    while (ListViewState.on(view, state).isPresent() && seen.add(view))
+      view = ListViewState.on(view, state).orElseThrow().backing();
+    return view;
+  }
+
+  private Evaluation viewCall(
+      CtInvocation<?> call, Term receiver, List<Term> arguments, TypingState state, Scope scope) {
+    if (receiver instanceof Term.Choice choice) {
+      var yes = viewCall(call, choice.yes(), arguments, state.assume(choice.condition()), scope);
+      var no =
+          viewCall(call, choice.no(), arguments, state.assume(Term.not(choice.condition())), scope);
+      return new Evaluation(
+          TypingState.join(choice.condition(), yes.state(), no.state()),
+          new Term.Choice(choice.condition(), yes.value(), no.value()));
+    }
+    if (possibleAliases.containsKey(receiver)) {
+      var outcomes = new ArrayList<TypingState>();
+      var result = fresh("viewResult", sort(JavaTypes.result(call)));
+      for (var alias : possibleAliases.get(receiver)) {
+        var path =
+            viewCall(call, alias, arguments, state.assume(Term.equal(receiver, alias)), scope);
+        outcomes.add(path.state().assume(Term.equal(result, path.value())));
+      }
+      return new Evaluation(mergeStates(outcomes), result);
+    }
+    var relation = ListViewState.on(receiver, state);
+    var operation = ViewFacts.operation(call).orElseThrow();
+    var result = value(call, JavaTypes.result(call));
+    if (!facts(call.getTarget()).map(LatteFacts::refinable).orElse(false)) {
+      report(
+          Diagnostic.Kind.SHARED_REFINEMENT, "A shared view cannot carry state refinements", call);
+      return new Evaluation(havoc(state, scope), result);
+    }
+    if (relation.isEmpty()
+        || !obligation(
+            state, validView(receiver, state, new HashSet<>()), call, Diagnostic.Kind.STATE)) {
+      if (relation.isEmpty())
+        report(Diagnostic.Kind.STATE, "View backing relationship is unavailable", call);
+      return new Evaluation(havoc(state, scope), result);
+    }
+    var size = relation.get().length();
+    if (operation == ViewFacts.Operation.SIZE) return new Evaluation(state, size);
+    if (operation == ViewFacts.Operation.EMPTY)
+      return new Evaluation(state, Term.equal(size, Term.integer(0)));
+    if (operation == ViewFacts.Operation.SUBVIEW)
+      return new Evaluation(
+          createView(call, result, receiver, arguments.get(0), arguments.get(1), state), result);
+    if (Set.of(
+            ViewFacts.Operation.GET,
+            ViewFacts.Operation.SET,
+            ViewFacts.Operation.REMOVE,
+            ViewFacts.Operation.INSERT)
+        .contains(operation)) {
+      var index = arguments.getFirst();
+      var valid =
+          Term.and(
+              Term.binary(">=", index, Term.integer(0)),
+              Term.binary(operation == ViewFacts.Operation.INSERT ? "<=" : "<", index, size));
+      obligation(state, valid, call, Diagnostic.Kind.REFINEMENT);
+      state = state.assume(valid);
+    }
+    if (operation == ViewFacts.Operation.GET) return new Evaluation(state, result);
+    Term delta =
+        switch (operation) {
+          case ADD, INSERT -> Term.integer(1);
+          case REMOVE -> Term.integer(-1);
+          case CLEAR -> new Term.Unary("-", size);
+          default -> Term.integer(0);
+        };
+    var ancestors = new ArrayList<Term>();
+    var root = receiver;
+    while (ListViewState.on(root, state).isPresent() && !ancestors.contains(root)) {
+      ancestors.add(root);
+      root = ListViewState.on(root, state).orElseThrow().backing();
+    }
+    var old = state;
+    var rootSize = listSize(root, old, call);
+    state = advance(root, state);
+    if (rootSize != null)
+      state =
+          state.assume(Term.equal(listSize(root, state, call), Term.binary("+", rootSize, delta)));
+    if (operation == ViewFacts.Operation.SET) {
+      var selectedRoot = root;
+      var related =
+          ListViewState.identities(old).stream()
+              .filter(view -> viewRoot(view, old).equals(selectedRoot))
+              .toList();
+      for (var view : related) state = advance(view, state);
+      for (var view : related) {
+        var previous = ListViewState.on(view, old).orElseThrow();
+        var expected =
+            new Term.Choice(
+                validView(view, old, new HashSet<>()),
+                versionOf(previous.backing(), state),
+                previous.expectedVersion());
+        state =
+            new ListViewState(previous.backing(), previous.from(), previous.length(), expected)
+                .store(view, state);
+      }
+      return new Evaluation(state, result);
+    }
+    // Mutations through a view update it and its ancestors. Sibling/descendant views keep
+    // their old expected versions and are conservatively invalidated.
+    for (int i = ancestors.size() - 1; i >= 0; i--) {
+      var view = ancestors.get(i);
+      var previous = ListViewState.on(view, old).orElseThrow();
+      state = advance(view, state);
+      state =
+          new ListViewState(
+                  previous.backing(),
+                  previous.from(),
+                  Term.binary("+", previous.length(), delta),
+                  versionOf(previous.backing(), state))
+              .store(view, state);
+    }
+    if (operation == ViewFacts.Operation.ADD) result = Term.TRUE;
+    return new Evaluation(state, result);
   }
 
   private TypingState havocReachable(

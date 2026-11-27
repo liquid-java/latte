@@ -1,0 +1,1598 @@
+{
+  "name": "org.ietf.jgss",
+  "module": "java.security.jgss",
+  "types": [
+    {
+      "target": "org.ietf.jgss.ChannelBinding",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html",
+      "sourceEntry": "java.security.jgss/org/ietf/jgss/ChannelBinding.java",
+      "sourceSha256": "d147c4f9491e9225af81e18efad26fe7b55be38f2d786db2b2e7eba5304527e8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.ChannelBinding",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.InetAddress,java.net.InetAddress,byte[])",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.ChannelBinding",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.ChannelBinding",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAcceptorAddress()",
+          "result": "java.net.InetAddress",
+          "declaredBy": "org.ietf.jgss.ChannelBinding",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getApplicationData()",
+          "result": "byte[]",
+          "declaredBy": "org.ietf.jgss.ChannelBinding",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInitiatorAddress()",
+          "result": "java.net.InetAddress",
+          "declaredBy": "org.ietf.jgss.ChannelBinding",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.ChannelBinding",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.ietf.jgss.GSSContext",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+      "sourceEntry": "java.security.jgss/org/ietf/jgss/GSSContext.java",
+      "sourceSha256": "0d2c7d25798a8a8bdb89ad6b3118a54e3bd991a5131e602fd55a3f90e3c7032f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "DEFAULT_LIFETIME",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INDEFINITE_LIFETIME",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "acceptSecContext(byte[],int,int)",
+          "result": "byte[]",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acceptSecContext(java.io.InputStream,java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dispose()",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "export()",
+          "result": "byte[]",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAnonymityState()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConfState()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCredDelegState()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDelegCred()",
+          "result": "org.ietf.jgss.GSSCredential",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIntegState()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLifetime()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMIC(byte[],int,int,org.ietf.jgss.MessageProp)",
+          "result": "byte[]",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMIC(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMech()",
+          "result": "org.ietf.jgss.Oid",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMutualAuthState()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReplayDetState()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSequenceDetState()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSrcName()",
+          "result": "org.ietf.jgss.GSSName",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTargName()",
+          "result": "org.ietf.jgss.GSSName",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWrapSizeLimit(int,boolean,int)",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initSecContext(byte[],int,int)",
+          "result": "byte[]",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initSecContext(java.io.InputStream,java.io.OutputStream)",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEstablished()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInitiator()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isProtReady()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isTransferable()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestAnonymity(boolean)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestConf(boolean)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestCredDeleg(boolean)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestInteg(boolean)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestLifetime(int)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestMutualAuth(boolean)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestReplayDet(boolean)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestSequenceDet(boolean)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setChannelBinding(org.ietf.jgss.ChannelBinding)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unwrap(byte[],int,int,org.ietf.jgss.MessageProp)",
+          "result": "byte[]",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unwrap(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verifyMIC(byte[],int,int,byte[],int,int,org.ietf.jgss.MessageProp)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verifyMIC(java.io.InputStream,java.io.InputStream,org.ietf.jgss.MessageProp)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(byte[],int,int,org.ietf.jgss.MessageProp)",
+          "result": "byte[]",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.ietf.jgss.GSSCredential",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html",
+      "sourceEntry": "java.security.jgss/org/ietf/jgss/GSSCredential.java",
+      "sourceSha256": "4571a8aac7baa07198ad7aab7ea5a844b9a005c6de1d9033df024b048f8cb29f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ACCEPT_ONLY",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT_LIFETIME",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INDEFINITE_LIFETIME",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INITIATE_AND_ACCEPT",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INITIATE_ONLY",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "add(org.ietf.jgss.GSSName,int,int,org.ietf.jgss.Oid,int)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dispose()",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMechs()",
+          "result": "org.ietf.jgss.Oid[]",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "org.ietf.jgss.GSSName",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName(org.ietf.jgss.Oid)",
+          "result": "org.ietf.jgss.GSSName",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRemainingAcceptLifetime(org.ietf.jgss.Oid)",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRemainingInitLifetime(org.ietf.jgss.Oid)",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRemainingLifetime()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUsage()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUsage(org.ietf.jgss.Oid)",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSCredential",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.ietf.jgss.GSSException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/org/ietf/jgss/GSSException.html",
+      "sourceEntry": "java.security.jgss/org/ietf/jgss/GSSException.java",
+      "sourceSha256": "f2168ea9cd89e8cfdba287fba1ee4b2f5da659814562c6b31ac7d72b5b6af077",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "BAD_BINDINGS",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BAD_MECH",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BAD_MIC",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BAD_NAME",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BAD_NAMETYPE",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BAD_QOP",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BAD_STATUS",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CONTEXT_EXPIRED",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CREDENTIALS_EXPIRED",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFECTIVE_CREDENTIAL",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFECTIVE_TOKEN",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DUPLICATE_ELEMENT",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DUPLICATE_TOKEN",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FAILURE",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GAP_TOKEN",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NAME_NOT_MN",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NO_CONTEXT",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NO_CRED",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OLD_TOKEN",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNAUTHORIZED",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNAVAILABLE",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNSEQ_TOKEN",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getMajor()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMajorString()",
+          "result": "java.lang.String",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinor()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinorString()",
+          "result": "java.lang.String",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMinor(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "org.ietf.jgss.GSSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.ietf.jgss.GSSManager",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html",
+      "sourceEntry": "java.security.jgss/org/ietf/jgss/GSSManager.java",
+      "sourceSha256": "e94fc365fea0c65828084afdfb32d873199433e36fa7cad7156756382ce5d4e4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addProviderAtEnd(java.security.Provider,org.ietf.jgss.Oid)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addProviderAtFront(java.security.Provider,org.ietf.jgss.Oid)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createContext(byte[])",
+          "result": "org.ietf.jgss.GSSContext",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createContext(org.ietf.jgss.GSSCredential)",
+          "result": "org.ietf.jgss.GSSContext",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createContext(org.ietf.jgss.GSSName,org.ietf.jgss.Oid,org.ietf.jgss.GSSCredential,int)",
+          "result": "org.ietf.jgss.GSSContext",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createCredential(int)",
+          "result": "org.ietf.jgss.GSSCredential",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createCredential(org.ietf.jgss.GSSName,int,org.ietf.jgss.Oid,int)",
+          "result": "org.ietf.jgss.GSSCredential",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createCredential(org.ietf.jgss.GSSName,int,org.ietf.jgss.Oid[],int)",
+          "result": "org.ietf.jgss.GSSCredential",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createName(byte[],org.ietf.jgss.Oid)",
+          "result": "org.ietf.jgss.GSSName",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createName(byte[],org.ietf.jgss.Oid,org.ietf.jgss.Oid)",
+          "result": "org.ietf.jgss.GSSName",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createName(java.lang.String,org.ietf.jgss.Oid)",
+          "result": "org.ietf.jgss.GSSName",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createName(java.lang.String,org.ietf.jgss.Oid,org.ietf.jgss.Oid)",
+          "result": "org.ietf.jgss.GSSName",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance()",
+          "result": "org.ietf.jgss.GSSManager",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMechs()",
+          "result": "org.ietf.jgss.Oid[]",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMechsForName(org.ietf.jgss.Oid)",
+          "result": "org.ietf.jgss.Oid[]",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamesForMech(org.ietf.jgss.Oid)",
+          "result": "org.ietf.jgss.Oid[]",
+          "declaredBy": "org.ietf.jgss.GSSManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.ietf.jgss.GSSName",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html",
+      "sourceEntry": "java.security.jgss/org/ietf/jgss/GSSName.java",
+      "sourceSha256": "29b603e6e9b24a094816f5727a5486d5898c005a187daa59bac7b9e1915c5ec4",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NT_ANONYMOUS",
+          "result": "org.ietf.jgss.Oid",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NT_EXPORT_NAME",
+          "result": "org.ietf.jgss.Oid",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NT_HOSTBASED_SERVICE",
+          "result": "org.ietf.jgss.Oid",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NT_MACHINE_UID_NAME",
+          "result": "org.ietf.jgss.Oid",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NT_STRING_UID_NAME",
+          "result": "org.ietf.jgss.Oid",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NT_USER_NAME",
+          "result": "org.ietf.jgss.Oid",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canonicalize(org.ietf.jgss.Oid)",
+          "result": "org.ietf.jgss.GSSName",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(org.ietf.jgss.GSSName)",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "export()",
+          "result": "byte[]",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStringNameType()",
+          "result": "org.ietf.jgss.Oid",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAnonymous()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isMN()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "org.ietf.jgss.GSSName",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.ietf.jgss.MessageProp",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html",
+      "sourceEntry": "java.security.jgss/org/ietf/jgss/MessageProp.java",
+      "sourceSha256": "797b2120134f7a86d098fde06eef0cf79067c7ee064c34eb3dc64915e4743061",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(boolean)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,boolean)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinorStatus()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinorString()",
+          "result": "java.lang.String",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrivacy()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQOP()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDuplicateToken()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isGapToken()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOldToken()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUnseqToken()",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPrivacy(boolean)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setQOP(int)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSupplementaryStates(boolean,boolean,boolean,boolean,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.MessageProp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.ietf.jgss.Oid",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/org/ietf/jgss/Oid.html",
+      "sourceEntry": "java.security.jgss/org/ietf/jgss/Oid.java",
+      "sourceSha256": "48c8a4c8cec647f9c5999f4fa9c7d699e2e890f49068b8333bb7d93f2c958e02",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.Oid",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.Oid",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.ietf.jgss.Oid",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containedIn(org.ietf.jgss.Oid[])",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.Oid",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "org.ietf.jgss.Oid",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDER()",
+          "result": "byte[]",
+          "declaredBy": "org.ietf.jgss.Oid",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "org.ietf.jgss.Oid",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "org.ietf.jgss.Oid",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

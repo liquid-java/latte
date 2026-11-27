@@ -1,0 +1,368 @@
+{
+  "name": "org.w3c.dom.ranges",
+  "module": "java.xml",
+  "types": [
+    {
+      "target": "org.w3c.dom.ranges.DocumentRange",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ranges/DocumentRange.java",
+      "sourceSha256": "25d2a31d2ad8499bfba9766983acd17d6bcb2b061cdde86940c675d3db6e158b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createRange()",
+          "result": "org.w3c.dom.ranges.Range",
+          "declaredBy": "org.w3c.dom.ranges.DocumentRange",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ranges.Range",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ranges/Range.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ranges/Range.java",
+      "sourceSha256": "2b9a82aca3ba4e070ea760175e1c84bc6eabf204398dbd15d2155c1ca3b275a3",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "END_TO_END",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "END_TO_START",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "START_TO_END",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "START_TO_START",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "cloneContents()",
+          "result": "org.w3c.dom.DocumentFragment",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "cloneRange()",
+          "result": "org.w3c.dom.ranges.Range",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "collapse(boolean)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareBoundaryPoints(short,org.w3c.dom.ranges.Range)",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "deleteContents()",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "detach()",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "extractContents()",
+          "result": "org.w3c.dom.DocumentFragment",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCollapsed()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCommonAncestorContainer()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEndContainer()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEndOffset()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getStartContainer()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStartOffset()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "insertNode(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "selectNode(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "selectNodeContents(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnd(org.w3c.dom.Node,int)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEndAfter(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEndBefore(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setStart(org.w3c.dom.Node,int)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setStartAfter(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setStartBefore(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "surroundContents(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.ranges.Range",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ranges.RangeException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ranges/RangeException.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ranges/RangeException.java",
+      "sourceSha256": "1458e6f7720215ea9eb140101998ae9481d854c79195d983dcf07360daaeead9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(short,java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ranges.RangeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "BAD_BOUNDARYPOINTS_ERR",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ranges.RangeException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INVALID_NODE_TYPE_ERR",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ranges.RangeException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "code",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ranges.RangeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    }
+  ]
+}

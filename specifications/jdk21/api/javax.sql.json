@@ -1,0 +1,2201 @@
+{
+  "name": "javax.sql",
+  "module": "java.sql",
+  "types": [
+    {
+      "target": "javax.sql.CommonDataSource",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/CommonDataSource.html",
+      "sourceEntry": "java.sql/javax/sql/CommonDataSource.java",
+      "sourceSha256": "58e50b69306c529abe438cb9864670ea9335207629aac7e80fb9fa9545344c6c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createShardingKeyBuilder()",
+          "result": "java.sql.ShardingKeyBuilder",
+          "declaredBy": "javax.sql.CommonDataSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLogWriter()",
+          "result": "java.io.PrintWriter",
+          "declaredBy": "javax.sql.CommonDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoginTimeout()",
+          "result": "int",
+          "declaredBy": "javax.sql.CommonDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParentLogger()",
+          "result": "java.util.logging.Logger",
+          "declaredBy": "javax.sql.CommonDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLogWriter(java.io.PrintWriter)",
+          "result": "void",
+          "declaredBy": "javax.sql.CommonDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLoginTimeout(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.CommonDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.ConnectionEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/ConnectionEvent.html",
+      "sourceEntry": "java.sql/javax/sql/ConnectionEvent.java",
+      "sourceSha256": "ac6220bb320c4cfe55082ed183459b5f0e7322f810a5cece75d43a94f1d0a370",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.sql.PooledConnection)",
+          "result": "void",
+          "declaredBy": "javax.sql.ConnectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.sql.PooledConnection,java.sql.SQLException)",
+          "result": "void",
+          "declaredBy": "javax.sql.ConnectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSQLException()",
+          "result": "java.sql.SQLException",
+          "declaredBy": "javax.sql.ConnectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.ConnectionEventListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/ConnectionEventListener.html",
+      "sourceEntry": "java.sql/javax/sql/ConnectionEventListener.java",
+      "sourceSha256": "5cf5f5635525173bb3e1be7c334283e59a9627c5d32c0abb8c698ed1a84908f7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "connectionClosed(javax.sql.ConnectionEvent)",
+          "result": "void",
+          "declaredBy": "javax.sql.ConnectionEventListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connectionErrorOccurred(javax.sql.ConnectionEvent)",
+          "result": "void",
+          "declaredBy": "javax.sql.ConnectionEventListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.ConnectionPoolDataSource",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.CommonDataSource"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html",
+      "sourceEntry": "java.sql/javax/sql/ConnectionPoolDataSource.java",
+      "sourceSha256": "21980d26b9d1d845c5c7736508dc4c076861a1b0f94a31c2e3f25b720c0a0d4c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createPooledConnectionBuilder()",
+          "result": "javax.sql.PooledConnectionBuilder",
+          "declaredBy": "javax.sql.ConnectionPoolDataSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLogWriter()",
+          "result": "java.io.PrintWriter",
+          "declaredBy": "javax.sql.ConnectionPoolDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoginTimeout()",
+          "result": "int",
+          "declaredBy": "javax.sql.ConnectionPoolDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPooledConnection()",
+          "result": "javax.sql.PooledConnection",
+          "declaredBy": "javax.sql.ConnectionPoolDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPooledConnection(java.lang.String,java.lang.String)",
+          "result": "javax.sql.PooledConnection",
+          "declaredBy": "javax.sql.ConnectionPoolDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLogWriter(java.io.PrintWriter)",
+          "result": "void",
+          "declaredBy": "javax.sql.ConnectionPoolDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLoginTimeout(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.ConnectionPoolDataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.DataSource",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.CommonDataSource",
+        "java.sql.Wrapper"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/DataSource.html",
+      "sourceEntry": "java.sql/javax/sql/DataSource.java",
+      "sourceSha256": "c518588a3e5c98e8e1bcfa7019a86f65c689db21f2501e4b545a3e3e3640b83d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createConnectionBuilder()",
+          "result": "java.sql.ConnectionBuilder",
+          "declaredBy": "javax.sql.DataSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnection()",
+          "result": "java.sql.Connection",
+          "declaredBy": "javax.sql.DataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnection(java.lang.String,java.lang.String)",
+          "result": "java.sql.Connection",
+          "declaredBy": "javax.sql.DataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLogWriter()",
+          "result": "java.io.PrintWriter",
+          "declaredBy": "javax.sql.DataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoginTimeout()",
+          "result": "int",
+          "declaredBy": "javax.sql.DataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLogWriter(java.io.PrintWriter)",
+          "result": "void",
+          "declaredBy": "javax.sql.DataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLoginTimeout(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.DataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.PooledConnection",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/PooledConnection.html",
+      "sourceEntry": "java.sql/javax/sql/PooledConnection.java",
+      "sourceSha256": "7846abe96ddf4a131ccfb30476df1ab15d55eea1feb8b195c5f4e3876d3738a8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addConnectionEventListener(javax.sql.ConnectionEventListener)",
+          "result": "void",
+          "declaredBy": "javax.sql.PooledConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addStatementEventListener(javax.sql.StatementEventListener)",
+          "result": "void",
+          "declaredBy": "javax.sql.PooledConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.sql.PooledConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnection()",
+          "result": "java.sql.Connection",
+          "declaredBy": "javax.sql.PooledConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeConnectionEventListener(javax.sql.ConnectionEventListener)",
+          "result": "void",
+          "declaredBy": "javax.sql.PooledConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeStatementEventListener(javax.sql.StatementEventListener)",
+          "result": "void",
+          "declaredBy": "javax.sql.PooledConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.PooledConnectionBuilder",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html",
+      "sourceEntry": "java.sql/javax/sql/PooledConnectionBuilder.java",
+      "sourceSha256": "f53a34b576b17eb76696109d47b82b9f1bb16e023fbc76b8290f55f5df17e006",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "build()",
+          "result": "javax.sql.PooledConnection",
+          "declaredBy": "javax.sql.PooledConnectionBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "password(java.lang.String)",
+          "result": "javax.sql.PooledConnectionBuilder",
+          "declaredBy": "javax.sql.PooledConnectionBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shardingKey(java.sql.ShardingKey)",
+          "result": "javax.sql.PooledConnectionBuilder",
+          "declaredBy": "javax.sql.PooledConnectionBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "superShardingKey(java.sql.ShardingKey)",
+          "result": "javax.sql.PooledConnectionBuilder",
+          "declaredBy": "javax.sql.PooledConnectionBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "user(java.lang.String)",
+          "result": "javax.sql.PooledConnectionBuilder",
+          "declaredBy": "javax.sql.PooledConnectionBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.RowSet",
+      "kind": "interface",
+      "parents": [
+        "java.sql.ResultSet"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/RowSet.html",
+      "sourceEntry": "java.sql/javax/sql/RowSet.java",
+      "sourceSha256": "782e2fd3a96469c52f9971aae0055088a3998243d5fb80b600f35d8a3ba554f9",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addRowSetListener(javax.sql.RowSetListener)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clearParameters()",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "execute()",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCommand()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDataSourceName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEscapeProcessing()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxFieldSize()",
+          "result": "int",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxRows()",
+          "result": "int",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPassword()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueryTimeout()",
+          "result": "int",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransactionIsolation()",
+          "result": "int",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeMap()",
+          "result": "java.util.Map",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUrl()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUsername()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadOnly()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeRowSetListener(javax.sql.RowSetListener)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setArray(int,java.sql.Array)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAsciiStream(int,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAsciiStream(int,java.io.InputStream,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAsciiStream(java.lang.String,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAsciiStream(java.lang.String,java.io.InputStream,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBigDecimal(int,java.math.BigDecimal)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBigDecimal(java.lang.String,java.math.BigDecimal)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBinaryStream(int,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBinaryStream(int,java.io.InputStream,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBinaryStream(java.lang.String,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBinaryStream(java.lang.String,java.io.InputStream,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(int,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(int,java.io.InputStream,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(int,java.sql.Blob)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(java.lang.String,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(java.lang.String,java.io.InputStream,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(java.lang.String,java.sql.Blob)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBoolean(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBoolean(java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setByte(int,byte)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setByte(java.lang.String,byte)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBytes(int,byte[])",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBytes(java.lang.String,byte[])",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCharacterStream(int,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCharacterStream(int,java.io.Reader,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCharacterStream(java.lang.String,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCharacterStream(java.lang.String,java.io.Reader,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(int,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(int,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(int,java.sql.Clob)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(java.lang.String,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(java.lang.String,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(java.lang.String,java.sql.Clob)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCommand(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setConcurrency(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDataSourceName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDate(int,java.sql.Date)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDate(int,java.sql.Date,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDate(java.lang.String,java.sql.Date)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDate(java.lang.String,java.sql.Date,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDouble(int,double)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDouble(java.lang.String,double)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEscapeProcessing(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFloat(int,float)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFloat(java.lang.String,float)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInt(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInt(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLong(int,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLong(java.lang.String,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaxFieldSize(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaxRows(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNCharacterStream(int,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNCharacterStream(int,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNCharacterStream(java.lang.String,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNCharacterStream(java.lang.String,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(int,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(int,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(int,java.sql.NClob)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(java.lang.String,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(java.lang.String,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(java.lang.String,java.sql.NClob)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNString(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNString(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNull(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNull(int,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNull(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNull(java.lang.String,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(int,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(int,java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(int,java.lang.Object,int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(java.lang.String,java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(java.lang.String,java.lang.Object,int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPassword(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setQueryTimeout(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setReadOnly(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRef(int,java.sql.Ref)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRowId(int,java.sql.RowId)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRowId(java.lang.String,java.sql.RowId)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSQLXML(int,java.sql.SQLXML)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSQLXML(java.lang.String,java.sql.SQLXML)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setShort(int,short)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setShort(java.lang.String,short)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setString(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setString(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTime(int,java.sql.Time)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTime(int,java.sql.Time,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTime(java.lang.String,java.sql.Time)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTime(java.lang.String,java.sql.Time,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTimestamp(int,java.sql.Timestamp)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTimestamp(int,java.sql.Timestamp,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTimestamp(java.lang.String,java.sql.Timestamp)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTimestamp(java.lang.String,java.sql.Timestamp,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTransactionIsolation(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setType(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTypeMap(java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setURL(int,java.net.URL)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUrl(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUsername(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.RowSetEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/RowSetEvent.html",
+      "sourceEntry": "java.sql/javax/sql/RowSetEvent.java",
+      "sourceSha256": "d94d598272d5843a983bf5e965f6d90e7328ed53eaf66d0452d9a7df83b96554",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.sql.RowSet)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.RowSetInternal",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/RowSetInternal.html",
+      "sourceEntry": "java.sql/javax/sql/RowSetInternal.java",
+      "sourceSha256": "ba62e3332e897c23c543021c140a2d9dc98b841de7d885deb5daaf7b80ab6824",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getConnection()",
+          "result": "java.sql.Connection",
+          "declaredBy": "javax.sql.RowSetInternal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOriginal()",
+          "result": "java.sql.ResultSet",
+          "declaredBy": "javax.sql.RowSetInternal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOriginalRow()",
+          "result": "java.sql.ResultSet",
+          "declaredBy": "javax.sql.RowSetInternal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.sql.RowSetInternal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMetaData(javax.sql.RowSetMetaData)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetInternal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.RowSetListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/RowSetListener.html",
+      "sourceEntry": "java.sql/javax/sql/RowSetListener.java",
+      "sourceSha256": "508adceafca0e2a52edfc8e4cd3b7d25b37d68d7f589e9f36f8ac916b64fbd82",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "cursorMoved(javax.sql.RowSetEvent)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rowChanged(javax.sql.RowSetEvent)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rowSetChanged(javax.sql.RowSetEvent)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.RowSetMetaData",
+      "kind": "interface",
+      "parents": [
+        "java.sql.ResultSetMetaData"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/RowSetMetaData.html",
+      "sourceEntry": "java.sql/javax/sql/RowSetMetaData.java",
+      "sourceSha256": "8e8606e9e2bfeaba63caceea2690f7ac5bf6dd63bfec7387f93c523091645c82",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "setAutoIncrement(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCaseSensitive(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCatalogName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnCount(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnDisplaySize(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnLabel(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnType(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnTypeName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCurrency(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNullable(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPrecision(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setScale(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSchemaName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSearchable(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSigned(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTableName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetMetaData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.RowSetReader",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/RowSetReader.html",
+      "sourceEntry": "java.sql/javax/sql/RowSetReader.java",
+      "sourceSha256": "29ada451a1dc8aef041df5060e2062306ef7a740dea6960925855afdd56b1a01",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "readData(javax.sql.RowSetInternal)",
+          "result": "void",
+          "declaredBy": "javax.sql.RowSetReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.RowSetWriter",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/RowSetWriter.html",
+      "sourceEntry": "java.sql/javax/sql/RowSetWriter.java",
+      "sourceSha256": "df00e6dae17d3e38e79c15edf1e109ca69e3229f58f9423af785d35095d25490",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "writeData(javax.sql.RowSetInternal)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.RowSetWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.StatementEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/StatementEvent.html",
+      "sourceEntry": "java.sql/javax/sql/StatementEvent.java",
+      "sourceSha256": "ee0551446234113dfdd6cc8fa0aa5fccd6f17c786632b2b3ccb8bb6b26f09017",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.sql.PooledConnection,java.sql.PreparedStatement)",
+          "result": "void",
+          "declaredBy": "javax.sql.StatementEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.sql.PooledConnection,java.sql.PreparedStatement,java.sql.SQLException)",
+          "result": "void",
+          "declaredBy": "javax.sql.StatementEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSQLException()",
+          "result": "java.sql.SQLException",
+          "declaredBy": "javax.sql.StatementEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStatement()",
+          "result": "java.sql.PreparedStatement",
+          "declaredBy": "javax.sql.StatementEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.StatementEventListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/StatementEventListener.html",
+      "sourceEntry": "java.sql/javax/sql/StatementEventListener.java",
+      "sourceSha256": "b952b55f12994445be3342188f7b82a18052bd9e53231752e7a102c07100c78b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "statementClosed(javax.sql.StatementEvent)",
+          "result": "void",
+          "declaredBy": "javax.sql.StatementEventListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "statementErrorOccurred(javax.sql.StatementEvent)",
+          "result": "void",
+          "declaredBy": "javax.sql.StatementEventListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.XAConnection",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.PooledConnection"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/XAConnection.html",
+      "sourceEntry": "java.sql/javax/sql/XAConnection.java",
+      "sourceSha256": "5670e169966b191ac05afe04532c823aebe3e180e4dd893ba866639bc663443b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getXAResource()",
+          "result": "javax.transaction.xa.XAResource",
+          "declaredBy": "javax.sql.XAConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.XAConnectionBuilder",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/XAConnectionBuilder.html",
+      "sourceEntry": "java.sql/javax/sql/XAConnectionBuilder.java",
+      "sourceSha256": "a66e0f55eb14ce30e821bad050267fa87d42575b47fb72ef4d9843185905872e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "build()",
+          "result": "javax.sql.XAConnection",
+          "declaredBy": "javax.sql.XAConnectionBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "password(java.lang.String)",
+          "result": "javax.sql.XAConnectionBuilder",
+          "declaredBy": "javax.sql.XAConnectionBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shardingKey(java.sql.ShardingKey)",
+          "result": "javax.sql.XAConnectionBuilder",
+          "declaredBy": "javax.sql.XAConnectionBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "superShardingKey(java.sql.ShardingKey)",
+          "result": "javax.sql.XAConnectionBuilder",
+          "declaredBy": "javax.sql.XAConnectionBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "user(java.lang.String)",
+          "result": "javax.sql.XAConnectionBuilder",
+          "declaredBy": "javax.sql.XAConnectionBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.XADataSource",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.CommonDataSource"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/javax/sql/XADataSource.html",
+      "sourceEntry": "java.sql/javax/sql/XADataSource.java",
+      "sourceSha256": "98b48722f75ec423c9fe44271951919bebeef96f0e6480262e0b49eb6f21ae42",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createXAConnectionBuilder()",
+          "result": "javax.sql.XAConnectionBuilder",
+          "declaredBy": "javax.sql.XADataSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLogWriter()",
+          "result": "java.io.PrintWriter",
+          "declaredBy": "javax.sql.XADataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoginTimeout()",
+          "result": "int",
+          "declaredBy": "javax.sql.XADataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getXAConnection()",
+          "result": "javax.sql.XAConnection",
+          "declaredBy": "javax.sql.XADataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getXAConnection(java.lang.String,java.lang.String)",
+          "result": "javax.sql.XAConnection",
+          "declaredBy": "javax.sql.XADataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLogWriter(java.io.PrintWriter)",
+          "result": "void",
+          "declaredBy": "javax.sql.XADataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLoginTimeout(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.XADataSource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

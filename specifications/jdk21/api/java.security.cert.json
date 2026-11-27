@@ -1,0 +1,4904 @@
+{
+  "name": "java.security.cert",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.security.cert.CRL",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CRL.html",
+      "sourceEntry": "java.base/java/security/cert/CRL.java",
+      "sourceSha256": "a29ca0c1765ad9a9fa72cb54a59bffa552b4eb7e225592f7ed34b4355081d8e7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CRL",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CRL",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRevoked(java.security.cert.Certificate)",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CRLException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CRLException.html",
+      "sourceEntry": "java.base/java/security/cert/CRLException.java",
+      "sourceSha256": "9670da152ceb7b9b8a22dcf90d918fd15df71092030a2b246d2be818ca73ce2b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CRLException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CRLException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CRLException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CRLException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CRLReason",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CRLReason.html",
+      "sourceEntry": "java.base/java/security/cert/CRLReason.java",
+      "sourceSha256": "0209ed3db4133de248e835efdaeac0061335001058d3ea63a59d2b2ee997f08d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "AA_COMPROMISE",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "AFFILIATION_CHANGED",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CA_COMPROMISE",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CERTIFICATE_HOLD",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CESSATION_OF_OPERATION",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "KEY_COMPROMISE",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PRIVILEGE_WITHDRAWN",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REMOVE_FROM_CRL",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SUPERSEDED",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNSPECIFIED",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNUSED",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.security.cert.CRLReason[]",
+          "declaredBy": "java.security.cert.CRLReason",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CRLSelector",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CRLSelector.html",
+      "sourceEntry": "java.base/java/security/cert/CRLSelector.java",
+      "sourceSha256": "e4861c5222ec04dc01f2d22021704b351bca3828b1f28a1ea1af9da6f70dbba0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.CRLSelector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "match(java.security.cert.CRL)",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.CRLSelector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPath",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPath.html",
+      "sourceEntry": "java.base/java/security/cert/CertPath.java",
+      "sourceSha256": "af98485eba9caea19f4d8fe6ab3abbacb306e1be0c0d244cff1b18965a4df316",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPath",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.CertPath",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertificates()",
+          "result": "java.util.List",
+          "declaredBy": "java.security.cert.CertPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.CertPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded(java.lang.String)",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.CertPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncodings()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.security.cert.CertPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CertPath",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.security.cert.CertPath",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CertPath",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeReplace()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.CertPath",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPath$CertPathRep",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPath.CertPathRep.html",
+      "sourceEntry": "java.base/java/security/cert/CertPath.java",
+      "sourceSha256": "af98485eba9caea19f4d8fe6ab3abbacb306e1be0c0d244cff1b18965a4df316",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPath$CertPathRep",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readResolve()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.CertPath$CertPathRep",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathBuilder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathBuilder.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathBuilder.java",
+      "sourceSha256": "6bb2623ba5cf49656e416ebe4de896c3755d5d6b6cc9f15dd6dbe0e7efa18693",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.cert.CertPathBuilderSpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathBuilder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "build(java.security.cert.CertPathParameters)",
+          "result": "java.security.cert.CertPathBuilderResult",
+          "declaredBy": "java.security.cert.CertPathBuilder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CertPathBuilder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CertPathBuilder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "java.security.cert.CertPathBuilder",
+          "declaredBy": "java.security.cert.CertPathBuilder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "java.security.cert.CertPathBuilder",
+          "declaredBy": "java.security.cert.CertPathBuilder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "java.security.cert.CertPathBuilder",
+          "declaredBy": "java.security.cert.CertPathBuilder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "java.security.cert.CertPathBuilder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRevocationChecker()",
+          "result": "java.security.cert.CertPathChecker",
+          "declaredBy": "java.security.cert.CertPathBuilder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathBuilderException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathBuilderException.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathBuilderException.java",
+      "sourceSha256": "2f4c29a7b5225286c42f5eca1d57c9d8deaaac20b6d63323d41ffd9576b7f551",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathBuilderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathBuilderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathBuilderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathBuilderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathBuilderResult",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathBuilderResult.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathBuilderResult.java",
+      "sourceSha256": "0fb9098a80030baefc6cecc495bb4973604a3c09b34ad76c39eaa5b399925626",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.CertPathBuilderResult",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertPath()",
+          "result": "java.security.cert.CertPath",
+          "declaredBy": "java.security.cert.CertPathBuilderResult",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathBuilderSpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathBuilderSpi.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathBuilderSpi.java",
+      "sourceSha256": "361263b51a7c3c3a9b90950d7bc5b891fc23cfd083641aace66b15872ab0dd6f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathBuilderSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineBuild(java.security.cert.CertPathParameters)",
+          "result": "java.security.cert.CertPathBuilderResult",
+          "declaredBy": "java.security.cert.CertPathBuilderSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetRevocationChecker()",
+          "result": "java.security.cert.CertPathChecker",
+          "declaredBy": "java.security.cert.CertPathBuilderSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathChecker",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathChecker.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathChecker.java",
+      "sourceSha256": "3c91ec9f8822c374d0c261edd39f83f8d9cb7cb7ca0e71b166c31f9216d196ee",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "check(java.security.cert.Certificate)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathChecker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(boolean)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathChecker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isForwardCheckingSupported()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.CertPathChecker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathParameters",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathParameters.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathParameters.java",
+      "sourceSha256": "774c5cfa93896bf4514ac3733d77f1cd5908c5de8d53d895cecf9858ed9cbedf",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.CertPathParameters",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathValidator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathValidator.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathValidator.java",
+      "sourceSha256": "592a9d6437c999daf974ee4cbbe6bd919312dd15f4854ac9bb31c7a3b6014529",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.cert.CertPathValidatorSpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathValidator",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CertPathValidator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CertPathValidator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "java.security.cert.CertPathValidator",
+          "declaredBy": "java.security.cert.CertPathValidator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "java.security.cert.CertPathValidator",
+          "declaredBy": "java.security.cert.CertPathValidator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "java.security.cert.CertPathValidator",
+          "declaredBy": "java.security.cert.CertPathValidator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "java.security.cert.CertPathValidator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRevocationChecker()",
+          "result": "java.security.cert.CertPathChecker",
+          "declaredBy": "java.security.cert.CertPathValidator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validate(java.security.cert.CertPath,java.security.cert.CertPathParameters)",
+          "result": "java.security.cert.CertPathValidatorResult",
+          "declaredBy": "java.security.cert.CertPathValidator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathValidatorException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathValidatorException.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathValidatorException.java",
+      "sourceSha256": "1b1d754e385e2da7ddb3098020c489e417fbb2325aed9aa003809e6992ab3f2f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathValidatorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathValidatorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathValidatorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable,java.security.cert.CertPath,int)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathValidatorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable,java.security.cert.CertPath,int,java.security.cert.CertPathValidatorException$Reason)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathValidatorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathValidatorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertPath()",
+          "result": "java.security.cert.CertPath",
+          "declaredBy": "java.security.cert.CertPathValidatorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndex()",
+          "result": "int",
+          "declaredBy": "java.security.cert.CertPathValidatorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReason()",
+          "result": "java.security.cert.CertPathValidatorException$Reason",
+          "declaredBy": "java.security.cert.CertPathValidatorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathValidatorException$BasicReason",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "java.security.cert.CertPathValidatorException$Reason"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathValidatorException.java",
+      "sourceSha256": "1b1d754e385e2da7ddb3098020c489e417fbb2325aed9aa003809e6992ab3f2f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ALGORITHM_CONSTRAINED",
+          "result": "java.security.cert.CertPathValidatorException$BasicReason",
+          "declaredBy": "java.security.cert.CertPathValidatorException$BasicReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EXPIRED",
+          "result": "java.security.cert.CertPathValidatorException$BasicReason",
+          "declaredBy": "java.security.cert.CertPathValidatorException$BasicReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INVALID_SIGNATURE",
+          "result": "java.security.cert.CertPathValidatorException$BasicReason",
+          "declaredBy": "java.security.cert.CertPathValidatorException$BasicReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NOT_YET_VALID",
+          "result": "java.security.cert.CertPathValidatorException$BasicReason",
+          "declaredBy": "java.security.cert.CertPathValidatorException$BasicReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REVOKED",
+          "result": "java.security.cert.CertPathValidatorException$BasicReason",
+          "declaredBy": "java.security.cert.CertPathValidatorException$BasicReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNDETERMINED_REVOCATION_STATUS",
+          "result": "java.security.cert.CertPathValidatorException$BasicReason",
+          "declaredBy": "java.security.cert.CertPathValidatorException$BasicReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNSPECIFIED",
+          "result": "java.security.cert.CertPathValidatorException$BasicReason",
+          "declaredBy": "java.security.cert.CertPathValidatorException$BasicReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.security.cert.CertPathValidatorException$BasicReason",
+          "declaredBy": "java.security.cert.CertPathValidatorException$BasicReason",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.security.cert.CertPathValidatorException$BasicReason[]",
+          "declaredBy": "java.security.cert.CertPathValidatorException$BasicReason",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathValidatorException$Reason",
+      "kind": "interface",
+      "parents": [
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathValidatorException.Reason.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathValidatorException.java",
+      "sourceSha256": "1b1d754e385e2da7ddb3098020c489e417fbb2325aed9aa003809e6992ab3f2f",
+      "members": []
+    },
+    {
+      "target": "java.security.cert.CertPathValidatorResult",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathValidatorResult.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathValidatorResult.java",
+      "sourceSha256": "02f9506591fd98bb94339969b4c51fcf8d57980732ca773c080b860101f29438",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.CertPathValidatorResult",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertPathValidatorSpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertPathValidatorSpi.html",
+      "sourceEntry": "java.base/java/security/cert/CertPathValidatorSpi.java",
+      "sourceSha256": "674908bf4bdcf116d655aedd9e4da6803e2dd6c73b07e01bb5edbb315cdda1b5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertPathValidatorSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetRevocationChecker()",
+          "result": "java.security.cert.CertPathChecker",
+          "declaredBy": "java.security.cert.CertPathValidatorSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineValidate(java.security.cert.CertPath,java.security.cert.CertPathParameters)",
+          "result": "java.security.cert.CertPathValidatorResult",
+          "declaredBy": "java.security.cert.CertPathValidatorSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertSelector",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertSelector.html",
+      "sourceEntry": "java.base/java/security/cert/CertSelector.java",
+      "sourceSha256": "3123b60097f166fafd81935bf2aee534d44ed6101d7047f21a17ac504a148f51",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.CertSelector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "match(java.security.cert.Certificate)",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.CertSelector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertStore",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertStore.html",
+      "sourceEntry": "java.base/java/security/cert/CertStore.java",
+      "sourceSha256": "49cdd31bd1b1449b6958224671ed3e3e616645370f21b1a56fa27f52e29a59bb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.cert.CertStoreSpi,java.security.Provider,java.lang.String,java.security.cert.CertStoreParameters)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertStore",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCRLs(java.security.cert.CRLSelector)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.CertStore",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertStoreParameters()",
+          "result": "java.security.cert.CertStoreParameters",
+          "declaredBy": "java.security.cert.CertStore",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertificates(java.security.cert.CertSelector)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.CertStore",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CertStore",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.cert.CertStoreParameters)",
+          "result": "java.security.cert.CertStore",
+          "declaredBy": "java.security.cert.CertStore",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.lang.String)",
+          "result": "java.security.cert.CertStore",
+          "declaredBy": "java.security.cert.CertStore",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.security.Provider)",
+          "result": "java.security.cert.CertStore",
+          "declaredBy": "java.security.cert.CertStore",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "java.security.cert.CertStore",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CertStore",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertStoreException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertStoreException.html",
+      "sourceEntry": "java.base/java/security/cert/CertStoreException.java",
+      "sourceSha256": "981d28192f35ac944addf2474d14e597dcb4ec58783079012f0e50ea01e1c7f2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertStoreException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertStoreException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertStoreException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertStoreException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertStoreParameters",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertStoreParameters.html",
+      "sourceEntry": "java.base/java/security/cert/CertStoreParameters.java",
+      "sourceSha256": "736772c3eb68c7a1063e465fe08b5ca7340fb032ee85a6c12b38387b389694ad",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.CertStoreParameters",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertStoreSpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertStoreSpi.html",
+      "sourceEntry": "java.base/java/security/cert/CertStoreSpi.java",
+      "sourceSha256": "2e649a920cb8bb5b3a5b70763ca49f4b84b85d193c9959422b9c5bfe830b4625",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.cert.CertStoreParameters)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertStoreSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetCRLs(java.security.cert.CRLSelector)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.CertStoreSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetCertificates(java.security.cert.CertSelector)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.CertStoreSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.Certificate",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/Certificate.html",
+      "sourceEntry": "java.base/java/security/cert/Certificate.java",
+      "sourceSha256": "5b951e200ed17bf05ccedf84058d7d01f3995b6187b5aa2c6bde07d3c037c752",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicKey()",
+          "result": "java.security.PublicKey",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verify(java.security.PublicKey)",
+          "result": "void",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verify(java.security.PublicKey,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verify(java.security.PublicKey,java.security.Provider)",
+          "result": "void",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeReplace()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.Certificate",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.Certificate$CertificateRep",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/Certificate.CertificateRep.html",
+      "sourceEntry": "java.base/java/security/cert/Certificate.java",
+      "sourceSha256": "5b951e200ed17bf05ccedf84058d7d01f3995b6187b5aa2c6bde07d3c037c752",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.Certificate$CertificateRep",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readResolve()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.Certificate$CertificateRep",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertificateEncodingException",
+      "kind": "class",
+      "parents": [
+        "java.security.cert.CertificateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertificateEncodingException.html",
+      "sourceEntry": "java.base/java/security/cert/CertificateEncodingException.java",
+      "sourceSha256": "f5d79839a3dc7ee938c1a55aaf81f5557157ee832ad99f080c5fb4d14b854b5b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateEncodingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateEncodingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateEncodingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateEncodingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertificateException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertificateException.html",
+      "sourceEntry": "java.base/java/security/cert/CertificateException.java",
+      "sourceSha256": "ad102e7387b2cfa1cbd5c54e53aba9578c23918ef1bbd9ff4297ce64ae1574df",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertificateExpiredException",
+      "kind": "class",
+      "parents": [
+        "java.security.cert.CertificateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertificateExpiredException.html",
+      "sourceEntry": "java.base/java/security/cert/CertificateExpiredException.java",
+      "sourceSha256": "41946ffb005a1f5c461ee3397e24a69038995c0cad53d5f516d5d5e50a5206b1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateExpiredException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateExpiredException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertificateFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertificateFactory.html",
+      "sourceEntry": "java.base/java/security/cert/CertificateFactory.java",
+      "sourceSha256": "4de20a7f9887edb35f8e186c4aaa4ad609ccb3c0327330eb0e58903419afaa69",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.cert.CertificateFactorySpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateCRL(java.io.InputStream)",
+          "result": "java.security.cert.CRL",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateCRLs(java.io.InputStream)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateCertPath(java.io.InputStream)",
+          "result": "java.security.cert.CertPath",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateCertPath(java.io.InputStream,java.lang.String)",
+          "result": "java.security.cert.CertPath",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateCertPath(java.util.List)",
+          "result": "java.security.cert.CertPath",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateCertificate(java.io.InputStream)",
+          "result": "java.security.cert.Certificate",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateCertificates(java.io.InputStream)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertPathEncodings()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "java.security.cert.CertificateFactory",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "java.security.cert.CertificateFactory",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "java.security.cert.CertificateFactory",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CertificateFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertificateFactorySpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertificateFactorySpi.html",
+      "sourceEntry": "java.base/java/security/cert/CertificateFactorySpi.java",
+      "sourceSha256": "66060e3f51fdf11991b59e898dcd7a7986d64f448ff2bf8622f7494959450c79",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateFactorySpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateCRL(java.io.InputStream)",
+          "result": "java.security.cert.CRL",
+          "declaredBy": "java.security.cert.CertificateFactorySpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateCRLs(java.io.InputStream)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.CertificateFactorySpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateCertPath(java.io.InputStream)",
+          "result": "java.security.cert.CertPath",
+          "declaredBy": "java.security.cert.CertificateFactorySpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateCertPath(java.io.InputStream,java.lang.String)",
+          "result": "java.security.cert.CertPath",
+          "declaredBy": "java.security.cert.CertificateFactorySpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateCertPath(java.util.List)",
+          "result": "java.security.cert.CertPath",
+          "declaredBy": "java.security.cert.CertificateFactorySpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateCertificate(java.io.InputStream)",
+          "result": "java.security.cert.Certificate",
+          "declaredBy": "java.security.cert.CertificateFactorySpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateCertificates(java.io.InputStream)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.CertificateFactorySpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetCertPathEncodings()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.security.cert.CertificateFactorySpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertificateNotYetValidException",
+      "kind": "class",
+      "parents": [
+        "java.security.cert.CertificateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertificateNotYetValidException.html",
+      "sourceEntry": "java.base/java/security/cert/CertificateNotYetValidException.java",
+      "sourceSha256": "3f1ffecdb990c9fda482d8439115bac6af66a1750efd574ddf3f6431d0a0625b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateNotYetValidException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateNotYetValidException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertificateParsingException",
+      "kind": "class",
+      "parents": [
+        "java.security.cert.CertificateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertificateParsingException.html",
+      "sourceEntry": "java.base/java/security/cert/CertificateParsingException.java",
+      "sourceSha256": "4e78ddff1bff2910cec32653d730b3393f15eb9b22a54e01dbfbedd3208db738",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateParsingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateParsingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateParsingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateParsingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CertificateRevokedException",
+      "kind": "class",
+      "parents": [
+        "java.security.cert.CertificateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CertificateRevokedException.html",
+      "sourceEntry": "java.base/java/security/cert/CertificateRevokedException.java",
+      "sourceSha256": "291ab74c6e0c1599377d3b1dd2b605f369a691fb293151adeb55c83613a16ed9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Date,java.security.cert.CRLReason,javax.security.auth.x500.X500Principal,java.util.Map)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CertificateRevokedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAuthorityName()",
+          "result": "javax.security.auth.x500.X500Principal",
+          "declaredBy": "java.security.cert.CertificateRevokedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExtensions()",
+          "result": "java.util.Map",
+          "declaredBy": "java.security.cert.CertificateRevokedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInvalidityDate()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.CertificateRevokedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CertificateRevokedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRevocationDate()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.CertificateRevokedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRevocationReason()",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.CertificateRevokedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.CollectionCertStoreParameters",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.cert.CertStoreParameters"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/CollectionCertStoreParameters.html",
+      "sourceEntry": "java.base/java/security/cert/CollectionCertStoreParameters.java",
+      "sourceSha256": "5f9f7be6a6a4ba6649cf2d6eed4c7c7a67d732480a405391522ed5228d73176d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.CollectionCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Collection)",
+          "result": "void",
+          "declaredBy": "java.security.cert.CollectionCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.CollectionCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCollection()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.CollectionCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.CollectionCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.Extension",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/Extension.html",
+      "sourceEntry": "java.base/java/security/cert/Extension.java",
+      "sourceSha256": "11891c163f477d897ca36bbc3fe96384e2ee1423312610acabd443f19da18d61",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "encode(java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "java.security.cert.Extension",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getId()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.Extension",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.Extension",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCritical()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.Extension",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.LDAPCertStoreParameters",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.cert.CertStoreParameters"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/LDAPCertStoreParameters.html",
+      "sourceEntry": "java.base/java/security/cert/LDAPCertStoreParameters.java",
+      "sourceSha256": "7a5913a4e162b7810d39383c040bca6c96a7388756f7193b00255b3c32d8bbbe",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.LDAPCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.LDAPCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "java.security.cert.LDAPCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.LDAPCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPort()",
+          "result": "int",
+          "declaredBy": "java.security.cert.LDAPCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServerName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.LDAPCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.LDAPCertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.PKIXBuilderParameters",
+      "kind": "class",
+      "parents": [
+        "java.security.cert.PKIXParameters"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html",
+      "sourceEntry": "java.base/java/security/cert/PKIXBuilderParameters.java",
+      "sourceSha256": "7a322ac7064dd0f0321caf2754a5b7a3c76a8338018c6e1c4a1f393e2722f401",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.KeyStore,java.security.cert.CertSelector)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXBuilderParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Set,java.security.cert.CertSelector)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXBuilderParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxPathLength()",
+          "result": "int",
+          "declaredBy": "java.security.cert.PKIXBuilderParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaxPathLength(int)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXBuilderParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.PKIXBuilderParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.PKIXCertPathBuilderResult",
+      "kind": "class",
+      "parents": [
+        "java.security.cert.PKIXCertPathValidatorResult",
+        "java.security.cert.CertPathBuilderResult"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/PKIXCertPathBuilderResult.html",
+      "sourceEntry": "java.base/java/security/cert/PKIXCertPathBuilderResult.java",
+      "sourceSha256": "03c4756bea48905c32f50c18ea6daac9d7144581bd3dd0a79ce977db33c7266a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.cert.CertPath,java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXCertPathBuilderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertPath()",
+          "result": "java.security.cert.CertPath",
+          "declaredBy": "java.security.cert.PKIXCertPathBuilderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.PKIXCertPathBuilderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.PKIXCertPathChecker",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.cert.CertPathChecker",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html",
+      "sourceEntry": "java.base/java/security/cert/PKIXCertPathChecker.java",
+      "sourceSha256": "536b8f86584592840c7f4a8f4c2debd6e724e2d92aa5139bdcb65926c625cc4f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXCertPathChecker",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "check(java.security.cert.Certificate)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXCertPathChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "check(java.security.cert.Certificate,java.util.Collection)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXCertPathChecker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.PKIXCertPathChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedExtensions()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.PKIXCertPathChecker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(boolean)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXCertPathChecker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isForwardCheckingSupported()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.PKIXCertPathChecker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.PKIXCertPathValidatorResult",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.cert.CertPathValidatorResult"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html",
+      "sourceEntry": "java.base/java/security/cert/PKIXCertPathValidatorResult.java",
+      "sourceSha256": "3f74c7734bbe729ffba9fd51985f0156ba141d30ce0a5fec53d0151d541c43be",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXCertPathValidatorResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.PKIXCertPathValidatorResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPolicyTree()",
+          "result": "java.security.cert.PolicyNode",
+          "declaredBy": "java.security.cert.PKIXCertPathValidatorResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicKey()",
+          "result": "java.security.PublicKey",
+          "declaredBy": "java.security.cert.PKIXCertPathValidatorResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTrustAnchor()",
+          "result": "java.security.cert.TrustAnchor",
+          "declaredBy": "java.security.cert.PKIXCertPathValidatorResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.PKIXCertPathValidatorResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.PKIXParameters",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.cert.CertPathParameters"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/PKIXParameters.html",
+      "sourceEntry": "java.base/java/security/cert/PKIXParameters.java",
+      "sourceSha256": "febd46957611287cda153306b9a552bb0de1b29ceb17eb56fdeac84cb95c5d22",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.KeyStore)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Set)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addCertPathChecker(java.security.cert.PKIXCertPathChecker)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addCertStore(java.security.cert.CertStore)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertPathCheckers()",
+          "result": "java.util.List",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertStores()",
+          "result": "java.util.List",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDate()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInitialPolicies()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPolicyQualifiersRejected()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSigProvider()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTargetCertConstraints()",
+          "result": "java.security.cert.CertSelector",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTrustAnchors()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAnyPolicyInhibited()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isExplicitPolicyRequired()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPolicyMappingInhibited()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRevocationEnabled()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAnyPolicyInhibited(boolean)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCertPathCheckers(java.util.List)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCertStores(java.util.List)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDate(java.util.Date)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setExplicitPolicyRequired(boolean)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInitialPolicies(java.util.Set)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPolicyMappingInhibited(boolean)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPolicyQualifiersRejected(boolean)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRevocationEnabled(boolean)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSigProvider(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTargetCertConstraints(java.security.cert.CertSelector)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTrustAnchors(java.util.Set)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.PKIXParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.PKIXReason",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "java.security.cert.CertPathValidatorException$Reason"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/PKIXReason.html",
+      "sourceEntry": "java.base/java/security/cert/PKIXReason.java",
+      "sourceSha256": "0b7bd61887d180d2de7716ab033dc96d609d42e45e63f86ab1c74d695f95c546",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "INVALID_KEY_USAGE",
+          "result": "java.security.cert.PKIXReason",
+          "declaredBy": "java.security.cert.PKIXReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INVALID_NAME",
+          "result": "java.security.cert.PKIXReason",
+          "declaredBy": "java.security.cert.PKIXReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INVALID_POLICY",
+          "result": "java.security.cert.PKIXReason",
+          "declaredBy": "java.security.cert.PKIXReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NAME_CHAINING",
+          "result": "java.security.cert.PKIXReason",
+          "declaredBy": "java.security.cert.PKIXReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NOT_CA_CERT",
+          "result": "java.security.cert.PKIXReason",
+          "declaredBy": "java.security.cert.PKIXReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NO_TRUST_ANCHOR",
+          "result": "java.security.cert.PKIXReason",
+          "declaredBy": "java.security.cert.PKIXReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PATH_TOO_LONG",
+          "result": "java.security.cert.PKIXReason",
+          "declaredBy": "java.security.cert.PKIXReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNRECOGNIZED_CRIT_EXT",
+          "result": "java.security.cert.PKIXReason",
+          "declaredBy": "java.security.cert.PKIXReason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.security.cert.PKIXReason",
+          "declaredBy": "java.security.cert.PKIXReason",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.security.cert.PKIXReason[]",
+          "declaredBy": "java.security.cert.PKIXReason",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.PKIXRevocationChecker",
+      "kind": "class",
+      "parents": [
+        "java.security.cert.PKIXCertPathChecker"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/PKIXRevocationChecker.html",
+      "sourceEntry": "java.base/java/security/cert/PKIXRevocationChecker.java",
+      "sourceSha256": "d455c13556aa270291f70056792f9aee6a96cd1d62c7450595d7f5f051d48e89",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.security.cert.PKIXRevocationChecker",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOcspExtensions()",
+          "result": "java.util.List",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOcspResponder()",
+          "result": "java.net.URI",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOcspResponderCert()",
+          "result": "java.security.cert.X509Certificate",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOcspResponses()",
+          "result": "java.util.Map",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOptions()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSoftFailExceptions()",
+          "result": "java.util.List",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOcspExtensions(java.util.List)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOcspResponder(java.net.URI)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOcspResponderCert(java.security.cert.X509Certificate)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOcspResponses(java.util.Map)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOptions(java.util.Set)",
+          "result": "void",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.PKIXRevocationChecker$Option",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html",
+      "sourceEntry": "java.base/java/security/cert/PKIXRevocationChecker.java",
+      "sourceSha256": "d455c13556aa270291f70056792f9aee6a96cd1d62c7450595d7f5f051d48e89",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NO_FALLBACK",
+          "result": "java.security.cert.PKIXRevocationChecker$Option",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker$Option",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ONLY_END_ENTITY",
+          "result": "java.security.cert.PKIXRevocationChecker$Option",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker$Option",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PREFER_CRLS",
+          "result": "java.security.cert.PKIXRevocationChecker$Option",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker$Option",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SOFT_FAIL",
+          "result": "java.security.cert.PKIXRevocationChecker$Option",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker$Option",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.security.cert.PKIXRevocationChecker$Option",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker$Option",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.security.cert.PKIXRevocationChecker$Option[]",
+          "declaredBy": "java.security.cert.PKIXRevocationChecker$Option",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.PolicyNode",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/PolicyNode.html",
+      "sourceEntry": "java.base/java/security/cert/PolicyNode.java",
+      "sourceSha256": "129da100ce16977cff94113889ffae4436270d9e96007a50246f71fcabe8daf8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getChildren()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.security.cert.PolicyNode",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDepth()",
+          "result": "int",
+          "declaredBy": "java.security.cert.PolicyNode",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExpectedPolicies()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.PolicyNode",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParent()",
+          "result": "java.security.cert.PolicyNode",
+          "declaredBy": "java.security.cert.PolicyNode",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPolicyQualifiers()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.PolicyNode",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValidPolicy()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.PolicyNode",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCritical()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.PolicyNode",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.PolicyQualifierInfo",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html",
+      "sourceEntry": "java.base/java/security/cert/PolicyQualifierInfo.java",
+      "sourceSha256": "728f9b573f3a32204663a3be502a2be8514d72529474dd3d1c548215e3ce456b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.PolicyQualifierInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.PolicyQualifierInfo",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPolicyQualifier()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.PolicyQualifierInfo",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPolicyQualifierId()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.PolicyQualifierInfo",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.PolicyQualifierInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.TrustAnchor",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/TrustAnchor.html",
+      "sourceEntry": "java.base/java/security/cert/TrustAnchor.java",
+      "sourceSha256": "a7bf60e4bd100125a7e54fbaf5cced1de67da0c7a4bc651e68d9718ee9a8934a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.security.PublicKey,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.TrustAnchor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.cert.X509Certificate,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.TrustAnchor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.security.auth.x500.X500Principal,java.security.PublicKey,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.TrustAnchor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCA()",
+          "result": "javax.security.auth.x500.X500Principal",
+          "declaredBy": "java.security.cert.TrustAnchor",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCAName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.TrustAnchor",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCAPublicKey()",
+          "result": "java.security.PublicKey",
+          "declaredBy": "java.security.cert.TrustAnchor",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNameConstraints()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.TrustAnchor",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTrustedCert()",
+          "result": "java.security.cert.X509Certificate",
+          "declaredBy": "java.security.cert.TrustAnchor",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.TrustAnchor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.URICertStoreParameters",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.cert.CertStoreParameters"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/URICertStoreParameters.html",
+      "sourceEntry": "java.base/java/security/cert/URICertStoreParameters.java",
+      "sourceSha256": "7a851bb8b2457aa708a0efb73d33bf2ad2209e3b63f37657e02b3368925f8a06",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URI)",
+          "result": "void",
+          "declaredBy": "java.security.cert.URICertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.security.cert.URICertStoreParameters",
+          "declaredBy": "java.security.cert.URICertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.URICertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURI()",
+          "result": "java.net.URI",
+          "declaredBy": "java.security.cert.URICertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.security.cert.URICertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.URICertStoreParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.X509CRL",
+      "kind": "class",
+      "parents": [
+        "java.security.cert.CRL",
+        "java.security.cert.X509Extension"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/X509CRL.html",
+      "sourceEntry": "java.base/java/security/cert/X509CRL.java",
+      "sourceSha256": "94d1c81b6f85c5019c651138d00a955e5f916d5b2ea7f75bf0e672c465df91f6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuerDN()",
+          "result": "java.security.Principal",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuerX500Principal()",
+          "result": "javax.security.auth.x500.X500Principal",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNextUpdate()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRevokedCertificate(java.math.BigInteger)",
+          "result": "java.security.cert.X509CRLEntry",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRevokedCertificate(java.security.cert.X509Certificate)",
+          "result": "java.security.cert.X509CRLEntry",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRevokedCertificates()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSigAlgName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSigAlgOID()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSigAlgParams()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSignature()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTBSCertList()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThisUpdate()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "int",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verify(java.security.PublicKey)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verify(java.security.PublicKey,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verify(java.security.PublicKey,java.security.Provider)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.X509CRLEntry",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.cert.X509Extension"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/X509CRLEntry.html",
+      "sourceEntry": "java.base/java/security/cert/X509CRLEntry.java",
+      "sourceSha256": "3fc69c27f54f49401ed4177e9c0cd9c781a44b792adca6b21613535702de7728",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.X509CRLEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertificateIssuer()",
+          "result": "javax.security.auth.x500.X500Principal",
+          "declaredBy": "java.security.cert.X509CRLEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509CRLEntry",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRevocationDate()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.X509CRLEntry",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRevocationReason()",
+          "result": "java.security.cert.CRLReason",
+          "declaredBy": "java.security.cert.X509CRLEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSerialNumber()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.cert.X509CRLEntry",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasExtensions()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.X509CRLEntry",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.security.cert.X509CRLEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.X509CRLEntry",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.X509CRLSelector",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.cert.CRLSelector"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/X509CRLSelector.html",
+      "sourceEntry": "java.base/java/security/cert/X509CRLSelector.java",
+      "sourceSha256": "98bc3350e7115fbc5e176d1427f20edeae998ac03a01100b1868ed708c383580",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addIssuer(javax.security.auth.x500.X500Principal)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addIssuerName(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addIssuerName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertificateChecking()",
+          "result": "java.security.cert.X509Certificate",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateAndTime()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuerNames()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuers()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxCRL()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinCRL()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "match(java.security.cert.CRL)",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCertificateChecking(java.security.cert.X509Certificate)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDateAndTime(java.util.Date)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIssuerNames(java.util.Collection)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIssuers(java.util.Collection)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaxCRLNumber(java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMinCRLNumber(java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.X509CRLSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.X509CertSelector",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.cert.CertSelector"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/X509CertSelector.html",
+      "sourceEntry": "java.base/java/security/cert/X509CertSelector.java",
+      "sourceSha256": "0b82ba5c54949c9090be137f6131f0a5df6efe897ac87cb5608f5c560c891210",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addPathToName(int,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addPathToName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addSubjectAlternativeName(int,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addSubjectAlternativeName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAuthorityKeyIdentifier()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBasicConstraints()",
+          "result": "int",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertificate()",
+          "result": "java.security.cert.X509Certificate",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertificateValid()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExtendedKeyUsage()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuer()",
+          "result": "javax.security.auth.x500.X500Principal",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuerAsBytes()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuerAsString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeyUsage()",
+          "result": "boolean[]",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMatchAllSubjectAltNames()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNameConstraints()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPathToNames()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPolicy()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrivateKeyValid()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSerialNumber()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubject()",
+          "result": "javax.security.auth.x500.X500Principal",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubjectAlternativeNames()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubjectAsBytes()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubjectAsString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubjectKeyIdentifier()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubjectPublicKey()",
+          "result": "java.security.PublicKey",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubjectPublicKeyAlgID()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "match(java.security.cert.Certificate)",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAuthorityKeyIdentifier(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBasicConstraints(int)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCertificate(java.security.cert.X509Certificate)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCertificateValid(java.util.Date)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setExtendedKeyUsage(java.util.Set)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIssuer(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIssuer(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIssuer(javax.security.auth.x500.X500Principal)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setKeyUsage(boolean[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMatchAllSubjectAltNames(boolean)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNameConstraints(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPathToNames(java.util.Collection)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPolicy(java.util.Set)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPrivateKeyValid(java.util.Date)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSerialNumber(java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSubject(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSubject(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSubject(javax.security.auth.x500.X500Principal)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSubjectAlternativeNames(java.util.Collection)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSubjectKeyIdentifier(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSubjectPublicKey(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSubjectPublicKey(java.security.PublicKey)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSubjectPublicKeyAlgID(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.X509CertSelector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.X509Certificate",
+      "kind": "class",
+      "parents": [
+        "java.security.cert.Certificate",
+        "java.security.cert.X509Extension"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/X509Certificate.html",
+      "sourceEntry": "java.base/java/security/cert/X509Certificate.java",
+      "sourceSha256": "461e61ac561e5c9b7bf802ce53f58d5159483b002ccf6d78ba13f580bfe7127a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "checkValidity()",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "checkValidity(java.util.Date)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBasicConstraints()",
+          "result": "int",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExtendedKeyUsage()",
+          "result": "java.util.List",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuerAlternativeNames()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuerDN()",
+          "result": "java.security.Principal",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuerUniqueID()",
+          "result": "boolean[]",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIssuerX500Principal()",
+          "result": "javax.security.auth.x500.X500Principal",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeyUsage()",
+          "result": "boolean[]",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotAfter()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotBefore()",
+          "result": "java.util.Date",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSerialNumber()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSigAlgName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSigAlgOID()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSigAlgParams()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSignature()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubjectAlternativeNames()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubjectDN()",
+          "result": "java.security.Principal",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubjectUniqueID()",
+          "result": "boolean[]",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubjectX500Principal()",
+          "result": "javax.security.auth.x500.X500Principal",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTBSCertificate()",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "int",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verify(java.security.PublicKey,java.security.Provider)",
+          "result": "void",
+          "declaredBy": "java.security.cert.X509Certificate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.cert.X509Extension",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/cert/X509Extension.html",
+      "sourceEntry": "java.base/java/security/cert/X509Extension.java",
+      "sourceSha256": "50e099ee1b1c60755b483e8529695af742bbfb7c5ba4669e03db656943ea1d3a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCriticalExtensionOIDs()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.X509Extension",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExtensionValue(java.lang.String)",
+          "result": "byte[]",
+          "declaredBy": "java.security.cert.X509Extension",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNonCriticalExtensionOIDs()",
+          "result": "java.util.Set",
+          "declaredBy": "java.security.cert.X509Extension",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasUnsupportedCriticalExtension()",
+          "result": "boolean",
+          "declaredBy": "java.security.cert.X509Extension",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

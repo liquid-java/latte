@@ -1,0 +1,436 @@
+{
+  "name": "org.w3c.dom.traversal",
+  "module": "java.xml",
+  "types": [
+    {
+      "target": "org.w3c.dom.traversal.DocumentTraversal",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/traversal/DocumentTraversal.html",
+      "sourceEntry": "java.xml/org/w3c/dom/traversal/DocumentTraversal.java",
+      "sourceSha256": "3e4f98781a97bbcee709a2c836ef9244779269f51cbb4bdd75dd133308fae36f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createNodeIterator(org.w3c.dom.Node,int,org.w3c.dom.traversal.NodeFilter,boolean)",
+          "result": "org.w3c.dom.traversal.NodeIterator",
+          "declaredBy": "org.w3c.dom.traversal.DocumentTraversal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createTreeWalker(org.w3c.dom.Node,int,org.w3c.dom.traversal.NodeFilter,boolean)",
+          "result": "org.w3c.dom.traversal.TreeWalker",
+          "declaredBy": "org.w3c.dom.traversal.DocumentTraversal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.traversal.NodeFilter",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html",
+      "sourceEntry": "java.xml/org/w3c/dom/traversal/NodeFilter.java",
+      "sourceSha256": "353489f68449e3070654c9f0adba91f6ff8e186e047f964cd6c14969d77af075",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "FILTER_ACCEPT",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FILTER_REJECT",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FILTER_SKIP",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_ALL",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_ATTRIBUTE",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_CDATA_SECTION",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_COMMENT",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_DOCUMENT",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_DOCUMENT_FRAGMENT",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_DOCUMENT_TYPE",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_ELEMENT",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_ENTITY",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_ENTITY_REFERENCE",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_NOTATION",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_PROCESSING_INSTRUCTION",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOW_TEXT",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "acceptNode(org.w3c.dom.Node)",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.traversal.NodeFilter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.traversal.NodeIterator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html",
+      "sourceEntry": "java.xml/org/w3c/dom/traversal/NodeIterator.java",
+      "sourceSha256": "dc06fad88351bd0c5f5c547d5e60c063dd090e2971d9ab3943534dc600474294",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "detach()",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.traversal.NodeIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExpandEntityReferences()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.traversal.NodeIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFilter()",
+          "result": "org.w3c.dom.traversal.NodeFilter",
+          "declaredBy": "org.w3c.dom.traversal.NodeIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRoot()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.NodeIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWhatToShow()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.NodeIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.NodeIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previousNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.NodeIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.traversal.TreeWalker",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html",
+      "sourceEntry": "java.xml/org/w3c/dom/traversal/TreeWalker.java",
+      "sourceSha256": "40ca0eeeb5f51a0017e7b0cb5ab7f6d8f9d904aba6ee7bb8a24e3a844890c0a7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "firstChild()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExpandEntityReferences()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFilter()",
+          "result": "org.w3c.dom.traversal.NodeFilter",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRoot()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWhatToShow()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lastChild()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextSibling()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parentNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previousNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previousSibling()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCurrentNode(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.traversal.TreeWalker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

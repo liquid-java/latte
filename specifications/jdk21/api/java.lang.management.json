@@ -1,0 +1,1974 @@
+{
+  "name": "java.lang.management",
+  "module": "java.management",
+  "types": [
+    {
+      "target": "java.lang.management.BufferPoolMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.PlatformManagedObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/BufferPoolMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/BufferPoolMXBean.java",
+      "sourceSha256": "29400145c9df5f39f62fc390e4333ba5c8c05402ce59ed78e1c590e8da2688c1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCount()",
+          "result": "long",
+          "declaredBy": "java.lang.management.BufferPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMemoryUsed()",
+          "result": "long",
+          "declaredBy": "java.lang.management.BufferPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.BufferPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTotalCapacity()",
+          "result": "long",
+          "declaredBy": "java.lang.management.BufferPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.ClassLoadingMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.PlatformManagedObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/ClassLoadingMXBean.java",
+      "sourceSha256": "cf0ada064d7a4684be7bdcfd6c72532001420f1ab1fbfa8c98fb290497f16bb1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getLoadedClassCount()",
+          "result": "int",
+          "declaredBy": "java.lang.management.ClassLoadingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTotalLoadedClassCount()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ClassLoadingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnloadedClassCount()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ClassLoadingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isVerbose()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ClassLoadingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setVerbose(boolean)",
+          "result": "void",
+          "declaredBy": "java.lang.management.ClassLoadingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.CompilationMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.PlatformManagedObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/CompilationMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/CompilationMXBean.java",
+      "sourceSha256": "d40bfc677b451f30c171560332e2bc3f56b82ee8df3ae400cc74049256fb8994",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.CompilationMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTotalCompilationTime()",
+          "result": "long",
+          "declaredBy": "java.lang.management.CompilationMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCompilationTimeMonitoringSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.CompilationMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.GarbageCollectorMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.MemoryManagerMXBean"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/GarbageCollectorMXBean.java",
+      "sourceSha256": "f265a71ac95cb16a89dd4573d27800da195e6045757c7ba598d07854434ce162",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCollectionCount()",
+          "result": "long",
+          "declaredBy": "java.lang.management.GarbageCollectorMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCollectionTime()",
+          "result": "long",
+          "declaredBy": "java.lang.management.GarbageCollectorMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.LockInfo",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/LockInfo.html",
+      "sourceEntry": "java.management/java/lang/management/LockInfo.java",
+      "sourceSha256": "5ede0278f50248bdfb2119201ef9481508379a25f863ad479d8c6181da7ae53d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "java.lang.management.LockInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(javax.management.openmbean.CompositeData)",
+          "result": "java.lang.management.LockInfo",
+          "declaredBy": "java.lang.management.LockInfo",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClassName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.LockInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIdentityHashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.management.LockInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.LockInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.ManagementFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/ManagementFactory.html",
+      "sourceEntry": "java.management/java/lang/management/ManagementFactory.java",
+      "sourceSha256": "347aec96a5efd95cea25f992abf9531a97f79843c1f53bb6333ddb525a0681c8",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CLASS_LOADING_MXBEAN_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COMPILATION_MXBEAN_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEMORY_MXBEAN_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEMORY_POOL_MXBEAN_DOMAIN_TYPE",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OPERATING_SYSTEM_MXBEAN_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RUNTIME_MXBEAN_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "THREAD_MXBEAN_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getClassLoadingMXBean()",
+          "result": "java.lang.management.ClassLoadingMXBean",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompilationMXBean()",
+          "result": "java.lang.management.CompilationMXBean",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGarbageCollectorMXBeans()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMemoryMXBean()",
+          "result": "java.lang.management.MemoryMXBean",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMemoryManagerMXBeans()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMemoryPoolMXBeans()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOperatingSystemMXBean()",
+          "result": "java.lang.management.OperatingSystemMXBean",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlatformMBeanServer()",
+          "result": "javax.management.MBeanServer",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlatformMXBean(java.lang.Class)",
+          "result": "java.lang.management.PlatformManagedObject",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlatformMXBean(javax.management.MBeanServerConnection,java.lang.Class)",
+          "result": "java.lang.management.PlatformManagedObject",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlatformMXBeans(java.lang.Class)",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlatformMXBeans(javax.management.MBeanServerConnection,java.lang.Class)",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlatformManagementInterfaces()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRuntimeMXBean()",
+          "result": "java.lang.management.RuntimeMXBean",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadMXBean()",
+          "result": "java.lang.management.ThreadMXBean",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newPlatformMXBeanProxy(javax.management.MBeanServerConnection,java.lang.String,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.management.ManagementFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.ManagementPermission",
+      "kind": "class",
+      "parents": [
+        "java.security.BasicPermission"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/ManagementPermission.html",
+      "sourceEntry": "java.management/java/lang/management/ManagementPermission.java",
+      "sourceSha256": "a2614fb15ab34c6b3038342525e516e4734de24970c334e9d5b9ceed08ff0cb8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.management.ManagementPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.management.ManagementPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.MemoryMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.PlatformManagedObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/MemoryMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/MemoryMXBean.java",
+      "sourceSha256": "0ce64f3fd12bab0551f00ec1b1683857a133ffb41ca4ab0607c8ecfdfccae372",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "gc()",
+          "result": "void",
+          "declaredBy": "java.lang.management.MemoryMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHeapMemoryUsage()",
+          "result": "java.lang.management.MemoryUsage",
+          "declaredBy": "java.lang.management.MemoryMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNonHeapMemoryUsage()",
+          "result": "java.lang.management.MemoryUsage",
+          "declaredBy": "java.lang.management.MemoryMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectPendingFinalizationCount()",
+          "result": "int",
+          "declaredBy": "java.lang.management.MemoryMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isVerbose()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.MemoryMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setVerbose(boolean)",
+          "result": "void",
+          "declaredBy": "java.lang.management.MemoryMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.MemoryManagerMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.PlatformManagedObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/MemoryManagerMXBean.java",
+      "sourceSha256": "b56a73cb1b889acc96b4bf67fcba49bc285729e547d0fc677b062c90b3a0c46c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getMemoryPoolNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.lang.management.MemoryManagerMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.MemoryManagerMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValid()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.MemoryManagerMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.MemoryNotificationInfo",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html",
+      "sourceEntry": "java.management/java/lang/management/MemoryNotificationInfo.java",
+      "sourceSha256": "d23006b6f807f9fe59d70a7f1e7312479e33ed0136df7a76a51bcc1e88798182",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.management.MemoryUsage,long)",
+          "result": "void",
+          "declaredBy": "java.lang.management.MemoryNotificationInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "MEMORY_COLLECTION_THRESHOLD_EXCEEDED",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.MemoryNotificationInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEMORY_THRESHOLD_EXCEEDED",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.MemoryNotificationInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "from(javax.management.openmbean.CompositeData)",
+          "result": "java.lang.management.MemoryNotificationInfo",
+          "declaredBy": "java.lang.management.MemoryNotificationInfo",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCount()",
+          "result": "long",
+          "declaredBy": "java.lang.management.MemoryNotificationInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPoolName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.MemoryNotificationInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUsage()",
+          "result": "java.lang.management.MemoryUsage",
+          "declaredBy": "java.lang.management.MemoryNotificationInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.MemoryPoolMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.PlatformManagedObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/MemoryPoolMXBean.java",
+      "sourceSha256": "10756121eddbb28f6060a7df240db6c56eb722527d2ed9f022ff865599ae0782",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCollectionUsage()",
+          "result": "java.lang.management.MemoryUsage",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCollectionUsageThreshold()",
+          "result": "long",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCollectionUsageThresholdCount()",
+          "result": "long",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMemoryManagerNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeakUsage()",
+          "result": "java.lang.management.MemoryUsage",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "java.lang.management.MemoryType",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUsage()",
+          "result": "java.lang.management.MemoryUsage",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUsageThreshold()",
+          "result": "long",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUsageThresholdCount()",
+          "result": "long",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCollectionUsageThresholdExceeded()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCollectionUsageThresholdSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUsageThresholdExceeded()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUsageThresholdSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValid()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resetPeakUsage()",
+          "result": "void",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCollectionUsageThreshold(long)",
+          "result": "void",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUsageThreshold(long)",
+          "result": "void",
+          "declaredBy": "java.lang.management.MemoryPoolMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.MemoryType",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/MemoryType.html",
+      "sourceEntry": "java.management/java/lang/management/MemoryType.java",
+      "sourceSha256": "552a6fa699ba0887603bae8e30135d247fb6075bae060a9d2cd742c3646ca238",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "HEAP",
+          "result": "java.lang.management.MemoryType",
+          "declaredBy": "java.lang.management.MemoryType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NON_HEAP",
+          "result": "java.lang.management.MemoryType",
+          "declaredBy": "java.lang.management.MemoryType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.MemoryType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.lang.management.MemoryType",
+          "declaredBy": "java.lang.management.MemoryType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.lang.management.MemoryType[]",
+          "declaredBy": "java.lang.management.MemoryType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.MemoryUsage",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/MemoryUsage.html",
+      "sourceEntry": "java.management/java/lang/management/MemoryUsage.java",
+      "sourceSha256": "521b799474b838acda5685d7b07924116d3e7d0580d0432c991869dd2e89a3cb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(long,long,long,long)",
+          "result": "void",
+          "declaredBy": "java.lang.management.MemoryUsage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(javax.management.openmbean.CompositeData)",
+          "result": "java.lang.management.MemoryUsage",
+          "declaredBy": "java.lang.management.MemoryUsage",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCommitted()",
+          "result": "long",
+          "declaredBy": "java.lang.management.MemoryUsage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInit()",
+          "result": "long",
+          "declaredBy": "java.lang.management.MemoryUsage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMax()",
+          "result": "long",
+          "declaredBy": "java.lang.management.MemoryUsage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUsed()",
+          "result": "long",
+          "declaredBy": "java.lang.management.MemoryUsage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.MemoryUsage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.MonitorInfo",
+      "kind": "class",
+      "parents": [
+        "java.lang.management.LockInfo"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/MonitorInfo.html",
+      "sourceEntry": "java.management/java/lang/management/MonitorInfo.java",
+      "sourceSha256": "1bbef596335767690e6e7abbf205e566e3ee8123ea42194eab8b96bcf5f513e0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int,int,java.lang.StackTraceElement)",
+          "result": "void",
+          "declaredBy": "java.lang.management.MonitorInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(javax.management.openmbean.CompositeData)",
+          "result": "java.lang.management.MonitorInfo",
+          "declaredBy": "java.lang.management.MonitorInfo",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLockedStackDepth()",
+          "result": "int",
+          "declaredBy": "java.lang.management.MonitorInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLockedStackFrame()",
+          "result": "java.lang.StackTraceElement",
+          "declaredBy": "java.lang.management.MonitorInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.OperatingSystemMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.PlatformManagedObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/OperatingSystemMXBean.java",
+      "sourceSha256": "46ca6d694364702c36867873bd8af36d097a4ec8182bd6674fa5242baa6b8242",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getArch()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.OperatingSystemMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableProcessors()",
+          "result": "int",
+          "declaredBy": "java.lang.management.OperatingSystemMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.OperatingSystemMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemLoadAverage()",
+          "result": "double",
+          "declaredBy": "java.lang.management.OperatingSystemMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.OperatingSystemMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.PlatformLoggingMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.PlatformManagedObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/PlatformLoggingMXBean.java",
+      "sourceSha256": "1cd87c20b5886ef12974d396d581cf796a5fb65f32fe61312a6892b6019531df",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getLoggerLevel(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.PlatformLoggingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoggerNames()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.management.PlatformLoggingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParentLoggerName(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.PlatformLoggingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLoggerLevel(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.management.PlatformLoggingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.PlatformManagedObject",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/PlatformManagedObject.html",
+      "sourceEntry": "java.management/java/lang/management/PlatformManagedObject.java",
+      "sourceSha256": "3d7399b49c91cce9af698f6802c44a2f7c3c6d2ce391bc33bd34a22e4804be29",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getObjectName()",
+          "result": "javax.management.ObjectName",
+          "declaredBy": "java.lang.management.PlatformManagedObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.RuntimeMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.PlatformManagedObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/RuntimeMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/RuntimeMXBean.java",
+      "sourceSha256": "a096942964264d75163557eeffe1ff51fb95737ad01fb84d75085a3d3179b143",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getBootClassPath()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClassPath()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInputArguments()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLibraryPath()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getManagementSpecVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPid()",
+          "result": "long",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSpecName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSpecVendor()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSpecVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStartTime()",
+          "result": "long",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemProperties()",
+          "result": "java.util.Map",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUptime()",
+          "result": "long",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVmName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVmVendor()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVmVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBootClassPathSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.RuntimeMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.ThreadInfo",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/ThreadInfo.html",
+      "sourceEntry": "java.management/java/lang/management/ThreadInfo.java",
+      "sourceSha256": "15d4a2207cbce744362f745be14f102dc45d39278210d23d16802d26ea378c07",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "from(javax.management.openmbean.CompositeData)",
+          "result": "java.lang.management.ThreadInfo",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBlockedCount()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBlockedTime()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLockInfo()",
+          "result": "java.lang.management.LockInfo",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLockName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLockOwnerId()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLockOwnerName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLockedMonitors()",
+          "result": "java.lang.management.MonitorInfo[]",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLockedSynchronizers()",
+          "result": "java.lang.management.LockInfo[]",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPriority()",
+          "result": "int",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStackTrace()",
+          "result": "java.lang.StackTraceElement[]",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadId()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadState()",
+          "result": "java.lang.Thread$State",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitedCount()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitedTime()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDaemon()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInNative()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSuspended()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.management.ThreadInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.management.ThreadMXBean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.management.PlatformManagedObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/java/lang/management/ThreadMXBean.html",
+      "sourceEntry": "java.management/java/lang/management/ThreadMXBean.java",
+      "sourceSha256": "1283d7fca859ce1caa24b2470f1a6368643e00224859cc2f157c6471c8e90e16",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "dumpAllThreads(boolean,boolean)",
+          "result": "java.lang.management.ThreadInfo[]",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dumpAllThreads(boolean,boolean,int)",
+          "result": "java.lang.management.ThreadInfo[]",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findDeadlockedThreads()",
+          "result": "long[]",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findMonitorDeadlockedThreads()",
+          "result": "long[]",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAllThreadIds()",
+          "result": "long[]",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentThreadCpuTime()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentThreadUserTime()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDaemonThreadCount()",
+          "result": "int",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeakThreadCount()",
+          "result": "int",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadCount()",
+          "result": "int",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadCpuTime(long)",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadInfo(long)",
+          "result": "java.lang.management.ThreadInfo",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadInfo(long,int)",
+          "result": "java.lang.management.ThreadInfo",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadInfo(long[])",
+          "result": "java.lang.management.ThreadInfo[]",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadInfo(long[],boolean,boolean)",
+          "result": "java.lang.management.ThreadInfo[]",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadInfo(long[],boolean,boolean,int)",
+          "result": "java.lang.management.ThreadInfo[]",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadInfo(long[],int)",
+          "result": "java.lang.management.ThreadInfo[]",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadUserTime(long)",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTotalStartedThreadCount()",
+          "result": "long",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCurrentThreadCpuTimeSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isObjectMonitorUsageSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSynchronizerUsageSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isThreadContentionMonitoringEnabled()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isThreadContentionMonitoringSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isThreadCpuTimeEnabled()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isThreadCpuTimeSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resetPeakThreadCount()",
+          "result": "void",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setThreadContentionMonitoringEnabled(boolean)",
+          "result": "void",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setThreadCpuTimeEnabled(boolean)",
+          "result": "void",
+          "declaredBy": "java.lang.management.ThreadMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1933 @@
+{
+  "name": "java.net.http",
+  "module": "java.net.http",
+  "types": [
+    {
+      "target": "java.net.http.HttpClient",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.AutoCloseable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpClient.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpClient.java",
+      "sourceSha256": "20bc65f631965c5e15902805e0625143f6756225255ec272141ab354f4cfc38a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "authenticator()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitTermination(java.time.Duration)",
+          "result": "boolean",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connectTimeout()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "cookieHandler()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "executor()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "followRedirects()",
+          "result": "java.net.http.HttpClient$Redirect",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isTerminated()",
+          "result": "boolean",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newBuilder()",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newHttpClient()",
+          "result": "java.net.http.HttpClient",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newWebSocketBuilder()",
+          "result": "java.net.http.WebSocket$Builder",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "proxy()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "send(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler)",
+          "result": "java.net.http.HttpResponse",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler)",
+          "result": "java.util.concurrent.CompletableFuture",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler,java.net.http.HttpResponse$PushPromiseHandler)",
+          "result": "java.util.concurrent.CompletableFuture",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shutdown()",
+          "result": "void",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shutdownNow()",
+          "result": "void",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sslContext()",
+          "result": "javax.net.ssl.SSLContext",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sslParameters()",
+          "result": "javax.net.ssl.SSLParameters",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "version()",
+          "result": "java.net.http.HttpClient$Version",
+          "declaredBy": "java.net.http.HttpClient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpClient$Builder",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpClient.Builder.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpClient.java",
+      "sourceSha256": "20bc65f631965c5e15902805e0625143f6756225255ec272141ab354f4cfc38a",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NO_PROXY",
+          "result": "java.net.ProxySelector",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "authenticator(java.net.Authenticator)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "build()",
+          "result": "java.net.http.HttpClient",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connectTimeout(java.time.Duration)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "cookieHandler(java.net.CookieHandler)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "executor(java.util.concurrent.Executor)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "followRedirects(java.net.http.HttpClient$Redirect)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "localAddress(java.net.InetAddress)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "priority(int)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "proxy(java.net.ProxySelector)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sslContext(javax.net.ssl.SSLContext)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sslParameters(javax.net.ssl.SSLParameters)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "version(java.net.http.HttpClient$Version)",
+          "result": "java.net.http.HttpClient$Builder",
+          "declaredBy": "java.net.http.HttpClient$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpClient$Redirect",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpClient.java",
+      "sourceSha256": "20bc65f631965c5e15902805e0625143f6756225255ec272141ab354f4cfc38a",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ALWAYS",
+          "result": "java.net.http.HttpClient$Redirect",
+          "declaredBy": "java.net.http.HttpClient$Redirect",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NEVER",
+          "result": "java.net.http.HttpClient$Redirect",
+          "declaredBy": "java.net.http.HttpClient$Redirect",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NORMAL",
+          "result": "java.net.http.HttpClient$Redirect",
+          "declaredBy": "java.net.http.HttpClient$Redirect",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.net.http.HttpClient$Redirect",
+          "declaredBy": "java.net.http.HttpClient$Redirect",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.net.http.HttpClient$Redirect[]",
+          "declaredBy": "java.net.http.HttpClient$Redirect",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpClient$Version",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpClient.Version.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpClient.java",
+      "sourceSha256": "20bc65f631965c5e15902805e0625143f6756225255ec272141ab354f4cfc38a",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "HTTP_1_1",
+          "result": "java.net.http.HttpClient$Version",
+          "declaredBy": "java.net.http.HttpClient$Version",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HTTP_2",
+          "result": "java.net.http.HttpClient$Version",
+          "declaredBy": "java.net.http.HttpClient$Version",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.net.http.HttpClient$Version",
+          "declaredBy": "java.net.http.HttpClient$Version",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.net.http.HttpClient$Version[]",
+          "declaredBy": "java.net.http.HttpClient$Version",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpConnectTimeoutException",
+      "kind": "class",
+      "parents": [
+        "java.net.http.HttpTimeoutException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpConnectTimeoutException.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpConnectTimeoutException.java",
+      "sourceSha256": "e0a6a3e0ef1f9b7b87e6168c6299739fa50b5a80b18035f39b690ca3e5a9f696",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.net.http.HttpConnectTimeoutException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpHeaders",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpHeaders.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpHeaders.java",
+      "sourceSha256": "237d050cf980f149d76a292be67568fadc5808c46d0b676c66a237b10840fa95",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allValues(java.lang.String)",
+          "result": "java.util.List",
+          "declaredBy": "java.net.http.HttpHeaders",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.net.http.HttpHeaders",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firstValue(java.lang.String)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpHeaders",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firstValueAsLong(java.lang.String)",
+          "result": "java.util.OptionalLong",
+          "declaredBy": "java.net.http.HttpHeaders",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.net.http.HttpHeaders",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "map()",
+          "result": "java.util.Map",
+          "declaredBy": "java.net.http.HttpHeaders",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.util.Map,java.util.function.BiPredicate)",
+          "result": "java.net.http.HttpHeaders",
+          "declaredBy": "java.net.http.HttpHeaders",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.net.http.HttpHeaders",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpRequest",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpRequest.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpRequest.java",
+      "sourceSha256": "19d11f642b94b582e58d7f4d0db687f69e12c76eb1ea54d8164df325f52408c0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bodyPublisher()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "expectContinue()",
+          "result": "boolean",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "headers()",
+          "result": "java.net.http.HttpHeaders",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "method()",
+          "result": "java.lang.String",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newBuilder()",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newBuilder(java.net.URI)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newBuilder(java.net.http.HttpRequest,java.util.function.BiPredicate)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "timeout()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "uri()",
+          "result": "java.net.URI",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "version()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpRequest",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpRequest$BodyPublisher",
+      "kind": "interface",
+      "parents": [
+        "java.util.concurrent.Flow$Publisher"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpRequest.java",
+      "sourceSha256": "19d11f642b94b582e58d7f4d0db687f69e12c76eb1ea54d8164df325f52408c0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "contentLength()",
+          "result": "long",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublisher",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpRequest$BodyPublishers",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpRequest.java",
+      "sourceSha256": "19d11f642b94b582e58d7f4d0db687f69e12c76eb1ea54d8164df325f52408c0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "concat(java.net.http.HttpRequest$BodyPublisher[])",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromPublisher(java.util.concurrent.Flow$Publisher)",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromPublisher(java.util.concurrent.Flow$Publisher,long)",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "noBody()",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofByteArray(byte[])",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofByteArray(byte[],int,int)",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofByteArrays(java.lang.Iterable)",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofFile(java.nio.file.Path)",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofInputStream(java.util.function.Supplier)",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofString(java.lang.String)",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofString(java.lang.String,java.nio.charset.Charset)",
+          "result": "java.net.http.HttpRequest$BodyPublisher",
+          "declaredBy": "java.net.http.HttpRequest$BodyPublishers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpRequest$Builder",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpRequest.java",
+      "sourceSha256": "19d11f642b94b582e58d7f4d0db687f69e12c76eb1ea54d8164df325f52408c0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "DELETE()",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "GET()",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "HEAD()",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "POST(java.net.http.HttpRequest$BodyPublisher)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "PUT(java.net.http.HttpRequest$BodyPublisher)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "build()",
+          "result": "java.net.http.HttpRequest",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "copy()",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "expectContinue(boolean)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "header(java.lang.String,java.lang.String)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "headers(java.lang.String[])",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "method(java.lang.String,java.net.http.HttpRequest$BodyPublisher)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setHeader(java.lang.String,java.lang.String)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "timeout(java.time.Duration)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "uri(java.net.URI)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "version(java.net.http.HttpClient$Version)",
+          "result": "java.net.http.HttpRequest$Builder",
+          "declaredBy": "java.net.http.HttpRequest$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpResponse",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpResponse.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpResponse.java",
+      "sourceSha256": "30a8230a9812933be003cb794923645d6795a203460986cea96f1e33561e4e29",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "body()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.net.http.HttpResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "headers()",
+          "result": "java.net.http.HttpHeaders",
+          "declaredBy": "java.net.http.HttpResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previousResponse()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "request()",
+          "result": "java.net.http.HttpRequest",
+          "declaredBy": "java.net.http.HttpResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sslSession()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.net.http.HttpResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "statusCode()",
+          "result": "int",
+          "declaredBy": "java.net.http.HttpResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "uri()",
+          "result": "java.net.URI",
+          "declaredBy": "java.net.http.HttpResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "version()",
+          "result": "java.net.http.HttpClient$Version",
+          "declaredBy": "java.net.http.HttpResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpResponse$BodyHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpResponse.java",
+      "sourceSha256": "30a8230a9812933be003cb794923645d6795a203460986cea96f1e33561e4e29",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "apply(java.net.http.HttpResponse$ResponseInfo)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpResponse$BodyHandlers",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpResponse.java",
+      "sourceSha256": "30a8230a9812933be003cb794923645d6795a203460986cea96f1e33561e4e29",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "buffering(java.net.http.HttpResponse$BodyHandler,int)",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "discarding()",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromLineSubscriber(java.util.concurrent.Flow$Subscriber)",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromLineSubscriber(java.util.concurrent.Flow$Subscriber,java.util.function.Function,java.lang.String)",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromSubscriber(java.util.concurrent.Flow$Subscriber)",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromSubscriber(java.util.concurrent.Flow$Subscriber,java.util.function.Function)",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofByteArray()",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofByteArrayConsumer(java.util.function.Consumer)",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofFile(java.nio.file.Path)",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofFile(java.nio.file.Path,java.nio.file.OpenOption[])",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofFileDownload(java.nio.file.Path,java.nio.file.OpenOption[])",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofInputStream()",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofLines()",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofPublisher()",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofString()",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofString(java.nio.charset.Charset)",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replacing(java.lang.Object)",
+          "result": "java.net.http.HttpResponse$BodyHandler",
+          "declaredBy": "java.net.http.HttpResponse$BodyHandlers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpResponse$BodySubscriber",
+      "kind": "interface",
+      "parents": [
+        "java.util.concurrent.Flow$Subscriber"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscriber.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpResponse.java",
+      "sourceSha256": "30a8230a9812933be003cb794923645d6795a203460986cea96f1e33561e4e29",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getBody()",
+          "result": "java.util.concurrent.CompletionStage",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscriber",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpResponse$BodySubscribers",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpResponse.java",
+      "sourceSha256": "30a8230a9812933be003cb794923645d6795a203460986cea96f1e33561e4e29",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "buffering(java.net.http.HttpResponse$BodySubscriber,int)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "discarding()",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromLineSubscriber(java.util.concurrent.Flow$Subscriber)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromLineSubscriber(java.util.concurrent.Flow$Subscriber,java.util.function.Function,java.nio.charset.Charset,java.lang.String)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromSubscriber(java.util.concurrent.Flow$Subscriber)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromSubscriber(java.util.concurrent.Flow$Subscriber,java.util.function.Function)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapping(java.net.http.HttpResponse$BodySubscriber,java.util.function.Function)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofByteArray()",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofByteArrayConsumer(java.util.function.Consumer)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofFile(java.nio.file.Path)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofFile(java.nio.file.Path,java.nio.file.OpenOption[])",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofInputStream()",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofLines(java.nio.charset.Charset)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofPublisher()",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofString(java.nio.charset.Charset)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replacing(java.lang.Object)",
+          "result": "java.net.http.HttpResponse$BodySubscriber",
+          "declaredBy": "java.net.http.HttpResponse$BodySubscribers",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpResponse$PushPromiseHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpResponse.java",
+      "sourceSha256": "30a8230a9812933be003cb794923645d6795a203460986cea96f1e33561e4e29",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "applyPushPromise(java.net.http.HttpRequest,java.net.http.HttpRequest,java.util.function.Function)",
+          "result": "void",
+          "declaredBy": "java.net.http.HttpResponse$PushPromiseHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.util.function.Function,java.util.concurrent.ConcurrentMap)",
+          "result": "java.net.http.HttpResponse$PushPromiseHandler",
+          "declaredBy": "java.net.http.HttpResponse$PushPromiseHandler",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpResponse$ResponseInfo",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpResponse.java",
+      "sourceSha256": "30a8230a9812933be003cb794923645d6795a203460986cea96f1e33561e4e29",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "headers()",
+          "result": "java.net.http.HttpHeaders",
+          "declaredBy": "java.net.http.HttpResponse$ResponseInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "statusCode()",
+          "result": "int",
+          "declaredBy": "java.net.http.HttpResponse$ResponseInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "version()",
+          "result": "java.net.http.HttpClient$Version",
+          "declaredBy": "java.net.http.HttpResponse$ResponseInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.HttpTimeoutException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpTimeoutException.html",
+      "sourceEntry": "java.net.http/java/net/http/HttpTimeoutException.java",
+      "sourceSha256": "2aa0d24a41d197311b8b4108a6109abd53c4bd571fca8529ca27d8cfd6ac5125",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.net.http.HttpTimeoutException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.WebSocket",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/WebSocket.html",
+      "sourceEntry": "java.net.http/java/net/http/WebSocket.java",
+      "sourceSha256": "367bcb52de19bbf9ecc76230feb2237ee95faa1ad3267128d0a538f7c3776c4f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NORMAL_CLOSURE",
+          "result": "int",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "abort()",
+          "result": "void",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubprotocol()",
+          "result": "java.lang.String",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInputClosed()",
+          "result": "boolean",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOutputClosed()",
+          "result": "boolean",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "request(long)",
+          "result": "void",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sendBinary(java.nio.ByteBuffer,boolean)",
+          "result": "java.util.concurrent.CompletableFuture",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sendClose(int,java.lang.String)",
+          "result": "java.util.concurrent.CompletableFuture",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sendPing(java.nio.ByteBuffer)",
+          "result": "java.util.concurrent.CompletableFuture",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sendPong(java.nio.ByteBuffer)",
+          "result": "java.util.concurrent.CompletableFuture",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sendText(java.lang.CharSequence,boolean)",
+          "result": "java.util.concurrent.CompletableFuture",
+          "declaredBy": "java.net.http.WebSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.WebSocket$Builder",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/WebSocket.Builder.html",
+      "sourceEntry": "java.net.http/java/net/http/WebSocket.java",
+      "sourceSha256": "367bcb52de19bbf9ecc76230feb2237ee95faa1ad3267128d0a538f7c3776c4f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "buildAsync(java.net.URI,java.net.http.WebSocket$Listener)",
+          "result": "java.util.concurrent.CompletableFuture",
+          "declaredBy": "java.net.http.WebSocket$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connectTimeout(java.time.Duration)",
+          "result": "java.net.http.WebSocket$Builder",
+          "declaredBy": "java.net.http.WebSocket$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "header(java.lang.String,java.lang.String)",
+          "result": "java.net.http.WebSocket$Builder",
+          "declaredBy": "java.net.http.WebSocket$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "subprotocols(java.lang.String,java.lang.String[])",
+          "result": "java.net.http.WebSocket$Builder",
+          "declaredBy": "java.net.http.WebSocket$Builder",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.WebSocket$Listener",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/WebSocket.Listener.html",
+      "sourceEntry": "java.net.http/java/net/http/WebSocket.java",
+      "sourceSha256": "367bcb52de19bbf9ecc76230feb2237ee95faa1ad3267128d0a538f7c3776c4f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)",
+          "result": "java.util.concurrent.CompletionStage",
+          "declaredBy": "java.net.http.WebSocket$Listener",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onClose(java.net.http.WebSocket,int,java.lang.String)",
+          "result": "java.util.concurrent.CompletionStage",
+          "declaredBy": "java.net.http.WebSocket$Listener",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onError(java.net.http.WebSocket,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.net.http.WebSocket$Listener",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onOpen(java.net.http.WebSocket)",
+          "result": "void",
+          "declaredBy": "java.net.http.WebSocket$Listener",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onPing(java.net.http.WebSocket,java.nio.ByteBuffer)",
+          "result": "java.util.concurrent.CompletionStage",
+          "declaredBy": "java.net.http.WebSocket$Listener",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onPong(java.net.http.WebSocket,java.nio.ByteBuffer)",
+          "result": "java.util.concurrent.CompletionStage",
+          "declaredBy": "java.net.http.WebSocket$Listener",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)",
+          "result": "java.util.concurrent.CompletionStage",
+          "declaredBy": "java.net.http.WebSocket$Listener",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.http.WebSocketHandshakeException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/WebSocketHandshakeException.html",
+      "sourceEntry": "java.net.http/java/net/http/WebSocketHandshakeException.java",
+      "sourceSha256": "2956da5514b1f0cca6c9a7ac1866e3a4bac6cd2b948f861ddb074620f134d0c4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.http.HttpResponse)",
+          "result": "void",
+          "declaredBy": "java.net.http.WebSocketHandshakeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResponse()",
+          "result": "java.net.http.HttpResponse",
+          "declaredBy": "java.net.http.WebSocketHandshakeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initCause(java.lang.Throwable)",
+          "result": "java.net.http.WebSocketHandshakeException",
+          "declaredBy": "java.net.http.WebSocketHandshakeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

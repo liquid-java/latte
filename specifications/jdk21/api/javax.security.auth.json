@@ -1,0 +1,510 @@
+{
+  "name": "javax.security.auth",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "javax.security.auth.AuthPermission",
+      "kind": "class",
+      "parents": [
+        "java.security.BasicPermission"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/AuthPermission.html",
+      "sourceEntry": "java.base/javax/security/auth/AuthPermission.java",
+      "sourceSha256": "a12f657e680780842fcf8abe39dc1396dec7bfd07ac89ee694997adeb29bd1ec",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.AuthPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.AuthPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.DestroyFailedException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/DestroyFailedException.html",
+      "sourceEntry": "java.base/javax/security/auth/DestroyFailedException.java",
+      "sourceSha256": "a0845ce16ee8a7648dd71871600a564f98d88d9af23e00c5fac58bc85025fdc0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.DestroyFailedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.DestroyFailedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.Destroyable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/Destroyable.html",
+      "sourceEntry": "java.base/javax/security/auth/Destroyable.java",
+      "sourceSha256": "7849bf8ba0ca5b72a103a8867f0ca370212b0652ef8ca804289b7ba1c9e560a9",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "destroy()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.Destroyable",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDestroyed()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.Destroyable",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.PrivateCredentialPermission",
+      "kind": "class",
+      "parents": [
+        "java.security.Permission"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/PrivateCredentialPermission.html",
+      "sourceEntry": "java.base/javax/security/auth/PrivateCredentialPermission.java",
+      "sourceSha256": "3f8447f4bd356552e92d873bfea46e57111025180ecfea5a19c15493da3fb00e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.PrivateCredentialPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.PrivateCredentialPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getActions()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.PrivateCredentialPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCredentialClass()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.PrivateCredentialPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrincipals()",
+          "result": "java.lang.String[][]",
+          "declaredBy": "javax.security.auth.PrivateCredentialPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.PrivateCredentialPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implies(java.security.Permission)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.PrivateCredentialPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newPermissionCollection()",
+          "result": "java.security.PermissionCollection",
+          "declaredBy": "javax.security.auth.PrivateCredentialPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.RefreshFailedException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/RefreshFailedException.html",
+      "sourceEntry": "java.base/javax/security/auth/RefreshFailedException.java",
+      "sourceSha256": "81eab33960e5b537eee852a51acc3c64a82e8f18dc831031d483be2baf0b20ad",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.RefreshFailedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.RefreshFailedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.Refreshable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/Refreshable.html",
+      "sourceEntry": "java.base/javax/security/auth/Refreshable.java",
+      "sourceSha256": "8564a91881292b716c476272df4b3fffaf51d4b62bdaeeaf2694aae35a648354",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "isCurrent()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.Refreshable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "refresh()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.Refreshable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.Subject",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/Subject.html",
+      "sourceEntry": "java.base/javax/security/auth/Subject.java",
+      "sourceSha256": "2b0590c629d6a77ddcdda1dbc38f30e97bb15c0fc98dca822d1c9f1fd2f02f6e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(boolean,java.util.Set,java.util.Set,java.util.Set)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "callAs(javax.security.auth.Subject,java.util.concurrent.Callable)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "current()",
+          "result": "javax.security.auth.Subject",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doAs(javax.security.auth.Subject,java.security.PrivilegedAction)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrincipals()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrincipals(java.lang.Class)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrivateCredentials()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrivateCredentials(java.lang.Class)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicCredentials()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicCredentials(java.lang.Class)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubject(java.security.AccessControlContext)",
+          "result": "javax.security.auth.Subject",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadOnly()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setReadOnly()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.Subject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.SubjectDomainCombiner",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.DomainCombiner"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html",
+      "sourceEntry": "java.base/javax/security/auth/SubjectDomainCombiner.java",
+      "sourceSha256": "3bb39d4ae7721d93574e889eaf171b0cb7d38d54b24fa9e763ac4f3e6a8b686e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.SubjectDomainCombiner",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])",
+          "result": "java.security.ProtectionDomain[]",
+          "declaredBy": "javax.security.auth.SubjectDomainCombiner",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubject()",
+          "result": "javax.security.auth.Subject",
+          "declaredBy": "javax.security.auth.SubjectDomainCombiner",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

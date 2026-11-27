@@ -1,0 +1,534 @@
+{
+  "name": "org.w3c.dom.events",
+  "module": "java.xml",
+  "types": [
+    {
+      "target": "org.w3c.dom.events.DocumentEvent",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/events/DocumentEvent.html",
+      "sourceEntry": "java.xml/org/w3c/dom/events/DocumentEvent.java",
+      "sourceSha256": "b3bbc7696ee9fa54c321371e5ffb9e5b256637c03636239ab277bff8a61e0577",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createEvent(java.lang.String)",
+          "result": "org.w3c.dom.events.Event",
+          "declaredBy": "org.w3c.dom.events.DocumentEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.events.Event",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/events/Event.html",
+      "sourceEntry": "java.xml/org/w3c/dom/events/Event.java",
+      "sourceSha256": "0d0c946fc22f37f9487fb6ada5ba4cb803a50ed214a918e3bfd8b397e4ee132c",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "AT_TARGET",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BUBBLING_PHASE",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CAPTURING_PHASE",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getBubbles()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCancelable()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentTarget()",
+          "result": "org.w3c.dom.events.EventTarget",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEventPhase()",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTarget()",
+          "result": "org.w3c.dom.events.EventTarget",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTimeStamp()",
+          "result": "long",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initEvent(java.lang.String,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preventDefault()",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stopPropagation()",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.events.Event",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.events.EventException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/events/EventException.html",
+      "sourceEntry": "java.xml/org/w3c/dom/events/EventException.java",
+      "sourceSha256": "15d1987fc105b97fc12fd715b6c1d45809e3862452d93d6c307df394e1bf38b5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(short,java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.events.EventException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "UNSPECIFIED_EVENT_TYPE_ERR",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.EventException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "code",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.EventException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.events.EventListener",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/events/EventListener.html",
+      "sourceEntry": "java.xml/org/w3c/dom/events/EventListener.java",
+      "sourceSha256": "3ff79648ea0b80e4ce5927c8cd7a4e0d5073c8755d3c0d8e4c66a15c0b496757",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "handleEvent(org.w3c.dom.events.Event)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.events.EventListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.events.EventTarget",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/events/EventTarget.html",
+      "sourceEntry": "java.xml/org/w3c/dom/events/EventTarget.java",
+      "sourceSha256": "a61e3fa693a1ef350d5888dc50d608163a31c4bd91a00fff8e80199b204bff14",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.events.EventTarget",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dispatchEvent(org.w3c.dom.events.Event)",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.events.EventTarget",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.events.EventTarget",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.events.MouseEvent",
+      "kind": "interface",
+      "parents": [
+        "org.w3c.dom.events.UIEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html",
+      "sourceEntry": "java.xml/org/w3c/dom/events/MouseEvent.java",
+      "sourceSha256": "cae0c215f3083616d33b385e7613b73a72fda0f9f3ad30ac6a5fae5133d4cf51",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAltKey()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getButton()",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClientX()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClientY()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCtrlKey()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMetaKey()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRelatedTarget()",
+          "result": "org.w3c.dom.events.EventTarget",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getScreenX()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getScreenY()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShiftKey()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initMouseEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int,int,int,int,int,boolean,boolean,boolean,boolean,short,org.w3c.dom.events.EventTarget)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.events.MouseEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.events.MutationEvent",
+      "kind": "interface",
+      "parents": [
+        "org.w3c.dom.events.Event"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html",
+      "sourceEntry": "java.xml/org/w3c/dom/events/MutationEvent.java",
+      "sourceSha256": "743c20cbd7db3ce93b4a54cff57eb0b8b146946d6d1eb57684305d61b71ccb8b",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ADDITION",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.MutationEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODIFICATION",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.MutationEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REMOVAL",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.MutationEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttrChange()",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.events.MutationEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttrName()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.events.MutationEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNewValue()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.events.MutationEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrevValue()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.events.MutationEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRelatedNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.events.MutationEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initMutationEvent(java.lang.String,boolean,boolean,org.w3c.dom.Node,java.lang.String,java.lang.String,java.lang.String,short)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.events.MutationEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.events.UIEvent",
+      "kind": "interface",
+      "parents": [
+        "org.w3c.dom.events.Event"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/events/UIEvent.html",
+      "sourceEntry": "java.xml/org/w3c/dom/events/UIEvent.java",
+      "sourceSha256": "7c418a9a2107e0cd370a57fb66672c4da80ada65b492d0afe0bde7450291f4f8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getDetail()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.events.UIEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getView()",
+          "result": "org.w3c.dom.views.AbstractView",
+          "declaredBy": "org.w3c.dom.events.UIEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initUIEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.events.UIEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

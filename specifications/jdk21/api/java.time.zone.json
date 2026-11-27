@@ -1,0 +1,742 @@
+{
+  "name": "java.time.zone",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.time.zone.ZoneOffsetTransition",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Comparable",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html",
+      "sourceEntry": "java.base/java/time/zone/ZoneOffsetTransition.java",
+      "sourceSha256": "50c200784b6b51a479dd689f060d971f793826e241134f94893482258f510627",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "compareTo(java.time.zone.ZoneOffsetTransition)",
+          "result": "int",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateTimeAfter()",
+          "result": "java.time.LocalDateTime",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateTimeBefore()",
+          "result": "java.time.LocalDateTime",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDuration()",
+          "result": "java.time.Duration",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstant()",
+          "result": "java.time.Instant",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffsetAfter()",
+          "result": "java.time.ZoneOffset",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffsetBefore()",
+          "result": "java.time.ZoneOffset",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isGap()",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOverlap()",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValidOffset(java.time.ZoneOffset)",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)",
+          "result": "java.time.zone.ZoneOffsetTransition",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toEpochSecond()",
+          "result": "long",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.zone.ZoneOffsetTransition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.zone.ZoneOffsetTransitionRule",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html",
+      "sourceEntry": "java.base/java/time/zone/ZoneOffsetTransitionRule.java",
+      "sourceSha256": "ab387ffb3342606b5f3418a2019905224b55aa2ba2f913b866e5069d9e89fe44",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createTransition(int)",
+          "result": "java.time.zone.ZoneOffsetTransition",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDayOfMonthIndicator()",
+          "result": "int",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDayOfWeek()",
+          "result": "java.time.DayOfWeek",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalTime()",
+          "result": "java.time.LocalTime",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMonth()",
+          "result": "java.time.Month",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffsetAfter()",
+          "result": "java.time.ZoneOffset",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffsetBefore()",
+          "result": "java.time.ZoneOffset",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardOffset()",
+          "result": "java.time.ZoneOffset",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTimeDefinition()",
+          "result": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isMidnightEndOfDay()",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.time.Month,int,java.time.DayOfWeek,java.time.LocalTime,boolean,java.time.zone.ZoneOffsetTransitionRule$TimeDefinition,java.time.ZoneOffset,java.time.ZoneOffset,java.time.ZoneOffset)",
+          "result": "java.time.zone.ZoneOffsetTransitionRule",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html",
+      "sourceEntry": "java.base/java/time/zone/ZoneOffsetTransitionRule.java",
+      "sourceSha256": "ab387ffb3342606b5f3418a2019905224b55aa2ba2f913b866e5069d9e89fe44",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "STANDARD",
+          "result": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UTC",
+          "result": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WALL",
+          "result": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createDateTime(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)",
+          "result": "java.time.LocalDateTime",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition[]",
+          "declaredBy": "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.zone.ZoneRules",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/zone/ZoneRules.html",
+      "sourceEntry": "java.base/java/time/zone/ZoneRules.java",
+      "sourceSha256": "877f2203d29d38904058eca0a9473c89fa373d91a092cd2910933caeb8544a2a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDaylightSavings(java.time.Instant)",
+          "result": "java.time.Duration",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffset(java.time.Instant)",
+          "result": "java.time.ZoneOffset",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffset(java.time.LocalDateTime)",
+          "result": "java.time.ZoneOffset",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardOffset(java.time.Instant)",
+          "result": "java.time.ZoneOffset",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransition(java.time.LocalDateTime)",
+          "result": "java.time.zone.ZoneOffsetTransition",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransitionRules()",
+          "result": "java.util.List",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransitions()",
+          "result": "java.util.List",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValidOffsets(java.time.LocalDateTime)",
+          "result": "java.util.List",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDaylightSavings(java.time.Instant)",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFixedOffset()",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValidOffset(java.time.LocalDateTime,java.time.ZoneOffset)",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextTransition(java.time.Instant)",
+          "result": "java.time.zone.ZoneOffsetTransition",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.time.ZoneOffset)",
+          "result": "java.time.zone.ZoneRules",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.time.ZoneOffset,java.time.ZoneOffset,java.util.List,java.util.List,java.util.List)",
+          "result": "java.time.zone.ZoneRules",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previousTransition(java.time.Instant)",
+          "result": "java.time.zone.ZoneOffsetTransition",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.zone.ZoneRules",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.zone.ZoneRulesException",
+      "kind": "class",
+      "parents": [
+        "java.time.DateTimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/zone/ZoneRulesException.html",
+      "sourceEntry": "java.base/java/time/zone/ZoneRulesException.java",
+      "sourceSha256": "4ebbe2d49e93f2697055038ef33fe56ac8f76614d3ddbd4312b720847656fdeb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.time.zone.ZoneRulesException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.time.zone.ZoneRulesException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.zone.ZoneRulesProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/zone/ZoneRulesProvider.html",
+      "sourceEntry": "java.base/java/time/zone/ZoneRulesProvider.java",
+      "sourceSha256": "0a6041c41f33218936d212ae8b4e1c080a6af94ca0033f26a485d49374b838d9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.time.zone.ZoneRulesProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableZoneIds()",
+          "result": "java.util.Set",
+          "declaredBy": "java.time.zone.ZoneRulesProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRules(java.lang.String,boolean)",
+          "result": "java.time.zone.ZoneRules",
+          "declaredBy": "java.time.zone.ZoneRulesProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersions(java.lang.String)",
+          "result": "java.util.NavigableMap",
+          "declaredBy": "java.time.zone.ZoneRulesProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provideRefresh()",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneRulesProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provideRules(java.lang.String,boolean)",
+          "result": "java.time.zone.ZoneRules",
+          "declaredBy": "java.time.zone.ZoneRulesProvider",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provideVersions(java.lang.String)",
+          "result": "java.util.NavigableMap",
+          "declaredBy": "java.time.zone.ZoneRulesProvider",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provideZoneIds()",
+          "result": "java.util.Set",
+          "declaredBy": "java.time.zone.ZoneRulesProvider",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "refresh()",
+          "result": "boolean",
+          "declaredBy": "java.time.zone.ZoneRulesProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerProvider(java.time.zone.ZoneRulesProvider)",
+          "result": "void",
+          "declaredBy": "java.time.zone.ZoneRulesProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3135 @@
+{
+  "name": "javax.swing.table",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.swing.table.AbstractTableModel",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.swing.table.TableModel",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html",
+      "sourceEntry": "java.desktop/javax/swing/table/AbstractTableModel.java",
+      "sourceSha256": "3c960147eb7716d2eb3fcedad5bbf672288c23117b6892747fbd5f8f47ff93ec",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addTableModelListener(javax.swing.event.TableModelListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findColumn(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireTableCellUpdated(int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireTableChanged(javax.swing.event.TableModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireTableDataChanged()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireTableRowsDeleted(int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireTableRowsInserted(int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireTableRowsUpdated(int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireTableStructureChanged()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnClass(int)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnName(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListeners(java.lang.Class)",
+          "result": "java.util.EventListener[]",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTableModelListeners()",
+          "result": "javax.swing.event.TableModelListener[]",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCellEditable(int,int)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "listenerList",
+          "result": "javax.swing.event.EventListenerList",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "removeTableModelListener(javax.swing.event.TableModelListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setValueAt(java.lang.Object,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.AbstractTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.DefaultTableCellRenderer",
+      "kind": "class",
+      "parents": [
+        "javax.swing.JLabel",
+        "javax.swing.table.TableCellRenderer",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/DefaultTableCellRenderer.html",
+      "sourceEntry": "java.desktop/javax/swing/table/DefaultTableCellRenderer.java",
+      "sourceSha256": "ea6bc2055af74a4369691c3752e8a9cdf3358a13db5a8314f93d8e5aacb087d3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firePropertyChange(java.lang.String,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTableCellRendererComponent(javax.swing.JTable,java.lang.Object,boolean,boolean,int,int)",
+          "result": "java.awt.Component",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invalidate()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "noFocusBorder",
+          "result": "javax.swing.border.Border",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 12,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "repaint()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "repaint(java.awt.Rectangle)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "repaint(long,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "revalidate()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBackground(java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setForeground(java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setValue(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateUI()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validate()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.DefaultTableCellRenderer$UIResource",
+      "kind": "class",
+      "parents": [
+        "javax.swing.table.DefaultTableCellRenderer",
+        "javax.swing.plaf.UIResource"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/DefaultTableCellRenderer.UIResource.html",
+      "sourceEntry": "java.desktop/javax/swing/table/DefaultTableCellRenderer.java",
+      "sourceSha256": "ea6bc2055af74a4369691c3752e8a9cdf3358a13db5a8314f93d8e5aacb087d3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableCellRenderer$UIResource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.DefaultTableColumnModel",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.swing.table.TableColumnModel",
+        "java.beans.PropertyChangeListener",
+        "javax.swing.event.ListSelectionListener",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html",
+      "sourceEntry": "java.desktop/javax/swing/table/DefaultTableColumnModel.java",
+      "sourceSha256": "86c41b31ea6bca25d66b4ace1f011cc20c795b7fd7e2e9c3a90f121b3fc5dc12",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addColumn(javax.swing.table.TableColumn)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addColumnModelListener(javax.swing.event.TableColumnModelListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "changeEvent",
+          "result": "javax.swing.event.ChangeEvent",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "columnMargin",
+          "result": "int",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "columnSelectionAllowed",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createSelectionModel()",
+          "result": "javax.swing.ListSelectionModel",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireColumnAdded(javax.swing.event.TableColumnModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireColumnMarginChanged()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireColumnMoved(javax.swing.event.TableColumnModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireColumnRemoved(javax.swing.event.TableColumnModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireColumnSelectionChanged(javax.swing.event.ListSelectionEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumn(int)",
+          "result": "javax.swing.table.TableColumn",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnIndex(java.lang.Object)",
+          "result": "int",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnIndexAtX(int)",
+          "result": "int",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnMargin()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnModelListeners()",
+          "result": "javax.swing.event.TableColumnModelListener[]",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnSelectionAllowed()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumns()",
+          "result": "java.util.Enumeration",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListeners(java.lang.Class)",
+          "result": "java.util.EventListener[]",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectedColumnCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectedColumns()",
+          "result": "int[]",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectionModel()",
+          "result": "javax.swing.ListSelectionModel",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTotalColumnWidth()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "listenerList",
+          "result": "javax.swing.event.EventListenerList",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "moveColumn(int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "propertyChange(java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "recalcWidthCache()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeColumn(javax.swing.table.TableColumn)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeColumnModelListener(javax.swing.event.TableColumnModelListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "selectionModel",
+          "result": "javax.swing.ListSelectionModel",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnMargin(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnSelectionAllowed(boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSelectionModel(javax.swing.ListSelectionModel)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "tableColumns",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "totalColumnWidth",
+          "result": "int",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "valueChanged(javax.swing.event.ListSelectionEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableColumnModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.DefaultTableModel",
+      "kind": "class",
+      "parents": [
+        "javax.swing.table.AbstractTableModel",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html",
+      "sourceEntry": "java.desktop/javax/swing/table/DefaultTableModel.java",
+      "sourceSha256": "7bef59d5286376a0f44ee356c1378cec5e252f86bfca75c2ca6828746eebd868",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object[],int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object[][],java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Vector,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Vector,java.util.Vector)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addColumn(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addColumn(java.lang.Object,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addColumn(java.lang.Object,java.util.Vector)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addRow(java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addRow(java.util.Vector)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "columnIdentifiers",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "convertToVector(java.lang.Object[])",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 12,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "convertToVector(java.lang.Object[][])",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 12,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "dataVector",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnName(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDataVector()",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRowCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValueAt(int,int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertRow(int,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertRow(int,java.util.Vector)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCellEditable(int,int)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "moveRow(int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDataAvailable(javax.swing.event.TableModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newRowsAdded(javax.swing.event.TableModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeRow(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rowsRemoved(javax.swing.event.TableModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnCount(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnIdentifiers(java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnIdentifiers(java.util.Vector)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDataVector(java.lang.Object[][],java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDataVector(java.util.Vector,java.util.Vector)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNumRows(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRowCount(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setValueAt(java.lang.Object,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.DefaultTableModel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.JTableHeader",
+      "kind": "class",
+      "parents": [
+        "javax.swing.JComponent",
+        "javax.swing.event.TableColumnModelListener",
+        "javax.accessibility.Accessible"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/JTableHeader.html",
+      "sourceEntry": "java.desktop/javax/swing/table/JTableHeader.java",
+      "sourceSha256": "b6d018803e5afc28b0c267fefbe17eacb5673f78ff869ae82659d6f6fe0a7728",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.table.TableColumnModel)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnAdded(javax.swing.event.TableColumnModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnAtPoint(java.awt.Point)",
+          "result": "int",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnMarginChanged(javax.swing.event.ChangeEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "columnModel",
+          "result": "javax.swing.table.TableColumnModel",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "columnMoved(javax.swing.event.TableColumnModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnRemoved(javax.swing.event.TableColumnModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnSelectionChanged(javax.swing.event.ListSelectionEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDefaultColumnModel()",
+          "result": "javax.swing.table.TableColumnModel",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDefaultRenderer()",
+          "result": "javax.swing.table.TableCellRenderer",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "draggedColumn",
+          "result": "javax.swing.table.TableColumn",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "draggedDistance",
+          "result": "int",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleContext()",
+          "result": "javax.accessibility.AccessibleContext",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnModel()",
+          "result": "javax.swing.table.TableColumnModel",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultRenderer()",
+          "result": "javax.swing.table.TableCellRenderer",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDraggedColumn()",
+          "result": "javax.swing.table.TableColumn",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDraggedDistance()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHeaderRect(int)",
+          "result": "java.awt.Rectangle",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPreferredSize()",
+          "result": "java.awt.Dimension",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReorderingAllowed()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResizingAllowed()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResizingColumn()",
+          "result": "javax.swing.table.TableColumn",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTable()",
+          "result": "javax.swing.JTable",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getToolTipText(java.awt.event.MouseEvent)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUI()",
+          "result": "javax.swing.plaf.TableHeaderUI",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUIClassID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUpdateTableInRealTime()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initializeLocalVars()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paramString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "reorderingAllowed",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "resizeAndRepaint()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "resizingAllowed",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "resizingColumn",
+          "result": "javax.swing.table.TableColumn",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnModel(javax.swing.table.TableColumnModel)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDefaultRenderer(javax.swing.table.TableCellRenderer)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDraggedColumn(javax.swing.table.TableColumn)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDraggedDistance(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setReorderingAllowed(boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setResizingAllowed(boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setResizingColumn(javax.swing.table.TableColumn)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTable(javax.swing.JTable)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUI(javax.swing.plaf.TableHeaderUI)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUpdateTableInRealTime(boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "table",
+          "result": "javax.swing.JTable",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "updateTableInRealTime",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "updateUI()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.JTableHeader$AccessibleJTableHeader",
+      "kind": "class",
+      "parents": [
+        "javax.swing.JComponent$AccessibleJComponent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/JTableHeader.AccessibleJTableHeader.html",
+      "sourceEntry": "java.desktop/javax/swing/table/JTableHeader.java",
+      "sourceSha256": "b6d018803e5afc28b0c267fefbe17eacb5673f78ff869ae82659d6f6fe0a7728",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleAt(java.awt.Point)",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleChild(int)",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleChildrenCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleRole()",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+      "kind": "class",
+      "parents": [
+        "javax.accessibility.AccessibleContext",
+        "javax.accessibility.Accessible",
+        "javax.accessibility.AccessibleComponent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/JTableHeader.AccessibleJTableHeader.AccessibleJTableHeaderEntry.html",
+      "sourceEntry": "java.desktop/javax/swing/table/JTableHeader.java",
+      "sourceSha256": "b6d018803e5afc28b0c267fefbe17eacb5673f78ff869ae82659d6f6fe0a7728",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,javax.swing.table.JTableHeader,javax.swing.JTable)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addFocusListener(java.awt.event.FocusListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addPropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(java.awt.Point)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleAction()",
+          "result": "javax.accessibility.AccessibleAction",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleAt(java.awt.Point)",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleChild(int)",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleChildrenCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleComponent()",
+          "result": "javax.accessibility.AccessibleComponent",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleContext()",
+          "result": "javax.accessibility.AccessibleContext",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleIndexInParent()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleRole()",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleSelection()",
+          "result": "javax.accessibility.AccessibleSelection",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleStateSet()",
+          "result": "javax.accessibility.AccessibleStateSet",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleText()",
+          "result": "javax.accessibility.AccessibleText",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleValue()",
+          "result": "javax.accessibility.AccessibleValue",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBackground()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBounds()",
+          "result": "java.awt.Rectangle",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCursor()",
+          "result": "java.awt.Cursor",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFont()",
+          "result": "java.awt.Font",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFontMetrics(java.awt.Font)",
+          "result": "java.awt.FontMetrics",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getForeground()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocation()",
+          "result": "java.awt.Point",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocationOnScreen()",
+          "result": "java.awt.Point",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSize()",
+          "result": "java.awt.Dimension",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEnabled()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFocusTraversable()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isShowing()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isVisible()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeFocusListener(java.awt.event.FocusListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestFocus()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleDescription(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBackground(java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBounds(java.awt.Rectangle)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCursor(java.awt.Cursor)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnabled(boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFont(java.awt.Font)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setForeground(java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocation(java.awt.Point)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSize(java.awt.Dimension)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setVisible(boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.JTableHeader$AccessibleJTableHeader$AccessibleJTableHeaderEntry",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.TableCellEditor",
+      "kind": "interface",
+      "parents": [
+        "javax.swing.CellEditor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/TableCellEditor.html",
+      "sourceEntry": "java.desktop/javax/swing/table/TableCellEditor.java",
+      "sourceSha256": "00187471cef4cfd4568b1ea21665ade8fd603eb90236b75d79b6f813189fc309",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getTableCellEditorComponent(javax.swing.JTable,java.lang.Object,boolean,int,int)",
+          "result": "java.awt.Component",
+          "declaredBy": "javax.swing.table.TableCellEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.TableCellRenderer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/TableCellRenderer.html",
+      "sourceEntry": "java.desktop/javax/swing/table/TableCellRenderer.java",
+      "sourceSha256": "ec152bcf4a05489d9dc67056185593f257a646658e1554325393ff482e1b180e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getTableCellRendererComponent(javax.swing.JTable,java.lang.Object,boolean,boolean,int,int)",
+          "result": "java.awt.Component",
+          "declaredBy": "javax.swing.table.TableCellRenderer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.TableColumn",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/TableColumn.html",
+      "sourceEntry": "java.desktop/javax/swing/table/TableColumn.java",
+      "sourceSha256": "0f6f7e4191ae7ab71f800662cfee161a85beb7bc4a59cc21aaf37f7d6693b8ec",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,javax.swing.table.TableCellRenderer,javax.swing.table.TableCellEditor)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "CELL_RENDERER_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COLUMN_WIDTH_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HEADER_RENDERER_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HEADER_VALUE_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addPropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "cellEditor",
+          "result": "javax.swing.table.TableCellEditor",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "cellRenderer",
+          "result": "javax.swing.table.TableCellRenderer",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createDefaultHeaderRenderer()",
+          "result": "javax.swing.table.TableCellRenderer",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "disableResizedPosting()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "enableResizedPosting()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCellEditor()",
+          "result": "javax.swing.table.TableCellEditor",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCellRenderer()",
+          "result": "javax.swing.table.TableCellRenderer",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHeaderRenderer()",
+          "result": "javax.swing.table.TableCellRenderer",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHeaderValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIdentifier()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxWidth()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinWidth()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getModelIndex()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPreferredWidth()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyChangeListeners()",
+          "result": "java.beans.PropertyChangeListener[]",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResizable()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWidth()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "headerRenderer",
+          "result": "javax.swing.table.TableCellRenderer",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "headerValue",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "identifier",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "isResizable",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "maxWidth",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "minWidth",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "modelIndex",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "removePropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "resizedPostingDisableCount",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setCellEditor(javax.swing.table.TableCellEditor)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCellRenderer(javax.swing.table.TableCellRenderer)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setHeaderRenderer(javax.swing.table.TableCellRenderer)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setHeaderValue(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIdentifier(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaxWidth(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMinWidth(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setModelIndex(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPreferredWidth(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setResizable(boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setWidth(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sizeWidthToFit()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "width",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumn",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.TableColumnModel",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/TableColumnModel.html",
+      "sourceEntry": "java.desktop/javax/swing/table/TableColumnModel.java",
+      "sourceSha256": "ba918768bef0a8f0c37b5eb6340f2e8a255e5c1a8761a805d427a064f455c49d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addColumn(javax.swing.table.TableColumn)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addColumnModelListener(javax.swing.event.TableColumnModelListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumn(int)",
+          "result": "javax.swing.table.TableColumn",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnIndex(java.lang.Object)",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnIndexAtX(int)",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnMargin()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnSelectionAllowed()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumns()",
+          "result": "java.util.Enumeration",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectedColumnCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectedColumns()",
+          "result": "int[]",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectionModel()",
+          "result": "javax.swing.ListSelectionModel",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTotalColumnWidth()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "moveColumn(int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeColumn(javax.swing.table.TableColumn)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeColumnModelListener(javax.swing.event.TableColumnModelListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnMargin(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnSelectionAllowed(boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSelectionModel(javax.swing.ListSelectionModel)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableColumnModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.TableModel",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/TableModel.html",
+      "sourceEntry": "java.desktop/javax/swing/table/TableModel.java",
+      "sourceSha256": "edc172a89f22d4133a594eee2ab62f58c98e7c271862be18b3ef974c8667a814",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addTableModelListener(javax.swing.event.TableModelListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnClass(int)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.swing.table.TableModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnName(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.TableModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRowCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.table.TableModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getValueAt(int,int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.swing.table.TableModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCellEditable(int,int)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.TableModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeTableModelListener(javax.swing.event.TableModelListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setValueAt(java.lang.Object,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableModel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.TableRowSorter",
+      "kind": "class",
+      "parents": [
+        "javax.swing.DefaultRowSorter"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/TableRowSorter.html",
+      "sourceEntry": "java.desktop/javax/swing/table/TableRowSorter.java",
+      "sourceSha256": "852efe3f2f51688e0cb35f9b612cc797175cd0245ee8f5aa1bd9efef238b5d1c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableRowSorter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.table.TableModel)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableRowSorter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getComparator(int)",
+          "result": "java.util.Comparator",
+          "declaredBy": "javax.swing.table.TableRowSorter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStringConverter()",
+          "result": "javax.swing.table.TableStringConverter",
+          "declaredBy": "javax.swing.table.TableRowSorter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setModel(javax.swing.table.TableModel)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableRowSorter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setStringConverter(javax.swing.table.TableStringConverter)",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableRowSorter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "useToString(int)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.table.TableRowSorter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.table.TableStringConverter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/table/TableStringConverter.html",
+      "sourceEntry": "java.desktop/javax/swing/table/TableStringConverter.java",
+      "sourceSha256": "59c0e8d201a0f68a0ce428ab5f5c669c15ba47223d452623194ff94f8655484d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.table.TableStringConverter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString(javax.swing.table.TableModel,int,int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.table.TableStringConverter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

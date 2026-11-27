@@ -29,10 +29,17 @@ public final class Verification {
    * Analyze application sources and external specifications together, with optional library JARs.
    */
   public static Result verify(List<String> paths, List<String> classpath) {
+    return verify(paths, classpath, List.of());
+  }
+
+  /** Analyze sources with optional, explicitly selected Java 21 contract packages. */
+  public static Result verify(
+      List<String> paths, List<String> classpath, Collection<String> jdkPackages) {
     var launcher = launcher();
     if (!classpath.isEmpty())
       launcher.getEnvironment().setSourceClasspath(classpath.toArray(String[]::new));
     paths.forEach(launcher::addInputResource);
+    Jdk21Contracts.addTo(launcher, jdkPackages);
     return verify(launcher);
   }
 
@@ -70,7 +77,7 @@ public final class Verification {
   private static Launcher launcher() {
     var launcher = new Launcher();
     launcher.getEnvironment().setNoClasspath(true);
-    launcher.getEnvironment().setComplianceLevel(17);
+    launcher.getEnvironment().setComplianceLevel(21);
     launcher.getEnvironment().setCommentEnabled(false);
     return launcher;
   }

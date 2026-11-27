@@ -1,0 +1,2819 @@
+{
+  "name": "java.lang.foreign",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.lang.foreign.AddressLayout",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.ValueLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/AddressLayout.html",
+      "sourceEntry": "java.base/java/lang/foreign/AddressLayout.java",
+      "sourceSha256": "d590af4fc64348cb6504955f6e9a11bf3ff0967f5d9d9c2beffa7858af09e944",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "targetLayout()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.foreign.AddressLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.AddressLayout",
+          "declaredBy": "java.lang.foreign.AddressLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.AddressLayout",
+          "declaredBy": "java.lang.foreign.AddressLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withOrder(java.nio.ByteOrder)",
+          "result": "java.lang.foreign.AddressLayout",
+          "declaredBy": "java.lang.foreign.AddressLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withTargetLayout(java.lang.foreign.MemoryLayout)",
+          "result": "java.lang.foreign.AddressLayout",
+          "declaredBy": "java.lang.foreign.AddressLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.AddressLayout",
+          "declaredBy": "java.lang.foreign.AddressLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutTargetLayout()",
+          "result": "java.lang.foreign.AddressLayout",
+          "declaredBy": "java.lang.foreign.AddressLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.Arena",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.SegmentAllocator",
+        "java.lang.AutoCloseable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/Arena.html",
+      "sourceEntry": "java.base/java/lang/foreign/Arena.java",
+      "sourceSha256": "164218320e7609e43996cd8bfc757c8caafd9ce65c51f03cb572435a3871fc18",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allocate(long,long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.Arena",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.Arena",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "global()",
+          "result": "java.lang.foreign.Arena",
+          "declaredBy": "java.lang.foreign.Arena",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofAuto()",
+          "result": "java.lang.foreign.Arena",
+          "declaredBy": "java.lang.foreign.Arena",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofConfined()",
+          "result": "java.lang.foreign.Arena",
+          "declaredBy": "java.lang.foreign.Arena",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofShared()",
+          "result": "java.lang.foreign.Arena",
+          "declaredBy": "java.lang.foreign.Arena",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "scope()",
+          "result": "java.lang.foreign.MemorySegment$Scope",
+          "declaredBy": "java.lang.foreign.Arena",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.FunctionDescriptor",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html",
+      "sourceEntry": "java.base/java/lang/foreign/FunctionDescriptor.java",
+      "sourceSha256": "e679ad78cc97c97e93bd4cd2a4ed8ded3703f90a45bd2e71359ece3966718425",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "appendArgumentLayouts(java.lang.foreign.MemoryLayout[])",
+          "result": "java.lang.foreign.FunctionDescriptor",
+          "declaredBy": "java.lang.foreign.FunctionDescriptor",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "argumentLayouts()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.foreign.FunctionDescriptor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "changeReturnLayout(java.lang.foreign.MemoryLayout)",
+          "result": "java.lang.foreign.FunctionDescriptor",
+          "declaredBy": "java.lang.foreign.FunctionDescriptor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropReturnLayout()",
+          "result": "java.lang.foreign.FunctionDescriptor",
+          "declaredBy": "java.lang.foreign.FunctionDescriptor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertArgumentLayouts(int,java.lang.foreign.MemoryLayout[])",
+          "result": "java.lang.foreign.FunctionDescriptor",
+          "declaredBy": "java.lang.foreign.FunctionDescriptor",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.foreign.MemoryLayout,java.lang.foreign.MemoryLayout[])",
+          "result": "java.lang.foreign.FunctionDescriptor",
+          "declaredBy": "java.lang.foreign.FunctionDescriptor",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofVoid(java.lang.foreign.MemoryLayout[])",
+          "result": "java.lang.foreign.FunctionDescriptor",
+          "declaredBy": "java.lang.foreign.FunctionDescriptor",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "returnLayout()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.foreign.FunctionDescriptor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toMethodType()",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.foreign.FunctionDescriptor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.GroupLayout",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.MemoryLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/GroupLayout.html",
+      "sourceEntry": "java.base/java/lang/foreign/GroupLayout.java",
+      "sourceSha256": "dae8a9eefda71f580b2b16719363eb23b935938e8837effac9fc3b8bfd3d547d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "memberLayouts()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.foreign.GroupLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.GroupLayout",
+          "declaredBy": "java.lang.foreign.GroupLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.GroupLayout",
+          "declaredBy": "java.lang.foreign.GroupLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.GroupLayout",
+          "declaredBy": "java.lang.foreign.GroupLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.Linker",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/Linker.html",
+      "sourceEntry": "java.base/java/lang/foreign/Linker.java",
+      "sourceSha256": "3d6a11036116a0a98d987bbb18ed897c6a224eb83e487fea3393ce88c275e036",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "defaultLookup()",
+          "result": "java.lang.foreign.SymbolLookup",
+          "declaredBy": "java.lang.foreign.Linker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "downcallHandle(java.lang.foreign.FunctionDescriptor,java.lang.foreign.Linker$Option[])",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.foreign.Linker",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "downcallHandle(java.lang.foreign.MemorySegment,java.lang.foreign.FunctionDescriptor,java.lang.foreign.Linker$Option[])",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.foreign.Linker",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nativeLinker()",
+          "result": "java.lang.foreign.Linker",
+          "declaredBy": "java.lang.foreign.Linker",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "upcallStub(java.lang.invoke.MethodHandle,java.lang.foreign.FunctionDescriptor,java.lang.foreign.Arena,java.lang.foreign.Linker$Option[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.Linker",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.Linker$Option",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/Linker.Option.html",
+      "sourceEntry": "java.base/java/lang/foreign/Linker.java",
+      "sourceSha256": "3d6a11036116a0a98d987bbb18ed897c6a224eb83e487fea3393ce88c275e036",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "captureCallState(java.lang.String[])",
+          "result": "java.lang.foreign.Linker$Option",
+          "declaredBy": "java.lang.foreign.Linker$Option",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "captureStateLayout()",
+          "result": "java.lang.foreign.StructLayout",
+          "declaredBy": "java.lang.foreign.Linker$Option",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firstVariadicArg(int)",
+          "result": "java.lang.foreign.Linker$Option",
+          "declaredBy": "java.lang.foreign.Linker$Option",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isTrivial()",
+          "result": "java.lang.foreign.Linker$Option",
+          "declaredBy": "java.lang.foreign.Linker$Option",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.MemoryLayout",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/MemoryLayout.html",
+      "sourceEntry": "java.base/java/lang/foreign/MemoryLayout.java",
+      "sourceSha256": "2fe756391ae38065cb38dd74d6c94acfd90a73f074045cf19e7b95cc66330184",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "byteAlignment()",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "byteOffset(java.lang.foreign.MemoryLayout$PathElement[])",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "byteOffsetHandle(java.lang.foreign.MemoryLayout$PathElement[])",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "byteSize()",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paddingLayout(long)",
+          "result": "java.lang.foreign.PaddingLayout",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "select(java.lang.foreign.MemoryLayout$PathElement[])",
+          "result": "java.lang.foreign.MemoryLayout",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequenceLayout(java.lang.foreign.MemoryLayout)",
+          "result": "java.lang.foreign.SequenceLayout",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequenceLayout(long,java.lang.foreign.MemoryLayout)",
+          "result": "java.lang.foreign.SequenceLayout",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sliceHandle(java.lang.foreign.MemoryLayout$PathElement[])",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "structLayout(java.lang.foreign.MemoryLayout[])",
+          "result": "java.lang.foreign.StructLayout",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unionLayout(java.lang.foreign.MemoryLayout[])",
+          "result": "java.lang.foreign.UnionLayout",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "varHandle(java.lang.foreign.MemoryLayout$PathElement[])",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.MemoryLayout",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.MemoryLayout",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.MemoryLayout",
+          "declaredBy": "java.lang.foreign.MemoryLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.MemoryLayout$PathElement",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/MemoryLayout.PathElement.html",
+      "sourceEntry": "java.base/java/lang/foreign/MemoryLayout.java",
+      "sourceSha256": "2fe756391ae38065cb38dd74d6c94acfd90a73f074045cf19e7b95cc66330184",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "dereferenceElement()",
+          "result": "java.lang.foreign.MemoryLayout$PathElement",
+          "declaredBy": "java.lang.foreign.MemoryLayout$PathElement",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "groupElement(java.lang.String)",
+          "result": "java.lang.foreign.MemoryLayout$PathElement",
+          "declaredBy": "java.lang.foreign.MemoryLayout$PathElement",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "groupElement(long)",
+          "result": "java.lang.foreign.MemoryLayout$PathElement",
+          "declaredBy": "java.lang.foreign.MemoryLayout$PathElement",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequenceElement()",
+          "result": "java.lang.foreign.MemoryLayout$PathElement",
+          "declaredBy": "java.lang.foreign.MemoryLayout$PathElement",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequenceElement(long)",
+          "result": "java.lang.foreign.MemoryLayout$PathElement",
+          "declaredBy": "java.lang.foreign.MemoryLayout$PathElement",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequenceElement(long,long)",
+          "result": "java.lang.foreign.MemoryLayout$PathElement",
+          "declaredBy": "java.lang.foreign.MemoryLayout$PathElement",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.MemorySegment",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+      "sourceEntry": "java.base/java/lang/foreign/MemorySegment.java",
+      "sourceSha256": "ec9b2bcaee4d248e4c7816a5319eb1edcd4e5e30429aaf0c02f69c9b663f3746",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NULL",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "address()",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asByteBuffer()",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asOverlappingSlice(java.lang.foreign.MemorySegment)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asReadOnly()",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asSlice(long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asSlice(long,java.lang.foreign.MemoryLayout)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asSlice(long,long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asSlice(long,long,long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "byteSize()",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "copy(java.lang.Object,int,java.lang.foreign.MemorySegment,java.lang.foreign.ValueLayout,long,int)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "copy(java.lang.foreign.MemorySegment,java.lang.foreign.ValueLayout,long,java.lang.Object,int,int)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "copy(java.lang.foreign.MemorySegment,java.lang.foreign.ValueLayout,long,java.lang.foreign.MemorySegment,java.lang.foreign.ValueLayout,long,long)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "copy(java.lang.foreign.MemorySegment,long,java.lang.foreign.MemorySegment,long,long)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "copyFrom(java.lang.foreign.MemorySegment)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "elements(java.lang.foreign.MemoryLayout)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fill(byte)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "force()",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.foreign.AddressLayout,long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.foreign.ValueLayout$OfBoolean,long)",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.foreign.ValueLayout$OfByte,long)",
+          "result": "byte",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.foreign.ValueLayout$OfChar,long)",
+          "result": "char",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.foreign.ValueLayout$OfDouble,long)",
+          "result": "double",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.foreign.ValueLayout$OfFloat,long)",
+          "result": "float",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.foreign.ValueLayout$OfInt,long)",
+          "result": "int",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.foreign.ValueLayout$OfLong,long)",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.foreign.ValueLayout$OfShort,long)",
+          "result": "short",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAtIndex(java.lang.foreign.AddressLayout,long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAtIndex(java.lang.foreign.ValueLayout$OfBoolean,long)",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAtIndex(java.lang.foreign.ValueLayout$OfByte,long)",
+          "result": "byte",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAtIndex(java.lang.foreign.ValueLayout$OfChar,long)",
+          "result": "char",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAtIndex(java.lang.foreign.ValueLayout$OfDouble,long)",
+          "result": "double",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAtIndex(java.lang.foreign.ValueLayout$OfFloat,long)",
+          "result": "float",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAtIndex(java.lang.foreign.ValueLayout$OfInt,long)",
+          "result": "int",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAtIndex(java.lang.foreign.ValueLayout$OfLong,long)",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAtIndex(java.lang.foreign.ValueLayout$OfShort,long)",
+          "result": "short",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUtf8String(long)",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "heapBase()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAccessibleBy(java.lang.Thread)",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLoaded()",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isMapped()",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNative()",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadOnly()",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "load()",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mismatch(java.lang.foreign.MemorySegment)",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mismatch(java.lang.foreign.MemorySegment,long,long,java.lang.foreign.MemorySegment,long,long)",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofAddress(long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofArray(byte[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofArray(char[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofArray(double[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofArray(float[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofArray(int[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofArray(long[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofArray(short[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofBuffer(java.nio.Buffer)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reinterpret(java.lang.foreign.Arena,java.util.function.Consumer)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reinterpret(long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reinterpret(long,java.lang.foreign.Arena,java.util.function.Consumer)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "scope()",
+          "result": "java.lang.foreign.MemorySegment$Scope",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "segmentOffset(java.lang.foreign.MemorySegment)",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.foreign.AddressLayout,long,java.lang.foreign.MemorySegment)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.foreign.ValueLayout$OfBoolean,long,boolean)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.foreign.ValueLayout$OfByte,long,byte)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.foreign.ValueLayout$OfChar,long,char)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.foreign.ValueLayout$OfDouble,long,double)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.foreign.ValueLayout$OfFloat,long,float)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.foreign.ValueLayout$OfInt,long,int)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.foreign.ValueLayout$OfLong,long,long)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.foreign.ValueLayout$OfShort,long,short)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAtIndex(java.lang.foreign.AddressLayout,long,java.lang.foreign.MemorySegment)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAtIndex(java.lang.foreign.ValueLayout$OfBoolean,long,boolean)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAtIndex(java.lang.foreign.ValueLayout$OfByte,long,byte)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAtIndex(java.lang.foreign.ValueLayout$OfChar,long,char)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAtIndex(java.lang.foreign.ValueLayout$OfDouble,long,double)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAtIndex(java.lang.foreign.ValueLayout$OfFloat,long,float)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAtIndex(java.lang.foreign.ValueLayout$OfInt,long,int)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAtIndex(java.lang.foreign.ValueLayout$OfLong,long,long)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAtIndex(java.lang.foreign.ValueLayout$OfShort,long,short)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUtf8String(long,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "spliterator(java.lang.foreign.MemoryLayout)",
+          "result": "java.util.Spliterator",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray(java.lang.foreign.ValueLayout$OfByte)",
+          "result": "byte[]",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray(java.lang.foreign.ValueLayout$OfChar)",
+          "result": "char[]",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray(java.lang.foreign.ValueLayout$OfDouble)",
+          "result": "double[]",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray(java.lang.foreign.ValueLayout$OfFloat)",
+          "result": "float[]",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray(java.lang.foreign.ValueLayout$OfInt)",
+          "result": "int[]",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray(java.lang.foreign.ValueLayout$OfLong)",
+          "result": "long[]",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray(java.lang.foreign.ValueLayout$OfShort)",
+          "result": "short[]",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unload()",
+          "result": "void",
+          "declaredBy": "java.lang.foreign.MemorySegment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.MemorySegment$Scope",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/MemorySegment.Scope.html",
+      "sourceEntry": "java.base/java/lang/foreign/MemorySegment.java",
+      "sourceSha256": "ec9b2bcaee4d248e4c7816a5319eb1edcd4e5e30429aaf0c02f69c9b663f3746",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemorySegment$Scope",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.foreign.MemorySegment$Scope",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAlive()",
+          "result": "boolean",
+          "declaredBy": "java.lang.foreign.MemorySegment$Scope",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.PaddingLayout",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.MemoryLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/PaddingLayout.html",
+      "sourceEntry": "java.base/java/lang/foreign/PaddingLayout.java",
+      "sourceSha256": "91ee2131fc02043d66782cc831b9a7c69c57041da8228970f8b743b52edac2ea",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.PaddingLayout",
+          "declaredBy": "java.lang.foreign.PaddingLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.PaddingLayout",
+          "declaredBy": "java.lang.foreign.PaddingLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.PaddingLayout",
+          "declaredBy": "java.lang.foreign.PaddingLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.SegmentAllocator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/SegmentAllocator.html",
+      "sourceEntry": "java.base/java/lang/foreign/SegmentAllocator.java",
+      "sourceSha256": "3fda92fa04e10916bd12809f2161bbe7f22456670d82b15c07ccdf0e0257e764",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allocate(java.lang.foreign.AddressLayout,java.lang.foreign.MemorySegment)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(java.lang.foreign.MemoryLayout)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(java.lang.foreign.ValueLayout$OfByte,byte)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(java.lang.foreign.ValueLayout$OfChar,char)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(java.lang.foreign.ValueLayout$OfDouble,double)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(java.lang.foreign.ValueLayout$OfFloat,float)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(java.lang.foreign.ValueLayout$OfInt,int)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(java.lang.foreign.ValueLayout$OfLong,long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(java.lang.foreign.ValueLayout$OfShort,short)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(long,long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocateArray(java.lang.foreign.MemoryLayout,long)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocateArray(java.lang.foreign.ValueLayout$OfByte,byte[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocateArray(java.lang.foreign.ValueLayout$OfChar,char[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocateArray(java.lang.foreign.ValueLayout$OfDouble,double[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocateArray(java.lang.foreign.ValueLayout$OfFloat,float[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocateArray(java.lang.foreign.ValueLayout$OfInt,int[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocateArray(java.lang.foreign.ValueLayout$OfLong,long[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocateArray(java.lang.foreign.ValueLayout$OfShort,short[])",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocateUtf8String(java.lang.String)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prefixAllocator(java.lang.foreign.MemorySegment)",
+          "result": "java.lang.foreign.SegmentAllocator",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slicingAllocator(java.lang.foreign.MemorySegment)",
+          "result": "java.lang.foreign.SegmentAllocator",
+          "declaredBy": "java.lang.foreign.SegmentAllocator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.SequenceLayout",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.MemoryLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/SequenceLayout.html",
+      "sourceEntry": "java.base/java/lang/foreign/SequenceLayout.java",
+      "sourceSha256": "55ae5fc74b48ef6a3fe59c3efc202599d40d96d3f719ccfe5939f796c0f81546",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "elementCount()",
+          "result": "long",
+          "declaredBy": "java.lang.foreign.SequenceLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "elementLayout()",
+          "result": "java.lang.foreign.MemoryLayout",
+          "declaredBy": "java.lang.foreign.SequenceLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flatten()",
+          "result": "java.lang.foreign.SequenceLayout",
+          "declaredBy": "java.lang.foreign.SequenceLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reshape(long[])",
+          "result": "java.lang.foreign.SequenceLayout",
+          "declaredBy": "java.lang.foreign.SequenceLayout",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.SequenceLayout",
+          "declaredBy": "java.lang.foreign.SequenceLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withElementCount(long)",
+          "result": "java.lang.foreign.SequenceLayout",
+          "declaredBy": "java.lang.foreign.SequenceLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.SequenceLayout",
+          "declaredBy": "java.lang.foreign.SequenceLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.MemoryLayout",
+          "declaredBy": "java.lang.foreign.SequenceLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.StructLayout",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.GroupLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/StructLayout.html",
+      "sourceEntry": "java.base/java/lang/foreign/StructLayout.java",
+      "sourceSha256": "683890e9ea0b11bdc21b8716a9172ab17b49e3c47b953c1adee615e390c5dee4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.StructLayout",
+          "declaredBy": "java.lang.foreign.StructLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.StructLayout",
+          "declaredBy": "java.lang.foreign.StructLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.StructLayout",
+          "declaredBy": "java.lang.foreign.StructLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.SymbolLookup",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/SymbolLookup.html",
+      "sourceEntry": "java.base/java/lang/foreign/SymbolLookup.java",
+      "sourceSha256": "04471e12a3e1a228043431af29c25c14dcef241eae7675d980c7c0216def2a48",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "find(java.lang.String)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.foreign.SymbolLookup",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "libraryLookup(java.lang.String,java.lang.foreign.Arena)",
+          "result": "java.lang.foreign.SymbolLookup",
+          "declaredBy": "java.lang.foreign.SymbolLookup",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "libraryLookup(java.nio.file.Path,java.lang.foreign.Arena)",
+          "result": "java.lang.foreign.SymbolLookup",
+          "declaredBy": "java.lang.foreign.SymbolLookup",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loaderLookup()",
+          "result": "java.lang.foreign.SymbolLookup",
+          "declaredBy": "java.lang.foreign.SymbolLookup",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "or(java.lang.foreign.SymbolLookup)",
+          "result": "java.lang.foreign.SymbolLookup",
+          "declaredBy": "java.lang.foreign.SymbolLookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.UnionLayout",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.GroupLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/UnionLayout.html",
+      "sourceEntry": "java.base/java/lang/foreign/UnionLayout.java",
+      "sourceSha256": "29b5828a0f5ad8d198dff0d5f5cfc206fa492f79476a1e86778194441de2b468",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.UnionLayout",
+          "declaredBy": "java.lang.foreign.UnionLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.UnionLayout",
+          "declaredBy": "java.lang.foreign.UnionLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.UnionLayout",
+          "declaredBy": "java.lang.foreign.UnionLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.ValueLayout",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.MemoryLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/ValueLayout.html",
+      "sourceEntry": "java.base/java/lang/foreign/ValueLayout.java",
+      "sourceSha256": "142eb71851f7ecd872138003e249e0e94f4da2bc69914fb8e685f36fa628f043",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ADDRESS",
+          "result": "java.lang.foreign.AddressLayout",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ADDRESS_UNALIGNED",
+          "result": "java.lang.foreign.AddressLayout",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_BOOLEAN",
+          "result": "java.lang.foreign.ValueLayout$OfBoolean",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_BYTE",
+          "result": "java.lang.foreign.ValueLayout$OfByte",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_CHAR",
+          "result": "java.lang.foreign.ValueLayout$OfChar",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_CHAR_UNALIGNED",
+          "result": "java.lang.foreign.ValueLayout$OfChar",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_DOUBLE",
+          "result": "java.lang.foreign.ValueLayout$OfDouble",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_DOUBLE_UNALIGNED",
+          "result": "java.lang.foreign.ValueLayout$OfDouble",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_FLOAT",
+          "result": "java.lang.foreign.ValueLayout$OfFloat",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_FLOAT_UNALIGNED",
+          "result": "java.lang.foreign.ValueLayout$OfFloat",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_INT",
+          "result": "java.lang.foreign.ValueLayout$OfInt",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_INT_UNALIGNED",
+          "result": "java.lang.foreign.ValueLayout$OfInt",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_LONG",
+          "result": "java.lang.foreign.ValueLayout$OfLong",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_LONG_UNALIGNED",
+          "result": "java.lang.foreign.ValueLayout$OfLong",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_SHORT",
+          "result": "java.lang.foreign.ValueLayout$OfShort",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JAVA_SHORT_UNALIGNED",
+          "result": "java.lang.foreign.ValueLayout$OfShort",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayElementVarHandle(int[])",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "carrier()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "order()",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.ValueLayout",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.ValueLayout",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withOrder(java.nio.ByteOrder)",
+          "result": "java.lang.foreign.ValueLayout",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.ValueLayout",
+          "declaredBy": "java.lang.foreign.ValueLayout",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.ValueLayout$OfBoolean",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.ValueLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html",
+      "sourceEntry": "java.base/java/lang/foreign/ValueLayout.java",
+      "sourceSha256": "142eb71851f7ecd872138003e249e0e94f4da2bc69914fb8e685f36fa628f043",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.ValueLayout$OfBoolean",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfBoolean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.ValueLayout$OfBoolean",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfBoolean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withOrder(java.nio.ByteOrder)",
+          "result": "java.lang.foreign.ValueLayout$OfBoolean",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfBoolean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.ValueLayout$OfBoolean",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfBoolean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.ValueLayout$OfByte",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.ValueLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html",
+      "sourceEntry": "java.base/java/lang/foreign/ValueLayout.java",
+      "sourceSha256": "142eb71851f7ecd872138003e249e0e94f4da2bc69914fb8e685f36fa628f043",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.ValueLayout$OfByte",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfByte",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.ValueLayout$OfByte",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfByte",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withOrder(java.nio.ByteOrder)",
+          "result": "java.lang.foreign.ValueLayout$OfByte",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfByte",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.ValueLayout$OfByte",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfByte",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.ValueLayout$OfChar",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.ValueLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html",
+      "sourceEntry": "java.base/java/lang/foreign/ValueLayout.java",
+      "sourceSha256": "142eb71851f7ecd872138003e249e0e94f4da2bc69914fb8e685f36fa628f043",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.ValueLayout$OfChar",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfChar",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.ValueLayout$OfChar",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfChar",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withOrder(java.nio.ByteOrder)",
+          "result": "java.lang.foreign.ValueLayout$OfChar",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfChar",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.ValueLayout$OfChar",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfChar",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.ValueLayout$OfDouble",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.ValueLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html",
+      "sourceEntry": "java.base/java/lang/foreign/ValueLayout.java",
+      "sourceSha256": "142eb71851f7ecd872138003e249e0e94f4da2bc69914fb8e685f36fa628f043",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.ValueLayout$OfDouble",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfDouble",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.ValueLayout$OfDouble",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfDouble",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withOrder(java.nio.ByteOrder)",
+          "result": "java.lang.foreign.ValueLayout$OfDouble",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfDouble",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.ValueLayout$OfDouble",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfDouble",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.ValueLayout$OfFloat",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.ValueLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html",
+      "sourceEntry": "java.base/java/lang/foreign/ValueLayout.java",
+      "sourceSha256": "142eb71851f7ecd872138003e249e0e94f4da2bc69914fb8e685f36fa628f043",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.ValueLayout$OfFloat",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfFloat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.ValueLayout$OfFloat",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfFloat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withOrder(java.nio.ByteOrder)",
+          "result": "java.lang.foreign.ValueLayout$OfFloat",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfFloat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.ValueLayout$OfFloat",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfFloat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.ValueLayout$OfInt",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.ValueLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html",
+      "sourceEntry": "java.base/java/lang/foreign/ValueLayout.java",
+      "sourceSha256": "142eb71851f7ecd872138003e249e0e94f4da2bc69914fb8e685f36fa628f043",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.ValueLayout$OfInt",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfInt",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.ValueLayout$OfInt",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfInt",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withOrder(java.nio.ByteOrder)",
+          "result": "java.lang.foreign.ValueLayout$OfInt",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfInt",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.ValueLayout$OfInt",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfInt",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.ValueLayout$OfLong",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.ValueLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html",
+      "sourceEntry": "java.base/java/lang/foreign/ValueLayout.java",
+      "sourceSha256": "142eb71851f7ecd872138003e249e0e94f4da2bc69914fb8e685f36fa628f043",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.ValueLayout$OfLong",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfLong",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.ValueLayout$OfLong",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfLong",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withOrder(java.nio.ByteOrder)",
+          "result": "java.lang.foreign.ValueLayout$OfLong",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfLong",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.ValueLayout$OfLong",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfLong",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.foreign.ValueLayout$OfShort",
+      "kind": "interface",
+      "parents": [
+        "java.lang.foreign.ValueLayout"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html",
+      "sourceEntry": "java.base/java/lang/foreign/ValueLayout.java",
+      "sourceSha256": "142eb71851f7ecd872138003e249e0e94f4da2bc69914fb8e685f36fa628f043",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "withByteAlignment(long)",
+          "result": "java.lang.foreign.ValueLayout$OfShort",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfShort",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withName(java.lang.String)",
+          "result": "java.lang.foreign.ValueLayout$OfShort",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfShort",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withOrder(java.nio.ByteOrder)",
+          "result": "java.lang.foreign.ValueLayout$OfShort",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfShort",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withoutName()",
+          "result": "java.lang.foreign.ValueLayout$OfShort",
+          "declaredBy": "java.lang.foreign.ValueLayout$OfShort",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

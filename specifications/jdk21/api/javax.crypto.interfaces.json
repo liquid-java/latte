@@ -1,0 +1,144 @@
+{
+  "name": "javax.crypto.interfaces",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "javax.crypto.interfaces.DHKey",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/interfaces/DHKey.html",
+      "sourceEntry": "java.base/javax/crypto/interfaces/DHKey.java",
+      "sourceSha256": "afe60aa3c471e067eb05e8f3f383ec1b6af43497b6e27ae5a53014c85e958721",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "javax.crypto.spec.DHParameterSpec",
+          "declaredBy": "javax.crypto.interfaces.DHKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.interfaces.DHPrivateKey",
+      "kind": "interface",
+      "parents": [
+        "javax.crypto.interfaces.DHKey",
+        "java.security.PrivateKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html",
+      "sourceEntry": "java.base/javax/crypto/interfaces/DHPrivateKey.java",
+      "sourceSha256": "78768f4af4cd1de4c923d55dc82450423c4fe13f53b57809eb0e4470548c80ed",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getX()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "javax.crypto.interfaces.DHPrivateKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "javax.crypto.interfaces.DHPrivateKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.interfaces.DHPublicKey",
+      "kind": "interface",
+      "parents": [
+        "javax.crypto.interfaces.DHKey",
+        "java.security.PublicKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html",
+      "sourceEntry": "java.base/javax/crypto/interfaces/DHPublicKey.java",
+      "sourceSha256": "8b3aa4048902fce291d49514d3a3aa2da0bff20449993f8362904433e40bd97d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getY()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "javax.crypto.interfaces.DHPublicKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "javax.crypto.interfaces.DHPublicKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.interfaces.PBEKey",
+      "kind": "interface",
+      "parents": [
+        "javax.crypto.SecretKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/interfaces/PBEKey.html",
+      "sourceEntry": "java.base/javax/crypto/interfaces/PBEKey.java",
+      "sourceSha256": "efaeb52b66255243388d656c497284d499d46de928252a7a71eb475360b2e9cf",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getIterationCount()",
+          "result": "int",
+          "declaredBy": "javax.crypto.interfaces.PBEKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPassword()",
+          "result": "char[]",
+          "declaredBy": "javax.crypto.interfaces.PBEKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSalt()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.interfaces.PBEKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "javax.crypto.interfaces.PBEKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    }
+  ]
+}

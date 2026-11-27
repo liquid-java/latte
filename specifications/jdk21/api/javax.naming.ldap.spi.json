@@ -1,0 +1,80 @@
+{
+  "name": "javax.naming.ldap.spi",
+  "module": "java.naming",
+  "types": [
+    {
+      "target": "javax.naming.ldap.spi.LdapDnsProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/spi/LdapDnsProvider.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/spi/LdapDnsProvider.java",
+      "sourceSha256": "535bf8967c32eb6f24c2c8c4ee1fcdd8b5d15b71d56869f8100abf1c876515ca",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.spi.LdapDnsProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupEndpoints(java.lang.String,java.util.Map)",
+          "result": "java.util.Optional",
+          "declaredBy": "javax.naming.ldap.spi.LdapDnsProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.spi.LdapDnsProviderResult",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/spi/LdapDnsProviderResult.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/spi/LdapDnsProviderResult.java",
+      "sourceSha256": "b23e82f9375d19ca19e8c7428da49c7354992af5d30208089d05198da8fd851e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.spi.LdapDnsProviderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDomainName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.spi.LdapDnsProviderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEndpoints()",
+          "result": "java.util.List",
+          "declaredBy": "javax.naming.ldap.spi.LdapDnsProviderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

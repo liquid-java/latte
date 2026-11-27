@@ -1,0 +1,484 @@
+{
+  "name": "javax.swing.filechooser",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.swing.filechooser.FileFilter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/filechooser/FileFilter.html",
+      "sourceEntry": "java.desktop/javax/swing/filechooser/FileFilter.java",
+      "sourceSha256": "06a6189726f35dd3fe57be10b5999b08c10a00005e5b66fcba8695c44478b076",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.filechooser.FileFilter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accept(java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileFilter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.filechooser.FileFilter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.filechooser.FileNameExtensionFilter",
+      "kind": "class",
+      "parents": [
+        "javax.swing.filechooser.FileFilter"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/filechooser/FileNameExtensionFilter.html",
+      "sourceEntry": "java.desktop/javax/swing/filechooser/FileNameExtensionFilter.java",
+      "sourceSha256": "40483c3e897be510b32cf1cbd783afa96222a267b5162ad2a15d9eed607b1bcf",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.swing.filechooser.FileNameExtensionFilter",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accept(java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileNameExtensionFilter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.filechooser.FileNameExtensionFilter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExtensions()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.swing.filechooser.FileNameExtensionFilter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.filechooser.FileNameExtensionFilter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.filechooser.FileSystemView",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html",
+      "sourceEntry": "java.desktop/javax/swing/filechooser/FileSystemView.java",
+      "sourceSha256": "2e488962fd900b70a19dcc660219d2c4b0aef2f299345000e63f9db99c74ea5b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createFileObject(java.io.File,java.lang.String)",
+          "result": "java.io.File",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createFileObject(java.lang.String)",
+          "result": "java.io.File",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createFileSystemRoot(java.io.File)",
+          "result": "java.io.File",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createNewFolder(java.io.File)",
+          "result": "java.io.File",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChild(java.io.File,java.lang.String)",
+          "result": "java.io.File",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChooserComboBoxFiles()",
+          "result": "java.io.File[]",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChooserShortcutPanelFiles()",
+          "result": "java.io.File[]",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultDirectory()",
+          "result": "java.io.File",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileSystemView()",
+          "result": "javax.swing.filechooser.FileSystemView",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFiles(java.io.File,boolean)",
+          "result": "java.io.File[]",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHomeDirectory()",
+          "result": "java.io.File",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLinkLocation(java.io.File)",
+          "result": "java.io.File",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParentDirectory(java.io.File)",
+          "result": "java.io.File",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRoots()",
+          "result": "java.io.File[]",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemDisplayName(java.io.File)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemIcon(java.io.File)",
+          "result": "javax.swing.Icon",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemIcon(java.io.File,int,int)",
+          "result": "javax.swing.Icon",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemTypeDescription(java.io.File)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isComputerNode(java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDrive(java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFileSystem(java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFileSystemRoot(java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFloppyDrive(java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isHiddenFile(java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLink(java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isParent(java.io.File,java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRoot(java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isTraversable(java.io.File)",
+          "result": "java.lang.Boolean",
+          "declaredBy": "javax.swing.filechooser.FileSystemView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.filechooser.FileView",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/filechooser/FileView.html",
+      "sourceEntry": "java.desktop/javax/swing/filechooser/FileView.java",
+      "sourceSha256": "f59d1bba89ae26dce157f56455f923ab5cc03b7ef08c0e17650c19f084045681",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.filechooser.FileView",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription(java.io.File)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.filechooser.FileView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIcon(java.io.File)",
+          "result": "javax.swing.Icon",
+          "declaredBy": "javax.swing.filechooser.FileView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName(java.io.File)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.filechooser.FileView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeDescription(java.io.File)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.filechooser.FileView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isTraversable(java.io.File)",
+          "result": "java.lang.Boolean",
+          "declaredBy": "javax.swing.filechooser.FileView",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

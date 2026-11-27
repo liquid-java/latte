@@ -1,0 +1,1583 @@
+{
+  "name": "java.rmi.server",
+  "module": "java.rmi",
+  "types": [
+    {
+      "target": "java.rmi.server.ExportException",
+      "kind": "class",
+      "parents": [
+        "java.rmi.RemoteException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/ExportException.html",
+      "sourceEntry": "java.rmi/java/rmi/server/ExportException.java",
+      "sourceSha256": "f4d1534d66ad2b8f1140b3d223e2bed1130dedbdb819429e4e94200dccc5fd1c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.ExportException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.ExportException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.LoaderHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/LoaderHandler.html",
+      "sourceEntry": "java.rmi/java/rmi/server/LoaderHandler.java",
+      "sourceSha256": "d9b3dc3ed7642d23cf6de46a578910e60f4a4388ab37575a34f1e798a68d5ba9",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getSecurityContext(java.lang.ClassLoader)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.rmi.server.LoaderHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClass(java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.rmi.server.LoaderHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClass(java.net.URL,java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.rmi.server.LoaderHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "packagePrefix",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.LoaderHandler",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.LogStream",
+      "kind": "class",
+      "parents": [
+        "java.io.PrintStream"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/LogStream.html",
+      "sourceEntry": "java.rmi/java/rmi/server/LogStream.java",
+      "sourceSha256": "0da15eb68c97e8bacef0035001aa5cc285f9f96c1d6e8afa3b7f650ccdcd3dfa",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "BRIEF",
+          "result": "int",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SILENT",
+          "result": "int",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VERBOSE",
+          "result": "int",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultStream()",
+          "result": "java.io.PrintStream",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputStream()",
+          "result": "java.io.OutputStream",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "log(java.lang.String)",
+          "result": "java.rmi.server.LogStream",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseLevel(java.lang.String)",
+          "result": "int",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDefaultStream(java.io.PrintStream)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOutputStream(java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(byte[],int,int)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(int)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.LogStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.ObjID",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/ObjID.html",
+      "sourceEntry": "java.rmi/java/rmi/server/ObjID.java",
+      "sourceSha256": "a99ac0f4406e90d8e43a3c32c3c0a8cdf8373887410e1bc2d65ad4a8f2fa109a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.ObjID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.ObjID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTIVATOR_ID",
+          "result": "int",
+          "declaredBy": "java.rmi.server.ObjID",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DGC_ID",
+          "result": "int",
+          "declaredBy": "java.rmi.server.ObjID",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REGISTRY_ID",
+          "result": "int",
+          "declaredBy": "java.rmi.server.ObjID",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.rmi.server.ObjID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.rmi.server.ObjID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.io.ObjectInput)",
+          "result": "java.rmi.server.ObjID",
+          "declaredBy": "java.rmi.server.ObjID",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.ObjID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.io.ObjectOutput)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.ObjID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.Operation",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/Operation.html",
+      "sourceEntry": "java.rmi/java/rmi/server/Operation.java",
+      "sourceSha256": "689cf6575e064b03ed2cf9b0c211ecc0f23a026f86754421ef3fe481a7747dfb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.Operation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOperation()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.Operation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.Operation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RMIClassLoader",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RMIClassLoader.java",
+      "sourceSha256": "767f44597c2877cb733d7430f4639377a0389619809393a455ae260292b55093",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getClassAnnotation(java.lang.Class)",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.RMIClassLoader",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClassLoader(java.lang.String)",
+          "result": "java.lang.ClassLoader",
+          "declaredBy": "java.rmi.server.RMIClassLoader",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultProviderInstance()",
+          "result": "java.rmi.server.RMIClassLoaderSpi",
+          "declaredBy": "java.rmi.server.RMIClassLoader",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSecurityContext(java.lang.ClassLoader)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.rmi.server.RMIClassLoader",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClass(java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.rmi.server.RMIClassLoader",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClass(java.lang.String,java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.rmi.server.RMIClassLoader",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClass(java.lang.String,java.lang.String,java.lang.ClassLoader)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.rmi.server.RMIClassLoader",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClass(java.net.URL,java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.rmi.server.RMIClassLoader",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadProxyClass(java.lang.String,java.lang.String[],java.lang.ClassLoader)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.rmi.server.RMIClassLoader",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RMIClassLoaderSpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RMIClassLoaderSpi.java",
+      "sourceSha256": "c15679b64de2f3f0998d5bcd4e3fc101b3dd2131d88ba9205bbda3a23c9b315f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RMIClassLoaderSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClassAnnotation(java.lang.Class)",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.RMIClassLoaderSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClassLoader(java.lang.String)",
+          "result": "java.lang.ClassLoader",
+          "declaredBy": "java.rmi.server.RMIClassLoaderSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClass(java.lang.String,java.lang.String,java.lang.ClassLoader)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.rmi.server.RMIClassLoaderSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadProxyClass(java.lang.String,java.lang.String[],java.lang.ClassLoader)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.rmi.server.RMIClassLoaderSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RMIClientSocketFactory",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RMIClientSocketFactory.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RMIClientSocketFactory.java",
+      "sourceSha256": "bc7fead1dff97589d41d7bf27e98944ad9e7082de9ecb0d6b30a962fa7051f86",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createSocket(java.lang.String,int)",
+          "result": "java.net.Socket",
+          "declaredBy": "java.rmi.server.RMIClientSocketFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RMIFailureHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RMIFailureHandler.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RMIFailureHandler.java",
+      "sourceSha256": "ec2b2898eb71d6ed0dd803b101c2815e2fa5b55767fd66eff4c42ea1c83923a6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "failure(java.lang.Exception)",
+          "result": "boolean",
+          "declaredBy": "java.rmi.server.RMIFailureHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RMIServerSocketFactory",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RMIServerSocketFactory.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RMIServerSocketFactory.java",
+      "sourceSha256": "0fa0c27814468f983ab508a43565cfe60ae00de35e833e0109f287d9b0d81867",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createServerSocket(int)",
+          "result": "java.net.ServerSocket",
+          "declaredBy": "java.rmi.server.RMIServerSocketFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RMISocketFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.rmi.server.RMIClientSocketFactory",
+        "java.rmi.server.RMIServerSocketFactory"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RMISocketFactory.java",
+      "sourceSha256": "04d58d81a97c3499cca535ec61b594b1ab86a3cb4da33389db23dd935b417e36",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RMISocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createServerSocket(int)",
+          "result": "java.net.ServerSocket",
+          "declaredBy": "java.rmi.server.RMISocketFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createSocket(java.lang.String,int)",
+          "result": "java.net.Socket",
+          "declaredBy": "java.rmi.server.RMISocketFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultSocketFactory()",
+          "result": "java.rmi.server.RMISocketFactory",
+          "declaredBy": "java.rmi.server.RMISocketFactory",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFailureHandler()",
+          "result": "java.rmi.server.RMIFailureHandler",
+          "declaredBy": "java.rmi.server.RMISocketFactory",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSocketFactory()",
+          "result": "java.rmi.server.RMISocketFactory",
+          "declaredBy": "java.rmi.server.RMISocketFactory",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFailureHandler(java.rmi.server.RMIFailureHandler)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RMISocketFactory",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSocketFactory(java.rmi.server.RMISocketFactory)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RMISocketFactory",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RemoteCall",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RemoteCall.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RemoteCall.java",
+      "sourceSha256": "9baf493c5a7c188bdeef5b4e5f71e0f64d93b208d81a4a131c13565c4f695645",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "done()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteCall",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "executeCall()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteCall",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInputStream()",
+          "result": "java.io.ObjectInput",
+          "declaredBy": "java.rmi.server.RemoteCall",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputStream()",
+          "result": "java.io.ObjectOutput",
+          "declaredBy": "java.rmi.server.RemoteCall",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResultStream(boolean)",
+          "result": "java.io.ObjectOutput",
+          "declaredBy": "java.rmi.server.RemoteCall",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseInputStream()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteCall",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseOutputStream()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteCall",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RemoteObject",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.rmi.Remote",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RemoteObject.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RemoteObject.java",
+      "sourceSha256": "44a7155aa7801f123bfa3669d1311f762de35fd03811bbbbf5edfc8530181485",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteObject",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.rmi.server.RemoteRef)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteObject",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.rmi.server.RemoteObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRef()",
+          "result": "java.rmi.server.RemoteRef",
+          "declaredBy": "java.rmi.server.RemoteObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.rmi.server.RemoteObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ref",
+          "result": "java.rmi.server.RemoteRef",
+          "declaredBy": "java.rmi.server.RemoteObject",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.RemoteObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toStub(java.rmi.Remote)",
+          "result": "java.rmi.Remote",
+          "declaredBy": "java.rmi.server.RemoteObject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RemoteObjectInvocationHandler",
+      "kind": "class",
+      "parents": [
+        "java.rmi.server.RemoteObject",
+        "java.lang.reflect.InvocationHandler"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RemoteObjectInvocationHandler.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RemoteObjectInvocationHandler.java",
+      "sourceSha256": "4184b7bbaef124e5298588e4265e053a45df70690d7e18081093ee3900134554",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.rmi.server.RemoteRef)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteObjectInvocationHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.rmi.server.RemoteObjectInvocationHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RemoteRef",
+      "kind": "interface",
+      "parents": [
+        "java.io.Externalizable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RemoteRef.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RemoteRef.java",
+      "sourceSha256": "1133b6dd10471747f6c4e1709a4592c5ac88ccf7352063bbc224cdc0c81cd778",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "done(java.rmi.server.RemoteCall)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteRef",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRefClass(java.io.ObjectOutput)",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.RemoteRef",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoke(java.rmi.Remote,java.lang.reflect.Method,java.lang.Object[],long)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.rmi.server.RemoteRef",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoke(java.rmi.server.RemoteCall)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteRef",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newCall(java.rmi.server.RemoteObject,java.rmi.server.Operation[],int,long)",
+          "result": "java.rmi.server.RemoteCall",
+          "declaredBy": "java.rmi.server.RemoteRef",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "packagePrefix",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.RemoteRef",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "remoteEquals(java.rmi.server.RemoteRef)",
+          "result": "boolean",
+          "declaredBy": "java.rmi.server.RemoteRef",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remoteHashCode()",
+          "result": "int",
+          "declaredBy": "java.rmi.server.RemoteRef",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remoteToString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.RemoteRef",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "java.rmi.server.RemoteRef",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RemoteServer",
+      "kind": "class",
+      "parents": [
+        "java.rmi.server.RemoteObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RemoteServer.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RemoteServer.java",
+      "sourceSha256": "84886829826d15f409163dd9cfc2ded825e4ba914715447e1ca6ef575d91f04c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteServer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.rmi.server.RemoteRef)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteServer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClientHost()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.RemoteServer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLog()",
+          "result": "java.io.PrintStream",
+          "declaredBy": "java.rmi.server.RemoteServer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLog(java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteServer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.RemoteStub",
+      "kind": "class",
+      "parents": [
+        "java.rmi.server.RemoteObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/RemoteStub.html",
+      "sourceEntry": "java.rmi/java/rmi/server/RemoteStub.java",
+      "sourceSha256": "326c9deca5e891358b31d3b240638fedd02a67c46e5523bbe8d9d5fdac2fb1fe",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteStub",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.rmi.server.RemoteRef)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteStub",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRef(java.rmi.server.RemoteStub,java.rmi.server.RemoteRef)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.RemoteStub",
+          "modifiers": 12,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.ServerCloneException",
+      "kind": "class",
+      "parents": [
+        "java.lang.CloneNotSupportedException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/ServerCloneException.html",
+      "sourceEntry": "java.rmi/java/rmi/server/ServerCloneException.java",
+      "sourceSha256": "ffc85d15140b6f29b18e1db56bb48ad2b2b5f16f93ac5de70e9ad23b97c6044d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.ServerCloneException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.ServerCloneException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "detail",
+          "result": "java.lang.Exception",
+          "declaredBy": "java.rmi.server.ServerCloneException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "java.rmi.server.ServerCloneException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.ServerCloneException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.ServerNotActiveException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/ServerNotActiveException.html",
+      "sourceEntry": "java.rmi/java/rmi/server/ServerNotActiveException.java",
+      "sourceSha256": "dfcde25edf0d6b013ce062d73dad352812db438ca4e979f24cbadbb6b9e923c4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.ServerNotActiveException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.ServerNotActiveException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.ServerRef",
+      "kind": "interface",
+      "parents": [
+        "java.rmi.server.RemoteRef"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/ServerRef.html",
+      "sourceEntry": "java.rmi/java/rmi/server/ServerRef.java",
+      "sourceSha256": "a510db2a4cd99b0fe4c0fa6beb0f93b19860e3489d46b38c5b98ab40caafa699",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "exportObject(java.rmi.Remote,java.lang.Object)",
+          "result": "java.rmi.server.RemoteStub",
+          "declaredBy": "java.rmi.server.ServerRef",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClientHost()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.ServerRef",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "java.rmi.server.ServerRef",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.Skeleton",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/Skeleton.html",
+      "sourceEntry": "java.rmi/java/rmi/server/Skeleton.java",
+      "sourceSha256": "b610edb0048d4a47fd2aee3869da899f576a8cfb275f240ea5101655dc405eb0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "dispatch(java.rmi.Remote,java.rmi.server.RemoteCall,int,long)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.Skeleton",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOperations()",
+          "result": "java.rmi.server.Operation[]",
+          "declaredBy": "java.rmi.server.Skeleton",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.SkeletonMismatchException",
+      "kind": "class",
+      "parents": [
+        "java.rmi.RemoteException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/SkeletonMismatchException.html",
+      "sourceEntry": "java.rmi/java/rmi/server/SkeletonMismatchException.java",
+      "sourceSha256": "13077becef6d6597ff42af5bf451e21258438ba85346ee07837f1b6259e12b0f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.SkeletonMismatchException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.SkeletonNotFoundException",
+      "kind": "class",
+      "parents": [
+        "java.rmi.RemoteException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/SkeletonNotFoundException.html",
+      "sourceEntry": "java.rmi/java/rmi/server/SkeletonNotFoundException.java",
+      "sourceSha256": "31619b43b8c7466c883db4a3293feb5446e82bfa72ee7182c6aab13d323eb7ff",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.SkeletonNotFoundException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.SkeletonNotFoundException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.SocketSecurityException",
+      "kind": "class",
+      "parents": [
+        "java.rmi.server.ExportException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/SocketSecurityException.html",
+      "sourceEntry": "java.rmi/java/rmi/server/SocketSecurityException.java",
+      "sourceSha256": "78c98ece2333c5101cabfaf797eafbab6c8d0b9db27a7745575de1bfdef2cc0f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.SocketSecurityException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.SocketSecurityException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.UID",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/UID.html",
+      "sourceEntry": "java.rmi/java/rmi/server/UID.java",
+      "sourceSha256": "9b09ad2437c8364ba0e3f5029be78541d141acf3e475ae53bb261514ad876070",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.UID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(short)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.UID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.rmi.server.UID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.rmi.server.UID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.io.DataInput)",
+          "result": "java.rmi.server.UID",
+          "declaredBy": "java.rmi.server.UID",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.server.UID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.io.DataOutput)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.UID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.UnicastRemoteObject",
+      "kind": "class",
+      "parents": [
+        "java.rmi.server.RemoteServer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html",
+      "sourceEntry": "java.rmi/java/rmi/server/UnicastRemoteObject.java",
+      "sourceSha256": "2bc708edb6104de17c8c490d7bcd18c4c67756d3f38a0618dccc17e4db7993ce",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.UnicastRemoteObject",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.UnicastRemoteObject",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)",
+          "result": "void",
+          "declaredBy": "java.rmi.server.UnicastRemoteObject",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.rmi.server.UnicastRemoteObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exportObject(java.rmi.Remote)",
+          "result": "java.rmi.server.RemoteStub",
+          "declaredBy": "java.rmi.server.UnicastRemoteObject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exportObject(java.rmi.Remote,int)",
+          "result": "java.rmi.Remote",
+          "declaredBy": "java.rmi.server.UnicastRemoteObject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exportObject(java.rmi.Remote,int,java.io.ObjectInputFilter)",
+          "result": "java.rmi.Remote",
+          "declaredBy": "java.rmi.server.UnicastRemoteObject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)",
+          "result": "java.rmi.Remote",
+          "declaredBy": "java.rmi.server.UnicastRemoteObject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.io.ObjectInputFilter)",
+          "result": "java.rmi.Remote",
+          "declaredBy": "java.rmi.server.UnicastRemoteObject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unexportObject(java.rmi.Remote,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.rmi.server.UnicastRemoteObject",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.server.Unreferenced",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/server/Unreferenced.html",
+      "sourceEntry": "java.rmi/java/rmi/server/Unreferenced.java",
+      "sourceSha256": "ca819cd282acb1d3c8252813ca549d092798224bc2302d78e2caa20fc5652944",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "unreferenced()",
+          "result": "void",
+          "declaredBy": "java.rmi.server.Unreferenced",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

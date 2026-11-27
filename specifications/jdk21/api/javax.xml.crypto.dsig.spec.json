@@ -1,0 +1,402 @@
+{
+  "name": "javax.xml.crypto.dsig.spec",
+  "module": "java.xml.crypto",
+  "types": [
+    {
+      "target": "javax.xml.crypto.dsig.spec.C14NMethodParameterSpec",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.crypto.dsig.spec.TransformParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/C14NMethodParameterSpec.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/C14NMethodParameterSpec.java",
+      "sourceSha256": "7b1fcf8e05315d7ecb50541de156321b596f785a7c0e45d8d016fd975cd43771",
+      "members": []
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.DigestMethodParameterSpec",
+      "kind": "interface",
+      "parents": [
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/DigestMethodParameterSpec.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/DigestMethodParameterSpec.java",
+      "sourceSha256": "6caa12d817e62a4723ebc8fda21fa89b9869fb92fc89f0268ea27fc3f6951208",
+      "members": []
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.ExcC14NParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.xml.crypto.dsig.spec.C14NMethodParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.java",
+      "sourceSha256": "ed5f5cf548b1043d8b6fd131263b537a844c7a11472fe346beae49ed83004b3e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.spec.ExcC14NParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.spec.ExcC14NParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.spec.ExcC14NParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrefixList()",
+          "result": "java.util.List",
+          "declaredBy": "javax.xml.crypto.dsig.spec.ExcC14NParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.HMACParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/HMACParameterSpec.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/HMACParameterSpec.java",
+      "sourceSha256": "6ef67bc1d45504f2f92f03eb8297d5cb18575dd2fb634524efa77be35aa43384",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.spec.HMACParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputLength()",
+          "result": "int",
+          "declaredBy": "javax.xml.crypto.dsig.spec.HMACParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.RSAPSSParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/RSAPSSParameterSpec.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/RSAPSSParameterSpec.java",
+      "sourceSha256": "515aefe4c54c7cc36fe9b5d6d99477a97cfa99bb36eaef0793f901e05a08ae69",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.spec.PSSParameterSpec)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.spec.RSAPSSParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPSSParameterSpec()",
+          "result": "java.security.spec.PSSParameterSpec",
+          "declaredBy": "javax.xml.crypto.dsig.spec.RSAPSSParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec",
+      "kind": "interface",
+      "parents": [
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.java",
+      "sourceSha256": "ddf4088c2b0455396ec4a38b4dc7f29f684b3185867c88e4c067ed3df17c2f6f",
+      "members": []
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.TransformParameterSpec",
+      "kind": "interface",
+      "parents": [
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/TransformParameterSpec.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/TransformParameterSpec.java",
+      "sourceSha256": "b3448e46109cb89dcf3ce1f182a1e68c6cbae090863bb1852dad08add693e878",
+      "members": []
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.XPathFilter2ParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.xml.crypto.dsig.spec.TransformParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.java",
+      "sourceSha256": "13adbcd3db5755e910c6f3459df72471c2503a8808a296774ec1af06fd43d1d3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathFilter2ParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getXPathList()",
+          "result": "java.util.List",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathFilter2ParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.XPathFilterParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.xml.crypto.dsig.spec.TransformParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.java",
+      "sourceSha256": "5b37ba303c7a8c7030473dac3bc37f6c95dc6c8ef914cbb5aee3b7468f473f1f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathFilterParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathFilterParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceMap()",
+          "result": "java.util.Map",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathFilterParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getXPath()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathFilterParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.XPathType",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.java",
+      "sourceSha256": "f09e7258618b84c5a5c9fe0d8b1fa123001382eb82dcf1175f0370ab24fea4e2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,javax.xml.crypto.dsig.spec.XPathType$Filter)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,javax.xml.crypto.dsig.spec.XPathType$Filter,java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExpression()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFilter()",
+          "result": "javax.xml.crypto.dsig.spec.XPathType$Filter",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceMap()",
+          "result": "java.util.Map",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.XPathType$Filter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.java",
+      "sourceSha256": "f09e7258618b84c5a5c9fe0d8b1fa123001382eb82dcf1175f0370ab24fea4e2",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "INTERSECT",
+          "result": "javax.xml.crypto.dsig.spec.XPathType$Filter",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathType$Filter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SUBTRACT",
+          "result": "javax.xml.crypto.dsig.spec.XPathType$Filter",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathType$Filter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNION",
+          "result": "javax.xml.crypto.dsig.spec.XPathType$Filter",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathType$Filter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XPathType$Filter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.xml.crypto.dsig.spec.TransformParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.java",
+      "sourceSha256": "4f50d5910e2304f900b6326f55443821fb0c8e2cbb91a86defd836f6e01e713f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.xml.crypto.XMLStructure)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStylesheet()",
+          "result": "javax.xml.crypto.XMLStructure",
+          "declaredBy": "javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

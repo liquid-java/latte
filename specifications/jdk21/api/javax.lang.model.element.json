@@ -1,0 +1,2257 @@
+{
+  "name": "javax.lang.model.element",
+  "module": "java.compiler",
+  "types": [
+    {
+      "target": "javax.lang.model.element.AnnotationMirror",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/AnnotationMirror.java",
+      "sourceSha256": "785d01c930646e488405bcaec4cf4ab3c3ffebc99a4753dfbfb128837f4196f5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAnnotationType()",
+          "result": "javax.lang.model.type.DeclaredType",
+          "declaredBy": "javax.lang.model.element.AnnotationMirror",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementValues()",
+          "result": "java.util.Map",
+          "declaredBy": "javax.lang.model.element.AnnotationMirror",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.AnnotationValue",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/AnnotationValue.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/AnnotationValue.java",
+      "sourceSha256": "a0bf6f66ea97d92149fff1dda9d400e25580f67d3f9f039d3618a2abd578dfc0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(javax.lang.model.element.AnnotationValueVisitor,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValue",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValue",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.lang.model.element.AnnotationValue",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.AnnotationValueVisitor",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/AnnotationValueVisitor.java",
+      "sourceSha256": "42125928ca7afc5563d418081719f39813112acfbc8d2d8c1f2c9f99b85ce561",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "visit(javax.lang.model.element.AnnotationValue)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visit(javax.lang.model.element.AnnotationValue,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitAnnotation(javax.lang.model.element.AnnotationMirror,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitArray(java.util.List,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitBoolean(boolean,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitByte(byte,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitChar(char,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitDouble(double,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitEnumConstant(javax.lang.model.element.VariableElement,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitFloat(float,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitInt(int,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitLong(long,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitShort(short,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitString(java.lang.String,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitType(javax.lang.model.type.TypeMirror,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitUnknown(javax.lang.model.element.AnnotationValue,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.AnnotationValueVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.Element",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.AnnotatedConstruct"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/Element.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/Element.java",
+      "sourceSha256": "68f5b03a4d6347baeac5f538599e684ff12770a998fdf2f03c726f5bc23f2b90",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(javax.lang.model.element.ElementVisitor,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAnnotation(java.lang.Class)",
+          "result": "java.lang.annotation.Annotation",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAnnotationMirrors()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAnnotationsByType(java.lang.Class)",
+          "result": "java.lang.annotation.Annotation[]",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosedElements()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosingElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKind()",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getModifiers()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSimpleName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.lang.model.element.Element",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ElementKind",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ElementKind.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ElementKind.java",
+      "sourceSha256": "51e01f95f74f1d0389edbc4e2e14c56f67a2baf64249e186c416589d84aab06b",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ANNOTATION_TYPE",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BINDING_VARIABLE",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CLASS",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CONSTRUCTOR",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENUM",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENUM_CONSTANT",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EXCEPTION_PARAMETER",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FIELD",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INSTANCE_INIT",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERFACE",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LOCAL_VARIABLE",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "METHOD",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODULE",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OTHER",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PACKAGE",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PARAMETER",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RECORD",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RECORD_COMPONENT",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RESOURCE_VARIABLE",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STATIC_INIT",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TYPE_PARAMETER",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isClass()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDeclaredType()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isExecutable()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isField()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInitializer()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInterface()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isVariable()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.lang.model.element.ElementKind",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.lang.model.element.ElementKind[]",
+          "declaredBy": "javax.lang.model.element.ElementKind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ElementVisitor",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ElementVisitor.java",
+      "sourceSha256": "0b197afa164af645b9f24206215e944b7b1c1349e6f9738bd4e58f10cf2e27ca",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "visit(javax.lang.model.element.Element)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ElementVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visit(javax.lang.model.element.Element,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ElementVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitExecutable(javax.lang.model.element.ExecutableElement,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ElementVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitModule(javax.lang.model.element.ModuleElement,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ElementVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitPackage(javax.lang.model.element.PackageElement,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ElementVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitRecordComponent(javax.lang.model.element.RecordComponentElement,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ElementVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitType(javax.lang.model.element.TypeElement,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ElementVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitTypeParameter(javax.lang.model.element.TypeParameterElement,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ElementVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitUnknown(javax.lang.model.element.Element,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ElementVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitVariable(javax.lang.model.element.VariableElement,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ElementVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ExecutableElement",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.Element",
+        "javax.lang.model.element.Parameterizable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ExecutableElement.java",
+      "sourceSha256": "41781e791733f1ca6c01bc05bb3febd1bcd2fd85a1b45da9454a439ba4a91be4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultValue()",
+          "result": "javax.lang.model.element.AnnotationValue",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosingElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameters()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReceiverType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReturnType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSimpleName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThrownTypes()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeParameters()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDefault()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isVarArgs()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ExecutableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.Modifier",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/Modifier.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/Modifier.java",
+      "sourceSha256": "2994099f032892f6fbfe57bfc0fd37e433ae6f15dcbfec159a3ddddc8c5de9fc",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ABSTRACT",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FINAL",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NATIVE",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NON_SEALED",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PRIVATE",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROTECTED",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PUBLIC",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SEALED",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STATIC",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STRICTFP",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SYNCHRONIZED",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TRANSIENT",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VOLATILE",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.lang.model.element.Modifier[]",
+          "declaredBy": "javax.lang.model.element.Modifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ModuleElement",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.Element",
+        "javax.lang.model.element.QualifiedNameable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ModuleElement.java",
+      "sourceSha256": "75c05fa49ee23d30e8253ce1187342fc91de2a304fa3f3e34282de9452c5cc89",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.element.ModuleElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDirectives()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.ModuleElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosedElements()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.ModuleElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosingElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.element.ModuleElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQualifiedName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.ModuleElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSimpleName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.ModuleElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOpen()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ModuleElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUnnamed()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ModuleElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ModuleElement$Directive",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ModuleElement.java",
+      "sourceSha256": "75c05fa49ee23d30e8253ce1187342fc91de2a304fa3f3e34282de9452c5cc89",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(javax.lang.model.element.ModuleElement$DirectiveVisitor,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ModuleElement$Directive",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKind()",
+          "result": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "declaredBy": "javax.lang.model.element.ModuleElement$Directive",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ModuleElement$DirectiveKind",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ModuleElement.java",
+      "sourceSha256": "75c05fa49ee23d30e8253ce1187342fc91de2a304fa3f3e34282de9452c5cc89",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "EXPORTS",
+          "result": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OPENS",
+          "result": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROVIDES",
+          "result": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REQUIRES",
+          "result": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "USES",
+          "result": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.lang.model.element.ModuleElement$DirectiveKind[]",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveKind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ModuleElement$DirectiveVisitor",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ModuleElement.java",
+      "sourceSha256": "75c05fa49ee23d30e8253ce1187342fc91de2a304fa3f3e34282de9452c5cc89",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "visit(javax.lang.model.element.ModuleElement$Directive)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visit(javax.lang.model.element.ModuleElement$Directive,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitExports(javax.lang.model.element.ModuleElement$ExportsDirective,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitOpens(javax.lang.model.element.ModuleElement$OpensDirective,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitProvides(javax.lang.model.element.ModuleElement$ProvidesDirective,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitRequires(javax.lang.model.element.ModuleElement$RequiresDirective,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitUnknown(javax.lang.model.element.ModuleElement$Directive,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitUses(javax.lang.model.element.ModuleElement$UsesDirective,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.ModuleElement$DirectiveVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ModuleElement$ExportsDirective",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.ModuleElement$Directive"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ExportsDirective.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ModuleElement.java",
+      "sourceSha256": "75c05fa49ee23d30e8253ce1187342fc91de2a304fa3f3e34282de9452c5cc89",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getPackage()",
+          "result": "javax.lang.model.element.PackageElement",
+          "declaredBy": "javax.lang.model.element.ModuleElement$ExportsDirective",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTargetModules()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.ModuleElement$ExportsDirective",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ModuleElement$OpensDirective",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.ModuleElement$Directive"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ModuleElement.OpensDirective.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ModuleElement.java",
+      "sourceSha256": "75c05fa49ee23d30e8253ce1187342fc91de2a304fa3f3e34282de9452c5cc89",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getPackage()",
+          "result": "javax.lang.model.element.PackageElement",
+          "declaredBy": "javax.lang.model.element.ModuleElement$OpensDirective",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTargetModules()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.ModuleElement$OpensDirective",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ModuleElement$ProvidesDirective",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.ModuleElement$Directive"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ModuleElement.java",
+      "sourceSha256": "75c05fa49ee23d30e8253ce1187342fc91de2a304fa3f3e34282de9452c5cc89",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getImplementations()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.ModuleElement$ProvidesDirective",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getService()",
+          "result": "javax.lang.model.element.TypeElement",
+          "declaredBy": "javax.lang.model.element.ModuleElement$ProvidesDirective",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ModuleElement$RequiresDirective",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.ModuleElement$Directive"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ModuleElement.java",
+      "sourceSha256": "75c05fa49ee23d30e8253ce1187342fc91de2a304fa3f3e34282de9452c5cc89",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getDependency()",
+          "result": "javax.lang.model.element.ModuleElement",
+          "declaredBy": "javax.lang.model.element.ModuleElement$RequiresDirective",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isStatic()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ModuleElement$RequiresDirective",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isTransitive()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.ModuleElement$RequiresDirective",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.ModuleElement$UsesDirective",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.ModuleElement$Directive"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/ModuleElement.UsesDirective.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/ModuleElement.java",
+      "sourceSha256": "75c05fa49ee23d30e8253ce1187342fc91de2a304fa3f3e34282de9452c5cc89",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getService()",
+          "result": "javax.lang.model.element.TypeElement",
+          "declaredBy": "javax.lang.model.element.ModuleElement$UsesDirective",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.Name",
+      "kind": "interface",
+      "parents": [
+        "java.lang.CharSequence"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/Name.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/Name.java",
+      "sourceSha256": "2641c7bfc85ce2f1575b4ce14302b50ef8befc0528f904cf8c08caf59f433ca5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "contentEquals(java.lang.CharSequence)",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.Name",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.Name",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.lang.model.element.Name",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.NestingKind",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/NestingKind.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/NestingKind.java",
+      "sourceSha256": "38618e65ba918fc16a3710f66f474b48a8696e869d5a446b3899e0ecd84c493d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ANONYMOUS",
+          "result": "javax.lang.model.element.NestingKind",
+          "declaredBy": "javax.lang.model.element.NestingKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LOCAL",
+          "result": "javax.lang.model.element.NestingKind",
+          "declaredBy": "javax.lang.model.element.NestingKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEMBER",
+          "result": "javax.lang.model.element.NestingKind",
+          "declaredBy": "javax.lang.model.element.NestingKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TOP_LEVEL",
+          "result": "javax.lang.model.element.NestingKind",
+          "declaredBy": "javax.lang.model.element.NestingKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isNested()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.NestingKind",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.lang.model.element.NestingKind",
+          "declaredBy": "javax.lang.model.element.NestingKind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.lang.model.element.NestingKind[]",
+          "declaredBy": "javax.lang.model.element.NestingKind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.PackageElement",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.Element",
+        "javax.lang.model.element.QualifiedNameable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/PackageElement.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/PackageElement.java",
+      "sourceSha256": "f9aca236fd70d957c40790f39f17b5f72a3d90c479205ad28cb601f86cf11cdf",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.element.PackageElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosedElements()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.PackageElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosingElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.element.PackageElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQualifiedName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.PackageElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSimpleName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.PackageElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUnnamed()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.PackageElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.Parameterizable",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.Element"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/Parameterizable.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/Parameterizable.java",
+      "sourceSha256": "92e259c6412f521128e474c451bd39b54d01c0784f49092fef74b0488be3ee16",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getTypeParameters()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.Parameterizable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.QualifiedNameable",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.Element"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/QualifiedNameable.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/QualifiedNameable.java",
+      "sourceSha256": "3144c4dcf69cc69596d565d23a7ee38f3dd1af460b9c2cf697b27ed8ec1c8a75",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getQualifiedName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.QualifiedNameable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.RecordComponentElement",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.Element"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/RecordComponentElement.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/RecordComponentElement.java",
+      "sourceSha256": "c7391cd406427cc71fd997c21eb5da003463d6c6e807c92213a17987f5d7c1b0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAccessor()",
+          "result": "javax.lang.model.element.ExecutableElement",
+          "declaredBy": "javax.lang.model.element.RecordComponentElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosingElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.element.RecordComponentElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSimpleName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.RecordComponentElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.TypeElement",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.Element",
+        "javax.lang.model.element.Parameterizable",
+        "javax.lang.model.element.QualifiedNameable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/TypeElement.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/TypeElement.java",
+      "sourceSha256": "c9852776584ea82017a2a87ef6700d5031cd6ff93bb3fab73d2b4f3a7ce730ab",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosedElements()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosingElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInterfaces()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNestingKind()",
+          "result": "javax.lang.model.element.NestingKind",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPermittedSubclasses()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQualifiedName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRecordComponents()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSimpleName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSuperclass()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeParameters()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUnnamed()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.TypeElement",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.TypeParameterElement",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.Element"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/TypeParameterElement.java",
+      "sourceSha256": "5e03fc6eecbe482cc9eaab4af66761440924f2ed9ec80be49b760c678ce3d69e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.element.TypeParameterElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBounds()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.element.TypeParameterElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosingElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.element.TypeParameterElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGenericElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.element.TypeParameterElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.UnknownAnnotationValueException",
+      "kind": "class",
+      "parents": [
+        "javax.lang.model.UnknownEntityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/UnknownAnnotationValueException.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/UnknownAnnotationValueException.java",
+      "sourceSha256": "18a8056738d59cbed00c01586deabf1e30fb15b3caf403ac2b1f6db2cd1235f2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.lang.model.element.AnnotationValue,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.lang.model.element.UnknownAnnotationValueException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getArgument()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.UnknownAnnotationValueException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnknownAnnotationValue()",
+          "result": "javax.lang.model.element.AnnotationValue",
+          "declaredBy": "javax.lang.model.element.UnknownAnnotationValueException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.UnknownDirectiveException",
+      "kind": "class",
+      "parents": [
+        "javax.lang.model.UnknownEntityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/UnknownDirectiveException.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/UnknownDirectiveException.java",
+      "sourceSha256": "59cafd94d470691ac96d6ddc331b321486c8ecc68b93c3bce8154d3eab693bc6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.lang.model.element.ModuleElement$Directive,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.lang.model.element.UnknownDirectiveException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getArgument()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.UnknownDirectiveException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnknownDirective()",
+          "result": "javax.lang.model.element.ModuleElement$Directive",
+          "declaredBy": "javax.lang.model.element.UnknownDirectiveException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.UnknownElementException",
+      "kind": "class",
+      "parents": [
+        "javax.lang.model.UnknownEntityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/UnknownElementException.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/UnknownElementException.java",
+      "sourceSha256": "3b597a644515e8d72fd689f986bd178ede7ee5ed3b45341ecf97ef668193f0e7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.lang.model.element.Element,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.lang.model.element.UnknownElementException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getArgument()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.UnknownElementException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnknownElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.element.UnknownElementException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.element.VariableElement",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.element.Element"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/element/VariableElement.html",
+      "sourceEntry": "java.compiler/javax/lang/model/element/VariableElement.java",
+      "sourceSha256": "b9605842b976eb4479560774e19057258c33eb78de243589b703b6fde28410b2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.element.VariableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConstantValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.element.VariableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosingElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.element.VariableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSimpleName()",
+          "result": "javax.lang.model.element.Name",
+          "declaredBy": "javax.lang.model.element.VariableElement",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUnnamed()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.element.VariableElement",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

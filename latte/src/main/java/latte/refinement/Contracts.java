@@ -248,6 +248,8 @@ public record Contracts(
     return executable != null
         && (Annotations.has(executable, "Refinement")
             || Annotations.has(executable, "StateRefinement")
+            || Annotations.has(executable, "Modifies")
+            || Annotations.has(executable, "ReturnsView")
             || executable.getParameters().stream().anyMatch(p -> Annotations.has(p, "Refinement")));
   }
 

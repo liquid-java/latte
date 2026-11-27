@@ -1,0 +1,361 @@
+{
+  "name": "javax.xml.catalog",
+  "module": "java.xml",
+  "types": [
+    {
+      "target": "javax.xml.catalog.Catalog",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/catalog/Catalog.html",
+      "sourceEntry": "java.xml/javax/xml/catalog/Catalog.java",
+      "sourceSha256": "821e3679c401933538d0be96f161600a02976e7a9d2f167765e1a0a098f68a3e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "catalogs()",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "javax.xml.catalog.Catalog",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "matchPublic(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.catalog.Catalog",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "matchSystem(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.catalog.Catalog",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "matchURI(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.catalog.Catalog",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.catalog.CatalogException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/catalog/CatalogException.html",
+      "sourceEntry": "java.xml/javax/xml/catalog/CatalogException.java",
+      "sourceSha256": "83f817db624db169c40434104b4fc0c252a31d16de842652e93a72b16e988f8a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.catalog.CatalogException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.catalog.CatalogException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.catalog.CatalogFeatures",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html",
+      "sourceEntry": "java.xml/javax/xml/catalog/CatalogFeatures.java",
+      "sourceSha256": "e210b48160aa6a094ace9b5af8d3a2a25ad1a6af93db16b8d4570ebe935b104d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "builder()",
+          "result": "javax.xml.catalog.CatalogFeatures$Builder",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "defaults()",
+          "result": "javax.xml.catalog.CatalogFeatures",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(javax.xml.catalog.CatalogFeatures$Feature)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.catalog.CatalogFeatures$Builder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html",
+      "sourceEntry": "java.xml/javax/xml/catalog/CatalogFeatures.java",
+      "sourceSha256": "e210b48160aa6a094ace9b5af8d3a2a25ad1a6af93db16b8d4570ebe935b104d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "build()",
+          "result": "javax.xml.catalog.CatalogFeatures",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(javax.xml.catalog.CatalogFeatures$Feature,java.lang.String)",
+          "result": "javax.xml.catalog.CatalogFeatures$Builder",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.catalog.CatalogFeatures$Feature",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html",
+      "sourceEntry": "java.xml/javax/xml/catalog/CatalogFeatures.java",
+      "sourceSha256": "e210b48160aa6a094ace9b5af8d3a2a25ad1a6af93db16b8d4570ebe935b104d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "DEFER",
+          "result": "javax.xml.catalog.CatalogFeatures$Feature",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures$Feature",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FILES",
+          "result": "javax.xml.catalog.CatalogFeatures$Feature",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures$Feature",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PREFER",
+          "result": "javax.xml.catalog.CatalogFeatures$Feature",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures$Feature",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RESOLVE",
+          "result": "javax.xml.catalog.CatalogFeatures$Feature",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures$Feature",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "defaultValue()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures$Feature",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures$Feature",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.xml.catalog.CatalogFeatures$Feature",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures$Feature",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.xml.catalog.CatalogFeatures$Feature[]",
+          "declaredBy": "javax.xml.catalog.CatalogFeatures$Feature",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.catalog.CatalogManager",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/catalog/CatalogManager.html",
+      "sourceEntry": "java.xml/javax/xml/catalog/CatalogManager.java",
+      "sourceSha256": "e0d6cb62db5be25bb223d7e652809ac3b9fb9c728a8f617a97be7b8eebacb4f1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "catalog(javax.xml.catalog.CatalogFeatures,java.net.URI[])",
+          "result": "javax.xml.catalog.Catalog",
+          "declaredBy": "javax.xml.catalog.CatalogManager",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "catalogResolver(javax.xml.catalog.Catalog)",
+          "result": "javax.xml.catalog.CatalogResolver",
+          "declaredBy": "javax.xml.catalog.CatalogManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "catalogResolver(javax.xml.catalog.CatalogFeatures,java.net.URI[])",
+          "result": "javax.xml.catalog.CatalogResolver",
+          "declaredBy": "javax.xml.catalog.CatalogManager",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.catalog.CatalogResolver",
+      "kind": "interface",
+      "parents": [
+        "org.xml.sax.EntityResolver",
+        "javax.xml.stream.XMLResolver",
+        "javax.xml.transform.URIResolver",
+        "org.w3c.dom.ls.LSResourceResolver"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html",
+      "sourceEntry": "java.xml/javax/xml/catalog/CatalogResolver.java",
+      "sourceSha256": "6fa2c8a85caa32a1b775def0423334b66e74454e2837f599b1bd3daf795e1fd6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "resolve(java.lang.String,java.lang.String)",
+          "result": "javax.xml.transform.Source",
+          "declaredBy": "javax.xml.catalog.CatalogResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveEntity(java.lang.String,java.lang.String)",
+          "result": "org.xml.sax.InputSource",
+          "declaredBy": "javax.xml.catalog.CatalogResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.xml.catalog.CatalogResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveResource(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "org.w3c.dom.ls.LSInput",
+          "declaredBy": "javax.xml.catalog.CatalogResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

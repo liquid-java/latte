@@ -103,6 +103,8 @@ The proof is deliberately conservative. Later syntactic reads keep bindings live
 
 ### Latte limitation: branch-dependent aliases
 
+Both this limitation and the repeated-allocation limitation below were reproduced after the JDK effect/view-summary changes. The [follow-up assessment](jdk21-effects-followup.md) distinguishes improved library-call precision from these remaining ownership-analysis limits.
+
 Latte tracks changes in ownership and aliases through statements, but merging branches loses the relationship between a condition and the object selected on that branch. The merged ownership facts retain the set of possible objects, without the condition associated with each candidate. A later test of the same boolean does not narrow that set.
 
 For example, assume that constructing a `Resource` establishes its `open` state and that `read()` requires that state:

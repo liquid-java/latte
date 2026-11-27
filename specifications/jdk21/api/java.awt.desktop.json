@@ -1,0 +1,820 @@
+{
+  "name": "java.awt.desktop",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "java.awt.desktop.AboutEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/AboutEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/AboutEvent.java",
+      "sourceSha256": "a6562e6b5357caf051aec72d919c6caafa99e2552df0ce2feacd007603e47e58",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.AboutEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.AboutHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/AboutHandler.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/AboutHandler.java",
+      "sourceSha256": "54ce4c36c7a6debe05ad7e124a593b3a6c258a17e0af86d7aabd4f7127ab9618",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "handleAbout(java.awt.desktop.AboutEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.AboutHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.AppEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/AppEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/AppEvent.java",
+      "sourceSha256": "3026d52d4fa7259f5abce0fef8187a4350c67cccb2a6af76826b334deef5c7d5",
+      "members": []
+    },
+    {
+      "target": "java.awt.desktop.AppForegroundEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/AppForegroundEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/AppForegroundEvent.java",
+      "sourceSha256": "fdeac99392c5ce67e253f4a57557d10981f93e036edcab6f05ade7a9c52a3eb9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.AppForegroundEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.AppForegroundListener",
+      "kind": "interface",
+      "parents": [
+        "java.awt.desktop.SystemEventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/AppForegroundListener.java",
+      "sourceSha256": "eb77f0e8c7796954e37cc9b23879067981d38f2984e195dbe2584ed33ed4417d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "appMovedToBackground(java.awt.desktop.AppForegroundEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.AppForegroundListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appRaisedToForeground(java.awt.desktop.AppForegroundEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.AppForegroundListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.AppHiddenEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/AppHiddenEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/AppHiddenEvent.java",
+      "sourceSha256": "ea29e104f8c4d802c0ed39ddc3b91a449acf80a37d1fdaaa57dd333faee95f57",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.AppHiddenEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.AppHiddenListener",
+      "kind": "interface",
+      "parents": [
+        "java.awt.desktop.SystemEventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/AppHiddenListener.java",
+      "sourceSha256": "0a27db66dfb4c16dd9079e204faaef5c41e27de7f76ddadc13e38e81db618c89",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "appHidden(java.awt.desktop.AppHiddenEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.AppHiddenListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appUnhidden(java.awt.desktop.AppHiddenEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.AppHiddenListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.AppReopenedEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/AppReopenedEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/AppReopenedEvent.java",
+      "sourceSha256": "f21d9a2af192bc380db00acb605a2ee3e03aea00f32d7be7d5d68c2cf2bcc3e6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.AppReopenedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.AppReopenedListener",
+      "kind": "interface",
+      "parents": [
+        "java.awt.desktop.SystemEventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/AppReopenedListener.java",
+      "sourceSha256": "83e501e16ef958b849444ee7932f8f10d3d11d5c396614c85fd7c39b84441454",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "appReopened(java.awt.desktop.AppReopenedEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.AppReopenedListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.FilesEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/FilesEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/FilesEvent.java",
+      "sourceSha256": "c8777ea221fffee5b63d54789de5bc2ac2c4e183b445e7e2e343935886633f39",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getFiles()",
+          "result": "java.util.List",
+          "declaredBy": "java.awt.desktop.FilesEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.OpenFilesEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.FilesEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/OpenFilesEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/OpenFilesEvent.java",
+      "sourceSha256": "277a2cbb17d0842131a81dd5508101fae8f943d012d3cda4341177cb3f3a6383",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.List,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.OpenFilesEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSearchTerm()",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.desktop.OpenFilesEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.OpenFilesHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/OpenFilesHandler.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/OpenFilesHandler.java",
+      "sourceSha256": "f38f667e39af93e8bb1acdb37d7d39136b9b404ba6f49ee213a86f3f7a37d7c3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "openFiles(java.awt.desktop.OpenFilesEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.OpenFilesHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.OpenURIEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/OpenURIEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/OpenURIEvent.java",
+      "sourceSha256": "d0e233107400f2398de9d246ab144c7f9a55e9f15eeea35e17efa555e6eaf6f6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URI)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.OpenURIEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURI()",
+          "result": "java.net.URI",
+          "declaredBy": "java.awt.desktop.OpenURIEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.OpenURIHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/OpenURIHandler.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/OpenURIHandler.java",
+      "sourceSha256": "33027256a43c803b99f28629fa0d07145da040eef5c779692df55e41eb33d247",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "openURI(java.awt.desktop.OpenURIEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.OpenURIHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.PreferencesEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/PreferencesEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/PreferencesEvent.java",
+      "sourceSha256": "101a341d9adfbc90783189493bb1471bbdc53f42f1b34bf60d7438b61d366e69",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.PreferencesEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.PreferencesHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/PreferencesHandler.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/PreferencesHandler.java",
+      "sourceSha256": "735b556d8822942f01cc1c5db1ff17a6a7583ed16c82c136a72f149158ddcf69",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "handlePreferences(java.awt.desktop.PreferencesEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.PreferencesHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.PrintFilesEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.FilesEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/PrintFilesEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/PrintFilesEvent.java",
+      "sourceSha256": "60b905adac6219869a6d1ad051d874423796366488891d26abdb14100291d9ec",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.List)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.PrintFilesEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.PrintFilesHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/PrintFilesHandler.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/PrintFilesHandler.java",
+      "sourceSha256": "2abb8e33df56283340ce60c091ae42c6104c3a45a5defa8bec39f6a22f4e94aa",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "printFiles(java.awt.desktop.PrintFilesEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.PrintFilesHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.QuitEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/QuitEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/QuitEvent.java",
+      "sourceSha256": "0d7e90784c1b71d981fc30bafff13d46c804b25ee0864b79d17a3df2dc36c9b4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.QuitEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.QuitHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/QuitHandler.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/QuitHandler.java",
+      "sourceSha256": "e4dd006751af254b38724a9e8d1045782927ddb9d522b1cc212298bd1b5d09f7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "handleQuitRequestWith(java.awt.desktop.QuitEvent,java.awt.desktop.QuitResponse)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.QuitHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.QuitResponse",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/QuitResponse.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/QuitResponse.java",
+      "sourceSha256": "dd8591ab394d7fe289bc6fdfbad7fef3d63ca2613e05420e3ea231c1272af24e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "cancelQuit()",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.QuitResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "performQuit()",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.QuitResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.QuitStrategy",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/QuitStrategy.java",
+      "sourceSha256": "b50cdd6b1803c30158be246d3558c390b66562dd2630af5b3152bae1830399fe",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CLOSE_ALL_WINDOWS",
+          "result": "java.awt.desktop.QuitStrategy",
+          "declaredBy": "java.awt.desktop.QuitStrategy",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NORMAL_EXIT",
+          "result": "java.awt.desktop.QuitStrategy",
+          "declaredBy": "java.awt.desktop.QuitStrategy",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.awt.desktop.QuitStrategy",
+          "declaredBy": "java.awt.desktop.QuitStrategy",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.awt.desktop.QuitStrategy[]",
+          "declaredBy": "java.awt.desktop.QuitStrategy",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.ScreenSleepEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/ScreenSleepEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/ScreenSleepEvent.java",
+      "sourceSha256": "7cecc836676e98ba208271ac19fd75f0f158d63bf01f796197977c79e2d9508b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.ScreenSleepEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.ScreenSleepListener",
+      "kind": "interface",
+      "parents": [
+        "java.awt.desktop.SystemEventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/ScreenSleepListener.java",
+      "sourceSha256": "996fc53b04fd7361437767382922e853e5324f2b1bb299f904ae2374bad028e2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "screenAboutToSleep(java.awt.desktop.ScreenSleepEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.ScreenSleepListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "screenAwoke(java.awt.desktop.ScreenSleepEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.ScreenSleepListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.SystemEventListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/SystemEventListener.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/SystemEventListener.java",
+      "sourceSha256": "80cc85b7df01fcd84a81ddf9a813332c5809a7a2953f6ba06ee3eccfc10afbca",
+      "members": []
+    },
+    {
+      "target": "java.awt.desktop.SystemSleepEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/SystemSleepEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/SystemSleepEvent.java",
+      "sourceSha256": "51448638a4fedaef01cfddec8e6c4805c4adc426caa0662c93a1d879285515d3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.SystemSleepEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.SystemSleepListener",
+      "kind": "interface",
+      "parents": [
+        "java.awt.desktop.SystemEventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/SystemSleepListener.java",
+      "sourceSha256": "0361515e138238a87254a5ae3255e99ecbd97ab718ac8e62e1a942a9e0451a0b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "systemAboutToSleep(java.awt.desktop.SystemSleepEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.SystemSleepListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "systemAwoke(java.awt.desktop.SystemSleepEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.SystemSleepListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.UserSessionEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.desktop.AppEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/UserSessionEvent.java",
+      "sourceSha256": "4da79f3e54b31cc922b01ce4de7dbf20cd2bf844629dda32401af62c3f754f18",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.desktop.UserSessionEvent$Reason)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.UserSessionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReason()",
+          "result": "java.awt.desktop.UserSessionEvent$Reason",
+          "declaredBy": "java.awt.desktop.UserSessionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.UserSessionEvent$Reason",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/UserSessionEvent.java",
+      "sourceSha256": "4da79f3e54b31cc922b01ce4de7dbf20cd2bf844629dda32401af62c3f754f18",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CONSOLE",
+          "result": "java.awt.desktop.UserSessionEvent$Reason",
+          "declaredBy": "java.awt.desktop.UserSessionEvent$Reason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LOCK",
+          "result": "java.awt.desktop.UserSessionEvent$Reason",
+          "declaredBy": "java.awt.desktop.UserSessionEvent$Reason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REMOTE",
+          "result": "java.awt.desktop.UserSessionEvent$Reason",
+          "declaredBy": "java.awt.desktop.UserSessionEvent$Reason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNSPECIFIED",
+          "result": "java.awt.desktop.UserSessionEvent$Reason",
+          "declaredBy": "java.awt.desktop.UserSessionEvent$Reason",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.awt.desktop.UserSessionEvent$Reason",
+          "declaredBy": "java.awt.desktop.UserSessionEvent$Reason",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.awt.desktop.UserSessionEvent$Reason[]",
+          "declaredBy": "java.awt.desktop.UserSessionEvent$Reason",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.desktop.UserSessionListener",
+      "kind": "interface",
+      "parents": [
+        "java.awt.desktop.SystemEventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html",
+      "sourceEntry": "java.desktop/java/awt/desktop/UserSessionListener.java",
+      "sourceSha256": "d5f10456f0a79df6037f9219eb461b342b28e269e00ed9ffdddee855b9d84b49",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "userSessionActivated(java.awt.desktop.UserSessionEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.UserSessionListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "userSessionDeactivated(java.awt.desktop.UserSessionEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.desktop.UserSessionListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

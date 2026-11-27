@@ -1,0 +1,1181 @@
+{
+  "name": "java.nio.charset",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.nio.charset.CharacterCodingException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/CharacterCodingException.html",
+      "sourceEntry": "java.base/java/nio/charset/CharacterCodingException.java",
+      "sourceSha256": "dfcfa69399ef580c7578bcc5a1f661024fb99cce7ba8e0ec37d8702e90429438",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharacterCodingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.Charset",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/Charset.html",
+      "sourceEntry": "java.base/java/nio/charset/Charset.java",
+      "sourceSha256": "9f91387f524c7b805c193cf0c1bd138ba9d1648efb36a5b8d8ee32a265998fed",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "aliases()",
+          "result": "java.util.Set",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "availableCharsets()",
+          "result": "java.util.SortedMap",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canEncode()",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.nio.charset.Charset)",
+          "result": "int",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(java.nio.charset.Charset)",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decode(java.nio.ByteBuffer)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "defaultCharset()",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "displayName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "displayName(java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encode(java.lang.String)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encode(java.nio.CharBuffer)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forName(java.lang.String)",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forName(java.lang.String,java.nio.charset.Charset)",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRegistered()",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupported(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDecoder()",
+          "result": "java.nio.charset.CharsetDecoder",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newEncoder()",
+          "result": "java.nio.charset.CharsetEncoder",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.Charset",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.CharsetDecoder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/CharsetDecoder.html",
+      "sourceEntry": "java.base/java/nio/charset/CharsetDecoder.java",
+      "sourceSha256": "0b8a9ffb46a483cd1a3aa3582dddd067c22bab9b9f6d738eae57ec967e8851de",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.charset.Charset,float,float)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "averageCharsPerByte()",
+          "result": "float",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "charset()",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decode(java.nio.ByteBuffer)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decode(java.nio.ByteBuffer,java.nio.CharBuffer,boolean)",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decodeLoop(java.nio.ByteBuffer,java.nio.CharBuffer)",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "detectedCharset()",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flush(java.nio.CharBuffer)",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implFlush(java.nio.CharBuffer)",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implOnMalformedInput(java.nio.charset.CodingErrorAction)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implOnUnmappableCharacter(java.nio.charset.CodingErrorAction)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implReplaceWith(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implReset()",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAutoDetecting()",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCharsetDetected()",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "malformedInputAction()",
+          "result": "java.nio.charset.CodingErrorAction",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "maxCharsPerByte()",
+          "result": "float",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onMalformedInput(java.nio.charset.CodingErrorAction)",
+          "result": "java.nio.charset.CharsetDecoder",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onUnmappableCharacter(java.nio.charset.CodingErrorAction)",
+          "result": "java.nio.charset.CharsetDecoder",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replaceWith(java.lang.String)",
+          "result": "java.nio.charset.CharsetDecoder",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replacement()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.charset.CharsetDecoder",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unmappableCharacterAction()",
+          "result": "java.nio.charset.CodingErrorAction",
+          "declaredBy": "java.nio.charset.CharsetDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.CharsetEncoder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/CharsetEncoder.html",
+      "sourceEntry": "java.base/java/nio/charset/CharsetEncoder.java",
+      "sourceSha256": "c1ef73aa08db0caedbc3d94da27793bb9215a54b8508f5f10707b44e85ed3d11",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.charset.Charset,float,float)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.charset.Charset,float,float,byte[])",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "averageBytesPerChar()",
+          "result": "float",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canEncode(char)",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canEncode(java.lang.CharSequence)",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "charset()",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encode(java.nio.CharBuffer)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encode(java.nio.CharBuffer,java.nio.ByteBuffer,boolean)",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encodeLoop(java.nio.CharBuffer,java.nio.ByteBuffer)",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flush(java.nio.ByteBuffer)",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implFlush(java.nio.ByteBuffer)",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implOnMalformedInput(java.nio.charset.CodingErrorAction)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implOnUnmappableCharacter(java.nio.charset.CodingErrorAction)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implReplaceWith(byte[])",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implReset()",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLegalReplacement(byte[])",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "malformedInputAction()",
+          "result": "java.nio.charset.CodingErrorAction",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "maxBytesPerChar()",
+          "result": "float",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onMalformedInput(java.nio.charset.CodingErrorAction)",
+          "result": "java.nio.charset.CharsetEncoder",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onUnmappableCharacter(java.nio.charset.CodingErrorAction)",
+          "result": "java.nio.charset.CharsetEncoder",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replaceWith(byte[])",
+          "result": "java.nio.charset.CharsetEncoder",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replacement()",
+          "result": "byte[]",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.charset.CharsetEncoder",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unmappableCharacterAction()",
+          "result": "java.nio.charset.CodingErrorAction",
+          "declaredBy": "java.nio.charset.CharsetEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.CoderMalfunctionError",
+      "kind": "class",
+      "parents": [
+        "java.lang.Error"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/CoderMalfunctionError.html",
+      "sourceEntry": "java.base/java/nio/charset/CoderMalfunctionError.java",
+      "sourceSha256": "85ae41b2f10e255c27a3ccd52d6a4561538f67bef22ddea4be2d9fe2618e9afc",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CoderMalfunctionError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.CoderResult",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/CoderResult.html",
+      "sourceEntry": "java.base/java/nio/charset/CoderResult.java",
+      "sourceSha256": "ab43e3fcc4ddc7e09edcb2c010707d9b8966693ba77d77293a0151a24d605be7",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "OVERFLOW",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNDERFLOW",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isError()",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isMalformed()",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOverflow()",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUnderflow()",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUnmappable()",
+          "result": "boolean",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "length()",
+          "result": "int",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "malformedForLength(int)",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "throwException()",
+          "result": "void",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unmappableForLength(int)",
+          "result": "java.nio.charset.CoderResult",
+          "declaredBy": "java.nio.charset.CoderResult",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.CodingErrorAction",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/CodingErrorAction.html",
+      "sourceEntry": "java.base/java/nio/charset/CodingErrorAction.java",
+      "sourceSha256": "40c7a31771128ce64869d7163d36e6dee960356027d340c908317fa439f40857",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "IGNORE",
+          "result": "java.nio.charset.CodingErrorAction",
+          "declaredBy": "java.nio.charset.CodingErrorAction",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REPLACE",
+          "result": "java.nio.charset.CodingErrorAction",
+          "declaredBy": "java.nio.charset.CodingErrorAction",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REPORT",
+          "result": "java.nio.charset.CodingErrorAction",
+          "declaredBy": "java.nio.charset.CodingErrorAction",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.CodingErrorAction",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.IllegalCharsetNameException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/IllegalCharsetNameException.html",
+      "sourceEntry": "java.base/java/nio/charset/IllegalCharsetNameException.java",
+      "sourceSha256": "2f2d6816714969c838f894fad488c5e6048eedb31c32ba6c25e3f025b6fe5849",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.IllegalCharsetNameException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharsetName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.IllegalCharsetNameException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.MalformedInputException",
+      "kind": "class",
+      "parents": [
+        "java.nio.charset.CharacterCodingException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/MalformedInputException.html",
+      "sourceEntry": "java.base/java/nio/charset/MalformedInputException.java",
+      "sourceSha256": "406cd608b5574a6fefab99d296bb2818c66c88128e1313c8aad96f219ecc6534",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.MalformedInputException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInputLength()",
+          "result": "int",
+          "declaredBy": "java.nio.charset.MalformedInputException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.MalformedInputException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.StandardCharsets",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/StandardCharsets.html",
+      "sourceEntry": "java.base/java/nio/charset/StandardCharsets.java",
+      "sourceSha256": "8622b79dc3fde4e6c9608178cea92983d6395e43a11fdf5adcfe27b7c746a1c8",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ISO_8859_1",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.StandardCharsets",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "US_ASCII",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.StandardCharsets",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UTF_16",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.StandardCharsets",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UTF_16BE",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.StandardCharsets",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UTF_16LE",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.StandardCharsets",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UTF_8",
+          "result": "java.nio.charset.Charset",
+          "declaredBy": "java.nio.charset.StandardCharsets",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.UnmappableCharacterException",
+      "kind": "class",
+      "parents": [
+        "java.nio.charset.CharacterCodingException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/UnmappableCharacterException.html",
+      "sourceEntry": "java.base/java/nio/charset/UnmappableCharacterException.java",
+      "sourceSha256": "40b3090a51baf3c431390f14ef7605ad793e669bd8a34bb386dd60fbac3c05f7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.UnmappableCharacterException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInputLength()",
+          "result": "int",
+          "declaredBy": "java.nio.charset.UnmappableCharacterException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.UnmappableCharacterException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.charset.UnsupportedCharsetException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/charset/UnsupportedCharsetException.html",
+      "sourceEntry": "java.base/java/nio/charset/UnsupportedCharsetException.java",
+      "sourceSha256": "220bd278f9d654d98bf1d1ac4ef5b3ad32835d749bdf7ad60b5de6166ad26355",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.charset.UnsupportedCharsetException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharsetName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.charset.UnsupportedCharsetException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

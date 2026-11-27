@@ -1,0 +1,1092 @@
+{
+  "name": "javax.security.auth.kerberos",
+  "module": "java.security.jgss",
+  "types": [
+    {
+      "target": "javax.security.auth.kerberos.DelegationPermission",
+      "kind": "class",
+      "parents": [
+        "java.security.BasicPermission",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/javax/security/auth/kerberos/DelegationPermission.html",
+      "sourceEntry": "java.security.jgss/javax/security/auth/kerberos/DelegationPermission.java",
+      "sourceSha256": "63cb59b340d3d94f5094a78f1ee3c8081ddc517d1dfdce9613c74ac0785e2d1a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.DelegationPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.DelegationPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.DelegationPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.DelegationPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implies(java.security.Permission)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.DelegationPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newPermissionCollection()",
+          "result": "java.security.PermissionCollection",
+          "declaredBy": "javax.security.auth.kerberos.DelegationPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.kerberos.EncryptionKey",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.crypto.SecretKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html",
+      "sourceEntry": "java.security.jgss/javax/security/auth/kerberos/EncryptionKey.java",
+      "sourceSha256": "8956210da3f765d7d8c2f68467a55c3b42bd3a133298c739520f03c43ea03ec8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[],int)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.EncryptionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "destroy()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.EncryptionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.EncryptionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.EncryptionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "javax.security.auth.kerberos.EncryptionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormat()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.EncryptionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeyType()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.EncryptionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.EncryptionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDestroyed()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.EncryptionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.EncryptionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.kerberos.KerberosCredMessage",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.security.auth.Destroyable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html",
+      "sourceEntry": "java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.java",
+      "sourceSha256": "74f3497ee0c7c025716a156268b0ecf8be7efd86312f380d9a499ca56d355701",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.security.auth.kerberos.KerberosPrincipal,javax.security.auth.kerberos.KerberosPrincipal,byte[])",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.KerberosCredMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "destroy()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.KerberosCredMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosCredMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "javax.security.auth.kerberos.KerberosCredMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRecipient()",
+          "result": "javax.security.auth.kerberos.KerberosPrincipal",
+          "declaredBy": "javax.security.auth.kerberos.KerberosCredMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSender()",
+          "result": "javax.security.auth.kerberos.KerberosPrincipal",
+          "declaredBy": "javax.security.auth.kerberos.KerberosCredMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosCredMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDestroyed()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosCredMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.KerberosCredMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.kerberos.KerberosKey",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.crypto.SecretKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html",
+      "sourceEntry": "java.security.jgss/javax/security/auth/kerberos/KerberosKey.java",
+      "sourceSha256": "4942bcb5902684bf90eec6a684d5fcc432a19aaf3cda8208aaf6f9a2e3886e6c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.security.auth.kerberos.KerberosPrincipal,byte[],int,int)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.security.auth.kerberos.KerberosPrincipal,char[],java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "destroy()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormat()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeyType()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrincipal()",
+          "result": "javax.security.auth.kerberos.KerberosPrincipal",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersionNumber()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDestroyed()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.KerberosKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.kerberos.KerberosPrincipal",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.Principal",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html",
+      "sourceEntry": "java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.java",
+      "sourceSha256": "0d4379536aac848464c5b5b5f6297266aa351c7d5c4791484a1719c08ee9dc1b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "KRB_NT_ENTERPRISE",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "KRB_NT_PRINCIPAL",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "KRB_NT_SRV_HST",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "KRB_NT_SRV_INST",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "KRB_NT_SRV_XHST",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "KRB_NT_UID",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "KRB_NT_UNKNOWN",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNameType()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRealm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.KerberosPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.kerberos.KerberosTicket",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.security.auth.Destroyable",
+        "javax.security.auth.Refreshable",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html",
+      "sourceEntry": "java.security.jgss/javax/security/auth/kerberos/KerberosTicket.java",
+      "sourceSha256": "282f95763c367c4a6cea80372d109774b9ff31fa98c945c7cf13d91143385cae",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[],javax.security.auth.kerberos.KerberosPrincipal,javax.security.auth.kerberos.KerberosPrincipal,byte[],int,boolean[],java.util.Date,java.util.Date,java.util.Date,java.util.Date,java.net.InetAddress[])",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "destroy()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAuthTime()",
+          "result": "java.util.Date",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClient()",
+          "result": "javax.security.auth.kerberos.KerberosPrincipal",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClientAddresses()",
+          "result": "java.net.InetAddress[]",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEndTime()",
+          "result": "java.util.Date",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFlags()",
+          "result": "boolean[]",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRenewTill()",
+          "result": "java.util.Date",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServer()",
+          "result": "javax.security.auth.kerberos.KerberosPrincipal",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSessionKey()",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSessionKeyType()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStartTime()",
+          "result": "java.util.Date",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCurrent()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDestroyed()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isForwardable()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isForwarded()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInitial()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPostdated()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isProxiable()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isProxy()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRenewable()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "refresh()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.KerberosTicket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.kerberos.KeyTab",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html",
+      "sourceEntry": "java.security.jgss/javax/security/auth/kerberos/KeyTab.java",
+      "sourceSha256": "ebb1e67316f5dda1f7e049642c9530e5b01e1b06f196fe3a8249bae4c4aaaaed",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exists()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance()",
+          "result": "javax.security.auth.kerberos.KeyTab",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.io.File)",
+          "result": "javax.security.auth.kerberos.KeyTab",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(javax.security.auth.kerberos.KerberosPrincipal)",
+          "result": "javax.security.auth.kerberos.KeyTab",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(javax.security.auth.kerberos.KerberosPrincipal,java.io.File)",
+          "result": "javax.security.auth.kerberos.KeyTab",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeys(javax.security.auth.kerberos.KerberosPrincipal)",
+          "result": "javax.security.auth.kerberos.KerberosKey[]",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrincipal()",
+          "result": "javax.security.auth.kerberos.KerberosPrincipal",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnboundInstance()",
+          "result": "javax.security.auth.kerberos.KeyTab",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnboundInstance(java.io.File)",
+          "result": "javax.security.auth.kerberos.KeyTab",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBound()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.KeyTab",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.kerberos.ServicePermission",
+      "kind": "class",
+      "parents": [
+        "java.security.Permission",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.security.jgss/javax/security/auth/kerberos/ServicePermission.html",
+      "sourceEntry": "java.security.jgss/javax/security/auth/kerberos/ServicePermission.java",
+      "sourceSha256": "b90cdba3280b5ba319a1341bc9b80dbe4c786e7c62aade8028456180c8a18595",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.kerberos.ServicePermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.ServicePermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getActions()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.kerberos.ServicePermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.kerberos.ServicePermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implies(java.security.Permission)",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.kerberos.ServicePermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newPermissionCollection()",
+          "result": "java.security.PermissionCollection",
+          "declaredBy": "javax.security.auth.kerberos.ServicePermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

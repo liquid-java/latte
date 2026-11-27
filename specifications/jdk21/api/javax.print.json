@@ -1,0 +1,1976 @@
+{
+  "name": "javax.print",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.print.AttributeException",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/AttributeException.html",
+      "sourceEntry": "java.desktop/javax/print/AttributeException.java",
+      "sourceSha256": "42762e7d546ff7042506b51f716f345725d4d75c09104207ed8eaead1bfc23b5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getUnsupportedAttributes()",
+          "result": "java.lang.Class[]",
+          "declaredBy": "javax.print.AttributeException",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnsupportedValues()",
+          "result": "javax.print.attribute.Attribute[]",
+          "declaredBy": "javax.print.AttributeException",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.CancelablePrintJob",
+      "kind": "interface",
+      "parents": [
+        "javax.print.DocPrintJob"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/CancelablePrintJob.html",
+      "sourceEntry": "java.desktop/javax/print/CancelablePrintJob.java",
+      "sourceSha256": "60b1566920eccc9e0bda27207442fbb0fc2193e892cfc735e36a3bf385dff1bd",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "cancel()",
+          "result": "void",
+          "declaredBy": "javax.print.CancelablePrintJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.Doc",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/Doc.html",
+      "sourceEntry": "java.desktop/javax/print/Doc.java",
+      "sourceSha256": "c895f67196866151e2302600f1b132cf7c6b3214bc171ea2168a1230b5bfe144",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "javax.print.attribute.DocAttributeSet",
+          "declaredBy": "javax.print.Doc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDocFlavor()",
+          "result": "javax.print.DocFlavor",
+          "declaredBy": "javax.print.Doc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintData()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.print.Doc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReaderForText()",
+          "result": "java.io.Reader",
+          "declaredBy": "javax.print.Doc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStreamForBytes()",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.print.Doc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.DocFlavor",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/DocFlavor.html",
+      "sourceEntry": "java.desktop/javax/print/DocFlavor.java",
+      "sourceSha256": "3d88b8b9917623d748f4927b824eb1bb1b55b08fce26b78e721819c63c090eb4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.DocFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.DocFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMediaSubtype()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.DocFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMediaType()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.DocFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMimeType()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.DocFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameter(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.DocFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRepresentationClassName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.DocFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.DocFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "hostEncoding",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.DocFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.DocFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.DocFlavor$BYTE_ARRAY",
+      "kind": "class",
+      "parents": [
+        "javax.print.DocFlavor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html",
+      "sourceEntry": "java.desktop/javax/print/DocFlavor.java",
+      "sourceSha256": "3d88b8b9917623d748f4927b824eb1bb1b55b08fce26b78e721819c63c090eb4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "AUTOSENSE",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GIF",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JPEG",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PCL",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PDF",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PNG",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "POSTSCRIPT",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_HOST",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_US_ASCII",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_16",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_16BE",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_16LE",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_8",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_HOST",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_US_ASCII",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_16",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_16BE",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_16LE",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_8",
+          "result": "javax.print.DocFlavor$BYTE_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$BYTE_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.DocFlavor$CHAR_ARRAY",
+      "kind": "class",
+      "parents": [
+        "javax.print.DocFlavor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/DocFlavor.CHAR_ARRAY.html",
+      "sourceEntry": "java.desktop/javax/print/DocFlavor.java",
+      "sourceSha256": "3d88b8b9917623d748f4927b824eb1bb1b55b08fce26b78e721819c63c090eb4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.DocFlavor$CHAR_ARRAY",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML",
+          "result": "javax.print.DocFlavor$CHAR_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$CHAR_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN",
+          "result": "javax.print.DocFlavor$CHAR_ARRAY",
+          "declaredBy": "javax.print.DocFlavor$CHAR_ARRAY",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.DocFlavor$INPUT_STREAM",
+      "kind": "class",
+      "parents": [
+        "javax.print.DocFlavor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html",
+      "sourceEntry": "java.desktop/javax/print/DocFlavor.java",
+      "sourceSha256": "3d88b8b9917623d748f4927b824eb1bb1b55b08fce26b78e721819c63c090eb4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "AUTOSENSE",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GIF",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JPEG",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PCL",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PDF",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PNG",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "POSTSCRIPT",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_HOST",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_US_ASCII",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_16",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_16BE",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_16LE",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_8",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_HOST",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_US_ASCII",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_16",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_16BE",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_16LE",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_8",
+          "result": "javax.print.DocFlavor$INPUT_STREAM",
+          "declaredBy": "javax.print.DocFlavor$INPUT_STREAM",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.DocFlavor$READER",
+      "kind": "class",
+      "parents": [
+        "javax.print.DocFlavor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/DocFlavor.READER.html",
+      "sourceEntry": "java.desktop/javax/print/DocFlavor.java",
+      "sourceSha256": "3d88b8b9917623d748f4927b824eb1bb1b55b08fce26b78e721819c63c090eb4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.DocFlavor$READER",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML",
+          "result": "javax.print.DocFlavor$READER",
+          "declaredBy": "javax.print.DocFlavor$READER",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN",
+          "result": "javax.print.DocFlavor$READER",
+          "declaredBy": "javax.print.DocFlavor$READER",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.DocFlavor$SERVICE_FORMATTED",
+      "kind": "class",
+      "parents": [
+        "javax.print.DocFlavor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/DocFlavor.SERVICE_FORMATTED.html",
+      "sourceEntry": "java.desktop/javax/print/DocFlavor.java",
+      "sourceSha256": "3d88b8b9917623d748f4927b824eb1bb1b55b08fce26b78e721819c63c090eb4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.DocFlavor$SERVICE_FORMATTED",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "PAGEABLE",
+          "result": "javax.print.DocFlavor$SERVICE_FORMATTED",
+          "declaredBy": "javax.print.DocFlavor$SERVICE_FORMATTED",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PRINTABLE",
+          "result": "javax.print.DocFlavor$SERVICE_FORMATTED",
+          "declaredBy": "javax.print.DocFlavor$SERVICE_FORMATTED",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RENDERABLE_IMAGE",
+          "result": "javax.print.DocFlavor$SERVICE_FORMATTED",
+          "declaredBy": "javax.print.DocFlavor$SERVICE_FORMATTED",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.DocFlavor$STRING",
+      "kind": "class",
+      "parents": [
+        "javax.print.DocFlavor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/DocFlavor.STRING.html",
+      "sourceEntry": "java.desktop/javax/print/DocFlavor.java",
+      "sourceSha256": "3d88b8b9917623d748f4927b824eb1bb1b55b08fce26b78e721819c63c090eb4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.DocFlavor$STRING",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML",
+          "result": "javax.print.DocFlavor$STRING",
+          "declaredBy": "javax.print.DocFlavor$STRING",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN",
+          "result": "javax.print.DocFlavor$STRING",
+          "declaredBy": "javax.print.DocFlavor$STRING",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.DocFlavor$URL",
+      "kind": "class",
+      "parents": [
+        "javax.print.DocFlavor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/DocFlavor.URL.html",
+      "sourceEntry": "java.desktop/javax/print/DocFlavor.java",
+      "sourceSha256": "3d88b8b9917623d748f4927b824eb1bb1b55b08fce26b78e721819c63c090eb4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "AUTOSENSE",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GIF",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JPEG",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PCL",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PDF",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PNG",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "POSTSCRIPT",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_HOST",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_US_ASCII",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_16",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_16BE",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_16LE",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_HTML_UTF_8",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_HOST",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_US_ASCII",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_16",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_16BE",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_16LE",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_PLAIN_UTF_8",
+          "result": "javax.print.DocFlavor$URL",
+          "declaredBy": "javax.print.DocFlavor$URL",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.DocPrintJob",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/DocPrintJob.html",
+      "sourceEntry": "java.desktop/javax/print/DocPrintJob.java",
+      "sourceSha256": "300f3e3fa1cfdc1515ab6830cc340abdbab72559b7e1c1ff16cd684cc19eac83",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addPrintJobAttributeListener(javax.print.event.PrintJobAttributeListener,javax.print.attribute.PrintJobAttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.DocPrintJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addPrintJobListener(javax.print.event.PrintJobListener)",
+          "result": "void",
+          "declaredBy": "javax.print.DocPrintJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "javax.print.attribute.PrintJobAttributeSet",
+          "declaredBy": "javax.print.DocPrintJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintService()",
+          "result": "javax.print.PrintService",
+          "declaredBy": "javax.print.DocPrintJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "print(javax.print.Doc,javax.print.attribute.PrintRequestAttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.DocPrintJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePrintJobAttributeListener(javax.print.event.PrintJobAttributeListener)",
+          "result": "void",
+          "declaredBy": "javax.print.DocPrintJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePrintJobListener(javax.print.event.PrintJobListener)",
+          "result": "void",
+          "declaredBy": "javax.print.DocPrintJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.FlavorException",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/FlavorException.html",
+      "sourceEntry": "java.desktop/javax/print/FlavorException.java",
+      "sourceSha256": "f317584bda52c541a6d2e4ffac538341a37af9d301f43c821b9c6ccedaa1cf0b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getUnsupportedFlavors()",
+          "result": "javax.print.DocFlavor[]",
+          "declaredBy": "javax.print.FlavorException",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.MultiDoc",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/MultiDoc.html",
+      "sourceEntry": "java.desktop/javax/print/MultiDoc.java",
+      "sourceSha256": "97e46562445d9639d532d071bdd582e9b99e93776c0842cbaba2042d1472a2e3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getDoc()",
+          "result": "javax.print.Doc",
+          "declaredBy": "javax.print.MultiDoc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "next()",
+          "result": "javax.print.MultiDoc",
+          "declaredBy": "javax.print.MultiDoc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.MultiDocPrintJob",
+      "kind": "interface",
+      "parents": [
+        "javax.print.DocPrintJob"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/MultiDocPrintJob.html",
+      "sourceEntry": "java.desktop/javax/print/MultiDocPrintJob.java",
+      "sourceSha256": "da61c019209b1dc246620293165e7b2ddfb9ec687938a93bf980b620e98ad796",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "print(javax.print.MultiDoc,javax.print.attribute.PrintRequestAttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.MultiDocPrintJob",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.MultiDocPrintService",
+      "kind": "interface",
+      "parents": [
+        "javax.print.PrintService"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/MultiDocPrintService.html",
+      "sourceEntry": "java.desktop/javax/print/MultiDocPrintService.java",
+      "sourceSha256": "08c675120ab70226460bb894734603cf432e9346a9eaf985eadd10a30e508247",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createMultiDocPrintJob()",
+          "result": "javax.print.MultiDocPrintJob",
+          "declaredBy": "javax.print.MultiDocPrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.PrintException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/PrintException.html",
+      "sourceEntry": "java.desktop/javax/print/PrintException.java",
+      "sourceSha256": "184044ba0a20b296c570973e3808c93067c447be92e4b52a99cc176ab65fb014",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.PrintException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "javax.print.PrintException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.PrintException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "javax.print.PrintException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.PrintService",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/PrintService.html",
+      "sourceEntry": "java.desktop/javax/print/PrintService.java",
+      "sourceSha256": "aa0765f9f33a2608dde6da223f84abe69135773c989cfbcfa9a3e3ce54609602",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addPrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener)",
+          "result": "void",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createPrintJob()",
+          "result": "javax.print.DocPrintJob",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.lang.Class)",
+          "result": "javax.print.attribute.PrintServiceAttribute",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "javax.print.attribute.PrintServiceAttributeSet",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultAttributeValue(java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServiceUIFactory()",
+          "result": "javax.print.ServiceUIFactory",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedAttributeCategories()",
+          "result": "java.lang.Class[]",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedAttributeValues(java.lang.Class,javax.print.DocFlavor,javax.print.attribute.AttributeSet)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedDocFlavors()",
+          "result": "javax.print.DocFlavor[]",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnsupportedAttributes(javax.print.DocFlavor,javax.print.attribute.AttributeSet)",
+          "result": "javax.print.attribute.AttributeSet",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAttributeCategorySupported(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAttributeValueSupported(javax.print.attribute.Attribute,javax.print.DocFlavor,javax.print.attribute.AttributeSet)",
+          "result": "boolean",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDocFlavorSupported(javax.print.DocFlavor)",
+          "result": "boolean",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener)",
+          "result": "void",
+          "declaredBy": "javax.print.PrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.PrintServiceLookup",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/PrintServiceLookup.html",
+      "sourceEntry": "java.desktop/javax/print/PrintServiceLookup.java",
+      "sourceSha256": "06eb21d8b7c54a7079d1f30ad37d3fe559f63b6cd4212860a12410e4e0cbeed7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.PrintServiceLookup",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultPrintService()",
+          "result": "javax.print.PrintService",
+          "declaredBy": "javax.print.PrintServiceLookup",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMultiDocPrintServices(javax.print.DocFlavor[],javax.print.attribute.AttributeSet)",
+          "result": "javax.print.MultiDocPrintService[]",
+          "declaredBy": "javax.print.PrintServiceLookup",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintServices()",
+          "result": "javax.print.PrintService[]",
+          "declaredBy": "javax.print.PrintServiceLookup",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintServices(javax.print.DocFlavor,javax.print.attribute.AttributeSet)",
+          "result": "javax.print.PrintService[]",
+          "declaredBy": "javax.print.PrintServiceLookup",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupDefaultPrintService()",
+          "result": "javax.print.PrintService",
+          "declaredBy": "javax.print.PrintServiceLookup",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupMultiDocPrintServices(javax.print.DocFlavor[],javax.print.attribute.AttributeSet)",
+          "result": "javax.print.MultiDocPrintService[]",
+          "declaredBy": "javax.print.PrintServiceLookup",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupPrintServices(javax.print.DocFlavor,javax.print.attribute.AttributeSet)",
+          "result": "javax.print.PrintService[]",
+          "declaredBy": "javax.print.PrintServiceLookup",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerService(javax.print.PrintService)",
+          "result": "boolean",
+          "declaredBy": "javax.print.PrintServiceLookup",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerServiceProvider(javax.print.PrintServiceLookup)",
+          "result": "boolean",
+          "declaredBy": "javax.print.PrintServiceLookup",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.ServiceUI",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/ServiceUI.html",
+      "sourceEntry": "java.desktop/javax/print/ServiceUI.java",
+      "sourceSha256": "2d0c85f4e3eacf0d5440b192a8288f28df23066eee9df1e726000c316a6c3473",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.ServiceUI",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printDialog(java.awt.GraphicsConfiguration,int,int,javax.print.PrintService[],javax.print.PrintService,javax.print.DocFlavor,javax.print.attribute.PrintRequestAttributeSet)",
+          "result": "javax.print.PrintService",
+          "declaredBy": "javax.print.ServiceUI",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.ServiceUIFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/ServiceUIFactory.html",
+      "sourceEntry": "java.desktop/javax/print/ServiceUIFactory.java",
+      "sourceSha256": "98924703f13f4be9f70ab1823584a7ff92a73bdf46ba9d4f7bb9555fa0f33f65",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ABOUT_UIROLE",
+          "result": "int",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ADMIN_UIROLE",
+          "result": "int",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DIALOG_UI",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JCOMPONENT_UI",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JDIALOG_UI",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MAIN_UIROLE",
+          "result": "int",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PANEL_UI",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RESERVED_UIROLE",
+          "result": "int",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getUI(int,java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUIClassNamesForRole(int)",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.print.ServiceUIFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.SimpleDoc",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.print.Doc"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/SimpleDoc.html",
+      "sourceEntry": "java.desktop/javax/print/SimpleDoc.java",
+      "sourceSha256": "bb52b976fb285012dbd4c8bf42e08f0085435faaccb316e09af0da8fb4159f28",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.print.DocFlavor,javax.print.attribute.DocAttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.SimpleDoc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "javax.print.attribute.DocAttributeSet",
+          "declaredBy": "javax.print.SimpleDoc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDocFlavor()",
+          "result": "javax.print.DocFlavor",
+          "declaredBy": "javax.print.SimpleDoc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintData()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.print.SimpleDoc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReaderForText()",
+          "result": "java.io.Reader",
+          "declaredBy": "javax.print.SimpleDoc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStreamForBytes()",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.print.SimpleDoc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.StreamPrintService",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.print.PrintService"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/StreamPrintService.html",
+      "sourceEntry": "java.desktop/javax/print/StreamPrintService.java",
+      "sourceSha256": "6c2a5ed9f82df211d5aaa5fbabd45af2b965776d4b26df104d13589ccf888b92",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "javax.print.StreamPrintService",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dispose()",
+          "result": "void",
+          "declaredBy": "javax.print.StreamPrintService",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputFormat()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.StreamPrintService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputStream()",
+          "result": "java.io.OutputStream",
+          "declaredBy": "javax.print.StreamPrintService",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDisposed()",
+          "result": "boolean",
+          "declaredBy": "javax.print.StreamPrintService",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.StreamPrintServiceFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html",
+      "sourceEntry": "java.desktop/javax/print/StreamPrintServiceFactory.java",
+      "sourceSha256": "6e6d3e1759c25d5caf6149e1c26ea8eadcc79ba5c398fc6513901a102f78dd4e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.StreamPrintServiceFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputFormat()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.StreamPrintServiceFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintService(java.io.OutputStream)",
+          "result": "javax.print.StreamPrintService",
+          "declaredBy": "javax.print.StreamPrintServiceFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedDocFlavors()",
+          "result": "javax.print.DocFlavor[]",
+          "declaredBy": "javax.print.StreamPrintServiceFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupStreamPrintServiceFactories(javax.print.DocFlavor,java.lang.String)",
+          "result": "javax.print.StreamPrintServiceFactory[]",
+          "declaredBy": "javax.print.StreamPrintServiceFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.URIException",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/URIException.html",
+      "sourceEntry": "java.desktop/javax/print/URIException.java",
+      "sourceSha256": "0d870c55f68eac92d608a0813970fd3d2b968c576e5b3018a73a6de01c55a992",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "URIInaccessible",
+          "result": "int",
+          "declaredBy": "javax.print.URIException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "URIOtherProblem",
+          "result": "int",
+          "declaredBy": "javax.print.URIException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "URISchemeNotSupported",
+          "result": "int",
+          "declaredBy": "javax.print.URIException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getReason()",
+          "result": "int",
+          "declaredBy": "javax.print.URIException",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnsupportedURI()",
+          "result": "java.net.URI",
+          "declaredBy": "javax.print.URIException",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

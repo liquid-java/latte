@@ -1,0 +1,1102 @@
+{
+  "name": "java.awt.image.renderable",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "java.awt.image.renderable.ContextualRenderedImageFactory",
+      "kind": "interface",
+      "parents": [
+        "java.awt.image.renderable.RenderedImageFactory"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html",
+      "sourceEntry": "java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.java",
+      "sourceSha256": "e7e3e1961bfe5f07130a1490fe162b38bfd4e4e795c3c6d0574dfb9740ec9e35",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "create(java.awt.image.renderable.RenderContext,java.awt.image.renderable.ParameterBlock)",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "java.awt.image.renderable.ContextualRenderedImageFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBounds2D(java.awt.image.renderable.ParameterBlock)",
+          "result": "java.awt.geom.Rectangle2D",
+          "declaredBy": "java.awt.image.renderable.ContextualRenderedImageFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.awt.image.renderable.ParameterBlock,java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.image.renderable.ContextualRenderedImageFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.awt.image.renderable.ContextualRenderedImageFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDynamic()",
+          "result": "boolean",
+          "declaredBy": "java.awt.image.renderable.ContextualRenderedImageFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapRenderContext(int,java.awt.image.renderable.RenderContext,java.awt.image.renderable.ParameterBlock,java.awt.image.renderable.RenderableImage)",
+          "result": "java.awt.image.renderable.RenderContext",
+          "declaredBy": "java.awt.image.renderable.ContextualRenderedImageFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.image.renderable.ParameterBlock",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Cloneable",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html",
+      "sourceEntry": "java.desktop/java/awt/image/renderable/ParameterBlock.java",
+      "sourceSha256": "0c9bcabc14db4d79c58615cd566f57477e29753e4c938dcb8323a95147845194",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Vector)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Vector,java.util.Vector)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(byte)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(char)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(double)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(float)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(int)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(java.lang.Object)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(long)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(short)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addSource(java.lang.Object)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getByteParameter(int)",
+          "result": "byte",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharParameter(int)",
+          "result": "char",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDoubleParameter(int)",
+          "result": "double",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFloatParameter(int)",
+          "result": "float",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIntParameter(int)",
+          "result": "int",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLongParameter(int)",
+          "result": "long",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumParameters()",
+          "result": "int",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumSources()",
+          "result": "int",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectParameter(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParamClasses()",
+          "result": "java.lang.Class[]",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameters()",
+          "result": "java.util.Vector",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRenderableSource(int)",
+          "result": "java.awt.image.renderable.RenderableImage",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRenderedSource(int)",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShortParameter(int)",
+          "result": "short",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSource(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSources()",
+          "result": "java.util.Vector",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "parameters",
+          "result": "java.util.Vector",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "removeParameters()",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeSources()",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(byte,int)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(char,int)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(double,int)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(float,int)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(int,int)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.Object,int)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(long,int)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(short,int)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setParameters(java.util.Vector)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSource(java.lang.Object,int)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSources(java.util.Vector)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shallowClone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "sources",
+          "result": "java.util.Vector",
+          "declaredBy": "java.awt.image.renderable.ParameterBlock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.image.renderable.RenderContext",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html",
+      "sourceEntry": "java.desktop/java/awt/image/renderable/RenderContext.java",
+      "sourceSha256": "34e48b1d965c7ab351d52a0f492e159e874e0f733406819d403a8cd5a730919f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.geom.AffineTransform)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.geom.AffineTransform,java.awt.RenderingHints)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.geom.AffineTransform,java.awt.Shape)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.geom.AffineTransform,java.awt.Shape,java.awt.RenderingHints)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "concatenateTransform(java.awt.geom.AffineTransform)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "concetenateTransform(java.awt.geom.AffineTransform)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAreaOfInterest()",
+          "result": "java.awt.Shape",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRenderingHints()",
+          "result": "java.awt.RenderingHints",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransform()",
+          "result": "java.awt.geom.AffineTransform",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preConcatenateTransform(java.awt.geom.AffineTransform)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preConcetenateTransform(java.awt.geom.AffineTransform)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAreaOfInterest(java.awt.Shape)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRenderingHints(java.awt.RenderingHints)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTransform(java.awt.geom.AffineTransform)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.image.renderable.RenderableImage",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html",
+      "sourceEntry": "java.desktop/java/awt/image/renderable/RenderableImage.java",
+      "sourceSha256": "22e828538fc3d6ba0e262db804f562ca85c2adea56603959263defc82f58d53a",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "HINTS_OBSERVED",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createDefaultRendering()",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createRendering(java.awt.image.renderable.RenderContext)",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createScaledRendering(int,int,java.awt.RenderingHints)",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHeight()",
+          "result": "float",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinX()",
+          "result": "float",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinY()",
+          "result": "float",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSources()",
+          "result": "java.util.Vector",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWidth()",
+          "result": "float",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDynamic()",
+          "result": "boolean",
+          "declaredBy": "java.awt.image.renderable.RenderableImage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.image.renderable.RenderableImageOp",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.image.renderable.RenderableImage"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html",
+      "sourceEntry": "java.desktop/java/awt/image/renderable/RenderableImageOp.java",
+      "sourceSha256": "0451d7fdf65f1e9a004da32c77f5f8d74f01053c0e4cd96ccbb4573de96669ed",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.image.renderable.ContextualRenderedImageFactory,java.awt.image.renderable.ParameterBlock)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDefaultRendering()",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createRendering(java.awt.image.renderable.RenderContext)",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createScaledRendering(int,int,java.awt.RenderingHints)",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHeight()",
+          "result": "float",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinX()",
+          "result": "float",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinY()",
+          "result": "float",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameterBlock()",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSources()",
+          "result": "java.util.Vector",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWidth()",
+          "result": "float",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDynamic()",
+          "result": "boolean",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setParameterBlock(java.awt.image.renderable.ParameterBlock)",
+          "result": "java.awt.image.renderable.ParameterBlock",
+          "declaredBy": "java.awt.image.renderable.RenderableImageOp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.image.renderable.RenderableImageProducer",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.image.ImageProducer",
+        "java.lang.Runnable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html",
+      "sourceEntry": "java.desktop/java/awt/image/renderable/RenderableImageProducer.java",
+      "sourceSha256": "3780b7e92802e1594d885eeaf0680f4b5318a00d0062ae472f3a80dd05cc3b2e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.image.renderable.RenderableImage,java.awt.image.renderable.RenderContext)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderableImageProducer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addConsumer(java.awt.image.ImageConsumer)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderableImageProducer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isConsumer(java.awt.image.ImageConsumer)",
+          "result": "boolean",
+          "declaredBy": "java.awt.image.renderable.RenderableImageProducer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeConsumer(java.awt.image.ImageConsumer)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderableImageProducer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestTopDownLeftRightResend(java.awt.image.ImageConsumer)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderableImageProducer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "run()",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderableImageProducer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRenderContext(java.awt.image.renderable.RenderContext)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderableImageProducer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startProduction(java.awt.image.ImageConsumer)",
+          "result": "void",
+          "declaredBy": "java.awt.image.renderable.RenderableImageProducer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.image.renderable.RenderedImageFactory",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html",
+      "sourceEntry": "java.desktop/java/awt/image/renderable/RenderedImageFactory.java",
+      "sourceSha256": "df8c345234a525c6b82bf579e1a8092bd9250eba6159aeffb73f9bd564cfde69",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "create(java.awt.image.renderable.ParameterBlock,java.awt.RenderingHints)",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "java.awt.image.renderable.RenderedImageFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

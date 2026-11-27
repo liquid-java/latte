@@ -1,0 +1,489 @@
+{
+  "name": "javax.naming.spi",
+  "module": "java.naming",
+  "types": [
+    {
+      "target": "javax.naming.spi.DirObjectFactory",
+      "kind": "interface",
+      "parents": [
+        "javax.naming.spi.ObjectFactory"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/DirObjectFactory.html",
+      "sourceEntry": "java.naming/javax/naming/spi/DirObjectFactory.java",
+      "sourceSha256": "70e0a46b5f3844620e2f790d121b823f578cf09d348a51333bb2b1d03729650d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.spi.DirObjectFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.DirStateFactory",
+      "kind": "interface",
+      "parents": [
+        "javax.naming.spi.StateFactory"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/DirStateFactory.html",
+      "sourceEntry": "java.naming/javax/naming/spi/DirStateFactory.java",
+      "sourceSha256": "c358a7232fc22e1397eff42bf1e25f8d4e48ec6486ececadfac31bc407174645",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getStateToBind(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)",
+          "result": "javax.naming.spi.DirStateFactory$Result",
+          "declaredBy": "javax.naming.spi.DirStateFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.DirStateFactory$Result",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html",
+      "sourceEntry": "java.naming/javax/naming/spi/DirStateFactory.java",
+      "sourceSha256": "c358a7232fc22e1397eff42bf1e25f8d4e48ec6486ececadfac31bc407174645",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.naming.directory.Attributes)",
+          "result": "void",
+          "declaredBy": "javax.naming.spi.DirStateFactory$Result",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "javax.naming.directory.Attributes",
+          "declaredBy": "javax.naming.spi.DirStateFactory$Result",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObject()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.spi.DirStateFactory$Result",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.DirectoryManager",
+      "kind": "class",
+      "parents": [
+        "javax.naming.spi.NamingManager"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/DirectoryManager.html",
+      "sourceEntry": "java.naming/javax/naming/spi/DirectoryManager.java",
+      "sourceSha256": "ce9741e2d9d5a7011cf0e319b8769aa7e8d3ed8166d1e06073bd07c9b1180d3d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getContinuationDirContext(javax.naming.CannotProceedException)",
+          "result": "javax.naming.directory.DirContext",
+          "declaredBy": "javax.naming.spi.DirectoryManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.spi.DirectoryManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStateToBind(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)",
+          "result": "javax.naming.spi.DirStateFactory$Result",
+          "declaredBy": "javax.naming.spi.DirectoryManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.InitialContextFactory",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/InitialContextFactory.html",
+      "sourceEntry": "java.naming/javax/naming/spi/InitialContextFactory.java",
+      "sourceSha256": "acc8861c08000279f45e724d386440f784d5340b68a5402b8bee34a21fcf0803",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getInitialContext(java.util.Hashtable)",
+          "result": "javax.naming.Context",
+          "declaredBy": "javax.naming.spi.InitialContextFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.InitialContextFactoryBuilder",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/InitialContextFactoryBuilder.html",
+      "sourceEntry": "java.naming/javax/naming/spi/InitialContextFactoryBuilder.java",
+      "sourceSha256": "65f049adb7b966a4d5742a0865c7abee1ea002d18db216b0a05fb176daef0524",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createInitialContextFactory(java.util.Hashtable)",
+          "result": "javax.naming.spi.InitialContextFactory",
+          "declaredBy": "javax.naming.spi.InitialContextFactoryBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.NamingManager",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/NamingManager.html",
+      "sourceEntry": "java.naming/javax/naming/spi/NamingManager.java",
+      "sourceSha256": "200bebb88ec338e30973d93313f8e29dda22d4620e1a73ad047f6d1dd5ae9f7f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CPE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.spi.NamingManager",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getContinuationContext(javax.naming.CannotProceedException)",
+          "result": "javax.naming.Context",
+          "declaredBy": "javax.naming.spi.NamingManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInitialContext(java.util.Hashtable)",
+          "result": "javax.naming.Context",
+          "declaredBy": "javax.naming.spi.NamingManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.spi.NamingManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStateToBind(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.spi.NamingManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURLContext(java.lang.String,java.util.Hashtable)",
+          "result": "javax.naming.Context",
+          "declaredBy": "javax.naming.spi.NamingManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasInitialContextFactoryBuilder()",
+          "result": "boolean",
+          "declaredBy": "javax.naming.spi.NamingManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInitialContextFactoryBuilder(javax.naming.spi.InitialContextFactoryBuilder)",
+          "result": "void",
+          "declaredBy": "javax.naming.spi.NamingManager",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObjectFactoryBuilder(javax.naming.spi.ObjectFactoryBuilder)",
+          "result": "void",
+          "declaredBy": "javax.naming.spi.NamingManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.ObjectFactory",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/ObjectFactory.html",
+      "sourceEntry": "java.naming/javax/naming/spi/ObjectFactory.java",
+      "sourceSha256": "d6ed6aebe999050683aec6dc4e2510f21de73ff43adf56fc4d490c47d1819e21",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.spi.ObjectFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.ObjectFactoryBuilder",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/ObjectFactoryBuilder.html",
+      "sourceEntry": "java.naming/javax/naming/spi/ObjectFactoryBuilder.java",
+      "sourceSha256": "f4adb0d331d429875beb6bd11b0256afbd5cfdb06519ca7ef8c37ee3d2f744b5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createObjectFactory(java.lang.Object,java.util.Hashtable)",
+          "result": "javax.naming.spi.ObjectFactory",
+          "declaredBy": "javax.naming.spi.ObjectFactoryBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.ResolveResult",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/ResolveResult.html",
+      "sourceEntry": "java.naming/javax/naming/spi/ResolveResult.java",
+      "sourceSha256": "1dbf34bdf408d59ec6dac61cc7d2b776cab807ff73212d8fb11af62bfc3eec18",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.naming.Name)",
+          "result": "void",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendRemainingComponent(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendRemainingName(javax.naming.Name)",
+          "result": "void",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRemainingName()",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResolvedObj()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "remainingName",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "resolvedObj",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setRemainingName(javax.naming.Name)",
+          "result": "void",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setResolvedObj(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.naming.spi.ResolveResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.Resolver",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/Resolver.html",
+      "sourceEntry": "java.naming/javax/naming/spi/Resolver.java",
+      "sourceSha256": "98e61034e23fdab097ba08d491f1c4dd21000d0a7765206a0501f490641a54e3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "resolveToClass(java.lang.String,java.lang.Class)",
+          "result": "javax.naming.spi.ResolveResult",
+          "declaredBy": "javax.naming.spi.Resolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveToClass(javax.naming.Name,java.lang.Class)",
+          "result": "javax.naming.spi.ResolveResult",
+          "declaredBy": "javax.naming.spi.Resolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.spi.StateFactory",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/spi/StateFactory.html",
+      "sourceEntry": "java.naming/javax/naming/spi/StateFactory.java",
+      "sourceSha256": "900f30904c0c5d15ff51f21ad3f75f61bc4465f71934649a60ada680933f5867",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getStateToBind(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.spi.StateFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

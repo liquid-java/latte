@@ -1,0 +1,2412 @@
+{
+  "name": "javax.xml.stream",
+  "module": "java.xml",
+  "types": [
+    {
+      "target": "javax.xml.stream.EventFilter",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/EventFilter.html",
+      "sourceEntry": "java.xml/javax/xml/stream/EventFilter.java",
+      "sourceSha256": "2d823f7c59c2487841dd3252ae27febaccfc856710b04fdd4fef46499627b12b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(javax.xml.stream.events.XMLEvent)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.EventFilter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.FactoryConfigurationError",
+      "kind": "class",
+      "parents": [
+        "java.lang.Error"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/FactoryConfigurationError.html",
+      "sourceEntry": "java.xml/javax/xml/stream/FactoryConfigurationError.java",
+      "sourceSha256": "d1136089b01e8718cd7ef68283213f29b25a93ab9186920f344b24600688bedd",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Exception,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.stream.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getException()",
+          "result": "java.lang.Exception",
+          "declaredBy": "javax.xml.stream.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.Location",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/Location.html",
+      "sourceEntry": "java.xml/javax/xml/stream/Location.java",
+      "sourceSha256": "0b11f35b8742b6a97cc84d21d485f5fc4b1ad5b0293515c8c4f86805ced5daf4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCharacterOffset()",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.Location",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnNumber()",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.Location",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLineNumber()",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.Location",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.Location",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.Location",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.StreamFilter",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/StreamFilter.html",
+      "sourceEntry": "java.xml/javax/xml/stream/StreamFilter.java",
+      "sourceSha256": "f983b9ab7684f9dafdf5b13d081e18b9295d433d7032f71904e6391427718eb9",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(javax.xml.stream.XMLStreamReader)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.StreamFilter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLEventFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLEventFactory.java",
+      "sourceSha256": "23b9e5133143f0264684ccb1a24cf51eae04969bf45fd43612d740af2486a847",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createAttribute(java.lang.String,java.lang.String)",
+          "result": "javax.xml.stream.events.Attribute",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createAttribute(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "javax.xml.stream.events.Attribute",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createAttribute(javax.xml.namespace.QName,java.lang.String)",
+          "result": "javax.xml.stream.events.Attribute",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createCData(java.lang.String)",
+          "result": "javax.xml.stream.events.Characters",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createCharacters(java.lang.String)",
+          "result": "javax.xml.stream.events.Characters",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createComment(java.lang.String)",
+          "result": "javax.xml.stream.events.Comment",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDTD(java.lang.String)",
+          "result": "javax.xml.stream.events.DTD",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createEndDocument()",
+          "result": "javax.xml.stream.events.EndDocument",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createEndElement(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "javax.xml.stream.events.EndElement",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createEndElement(java.lang.String,java.lang.String,java.lang.String,java.util.Iterator)",
+          "result": "javax.xml.stream.events.EndElement",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createEndElement(javax.xml.namespace.QName,java.util.Iterator)",
+          "result": "javax.xml.stream.events.EndElement",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createEntityReference(java.lang.String,javax.xml.stream.events.EntityDeclaration)",
+          "result": "javax.xml.stream.events.EntityReference",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createIgnorableSpace(java.lang.String)",
+          "result": "javax.xml.stream.events.Characters",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createNamespace(java.lang.String)",
+          "result": "javax.xml.stream.events.Namespace",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createNamespace(java.lang.String,java.lang.String)",
+          "result": "javax.xml.stream.events.Namespace",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createProcessingInstruction(java.lang.String,java.lang.String)",
+          "result": "javax.xml.stream.events.ProcessingInstruction",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createSpace(java.lang.String)",
+          "result": "javax.xml.stream.events.Characters",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createStartDocument()",
+          "result": "javax.xml.stream.events.StartDocument",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createStartDocument(java.lang.String)",
+          "result": "javax.xml.stream.events.StartDocument",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createStartDocument(java.lang.String,java.lang.String)",
+          "result": "javax.xml.stream.events.StartDocument",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createStartDocument(java.lang.String,java.lang.String,boolean)",
+          "result": "javax.xml.stream.events.StartDocument",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createStartElement(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "javax.xml.stream.events.StartElement",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createStartElement(java.lang.String,java.lang.String,java.lang.String,java.util.Iterator,java.util.Iterator)",
+          "result": "javax.xml.stream.events.StartElement",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createStartElement(java.lang.String,java.lang.String,java.lang.String,java.util.Iterator,java.util.Iterator,javax.xml.namespace.NamespaceContext)",
+          "result": "javax.xml.stream.events.StartElement",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createStartElement(javax.xml.namespace.QName,java.util.Iterator,java.util.Iterator)",
+          "result": "javax.xml.stream.events.StartElement",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDefaultFactory()",
+          "result": "javax.xml.stream.XMLEventFactory",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFactory()",
+          "result": "javax.xml.stream.XMLEventFactory",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFactory(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.stream.XMLEventFactory",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance()",
+          "result": "javax.xml.stream.XMLEventFactory",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.stream.XMLEventFactory",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocation(javax.xml.stream.Location)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLEventFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLEventReader",
+      "kind": "interface",
+      "parents": [
+        "java.util.Iterator"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLEventReader.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLEventReader.java",
+      "sourceSha256": "5a246fd235348e2e4b071d039f6d42a307ef700d580becd378ab24756d154251",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLEventReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementText()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLEventReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.stream.XMLEventReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasNext()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLEventReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextEvent()",
+          "result": "javax.xml.stream.events.XMLEvent",
+          "declaredBy": "javax.xml.stream.XMLEventReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextTag()",
+          "result": "javax.xml.stream.events.XMLEvent",
+          "declaredBy": "javax.xml.stream.XMLEventReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "peek()",
+          "result": "javax.xml.stream.events.XMLEvent",
+          "declaredBy": "javax.xml.stream.XMLEventReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLEventWriter",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.stream.util.XMLEventConsumer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLEventWriter.java",
+      "sourceSha256": "540f4b8ff5a22176e38535cf26b7deed4ca161b98133d5c7f483683baf54e79a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "add(javax.xml.stream.XMLEventReader)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLEventWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(javax.xml.stream.events.XMLEvent)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLEventWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLEventWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flush()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLEventWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceContext()",
+          "result": "javax.xml.namespace.NamespaceContext",
+          "declaredBy": "javax.xml.stream.XMLEventWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrefix(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLEventWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDefaultNamespace(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLEventWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNamespaceContext(javax.xml.namespace.NamespaceContext)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLEventWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPrefix(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLEventWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLInputFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLInputFactory.java",
+      "sourceSha256": "ac6f224df47d59fd7f10381942e7ae008a755e932b106c3a46bb0fb7bbd36778",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ALLOCATOR",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IS_COALESCING",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IS_NAMESPACE_AWARE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IS_REPLACING_ENTITY_REFERENCES",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IS_SUPPORTING_EXTERNAL_ENTITIES",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IS_VALIDATING",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REPORTER",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RESOLVER",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SUPPORT_DTD",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createFilteredReader(javax.xml.stream.XMLEventReader,javax.xml.stream.EventFilter)",
+          "result": "javax.xml.stream.XMLEventReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createFilteredReader(javax.xml.stream.XMLStreamReader,javax.xml.stream.StreamFilter)",
+          "result": "javax.xml.stream.XMLStreamReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventReader(java.io.InputStream)",
+          "result": "javax.xml.stream.XMLEventReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventReader(java.io.InputStream,java.lang.String)",
+          "result": "javax.xml.stream.XMLEventReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventReader(java.io.Reader)",
+          "result": "javax.xml.stream.XMLEventReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventReader(java.lang.String,java.io.InputStream)",
+          "result": "javax.xml.stream.XMLEventReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventReader(java.lang.String,java.io.Reader)",
+          "result": "javax.xml.stream.XMLEventReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventReader(javax.xml.stream.XMLStreamReader)",
+          "result": "javax.xml.stream.XMLEventReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventReader(javax.xml.transform.Source)",
+          "result": "javax.xml.stream.XMLEventReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLStreamReader(java.io.InputStream)",
+          "result": "javax.xml.stream.XMLStreamReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLStreamReader(java.io.InputStream,java.lang.String)",
+          "result": "javax.xml.stream.XMLStreamReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLStreamReader(java.io.Reader)",
+          "result": "javax.xml.stream.XMLStreamReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLStreamReader(java.lang.String,java.io.InputStream)",
+          "result": "javax.xml.stream.XMLStreamReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLStreamReader(java.lang.String,java.io.Reader)",
+          "result": "javax.xml.stream.XMLStreamReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLStreamReader(javax.xml.transform.Source)",
+          "result": "javax.xml.stream.XMLStreamReader",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEventAllocator()",
+          "result": "javax.xml.stream.util.XMLEventAllocator",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getXMLReporter()",
+          "result": "javax.xml.stream.XMLReporter",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getXMLResolver()",
+          "result": "javax.xml.stream.XMLResolver",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPropertySupported(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDefaultFactory()",
+          "result": "javax.xml.stream.XMLInputFactory",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFactory()",
+          "result": "javax.xml.stream.XMLInputFactory",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFactory(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.stream.XMLInputFactory",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance()",
+          "result": "javax.xml.stream.XMLInputFactory",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.stream.XMLInputFactory",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEventAllocator(javax.xml.stream.util.XMLEventAllocator)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setProperty(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setXMLReporter(javax.xml.stream.XMLReporter)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setXMLResolver(javax.xml.stream.XMLResolver)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLInputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLOutputFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLOutputFactory.java",
+      "sourceSha256": "fe890adccdbc35f894a2e823dd2e27162e790de41b79c0029d5294764efefd50",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "IS_REPAIRING_NAMESPACES",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventWriter(java.io.OutputStream)",
+          "result": "javax.xml.stream.XMLEventWriter",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventWriter(java.io.OutputStream,java.lang.String)",
+          "result": "javax.xml.stream.XMLEventWriter",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventWriter(java.io.Writer)",
+          "result": "javax.xml.stream.XMLEventWriter",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLEventWriter(javax.xml.transform.Result)",
+          "result": "javax.xml.stream.XMLEventWriter",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLStreamWriter(java.io.OutputStream)",
+          "result": "javax.xml.stream.XMLStreamWriter",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLStreamWriter(java.io.OutputStream,java.lang.String)",
+          "result": "javax.xml.stream.XMLStreamWriter",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLStreamWriter(java.io.Writer)",
+          "result": "javax.xml.stream.XMLStreamWriter",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createXMLStreamWriter(javax.xml.transform.Result)",
+          "result": "javax.xml.stream.XMLStreamWriter",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPropertySupported(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDefaultFactory()",
+          "result": "javax.xml.stream.XMLOutputFactory",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFactory()",
+          "result": "javax.xml.stream.XMLOutputFactory",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFactory(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.stream.XMLOutputFactory",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance()",
+          "result": "javax.xml.stream.XMLOutputFactory",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.stream.XMLInputFactory",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setProperty(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLOutputFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLReporter",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLReporter.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLReporter.java",
+      "sourceSha256": "a0078f7a96e252ea9712f1b41dde33e3e349b198b4b16a42945164200d65158c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "report(java.lang.String,java.lang.String,java.lang.Object,javax.xml.stream.Location)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLReporter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLResolver",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLResolver.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLResolver.java",
+      "sourceSha256": "07ab44d29dbb0e661129207f094301b4dd42d3c6d07e35631330531352dbc6b5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.stream.XMLResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLStreamConstants",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLStreamConstants.java",
+      "sourceSha256": "02d1f8ab108e331ba20f4d25a68d12cad3339c6a2bcf4ffe444a701e74b92f87",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ATTRIBUTE",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CDATA",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHARACTERS",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COMMENT",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DTD",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "END_DOCUMENT",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "END_ELEMENT",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENTITY_DECLARATION",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENTITY_REFERENCE",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NAMESPACE",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NOTATION_DECLARATION",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROCESSING_INSTRUCTION",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SPACE",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "START_DOCUMENT",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "START_ELEMENT",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLStreamException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLStreamException.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLStreamException.java",
+      "sourceSha256": "19085b9d0e0ffcef4a22c487d571430c18421c3d70b6601c3c2ad1bd8c235657",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,javax.xml.stream.Location)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,javax.xml.stream.Location,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocation()",
+          "result": "javax.xml.stream.Location",
+          "declaredBy": "javax.xml.stream.XMLStreamException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNestedException()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.stream.XMLStreamException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "location",
+          "result": "javax.xml.stream.Location",
+          "declaredBy": "javax.xml.stream.XMLStreamException",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "nested",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.stream.XMLStreamException",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLStreamReader",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.stream.XMLStreamConstants"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLStreamReader.java",
+      "sourceSha256": "9e44b13d6983b203709dae5cb2600ed5729f48344331762e96df3fac7cd5c62b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeCount()",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeLocalName(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeName(int)",
+          "result": "javax.xml.namespace.QName",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeNamespace(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributePrefix(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeType(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeValue(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeValue(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharacterEncodingScheme()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementText()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoding()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEventType()",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocation()",
+          "result": "javax.xml.stream.Location",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "javax.xml.namespace.QName",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceContext()",
+          "result": "javax.xml.namespace.NamespaceContext",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceCount()",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespacePrefix(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceURI()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceURI(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceURI(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPIData()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPITarget()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrefix()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getText()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextCharacters()",
+          "result": "char[]",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextCharacters(int,char[],int,int)",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextLength()",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextStart()",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasName()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasNext()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasText()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAttributeSpecified(int)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCharacters()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEndElement()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isStandalone()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isStartElement()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWhiteSpace()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "next()",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextTag()",
+          "result": "int",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "require(int,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "standaloneSet()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.stream.XMLStreamReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.stream.XMLStreamWriter",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html",
+      "sourceEntry": "java.xml/javax/xml/stream/XMLStreamWriter.java",
+      "sourceSha256": "a615382ebc4ad145e2873f882d894b14585d702d53f92e0b00581c5bbe2d38f8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flush()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceContext()",
+          "result": "javax.xml.namespace.NamespaceContext",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrefix(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDefaultNamespace(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNamespaceContext(javax.xml.namespace.NamespaceContext)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPrefix(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeAttribute(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeAttribute(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeAttribute(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeCData(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeCharacters(char[],int,int)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeCharacters(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeComment(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeDTD(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeDefaultNamespace(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeEmptyElement(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeEmptyElement(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeEmptyElement(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeEndDocument()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeEndElement()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeEntityRef(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeNamespace(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeProcessingInstruction(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeProcessingInstruction(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeStartDocument()",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeStartDocument(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeStartDocument(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeStartElement(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeStartElement(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeStartElement(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.stream.XMLStreamWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

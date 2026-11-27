@@ -1,0 +1,745 @@
+{
+  "name": "javax.security.auth.callback",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "javax.security.auth.callback.Callback",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/callback/Callback.html",
+      "sourceEntry": "java.base/javax/security/auth/callback/Callback.java",
+      "sourceSha256": "a3ccc6eeb9f7d02ed60bd8654af4fd7cf68e8a0fa06fd624dc248678aa869505",
+      "members": []
+    },
+    {
+      "target": "javax.security.auth.callback.CallbackHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/callback/CallbackHandler.html",
+      "sourceEntry": "java.base/javax/security/auth/callback/CallbackHandler.java",
+      "sourceSha256": "eab6615b195f1b95b57043707f85d87b7072caec76490d9801bc7d360c338338",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "handle(javax.security.auth.callback.Callback[])",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.CallbackHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.callback.ChoiceCallback",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.security.auth.callback.Callback",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html",
+      "sourceEntry": "java.base/javax/security/auth/callback/ChoiceCallback.java",
+      "sourceSha256": "2e8e0a77b528edf5f5abecd5cb991bcf6cabe9dcf8c8245a73811a8360ca498b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String[],int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.ChoiceCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allowMultipleSelections()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.callback.ChoiceCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChoices()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.security.auth.callback.ChoiceCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultChoice()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ChoiceCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrompt()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.callback.ChoiceCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectedIndexes()",
+          "result": "int[]",
+          "declaredBy": "javax.security.auth.callback.ChoiceCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSelectedIndex(int)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.ChoiceCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSelectedIndexes(int[])",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.ChoiceCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.callback.ConfirmationCallback",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.security.auth.callback.Callback",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html",
+      "sourceEntry": "java.base/javax/security/auth/callback/ConfirmationCallback.java",
+      "sourceSha256": "f24e9a0fadf242855ad7b1afa7243af9250cd617073666342164579f74c61dfc",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.lang.String[],int)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int,java.lang.String[],int)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "CANCEL",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ERROR",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INFORMATION",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NO",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OK",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OK_CANCEL_OPTION",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNSPECIFIED_OPTION",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WARNING",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "YES",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "YES_NO_CANCEL_OPTION",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "YES_NO_OPTION",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultOption()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessageType()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOptionType()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOptions()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrompt()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectedIndex()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSelectedIndex(int)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.ConfirmationCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.callback.LanguageCallback",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.security.auth.callback.Callback",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/callback/LanguageCallback.html",
+      "sourceEntry": "java.base/javax/security/auth/callback/LanguageCallback.java",
+      "sourceSha256": "4fdc106ef0a211966ab3fab887029dd865d75892bb99e585ebe19c1a49e5cdbd",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.LanguageCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.security.auth.callback.LanguageCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocale(java.util.Locale)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.LanguageCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.callback.NameCallback",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.security.auth.callback.Callback",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/callback/NameCallback.html",
+      "sourceEntry": "java.base/javax/security/auth/callback/NameCallback.java",
+      "sourceSha256": "e394d44a5131f56d3d0f3b679153bcbd72cabaf1b83a11d4318cbffbe188c98d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.NameCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.NameCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.callback.NameCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.callback.NameCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrompt()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.callback.NameCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.NameCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.callback.PasswordCallback",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.security.auth.callback.Callback",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html",
+      "sourceEntry": "java.base/javax/security/auth/callback/PasswordCallback.java",
+      "sourceSha256": "c27d96eecee500f90ba66a60002498a95386d10e2ff0717068a311c6a4c780aa",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.PasswordCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clearPassword()",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.PasswordCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPassword()",
+          "result": "char[]",
+          "declaredBy": "javax.security.auth.callback.PasswordCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrompt()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.callback.PasswordCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEchoOn()",
+          "result": "boolean",
+          "declaredBy": "javax.security.auth.callback.PasswordCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPassword(char[])",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.PasswordCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.callback.TextInputCallback",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.security.auth.callback.Callback",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/callback/TextInputCallback.html",
+      "sourceEntry": "java.base/javax/security/auth/callback/TextInputCallback.java",
+      "sourceSha256": "a80addec14b488d90d8dc6eae2652e04c425cecf61748c70f35cdfce1024d5d2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.TextInputCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.TextInputCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultText()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.callback.TextInputCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrompt()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.callback.TextInputCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getText()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.callback.TextInputCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setText(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.TextInputCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.callback.TextOutputCallback",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.security.auth.callback.Callback",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html",
+      "sourceEntry": "java.base/javax/security/auth/callback/TextOutputCallback.java",
+      "sourceSha256": "c823c6d3c03dfb4a8271a0976d003cb1d450bc534fbace8b15ed12b9ab3b465c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.TextOutputCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ERROR",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.TextOutputCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INFORMATION",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.TextOutputCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WARNING",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.TextOutputCallback",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.security.auth.callback.TextOutputCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessageType()",
+          "result": "int",
+          "declaredBy": "javax.security.auth.callback.TextOutputCallback",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.security.auth.callback.UnsupportedCallbackException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/security/auth/callback/UnsupportedCallbackException.html",
+      "sourceEntry": "java.base/javax/security/auth/callback/UnsupportedCallbackException.java",
+      "sourceSha256": "5b4afe8474917c441ac0fce23488bf04b17250540659e2a6a914dc421cc429f7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.security.auth.callback.Callback)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.UnsupportedCallbackException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.security.auth.callback.Callback,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.security.auth.callback.UnsupportedCallbackException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCallback()",
+          "result": "javax.security.auth.callback.Callback",
+          "declaredBy": "javax.security.auth.callback.UnsupportedCallbackException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

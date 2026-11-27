@@ -1,0 +1,144 @@
+{
+  "name": "java.rmi.dgc",
+  "module": "java.rmi",
+  "types": [
+    {
+      "target": "java.rmi.dgc.DGC",
+      "kind": "interface",
+      "parents": [
+        "java.rmi.Remote"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/dgc/DGC.html",
+      "sourceEntry": "java.rmi/java/rmi/dgc/DGC.java",
+      "sourceSha256": "8e3cfb07e97e2e5f145ed42f9ef9f69f8167895a0d7df1d56dcf6f664ce573f0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "clean(java.rmi.server.ObjID[],long,java.rmi.dgc.VMID,boolean)",
+          "result": "void",
+          "declaredBy": "java.rmi.dgc.DGC",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dirty(java.rmi.server.ObjID[],long,java.rmi.dgc.Lease)",
+          "result": "java.rmi.dgc.Lease",
+          "declaredBy": "java.rmi.dgc.DGC",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.dgc.Lease",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/dgc/Lease.html",
+      "sourceEntry": "java.rmi/java/rmi/dgc/Lease.java",
+      "sourceSha256": "402eebfba6f7abd98706c7e8cc1507aee0bbf38d3473d0abe2e012f49a63f8cc",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.rmi.dgc.VMID,long)",
+          "result": "void",
+          "declaredBy": "java.rmi.dgc.Lease",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVMID()",
+          "result": "java.rmi.dgc.VMID",
+          "declaredBy": "java.rmi.dgc.Lease",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "long",
+          "declaredBy": "java.rmi.dgc.Lease",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.dgc.VMID",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/dgc/VMID.html",
+      "sourceEntry": "java.rmi/java/rmi/dgc/VMID.java",
+      "sourceSha256": "6c1a607d814f5ee9855bd2e15e25bdb42acb470189b1988fec7ad0bf7e27b262",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.rmi.dgc.VMID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.rmi.dgc.VMID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.rmi.dgc.VMID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUnique()",
+          "result": "boolean",
+          "declaredBy": "java.rmi.dgc.VMID",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.rmi.dgc.VMID",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

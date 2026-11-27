@@ -1,0 +1,3117 @@
+{
+  "name": "java.nio.file",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.nio.file.AccessDeniedException",
+      "kind": "class",
+      "parents": [
+        "java.nio.file.FileSystemException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/AccessDeniedException.html",
+      "sourceEntry": "java.base/java/nio/file/AccessDeniedException.java",
+      "sourceSha256": "44807f213a03e7e6e6d8e48148d06697f82b69f7f65d85f673de6134a3df02b4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.AccessDeniedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.AccessDeniedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.AccessMode",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/AccessMode.html",
+      "sourceEntry": "java.base/java/nio/file/AccessMode.java",
+      "sourceSha256": "6e937d8ecf9ab55bb3e33203e42513e3a5328ff2b9c0af3623af072b7da23a6d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "EXECUTE",
+          "result": "java.nio.file.AccessMode",
+          "declaredBy": "java.nio.file.AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "READ",
+          "result": "java.nio.file.AccessMode",
+          "declaredBy": "java.nio.file.AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WRITE",
+          "result": "java.nio.file.AccessMode",
+          "declaredBy": "java.nio.file.AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.nio.file.AccessMode",
+          "declaredBy": "java.nio.file.AccessMode",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.nio.file.AccessMode[]",
+          "declaredBy": "java.nio.file.AccessMode",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.AtomicMoveNotSupportedException",
+      "kind": "class",
+      "parents": [
+        "java.nio.file.FileSystemException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/AtomicMoveNotSupportedException.html",
+      "sourceEntry": "java.base/java/nio/file/AtomicMoveNotSupportedException.java",
+      "sourceSha256": "121f7889bcca66ded159aa7d6712c7699207c63ffb63903ced653756b310bce5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.AtomicMoveNotSupportedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.ClosedDirectoryStreamException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/ClosedDirectoryStreamException.html",
+      "sourceEntry": "java.base/java/nio/file/ClosedDirectoryStreamException.java",
+      "sourceSha256": "e6a0973d140cd7a26dbf0273e831649d16ec8e229606a9f75952417054fbac55",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.ClosedDirectoryStreamException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.ClosedFileSystemException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/ClosedFileSystemException.html",
+      "sourceEntry": "java.base/java/nio/file/ClosedFileSystemException.java",
+      "sourceSha256": "4ee87f4b1503c47fd255e02d1f3c854c72b17d932267cbe9bbede47dfeff5630",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.ClosedFileSystemException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.ClosedWatchServiceException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/ClosedWatchServiceException.html",
+      "sourceEntry": "java.base/java/nio/file/ClosedWatchServiceException.java",
+      "sourceSha256": "e0ae91dea625b91ce625492252337355a6c7deffa1da92b9d66c418decc4cd2c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.ClosedWatchServiceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.CopyOption",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/CopyOption.html",
+      "sourceEntry": "java.base/java/nio/file/CopyOption.java",
+      "sourceSha256": "e1a8ff84e6cd0cf9c7dc368d7a6ddc24f193955d817fd3a01f998182279fe6ef",
+      "members": []
+    },
+    {
+      "target": "java.nio.file.DirectoryIteratorException",
+      "kind": "class",
+      "parents": [
+        "java.util.ConcurrentModificationException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/DirectoryIteratorException.html",
+      "sourceEntry": "java.base/java/nio/file/DirectoryIteratorException.java",
+      "sourceSha256": "5233bdb417115cc3a2fa9efe8a298fc5d2d55702e716641659921c10f34efa58",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.IOException)",
+          "result": "void",
+          "declaredBy": "java.nio.file.DirectoryIteratorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.io.IOException",
+          "declaredBy": "java.nio.file.DirectoryIteratorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.DirectoryNotEmptyException",
+      "kind": "class",
+      "parents": [
+        "java.nio.file.FileSystemException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/DirectoryNotEmptyException.html",
+      "sourceEntry": "java.base/java/nio/file/DirectoryNotEmptyException.java",
+      "sourceSha256": "abfaf7987c2f4efebdb534cc9384e8337a0ac92c75bab9fb27caaf763dae4037",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.DirectoryNotEmptyException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.DirectoryStream",
+      "kind": "interface",
+      "parents": [
+        "java.io.Closeable",
+        "java.lang.Iterable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/DirectoryStream.html",
+      "sourceEntry": "java.base/java/nio/file/DirectoryStream.java",
+      "sourceSha256": "f244919e07c6f0f19840578c52d569839efd0368c288db59ab89abb6a51fa5e7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.nio.file.DirectoryStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.DirectoryStream$Filter",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html",
+      "sourceEntry": "java.base/java/nio/file/DirectoryStream.java",
+      "sourceSha256": "f244919e07c6f0f19840578c52d569839efd0368c288db59ab89abb6a51fa5e7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.DirectoryStream$Filter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileAlreadyExistsException",
+      "kind": "class",
+      "parents": [
+        "java.nio.file.FileSystemException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileAlreadyExistsException.html",
+      "sourceEntry": "java.base/java/nio/file/FileAlreadyExistsException.java",
+      "sourceSha256": "82dc5c6b0fbd2f6ee2d2b2a0b834313bdfeaf6b43a3de991f224446315ed13a9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileAlreadyExistsException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileAlreadyExistsException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileStore",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileStore.html",
+      "sourceEntry": "java.base/java/nio/file/FileStore.java",
+      "sourceSha256": "c60ce07aebc3ef112ec73b0686b2baebd317a3e9575be41c69cf5732419fa388",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBlockSize()",
+          "result": "long",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileStoreAttributeView(java.lang.Class)",
+          "result": "java.nio.file.attribute.FileStoreAttributeView",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTotalSpace()",
+          "result": "long",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnallocatedSpace()",
+          "result": "long",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUsableSpace()",
+          "result": "long",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadOnly()",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportsFileAttributeView(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportsFileAttributeView(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "type()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.FileStore",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileSystem",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Closeable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileSystem.html",
+      "sourceEntry": "java.base/java/nio/file/FileSystem.java",
+      "sourceSha256": "09a5cafd9fcff68a332215c066d41ffc2e13bf5890be312e8c012f8a67b3a6aa",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileStores()",
+          "result": "java.lang.Iterable",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPath(java.lang.String,java.lang.String[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPathMatcher(java.lang.String)",
+          "result": "java.nio.file.PathMatcher",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRootDirectories()",
+          "result": "java.lang.Iterable",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSeparator()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUserPrincipalLookupService()",
+          "result": "java.nio.file.attribute.UserPrincipalLookupService",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOpen()",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadOnly()",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newWatchService()",
+          "result": "java.nio.file.WatchService",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provider()",
+          "result": "java.nio.file.spi.FileSystemProvider",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportedFileAttributeViews()",
+          "result": "java.util.Set",
+          "declaredBy": "java.nio.file.FileSystem",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileSystemAlreadyExistsException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileSystemAlreadyExistsException.html",
+      "sourceEntry": "java.base/java/nio/file/FileSystemAlreadyExistsException.java",
+      "sourceSha256": "65bce3926332a649d400dadb03336b6531b472b7e8eec4cca04877142d448228",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileSystemAlreadyExistsException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileSystemAlreadyExistsException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileSystemException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileSystemException.html",
+      "sourceEntry": "java.base/java/nio/file/FileSystemException.java",
+      "sourceSha256": "a378cbe4e829a1c1606d802b77d43ede1e3bf5b58e802510d1426043eda7a55a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileSystemException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileSystemException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFile()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.FileSystemException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.FileSystemException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOtherFile()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.FileSystemException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReason()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.FileSystemException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileSystemLoopException",
+      "kind": "class",
+      "parents": [
+        "java.nio.file.FileSystemException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileSystemLoopException.html",
+      "sourceEntry": "java.base/java/nio/file/FileSystemLoopException.java",
+      "sourceSha256": "a63be165c378995eb247e7aa14c87e87166e3996938b607b2395d263440556ca",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileSystemLoopException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileSystemNotFoundException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileSystemNotFoundException.html",
+      "sourceEntry": "java.base/java/nio/file/FileSystemNotFoundException.java",
+      "sourceSha256": "abce0616c1576d7da83d1c3a16f5d02c22cd2cf47f670eb96c42364e33ace4ab",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileSystemNotFoundException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.FileSystemNotFoundException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileSystems",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileSystems.html",
+      "sourceEntry": "java.base/java/nio/file/FileSystems.java",
+      "sourceSha256": "88d38041bcdfed28e35c7e1178da50824354e20c172bbf9dc58a2e79352bb506",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getDefault()",
+          "result": "java.nio.file.FileSystem",
+          "declaredBy": "java.nio.file.FileSystems",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileSystem(java.net.URI)",
+          "result": "java.nio.file.FileSystem",
+          "declaredBy": "java.nio.file.FileSystems",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFileSystem(java.net.URI,java.util.Map)",
+          "result": "java.nio.file.FileSystem",
+          "declaredBy": "java.nio.file.FileSystems",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFileSystem(java.net.URI,java.util.Map,java.lang.ClassLoader)",
+          "result": "java.nio.file.FileSystem",
+          "declaredBy": "java.nio.file.FileSystems",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFileSystem(java.nio.file.Path)",
+          "result": "java.nio.file.FileSystem",
+          "declaredBy": "java.nio.file.FileSystems",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFileSystem(java.nio.file.Path,java.lang.ClassLoader)",
+          "result": "java.nio.file.FileSystem",
+          "declaredBy": "java.nio.file.FileSystems",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFileSystem(java.nio.file.Path,java.util.Map)",
+          "result": "java.nio.file.FileSystem",
+          "declaredBy": "java.nio.file.FileSystems",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFileSystem(java.nio.file.Path,java.util.Map,java.lang.ClassLoader)",
+          "result": "java.nio.file.FileSystem",
+          "declaredBy": "java.nio.file.FileSystems",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileVisitOption",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileVisitOption.html",
+      "sourceEntry": "java.base/java/nio/file/FileVisitOption.java",
+      "sourceSha256": "cffa7c896ad765fe265315f3f0aa13c5c2e9832ac83437d1fac6ef3d2b267240",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "FOLLOW_LINKS",
+          "result": "java.nio.file.FileVisitOption",
+          "declaredBy": "java.nio.file.FileVisitOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.nio.file.FileVisitOption",
+          "declaredBy": "java.nio.file.FileVisitOption",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.nio.file.FileVisitOption[]",
+          "declaredBy": "java.nio.file.FileVisitOption",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileVisitResult",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileVisitResult.html",
+      "sourceEntry": "java.base/java/nio/file/FileVisitResult.java",
+      "sourceSha256": "0fc6d9f080fedfe4557db05fdac0111d7a74fa1380ddcfe768453e320cfa196c",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CONTINUE",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.FileVisitResult",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SKIP_SIBLINGS",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.FileVisitResult",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SKIP_SUBTREE",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.FileVisitResult",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TERMINATE",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.FileVisitResult",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.FileVisitResult",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.nio.file.FileVisitResult[]",
+          "declaredBy": "java.nio.file.FileVisitResult",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.FileVisitor",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/FileVisitor.html",
+      "sourceEntry": "java.base/java/nio/file/FileVisitor.java",
+      "sourceSha256": "e63f638508bad4feacda177ce2982bb404252103f1fdc90e052a0f38ebde4d5f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "postVisitDirectory(java.lang.Object,java.io.IOException)",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.FileVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.FileVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.FileVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitFileFailed(java.lang.Object,java.io.IOException)",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.FileVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.Files",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Files.html",
+      "sourceEntry": "java.base/java/nio/file/Files.java",
+      "sourceSha256": "18be20b7082a4e09167881059cb656c77b4337919c8cc5bdf1151bd5474b6f63",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])",
+          "result": "long",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "copy(java.nio.file.Path,java.io.OutputStream)",
+          "result": "long",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDirectories(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDirectory(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createFile(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createLink(java.nio.file.Path,java.nio.file.Path)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createSymbolicLink(java.nio.file.Path,java.nio.file.Path,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createTempDirectory(java.lang.String,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createTempDirectory(java.nio.file.Path,java.lang.String,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createTempFile(java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createTempFile(java.nio.file.Path,java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "delete(java.nio.file.Path)",
+          "result": "void",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "deleteIfExists(java.nio.file.Path)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exists(java.nio.file.Path,java.nio.file.LinkOption[])",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "find(java.nio.file.Path,int,java.util.function.BiPredicate,java.nio.file.FileVisitOption[])",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileAttributeView(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])",
+          "result": "java.nio.file.attribute.FileAttributeView",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileStore(java.nio.file.Path)",
+          "result": "java.nio.file.FileStore",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLastModifiedTime(java.nio.file.Path,java.nio.file.LinkOption[])",
+          "result": "java.nio.file.attribute.FileTime",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOwner(java.nio.file.Path,java.nio.file.LinkOption[])",
+          "result": "java.nio.file.attribute.UserPrincipal",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPosixFilePermissions(java.nio.file.Path,java.nio.file.LinkOption[])",
+          "result": "java.util.Set",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDirectory(java.nio.file.Path,java.nio.file.LinkOption[])",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isExecutable(java.nio.file.Path)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isHidden(java.nio.file.Path)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadable(java.nio.file.Path)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRegularFile(java.nio.file.Path,java.nio.file.LinkOption[])",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSameFile(java.nio.file.Path,java.nio.file.Path)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSymbolicLink(java.nio.file.Path)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWritable(java.nio.file.Path)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lines(java.nio.file.Path)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lines(java.nio.file.Path,java.nio.charset.Charset)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "list(java.nio.file.Path)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mismatch(java.nio.file.Path,java.nio.file.Path)",
+          "result": "long",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "move(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newBufferedReader(java.nio.file.Path)",
+          "result": "java.io.BufferedReader",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newBufferedReader(java.nio.file.Path,java.nio.charset.Charset)",
+          "result": "java.io.BufferedReader",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption[])",
+          "result": "java.io.BufferedWriter",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newBufferedWriter(java.nio.file.Path,java.nio.file.OpenOption[])",
+          "result": "java.io.BufferedWriter",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newByteChannel(java.nio.file.Path,java.nio.file.OpenOption[])",
+          "result": "java.nio.channels.SeekableByteChannel",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newByteChannel(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.channels.SeekableByteChannel",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDirectoryStream(java.nio.file.Path)",
+          "result": "java.nio.file.DirectoryStream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDirectoryStream(java.nio.file.Path,java.lang.String)",
+          "result": "java.nio.file.DirectoryStream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDirectoryStream(java.nio.file.Path,java.nio.file.DirectoryStream$Filter)",
+          "result": "java.nio.file.DirectoryStream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInputStream(java.nio.file.Path,java.nio.file.OpenOption[])",
+          "result": "java.io.InputStream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newOutputStream(java.nio.file.Path,java.nio.file.OpenOption[])",
+          "result": "java.io.OutputStream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "notExists(java.nio.file.Path,java.nio.file.LinkOption[])",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "probeContentType(java.nio.file.Path)",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readAllBytes(java.nio.file.Path)",
+          "result": "byte[]",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readAllLines(java.nio.file.Path)",
+          "result": "java.util.List",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readAllLines(java.nio.file.Path,java.nio.charset.Charset)",
+          "result": "java.util.List",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readAttributes(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])",
+          "result": "java.nio.file.attribute.BasicFileAttributes",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])",
+          "result": "java.util.Map",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readString(java.nio.file.Path)",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readString(java.nio.file.Path,java.nio.charset.Charset)",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readSymbolicLink(java.nio.file.Path)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLastModifiedTime(java.nio.file.Path,java.nio.file.attribute.FileTime)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOwner(java.nio.file.Path,java.nio.file.attribute.UserPrincipal)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPosixFilePermissions(java.nio.file.Path,java.util.Set)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size(java.nio.file.Path)",
+          "result": "long",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "walk(java.nio.file.Path,int,java.nio.file.FileVisitOption[])",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "walk(java.nio.file.Path,java.nio.file.FileVisitOption[])",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "walkFileTree(java.nio.file.Path,java.nio.file.FileVisitor)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "walkFileTree(java.nio.file.Path,java.util.Set,int,java.nio.file.FileVisitor)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.file.Path,byte[],java.nio.file.OpenOption[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.file.Path,java.lang.Iterable,java.nio.charset.Charset,java.nio.file.OpenOption[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.file.Path,java.lang.Iterable,java.nio.file.OpenOption[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.charset.Charset,java.nio.file.OpenOption[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.file.OpenOption[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Files",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.InvalidPathException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/InvalidPathException.html",
+      "sourceEntry": "java.base/java/nio/file/InvalidPathException.java",
+      "sourceSha256": "9472568f05c9bc8507445f0c83a4ba9f9cc0914aa2a28bb3d391d53f8e8e19e8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.InvalidPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "java.nio.file.InvalidPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndex()",
+          "result": "int",
+          "declaredBy": "java.nio.file.InvalidPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInput()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.InvalidPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.InvalidPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReason()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.InvalidPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.LinkOption",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "java.nio.file.OpenOption",
+        "java.nio.file.CopyOption"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/LinkOption.html",
+      "sourceEntry": "java.base/java/nio/file/LinkOption.java",
+      "sourceSha256": "8c02489da4aaff024121ab08f025ef750e66c3b1aca3b438964669548ff50182",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NOFOLLOW_LINKS",
+          "result": "java.nio.file.LinkOption",
+          "declaredBy": "java.nio.file.LinkOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.nio.file.LinkOption",
+          "declaredBy": "java.nio.file.LinkOption",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.nio.file.LinkOption[]",
+          "declaredBy": "java.nio.file.LinkOption",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.LinkPermission",
+      "kind": "class",
+      "parents": [
+        "java.security.BasicPermission"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/LinkPermission.html",
+      "sourceEntry": "java.base/java/nio/file/LinkPermission.java",
+      "sourceSha256": "57727b6c6dfc30bb4eb612b436ee01bcb6a7b8d808008758bd68a28b310815b9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.LinkPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.LinkPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.NoSuchFileException",
+      "kind": "class",
+      "parents": [
+        "java.nio.file.FileSystemException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/NoSuchFileException.html",
+      "sourceEntry": "java.base/java/nio/file/NoSuchFileException.java",
+      "sourceSha256": "65357763effe3d9d2dc14357741f07e4720dcfd37c6b9aa2c169b4cf854fb778",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.NoSuchFileException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.NoSuchFileException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.NotDirectoryException",
+      "kind": "class",
+      "parents": [
+        "java.nio.file.FileSystemException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/NotDirectoryException.html",
+      "sourceEntry": "java.base/java/nio/file/NotDirectoryException.java",
+      "sourceSha256": "d0fefc91a8b25133c64f4468d16e8ac8ba47979b4d756bfd4504bb9d18ecd7ac",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.NotDirectoryException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.NotLinkException",
+      "kind": "class",
+      "parents": [
+        "java.nio.file.FileSystemException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/NotLinkException.html",
+      "sourceEntry": "java.base/java/nio/file/NotLinkException.java",
+      "sourceSha256": "0f9d63bf581481277ed08b4d09d85fe3f4a4440bb669ea9cc1aaca16367c6b0b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.NotLinkException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.NotLinkException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.OpenOption",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/OpenOption.html",
+      "sourceEntry": "java.base/java/nio/file/OpenOption.java",
+      "sourceSha256": "24b461e86841726fa6f5d46ea1615b5dd100e686f906451faf7011b8e62ee10d",
+      "members": []
+    },
+    {
+      "target": "java.nio.file.Path",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Comparable",
+        "java.lang.Iterable",
+        "java.nio.file.Watchable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html",
+      "sourceEntry": "java.base/java/nio/file/Path.java",
+      "sourceSha256": "cdaadcfd731405dcdbffe91ebf1b4dec6eae9db5eab6197a925a6e4a7b806ff7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "compareTo(java.nio.file.Path)",
+          "result": "int",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "endsWith(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "endsWith(java.nio.file.Path)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileName()",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileSystem()",
+          "result": "java.nio.file.FileSystem",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName(int)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNameCount()",
+          "result": "int",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getParent()",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRoot()",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAbsolute()",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "normalize()",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.String,java.lang.String[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.net.URI)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "register(java.nio.file.WatchService,java.nio.file.WatchEvent$Kind[])",
+          "result": "java.nio.file.WatchKey",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "register(java.nio.file.WatchService,java.nio.file.WatchEvent$Kind[],java.nio.file.WatchEvent$Modifier[])",
+          "result": "java.nio.file.WatchKey",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "relativize(java.nio.file.Path)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolve(java.lang.String)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolve(java.nio.file.Path)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveSibling(java.lang.String)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveSibling(java.nio.file.Path)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startsWith(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startsWith(java.nio.file.Path)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "subpath(int,int)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toAbsolutePath()",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toFile()",
+          "result": "java.io.File",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toRealPath(java.nio.file.LinkOption[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toUri()",
+          "result": "java.net.URI",
+          "declaredBy": "java.nio.file.Path",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.PathMatcher",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/PathMatcher.html",
+      "sourceEntry": "java.base/java/nio/file/PathMatcher.java",
+      "sourceSha256": "41ecc4657de9c7d20568813cb88d5f6cf1f6138876d25bb60cb45d1bb0f29466",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "matches(java.nio.file.Path)",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.PathMatcher",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.Paths",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Paths.html",
+      "sourceEntry": "java.base/java/nio/file/Paths.java",
+      "sourceSha256": "e6ae0cb1d81d99b7e2bdf2713ec72d35184ea7d9617eb6f4d135220f8ee1313e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "get(java.lang.String,java.lang.String[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Paths",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.net.URI)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "java.nio.file.Paths",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.ProviderMismatchException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/ProviderMismatchException.html",
+      "sourceEntry": "java.base/java/nio/file/ProviderMismatchException.java",
+      "sourceSha256": "a3d010108a42303bf14964358cabe3407ef529abd97ff4738577fe9c5cda5eb0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.ProviderMismatchException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.ProviderMismatchException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.ProviderNotFoundException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/ProviderNotFoundException.html",
+      "sourceEntry": "java.base/java/nio/file/ProviderNotFoundException.java",
+      "sourceSha256": "0b8dd2951125c5a589c3c5cabfb6205b415a7616cf5521cc83e7763f32b63c54",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.ProviderNotFoundException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.nio.file.ProviderNotFoundException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.ReadOnlyFileSystemException",
+      "kind": "class",
+      "parents": [
+        "java.lang.UnsupportedOperationException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/ReadOnlyFileSystemException.html",
+      "sourceEntry": "java.base/java/nio/file/ReadOnlyFileSystemException.java",
+      "sourceSha256": "175a5572f905d720f2af17ad404212b79f5d50d89c8527a7d199d787564f9c68",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.ReadOnlyFileSystemException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.SecureDirectoryStream",
+      "kind": "interface",
+      "parents": [
+        "java.nio.file.DirectoryStream"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/SecureDirectoryStream.html",
+      "sourceEntry": "java.base/java/nio/file/SecureDirectoryStream.java",
+      "sourceSha256": "0a2a9856921f89461c2179c569c949fc2390e6e165656549f0c94abd7a36d14f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "deleteDirectory(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.nio.file.SecureDirectoryStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "deleteFile(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.nio.file.SecureDirectoryStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileAttributeView(java.lang.Class)",
+          "result": "java.nio.file.attribute.FileAttributeView",
+          "declaredBy": "java.nio.file.SecureDirectoryStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileAttributeView(java.lang.Object,java.lang.Class,java.nio.file.LinkOption[])",
+          "result": "java.nio.file.attribute.FileAttributeView",
+          "declaredBy": "java.nio.file.SecureDirectoryStream",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "move(java.lang.Object,java.nio.file.SecureDirectoryStream,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.nio.file.SecureDirectoryStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newByteChannel(java.lang.Object,java.util.Set,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.channels.SeekableByteChannel",
+          "declaredBy": "java.nio.file.SecureDirectoryStream",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDirectoryStream(java.lang.Object,java.nio.file.LinkOption[])",
+          "result": "java.nio.file.SecureDirectoryStream",
+          "declaredBy": "java.nio.file.SecureDirectoryStream",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.SimpleFileVisitor",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.nio.file.FileVisitor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/SimpleFileVisitor.html",
+      "sourceEntry": "java.base/java/nio/file/SimpleFileVisitor.java",
+      "sourceSha256": "e2bffeca5aec5043e8be24102a462f6f18e634b2a63c851fce210ee94f51237b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.file.SimpleFileVisitor",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "postVisitDirectory(java.lang.Object,java.io.IOException)",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.SimpleFileVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.SimpleFileVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.SimpleFileVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitFileFailed(java.lang.Object,java.io.IOException)",
+          "result": "java.nio.file.FileVisitResult",
+          "declaredBy": "java.nio.file.SimpleFileVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.StandardCopyOption",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "java.nio.file.CopyOption"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/StandardCopyOption.html",
+      "sourceEntry": "java.base/java/nio/file/StandardCopyOption.java",
+      "sourceSha256": "8b8d362dbf013ffe68eef0640613c3a5c4d69b0f3df0c6a66e5516b21de4c0b4",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ATOMIC_MOVE",
+          "result": "java.nio.file.StandardCopyOption",
+          "declaredBy": "java.nio.file.StandardCopyOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COPY_ATTRIBUTES",
+          "result": "java.nio.file.StandardCopyOption",
+          "declaredBy": "java.nio.file.StandardCopyOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REPLACE_EXISTING",
+          "result": "java.nio.file.StandardCopyOption",
+          "declaredBy": "java.nio.file.StandardCopyOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.nio.file.StandardCopyOption",
+          "declaredBy": "java.nio.file.StandardCopyOption",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.nio.file.StandardCopyOption[]",
+          "declaredBy": "java.nio.file.StandardCopyOption",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.StandardOpenOption",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "java.nio.file.OpenOption"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/StandardOpenOption.html",
+      "sourceEntry": "java.base/java/nio/file/StandardOpenOption.java",
+      "sourceSha256": "a70872336f3eaa121dcbd34d31df80eb9dbcc857f3d490a6a760ba66829db703",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "APPEND",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CREATE",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CREATE_NEW",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DELETE_ON_CLOSE",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DSYNC",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "READ",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SPARSE",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SYNC",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TRUNCATE_EXISTING",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WRITE",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.nio.file.StandardOpenOption",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.nio.file.StandardOpenOption[]",
+          "declaredBy": "java.nio.file.StandardOpenOption",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.StandardWatchEventKinds",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html",
+      "sourceEntry": "java.base/java/nio/file/StandardWatchEventKinds.java",
+      "sourceSha256": "1609f0dd52b6c8499400a3881dd6044cb5c81f3a9750b90d44150ee403f725e7",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ENTRY_CREATE",
+          "result": "java.nio.file.WatchEvent$Kind",
+          "declaredBy": "java.nio.file.StandardWatchEventKinds",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENTRY_DELETE",
+          "result": "java.nio.file.WatchEvent$Kind",
+          "declaredBy": "java.nio.file.StandardWatchEventKinds",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENTRY_MODIFY",
+          "result": "java.nio.file.WatchEvent$Kind",
+          "declaredBy": "java.nio.file.StandardWatchEventKinds",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OVERFLOW",
+          "result": "java.nio.file.WatchEvent$Kind",
+          "declaredBy": "java.nio.file.StandardWatchEventKinds",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.WatchEvent",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/WatchEvent.html",
+      "sourceEntry": "java.base/java/nio/file/WatchEvent.java",
+      "sourceSha256": "4bd2d0c3fd0822a944979445609a9f61c3e6e5a2d5dcc8947eccffb583558fa2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "context()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.nio.file.WatchEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "count()",
+          "result": "int",
+          "declaredBy": "java.nio.file.WatchEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "kind()",
+          "result": "java.nio.file.WatchEvent$Kind",
+          "declaredBy": "java.nio.file.WatchEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.WatchEvent$Kind",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/WatchEvent.Kind.html",
+      "sourceEntry": "java.base/java/nio/file/WatchEvent.java",
+      "sourceSha256": "4bd2d0c3fd0822a944979445609a9f61c3e6e5a2d5dcc8947eccffb583558fa2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.WatchEvent$Kind",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "type()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.nio.file.WatchEvent$Kind",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.WatchEvent$Modifier",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/WatchEvent.Modifier.html",
+      "sourceEntry": "java.base/java/nio/file/WatchEvent.java",
+      "sourceSha256": "4bd2d0c3fd0822a944979445609a9f61c3e6e5a2d5dcc8947eccffb583558fa2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.file.WatchEvent$Modifier",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.WatchKey",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/WatchKey.html",
+      "sourceEntry": "java.base/java/nio/file/WatchKey.java",
+      "sourceSha256": "77d4f022b9558829f1962b2ec5c6785e4177c99782b4364c98592d1431e8c92d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "cancel()",
+          "result": "void",
+          "declaredBy": "java.nio.file.WatchKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValid()",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.WatchKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "pollEvents()",
+          "result": "java.util.List",
+          "declaredBy": "java.nio.file.WatchKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "boolean",
+          "declaredBy": "java.nio.file.WatchKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "watchable()",
+          "result": "java.nio.file.Watchable",
+          "declaredBy": "java.nio.file.WatchKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.WatchService",
+      "kind": "interface",
+      "parents": [
+        "java.io.Closeable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/WatchService.html",
+      "sourceEntry": "java.base/java/nio/file/WatchService.java",
+      "sourceSha256": "92840aed4c9aeb6a7edbcec3b82d34c05c8997e86f36c3143243e60273097d0a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.nio.file.WatchService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "poll()",
+          "result": "java.nio.file.WatchKey",
+          "declaredBy": "java.nio.file.WatchService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "poll(long,java.util.concurrent.TimeUnit)",
+          "result": "java.nio.file.WatchKey",
+          "declaredBy": "java.nio.file.WatchService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "take()",
+          "result": "java.nio.file.WatchKey",
+          "declaredBy": "java.nio.file.WatchService",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.file.Watchable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Watchable.html",
+      "sourceEntry": "java.base/java/nio/file/Watchable.java",
+      "sourceSha256": "ccdca2ffaea9a15f0c2dae7e5467230a578bd70b1d7fccbab0544a3efef60b50",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "register(java.nio.file.WatchService,java.nio.file.WatchEvent$Kind[])",
+          "result": "java.nio.file.WatchKey",
+          "declaredBy": "java.nio.file.Watchable",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "register(java.nio.file.WatchService,java.nio.file.WatchEvent$Kind[],java.nio.file.WatchEvent$Modifier[])",
+          "result": "java.nio.file.WatchKey",
+          "declaredBy": "java.nio.file.Watchable",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

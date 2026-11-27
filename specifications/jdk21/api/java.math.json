@@ -1,0 +1,1817 @@
+{
+  "name": "java.math",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.math.BigDecimal",
+      "kind": "class",
+      "parents": [
+        "java.lang.Number",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigDecimal.html",
+      "sourceEntry": "java.base/java/math/BigDecimal.java",
+      "sourceSha256": "80369962c6cabc3d5225f0244b3f6de28ec73d494a8aeaed1f56b4eca99d68e2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(char[])",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(char[],int,int)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(char[],int,int,java.math.MathContext)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(char[],java.math.MathContext)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(double)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(double,java.math.MathContext)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.math.MathContext)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.math.MathContext)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,int)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,int,java.math.MathContext)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.MathContext)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(long)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(long,java.math.MathContext)",
+          "result": "void",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ONE",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROUND_CEILING",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROUND_DOWN",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROUND_FLOOR",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROUND_HALF_DOWN",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROUND_HALF_EVEN",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROUND_HALF_UP",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROUND_UNNECESSARY",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROUND_UP",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEN",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TWO",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ZERO",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "abs()",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "abs(java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(java.math.BigDecimal)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(java.math.BigDecimal,java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "byteValueExact()",
+          "result": "byte",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.math.BigDecimal)",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divide(java.math.BigDecimal)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divide(java.math.BigDecimal,int)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divide(java.math.BigDecimal,int,int)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divide(java.math.BigDecimal,int,java.math.RoundingMode)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divide(java.math.BigDecimal,java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divide(java.math.BigDecimal,java.math.RoundingMode)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divideAndRemainder(java.math.BigDecimal)",
+          "result": "java.math.BigDecimal[]",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divideAndRemainder(java.math.BigDecimal,java.math.MathContext)",
+          "result": "java.math.BigDecimal[]",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divideToIntegralValue(java.math.BigDecimal)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divideToIntegralValue(java.math.BigDecimal,java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doubleValue()",
+          "result": "double",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "floatValue()",
+          "result": "float",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValue()",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValueExact()",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longValue()",
+          "result": "long",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longValueExact()",
+          "result": "long",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "max(java.math.BigDecimal)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "min(java.math.BigDecimal)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "movePointLeft(int)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "movePointRight(int)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "multiply(java.math.BigDecimal)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "multiply(java.math.BigDecimal,java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negate()",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negate(java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus()",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "pow(int)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "pow(int,java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "precision()",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "remainder(java.math.BigDecimal)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remainder(java.math.BigDecimal,java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "round(java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "scale()",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "scaleByPowerOfTen(int)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setScale(int)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setScale(int,int)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setScale(int,java.math.RoundingMode)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shortValueExact()",
+          "result": "short",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "signum()",
+          "result": "int",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "sqrt(java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stripTrailingZeros()",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "subtract(java.math.BigDecimal)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "subtract(java.math.BigDecimal,java.math.MathContext)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toBigInteger()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toBigIntegerExact()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toEngineeringString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toPlainString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ulp()",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unscaledValue()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(double)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(long)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(long,int)",
+          "result": "java.math.BigDecimal",
+          "declaredBy": "java.math.BigDecimal",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.math.BigInteger",
+      "kind": "class",
+      "parents": [
+        "java.lang.Number",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigInteger.html",
+      "sourceEntry": "java.base/java/math/BigInteger.java",
+      "sourceSha256": "9c0325caf3416ee66491d526689f8dccf57b1eb215e0b1356879da7235dbf35b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[],int,int)",
+          "result": "void",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,byte[])",
+          "result": "void",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,byte[],int,int)",
+          "result": "void",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,java.util.Random)",
+          "result": "void",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.util.Random)",
+          "result": "void",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ONE",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEN",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TWO",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ZERO",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "abs()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "and(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "andNot(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bitCount()",
+          "result": "int",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "bitLength()",
+          "result": "int",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "byteValueExact()",
+          "result": "byte",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clearBit(int)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.math.BigInteger)",
+          "result": "int",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divide(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "divideAndRemainder(java.math.BigInteger)",
+          "result": "java.math.BigInteger[]",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doubleValue()",
+          "result": "double",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flipBit(int)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "floatValue()",
+          "result": "float",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "gcd(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLowestSetBit()",
+          "result": "int",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValue()",
+          "result": "int",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValueExact()",
+          "result": "int",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isProbablePrime(int)",
+          "result": "boolean",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longValue()",
+          "result": "long",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longValueExact()",
+          "result": "long",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "max(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "min(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mod(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "modInverse(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "modPow(java.math.BigInteger,java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "multiply(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negate()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextProbablePrime()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "not()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "or(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parallelMultiply(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "pow(int)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "probablePrime(int,java.util.Random)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remainder(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBit(int)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shiftLeft(int)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shiftRight(int)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shortValueExact()",
+          "result": "short",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "signum()",
+          "result": "int",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "sqrt()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sqrtAndRemainder()",
+          "result": "java.math.BigInteger[]",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "subtract(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "testBit(int)",
+          "result": "boolean",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toByteArray()",
+          "result": "byte[]",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString(int)",
+          "result": "java.lang.String",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(long)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "xor(java.math.BigInteger)",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.math.BigInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.math.MathContext",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/MathContext.html",
+      "sourceEntry": "java.base/java/math/MathContext.java",
+      "sourceSha256": "ca8f8426eed5cce4f1f51957f6fd08de6bf5e7be7ff2287f05efd2d42702ff46",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.math.RoundingMode)",
+          "result": "void",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DECIMAL128",
+          "result": "java.math.MathContext",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DECIMAL32",
+          "result": "java.math.MathContext",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DECIMAL64",
+          "result": "java.math.MathContext",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNLIMITED",
+          "result": "java.math.MathContext",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrecision()",
+          "result": "int",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getRoundingMode()",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.math.MathContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.math.RoundingMode",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/RoundingMode.html",
+      "sourceEntry": "java.base/java/math/RoundingMode.java",
+      "sourceSha256": "a4825cbef1c9a03fb38e9b771e602a347522dac453c224985425bae60cd01191",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CEILING",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DOWN",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FLOOR",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HALF_DOWN",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HALF_EVEN",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HALF_UP",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNNECESSARY",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UP",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(int)",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.math.RoundingMode[]",
+          "declaredBy": "java.math.RoundingMode",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

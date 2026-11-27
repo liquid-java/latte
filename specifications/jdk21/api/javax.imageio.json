@@ -1,0 +1,3475 @@
+{
+  "name": "javax.imageio",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.imageio.IIOException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/IIOException.html",
+      "sourceEntry": "java.desktop/javax/imageio/IIOException.java",
+      "sourceSha256": "9723a55a7604bb9f33e8d504f446ddbea2497545c56eee695c8732096d568a38",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.IIOImage",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/IIOImage.html",
+      "sourceEntry": "java.desktop/javax/imageio/IIOImage.java",
+      "sourceSha256": "5e847b3d457c9459f6ef648b304207045d1135f407005079d20aab0b31842a68",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.image.Raster,java.util.List,javax.imageio.metadata.IIOMetadata)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.image.RenderedImage,java.util.List,javax.imageio.metadata.IIOMetadata)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMetadata()",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumThumbnails()",
+          "result": "int",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRaster()",
+          "result": "java.awt.image.Raster",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRenderedImage()",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThumbnail(int)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThumbnails()",
+          "result": "java.util.List",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasRaster()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "image",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "metadata",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "raster",
+          "result": "java.awt.image.Raster",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setMetadata(javax.imageio.metadata.IIOMetadata)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRaster(java.awt.image.Raster)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRenderedImage(java.awt.image.RenderedImage)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setThumbnails(java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "thumbnails",
+          "result": "java.util.List",
+          "declaredBy": "javax.imageio.IIOImage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.IIOParam",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/IIOParam.html",
+      "sourceEntry": "java.desktop/javax/imageio/IIOParam.java",
+      "sourceSha256": "6ac82f1de2a2befbb4399429ab11d5e333d575ee3f29f37ff728cb7ee155d92f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "activateController()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "controller",
+          "result": "javax.imageio.IIOParamController",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "defaultController",
+          "result": "javax.imageio.IIOParamController",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "destinationOffset",
+          "result": "java.awt.Point",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "destinationType",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getController()",
+          "result": "javax.imageio.IIOParamController",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultController()",
+          "result": "javax.imageio.IIOParamController",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDestinationOffset()",
+          "result": "java.awt.Point",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDestinationType()",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceBands()",
+          "result": "int[]",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceRegion()",
+          "result": "java.awt.Rectangle",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceXSubsampling()",
+          "result": "int",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceYSubsampling()",
+          "result": "int",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubsamplingXOffset()",
+          "result": "int",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubsamplingYOffset()",
+          "result": "int",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasController()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setController(javax.imageio.IIOParamController)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDestinationOffset(java.awt.Point)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDestinationType(javax.imageio.ImageTypeSpecifier)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSourceBands(int[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSourceRegion(java.awt.Rectangle)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSourceSubsampling(int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "sourceBands",
+          "result": "int[]",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "sourceRegion",
+          "result": "java.awt.Rectangle",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "sourceXSubsampling",
+          "result": "int",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "sourceYSubsampling",
+          "result": "int",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "subsamplingXOffset",
+          "result": "int",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "subsamplingYOffset",
+          "result": "int",
+          "declaredBy": "javax.imageio.IIOParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.IIOParamController",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/IIOParamController.html",
+      "sourceEntry": "java.desktop/javax/imageio/IIOParamController.java",
+      "sourceSha256": "54dab92e40861f11fdf2aaea75e0f1a81e95fe5e3b120039de68114740ff4857",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "activate(javax.imageio.IIOParam)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.IIOParamController",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.ImageIO",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/ImageIO.html",
+      "sourceEntry": "java.desktop/javax/imageio/ImageIO.java",
+      "sourceSha256": "fde1566ad8c6a0a37be442a320950cfd251ffbb265a23a7bd38decf317dac850",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createImageInputStream(java.lang.Object)",
+          "result": "javax.imageio.stream.ImageInputStream",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createImageOutputStream(java.lang.Object)",
+          "result": "javax.imageio.stream.ImageOutputStream",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCacheDirectory()",
+          "result": "java.io.File",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageReader(javax.imageio.ImageWriter)",
+          "result": "javax.imageio.ImageReader",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageReaders(java.lang.Object)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageReadersByFormatName(java.lang.String)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageReadersByMIMEType(java.lang.String)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageReadersBySuffix(java.lang.String)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageTranscoders(javax.imageio.ImageReader,javax.imageio.ImageWriter)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageWriter(javax.imageio.ImageReader)",
+          "result": "javax.imageio.ImageWriter",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageWriters(javax.imageio.ImageTypeSpecifier,java.lang.String)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageWritersByFormatName(java.lang.String)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageWritersByMIMEType(java.lang.String)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageWritersBySuffix(java.lang.String)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReaderFileSuffixes()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReaderFormatNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReaderMIMETypes()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUseCache()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWriterFileSuffixes()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWriterFormatNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWriterMIMETypes()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.io.File)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.io.InputStream)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.net.URL)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(javax.imageio.stream.ImageInputStream)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "scanForPlugins()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCacheDirectory(java.io.File)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUseCache(boolean)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.awt.image.RenderedImage,java.lang.String,java.io.File)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.awt.image.RenderedImage,java.lang.String,java.io.OutputStream)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.awt.image.RenderedImage,java.lang.String,javax.imageio.stream.ImageOutputStream)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageIO",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.ImageReadParam",
+      "kind": "class",
+      "parents": [
+        "javax.imageio.IIOParam"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/ImageReadParam.html",
+      "sourceEntry": "java.desktop/javax/imageio/ImageReadParam.java",
+      "sourceSha256": "0d8ddf01751ba66dde72d133904de940d061b9d97d6cc20cd0050c5ed50d3351",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "canSetSourceRenderSize",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canSetSourceRenderSize()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "destination",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "destinationBands",
+          "result": "int[]",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDestination()",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDestinationBands()",
+          "result": "int[]",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceMaxProgressivePass()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceMinProgressivePass()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceNumProgressivePasses()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceRenderSize()",
+          "result": "java.awt.Dimension",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "minProgressivePass",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "numProgressivePasses",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setDestination(java.awt.image.BufferedImage)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDestinationBands(int[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDestinationType(javax.imageio.ImageTypeSpecifier)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSourceProgressivePasses(int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSourceRenderSize(java.awt.Dimension)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "sourceRenderSize",
+          "result": "java.awt.Dimension",
+          "declaredBy": "javax.imageio.ImageReadParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.ImageReader",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/ImageReader.html",
+      "sourceEntry": "java.desktop/javax/imageio/ImageReader.java",
+      "sourceSha256": "bfebbae14a550bd9268e97779fcbd44597f65c0873672385ffce2dc4cf9be5e6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.imageio.spi.ImageReaderSpi)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "abort()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "abortRequested()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addIIOReadProgressListener(javax.imageio.event.IIOReadProgressListener)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addIIOReadUpdateListener(javax.imageio.event.IIOReadUpdateListener)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addIIOReadWarningListener(javax.imageio.event.IIOReadWarningListener)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "availableLocales",
+          "result": "java.util.Locale[]",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canReadRaster()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "checkReadParamBandSettings(javax.imageio.ImageReadParam,int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 12,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clearAbortRequest()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "computeRegions(javax.imageio.ImageReadParam,int,int,java.awt.image.BufferedImage,java.awt.Rectangle,java.awt.Rectangle)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 12,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dispose()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAspectRatio(int)",
+          "result": "float",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableLocales()",
+          "result": "java.util.Locale[]",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultReadParam()",
+          "result": "javax.imageio.ImageReadParam",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDestination(javax.imageio.ImageReadParam,java.util.Iterator,int,int)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 12,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormatName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHeight(int)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageMetadata(int)",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageMetadata(int,java.lang.String,java.util.Set)",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImageTypes(int)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInput()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinIndex()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumImages(boolean)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumThumbnails(int)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOriginatingProvider()",
+          "result": "javax.imageio.spi.ImageReaderSpi",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRawImageType(int)",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceRegion(javax.imageio.ImageReadParam,int,int)",
+          "result": "java.awt.Rectangle",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 12,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStreamMetadata()",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStreamMetadata(java.lang.String,java.util.Set)",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThumbnailHeight(int,int)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThumbnailWidth(int,int)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTileGridXOffset(int)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTileGridYOffset(int)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTileHeight(int)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTileWidth(int)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWidth(int)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasThumbnails(int)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ignoreMetadata",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "input",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isIgnoringMetadata()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isImageTiled(int)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRandomAccessEasy(int)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSeekForwardOnly()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "locale",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "minIndex",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "originatingProvider",
+          "result": "javax.imageio.spi.ImageReaderSpi",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "processImageComplete()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processImageProgress(float)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processImageStarted(int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processImageUpdate(java.awt.image.BufferedImage,int,int,int,int,int,int,int[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processPassComplete(java.awt.image.BufferedImage)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processPassStarted(java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processReadAborted()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processSequenceComplete()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processSequenceStarted(int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processThumbnailComplete()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processThumbnailPassComplete(java.awt.image.BufferedImage)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processThumbnailPassStarted(java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processThumbnailProgress(float)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processThumbnailStarted(int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processThumbnailUpdate(java.awt.image.BufferedImage,int,int,int,int,int,int,int[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processWarningOccurred(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processWarningOccurred(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "progressListeners",
+          "result": "java.util.List",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "read(int)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(int,javax.imageio.ImageReadParam)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readAll(int,javax.imageio.ImageReadParam)",
+          "result": "javax.imageio.IIOImage",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readAll(java.util.Iterator)",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readAsRenderedImage(int,javax.imageio.ImageReadParam)",
+          "result": "java.awt.image.RenderedImage",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readRaster(int,javax.imageio.ImageReadParam)",
+          "result": "java.awt.image.Raster",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readThumbnail(int,int)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readTile(int,int,int)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readTileRaster(int,int,int)",
+          "result": "java.awt.image.Raster",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readerSupportsThumbnails()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAllIIOReadProgressListeners()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAllIIOReadUpdateListeners()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAllIIOReadWarningListeners()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeIIOReadProgressListener(javax.imageio.event.IIOReadProgressListener)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeIIOReadUpdateListener(javax.imageio.event.IIOReadUpdateListener)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeIIOReadWarningListener(javax.imageio.event.IIOReadWarningListener)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "seekForwardOnly",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setInput(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInput(java.lang.Object,boolean)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInput(java.lang.Object,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocale(java.util.Locale)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "updateListeners",
+          "result": "java.util.List",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "warningListeners",
+          "result": "java.util.List",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "warningLocales",
+          "result": "java.util.List",
+          "declaredBy": "javax.imageio.ImageReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.ImageTranscoder",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/ImageTranscoder.html",
+      "sourceEntry": "java.desktop/javax/imageio/ImageTranscoder.java",
+      "sourceSha256": "e92f60273e1bf6bad6d1148d923a2414f3c07e560a0b1a398ba3af66d04c5dd6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "convertImageMetadata(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam)",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.ImageTranscoder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "convertStreamMetadata(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageWriteParam)",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.ImageTranscoder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.ImageTypeSpecifier",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html",
+      "sourceEntry": "java.desktop/javax/imageio/ImageTypeSpecifier.java",
+      "sourceSha256": "52172f30be7a454b86a294d00726daacbe14311827a622d8a0db56141a3fd687",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.image.ColorModel,java.awt.image.SampleModel)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.image.RenderedImage)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "colorModel",
+          "result": "java.awt.image.ColorModel",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createBanded(java.awt.color.ColorSpace,int[],int[],int,boolean,boolean)",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createBufferedImage(int,int)",
+          "result": "java.awt.image.BufferedImage",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createFromBufferedImageType(int)",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createFromRenderedImage(java.awt.image.RenderedImage)",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createGrayscale(int,int,boolean)",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createGrayscale(int,int,boolean,boolean)",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createIndexed(byte[],byte[],byte[],byte[],int,int)",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createInterleaved(java.awt.color.ColorSpace,int[],int,boolean,boolean)",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createPacked(java.awt.color.ColorSpace,int,int,int,int,int,boolean)",
+          "result": "javax.imageio.ImageTypeSpecifier",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBitsPerBand(int)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBufferedImageType()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColorModel()",
+          "result": "java.awt.image.ColorModel",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumBands()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumComponents()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSampleModel()",
+          "result": "java.awt.image.SampleModel",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSampleModel(int,int)",
+          "result": "java.awt.image.SampleModel",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "sampleModel",
+          "result": "java.awt.image.SampleModel",
+          "declaredBy": "javax.imageio.ImageTypeSpecifier",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.ImageWriteParam",
+      "kind": "class",
+      "parents": [
+        "javax.imageio.IIOParam"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/ImageWriteParam.html",
+      "sourceEntry": "java.desktop/javax/imageio/ImageWriteParam.java",
+      "sourceSha256": "901674b2283678d2d594f52f5552ae0d88ef921e7cb91d60e8bf94e643e5ca5c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Locale)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "MODE_COPY_FROM_METADATA",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODE_DEFAULT",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODE_DISABLED",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODE_EXPLICIT",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "canOffsetTiles",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canOffsetTiles()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "canWriteCompressed",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canWriteCompressed()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "canWriteProgressive",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canWriteProgressive()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "canWriteTiles",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canWriteTiles()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "compressionMode",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "compressionQuality",
+          "result": "float",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "compressionType",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "compressionTypes",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getBitRate(float)",
+          "result": "float",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompressionMode()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompressionQuality()",
+          "result": "float",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompressionQualityDescriptions()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompressionQualityValues()",
+          "result": "float[]",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompressionType()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompressionTypes()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalizedCompressionTypeName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPreferredTileSizes()",
+          "result": "java.awt.Dimension[]",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProgressiveMode()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTileGridXOffset()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTileGridYOffset()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTileHeight()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTileWidth()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTilingMode()",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCompressionLossless()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "locale",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "preferredTileSizes",
+          "result": "java.awt.Dimension[]",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "progressiveMode",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setCompressionMode(int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCompressionQuality(float)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCompressionType(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setProgressiveMode(int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTiling(int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTilingMode(int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "tileGridXOffset",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "tileGridYOffset",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "tileHeight",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "tileWidth",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "tilingMode",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "tilingSet",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "unsetCompression()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unsetTiling()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriteParam",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.ImageWriter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.imageio.ImageTranscoder"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/ImageWriter.html",
+      "sourceEntry": "java.desktop/javax/imageio/ImageWriter.java",
+      "sourceSha256": "9ab10ca5312834e56b3c89125a5c1786716029bb3db56498014aaca635d61c20",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.imageio.spi.ImageWriterSpi)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "abort()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "abortRequested()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addIIOWriteProgressListener(javax.imageio.event.IIOWriteProgressListener)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addIIOWriteWarningListener(javax.imageio.event.IIOWriteWarningListener)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "availableLocales",
+          "result": "java.util.Locale[]",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canInsertEmpty(int)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canInsertImage(int)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canRemoveImage(int)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canReplaceImageMetadata(int)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canReplacePixels(int)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canReplaceStreamMetadata()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canWriteEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canWriteRasters()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canWriteSequence()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clearAbortRequest()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "convertImageMetadata(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam)",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "convertStreamMetadata(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageWriteParam)",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dispose()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "endInsertEmpty()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "endReplacePixels()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "endWriteEmpty()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "endWriteSequence()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableLocales()",
+          "result": "java.util.Locale[]",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultImageMetadata(javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam)",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultStreamMetadata(javax.imageio.ImageWriteParam)",
+          "result": "javax.imageio.metadata.IIOMetadata",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultWriteParam()",
+          "result": "javax.imageio.ImageWriteParam",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumThumbnailsSupported(javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam,javax.imageio.metadata.IIOMetadata,javax.imageio.metadata.IIOMetadata)",
+          "result": "int",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOriginatingProvider()",
+          "result": "javax.imageio.spi.ImageWriterSpi",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutput()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPreferredThumbnailSizes(javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam,javax.imageio.metadata.IIOMetadata,javax.imageio.metadata.IIOMetadata)",
+          "result": "java.awt.Dimension[]",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "locale",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "originatingProvider",
+          "result": "javax.imageio.spi.ImageWriterSpi",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "output",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "prepareInsertEmpty(int,javax.imageio.ImageTypeSpecifier,int,int,javax.imageio.metadata.IIOMetadata,java.util.List,javax.imageio.ImageWriteParam)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prepareReplacePixels(int,java.awt.Rectangle)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prepareWriteEmpty(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageTypeSpecifier,int,int,javax.imageio.metadata.IIOMetadata,java.util.List,javax.imageio.ImageWriteParam)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prepareWriteSequence(javax.imageio.metadata.IIOMetadata)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processImageComplete()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processImageProgress(float)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processImageStarted(int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processThumbnailComplete()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processThumbnailProgress(float)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processThumbnailStarted(int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processWarningOccurred(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processWarningOccurred(int,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processWriteAborted()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "progressListeners",
+          "result": "java.util.List",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAllIIOWriteProgressListeners()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAllIIOWriteWarningListeners()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeIIOWriteProgressListener(javax.imageio.event.IIOWriteProgressListener)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeIIOWriteWarningListener(javax.imageio.event.IIOWriteWarningListener)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeImage(int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replaceImageMetadata(int,javax.imageio.metadata.IIOMetadata)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replacePixels(java.awt.image.Raster,javax.imageio.ImageWriteParam)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replacePixels(java.awt.image.RenderedImage,javax.imageio.ImageWriteParam)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replaceStreamMetadata(javax.imageio.metadata.IIOMetadata)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocale(java.util.Locale)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOutput(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "warningListeners",
+          "result": "java.util.List",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "warningLocales",
+          "result": "java.util.List",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.awt.image.RenderedImage)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(javax.imageio.IIOImage)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(javax.imageio.metadata.IIOMetadata,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeInsert(int,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeToSequence(javax.imageio.IIOImage,javax.imageio.ImageWriteParam)",
+          "result": "void",
+          "declaredBy": "javax.imageio.ImageWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

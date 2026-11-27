@@ -1,0 +1,550 @@
+{
+  "name": "java.nio.channels.spi",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.nio.channels.spi.AbstractInterruptibleChannel",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.nio.channels.Channel",
+        "java.nio.channels.InterruptibleChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/spi/AbstractInterruptibleChannel.java",
+      "sourceSha256": "a55f165bf483cc50f500a0c4791f6058907c0c7d60d0952a472184a4d7d5b3b6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractInterruptibleChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "begin()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractInterruptibleChannel",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractInterruptibleChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "end(boolean)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractInterruptibleChannel",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implCloseChannel()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractInterruptibleChannel",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOpen()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.spi.AbstractInterruptibleChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.spi.AbstractSelectableChannel",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.SelectableChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/spi/AbstractSelectableChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/spi/AbstractSelectableChannel.java",
+      "sourceSha256": "dbec0acc8587f732dad2ac1a0c26489812f3bfb67bd4f06db1b466ac4b7f3e0e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.spi.SelectorProvider)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "blockingLock()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "configureBlocking(boolean)",
+          "result": "java.nio.channels.SelectableChannel",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implCloseChannel()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implCloseSelectableChannel()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implConfigureBlocking(boolean)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBlocking()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRegistered()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "keyFor(java.nio.channels.Selector)",
+          "result": "java.nio.channels.SelectionKey",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provider()",
+          "result": "java.nio.channels.spi.SelectorProvider",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "register(java.nio.channels.Selector,int,java.lang.Object)",
+          "result": "java.nio.channels.SelectionKey",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectableChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.spi.AbstractSelectionKey",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.SelectionKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/spi/AbstractSelectionKey.html",
+      "sourceEntry": "java.base/java/nio/channels/spi/AbstractSelectionKey.java",
+      "sourceSha256": "20c567547668afe9d38491e2b13aba4e077b6c5aa4c1e4e2e503c49d5c26b003",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectionKey",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "cancel()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectionKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValid()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.spi.AbstractSelectionKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.spi.AbstractSelector",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.Selector"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/spi/AbstractSelector.html",
+      "sourceEntry": "java.base/java/nio/channels/spi/AbstractSelector.java",
+      "sourceSha256": "e268b8cd68ddc10f1f8255c6850c2ad919cadfe5e64a099c12fb6ad4458ed828",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.spi.SelectorProvider)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelector",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "begin()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelector",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "cancelledKeys()",
+          "result": "java.util.Set",
+          "declaredBy": "java.nio.channels.spi.AbstractSelector",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelector",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "deregister(java.nio.channels.spi.AbstractSelectionKey)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelector",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "end()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelector",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implCloseSelector()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AbstractSelector",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOpen()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.spi.AbstractSelector",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provider()",
+          "result": "java.nio.channels.spi.SelectorProvider",
+          "declaredBy": "java.nio.channels.spi.AbstractSelector",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "register(java.nio.channels.spi.AbstractSelectableChannel,int,java.lang.Object)",
+          "result": "java.nio.channels.SelectionKey",
+          "declaredBy": "java.nio.channels.spi.AbstractSelector",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.spi.AsynchronousChannelProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html",
+      "sourceEntry": "java.base/java/nio/channels/spi/AsynchronousChannelProvider.java",
+      "sourceSha256": "4c41022102b7150103ea92e97a9d0563b4e0161e76d19a2920fe7657639d0a79",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.AsynchronousChannelProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openAsynchronousChannelGroup(int,java.util.concurrent.ThreadFactory)",
+          "result": "java.nio.channels.AsynchronousChannelGroup",
+          "declaredBy": "java.nio.channels.spi.AsynchronousChannelProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openAsynchronousChannelGroup(java.util.concurrent.ExecutorService,int)",
+          "result": "java.nio.channels.AsynchronousChannelGroup",
+          "declaredBy": "java.nio.channels.spi.AsynchronousChannelProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openAsynchronousServerSocketChannel(java.nio.channels.AsynchronousChannelGroup)",
+          "result": "java.nio.channels.AsynchronousServerSocketChannel",
+          "declaredBy": "java.nio.channels.spi.AsynchronousChannelProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openAsynchronousSocketChannel(java.nio.channels.AsynchronousChannelGroup)",
+          "result": "java.nio.channels.AsynchronousSocketChannel",
+          "declaredBy": "java.nio.channels.spi.AsynchronousChannelProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provider()",
+          "result": "java.nio.channels.spi.AsynchronousChannelProvider",
+          "declaredBy": "java.nio.channels.spi.AsynchronousChannelProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.spi.SelectorProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html",
+      "sourceEntry": "java.base/java/nio/channels/spi/SelectorProvider.java",
+      "sourceSha256": "c613944d30fbe627bce339df654d74d1d1155a58658e55cdbb0e85312b027130",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "inheritedChannel()",
+          "result": "java.nio.channels.Channel",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openDatagramChannel()",
+          "result": "java.nio.channels.DatagramChannel",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openDatagramChannel(java.net.ProtocolFamily)",
+          "result": "java.nio.channels.DatagramChannel",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openPipe()",
+          "result": "java.nio.channels.Pipe",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openSelector()",
+          "result": "java.nio.channels.spi.AbstractSelector",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openServerSocketChannel()",
+          "result": "java.nio.channels.ServerSocketChannel",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openServerSocketChannel(java.net.ProtocolFamily)",
+          "result": "java.nio.channels.ServerSocketChannel",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openSocketChannel()",
+          "result": "java.nio.channels.SocketChannel",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openSocketChannel(java.net.ProtocolFamily)",
+          "result": "java.nio.channels.SocketChannel",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provider()",
+          "result": "java.nio.channels.spi.SelectorProvider",
+          "declaredBy": "java.nio.channels.spi.SelectorProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

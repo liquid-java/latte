@@ -1,0 +1,1552 @@
+{
+  "name": "java.time.format",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.time.format.DateTimeFormatter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/DateTimeFormatter.html",
+      "sourceEntry": "java.base/java/time/format/DateTimeFormatter.java",
+      "sourceSha256": "056229c8473dfe02f94cd9264da0f664f410f8f63ef586436a2a705e4ea032da",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "BASIC_ISO_DATE",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_DATE",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_DATE_TIME",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_INSTANT",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_LOCAL_DATE",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_LOCAL_DATE_TIME",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_LOCAL_TIME",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_OFFSET_DATE",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_OFFSET_DATE_TIME",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_OFFSET_TIME",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_ORDINAL_DATE",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_TIME",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_WEEK_DATE",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ISO_ZONED_DATE_TIME",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RFC_1123_DATE_TIME",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.time.temporal.TemporalAccessor)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "formatTo(java.time.temporal.TemporalAccessor,java.lang.Appendable)",
+          "result": "void",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChronology()",
+          "result": "java.time.chrono.Chronology",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDecimalStyle()",
+          "result": "java.time.format.DecimalStyle",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResolverFields()",
+          "result": "java.util.Set",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResolverStyle()",
+          "result": "java.time.format.ResolverStyle",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getZone()",
+          "result": "java.time.ZoneId",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "localizedBy(java.util.Locale)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofLocalizedDate(java.time.format.FormatStyle)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofLocalizedDateTime(java.time.format.FormatStyle)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofLocalizedDateTime(java.time.format.FormatStyle,java.time.format.FormatStyle)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofLocalizedPattern(java.lang.String)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofLocalizedTime(java.time.format.FormatStyle)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofPattern(java.lang.String)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofPattern(java.lang.String,java.util.Locale)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.CharSequence)",
+          "result": "java.time.temporal.TemporalAccessor",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.CharSequence,java.text.ParsePosition)",
+          "result": "java.time.temporal.TemporalAccessor",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.CharSequence,java.time.temporal.TemporalQuery)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseBest(java.lang.CharSequence,java.time.temporal.TemporalQuery[])",
+          "result": "java.time.temporal.TemporalAccessor",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseUnresolved(java.lang.CharSequence,java.text.ParsePosition)",
+          "result": "java.time.temporal.TemporalAccessor",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parsedExcessDays()",
+          "result": "java.time.temporal.TemporalQuery",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parsedLeapSecond()",
+          "result": "java.time.temporal.TemporalQuery",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toFormat()",
+          "result": "java.text.Format",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toFormat(java.time.temporal.TemporalQuery)",
+          "result": "java.text.Format",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withChronology(java.time.chrono.Chronology)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withDecimalStyle(java.time.format.DecimalStyle)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withLocale(java.util.Locale)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withResolverFields(java.time.temporal.TemporalField[])",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withResolverFields(java.util.Set)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withResolverStyle(java.time.format.ResolverStyle)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withZone(java.time.ZoneId)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.format.DateTimeFormatterBuilder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
+      "sourceEntry": "java.base/java/time/format/DateTimeFormatterBuilder.java",
+      "sourceSha256": "391df2ec8116207cbe0912dcb05b91400fd49a6729d9b37992a731fd9d81ad93",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "append(java.time.format.DateTimeFormatter)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendChronologyId()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendChronologyText(java.time.format.TextStyle)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendDayPeriodText(java.time.format.TextStyle)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendFraction(java.time.temporal.TemporalField,int,int,boolean)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendGenericZoneText(java.time.format.TextStyle)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendGenericZoneText(java.time.format.TextStyle,java.util.Set)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendInstant()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendInstant(int)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendLiteral(char)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendLiteral(java.lang.String)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendLocalized(java.lang.String)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendLocalized(java.time.format.FormatStyle,java.time.format.FormatStyle)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendLocalizedOffset(java.time.format.TextStyle)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendOffset(java.lang.String,java.lang.String)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendOffsetId()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendOptional(java.time.format.DateTimeFormatter)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendPattern(java.lang.String)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendText(java.time.temporal.TemporalField)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendText(java.time.temporal.TemporalField,java.time.format.TextStyle)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendText(java.time.temporal.TemporalField,java.util.Map)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendValue(java.time.temporal.TemporalField)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendValue(java.time.temporal.TemporalField,int)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendValue(java.time.temporal.TemporalField,int,int,java.time.format.SignStyle)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendValueReduced(java.time.temporal.TemporalField,int,int,int)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendValueReduced(java.time.temporal.TemporalField,int,int,java.time.chrono.ChronoLocalDate)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendZoneId()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendZoneOrOffsetId()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendZoneRegionId()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendZoneText(java.time.format.TextStyle)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendZoneText(java.time.format.TextStyle,java.util.Set)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalizedDateTimePattern(java.lang.String,java.time.chrono.Chronology,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalizedDateTimePattern(java.time.format.FormatStyle,java.time.format.FormatStyle,java.time.chrono.Chronology,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "optionalEnd()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "optionalStart()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "padNext(int)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "padNext(int,char)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseCaseInsensitive()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseCaseSensitive()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseDefaulting(java.time.temporal.TemporalField,long)",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseLenient()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseStrict()",
+          "result": "java.time.format.DateTimeFormatterBuilder",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toFormatter()",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toFormatter(java.util.Locale)",
+          "result": "java.time.format.DateTimeFormatter",
+          "declaredBy": "java.time.format.DateTimeFormatterBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.format.DateTimeParseException",
+      "kind": "class",
+      "parents": [
+        "java.time.DateTimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/DateTimeParseException.html",
+      "sourceEntry": "java.base/java/time/format/DateTimeParseException.java",
+      "sourceSha256": "9c4b38ff7102ccabfdbe9284c766920a23f00408b229d50ead4ac2627f9ca935",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.CharSequence,int)",
+          "result": "void",
+          "declaredBy": "java.time.format.DateTimeParseException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.CharSequence,int,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.time.format.DateTimeParseException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getErrorIndex()",
+          "result": "int",
+          "declaredBy": "java.time.format.DateTimeParseException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParsedString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.format.DateTimeParseException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.format.DecimalStyle",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/DecimalStyle.html",
+      "sourceEntry": "java.base/java/time/format/DecimalStyle.java",
+      "sourceSha256": "8ea9d6fd093d992cc141e9a3b2c60cf6b5730b120b7bab60fd66799c87179417",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "STANDARD",
+          "result": "java.time.format.DecimalStyle",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableLocales()",
+          "result": "java.util.Set",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDecimalSeparator()",
+          "result": "char",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNegativeSign()",
+          "result": "char",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPositiveSign()",
+          "result": "char",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getZeroDigit()",
+          "result": "char",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.util.Locale)",
+          "result": "java.time.format.DecimalStyle",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofDefaultLocale()",
+          "result": "java.time.format.DecimalStyle",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withDecimalSeparator(char)",
+          "result": "java.time.format.DecimalStyle",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withNegativeSign(char)",
+          "result": "java.time.format.DecimalStyle",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withPositiveSign(char)",
+          "result": "java.time.format.DecimalStyle",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withZeroDigit(char)",
+          "result": "java.time.format.DecimalStyle",
+          "declaredBy": "java.time.format.DecimalStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.format.FormatStyle",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/FormatStyle.html",
+      "sourceEntry": "java.base/java/time/format/FormatStyle.java",
+      "sourceSha256": "0e9bddd2f931ce40533f63539c729f3d2e063e0526fb35392af12f846992167b",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "FULL",
+          "result": "java.time.format.FormatStyle",
+          "declaredBy": "java.time.format.FormatStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LONG",
+          "result": "java.time.format.FormatStyle",
+          "declaredBy": "java.time.format.FormatStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEDIUM",
+          "result": "java.time.format.FormatStyle",
+          "declaredBy": "java.time.format.FormatStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHORT",
+          "result": "java.time.format.FormatStyle",
+          "declaredBy": "java.time.format.FormatStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.time.format.FormatStyle",
+          "declaredBy": "java.time.format.FormatStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.time.format.FormatStyle[]",
+          "declaredBy": "java.time.format.FormatStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.format.ResolverStyle",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/ResolverStyle.html",
+      "sourceEntry": "java.base/java/time/format/ResolverStyle.java",
+      "sourceSha256": "b593654c4697172391c8df3001413465826edea60751a20a36dbc8c98796ce4b",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "LENIENT",
+          "result": "java.time.format.ResolverStyle",
+          "declaredBy": "java.time.format.ResolverStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SMART",
+          "result": "java.time.format.ResolverStyle",
+          "declaredBy": "java.time.format.ResolverStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STRICT",
+          "result": "java.time.format.ResolverStyle",
+          "declaredBy": "java.time.format.ResolverStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.time.format.ResolverStyle",
+          "declaredBy": "java.time.format.ResolverStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.time.format.ResolverStyle[]",
+          "declaredBy": "java.time.format.ResolverStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.format.SignStyle",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/SignStyle.html",
+      "sourceEntry": "java.base/java/time/format/SignStyle.java",
+      "sourceSha256": "bb64412a89dd7d63fadae6dae3839013de5d5f48ef4dcb95d1a08f23ce7bb62d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ALWAYS",
+          "result": "java.time.format.SignStyle",
+          "declaredBy": "java.time.format.SignStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EXCEEDS_PAD",
+          "result": "java.time.format.SignStyle",
+          "declaredBy": "java.time.format.SignStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NEVER",
+          "result": "java.time.format.SignStyle",
+          "declaredBy": "java.time.format.SignStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NORMAL",
+          "result": "java.time.format.SignStyle",
+          "declaredBy": "java.time.format.SignStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NOT_NEGATIVE",
+          "result": "java.time.format.SignStyle",
+          "declaredBy": "java.time.format.SignStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.time.format.SignStyle",
+          "declaredBy": "java.time.format.SignStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.time.format.SignStyle[]",
+          "declaredBy": "java.time.format.SignStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.format.TextStyle",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/TextStyle.html",
+      "sourceEntry": "java.base/java/time/format/TextStyle.java",
+      "sourceSha256": "6e15b29ecbb050a84fad60fe9bb8c4f2b68aa4f83174cd5a3750fbdce2de67fe",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "FULL",
+          "result": "java.time.format.TextStyle",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FULL_STANDALONE",
+          "result": "java.time.format.TextStyle",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NARROW",
+          "result": "java.time.format.TextStyle",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NARROW_STANDALONE",
+          "result": "java.time.format.TextStyle",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHORT",
+          "result": "java.time.format.TextStyle",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHORT_STANDALONE",
+          "result": "java.time.format.TextStyle",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "asNormal()",
+          "result": "java.time.format.TextStyle",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asStandalone()",
+          "result": "java.time.format.TextStyle",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isStandalone()",
+          "result": "boolean",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.time.format.TextStyle",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.time.format.TextStyle[]",
+          "declaredBy": "java.time.format.TextStyle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

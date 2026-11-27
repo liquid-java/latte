@@ -1,0 +1,1483 @@
+{
+  "name": "javax.script",
+  "module": "java.scripting",
+  "types": [
+    {
+      "target": "javax.script.AbstractScriptEngine",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.script.ScriptEngine"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/AbstractScriptEngine.html",
+      "sourceEntry": "java.scripting/javax/script/AbstractScriptEngine.java",
+      "sourceSha256": "eae754b06bb1e24c7c8b72508c80fd6fa105603604055b69a4a0c688e3ecaeea",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.script.Bindings)",
+          "result": "void",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "context",
+          "result": "javax.script.ScriptContext",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(java.io.Reader)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(java.io.Reader,javax.script.Bindings)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(java.lang.String,javax.script.Bindings)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBindings(int)",
+          "result": "javax.script.Bindings",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getContext()",
+          "result": "javax.script.ScriptContext",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getScriptContext(javax.script.Bindings)",
+          "result": "javax.script.ScriptContext",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBindings(javax.script.Bindings,int)",
+          "result": "void",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setContext(javax.script.ScriptContext)",
+          "result": "void",
+          "declaredBy": "javax.script.AbstractScriptEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.Bindings",
+      "kind": "interface",
+      "parents": [
+        "java.util.Map"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/Bindings.html",
+      "sourceEntry": "java.scripting/javax/script/Bindings.java",
+      "sourceSha256": "c23461648265b503b7d7d00398463a76a8a98903203aed6dbeef705c4c2e4cc4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.script.Bindings",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.Bindings",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.lang.String,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.Bindings",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putAll(java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.script.Bindings",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.Bindings",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.Compilable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/Compilable.html",
+      "sourceEntry": "java.scripting/javax/script/Compilable.java",
+      "sourceSha256": "7c6e35f8ab4fbf0e4ed80f4ff96151c0ba358091450110b2d4407a503e125393",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "compile(java.io.Reader)",
+          "result": "javax.script.CompiledScript",
+          "declaredBy": "javax.script.Compilable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compile(java.lang.String)",
+          "result": "javax.script.CompiledScript",
+          "declaredBy": "javax.script.Compilable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.CompiledScript",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/CompiledScript.html",
+      "sourceEntry": "java.scripting/javax/script/CompiledScript.java",
+      "sourceSha256": "52e3ea1cb519b2fb89754e6d4a64d1809709c3a6b68c7c98bf51ea2da8a1e79a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.script.CompiledScript",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.CompiledScript",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(javax.script.Bindings)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.CompiledScript",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(javax.script.ScriptContext)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.CompiledScript",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEngine()",
+          "result": "javax.script.ScriptEngine",
+          "declaredBy": "javax.script.CompiledScript",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.Invocable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/Invocable.html",
+      "sourceEntry": "java.scripting/javax/script/Invocable.java",
+      "sourceSha256": "99577eba436a7a8fa24e263e4df9fdb62156939765a761a6a86caaa5039db924",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getInterface(java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.Invocable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInterface(java.lang.Object,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.Invocable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invokeFunction(java.lang.String,java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.Invocable",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.Invocable",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.ScriptContext",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/ScriptContext.html",
+      "sourceEntry": "java.scripting/javax/script/ScriptContext.java",
+      "sourceSha256": "69632cefa5d4cdfc4a3d8ea68f1c87253e1f3fce8739512e751b15ca8e565a8a",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ENGINE_SCOPE",
+          "result": "int",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GLOBAL_SCOPE",
+          "result": "int",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.lang.String,int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributesScope(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBindings(int)",
+          "result": "javax.script.Bindings",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getErrorWriter()",
+          "result": "java.io.Writer",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReader()",
+          "result": "java.io.Reader",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getScopes()",
+          "result": "java.util.List",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWriter()",
+          "result": "java.io.Writer",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAttribute(java.lang.String,int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttribute(java.lang.String,java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBindings(javax.script.Bindings,int)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setErrorWriter(java.io.Writer)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setReader(java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setWriter(java.io.Writer)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.ScriptEngine",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/ScriptEngine.html",
+      "sourceEntry": "java.scripting/javax/script/ScriptEngine.java",
+      "sourceSha256": "db1eab57963d65daf5980a3902087458ac4dc1183f812e7f7538f8e06f1e82ae",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ARGV",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENGINE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENGINE_VERSION",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FILENAME",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LANGUAGE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LANGUAGE_VERSION",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NAME",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createBindings()",
+          "result": "javax.script.Bindings",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(java.io.Reader)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(java.io.Reader,javax.script.Bindings)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(java.io.Reader,javax.script.ScriptContext)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(java.lang.String,javax.script.Bindings)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eval(java.lang.String,javax.script.ScriptContext)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBindings(int)",
+          "result": "javax.script.Bindings",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getContext()",
+          "result": "javax.script.ScriptContext",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFactory()",
+          "result": "javax.script.ScriptEngineFactory",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBindings(javax.script.Bindings,int)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setContext(javax.script.ScriptContext)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.ScriptEngineFactory",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/ScriptEngineFactory.html",
+      "sourceEntry": "java.scripting/javax/script/ScriptEngineFactory.java",
+      "sourceSha256": "429d8e66d40e573a69cda4f02310eccec26256f2fd6b68898c06fbeac8bdfe7e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getEngineName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEngineVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExtensions()",
+          "result": "java.util.List",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLanguageName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLanguageVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMethodCallSyntax(java.lang.String,java.lang.String,java.lang.String[])",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMimeTypes()",
+          "result": "java.util.List",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNames()",
+          "result": "java.util.List",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputStatement(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameter(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProgram(java.lang.String[])",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getScriptEngine()",
+          "result": "javax.script.ScriptEngine",
+          "declaredBy": "javax.script.ScriptEngineFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.ScriptEngineManager",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/ScriptEngineManager.html",
+      "sourceEntry": "java.scripting/javax/script/ScriptEngineManager.java",
+      "sourceSha256": "f88c51e514de0b8d24f039954526beef8356b50f18e3ca992b4f08c8bdfa901a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.ClassLoader)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBindings()",
+          "result": "javax.script.Bindings",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEngineByExtension(java.lang.String)",
+          "result": "javax.script.ScriptEngine",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEngineByMimeType(java.lang.String)",
+          "result": "javax.script.ScriptEngine",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEngineByName(java.lang.String)",
+          "result": "javax.script.ScriptEngine",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEngineFactories()",
+          "result": "java.util.List",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerEngineExtension(java.lang.String,javax.script.ScriptEngineFactory)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerEngineMimeType(java.lang.String,javax.script.ScriptEngineFactory)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerEngineName(java.lang.String,javax.script.ScriptEngineFactory)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBindings(javax.script.Bindings)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptEngineManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.ScriptException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/ScriptException.html",
+      "sourceEntry": "java.scripting/javax/script/ScriptException.java",
+      "sourceSha256": "9a9ba0191250a56f2628080b273526115c16e38f9da24a01ce3b886772b20b23",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,int,int)",
+          "result": "void",
+          "declaredBy": "javax.script.ScriptException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnNumber()",
+          "result": "int",
+          "declaredBy": "javax.script.ScriptException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLineNumber()",
+          "result": "int",
+          "declaredBy": "javax.script.ScriptException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.script.ScriptException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.SimpleBindings",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.script.Bindings"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/SimpleBindings.html",
+      "sourceEntry": "java.scripting/javax/script/SimpleBindings.java",
+      "sourceSha256": "586664c919e03a6ac740b050687713f00fc825eb9080cd7cffb258b3a8c691ed",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "void",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "entrySet()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "keySet()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.lang.String,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putAll(java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.util.Collection",
+          "declaredBy": "javax.script.SimpleBindings",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.script.SimpleScriptContext",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.script.ScriptContext"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.scripting/javax/script/SimpleScriptContext.html",
+      "sourceEntry": "java.scripting/javax/script/SimpleScriptContext.java",
+      "sourceSha256": "736bb5b8c5fabc83c40a974626ef10d26501a373e93deb465409ce88be59a26d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "engineScope",
+          "result": "javax.script.Bindings",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "errorWriter",
+          "result": "java.io.Writer",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.lang.String,int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributesScope(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBindings(int)",
+          "result": "javax.script.Bindings",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getErrorWriter()",
+          "result": "java.io.Writer",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReader()",
+          "result": "java.io.Reader",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getScopes()",
+          "result": "java.util.List",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWriter()",
+          "result": "java.io.Writer",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "globalScope",
+          "result": "javax.script.Bindings",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "reader",
+          "result": "java.io.Reader",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAttribute(java.lang.String,int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttribute(java.lang.String,java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBindings(javax.script.Bindings,int)",
+          "result": "void",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setErrorWriter(java.io.Writer)",
+          "result": "void",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setReader(java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setWriter(java.io.Writer)",
+          "result": "void",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "writer",
+          "result": "java.io.Writer",
+          "declaredBy": "javax.script.SimpleScriptContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "name": "java.net.spi",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.net.spi.InetAddressResolver",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/spi/InetAddressResolver.html",
+      "sourceEntry": "java.base/java/net/spi/InetAddressResolver.java",
+      "sourceSha256": "080bf62ac7ea77f96673d76e54d61da562678070499ab0c85c56008290a5e58a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "lookupByAddress(byte[])",
+          "result": "java.lang.String",
+          "declaredBy": "java.net.spi.InetAddressResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupByName(java.lang.String,java.net.spi.InetAddressResolver$LookupPolicy)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.net.spi.InetAddressResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.spi.InetAddressResolver$LookupPolicy",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/spi/InetAddressResolver.LookupPolicy.html",
+      "sourceEntry": "java.base/java/net/spi/InetAddressResolver.java",
+      "sourceSha256": "080bf62ac7ea77f96673d76e54d61da562678070499ab0c85c56008290a5e58a",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "IPV4",
+          "result": "int",
+          "declaredBy": "java.net.spi.InetAddressResolver$LookupPolicy",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IPV4_FIRST",
+          "result": "int",
+          "declaredBy": "java.net.spi.InetAddressResolver$LookupPolicy",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IPV6",
+          "result": "int",
+          "declaredBy": "java.net.spi.InetAddressResolver$LookupPolicy",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IPV6_FIRST",
+          "result": "int",
+          "declaredBy": "java.net.spi.InetAddressResolver$LookupPolicy",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "characteristics()",
+          "result": "int",
+          "declaredBy": "java.net.spi.InetAddressResolver$LookupPolicy",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int)",
+          "result": "java.net.spi.InetAddressResolver$LookupPolicy",
+          "declaredBy": "java.net.spi.InetAddressResolver$LookupPolicy",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.spi.InetAddressResolverProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/spi/InetAddressResolverProvider.html",
+      "sourceEntry": "java.base/java/net/spi/InetAddressResolverProvider.java",
+      "sourceSha256": "0481f3b9ea81cc504dfc2d93ec5917f632ae46a55f29a7fbce17545863a9bb58",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.net.spi.InetAddressResolverProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.net.spi.InetAddressResolverProvider$Configuration)",
+          "result": "java.net.spi.InetAddressResolver",
+          "declaredBy": "java.net.spi.InetAddressResolverProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.net.spi.InetAddressResolverProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.spi.InetAddressResolverProvider$Configuration",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/spi/InetAddressResolverProvider.Configuration.html",
+      "sourceEntry": "java.base/java/net/spi/InetAddressResolverProvider.java",
+      "sourceSha256": "0481f3b9ea81cc504dfc2d93ec5917f632ae46a55f29a7fbce17545863a9bb58",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "builtinResolver()",
+          "result": "java.net.spi.InetAddressResolver",
+          "declaredBy": "java.net.spi.InetAddressResolverProvider$Configuration",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupLocalHostName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.net.spi.InetAddressResolverProvider$Configuration",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.net.spi.URLStreamHandlerProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.net.URLStreamHandlerFactory"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/spi/URLStreamHandlerProvider.html",
+      "sourceEntry": "java.base/java/net/spi/URLStreamHandlerProvider.java",
+      "sourceSha256": "3a41936ad5e3335cbf82acc074d15c6ce1b96db044c80adb4edeb539f06cf9b1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.net.spi.URLStreamHandlerProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

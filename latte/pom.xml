@@ -8,7 +8,7 @@
   <description>Ownership preprocessing and refinement verification on one Spoon AST.</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>17</maven.compiler.release>
+    <maven.compiler.release>21</maven.compiler.release>
   </properties>
   <dependencies>
     <dependency>
@@ -40,6 +40,23 @@
     </dependency>
   </dependencies>
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>../specifications/jdk21</directory>
+        <targetPath>latte/jdk21</targetPath>
+        <includes>
+          <include>**/*.java</include>
+          <include>catalog.json</include>
+          <include>packages.json</include>
+          <include>inventory.json</include>
+          <include>effects.json</include>
+          <include>api/*.json</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

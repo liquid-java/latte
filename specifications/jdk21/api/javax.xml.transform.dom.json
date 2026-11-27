@@ -1,0 +1,264 @@
+{
+  "name": "javax.xml.transform.dom",
+  "module": "java.xml",
+  "types": [
+    {
+      "target": "javax.xml.transform.dom.DOMLocator",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.transform.SourceLocator"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/dom/DOMLocator.html",
+      "sourceEntry": "java.xml/javax/xml/transform/dom/DOMLocator.java",
+      "sourceSha256": "9db4567aeb3e7b9d2244c419ccd9a151a27cd7e63059a1356b59b26b380e73de",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getOriginatingNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.xml.transform.dom.DOMLocator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.dom.DOMResult",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.xml.transform.Result"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html",
+      "sourceEntry": "java.xml/javax/xml/transform/dom/DOMResult.java",
+      "sourceSha256": "ae442a76a677df21f08062ac99adf7a1710b0f7829efb3aa9ae47451fe2a5c58",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(org.w3c.dom.Node,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(org.w3c.dom.Node,org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(org.w3c.dom.Node,org.w3c.dom.Node,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "FEATURE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getNextSibling()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNextSibling(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNode(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSystemId(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.dom.DOMSource",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.xml.transform.Source"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html",
+      "sourceEntry": "java.xml/javax/xml/transform/dom/DOMSource.java",
+      "sourceSha256": "af0d78aa82e16e53cb2e1ae5e50d2a52b1990b560af7f5f85839e0342943fe25",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(org.w3c.dom.Node,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "FEATURE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.dom.DOMSource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.xml.transform.dom.DOMSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.dom.DOMSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.transform.dom.DOMSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNode(org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSystemId(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.dom.DOMSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

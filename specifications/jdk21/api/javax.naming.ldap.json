@@ -1,0 +1,1586 @@
+{
+  "name": "javax.naming.ldap",
+  "module": "java.naming",
+  "types": [
+    {
+      "target": "javax.naming.ldap.BasicControl",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.naming.ldap.Control"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/BasicControl.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/BasicControl.java",
+      "sourceSha256": "fb1d580d74f7fe9c53796c7943af74c4b4abef1fee06179e8b26a4def6406147",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.BasicControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,boolean,byte[])",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.BasicControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "criticality",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.BasicControl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncodedValue()",
+          "result": "byte[]",
+          "declaredBy": "javax.naming.ldap.BasicControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.BasicControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "id",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.BasicControl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isCritical()",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.BasicControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "value",
+          "result": "byte[]",
+          "declaredBy": "javax.naming.ldap.BasicControl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.Control",
+      "kind": "interface",
+      "parents": [
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/Control.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/Control.java",
+      "sourceSha256": "0fb192170d2e5733094510b16864d58c6fbd93f7414a6243deea912b51f98f7d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CRITICAL",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.Control",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NONCRITICAL",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.Control",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncodedValue()",
+          "result": "byte[]",
+          "declaredBy": "javax.naming.ldap.Control",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.Control",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCritical()",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.Control",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.ControlFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/ControlFactory.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/ControlFactory.java",
+      "sourceSha256": "6bd4469b193c59c07841ba2bb85316642efb9e9f75158a52e25af5d1296cf929",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.ControlFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getControlInstance(javax.naming.ldap.Control)",
+          "result": "javax.naming.ldap.Control",
+          "declaredBy": "javax.naming.ldap.ControlFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getControlInstance(javax.naming.ldap.Control,javax.naming.Context,java.util.Hashtable)",
+          "result": "javax.naming.ldap.Control",
+          "declaredBy": "javax.naming.ldap.ControlFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.ExtendedRequest",
+      "kind": "interface",
+      "parents": [
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/ExtendedRequest.java",
+      "sourceSha256": "e22988a014f31fab89a4d5d0fe2ef9237e51953d907880e04fa20204e7623300",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createExtendedResponse(java.lang.String,byte[],int,int)",
+          "result": "javax.naming.ldap.ExtendedResponse",
+          "declaredBy": "javax.naming.ldap.ExtendedRequest",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncodedValue()",
+          "result": "byte[]",
+          "declaredBy": "javax.naming.ldap.ExtendedRequest",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.ExtendedRequest",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.ExtendedResponse",
+      "kind": "interface",
+      "parents": [
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/ExtendedResponse.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/ExtendedResponse.java",
+      "sourceSha256": "3d7baa929d5b8928b5da32c92baf5946f0712d408baf46811bede9e5d3cb5fe0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getEncodedValue()",
+          "result": "byte[]",
+          "declaredBy": "javax.naming.ldap.ExtendedResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.ExtendedResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.HasControls",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/HasControls.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/HasControls.java",
+      "sourceSha256": "93832156e27f5296f002794215b254e803e6aaf9dd9183ef315319d7d8051d07",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getControls()",
+          "result": "javax.naming.ldap.Control[]",
+          "declaredBy": "javax.naming.ldap.HasControls",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.InitialLdapContext",
+      "kind": "class",
+      "parents": [
+        "javax.naming.directory.InitialDirContext",
+        "javax.naming.ldap.LdapContext"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/InitialLdapContext.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/InitialLdapContext.java",
+      "sourceSha256": "9b04e0004782eaccdcbcde58692610ee3fad123564440ddabd6c4a8549250f1c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.InitialLdapContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Hashtable,javax.naming.ldap.Control[])",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.InitialLdapContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "extendedOperation(javax.naming.ldap.ExtendedRequest)",
+          "result": "javax.naming.ldap.ExtendedResponse",
+          "declaredBy": "javax.naming.ldap.InitialLdapContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnectControls()",
+          "result": "javax.naming.ldap.Control[]",
+          "declaredBy": "javax.naming.ldap.InitialLdapContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRequestControls()",
+          "result": "javax.naming.ldap.Control[]",
+          "declaredBy": "javax.naming.ldap.InitialLdapContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResponseControls()",
+          "result": "javax.naming.ldap.Control[]",
+          "declaredBy": "javax.naming.ldap.InitialLdapContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance(javax.naming.ldap.Control[])",
+          "result": "javax.naming.ldap.LdapContext",
+          "declaredBy": "javax.naming.ldap.InitialLdapContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reconnect(javax.naming.ldap.Control[])",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.InitialLdapContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRequestControls(javax.naming.ldap.Control[])",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.InitialLdapContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.LdapContext",
+      "kind": "interface",
+      "parents": [
+        "javax.naming.directory.DirContext"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/LdapContext.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/LdapContext.java",
+      "sourceSha256": "8d5cb0a16011325cb9561342fd4d272af7e67949a4cca74e87ff42dbf8a4ddfc",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CONTROL_FACTORIES",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.LdapContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "extendedOperation(javax.naming.ldap.ExtendedRequest)",
+          "result": "javax.naming.ldap.ExtendedResponse",
+          "declaredBy": "javax.naming.ldap.LdapContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnectControls()",
+          "result": "javax.naming.ldap.Control[]",
+          "declaredBy": "javax.naming.ldap.LdapContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRequestControls()",
+          "result": "javax.naming.ldap.Control[]",
+          "declaredBy": "javax.naming.ldap.LdapContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResponseControls()",
+          "result": "javax.naming.ldap.Control[]",
+          "declaredBy": "javax.naming.ldap.LdapContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance(javax.naming.ldap.Control[])",
+          "result": "javax.naming.ldap.LdapContext",
+          "declaredBy": "javax.naming.ldap.LdapContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reconnect(javax.naming.ldap.Control[])",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.LdapContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRequestControls(javax.naming.ldap.Control[])",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.LdapContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.LdapName",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.naming.Name"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/LdapName.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/LdapName.java",
+      "sourceSha256": "2fee0ace129c6fa7ea0877831d07f9f24e05d7d5a7a3f10e24182d34dedf24b4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(int,java.lang.String)",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(int,javax.naming.ldap.Rdn)",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(java.lang.String)",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(javax.naming.ldap.Rdn)",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(int,java.util.List)",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(int,javax.naming.Name)",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(java.util.List)",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(javax.naming.Name)",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.lang.Object)",
+          "result": "int",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "endsWith(java.util.List)",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "endsWith(javax.naming.Name)",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAll()",
+          "result": "java.util.Enumeration",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrefix(int)",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRdn(int)",
+          "result": "javax.naming.ldap.Rdn",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRdns()",
+          "result": "java.util.List",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSuffix(int)",
+          "result": "javax.naming.Name",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startsWith(java.util.List)",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startsWith(javax.naming.Name)",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.LdapName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.LdapReferralException",
+      "kind": "class",
+      "parents": [
+        "javax.naming.ReferralException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/LdapReferralException.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/LdapReferralException.java",
+      "sourceSha256": "e93a44a26e8df2160df0a007697fb12a1b2d534d2863ed70eedd7d70eca4b59b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.LdapReferralException",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.LdapReferralException",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReferralContext()",
+          "result": "javax.naming.Context",
+          "declaredBy": "javax.naming.ldap.LdapReferralException",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReferralContext(java.util.Hashtable)",
+          "result": "javax.naming.Context",
+          "declaredBy": "javax.naming.ldap.LdapReferralException",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReferralContext(java.util.Hashtable,javax.naming.ldap.Control[])",
+          "result": "javax.naming.Context",
+          "declaredBy": "javax.naming.ldap.LdapReferralException",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.ManageReferralControl",
+      "kind": "class",
+      "parents": [
+        "javax.naming.ldap.BasicControl"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/ManageReferralControl.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/ManageReferralControl.java",
+      "sourceSha256": "2e5c9bf20bac8b7dc6aa8dcec54a0d4228ff6e48167a3f51c655e53c2affcfc7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.ManageReferralControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(boolean)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.ManageReferralControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "OID",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.ManageReferralControl",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.PagedResultsControl",
+      "kind": "class",
+      "parents": [
+        "javax.naming.ldap.BasicControl"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/PagedResultsControl.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/PagedResultsControl.java",
+      "sourceSha256": "3cdcebbd3f4496aef77044ee007baf78e4977b2308d0f2d866cb81d5c040f4f7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.PagedResultsControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,byte[],boolean)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.PagedResultsControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "OID",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.PagedResultsControl",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.PagedResultsResponseControl",
+      "kind": "class",
+      "parents": [
+        "javax.naming.ldap.BasicControl"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/PagedResultsResponseControl.java",
+      "sourceSha256": "5b392b7559cf5ee948abe11f22e1d68ee7e6c69815ded314f062574ef45b5d8f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,boolean,byte[])",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.PagedResultsResponseControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "OID",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.PagedResultsResponseControl",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getCookie()",
+          "result": "byte[]",
+          "declaredBy": "javax.naming.ldap.PagedResultsResponseControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResultSize()",
+          "result": "int",
+          "declaredBy": "javax.naming.ldap.PagedResultsResponseControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.Rdn",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/Rdn.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/Rdn.java",
+      "sourceSha256": "0d29878f0912e28f2952db0ec617a21cdce1498e47f2e4e7a85c11254ef679c0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.naming.directory.Attributes)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.naming.ldap.Rdn)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.lang.Object)",
+          "result": "int",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "escapeValue(java.lang.Object)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toAttributes()",
+          "result": "javax.naming.directory.Attributes",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unescapeValue(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.ldap.Rdn",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.SortControl",
+      "kind": "class",
+      "parents": [
+        "javax.naming.ldap.BasicControl"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/SortControl.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/SortControl.java",
+      "sourceSha256": "a6550192812f9372710fb4eddca5330b14f96ce0a943a79a3453f597c67092a3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.SortControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String[],boolean)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.SortControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.naming.ldap.SortKey[],boolean)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.SortControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "OID",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.SortControl",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.SortKey",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/SortKey.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/SortKey.java",
+      "sourceSha256": "1cf0d951afba239d2364d9084d6953387412f250408ce76398d501cad14cbd3d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.SortKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,boolean,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.SortKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.SortKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMatchingRuleID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.SortKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAscending()",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.SortKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.SortResponseControl",
+      "kind": "class",
+      "parents": [
+        "javax.naming.ldap.BasicControl"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/SortResponseControl.java",
+      "sourceSha256": "48d64f7dffd3d35d3a6e02c558d1076f23c201fc0b646e8014c99a138ea748ce",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,boolean,byte[])",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.SortResponseControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "OID",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.SortResponseControl",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.SortResponseControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getException()",
+          "result": "javax.naming.NamingException",
+          "declaredBy": "javax.naming.ldap.SortResponseControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResultCode()",
+          "result": "int",
+          "declaredBy": "javax.naming.ldap.SortResponseControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSorted()",
+          "result": "boolean",
+          "declaredBy": "javax.naming.ldap.SortResponseControl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.StartTlsRequest",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.naming.ldap.ExtendedRequest"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/StartTlsRequest.java",
+      "sourceSha256": "ccafef2930653deebeda7745a1cc339da71dfdd973741bb929c908fe466fec4a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.StartTlsRequest",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "OID",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.StartTlsRequest",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createExtendedResponse(java.lang.String,byte[],int,int)",
+          "result": "javax.naming.ldap.ExtendedResponse",
+          "declaredBy": "javax.naming.ldap.StartTlsRequest",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncodedValue()",
+          "result": "byte[]",
+          "declaredBy": "javax.naming.ldap.StartTlsRequest",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.StartTlsRequest",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.StartTlsResponse",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.naming.ldap.ExtendedResponse"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/StartTlsResponse.java",
+      "sourceSha256": "d2efabf86a1e189a10ee835c4a439bd20e9bc922f336f9b251c2c2068a31ab56",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.StartTlsResponse",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "OID",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.StartTlsResponse",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.StartTlsResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncodedValue()",
+          "result": "byte[]",
+          "declaredBy": "javax.naming.ldap.StartTlsResponse",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.naming.ldap.StartTlsResponse",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negotiate()",
+          "result": "javax.net.ssl.SSLSession",
+          "declaredBy": "javax.naming.ldap.StartTlsResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negotiate(javax.net.ssl.SSLSocketFactory)",
+          "result": "javax.net.ssl.SSLSession",
+          "declaredBy": "javax.naming.ldap.StartTlsResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnabledCipherSuites(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.StartTlsResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setHostnameVerifier(javax.net.ssl.HostnameVerifier)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.StartTlsResponse",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.UnsolicitedNotification",
+      "kind": "interface",
+      "parents": [
+        "javax.naming.ldap.ExtendedResponse",
+        "javax.naming.ldap.HasControls"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotification.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/UnsolicitedNotification.java",
+      "sourceSha256": "a244e9bd831c1daa70bed0fe3db1eb6fa8905163e84c6962129c7c19f1216e7a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getException()",
+          "result": "javax.naming.NamingException",
+          "declaredBy": "javax.naming.ldap.UnsolicitedNotification",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReferrals()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.naming.ldap.UnsolicitedNotification",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.UnsolicitedNotificationEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationEvent.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/UnsolicitedNotificationEvent.java",
+      "sourceSha256": "b12e6278e561fbceb6989e24e29348d1e174914a952c69a59b97e3dc1fa7b288",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.naming.ldap.UnsolicitedNotification)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.UnsolicitedNotificationEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dispatch(javax.naming.ldap.UnsolicitedNotificationListener)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.UnsolicitedNotificationEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotification()",
+          "result": "javax.naming.ldap.UnsolicitedNotification",
+          "declaredBy": "javax.naming.ldap.UnsolicitedNotificationEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.ldap.UnsolicitedNotificationListener",
+      "kind": "interface",
+      "parents": [
+        "javax.naming.event.NamingListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html",
+      "sourceEntry": "java.naming/javax/naming/ldap/UnsolicitedNotificationListener.java",
+      "sourceSha256": "c851eb56d2b6ee3d7f7b1dceead3d534f59a0e44308179df5ea83257a930feb9",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)",
+          "result": "void",
+          "declaredBy": "javax.naming.ldap.UnsolicitedNotificationListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3460 @@
+{
+  "name": "java.nio.channels",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.nio.channels.AcceptPendingException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/AcceptPendingException.html",
+      "sourceEntry": "java.base/java/nio/channels/AcceptPendingException.java",
+      "sourceSha256": "fb4c35bf05888ab9060189659764962f20c449f5b941b662e81587ff3d09eef0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AcceptPendingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.AlreadyBoundException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/AlreadyBoundException.html",
+      "sourceEntry": "java.base/java/nio/channels/AlreadyBoundException.java",
+      "sourceSha256": "b345c698d34169c5aa8d1fe1731d3efa76d8fe0c0bf28fce465dd9649e73e8ba",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AlreadyBoundException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.AlreadyConnectedException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/AlreadyConnectedException.html",
+      "sourceEntry": "java.base/java/nio/channels/AlreadyConnectedException.java",
+      "sourceSha256": "102024e6450897792f2383524b5aeb87f40e33f96e03959ff9c151fe951c7e2e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AlreadyConnectedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.AsynchronousByteChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.AsynchronousChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/AsynchronousByteChannel.java",
+      "sourceSha256": "df6a129b7237e1f5714987bde9effe4185116ca7d67180de9daf659899d91a6f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer)",
+          "result": "java.util.concurrent.Future",
+          "declaredBy": "java.nio.channels.AsynchronousByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer)",
+          "result": "java.util.concurrent.Future",
+          "declaredBy": "java.nio.channels.AsynchronousByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.AsynchronousChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.Channel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/AsynchronousChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/AsynchronousChannel.java",
+      "sourceSha256": "07fc9c8a6e2295bfb10cb53a0d4000308ca2d1916a63ab9f64ed278892718ee6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.AsynchronousChannelGroup",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html",
+      "sourceEntry": "java.base/java/nio/channels/AsynchronousChannelGroup.java",
+      "sourceSha256": "9457943a91467753c32f52dbb4b8e5b9b1d9e5d35628ddc67a12baa49d298a58",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.spi.AsynchronousChannelProvider)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousChannelGroup",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitTermination(long,java.util.concurrent.TimeUnit)",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.AsynchronousChannelGroup",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isShutdown()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.AsynchronousChannelGroup",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isTerminated()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.AsynchronousChannelGroup",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provider()",
+          "result": "java.nio.channels.spi.AsynchronousChannelProvider",
+          "declaredBy": "java.nio.channels.AsynchronousChannelGroup",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shutdown()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousChannelGroup",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shutdownNow()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousChannelGroup",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withCachedThreadPool(java.util.concurrent.ExecutorService,int)",
+          "result": "java.nio.channels.AsynchronousChannelGroup",
+          "declaredBy": "java.nio.channels.AsynchronousChannelGroup",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withFixedThreadPool(int,java.util.concurrent.ThreadFactory)",
+          "result": "java.nio.channels.AsynchronousChannelGroup",
+          "declaredBy": "java.nio.channels.AsynchronousChannelGroup",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withThreadPool(java.util.concurrent.ExecutorService)",
+          "result": "java.nio.channels.AsynchronousChannelGroup",
+          "declaredBy": "java.nio.channels.AsynchronousChannelGroup",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.AsynchronousCloseException",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.ClosedChannelException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/AsynchronousCloseException.html",
+      "sourceEntry": "java.base/java/nio/channels/AsynchronousCloseException.java",
+      "sourceSha256": "cb4ea64ab4bd251e30dc2ece4dd92ace905d87286131bef72c0838195a94d973",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousCloseException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.AsynchronousFileChannel",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.nio.channels.AsynchronousChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/AsynchronousFileChannel.java",
+      "sourceSha256": "074430fb691629ba83ee183704526bdbbd390ce504371b09a82863d095bae977",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "force(boolean)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lock()",
+          "result": "java.util.concurrent.Future",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lock(java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lock(long,long,boolean)",
+          "result": "java.util.concurrent.Future",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lock(long,long,boolean,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.nio.file.Path,java.nio.file.OpenOption[])",
+          "result": "java.nio.channels.AsynchronousFileChannel",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.nio.file.Path,java.util.Set,java.util.concurrent.ExecutorService,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.channels.AsynchronousFileChannel",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer,long)",
+          "result": "java.util.concurrent.Future",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer,long,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "long",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "truncate(long)",
+          "result": "java.nio.channels.AsynchronousFileChannel",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock()",
+          "result": "java.nio.channels.FileLock",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock(long,long,boolean)",
+          "result": "java.nio.channels.FileLock",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer,long)",
+          "result": "java.util.concurrent.Future",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer,long,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousFileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.AsynchronousServerSocketChannel",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.nio.channels.AsynchronousChannel",
+        "java.nio.channels.NetworkChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/AsynchronousServerSocketChannel.java",
+      "sourceSha256": "bc364e71c06bd292f12e3328e17811e1ecf42d9c187127efcd68b3ece669f724",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.spi.AsynchronousChannelProvider)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousServerSocketChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accept()",
+          "result": "java.util.concurrent.Future",
+          "declaredBy": "java.nio.channels.AsynchronousServerSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accept(java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousServerSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bind(java.net.SocketAddress)",
+          "result": "java.nio.channels.AsynchronousServerSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousServerSocketChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bind(java.net.SocketAddress,int)",
+          "result": "java.nio.channels.AsynchronousServerSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousServerSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalAddress()",
+          "result": "java.net.SocketAddress",
+          "declaredBy": "java.nio.channels.AsynchronousServerSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open()",
+          "result": "java.nio.channels.AsynchronousServerSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousServerSocketChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.nio.channels.AsynchronousChannelGroup)",
+          "result": "java.nio.channels.AsynchronousServerSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousServerSocketChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provider()",
+          "result": "java.nio.channels.spi.AsynchronousChannelProvider",
+          "declaredBy": "java.nio.channels.AsynchronousServerSocketChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOption(java.net.SocketOption,java.lang.Object)",
+          "result": "java.nio.channels.AsynchronousServerSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousServerSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.AsynchronousSocketChannel",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.nio.channels.AsynchronousByteChannel",
+        "java.nio.channels.NetworkChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/AsynchronousSocketChannel.java",
+      "sourceSha256": "170c9e4542de07283c698a27dd9127fa6cad17082aece850188762a7a078f3fd",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.spi.AsynchronousChannelProvider)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bind(java.net.SocketAddress)",
+          "result": "java.nio.channels.AsynchronousSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connect(java.net.SocketAddress)",
+          "result": "java.util.concurrent.Future",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connect(java.net.SocketAddress,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalAddress()",
+          "result": "java.net.SocketAddress",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRemoteAddress()",
+          "result": "java.net.SocketAddress",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open()",
+          "result": "java.nio.channels.AsynchronousSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.nio.channels.AsynchronousChannelGroup)",
+          "result": "java.nio.channels.AsynchronousSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provider()",
+          "result": "java.nio.channels.spi.AsynchronousChannelProvider",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer)",
+          "result": "java.util.concurrent.Future",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer[],int,int,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOption(java.net.SocketOption,java.lang.Object)",
+          "result": "java.nio.channels.AsynchronousSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shutdownInput()",
+          "result": "java.nio.channels.AsynchronousSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shutdownOutput()",
+          "result": "java.nio.channels.AsynchronousSocketChannel",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer)",
+          "result": "java.util.concurrent.Future",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer[],int,int,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.AsynchronousSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.ByteChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.ReadableByteChannel",
+        "java.nio.channels.WritableByteChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/ByteChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/ByteChannel.java",
+      "sourceSha256": "abc0d5b7a23741aae556597d80986053e42a57ea50ec5a4c513e45bbef7b6a3b",
+      "members": []
+    },
+    {
+      "target": "java.nio.channels.CancelledKeyException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/CancelledKeyException.html",
+      "sourceEntry": "java.base/java/nio/channels/CancelledKeyException.java",
+      "sourceSha256": "f27dba87dcae88be9f2b891a4e1c000ea1d202735852c0999978f50a73d9b014",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.CancelledKeyException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.Channel",
+      "kind": "interface",
+      "parents": [
+        "java.io.Closeable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/Channel.html",
+      "sourceEntry": "java.base/java/nio/channels/Channel.java",
+      "sourceSha256": "68796c2b2eb1129c9c5581ac8bc5d2a3566b8779db450d1308f32ecc80f672b1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.Channel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOpen()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.Channel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.Channels",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/Channels.html",
+      "sourceEntry": "java.base/java/nio/channels/Channels.java",
+      "sourceSha256": "db94265a27d5d1a89376b801837a6db81307a0606d7af9d70cb319089a3d40f5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "newChannel(java.io.InputStream)",
+          "result": "java.nio.channels.ReadableByteChannel",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newChannel(java.io.OutputStream)",
+          "result": "java.nio.channels.WritableByteChannel",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInputStream(java.nio.channels.AsynchronousByteChannel)",
+          "result": "java.io.InputStream",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInputStream(java.nio.channels.ReadableByteChannel)",
+          "result": "java.io.InputStream",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newOutputStream(java.nio.channels.AsynchronousByteChannel)",
+          "result": "java.io.OutputStream",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newOutputStream(java.nio.channels.WritableByteChannel)",
+          "result": "java.io.OutputStream",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newReader(java.nio.channels.ReadableByteChannel,java.lang.String)",
+          "result": "java.io.Reader",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.Charset)",
+          "result": "java.io.Reader",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.CharsetDecoder,int)",
+          "result": "java.io.Reader",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newWriter(java.nio.channels.WritableByteChannel,java.lang.String)",
+          "result": "java.io.Writer",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.Charset)",
+          "result": "java.io.Writer",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.CharsetEncoder,int)",
+          "result": "java.io.Writer",
+          "declaredBy": "java.nio.channels.Channels",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.ClosedByInterruptException",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.AsynchronousCloseException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/ClosedByInterruptException.html",
+      "sourceEntry": "java.base/java/nio/channels/ClosedByInterruptException.java",
+      "sourceSha256": "aef44becbd4733d8bea0766104e19e5d7bc357ced3eee0a81482b47f13a40995",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.ClosedByInterruptException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.ClosedChannelException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/ClosedChannelException.html",
+      "sourceEntry": "java.base/java/nio/channels/ClosedChannelException.java",
+      "sourceSha256": "2b1e377861342d578df006b9adcc5510cf4b360062c18a712c210d0b68243e47",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.ClosedChannelException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.ClosedSelectorException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/ClosedSelectorException.html",
+      "sourceEntry": "java.base/java/nio/channels/ClosedSelectorException.java",
+      "sourceSha256": "b6f4b91e7bb75192ca320bcc32c041f214b175ba27a6c79b944bb50abab64eab",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.ClosedSelectorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.CompletionHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/CompletionHandler.html",
+      "sourceEntry": "java.base/java/nio/channels/CompletionHandler.java",
+      "sourceSha256": "f89f3d73cd93ee486af2b1368a33776ea69d355ef8ba5b419566515e92421b92",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "completed(java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.CompletionHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "failed(java.lang.Throwable,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.CompletionHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.ConnectionPendingException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/ConnectionPendingException.html",
+      "sourceEntry": "java.base/java/nio/channels/ConnectionPendingException.java",
+      "sourceSha256": "744ee4becfe639f1717841ffb5af0a3d179f048b3aecfb8ede19cd2adb53bfc2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.ConnectionPendingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.DatagramChannel",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.spi.AbstractSelectableChannel",
+        "java.nio.channels.ByteChannel",
+        "java.nio.channels.ScatteringByteChannel",
+        "java.nio.channels.GatheringByteChannel",
+        "java.nio.channels.MulticastChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/DatagramChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/DatagramChannel.java",
+      "sourceSha256": "92850844b282052af28851d29f5a0c306f9486b0a2ba9fd5a92aec1dbcdcc964",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.spi.SelectorProvider)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bind(java.net.SocketAddress)",
+          "result": "java.nio.channels.DatagramChannel",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connect(java.net.SocketAddress)",
+          "result": "java.nio.channels.DatagramChannel",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "disconnect()",
+          "result": "java.nio.channels.DatagramChannel",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalAddress()",
+          "result": "java.net.SocketAddress",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRemoteAddress()",
+          "result": "java.net.SocketAddress",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isConnected()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open()",
+          "result": "java.nio.channels.DatagramChannel",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.net.ProtocolFamily)",
+          "result": "java.nio.channels.DatagramChannel",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer[])",
+          "result": "long",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer[],int,int)",
+          "result": "long",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "receive(java.nio.ByteBuffer)",
+          "result": "java.net.SocketAddress",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "send(java.nio.ByteBuffer,java.net.SocketAddress)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOption(java.net.SocketOption,java.lang.Object)",
+          "result": "java.nio.channels.DatagramChannel",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "socket()",
+          "result": "java.net.DatagramSocket",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validOps()",
+          "result": "int",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer[])",
+          "result": "long",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer[],int,int)",
+          "result": "long",
+          "declaredBy": "java.nio.channels.DatagramChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.FileChannel",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.spi.AbstractInterruptibleChannel",
+        "java.nio.channels.SeekableByteChannel",
+        "java.nio.channels.GatheringByteChannel",
+        "java.nio.channels.ScatteringByteChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/FileChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/FileChannel.java",
+      "sourceSha256": "ee6cdf14fc0ac3af2d39c1a70070dd1c32ed8119c7d31780a072022e4259728d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "force(boolean)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lock()",
+          "result": "java.nio.channels.FileLock",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lock(long,long,boolean)",
+          "result": "java.nio.channels.FileLock",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "map(java.nio.channels.FileChannel$MapMode,long,long)",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "map(java.nio.channels.FileChannel$MapMode,long,long,java.lang.foreign.Arena)",
+          "result": "java.lang.foreign.MemorySegment",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.nio.file.Path,java.nio.file.OpenOption[])",
+          "result": "java.nio.channels.FileChannel",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])",
+          "result": "java.nio.channels.FileChannel",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position()",
+          "result": "long",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "position(long)",
+          "result": "java.nio.channels.FileChannel",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer,long)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer[])",
+          "result": "long",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer[],int,int)",
+          "result": "long",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "long",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "transferFrom(java.nio.channels.ReadableByteChannel,long,long)",
+          "result": "long",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "transferTo(long,long,java.nio.channels.WritableByteChannel)",
+          "result": "long",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "truncate(long)",
+          "result": "java.nio.channels.FileChannel",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock()",
+          "result": "java.nio.channels.FileLock",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock(long,long,boolean)",
+          "result": "java.nio.channels.FileLock",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer,long)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer[])",
+          "result": "long",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer[],int,int)",
+          "result": "long",
+          "declaredBy": "java.nio.channels.FileChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.FileChannel$MapMode",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/FileChannel.MapMode.html",
+      "sourceEntry": "java.base/java/nio/channels/FileChannel.java",
+      "sourceSha256": "ee6cdf14fc0ac3af2d39c1a70070dd1c32ed8119c7d31780a072022e4259728d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "PRIVATE",
+          "result": "java.nio.channels.FileChannel$MapMode",
+          "declaredBy": "java.nio.channels.FileChannel$MapMode",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "READ_ONLY",
+          "result": "java.nio.channels.FileChannel$MapMode",
+          "declaredBy": "java.nio.channels.FileChannel$MapMode",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "READ_WRITE",
+          "result": "java.nio.channels.FileChannel$MapMode",
+          "declaredBy": "java.nio.channels.FileChannel$MapMode",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.channels.FileChannel$MapMode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.FileLock",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.AutoCloseable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/FileLock.html",
+      "sourceEntry": "java.base/java/nio/channels/FileLock.java",
+      "sourceSha256": "950bab0442e9149464727fafddf1bb2db29785c6fa728392cebac030deef9f87",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.AsynchronousFileChannel,long,long,boolean)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.FileChannel,long,long,boolean)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acquiredBy()",
+          "result": "java.nio.channels.Channel",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "channel()",
+          "result": "java.nio.channels.FileChannel",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isShared()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValid()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "overlaps(long,long)",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position()",
+          "result": "long",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "release()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "long",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.channels.FileLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.FileLockInterruptionException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/FileLockInterruptionException.html",
+      "sourceEntry": "java.base/java/nio/channels/FileLockInterruptionException.java",
+      "sourceSha256": "6e17e71d473fc84deca644335be9a150b8ecc85e035aee9976b450976dba8f88",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.FileLockInterruptionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.GatheringByteChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.WritableByteChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/GatheringByteChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/GatheringByteChannel.java",
+      "sourceSha256": "1cb6dfa5ec23d55146d1d8f95b2a0bf4685a57f464e17d66914b129003fafbc3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer[])",
+          "result": "long",
+          "declaredBy": "java.nio.channels.GatheringByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer[],int,int)",
+          "result": "long",
+          "declaredBy": "java.nio.channels.GatheringByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.IllegalBlockingModeException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/IllegalBlockingModeException.html",
+      "sourceEntry": "java.base/java/nio/channels/IllegalBlockingModeException.java",
+      "sourceSha256": "55738af4676afbfe88e6a18cd1c2b82a0e98503a91a50f99693e55bd2770bd5f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.IllegalBlockingModeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.IllegalChannelGroupException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/IllegalChannelGroupException.html",
+      "sourceEntry": "java.base/java/nio/channels/IllegalChannelGroupException.java",
+      "sourceSha256": "e10b537d918ca8b94e090347c895ad7b4b175494f433f992a01728cbd249eb70",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.IllegalChannelGroupException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.IllegalSelectorException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/IllegalSelectorException.html",
+      "sourceEntry": "java.base/java/nio/channels/IllegalSelectorException.java",
+      "sourceSha256": "311a7b83d4ebb7455dad57609381a1f6eb0c19876d33f701e92b01a8996d1539",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.IllegalSelectorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.InterruptedByTimeoutException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/InterruptedByTimeoutException.html",
+      "sourceEntry": "java.base/java/nio/channels/InterruptedByTimeoutException.java",
+      "sourceSha256": "cc0662af5f6452926166534d141a0a17f7bd0d713b79a866811fa274e45ba94a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.InterruptedByTimeoutException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.InterruptibleChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.Channel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/InterruptibleChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/InterruptibleChannel.java",
+      "sourceSha256": "818320f6056b08675ef71b64b502c9f876224e5116ae992cdf2672c5f4c9a5c9",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.InterruptibleChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.MembershipKey",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/MembershipKey.html",
+      "sourceEntry": "java.base/java/nio/channels/MembershipKey.java",
+      "sourceSha256": "873d9031ed47ff7664b0f888cf49b0507299d781b59eb3e788169cf0b432a5e8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.MembershipKey",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "block(java.net.InetAddress)",
+          "result": "java.nio.channels.MembershipKey",
+          "declaredBy": "java.nio.channels.MembershipKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "channel()",
+          "result": "java.nio.channels.MulticastChannel",
+          "declaredBy": "java.nio.channels.MembershipKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "drop()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.MembershipKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "group()",
+          "result": "java.net.InetAddress",
+          "declaredBy": "java.nio.channels.MembershipKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValid()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.MembershipKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "networkInterface()",
+          "result": "java.net.NetworkInterface",
+          "declaredBy": "java.nio.channels.MembershipKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sourceAddress()",
+          "result": "java.net.InetAddress",
+          "declaredBy": "java.nio.channels.MembershipKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unblock(java.net.InetAddress)",
+          "result": "java.nio.channels.MembershipKey",
+          "declaredBy": "java.nio.channels.MembershipKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.MulticastChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.NetworkChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/MulticastChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/MulticastChannel.java",
+      "sourceSha256": "fbd1805f15821970c58334016e244ae3ba6176e45c699742d022d63a5ae403cc",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.MulticastChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "join(java.net.InetAddress,java.net.NetworkInterface)",
+          "result": "java.nio.channels.MembershipKey",
+          "declaredBy": "java.nio.channels.MulticastChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "join(java.net.InetAddress,java.net.NetworkInterface,java.net.InetAddress)",
+          "result": "java.nio.channels.MembershipKey",
+          "declaredBy": "java.nio.channels.MulticastChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.NetworkChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.Channel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/NetworkChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/NetworkChannel.java",
+      "sourceSha256": "42e56d123752c2163ae873d5b9749c52af179b9a4baff5543b40710be3ac9d96",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "bind(java.net.SocketAddress)",
+          "result": "java.nio.channels.NetworkChannel",
+          "declaredBy": "java.nio.channels.NetworkChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalAddress()",
+          "result": "java.net.SocketAddress",
+          "declaredBy": "java.nio.channels.NetworkChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOption(java.net.SocketOption)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.nio.channels.NetworkChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOption(java.net.SocketOption,java.lang.Object)",
+          "result": "java.nio.channels.NetworkChannel",
+          "declaredBy": "java.nio.channels.NetworkChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportedOptions()",
+          "result": "java.util.Set",
+          "declaredBy": "java.nio.channels.NetworkChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.NoConnectionPendingException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/NoConnectionPendingException.html",
+      "sourceEntry": "java.base/java/nio/channels/NoConnectionPendingException.java",
+      "sourceSha256": "cb538e661aec873c736939199b90b65f9b404e64d0801c9fa49d2d832555d3dc",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.NoConnectionPendingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.NonReadableChannelException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/NonReadableChannelException.html",
+      "sourceEntry": "java.base/java/nio/channels/NonReadableChannelException.java",
+      "sourceSha256": "4d95a583ee47147681ebe3ba7a2f5c4ca3e98c947bd7e0ed1da9a2721a23d4d0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.NonReadableChannelException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.NonWritableChannelException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/NonWritableChannelException.html",
+      "sourceEntry": "java.base/java/nio/channels/NonWritableChannelException.java",
+      "sourceSha256": "d197a37958e306342209e8bdc7e108f5cee54f400a4a335ac0144c71e15bfb54",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.NonWritableChannelException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.NotYetBoundException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/NotYetBoundException.html",
+      "sourceEntry": "java.base/java/nio/channels/NotYetBoundException.java",
+      "sourceSha256": "fcc30bc0b3722f7367bd77adb2a3d5526d55cc2691fd137c76d3f111ae4fa251",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.NotYetBoundException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.NotYetConnectedException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/NotYetConnectedException.html",
+      "sourceEntry": "java.base/java/nio/channels/NotYetConnectedException.java",
+      "sourceSha256": "a14fcabd0c707cd3b74ecbc73fad1d9d7da7ee9cad8a30109610315b5e256ce6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.NotYetConnectedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.OverlappingFileLockException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/OverlappingFileLockException.html",
+      "sourceEntry": "java.base/java/nio/channels/OverlappingFileLockException.java",
+      "sourceSha256": "bcf9e50aaa2f734904d12a9996399904d2908b6d11e0b8e333add9b59d19e32a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.OverlappingFileLockException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.Pipe",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/Pipe.html",
+      "sourceEntry": "java.base/java/nio/channels/Pipe.java",
+      "sourceSha256": "4eb2155288d11dcd91daa62d37f3ef55cfa19bf792651ef1dac9829741e0c5b8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.Pipe",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open()",
+          "result": "java.nio.channels.Pipe",
+          "declaredBy": "java.nio.channels.Pipe",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sink()",
+          "result": "java.nio.channels.Pipe$SinkChannel",
+          "declaredBy": "java.nio.channels.Pipe",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "source()",
+          "result": "java.nio.channels.Pipe$SourceChannel",
+          "declaredBy": "java.nio.channels.Pipe",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.Pipe$SinkChannel",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.spi.AbstractSelectableChannel",
+        "java.nio.channels.WritableByteChannel",
+        "java.nio.channels.GatheringByteChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/Pipe.SinkChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/Pipe.java",
+      "sourceSha256": "4eb2155288d11dcd91daa62d37f3ef55cfa19bf792651ef1dac9829741e0c5b8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.spi.SelectorProvider)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.Pipe$SinkChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validOps()",
+          "result": "int",
+          "declaredBy": "java.nio.channels.Pipe$SinkChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.Pipe$SourceChannel",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.spi.AbstractSelectableChannel",
+        "java.nio.channels.ReadableByteChannel",
+        "java.nio.channels.ScatteringByteChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/Pipe.SourceChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/Pipe.java",
+      "sourceSha256": "4eb2155288d11dcd91daa62d37f3ef55cfa19bf792651ef1dac9829741e0c5b8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.spi.SelectorProvider)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.Pipe$SourceChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validOps()",
+          "result": "int",
+          "declaredBy": "java.nio.channels.Pipe$SourceChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.ReadPendingException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/ReadPendingException.html",
+      "sourceEntry": "java.base/java/nio/channels/ReadPendingException.java",
+      "sourceSha256": "dc7096878248d13c48dbf0a560de96484083b42d79215f5e7e2d20a09b8821c4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.ReadPendingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.ReadableByteChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.Channel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/ReadableByteChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/ReadableByteChannel.java",
+      "sourceSha256": "de239de9700acc56b65c18a2e4eea63a39a65fa1f2be8b85c3a7065219171242",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.ReadableByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.ScatteringByteChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.ReadableByteChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/ScatteringByteChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/ScatteringByteChannel.java",
+      "sourceSha256": "2ba120bce1a48c912e9ee6812015bb6f39956e1d237a1e4edbfbd3f8e7e112f5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer[])",
+          "result": "long",
+          "declaredBy": "java.nio.channels.ScatteringByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer[],int,int)",
+          "result": "long",
+          "declaredBy": "java.nio.channels.ScatteringByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.SeekableByteChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.ByteChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/SeekableByteChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/SeekableByteChannel.java",
+      "sourceSha256": "a524dc306e0826a58bcdd1502893043ab060c7b01557ab7983359a0b0d2083b7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "position()",
+          "result": "long",
+          "declaredBy": "java.nio.channels.SeekableByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position(long)",
+          "result": "java.nio.channels.SeekableByteChannel",
+          "declaredBy": "java.nio.channels.SeekableByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SeekableByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "long",
+          "declaredBy": "java.nio.channels.SeekableByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "truncate(long)",
+          "result": "java.nio.channels.SeekableByteChannel",
+          "declaredBy": "java.nio.channels.SeekableByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SeekableByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.SelectableChannel",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.spi.AbstractInterruptibleChannel",
+        "java.nio.channels.Channel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/SelectableChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/SelectableChannel.java",
+      "sourceSha256": "ff3e4b0170011fb24d867f4f6d06cfef97d322981d2da7ee8927558ab4e1e089",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.SelectableChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "blockingLock()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.nio.channels.SelectableChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "configureBlocking(boolean)",
+          "result": "java.nio.channels.SelectableChannel",
+          "declaredBy": "java.nio.channels.SelectableChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBlocking()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SelectableChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRegistered()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SelectableChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "keyFor(java.nio.channels.Selector)",
+          "result": "java.nio.channels.SelectionKey",
+          "declaredBy": "java.nio.channels.SelectableChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provider()",
+          "result": "java.nio.channels.spi.SelectorProvider",
+          "declaredBy": "java.nio.channels.SelectableChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "register(java.nio.channels.Selector,int)",
+          "result": "java.nio.channels.SelectionKey",
+          "declaredBy": "java.nio.channels.SelectableChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "register(java.nio.channels.Selector,int,java.lang.Object)",
+          "result": "java.nio.channels.SelectionKey",
+          "declaredBy": "java.nio.channels.SelectableChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validOps()",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SelectableChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.SelectionKey",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/SelectionKey.html",
+      "sourceEntry": "java.base/java/nio/channels/SelectionKey.java",
+      "sourceSha256": "bcadf29d1d46e474739423b73574b188a2a6623ce6e3568b622eacb1691bee0e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "OP_ACCEPT",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OP_CONNECT",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OP_READ",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OP_WRITE",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "attach(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "attachment()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "cancel()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "channel()",
+          "result": "java.nio.channels.SelectableChannel",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "interestOps()",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "interestOps(int)",
+          "result": "java.nio.channels.SelectionKey",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "interestOpsAnd(int)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "interestOpsOr(int)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAcceptable()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isConnectable()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadable()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValid()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWritable()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readyOps()",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "selector()",
+          "result": "java.nio.channels.Selector",
+          "declaredBy": "java.nio.channels.SelectionKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.Selector",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Closeable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/Selector.html",
+      "sourceEntry": "java.base/java/nio/channels/Selector.java",
+      "sourceSha256": "6a99a4833a4a469a6a1f68048705a865c44cdee64bfa06e3e7d2e61776d93f9f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOpen()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "keys()",
+          "result": "java.util.Set",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open()",
+          "result": "java.nio.channels.Selector",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provider()",
+          "result": "java.nio.channels.spi.SelectorProvider",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "select()",
+          "result": "int",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "select(java.util.function.Consumer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "select(java.util.function.Consumer,long)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "select(long)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "selectNow()",
+          "result": "int",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "selectNow(java.util.function.Consumer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "selectedKeys()",
+          "result": "java.util.Set",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wakeup()",
+          "result": "java.nio.channels.Selector",
+          "declaredBy": "java.nio.channels.Selector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.ServerSocketChannel",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.spi.AbstractSelectableChannel",
+        "java.nio.channels.NetworkChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/ServerSocketChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/ServerSocketChannel.java",
+      "sourceSha256": "ba2b7d5f8fcb33d5f26ed7be446a09968d1b4beb6ca5ba56e7a79fd105c8e339",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.spi.SelectorProvider)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.ServerSocketChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accept()",
+          "result": "java.nio.channels.SocketChannel",
+          "declaredBy": "java.nio.channels.ServerSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bind(java.net.SocketAddress)",
+          "result": "java.nio.channels.ServerSocketChannel",
+          "declaredBy": "java.nio.channels.ServerSocketChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bind(java.net.SocketAddress,int)",
+          "result": "java.nio.channels.ServerSocketChannel",
+          "declaredBy": "java.nio.channels.ServerSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalAddress()",
+          "result": "java.net.SocketAddress",
+          "declaredBy": "java.nio.channels.ServerSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open()",
+          "result": "java.nio.channels.ServerSocketChannel",
+          "declaredBy": "java.nio.channels.ServerSocketChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.net.ProtocolFamily)",
+          "result": "java.nio.channels.ServerSocketChannel",
+          "declaredBy": "java.nio.channels.ServerSocketChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOption(java.net.SocketOption,java.lang.Object)",
+          "result": "java.nio.channels.ServerSocketChannel",
+          "declaredBy": "java.nio.channels.ServerSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "socket()",
+          "result": "java.net.ServerSocket",
+          "declaredBy": "java.nio.channels.ServerSocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validOps()",
+          "result": "int",
+          "declaredBy": "java.nio.channels.ServerSocketChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.ShutdownChannelGroupException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/ShutdownChannelGroupException.html",
+      "sourceEntry": "java.base/java/nio/channels/ShutdownChannelGroupException.java",
+      "sourceSha256": "e99c175d7e1964bbd81f21df1e4b9434cbf8df9662e343fd177d870ebc6afab8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.ShutdownChannelGroupException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.SocketChannel",
+      "kind": "class",
+      "parents": [
+        "java.nio.channels.spi.AbstractSelectableChannel",
+        "java.nio.channels.ByteChannel",
+        "java.nio.channels.ScatteringByteChannel",
+        "java.nio.channels.GatheringByteChannel",
+        "java.nio.channels.NetworkChannel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/SocketChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/SocketChannel.java",
+      "sourceSha256": "165bbc66e374e88ea3cd1bca4c30ba5b5aedbd5783c147d6e684cb638f2447a8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.channels.spi.SelectorProvider)",
+          "result": "void",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bind(java.net.SocketAddress)",
+          "result": "java.nio.channels.SocketChannel",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connect(java.net.SocketAddress)",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "finishConnect()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalAddress()",
+          "result": "java.net.SocketAddress",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRemoteAddress()",
+          "result": "java.net.SocketAddress",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isConnected()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isConnectionPending()",
+          "result": "boolean",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open()",
+          "result": "java.nio.channels.SocketChannel",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.net.ProtocolFamily)",
+          "result": "java.nio.channels.SocketChannel",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.net.SocketAddress)",
+          "result": "java.nio.channels.SocketChannel",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer[])",
+          "result": "long",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer[],int,int)",
+          "result": "long",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOption(java.net.SocketOption,java.lang.Object)",
+          "result": "java.nio.channels.SocketChannel",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shutdownInput()",
+          "result": "java.nio.channels.SocketChannel",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "shutdownOutput()",
+          "result": "java.nio.channels.SocketChannel",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "socket()",
+          "result": "java.net.Socket",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validOps()",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer[])",
+          "result": "long",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer[],int,int)",
+          "result": "long",
+          "declaredBy": "java.nio.channels.SocketChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.UnresolvedAddressException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/UnresolvedAddressException.html",
+      "sourceEntry": "java.base/java/nio/channels/UnresolvedAddressException.java",
+      "sourceSha256": "20a3353bb671f9bdf4fa679f00d38a34fde01ea988c7ed48b00ae37e138b3645",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.UnresolvedAddressException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.UnsupportedAddressTypeException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/UnsupportedAddressTypeException.html",
+      "sourceEntry": "java.base/java/nio/channels/UnsupportedAddressTypeException.java",
+      "sourceSha256": "d92fc5a4cd8c6f885dccdcfed86db740395f2ef5267d663c8565732d70b9db58",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.UnsupportedAddressTypeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.WritableByteChannel",
+      "kind": "interface",
+      "parents": [
+        "java.nio.channels.Channel"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/WritableByteChannel.html",
+      "sourceEntry": "java.base/java/nio/channels/WritableByteChannel.java",
+      "sourceSha256": "7ad87a19dcfe2b5bcd017f5a1c542e6a91a97242e574c3db6db1f765bf0122a6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "write(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.channels.WritableByteChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.channels.WritePendingException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/WritePendingException.html",
+      "sourceEntry": "java.base/java/nio/channels/WritePendingException.java",
+      "sourceSha256": "f309f0315c6b4fff96e83c8158f15cf4d0bcd724bc384c1db38ca2abfbe05e9d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.channels.WritePendingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

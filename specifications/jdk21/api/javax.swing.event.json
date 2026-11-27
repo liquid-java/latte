@@ -1,0 +1,2693 @@
+{
+  "name": "javax.swing.event",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.swing.event.AncestorEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.AWTEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/AncestorEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/AncestorEvent.java",
+      "sourceSha256": "403ac4973d26355924ae5e3645cb573d2c12cc8ff249046f7d7507880643c187",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.JComponent,int,java.awt.Container,java.awt.Container)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.AncestorEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ANCESTOR_ADDED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.AncestorEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ANCESTOR_MOVED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.AncestorEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ANCESTOR_REMOVED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.AncestorEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAncestor()",
+          "result": "java.awt.Container",
+          "declaredBy": "javax.swing.event.AncestorEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAncestorParent()",
+          "result": "java.awt.Container",
+          "declaredBy": "javax.swing.event.AncestorEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getComponent()",
+          "result": "javax.swing.JComponent",
+          "declaredBy": "javax.swing.event.AncestorEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.AncestorListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/AncestorListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/AncestorListener.java",
+      "sourceSha256": "28678df49667a2891315fad93b13ad235ef1f416582fecd7fe44e4dad226344e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "ancestorAdded(javax.swing.event.AncestorEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.AncestorListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ancestorMoved(javax.swing.event.AncestorEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.AncestorListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ancestorRemoved(javax.swing.event.AncestorEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.AncestorListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.CaretEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/CaretEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/CaretEvent.java",
+      "sourceSha256": "80131febb052e50e5e4e90c1fb5d68cd0e9efc98c470dc92583152552bab0740",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.CaretEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDot()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.CaretEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMark()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.CaretEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.CaretListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/CaretListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/CaretListener.java",
+      "sourceSha256": "a51ca0f712c9030669f6921a9ad39aab01837d7075e27437c13621b660c24e80",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "caretUpdate(javax.swing.event.CaretEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.CaretListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.CellEditorListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/CellEditorListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/CellEditorListener.java",
+      "sourceSha256": "4c612fd36d9bcfa611b3cf1cc2b7191373d01df2139eae24994c10ca25c0db91",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "editingCanceled(javax.swing.event.ChangeEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.CellEditorListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "editingStopped(javax.swing.event.ChangeEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.CellEditorListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.ChangeEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/ChangeEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/ChangeEvent.java",
+      "sourceSha256": "d9f1f1330d5ba42fa85830912d11ddb0a84abc94213fb0f6fb956b5fd3ff274a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.ChangeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.ChangeListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/ChangeListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/ChangeListener.java",
+      "sourceSha256": "24083b938f3caec675d2bdd77c9751663bfbdff8de7381020e21e2a55dc85e3d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "stateChanged(javax.swing.event.ChangeEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.ChangeListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.DocumentEvent",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/DocumentEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/DocumentEvent.java",
+      "sourceSha256": "f090f4bfac98fe93f96829dfd2fb478f2922d2754e1ecf3bec5021e4142ef38a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getChange(javax.swing.text.Element)",
+          "result": "javax.swing.event.DocumentEvent$ElementChange",
+          "declaredBy": "javax.swing.event.DocumentEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDocument()",
+          "result": "javax.swing.text.Document",
+          "declaredBy": "javax.swing.event.DocumentEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLength()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.DocumentEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffset()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.DocumentEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "javax.swing.event.DocumentEvent$EventType",
+          "declaredBy": "javax.swing.event.DocumentEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.DocumentEvent$ElementChange",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html",
+      "sourceEntry": "java.desktop/javax/swing/event/DocumentEvent.java",
+      "sourceSha256": "f090f4bfac98fe93f96829dfd2fb478f2922d2754e1ecf3bec5021e4142ef38a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getChildrenAdded()",
+          "result": "javax.swing.text.Element[]",
+          "declaredBy": "javax.swing.event.DocumentEvent$ElementChange",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildrenRemoved()",
+          "result": "javax.swing.text.Element[]",
+          "declaredBy": "javax.swing.event.DocumentEvent$ElementChange",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElement()",
+          "result": "javax.swing.text.Element",
+          "declaredBy": "javax.swing.event.DocumentEvent$ElementChange",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndex()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.DocumentEvent$ElementChange",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.DocumentEvent$EventType",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html",
+      "sourceEntry": "java.desktop/javax/swing/event/DocumentEvent.java",
+      "sourceSha256": "f090f4bfac98fe93f96829dfd2fb478f2922d2754e1ecf3bec5021e4142ef38a",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CHANGE",
+          "result": "javax.swing.event.DocumentEvent$EventType",
+          "declaredBy": "javax.swing.event.DocumentEvent$EventType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INSERT",
+          "result": "javax.swing.event.DocumentEvent$EventType",
+          "declaredBy": "javax.swing.event.DocumentEvent$EventType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REMOVE",
+          "result": "javax.swing.event.DocumentEvent$EventType",
+          "declaredBy": "javax.swing.event.DocumentEvent$EventType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.event.DocumentEvent$EventType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.DocumentListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/DocumentListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/DocumentListener.java",
+      "sourceSha256": "82cdc926a2c08bba02ad10a76a8b9a228e2a37c3221c1228b630b01f6b19d0b4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "changedUpdate(javax.swing.event.DocumentEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.DocumentListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertUpdate(javax.swing.event.DocumentEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.DocumentListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeUpdate(javax.swing.event.DocumentEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.DocumentListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.EventListenerList",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/EventListenerList.html",
+      "sourceEntry": "java.desktop/javax/swing/event/EventListenerList.java",
+      "sourceSha256": "5484478d2541d1d7b9744e084cfc912ce2963ca304f4ffd8c4a811657e68f19b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.event.EventListenerList",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(java.lang.Class,java.util.EventListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.EventListenerList",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListenerCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.EventListenerList",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListenerCount(java.lang.Class)",
+          "result": "int",
+          "declaredBy": "javax.swing.event.EventListenerList",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListenerList()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.swing.event.EventListenerList",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListeners(java.lang.Class)",
+          "result": "java.util.EventListener[]",
+          "declaredBy": "javax.swing.event.EventListenerList",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "listenerList",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.swing.event.EventListenerList",
+          "modifiers": 196,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Class,java.util.EventListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.EventListenerList",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.event.EventListenerList",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.HyperlinkEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/HyperlinkEvent.java",
+      "sourceSha256": "2d6cdfe7e4c2288226a5c6001112fb2378c4a48671aa5b8d7e262fde4079130e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.HyperlinkEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.HyperlinkEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,java.lang.String,javax.swing.text.Element)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.HyperlinkEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,java.lang.String,javax.swing.text.Element,java.awt.event.InputEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.HyperlinkEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.event.HyperlinkEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEventType()",
+          "result": "javax.swing.event.HyperlinkEvent$EventType",
+          "declaredBy": "javax.swing.event.HyperlinkEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInputEvent()",
+          "result": "java.awt.event.InputEvent",
+          "declaredBy": "javax.swing.event.HyperlinkEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceElement()",
+          "result": "javax.swing.text.Element",
+          "declaredBy": "javax.swing.event.HyperlinkEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURL()",
+          "result": "java.net.URL",
+          "declaredBy": "javax.swing.event.HyperlinkEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.HyperlinkEvent$EventType",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.EventType.html",
+      "sourceEntry": "java.desktop/javax/swing/event/HyperlinkEvent.java",
+      "sourceSha256": "2d6cdfe7e4c2288226a5c6001112fb2378c4a48671aa5b8d7e262fde4079130e",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ACTIVATED",
+          "result": "javax.swing.event.HyperlinkEvent$EventType",
+          "declaredBy": "javax.swing.event.HyperlinkEvent$EventType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENTERED",
+          "result": "javax.swing.event.HyperlinkEvent$EventType",
+          "declaredBy": "javax.swing.event.HyperlinkEvent$EventType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EXITED",
+          "result": "javax.swing.event.HyperlinkEvent$EventType",
+          "declaredBy": "javax.swing.event.HyperlinkEvent$EventType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.event.HyperlinkEvent$EventType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.HyperlinkListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/HyperlinkListener.java",
+      "sourceSha256": "6d23b94c7a7e9f5ff078a1f4504ed3759c7895a2c088f3797335c66a08e2273f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "hyperlinkUpdate(javax.swing.event.HyperlinkEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.HyperlinkListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.InternalFrameAdapter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.swing.event.InternalFrameListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html",
+      "sourceEntry": "java.desktop/javax/swing/event/InternalFrameAdapter.java",
+      "sourceSha256": "121b696c695d89326ad0180504216baf8b30f1971d69ead1c7a7eb0ce4d7951b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameAdapter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameActivated(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameClosed(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameClosing(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameDeactivated(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameDeiconified(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameIconified(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameOpened(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.InternalFrameEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.AWTEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/InternalFrameEvent.java",
+      "sourceSha256": "8cf6c80da705255b147da4d6822a9d5c27dd54bcf9793064dbe01e61aa97ba91",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.JInternalFrame,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_FRAME_ACTIVATED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_FRAME_CLOSED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_FRAME_CLOSING",
+          "result": "int",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_FRAME_DEACTIVATED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_FRAME_DEICONIFIED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_FRAME_FIRST",
+          "result": "int",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_FRAME_ICONIFIED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_FRAME_LAST",
+          "result": "int",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_FRAME_OPENED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getInternalFrame()",
+          "result": "javax.swing.JInternalFrame",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paramString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.event.InternalFrameEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.InternalFrameListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/InternalFrameListener.java",
+      "sourceSha256": "b12f64f75bc0fc59669d2915b7efb876ca6eefe225d67b09d72f4d1051386502",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "internalFrameActivated(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameClosed(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameClosing(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameDeactivated(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameDeiconified(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameIconified(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalFrameOpened(javax.swing.event.InternalFrameEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.InternalFrameListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.ListDataEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/ListDataEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/ListDataEvent.java",
+      "sourceSha256": "5c2e4c7a9db855bcbbd635d2ab5fe0e23b0149afb8ff07a710463fa09b712e76",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.ListDataEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "CONTENTS_CHANGED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.ListDataEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERVAL_ADDED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.ListDataEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERVAL_REMOVED",
+          "result": "int",
+          "declaredBy": "javax.swing.event.ListDataEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndex0()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.ListDataEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndex1()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.ListDataEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.ListDataEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.event.ListDataEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.ListDataListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/ListDataListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/ListDataListener.java",
+      "sourceSha256": "c406d3bfec6701c9e52bc4b99515ab62b0e25b5eee650aa9d10708d99710d6b5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "contentsChanged(javax.swing.event.ListDataEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.ListDataListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intervalAdded(javax.swing.event.ListDataEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.ListDataListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intervalRemoved(javax.swing.event.ListDataEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.ListDataListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.ListSelectionEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/ListSelectionEvent.java",
+      "sourceSha256": "545e6686e768a42df44f45e693a66c336ecd4534734d225129bc6d9fe4921473",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,int,int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.ListSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFirstIndex()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.ListSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLastIndex()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.ListSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValueIsAdjusting()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.event.ListSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.event.ListSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.ListSelectionListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/ListSelectionListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/ListSelectionListener.java",
+      "sourceSha256": "390ab566a9e05771c83505b932c9b7057e7e5bc502c93e820a5dfb6d2298a65c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "valueChanged(javax.swing.event.ListSelectionEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.ListSelectionListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.MenuDragMouseEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.event.MouseEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/MenuDragMouseEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/MenuDragMouseEvent.java",
+      "sourceSha256": "8c0ba0f68460f3176c05abe570d2dcd51e3e7c2b647eead78a49e2cb28912421",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Component,int,long,int,int,int,int,boolean,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuDragMouseEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Component,int,long,int,int,int,int,int,int,boolean,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuDragMouseEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMenuSelectionManager()",
+          "result": "javax.swing.MenuSelectionManager",
+          "declaredBy": "javax.swing.event.MenuDragMouseEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPath()",
+          "result": "javax.swing.MenuElement[]",
+          "declaredBy": "javax.swing.event.MenuDragMouseEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.MenuDragMouseListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/MenuDragMouseListener.java",
+      "sourceSha256": "3cf980202071d42608718a673d65df03b8d2bd5c71097e506fca8c1e794dfeef",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "menuDragMouseDragged(javax.swing.event.MenuDragMouseEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuDragMouseListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "menuDragMouseEntered(javax.swing.event.MenuDragMouseEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuDragMouseListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "menuDragMouseExited(javax.swing.event.MenuDragMouseEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuDragMouseListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "menuDragMouseReleased(javax.swing.event.MenuDragMouseEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuDragMouseListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.MenuEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/MenuEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/MenuEvent.java",
+      "sourceSha256": "3e52471370bae5c62689b45844ca0225f70477dc4259d2c1200998f0e496a6c4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.MenuKeyEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.event.KeyEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/MenuKeyEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/MenuKeyEvent.java",
+      "sourceSha256": "3e01a855c773956ac0e5618eec66a36e17c84ed11b87466599e9ca3cc81a12c9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Component,int,long,int,int,char,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuKeyEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMenuSelectionManager()",
+          "result": "javax.swing.MenuSelectionManager",
+          "declaredBy": "javax.swing.event.MenuKeyEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPath()",
+          "result": "javax.swing.MenuElement[]",
+          "declaredBy": "javax.swing.event.MenuKeyEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.MenuKeyListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/MenuKeyListener.java",
+      "sourceSha256": "b74a6e72319674544454c1da355966b1ac44623059bcb46fd229a23cb31c5679",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "menuKeyPressed(javax.swing.event.MenuKeyEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuKeyListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "menuKeyReleased(javax.swing.event.MenuKeyEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuKeyListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "menuKeyTyped(javax.swing.event.MenuKeyEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuKeyListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.MenuListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/MenuListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/MenuListener.java",
+      "sourceSha256": "209d65ee7c13052d4b601642414b94a7fa4531863c4a16dab35f0ded722e203d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "menuCanceled(javax.swing.event.MenuEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "menuDeselected(javax.swing.event.MenuEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "menuSelected(javax.swing.event.MenuEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MenuListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.MouseInputAdapter",
+      "kind": "class",
+      "parents": [
+        "java.awt.event.MouseAdapter",
+        "javax.swing.event.MouseInputListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html",
+      "sourceEntry": "java.desktop/javax/swing/event/MouseInputAdapter.java",
+      "sourceSha256": "2d9a21e9bc9e15781987395c784d36095eeb65d1abc7f160218a03bdade923aa",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.event.MouseInputAdapter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.MouseInputListener",
+      "kind": "interface",
+      "parents": [
+        "java.awt.event.MouseListener",
+        "java.awt.event.MouseMotionListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/MouseInputListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/MouseInputListener.java",
+      "sourceSha256": "b67ecc9e20fe67c5f646cc55346aaa44e570136921d31fb52736c6f0cc095700",
+      "members": []
+    },
+    {
+      "target": "javax.swing.event.PopupMenuEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/PopupMenuEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/PopupMenuEvent.java",
+      "sourceSha256": "11b0383f84efe1fecff0143cc71389bc593d39b6373b5dff477dc34525a3439d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.PopupMenuEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.PopupMenuListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/PopupMenuListener.java",
+      "sourceSha256": "0b25ff0b39ed0c436eb7b7e5b39399dbfde859e03b29780d9ab97649dc665d2c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "popupMenuCanceled(javax.swing.event.PopupMenuEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.PopupMenuListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.PopupMenuListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.PopupMenuListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.RowSorterEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/RowSorterEvent.java",
+      "sourceSha256": "444bc1334c295e3356c84604dde6ca8caba7084fc93e6ea2e3ad64eedbefc509",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.RowSorter)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.RowSorterEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.RowSorter,javax.swing.event.RowSorterEvent$Type,int[])",
+          "result": "void",
+          "declaredBy": "javax.swing.event.RowSorterEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "convertPreviousRowIndexToModel(int)",
+          "result": "int",
+          "declaredBy": "javax.swing.event.RowSorterEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPreviousRowCount()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.RowSorterEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSource()",
+          "result": "javax.swing.RowSorter",
+          "declaredBy": "javax.swing.event.RowSorterEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "javax.swing.event.RowSorterEvent$Type",
+          "declaredBy": "javax.swing.event.RowSorterEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.RowSorterEvent$Type",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html",
+      "sourceEntry": "java.desktop/javax/swing/event/RowSorterEvent.java",
+      "sourceSha256": "444bc1334c295e3356c84604dde6ca8caba7084fc93e6ea2e3ad64eedbefc509",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "SORTED",
+          "result": "javax.swing.event.RowSorterEvent$Type",
+          "declaredBy": "javax.swing.event.RowSorterEvent$Type",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SORT_ORDER_CHANGED",
+          "result": "javax.swing.event.RowSorterEvent$Type",
+          "declaredBy": "javax.swing.event.RowSorterEvent$Type",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.swing.event.RowSorterEvent$Type",
+          "declaredBy": "javax.swing.event.RowSorterEvent$Type",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.swing.event.RowSorterEvent$Type[]",
+          "declaredBy": "javax.swing.event.RowSorterEvent$Type",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.RowSorterListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/RowSorterListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/RowSorterListener.java",
+      "sourceSha256": "e9bae086f34e85b00fb3a174f8e8c57b917aa857cdc0f7353d87d2ebd786cbd8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "sorterChanged(javax.swing.event.RowSorterEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.RowSorterListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.SwingPropertyChangeSupport",
+      "kind": "class",
+      "parents": [
+        "java.beans.PropertyChangeSupport"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html",
+      "sourceEntry": "java.desktop/javax/swing/event/SwingPropertyChangeSupport.java",
+      "sourceSha256": "1d692f4034d66a7e7193928d0da6f29e06a3fe50faff963f6c8002a51fd1d70b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.SwingPropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.SwingPropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firePropertyChange(java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.SwingPropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNotifyOnEDT()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.event.SwingPropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TableColumnModelEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TableColumnModelEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TableColumnModelEvent.java",
+      "sourceSha256": "2a7092801236b85a1bb926a676cb0519839fad0fc9542cf50fa5916292503615",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.table.TableColumnModel,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableColumnModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "fromIndex",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableColumnModelEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getFromIndex()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableColumnModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getToIndex()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableColumnModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "toIndex",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableColumnModelEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TableColumnModelListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TableColumnModelListener.java",
+      "sourceSha256": "233db3f544f611d720bf281c33f8f2ba1aec95aab46d51cd376a31ad1f74c9e2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "columnAdded(javax.swing.event.TableColumnModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableColumnModelListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnMarginChanged(javax.swing.event.ChangeEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableColumnModelListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnMoved(javax.swing.event.TableColumnModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableColumnModelListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnRemoved(javax.swing.event.TableColumnModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableColumnModelListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnSelectionChanged(javax.swing.event.ListSelectionEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableColumnModelListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TableModelEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TableModelEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TableModelEvent.java",
+      "sourceSha256": "25b4599871cf92dc048b64c87f0d53d9c2f62674dc5cb7605427fe55c9e7d21a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.table.TableModel)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.table.TableModel,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.table.TableModel,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.table.TableModel,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.table.TableModel,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ALL_COLUMNS",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DELETE",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HEADER_ROW",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INSERT",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UPDATE",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "column",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "firstRow",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumn()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFirstRow()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLastRow()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "lastRow",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "type",
+          "result": "int",
+          "declaredBy": "javax.swing.event.TableModelEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TableModelListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TableModelListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TableModelListener.java",
+      "sourceSha256": "c1a96fcfe1d25c0e86a3fe71a21a72059b5cd5dbd37477086198df3b3461a2b7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "tableChanged(javax.swing.event.TableModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TableModelListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TreeExpansionEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TreeExpansionEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TreeExpansionEvent.java",
+      "sourceSha256": "122214d71e7dd6a3266c2a1df3f06f772556c7c356221043b32976539557fb9c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.swing.tree.TreePath)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeExpansionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPath()",
+          "result": "javax.swing.tree.TreePath",
+          "declaredBy": "javax.swing.event.TreeExpansionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "path",
+          "result": "javax.swing.tree.TreePath",
+          "declaredBy": "javax.swing.event.TreeExpansionEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TreeExpansionListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TreeExpansionListener.java",
+      "sourceSha256": "f7ea62bf188d8ef58d8a3cbe78ff21bb6b8b78211c8b2a0a97d05cb929819de6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "treeCollapsed(javax.swing.event.TreeExpansionEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeExpansionListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "treeExpanded(javax.swing.event.TreeExpansionEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeExpansionListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TreeModelEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TreeModelEvent.java",
+      "sourceSha256": "e8b84f6821e4b2f1e6af619ebcf1bce82f54d4be275a39e6f3c25aae9dfa441b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,java.lang.Object[],int[],java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.swing.tree.TreePath)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.swing.tree.TreePath,int[],java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "childIndices",
+          "result": "int[]",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "children",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildIndices()",
+          "result": "int[]",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildren()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPath()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTreePath()",
+          "result": "javax.swing.tree.TreePath",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "path",
+          "result": "javax.swing.tree.TreePath",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.event.TreeModelEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TreeModelListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TreeModelListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TreeModelListener.java",
+      "sourceSha256": "06fe2d21bfa2e47025e84eae452c25d0528e5db9add66feb79e34f8228cd4c34",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "treeNodesChanged(javax.swing.event.TreeModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeModelListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "treeNodesInserted(javax.swing.event.TreeModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeModelListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "treeNodesRemoved(javax.swing.event.TreeModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeModelListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "treeStructureChanged(javax.swing.event.TreeModelEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeModelListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TreeSelectionEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TreeSelectionEvent.java",
+      "sourceSha256": "38853694c9c0ee2850a4bf16ab136858f610f041a07b5b6da31b588ea86552e1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.swing.tree.TreePath,boolean,javax.swing.tree.TreePath,javax.swing.tree.TreePath)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.swing.tree.TreePath[],boolean[],javax.swing.tree.TreePath,javax.swing.tree.TreePath)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "areNew",
+          "result": "boolean[]",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "cloneWithSource(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNewLeadSelectionPath()",
+          "result": "javax.swing.tree.TreePath",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOldLeadSelectionPath()",
+          "result": "javax.swing.tree.TreePath",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPath()",
+          "result": "javax.swing.tree.TreePath",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPaths()",
+          "result": "javax.swing.tree.TreePath[]",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAddedPath()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAddedPath(int)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAddedPath(javax.swing.tree.TreePath)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "newLeadSelectionPath",
+          "result": "javax.swing.tree.TreePath",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "oldLeadSelectionPath",
+          "result": "javax.swing.tree.TreePath",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "paths",
+          "result": "javax.swing.tree.TreePath[]",
+          "declaredBy": "javax.swing.event.TreeSelectionEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TreeSelectionListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TreeSelectionListener.java",
+      "sourceSha256": "48ee065de7be39e03f601e860a3abbedbda47b83d074c0ed29d9ba5f508e9170",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "valueChanged(javax.swing.event.TreeSelectionEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeSelectionListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.TreeWillExpandListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/TreeWillExpandListener.java",
+      "sourceSha256": "a7d0a22df838927dc359c1c975d719b1695267a25462c57eb1e9c3422bb3ca13",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "treeWillCollapse(javax.swing.event.TreeExpansionEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeWillExpandListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "treeWillExpand(javax.swing.event.TreeExpansionEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.TreeWillExpandListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.UndoableEditEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/UndoableEditEvent.html",
+      "sourceEntry": "java.desktop/javax/swing/event/UndoableEditEvent.java",
+      "sourceSha256": "a743dbff7342efcb08d5305e5fcf00eb86becf9b507426ea63eb0518037706b6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,javax.swing.undo.UndoableEdit)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.UndoableEditEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEdit()",
+          "result": "javax.swing.undo.UndoableEdit",
+          "declaredBy": "javax.swing.event.UndoableEditEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.event.UndoableEditListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html",
+      "sourceEntry": "java.desktop/javax/swing/event/UndoableEditListener.java",
+      "sourceSha256": "e2e6711d5faf77b9717299ef026a667261539d46d614ae9b6cac32fa6c45be98",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "undoableEditHappened(javax.swing.event.UndoableEditEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.event.UndoableEditListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

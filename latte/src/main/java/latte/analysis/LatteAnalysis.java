@@ -73,9 +73,12 @@ public final class LatteAnalysis {
             expression -> {
               expression.putMetadata(ClosureFacts.KEY, null);
               expression.putMetadata(ClosureInvocation.KEY, null);
+              expression.putMetadata(ViewFacts.KEY, null);
+              expression.putMetadata(ViewFacts.OPERATION, null);
             });
     returnAliases = ReturnAliases.collect(model);
     MutationEffects.collect(model, returnAliases);
+    validateExternalOverrides(model, external);
     fieldPermissions =
         model.getElements(new TypeFilter<>(CtField.class)).stream()
             .collect(
@@ -110,6 +113,37 @@ public final class LatteAnalysis {
               new LatteFacts(state, state, value).attach(field);
             });
     return diagnostics.stream().distinct().toList();
+  }
+
+  private void validateExternalOverrides(CtModel model, ExternalSpecifications external) {
+    for (var method : model.getElements(new TypeFilter<>(CtMethod.class))) {
+      if (ExternalSpecifications.isSpecification(method)
+          || ExternalSpecifications.isLibrary(method)) continue;
+      for (var specification : external.specifications().values())
+        for (var binding : specification.methods().values()) {
+          if (!(binding.actual() instanceof CtMethod<?> parent) || !method.isOverriding(parent))
+            continue;
+          var promised = ExternalSummaries.effects(binding.contract());
+          if (promised.isPresent()) {
+            var actual = MutationEffects.on(method);
+            boolean compatible =
+                !actual.globals()
+                    && actual.roots().entrySet().stream()
+                        .allMatch(
+                            entry -> {
+                              var allowed =
+                                  promised.get().roots().getOrDefault(entry.getKey(), Set.of());
+                              return allowed.contains("*") || allowed.containsAll(entry.getValue());
+                            });
+            if (!compatible) error("Override exceeds external Modifies footprint", method);
+          }
+          if (ExternalSummaries.view(binding.contract()).isPresent())
+            problem(
+                "Source overrides of ReturnsView require verification of their backing"
+                    + " relationship",
+                method);
+        }
+    }
   }
 
   private void executable(CtExecutable<?> executable) {
@@ -227,6 +261,7 @@ public final class LatteAnalysis {
 
   private Evaluation construct(
       CtExecutable<?> declaration,
+      CtExecutableReference<?> reference,
       Reference receiver,
       List<CtExpression<?>> nodes,
       List<Reference> values,
@@ -237,6 +272,13 @@ public final class LatteAnalysis {
         || declaration.getBody() == null
         || ExternalSpecifications.isSpecification(declaration)) {
       var roots = values.stream().reduce(receiver, Reference::join);
+      // An unmodeled JDK constructor may publish this (for example through a listener or thread).
+      // Fresh allocation alone does not prove that the newly constructed object stays local.
+      if (Jdk21Coverage.use(reference).filter(use -> !use.policy().equals("refined")).isPresent())
+        state = escape(receiver, state, call);
+      if (ExternalSummaries.effects(declaration).isPresent())
+        return new Evaluation(
+            externalHeapEffects(declaration, receiver, values, state, call), receiver);
       return new Evaluation(state.havocHeap(roots, Annotations.key(call)), receiver);
     }
     var bindings = state.variables();
@@ -580,6 +622,13 @@ public final class LatteAnalysis {
       result = new Evaluation(after, evaluated.value());
     } else if (expression instanceof CtConstructorCall<?> call) {
       var state = before;
+      if (call.getTarget() != null
+          && Jdk21Coverage.use(call.getExecutable())
+              .filter(use -> !use.policy().equals("refined"))
+              .isPresent()) {
+        var enclosing = expression(call.getTarget(), state, scope);
+        state = escape(enclosing.value(), enclosing.state(), call);
+      }
       var arguments = new ArrayList<Reference>();
       for (var argument : call.getArguments()) {
         var evaluated = expression(argument, state, scope);
@@ -597,7 +646,15 @@ public final class LatteAnalysis {
       var constructor = declaration instanceof CtConstructor<?> c ? c : null;
       if (constructor != null) state = defaults(constructor.getDeclaringType(), value, state);
       state = releaseArguments(arguments, value, declaration, state, call, scope);
-      result = construct(declaration, value, call.getArguments(), arguments, state, call);
+      result =
+          construct(
+              declaration,
+              call.getExecutable(),
+              value,
+              call.getArguments(),
+              arguments,
+              state,
+              call);
     } else if (expression instanceof CtInvocation<?> call) {
       var receiver =
           call.getExecutable().isConstructor()
@@ -611,6 +668,13 @@ public final class LatteAnalysis {
         arguments.add(evaluated.value());
       }
       var declaration = ExternalSpecifications.resolve(call.getExecutable());
+      var viewOperation = ViewFacts.classify(call, receiver.value(), state);
+      if (viewOperation.isPresent()) {
+        call.putMetadata(ViewFacts.OPERATION, viewOperation.get());
+        result = viewOperation(call, receiver.value(), arguments, state, viewOperation.get());
+        remember(expression, new LatteFacts(before, result.state(), result.value()));
+        return result;
+      }
       state = releaseArguments(arguments, receiver.value(), declaration, state, call, scope);
       var localClosure =
           call.getExecutable().isConstructor()
@@ -629,7 +693,13 @@ public final class LatteAnalysis {
                         .equals("java.lang.Object")
                 ? new Evaluation(state, receiver.value())
                 : construct(
-                    declaration, receiver.value(), call.getArguments(), arguments, state, call);
+                    declaration,
+                    call.getExecutable(),
+                    receiver.value(),
+                    call.getArguments(),
+                    arguments,
+                    state,
+                    call);
         remember(expression, new LatteFacts(before, result.state(), result.value()));
         return result;
       } else if (declaration == null) {
@@ -651,7 +721,9 @@ public final class LatteAnalysis {
         for (int i = 0; i < arguments.size(); i++)
           if (effects.parameter(i) || effects.globals()) roots = roots.join(arguments.get(i));
         mutation(roots, state);
-        state = state.havocHeap(roots, Annotations.key(call));
+        if (ExternalSummaries.effects(declaration).isPresent()) {
+          state = externalHeapEffects(declaration, receiver.value(), arguments, state, call);
+        } else state = state.havocHeap(roots, Annotations.key(call));
         defer(roots, state, false);
       }
       result = returned(call, declaration, receiver.value(), arguments, state);
@@ -832,12 +904,75 @@ public final class LatteAnalysis {
     return new Evaluation(state, value);
   }
 
+  private FlowState externalHeapEffects(
+      CtExecutable<?> declaration,
+      Reference receiver,
+      List<Reference> arguments,
+      FlowState state,
+      CtElement call) {
+    for (var footprint : MutationEffects.on(declaration).roots().entrySet()) {
+      var affected = footprint.getKey() < 0 ? receiver : arguments.get(footprint.getKey());
+      state = state.havocHeap(affected, Annotations.key(call), !footprint.getValue().contains("*"));
+    }
+    return state;
+  }
+
+  private Evaluation view(
+      CtInvocation<?> call,
+      Reference backing,
+      ExternalSummaries.View specification,
+      FlowState state) {
+    var view = Reference.object(allocation("view:", call));
+    state = state.fresh(view, state.permission(backing)).write(view, ViewFacts.BACKING, backing);
+    if (specification.arrayListOperations())
+      state = state.write(view, ViewFacts.ARRAY_LIST, Reference.scalarValue());
+    call.putMetadata(ViewFacts.KEY, new ViewFacts(view, backing, specification));
+    return new Evaluation(state, view);
+  }
+
+  private Evaluation viewOperation(
+      CtInvocation<?> call,
+      Reference receiver,
+      List<Reference> arguments,
+      FlowState state,
+      ViewFacts.Operation operation) {
+    if (operation == ViewFacts.Operation.SUBVIEW)
+      return view(call, receiver, new ExternalSummaries.View(-1, 0, 1, true), state);
+    int retained =
+        switch (operation) {
+          case ADD -> 0;
+          case INSERT, SET -> 1;
+          default -> -1;
+        };
+    if (retained >= 0) state = escape(arguments.get(retained), state, call);
+    if (Set.of(
+            ViewFacts.Operation.ADD,
+            ViewFacts.Operation.INSERT,
+            ViewFacts.Operation.SET,
+            ViewFacts.Operation.REMOVE,
+            ViewFacts.Operation.CLEAR)
+        .contains(operation)) {
+      mutation(receiver, state);
+      state = state.havocHeap(receiver, Annotations.key(call));
+      defer(receiver, state, false);
+    }
+    if (scalar(JavaTypes.result(call))) return new Evaluation(state, Reference.scalarValue());
+    var value = Reference.object(allocation("element:", call));
+    return new Evaluation(state.allocate(value, Permission.SHARED), value);
+  }
+
   private Evaluation returned(
       CtInvocation<?> call,
       CtExecutable<?> declaration,
       Reference receiver,
       List<Reference> arguments,
       FlowState state) {
+    var view = ExternalSummaries.view(declaration);
+    if (view.isPresent()) {
+      var summary = view.get();
+      var backing = summary.backing() < 0 ? receiver : arguments.get(summary.backing());
+      return view(call, backing, summary, state);
+    }
     if (scalar(JavaTypes.result(call))) return new Evaluation(state, Reference.scalarValue());
     var permission = Annotations.permission(declaration);
     var fresh = Reference.object(allocation("return:", call));
@@ -1243,7 +1378,9 @@ public final class LatteAnalysis {
             var constructor = declaration instanceof CtConstructor<?> c ? c : null;
             if (constructor != null)
               state = defaults(constructor.getDeclaringType(), allocated, state);
-            var constructed = construct(declaration, allocated, nodes, values, state, call);
+            var constructed =
+                construct(
+                    declaration, reference.getExecutable(), allocated, nodes, values, state, call);
             state =
                 Annotations.permission(functional) == Permission.FREE
                     ? constructed.state()

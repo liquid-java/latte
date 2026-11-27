@@ -1,0 +1,3688 @@
+{
+  "name": "java.lang.invoke",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.lang.invoke.CallSite",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/CallSite.html",
+      "sourceEntry": "java.base/java/lang/invoke/CallSite.java",
+      "sourceSha256": "4d36eaed2db63dd12af7f446d1ba8e8d42f9c954c072eeb2b90272e69889fc92",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "dynamicInvoker()",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.CallSite",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTarget()",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.CallSite",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTarget(java.lang.invoke.MethodHandle)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.CallSite",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "type()",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.CallSite",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.ConstantBootstraps",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html",
+      "sourceEntry": "java.base/java/lang/invoke/ConstantBootstraps.java",
+      "sourceSha256": "5686c9fa629f2d71bcee7d5626a95214715af18848537ca33aad7ff1f5c43cc1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "arrayVarHandle(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class,java.lang.Class)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.ConstantBootstraps",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "enumConstant(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class)",
+          "result": "java.lang.Enum",
+          "declaredBy": "java.lang.invoke.ConstantBootstraps",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "explicitCast(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.ConstantBootstraps",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fieldVarHandle(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class,java.lang.Class,java.lang.Class)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.ConstantBootstraps",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStaticFinal(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.ConstantBootstraps",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStaticFinal(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.ConstantBootstraps",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoke(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class,java.lang.invoke.MethodHandle,java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.ConstantBootstraps",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nullConstant(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.ConstantBootstraps",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "primitiveClass(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.ConstantBootstraps",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "staticFieldVarHandle(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class,java.lang.Class,java.lang.Class)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.ConstantBootstraps",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.ConstantCallSite",
+      "kind": "class",
+      "parents": [
+        "java.lang.invoke.CallSite"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/ConstantCallSite.html",
+      "sourceEntry": "java.base/java/lang/invoke/ConstantCallSite.java",
+      "sourceSha256": "328a54136b4492fb1012948c09339f9300500c0d5695728a5618322e5d45911f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.invoke.MethodHandle)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.ConstantCallSite",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.invoke.MethodType,java.lang.invoke.MethodHandle)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.ConstantCallSite",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dynamicInvoker()",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.ConstantCallSite",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTarget()",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.ConstantCallSite",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTarget(java.lang.invoke.MethodHandle)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.ConstantCallSite",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.LambdaConversionException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/LambdaConversionException.html",
+      "sourceEntry": "java.base/java/lang/invoke/LambdaConversionException.java",
+      "sourceSha256": "f7685ce6428d19b632ce128f1661993756a56b7bd09b5ae9f2de8758d73d13c5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.LambdaConversionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.LambdaConversionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.LambdaConversionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.LambdaConversionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.LambdaConversionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.LambdaMetafactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html",
+      "sourceEntry": "java.base/java/lang/invoke/LambdaMetafactory.java",
+      "sourceSha256": "c21ce06fadcc7d381509762f9b548b4fac9ac66e19679c158b7bb1fd39506e62",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "FLAG_BRIDGES",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.LambdaMetafactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FLAG_MARKERS",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.LambdaMetafactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FLAG_SERIALIZABLE",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.LambdaMetafactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "altMetafactory(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.Object[])",
+          "result": "java.lang.invoke.CallSite",
+          "declaredBy": "java.lang.invoke.LambdaMetafactory",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "metafactory(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.invoke.MethodType,java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.CallSite",
+          "declaredBy": "java.lang.invoke.LambdaMetafactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.MethodHandle",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.constant.Constable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+      "sourceEntry": "java.base/java/lang/invoke/MethodHandle.java",
+      "sourceSha256": "c68cfa5b0ada61c714aab40da43a74e0650d571492541c7a6242f90a61879ba6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asCollector(int,java.lang.Class,int)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asCollector(java.lang.Class,int)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asFixedArity()",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asSpreader(int,java.lang.Class,int)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asSpreader(java.lang.Class,int)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asType(java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asVarargsCollector(java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bindTo(java.lang.Object)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "describeConstable()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoke(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invokeExact(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invokeWithArguments(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invokeWithArguments(java.util.List)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isVarargsCollector()",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "type()",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withVarargs(boolean)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.MethodHandleInfo",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html",
+      "sourceEntry": "java.base/java/lang/invoke/MethodHandleInfo.java",
+      "sourceSha256": "fefe6fc15a4c9c66a6b9d3cff9a2e46571329a67e6f81160b6554083fe4aea1d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "REF_getField",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REF_getStatic",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REF_invokeInterface",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REF_invokeSpecial",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REF_invokeStatic",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REF_invokeVirtual",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REF_newInvokeSpecial",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REF_putField",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REF_putStatic",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDeclaringClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMethodType()",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getModifiers()",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReferenceKind()",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isVarArgs()",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "referenceKindToString(int)",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reflectAs(java.lang.Class,java.lang.invoke.MethodHandles$Lookup)",
+          "result": "java.lang.reflect.Member",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString(int,java.lang.Class,java.lang.String,java.lang.invoke.MethodType)",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.MethodHandleInfo",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.MethodHandleProxies",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html",
+      "sourceEntry": "java.base/java/lang/invoke/MethodHandleProxies.java",
+      "sourceSha256": "057762e6a65b74c7a060db25a594e08aa02e909ced9dc7297a85fb1b971d1ed6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asInterfaceInstance(java.lang.Class,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.MethodHandleProxies",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWrapperInstance(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.MethodHandleProxies",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrapperInstanceTarget(java.lang.Object)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandleProxies",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrapperInstanceType(java.lang.Object)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodHandleProxies",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.MethodHandles",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+      "sourceEntry": "java.base/java/lang/invoke/MethodHandles.java",
+      "sourceSha256": "3cd6f1229de979b3da578acc4bc49af394dd930e411862255de977d2252b1a0f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "arrayConstructor(java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayElementGetter(java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayElementSetter(java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayElementVarHandle(java.lang.Class)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayLength(java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "byteArrayViewVarHandle(java.lang.Class,java.nio.ByteOrder)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "byteBufferViewVarHandle(java.lang.Class,java.nio.ByteOrder)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "catchException(java.lang.invoke.MethodHandle,java.lang.Class,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "classData(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "classDataAt(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.Class,int)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "collectArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "collectCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "constant(java.lang.Class,java.lang.Object)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "countedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "countedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doWhileLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropArguments(java.lang.invoke.MethodHandle,int,java.lang.Class[])",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropArguments(java.lang.invoke.MethodHandle,int,java.util.List)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropArgumentsToMatch(java.lang.invoke.MethodHandle,int,java.util.List,int)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropCoordinates(java.lang.invoke.VarHandle,int,java.lang.Class[])",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropReturn(java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "empty(java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exactInvoker(java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "explicitCastArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "filterArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle[])",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "filterCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle[])",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "filterReturnValue(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "filterValue(java.lang.invoke.VarHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "foldArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "foldArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "guardWithTest(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "identity(java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertArguments(java.lang.invoke.MethodHandle,int,java.lang.Object[])",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertCoordinates(java.lang.invoke.VarHandle,int,java.lang.Object[])",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoker(java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iteratedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookup()",
+          "result": "java.lang.invoke.MethodHandles$Lookup",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loop(java.lang.invoke.MethodHandle[][])",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "memorySegmentViewVarHandle(java.lang.foreign.ValueLayout)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "permuteArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType,int[])",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "permuteCoordinates(java.lang.invoke.VarHandle,java.util.List,int[])",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "privateLookupIn(java.lang.Class,java.lang.invoke.MethodHandles$Lookup)",
+          "result": "java.lang.invoke.MethodHandles$Lookup",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "publicLookup()",
+          "result": "java.lang.invoke.MethodHandles$Lookup",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reflectAs(java.lang.Class,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.reflect.Member",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "spreadInvoker(java.lang.invoke.MethodType,int)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle[])",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "throwException(java.lang.Class,java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryFinally(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "varHandleExactInvoker(java.lang.invoke.VarHandle$AccessMode,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "varHandleInvoker(java.lang.invoke.VarHandle$AccessMode,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "whileLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zero(java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.MethodHandles$Lookup",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html",
+      "sourceEntry": "java.base/java/lang/invoke/MethodHandles.java",
+      "sourceSha256": "3cd6f1229de979b3da578acc4bc49af394dd930e411862255de977d2252b1a0f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "MODULE",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ORIGINAL",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PACKAGE",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PRIVATE",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROTECTED",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PUBLIC",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNCONDITIONAL",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "accessClass(java.lang.Class)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bind(java.lang.Object,java.lang.String,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "defineClass(byte[])",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "defineHiddenClass(byte[],boolean,java.lang.invoke.MethodHandles$Lookup$ClassOption[])",
+          "result": "java.lang.invoke.MethodHandles$Lookup",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "defineHiddenClassWithClassData(byte[],java.lang.Object,boolean,java.lang.invoke.MethodHandles$Lookup$ClassOption[])",
+          "result": "java.lang.invoke.MethodHandles$Lookup",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropLookupMode(int)",
+          "result": "java.lang.invoke.MethodHandles$Lookup",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ensureInitialized(java.lang.Class)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findClass(java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findConstructor(java.lang.Class,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findGetter(java.lang.Class,java.lang.String,java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findSetter(java.lang.Class,java.lang.String,java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findSpecial(java.lang.Class,java.lang.String,java.lang.invoke.MethodType,java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findStatic(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findStaticGetter(java.lang.Class,java.lang.String,java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findStaticSetter(java.lang.Class,java.lang.String,java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findStaticVarHandle(java.lang.Class,java.lang.String,java.lang.Class)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findVarHandle(java.lang.Class,java.lang.String,java.lang.Class)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findVirtual(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasFullPrivilegeAccess()",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasPrivateAccess()",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "in(java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandles$Lookup",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupModes()",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previousLookupClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "revealDirect(java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandleInfo",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unreflect(java.lang.reflect.Method)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unreflectConstructor(java.lang.reflect.Constructor)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unreflectGetter(java.lang.reflect.Field)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unreflectSetter(java.lang.reflect.Field)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unreflectSpecial(java.lang.reflect.Method,java.lang.Class)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unreflectVarHandle(java.lang.reflect.Field)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.MethodHandles$Lookup$ClassOption",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.ClassOption.html",
+      "sourceEntry": "java.base/java/lang/invoke/MethodHandles.java",
+      "sourceSha256": "3cd6f1229de979b3da578acc4bc49af394dd930e411862255de977d2252b1a0f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NESTMATE",
+          "result": "java.lang.invoke.MethodHandles$Lookup$ClassOption",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup$ClassOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STRONG",
+          "result": "java.lang.invoke.MethodHandles$Lookup$ClassOption",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup$ClassOption",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.lang.invoke.MethodHandles$Lookup$ClassOption",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup$ClassOption",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.lang.invoke.MethodHandles$Lookup$ClassOption[]",
+          "declaredBy": "java.lang.invoke.MethodHandles$Lookup$ClassOption",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.MethodType",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.constant.Constable",
+        "java.lang.invoke.TypeDescriptor$OfMethod",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/MethodType.html",
+      "sourceEntry": "java.base/java/lang/invoke/MethodType.java",
+      "sourceSha256": "117d9ac7f74b451d57c5c7fab05953c9fbc15cf46a6beabfd9b1cbaf3c998c8e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "appendParameterTypes(java.lang.Class[])",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendParameterTypes(java.util.List)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "changeParameterType(int,java.lang.Class)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "changeReturnType(java.lang.Class)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "describeConstable()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "descriptorString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropParameterTypes(int,int)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "erase()",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fromMethodDescriptorString(java.lang.String,java.lang.ClassLoader)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generic()",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "genericMethodType(int)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "genericMethodType(int,boolean)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasPrimitives()",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasWrappers()",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertParameterTypes(int,java.lang.Class[])",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertParameterTypes(int,java.util.List)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lastParameterType()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "methodType(java.lang.Class)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "methodType(java.lang.Class,java.lang.Class)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "methodType(java.lang.Class,java.lang.Class,java.lang.Class[])",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "methodType(java.lang.Class,java.lang.Class[])",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "methodType(java.lang.Class,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "methodType(java.lang.Class,java.util.List)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterArray()",
+          "result": "java.lang.Class[]",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterCount()",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterList()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterType(int)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "returnType()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toMethodDescriptorString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unwrap()",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap()",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.MethodType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.MutableCallSite",
+      "kind": "class",
+      "parents": [
+        "java.lang.invoke.CallSite"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/MutableCallSite.html",
+      "sourceEntry": "java.base/java/lang/invoke/MutableCallSite.java",
+      "sourceSha256": "3f2aeb817287ed49b3f3728287dc24efe3e092ad857bf39104941c249976e33e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.invoke.MethodHandle)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.MutableCallSite",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.invoke.MethodType)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.MutableCallSite",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dynamicInvoker()",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MutableCallSite",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTarget()",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.MutableCallSite",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTarget(java.lang.invoke.MethodHandle)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.MutableCallSite",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "syncAll(java.lang.invoke.MutableCallSite[])",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.MutableCallSite",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.SerializedLambda",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/SerializedLambda.html",
+      "sourceEntry": "java.base/java/lang/invoke/SerializedLambda.java",
+      "sourceSha256": "0554a634553d258bb72dafb210bf2117613eaaf91561c3fffbebf73d45cba587",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Class,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCapturedArg(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCapturedArgCount()",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCapturingClass()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFunctionalInterfaceClass()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFunctionalInterfaceMethodName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFunctionalInterfaceMethodSignature()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImplClass()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImplMethodKind()",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImplMethodName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImplMethodSignature()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstantiatedMethodType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.SerializedLambda",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.StringConcatException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/StringConcatException.html",
+      "sourceEntry": "java.base/java/lang/invoke/StringConcatException.java",
+      "sourceSha256": "690bbf05d23e06ab7c4fb954102a692329be2307fd696c169913be34df05723a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.StringConcatException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.StringConcatException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.StringConcatFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/StringConcatFactory.html",
+      "sourceEntry": "java.base/java/lang/invoke/StringConcatFactory.java",
+      "sourceSha256": "847d49e8b3b8de4183c4551c0965d9919ab942c0bef996d787f1f36174579010",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "MAX_INDY_CONCAT_ARG_SLOTS",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.StringConcatFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "makeConcat(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.CallSite",
+          "declaredBy": "java.lang.invoke.StringConcatFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])",
+          "result": "java.lang.invoke.CallSite",
+          "declaredBy": "java.lang.invoke.StringConcatFactory",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "makeConcatWithTemplate(java.util.List,java.util.List)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.StringConcatFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "makeConcatWithTemplateCluster(java.util.List,java.util.List,int)",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.invoke.StringConcatFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "makeConcatWithTemplateGetters(java.util.List,java.util.List,int)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.StringConcatFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.SwitchPoint",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/SwitchPoint.html",
+      "sourceEntry": "java.base/java/lang/invoke/SwitchPoint.java",
+      "sourceSha256": "4cb0d97fab0fcee981d08b6c213edd448de9957c1ada51ce0722ef8a268f8fa6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.SwitchPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "guardWithTest(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.SwitchPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasBeenInvalidated()",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.SwitchPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invalidateAll(java.lang.invoke.SwitchPoint[])",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.SwitchPoint",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.TypeDescriptor",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/TypeDescriptor.html",
+      "sourceEntry": "java.base/java/lang/invoke/TypeDescriptor.java",
+      "sourceSha256": "87787e20cbaac945f2a18173aec743aa850ec17c8c7b870311c30282c381dadc",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "descriptorString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.TypeDescriptor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.TypeDescriptor$OfField",
+      "kind": "interface",
+      "parents": [
+        "java.lang.invoke.TypeDescriptor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/TypeDescriptor.OfField.html",
+      "sourceEntry": "java.base/java/lang/invoke/TypeDescriptor.java",
+      "sourceSha256": "87787e20cbaac945f2a18173aec743aa850ec17c8c7b870311c30282c381dadc",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "arrayType()",
+          "result": "java.lang.invoke.TypeDescriptor$OfField",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfField",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "componentType()",
+          "result": "java.lang.invoke.TypeDescriptor$OfField",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfField",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isArray()",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfField",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPrimitive()",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfField",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.TypeDescriptor$OfMethod",
+      "kind": "interface",
+      "parents": [
+        "java.lang.invoke.TypeDescriptor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html",
+      "sourceEntry": "java.base/java/lang/invoke/TypeDescriptor.java",
+      "sourceSha256": "87787e20cbaac945f2a18173aec743aa850ec17c8c7b870311c30282c381dadc",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "changeParameterType(int,java.lang.invoke.TypeDescriptor$OfField)",
+          "result": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "changeReturnType(java.lang.invoke.TypeDescriptor$OfField)",
+          "result": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropParameterTypes(int,int)",
+          "result": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertParameterTypes(int,java.lang.invoke.TypeDescriptor$OfField[])",
+          "result": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterArray()",
+          "result": "java.lang.invoke.TypeDescriptor$OfField[]",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterCount()",
+          "result": "int",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterList()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterType(int)",
+          "result": "java.lang.invoke.TypeDescriptor$OfField",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "returnType()",
+          "result": "java.lang.invoke.TypeDescriptor$OfField",
+          "declaredBy": "java.lang.invoke.TypeDescriptor$OfMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.VarHandle",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.constant.Constable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/VarHandle.html",
+      "sourceEntry": "java.base/java/lang/invoke/VarHandle.java",
+      "sourceSha256": "20154be3ac5af5a8e9f4dd7b7e86e0bc6e5150807fee2a42ac9840fe30fb39db",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accessModeType(java.lang.invoke.VarHandle$AccessMode)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acquireFence()",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchange(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeAcquire(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeRelease(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(java.lang.Object[])",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "coordinateTypes()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "describeConstable()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fullFence()",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAcquire(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAdd(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAddAcquire(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAddRelease(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndBitwiseAnd(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndBitwiseAndAcquire(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndBitwiseAndRelease(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndBitwiseOr(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndBitwiseOrAcquire(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndBitwiseOrRelease(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndBitwiseXor(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndBitwiseXorAcquire(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndBitwiseXorRelease(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSetAcquire(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSetRelease(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpaque(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVolatile(java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasInvokeExactBehavior()",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAccessModeSupported(java.lang.invoke.VarHandle$AccessMode)",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadLoadFence()",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseFence()",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOpaque(java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRelease(java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setVolatile(java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "storeStoreFence()",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toMethodHandle(java.lang.invoke.VarHandle$AccessMode)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "varType()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(java.lang.Object[])",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetAcquire(java.lang.Object[])",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetPlain(java.lang.Object[])",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetRelease(java.lang.Object[])",
+          "result": "boolean",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 401,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "native-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withInvokeBehavior()",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withInvokeExactBehavior()",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.VarHandle",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.VarHandle$AccessMode",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html",
+      "sourceEntry": "java.base/java/lang/invoke/VarHandle.java",
+      "sourceSha256": "20154be3ac5af5a8e9f4dd7b7e86e0bc6e5150807fee2a42ac9840fe30fb39db",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "COMPARE_AND_EXCHANGE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COMPARE_AND_EXCHANGE_ACQUIRE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COMPARE_AND_EXCHANGE_RELEASE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COMPARE_AND_SET",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_ACQUIRE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_ADD",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_ADD_ACQUIRE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_ADD_RELEASE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_BITWISE_AND",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_BITWISE_AND_ACQUIRE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_BITWISE_AND_RELEASE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_BITWISE_OR",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_BITWISE_OR_ACQUIRE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_BITWISE_OR_RELEASE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_BITWISE_XOR",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_BITWISE_XOR_ACQUIRE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_BITWISE_XOR_RELEASE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_SET",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_SET_ACQUIRE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_AND_SET_RELEASE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_OPAQUE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GET_VOLATILE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SET",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SET_OPAQUE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SET_RELEASE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SET_VOLATILE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WEAK_COMPARE_AND_SET",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WEAK_COMPARE_AND_SET_ACQUIRE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WEAK_COMPARE_AND_SET_PLAIN",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WEAK_COMPARE_AND_SET_RELEASE",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "methodName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueFromMethodName(java.lang.String)",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.lang.invoke.VarHandle$AccessMode",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.lang.invoke.VarHandle$AccessMode[]",
+          "declaredBy": "java.lang.invoke.VarHandle$AccessMode",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.VarHandle$VarHandleDesc",
+      "kind": "class",
+      "parents": [
+        "java.lang.constant.DynamicConstantDesc"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/VarHandle.VarHandleDesc.html",
+      "sourceEntry": "java.base/java/lang/invoke/VarHandle.java",
+      "sourceSha256": "20154be3ac5af5a8e9f4dd7b7e86e0bc6e5150807fee2a42ac9840fe30fb39db",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "ofArray(java.lang.constant.ClassDesc)",
+          "result": "java.lang.invoke.VarHandle$VarHandleDesc",
+          "declaredBy": "java.lang.invoke.VarHandle$VarHandleDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofField(java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.ClassDesc)",
+          "result": "java.lang.invoke.VarHandle$VarHandleDesc",
+          "declaredBy": "java.lang.invoke.VarHandle$VarHandleDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofStaticField(java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.ClassDesc)",
+          "result": "java.lang.invoke.VarHandle$VarHandleDesc",
+          "declaredBy": "java.lang.invoke.VarHandle$VarHandleDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveConstantDesc(java.lang.invoke.MethodHandles$Lookup)",
+          "result": "java.lang.invoke.VarHandle",
+          "declaredBy": "java.lang.invoke.VarHandle$VarHandleDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.invoke.VarHandle$VarHandleDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "varType()",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.invoke.VarHandle$VarHandleDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.VolatileCallSite",
+      "kind": "class",
+      "parents": [
+        "java.lang.invoke.CallSite"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/VolatileCallSite.html",
+      "sourceEntry": "java.base/java/lang/invoke/VolatileCallSite.java",
+      "sourceSha256": "3e67012b006e84367291a6fcdf28bc7162b08fa6fc43e2a61416237dc8bff3c6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.invoke.MethodHandle)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VolatileCallSite",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.invoke.MethodType)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VolatileCallSite",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dynamicInvoker()",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.VolatileCallSite",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTarget()",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.invoke.VolatileCallSite",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTarget(java.lang.invoke.MethodHandle)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.VolatileCallSite",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.invoke.WrongMethodTypeException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/WrongMethodTypeException.html",
+      "sourceEntry": "java.base/java/lang/invoke/WrongMethodTypeException.java",
+      "sourceSha256": "929b210e01a5efd3fb39306c9331ae5909c51985b5c6fe58b4030b80c357bff9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.WrongMethodTypeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.invoke.WrongMethodTypeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

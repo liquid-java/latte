@@ -1,0 +1,102 @@
+{
+  "name": "java.lang.runtime",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.lang.runtime.ObjectMethods",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/runtime/ObjectMethods.html",
+      "sourceEntry": "java.base/java/lang/runtime/ObjectMethods.java",
+      "sourceSha256": "c2cabf5ce476a3dff34caf7480145a80859457c999750ef13e6c509d273a2493",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "bootstrap(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.TypeDescriptor,java.lang.Class,java.lang.String,java.lang.invoke.MethodHandle[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.runtime.ObjectMethods",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.runtime.SwitchBootstraps",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/runtime/SwitchBootstraps.html",
+      "sourceEntry": "java.base/java/lang/runtime/SwitchBootstraps.java",
+      "sourceSha256": "806ff2ef1d275a3ff8d073b62f674e15b0b95e18cce7b7086515e3110b3afbb3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "enumSwitch(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.Object[])",
+          "result": "java.lang.invoke.CallSite",
+          "declaredBy": "java.lang.runtime.SwitchBootstraps",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "typeSwitch(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.Object[])",
+          "result": "java.lang.invoke.CallSite",
+          "declaredBy": "java.lang.runtime.SwitchBootstraps",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.runtime.TemplateRuntime",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/runtime/TemplateRuntime.html",
+      "sourceEntry": "java.base/java/lang/runtime/TemplateRuntime.java",
+      "sourceSha256": "c696efc068e82d3805183acea8db815f5bc626698d93042486744ab1901be6b9",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "newLargeStringTemplate(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType)",
+          "result": "java.lang.invoke.CallSite",
+          "declaredBy": "java.lang.runtime.TemplateRuntime",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newStringTemplate(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String[])",
+          "result": "java.lang.invoke.CallSite",
+          "declaredBy": "java.lang.runtime.TemplateRuntime",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processStringTemplate(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.invoke.MethodHandle,java.lang.String[])",
+          "result": "java.lang.invoke.CallSite",
+          "declaredBy": "java.lang.runtime.TemplateRuntime",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

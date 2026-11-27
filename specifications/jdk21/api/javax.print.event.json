@@ -1,0 +1,417 @@
+{
+  "name": "javax.print.event",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.print.event.PrintEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/event/PrintEvent.html",
+      "sourceEntry": "java.desktop/javax/print/event/PrintEvent.java",
+      "sourceSha256": "c39f10bdc119fc442a14f1daebbcb1df2d3c8ec3fb4d6316560c5b3fbb5052e6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.event.PrintEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.event.PrintJobAdapter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.print.event.PrintJobListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html",
+      "sourceEntry": "java.desktop/javax/print/event/PrintJobAdapter.java",
+      "sourceSha256": "920b88b3e82f0de894bad8c67444ba14c9db19cc68f1a7c88543e6ab70a1241d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobAdapter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printDataTransferCompleted(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printJobCanceled(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printJobCompleted(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printJobFailed(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printJobNoMoreEvents(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printJobRequiresAttention(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.event.PrintJobAttributeEvent",
+      "kind": "class",
+      "parents": [
+        "javax.print.event.PrintEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/event/PrintJobAttributeEvent.html",
+      "sourceEntry": "java.desktop/javax/print/event/PrintJobAttributeEvent.java",
+      "sourceSha256": "a50fe1d1239234d12ea1b934c1070b4c8ded044f38d622c320054777dc66740f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.DocPrintJob,javax.print.attribute.PrintJobAttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobAttributeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "javax.print.attribute.PrintJobAttributeSet",
+          "declaredBy": "javax.print.event.PrintJobAttributeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintJob()",
+          "result": "javax.print.DocPrintJob",
+          "declaredBy": "javax.print.event.PrintJobAttributeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.event.PrintJobAttributeListener",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html",
+      "sourceEntry": "java.desktop/javax/print/event/PrintJobAttributeListener.java",
+      "sourceSha256": "4d82db0c54985396e65b1740742848d33127f4a7ab4f9c9c71a239c703f465aa",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "attributeUpdate(javax.print.event.PrintJobAttributeEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobAttributeListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.event.PrintJobEvent",
+      "kind": "class",
+      "parents": [
+        "javax.print.event.PrintEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/event/PrintJobEvent.html",
+      "sourceEntry": "java.desktop/javax/print/event/PrintJobEvent.java",
+      "sourceSha256": "7d8153a93c358fc11edb935aba109c19824a2b401fa39e928d17260f70016d90",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.DocPrintJob,int)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DATA_TRANSFER_COMPLETE",
+          "result": "int",
+          "declaredBy": "javax.print.event.PrintJobEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JOB_CANCELED",
+          "result": "int",
+          "declaredBy": "javax.print.event.PrintJobEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JOB_COMPLETE",
+          "result": "int",
+          "declaredBy": "javax.print.event.PrintJobEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JOB_FAILED",
+          "result": "int",
+          "declaredBy": "javax.print.event.PrintJobEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NO_MORE_EVENTS",
+          "result": "int",
+          "declaredBy": "javax.print.event.PrintJobEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REQUIRES_ATTENTION",
+          "result": "int",
+          "declaredBy": "javax.print.event.PrintJobEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintEventType()",
+          "result": "int",
+          "declaredBy": "javax.print.event.PrintJobEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintJob()",
+          "result": "javax.print.DocPrintJob",
+          "declaredBy": "javax.print.event.PrintJobEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.event.PrintJobListener",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/event/PrintJobListener.html",
+      "sourceEntry": "java.desktop/javax/print/event/PrintJobListener.java",
+      "sourceSha256": "1d95eac134a6dcda3386424802f2a1fc366ae8b1ef7cbe3fa008c6c95d08a1cd",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "printDataTransferCompleted(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printJobCanceled(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printJobCompleted(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printJobFailed(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printJobNoMoreEvents(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printJobRequiresAttention(javax.print.event.PrintJobEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintJobListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.event.PrintServiceAttributeEvent",
+      "kind": "class",
+      "parents": [
+        "javax.print.event.PrintEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/event/PrintServiceAttributeEvent.html",
+      "sourceEntry": "java.desktop/javax/print/event/PrintServiceAttributeEvent.java",
+      "sourceSha256": "a8a93debea0150b472cf68ebcf9f236a4573d5cdce9f6fa033ecccd610be0fde",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.PrintService,javax.print.attribute.PrintServiceAttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintServiceAttributeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "javax.print.attribute.PrintServiceAttributeSet",
+          "declaredBy": "javax.print.event.PrintServiceAttributeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrintService()",
+          "result": "javax.print.PrintService",
+          "declaredBy": "javax.print.event.PrintServiceAttributeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.event.PrintServiceAttributeListener",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html",
+      "sourceEntry": "java.desktop/javax/print/event/PrintServiceAttributeListener.java",
+      "sourceSha256": "58b78ce6fd01c35082a1275cb34498c01c433c556c41130d6413cf16120ce42a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "attributeUpdate(javax.print.event.PrintServiceAttributeEvent)",
+          "result": "void",
+          "declaredBy": "javax.print.event.PrintServiceAttributeListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

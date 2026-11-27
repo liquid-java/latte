@@ -6,7 +6,7 @@ The verifier now covers floating-point arithmetic, exception and switch flow, de
 
 ## Build and run
 
-Use JDK 17 or newer and Maven 3.9 or newer:
+Use JDK 21 and Maven 3.9 or newer:
 
 ```sh
 cd latte
@@ -15,11 +15,11 @@ java -jar target/latte-cli.jar ../examples/refinements/LocalAliases.java
 java -jar target/latte-cli.jar ../examples/refinements/StaleAliasRejected.java
 ```
 
-The first example succeeds. The second reports a state refinement failure and exits with status 1. Add `--explain` to include the proof obligation and solver counterexample. Each path is a separate analysis; pass a source directory to analyze related classes together. Parsing failure and unsupported analysis also produce a nonzero exit status.
+The first example succeeds. The second reports a state refinement failure and exits with status 1. Add `--explain` to include the proof obligation and solver counterexample. Multiple input paths are analyzed together in one Spoon model; source directories can contain related application classes and external specifications. Parsing failure and unsupported analysis also produce a nonzero exit status.
 
 The small library jar is `target/latte-0.0.1-SNAPSHOT.jar`. The runnable `latte-cli.jar` also includes Spoon and Z3, including the native solver libraries supplied by `z3-turnkey`.
 
-`mvn test` runs 522 tests, including the focused tests, legacy Latte regressions and 180 promoted upstream regression inputs. A separate imported-fixture test enforces the intentional fresh-reference comparison difference. `mvn verify -Pcompatibility` also runs **every** imported input and writes `target/liquidjava-compatibility.json`. A successful build does not mean that all upstream expectations match.
+`mvn test` runs 616 tests, including the focused tests, Java 21 catalog checks and runtime witnesses, legacy Latte regressions and 180 promoted upstream regression inputs. A separate imported-fixture test enforces the intentional fresh-reference comparison difference. `mvn verify -Pcompatibility` also runs **every** imported input and writes `target/liquidjava-compatibility.json`. A successful build does not mean that all upstream expectations match.
 
 ## Ownership policy
 
@@ -69,6 +69,10 @@ class Example {
 
 Use `@ExternalRefinementsFor` to provide ownership and refinement contracts for JDK or third-party library methods, constructors and fields. Both passes resolve the same contracts on the Spoon AST. See the [external contract guide](docs/external-refinements.md) and [checked examples](examples/refinements/ExternalLibraryContracts.java). Use `--classpath` for library JARs; multiple input paths are analyzed together.
 
+The opt-in [Java 21 catalog](docs/jdk21-contracts.md) covers **all 178 Java SE packages**: 4,055 API types and 47,030 member entries. It combines **501 stronger declarations for 190 types** with explicit conservative policies for the remaining API. Use `--jdk all` or exact package selections such as `--jdk java.lang,java.util`. The [coverage inventory](docs/jdk21-coverage.md) distinguishes complete API classification from stronger behavioral guarantees. Coverage and effective call policies are stored on the Spoon AST. The [effect inventory](docs/jdk21-effects.md) records 443 explicit mutation footprints, captured ArrayList views and the remaining conservative boundaries.
+
+The [OpenJDK test-source audit](docs/jdk21-upstream-audit.md) records how these contracts affect unchanged Java 21 tests, including expected call-domain failures, ownership/precision limits and analyzer failures.
+
 ## AST handoff and embedding
 
 ```java
@@ -85,6 +89,8 @@ for (var local : result.model().getElements(
 
 `LatteFacts.KEY` is `latte.analysis.facts.v1`. Evaluated expressions, declarations and statements retain immutable `before` and `after` ownership stores and their reference identity. `LiquidTypeChecking` reads this metadata; it does not rerun ownership analysis. These facts belong to a particular AST and source position. Reanalyze after editing the AST. An unvisited or unsupported node must not be treated as having a successful ownership proof.
 
+External contracts can declare `@Modifies` footprints and `@ReturnsView` capture relationships; see the [annotation guide and checked examples](docs/external-refinements.md#explicit-mutation-footprints-modifies). View identities, backing edges and operation summaries are retained on the same Spoon AST.
+
 `MutationEffects.KEY` is `latte.analysis.effects.v1`. Source method declarations retain immutable summaries of the receiver, parameters and global storage they can change, including transitive calls and source overrides.
 
 `ConstructionFacts.KEY` is `latte.analysis.construction.v1`. Constructor calls retain mappings from transferred ownership identities to their consumed caller identities, allowing the refinement pass to preserve state under the new owner. Constructor evaluation uses call-specific bindings without overwriting the declaration's published facts.
@@ -92,6 +98,8 @@ for (var local : result.model().getElements(
 `OwnershipRelease.KEY` is `latte.analysis.release.v1`. Calls and returns record the ownership edges forgotten because their owners cannot be observed. Their `LatteFacts.after` contains the resulting ownership graph; the metadata does not describe runtime writes or establish null-valued fields.
 
 `ClosureFacts.KEY` is `latte.analysis.closure.v1`. Closures record their captured binding names and whether execution can be deferred or escape. Capture references are stored as immutable `capture:` heap edges in `LatteFacts`. `ClosureInvocation.KEY` is `latte.analysis.closure.call.v1`; local calls retain their possible closure targets, captured references, mutations, ownership transfers and separate body facts for each invocation. LiquidTypeChecking reads these facts from the same AST.
+
+`Jdk21Coverage.KEY` is `latte.jdk21.coverage.v1`. With `--jdk`, the model retains the complete API ledger and selected packages. `Jdk21Coverage.use(reference)` reports the effective external-contract, conservative or outside-baseline policy on each selected library executable/field reference. The ownership pass uses this metadata to avoid assuming that unmodeled JDK constructors keep their receivers local.
 
 `Verification.Result` retains the model and structured, source-located diagnostics. Analysis does not rewrite source files. The old `api.App.launcher` entry point delegates to this pipeline.
 

@@ -40,6 +40,14 @@ public record ExternalSpecifications(
     for (var element : model.getElements(new TypeFilter<>(CtElement.class))) {
       element.putMetadata(BINDING, null);
       element.putMetadata(FIELD, null);
+      element.putMetadata(ExternalSummaries.EFFECTS, null);
+      element.putMetadata(ExternalSummaries.VIEW, null);
+      if ((Annotations.has(element, "Modifies") || Annotations.has(element, "ReturnsView"))
+          && (!(element instanceof CtMethod<?>) || !isSpecification(element)))
+        error(
+            diagnostics,
+            "Modifies and ReturnsView belong on external specification methods",
+            element);
       if (Annotations.has(element, "ExternalRefinementsFor") && !(element instanceof CtType<?>))
         error(diagnostics, "ExternalRefinementsFor belongs on a specification type", element);
     }
@@ -105,6 +113,12 @@ public record ExternalSpecifications(
               contract);
           continue;
         }
+        try {
+          ExternalSummaries.validate(contract, actual);
+        } catch (IllegalArgumentException failure) {
+          error(diagnostics, failure.getMessage(), contract);
+          continue;
+        }
         methods.put(signature, binding);
         contract.putMetadata(BINDING, binding);
       }
@@ -154,12 +168,14 @@ public record ExternalSpecifications(
                   diagnostics.add(
                       Diagnostic.at(
                           Diagnostic.Kind.UNSUPPORTED,
-                          "External varargs method references require a lambda with an explicit array argument",
+                          "External varargs method references require a lambda with an explicit"
+                              + " array argument",
                           reference.getParent()));
               });
     }
     var collected = new ExternalSpecifications(specifications, diagnostics);
     model.getRootPackage().putMetadata(KEY, collected);
+    Jdk21Coverage.annotate(model);
     return collected;
   }
 

@@ -1,0 +1,3762 @@
+{
+  "name": "javax.net.ssl",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "javax.net.ssl.CertPathTrustManagerParameters",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.net.ssl.ManagerFactoryParameters"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html",
+      "sourceEntry": "java.base/javax/net/ssl/CertPathTrustManagerParameters.java",
+      "sourceSha256": "a6f7b6294623b548080d96ada5ffd10bbdc74ead05cb83782d862c3292a4d4d8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.cert.CertPathParameters)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.CertPathTrustManagerParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameters()",
+          "result": "java.security.cert.CertPathParameters",
+          "declaredBy": "javax.net.ssl.CertPathTrustManagerParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.ExtendedSSLSession",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.net.ssl.SSLSession"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html",
+      "sourceEntry": "java.base/javax/net/ssl/ExtendedSSLSession.java",
+      "sourceSha256": "a929fed6dd5379aeaae1f7b958c25f87bb3019128609252ea0c0130a392a87e5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.ExtendedSSLSession",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalSupportedSignatureAlgorithms()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.ExtendedSSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerSupportedSignatureAlgorithms()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.ExtendedSSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRequestedServerNames()",
+          "result": "java.util.List",
+          "declaredBy": "javax.net.ssl.ExtendedSSLSession",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStatusResponses()",
+          "result": "java.util.List",
+          "declaredBy": "javax.net.ssl.ExtendedSSLSession",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.HandshakeCompletedEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html",
+      "sourceEntry": "java.base/javax/net/ssl/HandshakeCompletedEvent.java",
+      "sourceSha256": "58a2170b6b9748cfa29229ed47d9a1fed68c2eb93309fd69f8831721dc77ed6c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.net.ssl.SSLSocket,javax.net.ssl.SSLSession)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.HandshakeCompletedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCipherSuite()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.HandshakeCompletedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalCertificates()",
+          "result": "java.security.cert.Certificate[]",
+          "declaredBy": "javax.net.ssl.HandshakeCompletedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalPrincipal()",
+          "result": "java.security.Principal",
+          "declaredBy": "javax.net.ssl.HandshakeCompletedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerCertificateChain()",
+          "result": "javax.security.cert.X509Certificate[]",
+          "declaredBy": "javax.net.ssl.HandshakeCompletedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerCertificates()",
+          "result": "java.security.cert.Certificate[]",
+          "declaredBy": "javax.net.ssl.HandshakeCompletedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerPrincipal()",
+          "result": "java.security.Principal",
+          "declaredBy": "javax.net.ssl.HandshakeCompletedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSession()",
+          "result": "javax.net.ssl.SSLSession",
+          "declaredBy": "javax.net.ssl.HandshakeCompletedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSocket()",
+          "result": "javax.net.ssl.SSLSocket",
+          "declaredBy": "javax.net.ssl.HandshakeCompletedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.HandshakeCompletedListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html",
+      "sourceEntry": "java.base/javax/net/ssl/HandshakeCompletedListener.java",
+      "sourceSha256": "c66f2c5e264515f5cc6ad1c06e96162b5734e2b4fb4a8ccf055d293e5edcfe65",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.HandshakeCompletedListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.HostnameVerifier",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/HostnameVerifier.html",
+      "sourceEntry": "java.base/javax/net/ssl/HostnameVerifier.java",
+      "sourceSha256": "a5f56168e064e53d886b86e3c261c8f787689e1c195099a386be30b92924dbb5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "verify(java.lang.String,javax.net.ssl.SSLSession)",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.HostnameVerifier",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.HttpsURLConnection",
+      "kind": "class",
+      "parents": [
+        "java.net.HttpURLConnection"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html",
+      "sourceEntry": "java.base/javax/net/ssl/HttpsURLConnection.java",
+      "sourceSha256": "d74d10e58cca4e942ef74d113b0bd1a170f718804abedfdb8d09439482ec25ed",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCipherSuite()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultHostnameVerifier()",
+          "result": "javax.net.ssl.HostnameVerifier",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultSSLSocketFactory()",
+          "result": "javax.net.ssl.SSLSocketFactory",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHostnameVerifier()",
+          "result": "javax.net.ssl.HostnameVerifier",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalCertificates()",
+          "result": "java.security.cert.Certificate[]",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalPrincipal()",
+          "result": "java.security.Principal",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerPrincipal()",
+          "result": "java.security.Principal",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSSLSession()",
+          "result": "java.util.Optional",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSSLSocketFactory()",
+          "result": "javax.net.ssl.SSLSocketFactory",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServerCertificates()",
+          "result": "java.security.cert.Certificate[]",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "hostnameVerifier",
+          "result": "javax.net.ssl.HostnameVerifier",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDefaultSSLSocketFactory(javax.net.ssl.SSLSocketFactory)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setHostnameVerifier(javax.net.ssl.HostnameVerifier)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSSLSocketFactory(javax.net.ssl.SSLSocketFactory)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.HttpsURLConnection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.KeyManager",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/KeyManager.html",
+      "sourceEntry": "java.base/javax/net/ssl/KeyManager.java",
+      "sourceSha256": "1aacf5e3eef325276695f9371ae8b1962979ce6e8ee0f4f1250890c1b7c02631",
+      "members": []
+    },
+    {
+      "target": "javax.net.ssl.KeyManagerFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html",
+      "sourceEntry": "java.base/javax/net/ssl/KeyManagerFactory.java",
+      "sourceSha256": "4ae1d5748b0837c61da2c1e572dc522a38b2d8b80268fe61d73e851bd1371e83",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.net.ssl.KeyManagerFactorySpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.KeyManagerFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.KeyManagerFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.KeyManagerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.net.ssl.KeyManagerFactory",
+          "declaredBy": "javax.net.ssl.KeyManagerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.net.ssl.KeyManagerFactory",
+          "declaredBy": "javax.net.ssl.KeyManagerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.net.ssl.KeyManagerFactory",
+          "declaredBy": "javax.net.ssl.KeyManagerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeyManagers()",
+          "result": "javax.net.ssl.KeyManager[]",
+          "declaredBy": "javax.net.ssl.KeyManagerFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.net.ssl.KeyManagerFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.KeyStore,char[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.KeyManagerFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(javax.net.ssl.ManagerFactoryParameters)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.KeyManagerFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.KeyManagerFactorySpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/KeyManagerFactorySpi.html",
+      "sourceEntry": "java.base/javax/net/ssl/KeyManagerFactorySpi.java",
+      "sourceSha256": "458ad2fca617fffa55300732c722edb16812cdc65c13aad824d9a3508c59f3b2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.KeyManagerFactorySpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetKeyManagers()",
+          "result": "javax.net.ssl.KeyManager[]",
+          "declaredBy": "javax.net.ssl.KeyManagerFactorySpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(java.security.KeyStore,char[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.KeyManagerFactorySpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(javax.net.ssl.ManagerFactoryParameters)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.KeyManagerFactorySpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.KeyStoreBuilderParameters",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.net.ssl.ManagerFactoryParameters"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/KeyStoreBuilderParameters.html",
+      "sourceEntry": "java.base/javax/net/ssl/KeyStoreBuilderParameters.java",
+      "sourceSha256": "1efaa99269de3f8020bb8a8fa89137b08f4b7b1a6c7ad15514c9cc4ccfe11cf5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.KeyStore$Builder)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.KeyStoreBuilderParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.KeyStoreBuilderParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameters()",
+          "result": "java.util.List",
+          "declaredBy": "javax.net.ssl.KeyStoreBuilderParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.ManagerFactoryParameters",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/ManagerFactoryParameters.html",
+      "sourceEntry": "java.base/javax/net/ssl/ManagerFactoryParameters.java",
+      "sourceSha256": "7c8e1e78427ab54129e4d3088001b50db373c3c2eea5bb2855521bc3710ea556",
+      "members": []
+    },
+    {
+      "target": "javax.net.ssl.SNIHostName",
+      "kind": "class",
+      "parents": [
+        "javax.net.ssl.SNIServerName"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SNIHostName.html",
+      "sourceEntry": "java.base/javax/net/ssl/SNIHostName.java",
+      "sourceSha256": "2d2cacf3fe19c7f011c1d96e0abbabeec9e29d2d4d5b551e35642b8bd67d6c2a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SNIHostName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SNIHostName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createSNIMatcher(java.lang.String)",
+          "result": "javax.net.ssl.SNIMatcher",
+          "declaredBy": "javax.net.ssl.SNIHostName",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SNIHostName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAsciiName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SNIHostName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SNIHostName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SNIHostName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SNIMatcher",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SNIMatcher.html",
+      "sourceEntry": "java.base/javax/net/ssl/SNIMatcher.java",
+      "sourceSha256": "a8adc41fdce03a3fc866aed3a31b40e69a01a8af87fa4869649c272e2a264377",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SNIMatcher",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SNIMatcher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "matches(javax.net.ssl.SNIServerName)",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SNIMatcher",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SNIServerName",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SNIServerName.html",
+      "sourceEntry": "java.base/javax/net/ssl/SNIServerName.java",
+      "sourceSha256": "ffe603919e2c1337821517fe02b263f33214a78a58375c9947e86e668f5b5ad6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,byte[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SNIServerName",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SNIServerName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "javax.net.ssl.SNIServerName",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SNIServerName",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SNIServerName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SNIServerName",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLContext",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLContext.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLContext.java",
+      "sourceSha256": "ed04445d7c82312a2f6bce3225fa2aa8bfe0aa6878b131113086d10c6a48e273",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.net.ssl.SSLContextSpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createSSLEngine()",
+          "result": "javax.net.ssl.SSLEngine",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createSSLEngine(java.lang.String,int)",
+          "result": "javax.net.ssl.SSLEngine",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClientSessionContext()",
+          "result": "javax.net.ssl.SSLSessionContext",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefault()",
+          "result": "javax.net.ssl.SSLContext",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultSSLParameters()",
+          "result": "javax.net.ssl.SSLParameters",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.net.ssl.SSLContext",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.net.ssl.SSLContext",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.net.ssl.SSLContext",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProtocol()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServerSessionContext()",
+          "result": "javax.net.ssl.SSLSessionContext",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServerSocketFactory()",
+          "result": "javax.net.ssl.SSLServerSocketFactory",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSocketFactory()",
+          "result": "javax.net.ssl.SSLSocketFactory",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedSSLParameters()",
+          "result": "javax.net.ssl.SSLParameters",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDefault(javax.net.ssl.SSLContext)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLContext",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLContextSpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLContextSpi.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLContextSpi.java",
+      "sourceSha256": "4f7b3e55ffd499eb7ca51f99842f4c92ad5c069a176aa460e0a1c2ac7a453575",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLContextSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineCreateSSLEngine()",
+          "result": "javax.net.ssl.SSLEngine",
+          "declaredBy": "javax.net.ssl.SSLContextSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineCreateSSLEngine(java.lang.String,int)",
+          "result": "javax.net.ssl.SSLEngine",
+          "declaredBy": "javax.net.ssl.SSLContextSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetClientSessionContext()",
+          "result": "javax.net.ssl.SSLSessionContext",
+          "declaredBy": "javax.net.ssl.SSLContextSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetDefaultSSLParameters()",
+          "result": "javax.net.ssl.SSLParameters",
+          "declaredBy": "javax.net.ssl.SSLContextSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetServerSessionContext()",
+          "result": "javax.net.ssl.SSLSessionContext",
+          "declaredBy": "javax.net.ssl.SSLContextSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetServerSocketFactory()",
+          "result": "javax.net.ssl.SSLServerSocketFactory",
+          "declaredBy": "javax.net.ssl.SSLContextSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetSocketFactory()",
+          "result": "javax.net.ssl.SSLSocketFactory",
+          "declaredBy": "javax.net.ssl.SSLContextSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetSupportedSSLParameters()",
+          "result": "javax.net.ssl.SSLParameters",
+          "declaredBy": "javax.net.ssl.SSLContextSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLContextSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLEngine",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLEngine.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLEngine.java",
+      "sourceSha256": "30501085f65d6cb70dac054407782af47884d0994abab4fc1582d6e94da13f72",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "beginHandshake()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "closeInbound()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "closeOutbound()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getApplicationProtocol()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDelegatedTask()",
+          "result": "java.lang.Runnable",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnableSessionCreation()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnabledCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnabledProtocols()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHandshakeApplicationProtocol()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHandshakeApplicationProtocolSelector()",
+          "result": "java.util.function.BiFunction",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHandshakeSession()",
+          "result": "javax.net.ssl.SSLSession",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHandshakeStatus()",
+          "result": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNeedClientAuth()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerHost()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerPort()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSSLParameters()",
+          "result": "javax.net.ssl.SSLParameters",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSession()",
+          "result": "javax.net.ssl.SSLSession",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedProtocols()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUseClientMode()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWantClientAuth()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInboundDone()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOutboundDone()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnableSessionCreation(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnabledCipherSuites(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnabledProtocols(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNeedClientAuth(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSSLParameters(javax.net.ssl.SSLParameters)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUseClientMode(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setWantClientAuth(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer)",
+          "result": "javax.net.ssl.SSLEngineResult",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer[])",
+          "result": "javax.net.ssl.SSLEngineResult",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer[],int,int)",
+          "result": "javax.net.ssl.SSLEngineResult",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)",
+          "result": "javax.net.ssl.SSLEngineResult",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(java.nio.ByteBuffer[],int,int,java.nio.ByteBuffer)",
+          "result": "javax.net.ssl.SSLEngineResult",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(java.nio.ByteBuffer[],java.nio.ByteBuffer)",
+          "result": "javax.net.ssl.SSLEngineResult",
+          "declaredBy": "javax.net.ssl.SSLEngine",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLEngineResult",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLEngineResult.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLEngineResult.java",
+      "sourceSha256": "f5b59c9ea3dd7a55478e594381892ae80723a75ba83b6d440dba85bf3d71cfc9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.net.ssl.SSLEngineResult$Status,javax.net.ssl.SSLEngineResult$HandshakeStatus,int,int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngineResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.net.ssl.SSLEngineResult$Status,javax.net.ssl.SSLEngineResult$HandshakeStatus,int,int,long)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLEngineResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bytesConsumed()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SSLEngineResult",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bytesProduced()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SSLEngineResult",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHandshakeStatus()",
+          "result": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "declaredBy": "javax.net.ssl.SSLEngineResult",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStatus()",
+          "result": "javax.net.ssl.SSLEngineResult$Status",
+          "declaredBy": "javax.net.ssl.SSLEngineResult",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequenceNumber()",
+          "result": "long",
+          "declaredBy": "javax.net.ssl.SSLEngineResult",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLEngineResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLEngineResult.java",
+      "sourceSha256": "f5b59c9ea3dd7a55478e594381892ae80723a75ba83b6d440dba85bf3d71cfc9",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "FINISHED",
+          "result": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NEED_TASK",
+          "result": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NEED_UNWRAP",
+          "result": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NEED_UNWRAP_AGAIN",
+          "result": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NEED_WRAP",
+          "result": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NOT_HANDSHAKING",
+          "result": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.net.ssl.SSLEngineResult$HandshakeStatus[]",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$HandshakeStatus",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLEngineResult$Status",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLEngineResult.java",
+      "sourceSha256": "f5b59c9ea3dd7a55478e594381892ae80723a75ba83b6d440dba85bf3d71cfc9",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "BUFFER_OVERFLOW",
+          "result": "javax.net.ssl.SSLEngineResult$Status",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$Status",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BUFFER_UNDERFLOW",
+          "result": "javax.net.ssl.SSLEngineResult$Status",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$Status",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CLOSED",
+          "result": "javax.net.ssl.SSLEngineResult$Status",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$Status",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OK",
+          "result": "javax.net.ssl.SSLEngineResult$Status",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$Status",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.net.ssl.SSLEngineResult$Status",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$Status",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.net.ssl.SSLEngineResult$Status[]",
+          "declaredBy": "javax.net.ssl.SSLEngineResult$Status",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLException.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLException.java",
+      "sourceSha256": "af1e353309dc8655c3fd213aebd0ff0f2d408c59cde36c67cec221f82c86e8be",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLHandshakeException",
+      "kind": "class",
+      "parents": [
+        "javax.net.ssl.SSLException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLHandshakeException.java",
+      "sourceSha256": "29e01ebf9b8bae11e8a8338a7b30edc8f17527ef71ec1425f3c6e8a9322cad54",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLHandshakeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLHandshakeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLKeyException",
+      "kind": "class",
+      "parents": [
+        "javax.net.ssl.SSLException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLKeyException.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLKeyException.java",
+      "sourceSha256": "f0782cde6eb5836d2d936f61e82117f0652d5fd2bc7d3f32692434ef15d5109d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLKeyException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLKeyException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLParameters",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLParameters.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLParameters.java",
+      "sourceSha256": "998ae046356d0dfa6aab090c219bfb0fb2f6dabaf8936f747d77344550553c33",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String[],java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithmConstraints()",
+          "result": "java.security.AlgorithmConstraints",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getApplicationProtocols()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnableRetransmissions()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEndpointIdentificationAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaximumPacketSize()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamedGroups()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNeedClientAuth()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProtocols()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSNIMatchers()",
+          "result": "java.util.Collection",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServerNames()",
+          "result": "java.util.List",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSignatureSchemes()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUseCipherSuitesOrder()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWantClientAuth()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAlgorithmConstraints(java.security.AlgorithmConstraints)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setApplicationProtocols(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCipherSuites(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnableRetransmissions(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEndpointIdentificationAlgorithm(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaximumPacketSize(int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNamedGroups(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNeedClientAuth(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setProtocols(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSNIMatchers(java.util.Collection)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setServerNames(java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSignatureSchemes(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUseCipherSuitesOrder(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setWantClientAuth(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLParameters",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLPeerUnverifiedException",
+      "kind": "class",
+      "parents": [
+        "javax.net.ssl.SSLException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLPeerUnverifiedException.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLPeerUnverifiedException.java",
+      "sourceSha256": "a6c14aded6e93c8378699602b1464946addfdbfdab304f48c9fd28e2927163ee",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLPeerUnverifiedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLPeerUnverifiedException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLPermission",
+      "kind": "class",
+      "parents": [
+        "java.security.BasicPermission"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLPermission.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLPermission.java",
+      "sourceSha256": "be4ca85567c0fd6cc7f4a199838cc037d2d6cdcf3ad3fb3a533d31edc41e4d23",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLProtocolException",
+      "kind": "class",
+      "parents": [
+        "javax.net.ssl.SSLException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLProtocolException.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLProtocolException.java",
+      "sourceSha256": "c831d37fa46617843e97e129afe59317bd866e41521758385df0932f43aa58bb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLProtocolException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLProtocolException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLServerSocket",
+      "kind": "class",
+      "parents": [
+        "java.net.ServerSocket"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLServerSocket.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLServerSocket.java",
+      "sourceSha256": "07a9c3648ab0a30746e29c0562be905f4956222de67eb8c25de792df11481e32",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,java.net.InetAddress)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnableSessionCreation()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnabledCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnabledProtocols()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNeedClientAuth()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSSLParameters()",
+          "result": "javax.net.ssl.SSLParameters",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedProtocols()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUseClientMode()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWantClientAuth()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnableSessionCreation(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnabledCipherSuites(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnabledProtocols(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNeedClientAuth(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSSLParameters(javax.net.ssl.SSLParameters)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUseClientMode(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setWantClientAuth(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLServerSocketFactory",
+      "kind": "class",
+      "parents": [
+        "javax.net.ServerSocketFactory"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLServerSocketFactory.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLServerSocketFactory.java",
+      "sourceSha256": "b234248ea356486d4456540788b4132ca3fdcbc1b69e8bfa6b055ad65e9da823",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLServerSocketFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefault()",
+          "result": "javax.net.ServerSocketFactory",
+          "declaredBy": "javax.net.ssl.SSLServerSocketFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLServerSocketFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLServerSocketFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLSession",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLSession.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLSession.java",
+      "sourceSha256": "a5a0c650243736bd91e86d416d46edc950165a9856b5ba67b133e4165a3e7bbb",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getApplicationBufferSize()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCipherSuite()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCreationTime()",
+          "result": "long",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getId()",
+          "result": "byte[]",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLastAccessedTime()",
+          "result": "long",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalCertificates()",
+          "result": "java.security.cert.Certificate[]",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalPrincipal()",
+          "result": "java.security.Principal",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPacketBufferSize()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerCertificateChain()",
+          "result": "javax.security.cert.X509Certificate[]",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerCertificates()",
+          "result": "java.security.cert.Certificate[]",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerHost()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerPort()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeerPrincipal()",
+          "result": "java.security.Principal",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProtocol()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSessionContext()",
+          "result": "javax.net.ssl.SSLSessionContext",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValueNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invalidate()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValid()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putValue(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeValue(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSession",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLSessionBindingEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLSessionBindingEvent.java",
+      "sourceSha256": "3976c603ef0261e4ff3db84e7efcfb7b0450ccb03344a52f77554addcd5f6dce",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.net.ssl.SSLSession,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSessionBindingEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLSessionBindingEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSession()",
+          "result": "javax.net.ssl.SSLSession",
+          "declaredBy": "javax.net.ssl.SSLSessionBindingEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLSessionBindingListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLSessionBindingListener.java",
+      "sourceSha256": "12272f7dfa85a7152f6a2e4c6182dcbf04be16493b06440e5ebe3cd0e37abd64",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "valueBound(javax.net.ssl.SSLSessionBindingEvent)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSessionBindingListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueUnbound(javax.net.ssl.SSLSessionBindingEvent)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSessionBindingListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLSessionContext",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLSessionContext.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLSessionContext.java",
+      "sourceSha256": "bb5946f6dc671cbc86ed412fc2c387b5b676dd1c7f09f1250c76c484ec7c9e5c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getIds()",
+          "result": "java.util.Enumeration",
+          "declaredBy": "javax.net.ssl.SSLSessionContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSession(byte[])",
+          "result": "javax.net.ssl.SSLSession",
+          "declaredBy": "javax.net.ssl.SSLSessionContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSessionCacheSize()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SSLSessionContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSessionTimeout()",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.SSLSessionContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSessionCacheSize(int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSessionContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSessionTimeout(int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSessionContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLSocket",
+      "kind": "class",
+      "parents": [
+        "java.net.Socket"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLSocket.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLSocket.java",
+      "sourceSha256": "9a0c89d86ae3215182f23e6d31d74fd9c23fb61d8d8ee90366eeb8bf10a9dcf5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int,java.net.InetAddress,int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.InetAddress,int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.InetAddress,int,java.net.InetAddress,int)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getApplicationProtocol()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnableSessionCreation()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnabledCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnabledProtocols()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHandshakeApplicationProtocol()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHandshakeApplicationProtocolSelector()",
+          "result": "java.util.function.BiFunction",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHandshakeSession()",
+          "result": "javax.net.ssl.SSLSession",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNeedClientAuth()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSSLParameters()",
+          "result": "javax.net.ssl.SSLParameters",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSession()",
+          "result": "javax.net.ssl.SSLSession",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedProtocols()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUseClientMode()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWantClientAuth()",
+          "result": "boolean",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnableSessionCreation(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnabledCipherSuites(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnabledProtocols(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNeedClientAuth(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSSLParameters(javax.net.ssl.SSLParameters)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUseClientMode(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setWantClientAuth(boolean)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startHandshake()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocket",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.SSLSocketFactory",
+      "kind": "class",
+      "parents": [
+        "javax.net.SocketFactory"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html",
+      "sourceEntry": "java.base/javax/net/ssl/SSLSocketFactory.java",
+      "sourceSha256": "928190bdccffe1116962bff79b31cd34529a61253649cd2908122c1844f29984",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.SSLSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createSocket(java.net.Socket,java.io.InputStream,boolean)",
+          "result": "java.net.Socket",
+          "declaredBy": "javax.net.ssl.SSLSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createSocket(java.net.Socket,java.lang.String,int,boolean)",
+          "result": "java.net.Socket",
+          "declaredBy": "javax.net.ssl.SSLSocketFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefault()",
+          "result": "javax.net.SocketFactory",
+          "declaredBy": "javax.net.ssl.SSLSocketFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLSocketFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.SSLSocketFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.StandardConstants",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/StandardConstants.html",
+      "sourceEntry": "java.base/javax/net/ssl/StandardConstants.java",
+      "sourceSha256": "c501671a206eb215a13ee89cdfd1b05ee36636b7e22bfe83ad6d5a5c7d218a71",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "SNI_HOST_NAME",
+          "result": "int",
+          "declaredBy": "javax.net.ssl.StandardConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.TrustManager",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/TrustManager.html",
+      "sourceEntry": "java.base/javax/net/ssl/TrustManager.java",
+      "sourceSha256": "56836c8f0571f4d5126394c4fdb61f54637cc5d4a7c0b88c734500b7196d3287",
+      "members": []
+    },
+    {
+      "target": "javax.net.ssl.TrustManagerFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html",
+      "sourceEntry": "java.base/javax/net/ssl/TrustManagerFactory.java",
+      "sourceSha256": "79dddaaf633eb1619a70e41c99d0ca5318fc8f4a5fe259b5092fcff129bf2066",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.net.ssl.TrustManagerFactorySpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.TrustManagerFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.TrustManagerFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.TrustManagerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.net.ssl.TrustManagerFactory",
+          "declaredBy": "javax.net.ssl.TrustManagerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.net.ssl.TrustManagerFactory",
+          "declaredBy": "javax.net.ssl.TrustManagerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.net.ssl.TrustManagerFactory",
+          "declaredBy": "javax.net.ssl.TrustManagerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.net.ssl.TrustManagerFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTrustManagers()",
+          "result": "javax.net.ssl.TrustManager[]",
+          "declaredBy": "javax.net.ssl.TrustManagerFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.KeyStore)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.TrustManagerFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(javax.net.ssl.ManagerFactoryParameters)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.TrustManagerFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.TrustManagerFactorySpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/TrustManagerFactorySpi.html",
+      "sourceEntry": "java.base/javax/net/ssl/TrustManagerFactorySpi.java",
+      "sourceSha256": "8d2e18e18dc2d5ffd41d9ff7addd555b657514ab94ae25feb696fc8f78597002",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.TrustManagerFactorySpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetTrustManagers()",
+          "result": "javax.net.ssl.TrustManager[]",
+          "declaredBy": "javax.net.ssl.TrustManagerFactorySpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(java.security.KeyStore)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.TrustManagerFactorySpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(javax.net.ssl.ManagerFactoryParameters)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.TrustManagerFactorySpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.X509ExtendedKeyManager",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.net.ssl.X509KeyManager"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/X509ExtendedKeyManager.html",
+      "sourceEntry": "java.base/javax/net/ssl/X509ExtendedKeyManager.java",
+      "sourceSha256": "f2b387f9544ce606f6cbd9df3b2916227c8bc261f263372ebc50a4ff775fe818",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.X509ExtendedKeyManager",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "chooseEngineClientAlias(java.lang.String[],java.security.Principal[],javax.net.ssl.SSLEngine)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.X509ExtendedKeyManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "chooseEngineServerAlias(java.lang.String,java.security.Principal[],javax.net.ssl.SSLEngine)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.X509ExtendedKeyManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.X509ExtendedTrustManager",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.net.ssl.X509TrustManager"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/X509ExtendedTrustManager.html",
+      "sourceEntry": "java.base/javax/net/ssl/X509ExtendedTrustManager.java",
+      "sourceSha256": "8f8b2cc3395dcffff7c782bf1d80e8b5f143d027dae7455a93c742d2cc68e738",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.X509ExtendedTrustManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String,java.net.Socket)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.X509ExtendedTrustManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String,javax.net.ssl.SSLEngine)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.X509ExtendedTrustManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String,java.net.Socket)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.X509ExtendedTrustManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String,javax.net.ssl.SSLEngine)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.X509ExtendedTrustManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.X509KeyManager",
+      "kind": "interface",
+      "parents": [
+        "javax.net.ssl.KeyManager"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/X509KeyManager.html",
+      "sourceEntry": "java.base/javax/net/ssl/X509KeyManager.java",
+      "sourceSha256": "db9bde901efe3cc1de0788f8a3620a054081f970813ff9b1eab9d0624635c689",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "chooseClientAlias(java.lang.String[],java.security.Principal[],java.net.Socket)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.X509KeyManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "chooseServerAlias(java.lang.String,java.security.Principal[],java.net.Socket)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.net.ssl.X509KeyManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertificateChain(java.lang.String)",
+          "result": "java.security.cert.X509Certificate[]",
+          "declaredBy": "javax.net.ssl.X509KeyManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClientAliases(java.lang.String,java.security.Principal[])",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.X509KeyManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrivateKey(java.lang.String)",
+          "result": "java.security.PrivateKey",
+          "declaredBy": "javax.net.ssl.X509KeyManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServerAliases(java.lang.String,java.security.Principal[])",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.net.ssl.X509KeyManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.net.ssl.X509TrustManager",
+      "kind": "interface",
+      "parents": [
+        "javax.net.ssl.TrustManager"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/X509TrustManager.html",
+      "sourceEntry": "java.base/javax/net/ssl/X509TrustManager.java",
+      "sourceSha256": "92ead0f9a9be9e46d94c7fcf761efc97ded7919b52c87c3e1b5fefd5b3d0f4b2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.X509TrustManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.net.ssl.X509TrustManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAcceptedIssuers()",
+          "result": "java.security.cert.X509Certificate[]",
+          "declaredBy": "javax.net.ssl.X509TrustManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

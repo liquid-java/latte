@@ -1,0 +1,3049 @@
+{
+  "name": "javax.sound.midi",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.sound.midi.ControllerEventListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/ControllerEventListener.java",
+      "sourceSha256": "813b3045300fd557d4e9dc6b88f495dbf6bf4718a73aec75f0f17be22228d912",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "controlChange(javax.sound.midi.ShortMessage)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.ControllerEventListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.Instrument",
+      "kind": "class",
+      "parents": [
+        "javax.sound.midi.SoundbankResource"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/Instrument.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/Instrument.java",
+      "sourceSha256": "fb6f0ba7fe871183149887184cfbc66a5e79f34905f995787283ffc6afe79985",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.sound.midi.Soundbank,javax.sound.midi.Patch,java.lang.String,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Instrument",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPatch()",
+          "result": "javax.sound.midi.Patch",
+          "declaredBy": "javax.sound.midi.Instrument",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.InvalidMidiDataException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/InvalidMidiDataException.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/InvalidMidiDataException.java",
+      "sourceSha256": "12ab6edd1b0e35db04af698d945902192d4e0020cdcfce787197781e0d723902",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.InvalidMidiDataException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.InvalidMidiDataException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MetaEventListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MetaEventListener.java",
+      "sourceSha256": "dc88e577eab08de29606174116f952e14301099c3819b15a4a853490468b2aec",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "meta(javax.sound.midi.MetaMessage)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MetaEventListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MetaMessage",
+      "kind": "class",
+      "parents": [
+        "javax.sound.midi.MidiMessage"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MetaMessage.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MetaMessage.java",
+      "sourceSha256": "4595f273140044e70b479dedd54075720114542d3c7da101e0df892add598a00",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MetaMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MetaMessage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,byte[],int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MetaMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "META",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MetaMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.sound.midi.MetaMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getData()",
+          "result": "byte[]",
+          "declaredBy": "javax.sound.midi.MetaMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MetaMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMessage(int,byte[],int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MetaMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MidiChannel",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MidiChannel.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MidiChannel.java",
+      "sourceSha256": "8312211b3ce239790be65261762d8d397814a5a266318dc9dd986edf11f26d0e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allNotesOff()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allSoundOff()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "controlChange(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChannelPressure()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getController(int)",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMono()",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMute()",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOmni()",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPitchBend()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPolyPressure(int)",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProgram()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSolo()",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "localControl(boolean)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "noteOff(int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "noteOff(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "noteOn(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "programChange(int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "programChange(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resetAllControllers()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setChannelPressure(int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMono(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMute(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOmni(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPitchBend(int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPolyPressure(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSolo(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MidiDevice",
+      "kind": "interface",
+      "parents": [
+        "java.lang.AutoCloseable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MidiDevice.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MidiDevice.java",
+      "sourceSha256": "4c83fd93ddcb19eef035bb4ced3bd081ac281163573e22fa8988e50d88ea83fb",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDeviceInfo()",
+          "result": "javax.sound.midi.MidiDevice$Info",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxReceivers()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxTransmitters()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMicrosecondPosition()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReceiver()",
+          "result": "javax.sound.midi.Receiver",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReceivers()",
+          "result": "java.util.List",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransmitter()",
+          "result": "javax.sound.midi.Transmitter",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransmitters()",
+          "result": "java.util.List",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOpen()",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiDevice",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MidiDevice$Info",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MidiDevice.Info.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MidiDevice.java",
+      "sourceSha256": "4c83fd93ddcb19eef035bb4ced3bd081ac281163573e22fa8988e50d88ea83fb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiDevice$Info",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.MidiDevice$Info",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.MidiDevice$Info",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.MidiDevice$Info",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVendor()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.MidiDevice$Info",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.MidiDevice$Info",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiDevice$Info",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.MidiDevice$Info",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MidiDeviceReceiver",
+      "kind": "interface",
+      "parents": [
+        "javax.sound.midi.Receiver"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MidiDeviceReceiver.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MidiDeviceReceiver.java",
+      "sourceSha256": "59dddb2d804479a04225ba014c12a7f9e3863a32c4b033a393a01d8ff16805de",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getMidiDevice()",
+          "result": "javax.sound.midi.MidiDevice",
+          "declaredBy": "javax.sound.midi.MidiDeviceReceiver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MidiDeviceTransmitter",
+      "kind": "interface",
+      "parents": [
+        "javax.sound.midi.Transmitter"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MidiDeviceTransmitter.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MidiDeviceTransmitter.java",
+      "sourceSha256": "3ecf84d0c7246dae3f87833c4dca721153903824b9f379dbfab9634d0b7d4472",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getMidiDevice()",
+          "result": "javax.sound.midi.MidiDevice",
+          "declaredBy": "javax.sound.midi.MidiDeviceTransmitter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MidiEvent",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MidiEvent.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MidiEvent.java",
+      "sourceSha256": "dd4d0d05ad76e347b004bdcc08c9ecd11330218715141cd26c88758f25fdcb45",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.sound.midi.MidiMessage,long)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "javax.sound.midi.MidiMessage",
+          "declaredBy": "javax.sound.midi.MidiEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTick()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.MidiEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTick(long)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MidiFileFormat",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MidiFileFormat.java",
+      "sourceSha256": "cc4470aee9ca35105d18d33172a1d16d65a04cd2463590b1b532d38d08733395",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,float,int,int,long)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,float,int,int,long,java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "UNKNOWN_LENGTH",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "byteLength",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "divisionType",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getByteLength()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDivisionType()",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMicrosecondLength()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResolution()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "microsecondLength",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "properties()",
+          "result": "java.util.Map",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "resolution",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "type",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiFileFormat",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MidiMessage",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MidiMessage.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MidiMessage.java",
+      "sourceSha256": "a97d5f91b872ec5a8e0f13d5ffa0a68d19a87f1b876f0c1662d1212059c65e16",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiMessage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.sound.midi.MidiMessage",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "data",
+          "result": "byte[]",
+          "declaredBy": "javax.sound.midi.MidiMessage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getLength()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "byte[]",
+          "declaredBy": "javax.sound.midi.MidiMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStatus()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "length",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiMessage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setMessage(byte[],int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiMessage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MidiSystem",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MidiSystem.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MidiSystem.java",
+      "sourceSha256": "83beef97701362381b0fadff22e55843b5233ecfcee7175f5cf753faa7f723aa",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getMidiDevice(javax.sound.midi.MidiDevice$Info)",
+          "result": "javax.sound.midi.MidiDevice",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMidiDeviceInfo()",
+          "result": "javax.sound.midi.MidiDevice$Info[]",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMidiFileFormat(java.io.File)",
+          "result": "javax.sound.midi.MidiFileFormat",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMidiFileFormat(java.io.InputStream)",
+          "result": "javax.sound.midi.MidiFileFormat",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMidiFileFormat(java.net.URL)",
+          "result": "javax.sound.midi.MidiFileFormat",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMidiFileTypes()",
+          "result": "int[]",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMidiFileTypes(javax.sound.midi.Sequence)",
+          "result": "int[]",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReceiver()",
+          "result": "javax.sound.midi.Receiver",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSequence(java.io.File)",
+          "result": "javax.sound.midi.Sequence",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSequence(java.io.InputStream)",
+          "result": "javax.sound.midi.Sequence",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSequence(java.net.URL)",
+          "result": "javax.sound.midi.Sequence",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSequencer()",
+          "result": "javax.sound.midi.Sequencer",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSequencer(boolean)",
+          "result": "javax.sound.midi.Sequencer",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSoundbank(java.io.File)",
+          "result": "javax.sound.midi.Soundbank",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSoundbank(java.io.InputStream)",
+          "result": "javax.sound.midi.Soundbank",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSoundbank(java.net.URL)",
+          "result": "javax.sound.midi.Soundbank",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSynthesizer()",
+          "result": "javax.sound.midi.Synthesizer",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransmitter()",
+          "result": "javax.sound.midi.Transmitter",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFileTypeSupported(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFileTypeSupported(int,javax.sound.midi.Sequence)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(javax.sound.midi.Sequence,int,java.io.File)",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(javax.sound.midi.Sequence,int,java.io.OutputStream)",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.MidiSystem",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.MidiUnavailableException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/MidiUnavailableException.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/MidiUnavailableException.java",
+      "sourceSha256": "3c6e70b4315e9ff5577920c68509bab755cd7e67fd0ee540b923e4c1af36e782",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiUnavailableException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.MidiUnavailableException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.Patch",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/Patch.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/Patch.java",
+      "sourceSha256": "e0bf1cfabfe728c772ff9a93f746f35dc84966fea1851e0d3471aba43094a332",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Patch",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBank()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.Patch",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProgram()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.Patch",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.Receiver",
+      "kind": "interface",
+      "parents": [
+        "java.lang.AutoCloseable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/Receiver.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/Receiver.java",
+      "sourceSha256": "1c879624b938dd7690549b8efb05692544d6ebc4fc5bcf7e2219e028748a5f10",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Receiver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "send(javax.sound.midi.MidiMessage,long)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Receiver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.Sequence",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/Sequence.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/Sequence.java",
+      "sourceSha256": "d7fe5fa3a49c96bbcb318edf3d0da6ababa4d0382422afc59d94f69f4a3ee3b6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(float,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(float,int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "PPQ",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SMPTE_24",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SMPTE_25",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SMPTE_30",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SMPTE_30DROP",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createTrack()",
+          "result": "javax.sound.midi.Track",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "deleteTrack(javax.sound.midi.Track)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "divisionType",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDivisionType()",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMicrosecondLength()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPatchList()",
+          "result": "javax.sound.midi.Patch[]",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResolution()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTickLength()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTracks()",
+          "result": "javax.sound.midi.Track[]",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "resolution",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "tracks",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.sound.midi.Sequence",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.Sequencer",
+      "kind": "interface",
+      "parents": [
+        "javax.sound.midi.MidiDevice"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/Sequencer.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/Sequencer.java",
+      "sourceSha256": "d09da3049e47a3093b5dcecefa7316bc3283f76e89edba56a6894e0f5a42143c",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "LOOP_CONTINUOUSLY",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addControllerEventListener(javax.sound.midi.ControllerEventListener,int[])",
+          "result": "int[]",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addMetaEventListener(javax.sound.midi.MetaEventListener)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoopCount()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoopEndPoint()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoopStartPoint()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMasterSyncMode()",
+          "result": "javax.sound.midi.Sequencer$SyncMode",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMasterSyncModes()",
+          "result": "javax.sound.midi.Sequencer$SyncMode[]",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMicrosecondLength()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMicrosecondPosition()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSequence()",
+          "result": "javax.sound.midi.Sequence",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSlaveSyncMode()",
+          "result": "javax.sound.midi.Sequencer$SyncMode",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSlaveSyncModes()",
+          "result": "javax.sound.midi.Sequencer$SyncMode[]",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTempoFactor()",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTempoInBPM()",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTempoInMPQ()",
+          "result": "float",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTickLength()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTickPosition()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTrackMute(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTrackSolo(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRecording()",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRunning()",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "recordDisable(javax.sound.midi.Track)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "recordEnable(javax.sound.midi.Track,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeControllerEventListener(javax.sound.midi.ControllerEventListener,int[])",
+          "result": "int[]",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeMetaEventListener(javax.sound.midi.MetaEventListener)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLoopCount(int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLoopEndPoint(long)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLoopStartPoint(long)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMasterSyncMode(javax.sound.midi.Sequencer$SyncMode)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMicrosecondPosition(long)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSequence(java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSequence(javax.sound.midi.Sequence)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSlaveSyncMode(javax.sound.midi.Sequencer$SyncMode)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTempoFactor(float)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTempoInBPM(float)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTempoInMPQ(float)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTickPosition(long)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTrackMute(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTrackSolo(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "start()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startRecording()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stop()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stopRecording()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.Sequencer$SyncMode",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/Sequencer.java",
+      "sourceSha256": "d09da3049e47a3093b5dcecefa7316bc3283f76e89edba56a6894e0f5a42143c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Sequencer$SyncMode",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_CLOCK",
+          "result": "javax.sound.midi.Sequencer$SyncMode",
+          "declaredBy": "javax.sound.midi.Sequencer$SyncMode",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MIDI_SYNC",
+          "result": "javax.sound.midi.Sequencer$SyncMode",
+          "declaredBy": "javax.sound.midi.Sequencer$SyncMode",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MIDI_TIME_CODE",
+          "result": "javax.sound.midi.Sequencer$SyncMode",
+          "declaredBy": "javax.sound.midi.Sequencer$SyncMode",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NO_SYNC",
+          "result": "javax.sound.midi.Sequencer$SyncMode",
+          "declaredBy": "javax.sound.midi.Sequencer$SyncMode",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Sequencer$SyncMode",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.Sequencer$SyncMode",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.Sequencer$SyncMode",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.ShortMessage",
+      "kind": "class",
+      "parents": [
+        "javax.sound.midi.MidiMessage"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/ShortMessage.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/ShortMessage.java",
+      "sourceSha256": "920972bf9c438348c14a8721d87c5c1756349f3ff66ddb9d8fa2e74f5af1162d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTIVE_SENSING",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHANNEL_PRESSURE",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CONTINUE",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CONTROL_CHANGE",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "END_OF_EXCLUSIVE",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MIDI_TIME_CODE",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NOTE_OFF",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NOTE_ON",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PITCH_BEND",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "POLY_PRESSURE",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROGRAM_CHANGE",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SONG_POSITION_POINTER",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SONG_SELECT",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "START",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STOP",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SYSTEM_RESET",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TIMING_CLOCK",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TUNE_REQUEST",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChannel()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCommand()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getData1()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getData2()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDataLength(int)",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMessage(int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMessage(int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMessage(int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.ShortMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.Soundbank",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/Soundbank.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/Soundbank.java",
+      "sourceSha256": "b1716bd8a690ac0529dd9f789511933fcb12bf94ff71feda1c24069927259923",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.Soundbank",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstrument(javax.sound.midi.Patch)",
+          "result": "javax.sound.midi.Instrument",
+          "declaredBy": "javax.sound.midi.Soundbank",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstruments()",
+          "result": "javax.sound.midi.Instrument[]",
+          "declaredBy": "javax.sound.midi.Soundbank",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.Soundbank",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResources()",
+          "result": "javax.sound.midi.SoundbankResource[]",
+          "declaredBy": "javax.sound.midi.Soundbank",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVendor()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.Soundbank",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.Soundbank",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.SoundbankResource",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/SoundbankResource.java",
+      "sourceSha256": "c21366fc676d5c81063370edb730594fcc9836db72e573ca9368c4e7da1dbb3a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.sound.midi.Soundbank,java.lang.String,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.SoundbankResource",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getData()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.sound.midi.SoundbankResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDataClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.sound.midi.SoundbankResource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sound.midi.SoundbankResource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSoundbank()",
+          "result": "javax.sound.midi.Soundbank",
+          "declaredBy": "javax.sound.midi.SoundbankResource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.Synthesizer",
+      "kind": "interface",
+      "parents": [
+        "javax.sound.midi.MidiDevice"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/Synthesizer.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/Synthesizer.java",
+      "sourceSha256": "aa0b18e80686c0b05e8806f2493ba38af3491ea24be60c4c4a3e56782b5282dc",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAvailableInstruments()",
+          "result": "javax.sound.midi.Instrument[]",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChannels()",
+          "result": "javax.sound.midi.MidiChannel[]",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultSoundbank()",
+          "result": "javax.sound.midi.Soundbank",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLatency()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoadedInstruments()",
+          "result": "javax.sound.midi.Instrument[]",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxPolyphony()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVoiceStatus()",
+          "result": "javax.sound.midi.VoiceStatus[]",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSoundbankSupported(javax.sound.midi.Soundbank)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadAllInstruments(javax.sound.midi.Soundbank)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadInstrument(javax.sound.midi.Instrument)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadInstruments(javax.sound.midi.Soundbank,javax.sound.midi.Patch[])",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remapInstrument(javax.sound.midi.Instrument,javax.sound.midi.Instrument)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unloadAllInstruments(javax.sound.midi.Soundbank)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unloadInstrument(javax.sound.midi.Instrument)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unloadInstruments(javax.sound.midi.Soundbank,javax.sound.midi.Patch[])",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Synthesizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.SysexMessage",
+      "kind": "class",
+      "parents": [
+        "javax.sound.midi.MidiMessage"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/SysexMessage.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/SysexMessage.java",
+      "sourceSha256": "30038c10bfe09c456bb46c4ffe8d8d8f63229fc34719f7b78285b5d1be33a53e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.SysexMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.SysexMessage",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[],int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.SysexMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,byte[],int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.SysexMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "SPECIAL_SYSTEM_EXCLUSIVE",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.SysexMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SYSTEM_EXCLUSIVE",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.SysexMessage",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.sound.midi.SysexMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getData()",
+          "result": "byte[]",
+          "declaredBy": "javax.sound.midi.SysexMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMessage(byte[],int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.SysexMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMessage(int,byte[],int)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.SysexMessage",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.Track",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/Track.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/Track.java",
+      "sourceSha256": "3e7b22b249632a81f88589588b1e3e48f3e4d875507a49b2eb321e95b8bd90f0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "add(javax.sound.midi.MidiEvent)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Track",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "javax.sound.midi.MidiEvent",
+          "declaredBy": "javax.sound.midi.Track",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(javax.sound.midi.MidiEvent)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.Track",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.Track",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ticks()",
+          "result": "long",
+          "declaredBy": "javax.sound.midi.Track",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.Transmitter",
+      "kind": "interface",
+      "parents": [
+        "java.lang.AutoCloseable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/Transmitter.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/Transmitter.java",
+      "sourceSha256": "2ecbb96996f0fa8a8f2a660136dc76be642237cefe08a337e4ab69b5eaf92828",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Transmitter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReceiver()",
+          "result": "javax.sound.midi.Receiver",
+          "declaredBy": "javax.sound.midi.Transmitter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setReceiver(javax.sound.midi.Receiver)",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.Transmitter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.midi.VoiceStatus",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html",
+      "sourceEntry": "java.desktop/javax/sound/midi/VoiceStatus.java",
+      "sourceSha256": "b4dfedbcd93b67b9d078bb4659cb9a52f13f8343d23adf8c05be9b9c42d79050",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sound.midi.VoiceStatus",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "active",
+          "result": "boolean",
+          "declaredBy": "javax.sound.midi.VoiceStatus",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "bank",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.VoiceStatus",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "channel",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.VoiceStatus",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "note",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.VoiceStatus",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "program",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.VoiceStatus",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "volume",
+          "result": "int",
+          "declaredBy": "javax.sound.midi.VoiceStatus",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    }
+  ]
+}

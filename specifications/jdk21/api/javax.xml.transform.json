@@ -1,0 +1,988 @@
+{
+  "name": "javax.xml.transform",
+  "module": "java.xml",
+  "types": [
+    {
+      "target": "javax.xml.transform.ErrorListener",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/ErrorListener.html",
+      "sourceEntry": "java.xml/javax/xml/transform/ErrorListener.java",
+      "sourceSha256": "26e835eb2de03e9b666d42c11cb99192c24cfc6e70feb03bb575a5098e60085b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "error(javax.xml.transform.TransformerException)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.ErrorListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fatalError(javax.xml.transform.TransformerException)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.ErrorListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "warning(javax.xml.transform.TransformerException)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.ErrorListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.OutputKeys",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/OutputKeys.html",
+      "sourceEntry": "java.xml/javax/xml/transform/OutputKeys.java",
+      "sourceSha256": "c0a4ccade3b1b02127a5e2c5149d64e54992e0c72a81b410a4d5d53b08ef19c5",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CDATA_SECTION_ELEMENTS",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.OutputKeys",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DOCTYPE_PUBLIC",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.OutputKeys",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DOCTYPE_SYSTEM",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.OutputKeys",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENCODING",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.OutputKeys",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INDENT",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.OutputKeys",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEDIA_TYPE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.OutputKeys",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "METHOD",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.OutputKeys",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OMIT_XML_DECLARATION",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.OutputKeys",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STANDALONE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.OutputKeys",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VERSION",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.OutputKeys",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.Result",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/Result.html",
+      "sourceEntry": "java.xml/javax/xml/transform/Result.java",
+      "sourceSha256": "a693e8ed8213be427d05427b4435913108d860b94e98d3b82960063d4f477472",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "PI_DISABLE_OUTPUT_ESCAPING",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.Result",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PI_ENABLE_OUTPUT_ESCAPING",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.Result",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.Result",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSystemId(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Result",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.Source",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/Source.html",
+      "sourceEntry": "java.xml/javax/xml/transform/Source.java",
+      "sourceSha256": "974f82b68a619cdc69bd59d2ea2331134682440d1ff5c63d02cb8e2a50f808f8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getSystemId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.Source",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.transform.Source",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSystemId(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Source",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.SourceLocator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/SourceLocator.html",
+      "sourceEntry": "java.xml/javax/xml/transform/SourceLocator.java",
+      "sourceSha256": "fe41a0bc7ab7c58f157dba4ee1f6f38e079d40a18a87b66a1ed490e06c8b3a9c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getColumnNumber()",
+          "result": "int",
+          "declaredBy": "javax.xml.transform.SourceLocator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLineNumber()",
+          "result": "int",
+          "declaredBy": "javax.xml.transform.SourceLocator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.SourceLocator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.SourceLocator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.Templates",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/Templates.html",
+      "sourceEntry": "java.xml/javax/xml/transform/Templates.java",
+      "sourceSha256": "556c65695a4487712906d76c25265e18077a427ccfaa2a2c98749c03f07ec59d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getOutputProperties()",
+          "result": "java.util.Properties",
+          "declaredBy": "javax.xml.transform.Templates",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newTransformer()",
+          "result": "javax.xml.transform.Transformer",
+          "declaredBy": "javax.xml.transform.Templates",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.Transformer",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/Transformer.html",
+      "sourceEntry": "java.xml/javax/xml/transform/Transformer.java",
+      "sourceSha256": "0f2a0fa20b9959e3d2386053744ec635485f02504720de57df090cbe6a1d189c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clearParameters()",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getErrorListener()",
+          "result": "javax.xml.transform.ErrorListener",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputProperties()",
+          "result": "java.util.Properties",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputProperty(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameter(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURIResolver()",
+          "result": "javax.xml.transform.URIResolver",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setErrorListener(javax.xml.transform.ErrorListener)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOutputProperties(java.util.Properties)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOutputProperty(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setParameter(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setURIResolver(javax.xml.transform.URIResolver)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "transform(javax.xml.transform.Source,javax.xml.transform.Result)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.Transformer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.TransformerConfigurationException",
+      "kind": "class",
+      "parents": [
+        "javax.xml.transform.TransformerException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/TransformerConfigurationException.html",
+      "sourceEntry": "java.xml/javax/xml/transform/TransformerConfigurationException.java",
+      "sourceSha256": "b25af2a19400b84cae91a3f8d4cf438199c6d4b1235f4bbb4f1ea9b1753c46b1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerConfigurationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerConfigurationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerConfigurationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,javax.xml.transform.SourceLocator)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerConfigurationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,javax.xml.transform.SourceLocator,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerConfigurationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerConfigurationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.TransformerException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/TransformerException.html",
+      "sourceEntry": "java.xml/javax/xml/transform/TransformerException.java",
+      "sourceSha256": "b17cbe44315bf24fa0abf4d90aba3438699e0a6307d4ed627d60ce24a841222f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,javax.xml.transform.SourceLocator)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,javax.xml.transform.SourceLocator,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getException()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocationAsString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocator()",
+          "result": "javax.xml.transform.SourceLocator",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessageAndLocation()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initCause(java.lang.Throwable)",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace()",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintStream)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintWriter)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocator(javax.xml.transform.SourceLocator)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.TransformerFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/TransformerFactory.html",
+      "sourceEntry": "java.xml/javax/xml/transform/TransformerFactory.java",
+      "sourceSha256": "a30cb1ae0e0715b8bbbe7a6b02ba6dda4c5b4c2807058e22a54e00e02bac7092",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAssociatedStylesheet(javax.xml.transform.Source,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "javax.xml.transform.Source",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getErrorListener()",
+          "result": "javax.xml.transform.ErrorListener",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFeature(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURIResolver()",
+          "result": "javax.xml.transform.URIResolver",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDefaultInstance()",
+          "result": "javax.xml.transform.TransformerFactory",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance()",
+          "result": "javax.xml.transform.TransformerFactory",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.transform.TransformerFactory",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newTemplates(javax.xml.transform.Source)",
+          "result": "javax.xml.transform.Templates",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newTransformer()",
+          "result": "javax.xml.transform.Transformer",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newTransformer(javax.xml.transform.Source)",
+          "result": "javax.xml.transform.Transformer",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttribute(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setErrorListener(javax.xml.transform.ErrorListener)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFeature(java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setURIResolver(javax.xml.transform.URIResolver)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.TransformerFactoryConfigurationError",
+      "kind": "class",
+      "parents": [
+        "java.lang.Error"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/TransformerFactoryConfigurationError.html",
+      "sourceEntry": "java.xml/javax/xml/transform/TransformerFactoryConfigurationError.java",
+      "sourceSha256": "aa5b1fb03a601eb9cfae3aaa180f28f725185ef39d0cd47182db9d1f84abb724",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerFactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerFactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Exception,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerFactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.transform.TransformerFactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.transform.TransformerFactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getException()",
+          "result": "java.lang.Exception",
+          "declaredBy": "javax.xml.transform.TransformerFactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.transform.TransformerFactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.transform.URIResolver",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/transform/URIResolver.html",
+      "sourceEntry": "java.xml/javax/xml/transform/URIResolver.java",
+      "sourceSha256": "8ee21df9d9ff0feedfa593be235b258fa99369c115b21729e9a42c650869ed09",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "resolve(java.lang.String,java.lang.String)",
+          "result": "javax.xml.transform.Source",
+          "declaredBy": "javax.xml.transform.URIResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1719 @@
+{
+  "name": "javax.swing.border",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.swing.border.AbstractBorder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.swing.border.Border",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/AbstractBorder.html",
+      "sourceEntry": "java.desktop/javax/swing/border/AbstractBorder.java",
+      "sourceSha256": "df1d78629337bd7484198642bda4963571a5a47e72eea82c0604554430df4d0d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.border.AbstractBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBaseline(java.awt.Component,int,int)",
+          "result": "int",
+          "declaredBy": "javax.swing.border.AbstractBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBaselineResizeBehavior(java.awt.Component)",
+          "result": "java.awt.Component$BaselineResizeBehavior",
+          "declaredBy": "javax.swing.border.AbstractBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.AbstractBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component,java.awt.Insets)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.AbstractBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInteriorRectangle(java.awt.Component,int,int,int,int)",
+          "result": "java.awt.Rectangle",
+          "declaredBy": "javax.swing.border.AbstractBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInteriorRectangle(java.awt.Component,javax.swing.border.Border,int,int,int,int)",
+          "result": "java.awt.Rectangle",
+          "declaredBy": "javax.swing.border.AbstractBorder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBorderOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.AbstractBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.AbstractBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.border.BevelBorder",
+      "kind": "class",
+      "parents": [
+        "javax.swing.border.AbstractBorder"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/BevelBorder.html",
+      "sourceEntry": "java.desktop/javax/swing/border/BevelBorder.java",
+      "sourceSha256": "46b464c4102f653e9baa77f914b16d66c5d5a4ba74ed24ab0784cd6d90340d3b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.awt.Color,java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "LOWERED",
+          "result": "int",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RAISED",
+          "result": "int",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "bevelType",
+          "result": "int",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getBevelType()",
+          "result": "int",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component,java.awt.Insets)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHighlightInnerColor()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHighlightInnerColor(java.awt.Component)",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHighlightOuterColor()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHighlightOuterColor(java.awt.Component)",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShadowInnerColor()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShadowInnerColor(java.awt.Component)",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShadowOuterColor()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShadowOuterColor(java.awt.Component)",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "highlightInner",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "highlightOuter",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isBorderOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintLoweredBevel(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintRaisedBevel(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "shadowInner",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "shadowOuter",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.BevelBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.border.Border",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/Border.html",
+      "sourceEntry": "java.desktop/javax/swing/border/Border.java",
+      "sourceSha256": "6176a2b9a485c6c67320ca7fec7b62ec1965573ea2e87ca35d6ded98264e7957",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.Border",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBorderOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.Border",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.Border",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.border.CompoundBorder",
+      "kind": "class",
+      "parents": [
+        "javax.swing.border.AbstractBorder"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/CompoundBorder.html",
+      "sourceEntry": "java.desktop/javax/swing/border/CompoundBorder.java",
+      "sourceSha256": "e1e2f752bb76659cad532fb9542dbdab2ec5b6cedd0cb065bcd58b7a634bb519",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.border.CompoundBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.border.Border,javax.swing.border.Border)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.CompoundBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component,java.awt.Insets)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.CompoundBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInsideBorder()",
+          "result": "javax.swing.border.Border",
+          "declaredBy": "javax.swing.border.CompoundBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutsideBorder()",
+          "result": "javax.swing.border.Border",
+          "declaredBy": "javax.swing.border.CompoundBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "insideBorder",
+          "result": "javax.swing.border.Border",
+          "declaredBy": "javax.swing.border.CompoundBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isBorderOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.CompoundBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "outsideBorder",
+          "result": "javax.swing.border.Border",
+          "declaredBy": "javax.swing.border.CompoundBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.CompoundBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.border.EmptyBorder",
+      "kind": "class",
+      "parents": [
+        "javax.swing.border.AbstractBorder",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/EmptyBorder.html",
+      "sourceEntry": "java.desktop/javax/swing/border/EmptyBorder.java",
+      "sourceSha256": "467e58add418fad41784bd2dd8d0307a02779d25e3efc452307657a33d3b92cf",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.EmptyBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Insets)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.EmptyBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "bottom",
+          "result": "int",
+          "declaredBy": "javax.swing.border.EmptyBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets()",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.EmptyBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component,java.awt.Insets)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.EmptyBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBorderOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.EmptyBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "left",
+          "result": "int",
+          "declaredBy": "javax.swing.border.EmptyBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.EmptyBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "right",
+          "result": "int",
+          "declaredBy": "javax.swing.border.EmptyBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "top",
+          "result": "int",
+          "declaredBy": "javax.swing.border.EmptyBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.border.EtchedBorder",
+      "kind": "class",
+      "parents": [
+        "javax.swing.border.AbstractBorder"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/EtchedBorder.html",
+      "sourceEntry": "java.desktop/javax/swing/border/EtchedBorder.java",
+      "sourceSha256": "3af3edb189c846eabfcdc91324f5528c35621a2453ef9aa3932e72a3e5f01cdf",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.awt.Color,java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Color,java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "LOWERED",
+          "result": "int",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RAISED",
+          "result": "int",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "etchType",
+          "result": "int",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component,java.awt.Insets)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEtchType()",
+          "result": "int",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHighlightColor()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHighlightColor(java.awt.Component)",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShadowColor()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShadowColor(java.awt.Component)",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "highlight",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isBorderOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "shadow",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.EtchedBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.border.LineBorder",
+      "kind": "class",
+      "parents": [
+        "javax.swing.border.AbstractBorder"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/LineBorder.html",
+      "sourceEntry": "java.desktop/javax/swing/border/LineBorder.java",
+      "sourceSha256": "976bf298e04f895753970aaad264dad48c61356ffb5c71a1f798eafaa28ad0fd",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Color,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Color,int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createBlackLineBorder()",
+          "result": "javax.swing.border.Border",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createGrayLineBorder()",
+          "result": "javax.swing.border.Border",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component,java.awt.Insets)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLineColor()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRoundedCorners()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThickness()",
+          "result": "int",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBorderOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "lineColor",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "roundedCorners",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "thickness",
+          "result": "int",
+          "declaredBy": "javax.swing.border.LineBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.border.MatteBorder",
+      "kind": "class",
+      "parents": [
+        "javax.swing.border.EmptyBorder"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/MatteBorder.html",
+      "sourceEntry": "java.desktop/javax/swing/border/MatteBorder.java",
+      "sourceSha256": "7b7dc3022c569a28eaa384c21e718589e4efc0acd35684b08751a0828ade79f5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int,int,java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int,int,javax.swing.Icon)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Insets,java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Insets,javax.swing.Icon)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.Icon)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "color",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets()",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component,java.awt.Insets)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMatteColor()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTileIcon()",
+          "result": "javax.swing.Icon",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBorderOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "tileIcon",
+          "result": "javax.swing.Icon",
+          "declaredBy": "javax.swing.border.MatteBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.border.SoftBevelBorder",
+      "kind": "class",
+      "parents": [
+        "javax.swing.border.BevelBorder"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/SoftBevelBorder.html",
+      "sourceEntry": "java.desktop/javax/swing/border/SoftBevelBorder.java",
+      "sourceSha256": "1fb5b1993c8091b71074fcc7ae832c62894fd0865bb9684be6584fed6ba9dbbb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.SoftBevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.awt.Color,java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.SoftBevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.SoftBevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component,java.awt.Insets)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.SoftBevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBorderOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.SoftBevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.SoftBevelBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.border.StrokeBorder",
+      "kind": "class",
+      "parents": [
+        "javax.swing.border.AbstractBorder"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/StrokeBorder.html",
+      "sourceEntry": "java.desktop/javax/swing/border/StrokeBorder.java",
+      "sourceSha256": "b6aba790bd56d0259ccdfa195a32d93506f698806688bc713399227cfac1ddfd",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.BasicStroke)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.StrokeBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.BasicStroke,java.awt.Paint)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.StrokeBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component,java.awt.Insets)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.StrokeBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPaint()",
+          "result": "java.awt.Paint",
+          "declaredBy": "javax.swing.border.StrokeBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStroke()",
+          "result": "java.awt.BasicStroke",
+          "declaredBy": "javax.swing.border.StrokeBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.StrokeBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.border.TitledBorder",
+      "kind": "class",
+      "parents": [
+        "javax.swing.border.AbstractBorder"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/border/TitledBorder.html",
+      "sourceEntry": "java.desktop/javax/swing/border/TitledBorder.java",
+      "sourceSha256": "344105221e60da160b18eb6ccad1a786881f2311b85948d636a54a8455ef3634",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.border.Border)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.border.Border,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.border.Border,java.lang.String,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ABOVE_BOTTOM",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ABOVE_TOP",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BELOW_BOTTOM",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BELOW_TOP",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BOTTOM",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CENTER",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT_JUSTIFICATION",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT_POSITION",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EDGE_SPACING",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LEADING",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LEFT",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RIGHT",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_INSET_H",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT_SPACING",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TOP",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TRAILING",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "border",
+          "result": "javax.swing.border.Border",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getBaseline(java.awt.Component,int,int)",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBaselineResizeBehavior(java.awt.Component)",
+          "result": "java.awt.Component$BaselineResizeBehavior",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorder()",
+          "result": "javax.swing.border.Border",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBorderInsets(java.awt.Component,java.awt.Insets)",
+          "result": "java.awt.Insets",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFont(java.awt.Component)",
+          "result": "java.awt.Font",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinimumSize(java.awt.Component)",
+          "result": "java.awt.Dimension",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTitle()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTitleColor()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTitleFont()",
+          "result": "java.awt.Font",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTitleJustification()",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTitlePosition()",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBorderOpaque()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBorder(javax.swing.border.Border)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTitle(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTitleColor(java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTitleFont(java.awt.Font)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTitleJustification(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTitlePosition(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "title",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "titleColor",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "titleFont",
+          "result": "java.awt.Font",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "titleJustification",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "titlePosition",
+          "result": "int",
+          "declaredBy": "javax.swing.border.TitledBorder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    }
+  ]
+}

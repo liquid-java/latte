@@ -1,0 +1,2228 @@
+{
+  "name": "java.util.logging",
+  "module": "java.logging",
+  "types": [
+    {
+      "target": "java.util.logging.ConsoleHandler",
+      "kind": "class",
+      "parents": [
+        "java.util.logging.StreamHandler"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/ConsoleHandler.html",
+      "sourceEntry": "java.logging/java/util/logging/ConsoleHandler.java",
+      "sourceSha256": "7e91ef229748780bf6ed0fafc7253d202cac86ec2b0e73d826d8ec81e312d01a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.ConsoleHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.util.logging.ConsoleHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "publish(java.util.logging.LogRecord)",
+          "result": "void",
+          "declaredBy": "java.util.logging.ConsoleHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.ErrorManager",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/ErrorManager.html",
+      "sourceEntry": "java.logging/java/util/logging/ErrorManager.java",
+      "sourceSha256": "c5e3aca09a45fb7346ee78fb628269e35f1e2425c8d5be192ae517c3c994a57d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.ErrorManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "CLOSE_FAILURE",
+          "result": "int",
+          "declaredBy": "java.util.logging.ErrorManager",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FLUSH_FAILURE",
+          "result": "int",
+          "declaredBy": "java.util.logging.ErrorManager",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FORMAT_FAILURE",
+          "result": "int",
+          "declaredBy": "java.util.logging.ErrorManager",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GENERIC_FAILURE",
+          "result": "int",
+          "declaredBy": "java.util.logging.ErrorManager",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OPEN_FAILURE",
+          "result": "int",
+          "declaredBy": "java.util.logging.ErrorManager",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WRITE_FAILURE",
+          "result": "int",
+          "declaredBy": "java.util.logging.ErrorManager",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "error(java.lang.String,java.lang.Exception,int)",
+          "result": "void",
+          "declaredBy": "java.util.logging.ErrorManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.FileHandler",
+      "kind": "class",
+      "parents": [
+        "java.util.logging.StreamHandler"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/FileHandler.html",
+      "sourceEntry": "java.logging/java/util/logging/FileHandler.java",
+      "sourceSha256": "abb26f4aa29113b2048b2c0cde7496a234f023aff480ab3a2882bafdb95b67fa",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.FileHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.FileHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "java.util.logging.FileHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int,int)",
+          "result": "void",
+          "declaredBy": "java.util.logging.FileHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int,int,boolean)",
+          "result": "void",
+          "declaredBy": "java.util.logging.FileHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,long,int,boolean)",
+          "result": "void",
+          "declaredBy": "java.util.logging.FileHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.util.logging.FileHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "publish(java.util.logging.LogRecord)",
+          "result": "void",
+          "declaredBy": "java.util.logging.FileHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.Filter",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/Filter.html",
+      "sourceEntry": "java.logging/java/util/logging/Filter.java",
+      "sourceSha256": "7e6a50318c813bb5634a46c5055de423cba014b95c4998c68e66c62a80a050dc",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "isLoggable(java.util.logging.LogRecord)",
+          "result": "boolean",
+          "declaredBy": "java.util.logging.Filter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.Formatter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/Formatter.html",
+      "sourceEntry": "java.logging/java/util/logging/Formatter.java",
+      "sourceSha256": "2c8db7a61d8ebaa1a29b4fcb1a8b8be2c50620b7607b42d92cf3bdd5a506ebb5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.Formatter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.util.logging.LogRecord)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Formatter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "formatMessage(java.util.logging.LogRecord)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Formatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHead(java.util.logging.Handler)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Formatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTail(java.util.logging.Handler)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Formatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.Handler",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/Handler.html",
+      "sourceEntry": "java.logging/java/util/logging/Handler.java",
+      "sourceSha256": "589e549e6243960caecc51392578165cf963698aeb80dcdfa592efd8d1fed9c9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flush()",
+          "result": "void",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoding()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getErrorManager()",
+          "result": "java.util.logging.ErrorManager",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFilter()",
+          "result": "java.util.logging.Filter",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormatter()",
+          "result": "java.util.logging.Formatter",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLevel()",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLoggable(java.util.logging.LogRecord)",
+          "result": "boolean",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "publish(java.util.logging.LogRecord)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reportError(java.lang.String,java.lang.Exception,int)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEncoding(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setErrorManager(java.util.logging.ErrorManager)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFilter(java.util.logging.Filter)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFormatter(java.util.logging.Formatter)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLevel(java.util.logging.Level)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Handler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.Level",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/Level.html",
+      "sourceEntry": "java.logging/java/util/logging/Level.java",
+      "sourceSha256": "6387ce3377e1300bd8f4efdbea46e6338fb9e58ef55e69404256551cba61e85d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ALL",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CONFIG",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FINE",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FINER",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FINEST",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INFO",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OFF",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SEVERE",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WARNING",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalizedName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResourceBundleName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValue()",
+          "result": "int",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String)",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Level",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.LogManager",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/LogManager.html",
+      "sourceEntry": "java.logging/java/util/logging/LogManager.java",
+      "sourceSha256": "16ae42fe7982de3f4f1c01011491b61a110d0df0dff01e2b5b502344f0cb765e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "LOGGING_MXBEAN_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addConfigurationListener(java.lang.Runnable)",
+          "result": "java.util.logging.LogManager",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addLogger(java.util.logging.Logger)",
+          "result": "boolean",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "checkAccess()",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLogManager()",
+          "result": "java.util.logging.LogManager",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLogger(java.lang.String)",
+          "result": "java.util.logging.Logger",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoggerNames()",
+          "result": "java.util.Enumeration",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoggingMXBean()",
+          "result": "java.util.logging.LoggingMXBean",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readConfiguration()",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readConfiguration(java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeConfigurationListener(java.lang.Runnable)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateConfiguration(java.io.InputStream,java.util.function.Function)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateConfiguration(java.util.function.Function)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.LogRecord",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/LogRecord.html",
+      "sourceEntry": "java.logging/java/util/logging/LogRecord.java",
+      "sourceSha256": "cfd19d73f1d71fceae6b944111bb56928851a43426ac293e6eaf610d513006db",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.logging.Level,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstant()",
+          "result": "java.time.Instant",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLevel()",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoggerName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLongThreadID()",
+          "result": "long",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMillis()",
+          "result": "long",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameters()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResourceBundle()",
+          "result": "java.util.ResourceBundle",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResourceBundleName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSequenceNumber()",
+          "result": "long",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceClassName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceMethodName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThreadID()",
+          "result": "int",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThrown()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInstant(java.time.Instant)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLevel(java.util.logging.Level)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLoggerName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLongThreadID(long)",
+          "result": "java.util.logging.LogRecord",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMessage(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMillis(long)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setParameters(java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setResourceBundle(java.util.ResourceBundle)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setResourceBundleName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSequenceNumber(long)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSourceClassName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSourceMethodName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setThreadID(int)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setThrown(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LogRecord",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.Logger",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/Logger.html",
+      "sourceEntry": "java.logging/java/util/logging/Logger.java",
+      "sourceSha256": "adec0da6de3b96103e6b174fbb7a6defb50a82d59181e2706d9441aff44fc10c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "GLOBAL_LOGGER_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addHandler(java.util.logging.Handler)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "config(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "config(java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "entering(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "entering(java.lang.String,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "entering(java.lang.String,java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exiting(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exiting(java.lang.String,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fine(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fine(java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "finer(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "finer(java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "finest(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "finest(java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAnonymousLogger()",
+          "result": "java.util.logging.Logger",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAnonymousLogger(java.lang.String)",
+          "result": "java.util.logging.Logger",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFilter()",
+          "result": "java.util.logging.Filter",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGlobal()",
+          "result": "java.util.logging.Logger",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHandlers()",
+          "result": "java.util.logging.Handler[]",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLevel()",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLogger(java.lang.String)",
+          "result": "java.util.logging.Logger",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLogger(java.lang.String,java.lang.String)",
+          "result": "java.util.logging.Logger",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParent()",
+          "result": "java.util.logging.Logger",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResourceBundle()",
+          "result": "java.util.ResourceBundle",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResourceBundleName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUseParentHandlers()",
+          "result": "boolean",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "global",
+          "result": "java.util.logging.Logger",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "info(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "info(java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLoggable(java.util.logging.Level)",
+          "result": "boolean",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "log(java.util.logging.Level,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "log(java.util.logging.Level,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "log(java.util.logging.Level,java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "log(java.util.logging.Level,java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "log(java.util.logging.Level,java.lang.Throwable,java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "log(java.util.logging.Level,java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "log(java.util.logging.LogRecord)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.Throwable,java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logp(java.util.logging.Level,java.lang.String,java.lang.String,java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.util.ResourceBundle,java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logrb(java.util.logging.Level,java.util.ResourceBundle,java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "logrb(java.util.logging.Level,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeHandler(java.util.logging.Handler)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFilter(java.util.logging.Filter)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLevel(java.util.logging.Level)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setParent(java.util.logging.Logger)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setResourceBundle(java.util.ResourceBundle)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUseParentHandlers(boolean)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "severe(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "severe(java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "throwing(java.lang.String,java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "warning(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "warning(java.util.function.Supplier)",
+          "result": "void",
+          "declaredBy": "java.util.logging.Logger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.LoggingMXBean",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/LoggingMXBean.html",
+      "sourceEntry": "java.logging/java/util/logging/LoggingMXBean.java",
+      "sourceSha256": "71bc7e1279df5a99134381998a7116ccff0e58a1af82d18757911c29dd9ad327",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getLoggerLevel(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.LoggingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLoggerNames()",
+          "result": "java.util.List",
+          "declaredBy": "java.util.logging.LoggingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParentLoggerName(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.LoggingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLoggerLevel(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LoggingMXBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.LoggingPermission",
+      "kind": "class",
+      "parents": [
+        "java.security.BasicPermission"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/LoggingPermission.html",
+      "sourceEntry": "java.logging/java/util/logging/LoggingPermission.java",
+      "sourceSha256": "31cc8849956b361bc3311d0b211eda9d0accc818faf687642287fc42de3aa9ed",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.LoggingPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.MemoryHandler",
+      "kind": "class",
+      "parents": [
+        "java.util.logging.Handler"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/MemoryHandler.html",
+      "sourceEntry": "java.logging/java/util/logging/MemoryHandler.java",
+      "sourceSha256": "de3fffe7b906bec8766bbaa9b9f905a6f8a4d6452749a61689c7ebe54066b472",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.MemoryHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.logging.Handler,int,java.util.logging.Level)",
+          "result": "void",
+          "declaredBy": "java.util.logging.MemoryHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.util.logging.MemoryHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flush()",
+          "result": "void",
+          "declaredBy": "java.util.logging.MemoryHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPushLevel()",
+          "result": "java.util.logging.Level",
+          "declaredBy": "java.util.logging.MemoryHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLoggable(java.util.logging.LogRecord)",
+          "result": "boolean",
+          "declaredBy": "java.util.logging.MemoryHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "publish(java.util.logging.LogRecord)",
+          "result": "void",
+          "declaredBy": "java.util.logging.MemoryHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "push()",
+          "result": "void",
+          "declaredBy": "java.util.logging.MemoryHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPushLevel(java.util.logging.Level)",
+          "result": "void",
+          "declaredBy": "java.util.logging.MemoryHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.SimpleFormatter",
+      "kind": "class",
+      "parents": [
+        "java.util.logging.Formatter"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/SimpleFormatter.html",
+      "sourceEntry": "java.logging/java/util/logging/SimpleFormatter.java",
+      "sourceSha256": "d6693080f52584dcd979cff934e2506049e6a1aae6e934e0d86acd01a7ef9ae4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.SimpleFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.util.logging.LogRecord)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.SimpleFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.SocketHandler",
+      "kind": "class",
+      "parents": [
+        "java.util.logging.StreamHandler"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/SocketHandler.html",
+      "sourceEntry": "java.logging/java/util/logging/SocketHandler.java",
+      "sourceSha256": "106e3499805e8dd5f970b0692925fdff59e4807b44ef782f6d248cdc8f94ad0f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.SocketHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "java.util.logging.SocketHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.util.logging.SocketHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "publish(java.util.logging.LogRecord)",
+          "result": "void",
+          "declaredBy": "java.util.logging.SocketHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.StreamHandler",
+      "kind": "class",
+      "parents": [
+        "java.util.logging.Handler"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/StreamHandler.html",
+      "sourceEntry": "java.logging/java/util/logging/StreamHandler.java",
+      "sourceSha256": "c36dc50ee781280810a7b49623542bed60faff7b57d4696658f9544eb4b8bfc9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.StreamHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.OutputStream,java.util.logging.Formatter)",
+          "result": "void",
+          "declaredBy": "java.util.logging.StreamHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.util.logging.StreamHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flush()",
+          "result": "void",
+          "declaredBy": "java.util.logging.StreamHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLoggable(java.util.logging.LogRecord)",
+          "result": "boolean",
+          "declaredBy": "java.util.logging.StreamHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "publish(java.util.logging.LogRecord)",
+          "result": "void",
+          "declaredBy": "java.util.logging.StreamHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEncoding(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.util.logging.StreamHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOutputStream(java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "java.util.logging.StreamHandler",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.logging.XMLFormatter",
+      "kind": "class",
+      "parents": [
+        "java.util.logging.Formatter"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.logging/java/util/logging/XMLFormatter.html",
+      "sourceEntry": "java.logging/java/util/logging/XMLFormatter.java",
+      "sourceSha256": "98935af75bada4da2a7b4ee0bdfee891274ef28a638acb33f7e2d3b1eea08b51",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.logging.XMLFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.util.logging.LogRecord)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.XMLFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHead(java.util.logging.Handler)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.XMLFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTail(java.util.logging.Handler)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.logging.XMLFormatter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

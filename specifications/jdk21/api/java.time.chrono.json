@@ -1,0 +1,4332 @@
+{
+  "name": "java.time.chrono",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.time.chrono.AbstractChronology",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.time.chrono.Chronology"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/AbstractChronology.html",
+      "sourceEntry": "java.base/java/time/chrono/AbstractChronology.java",
+      "sourceSha256": "c7dc7a2fa6ad8170bf7b38a12d4884f3330d34fd90cd6ec41fd54bc1e76fdf67",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.time.chrono.AbstractChronology",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.time.chrono.Chronology)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.AbstractChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.AbstractChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.AbstractChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveDate(java.util.Map,java.time.format.ResolverStyle)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.AbstractChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.AbstractChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.ChronoLocalDate",
+      "kind": "interface",
+      "parents": [
+        "java.time.temporal.Temporal",
+        "java.time.temporal.TemporalAdjuster",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/ChronoLocalDate.html",
+      "sourceEntry": "java.base/java/time/chrono/ChronoLocalDate.java",
+      "sourceSha256": "c1b0cc9ab5733a01d17be0a62d82747c03e6b93a7039c1d5b4cde6b6e39c60ec",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "adjustInto(java.time.temporal.Temporal)",
+          "result": "java.time.temporal.Temporal",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "atTime(java.time.LocalTime)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.time.chrono.ChronoLocalDate)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.time.format.DateTimeFormatter)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChronology()",
+          "result": "java.time.chrono.Chronology",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEra()",
+          "result": "java.time.chrono.Era",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAfter(java.time.chrono.ChronoLocalDate)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBefore(java.time.chrono.ChronoLocalDate)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEqual(java.time.chrono.ChronoLocalDate)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLeapYear()",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupported(java.time.temporal.TemporalField)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupported(java.time.temporal.TemporalUnit)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lengthOfMonth()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "lengthOfYear()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "query(java.time.temporal.TemporalQuery)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "timeLineOrder()",
+          "result": "java.util.Comparator",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toEpochDay()",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "until(java.time.chrono.ChronoLocalDate)",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalAdjuster)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalField,long)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.ChronoLocalDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.ChronoLocalDateTime",
+      "kind": "interface",
+      "parents": [
+        "java.time.temporal.Temporal",
+        "java.time.temporal.TemporalAdjuster",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html",
+      "sourceEntry": "java.base/java/time/chrono/ChronoLocalDateTime.java",
+      "sourceSha256": "3cafdaa586f25f1f5968d9ae3d7de86dbffa2f01df9fe1e5ec0bf069dae04213",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "adjustInto(java.time.temporal.Temporal)",
+          "result": "java.time.temporal.Temporal",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "atZone(java.time.ZoneId)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.time.chrono.ChronoLocalDateTime)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.time.format.DateTimeFormatter)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChronology()",
+          "result": "java.time.chrono.Chronology",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAfter(java.time.chrono.ChronoLocalDateTime)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBefore(java.time.chrono.ChronoLocalDateTime)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEqual(java.time.chrono.ChronoLocalDateTime)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupported(java.time.temporal.TemporalField)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupported(java.time.temporal.TemporalUnit)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "query(java.time.temporal.TemporalQuery)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "timeLineOrder()",
+          "result": "java.util.Comparator",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toEpochSecond(java.time.ZoneOffset)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toInstant(java.time.ZoneOffset)",
+          "result": "java.time.Instant",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toLocalDate()",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toLocalTime()",
+          "result": "java.time.LocalTime",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalAdjuster)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalField,long)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ChronoLocalDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.ChronoPeriod",
+      "kind": "interface",
+      "parents": [
+        "java.time.temporal.TemporalAmount"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/ChronoPeriod.html",
+      "sourceEntry": "java.base/java/time/chrono/ChronoPeriod.java",
+      "sourceSha256": "6ee15d627ef61aba74e250e1e16cd56f95c49feb2ba0d94c69b5b011ba548c7c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addTo(java.time.temporal.Temporal)",
+          "result": "java.time.temporal.Temporal",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "between(java.time.chrono.ChronoLocalDate,java.time.chrono.ChronoLocalDate)",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.time.temporal.TemporalUnit)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChronology()",
+          "result": "java.time.chrono.Chronology",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnits()",
+          "result": "java.util.List",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNegative()",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isZero()",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "multipliedBy(int)",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "negated()",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "normalized()",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "subtractFrom(java.time.temporal.Temporal)",
+          "result": "java.time.temporal.Temporal",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoPeriod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.ChronoZonedDateTime",
+      "kind": "interface",
+      "parents": [
+        "java.time.temporal.Temporal",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html",
+      "sourceEntry": "java.base/java/time/chrono/ChronoZonedDateTime.java",
+      "sourceSha256": "e043cf6ab9b30c1e72b6ee36bb5c1899f426e1bb2f2e6045a92d645387c948f9",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "compareTo(java.time.chrono.ChronoZonedDateTime)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.time.format.DateTimeFormatter)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.time.temporal.TemporalField)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChronology()",
+          "result": "java.time.chrono.Chronology",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLong(java.time.temporal.TemporalField)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffset()",
+          "result": "java.time.ZoneOffset",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getZone()",
+          "result": "java.time.ZoneId",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAfter(java.time.chrono.ChronoZonedDateTime)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBefore(java.time.chrono.ChronoZonedDateTime)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEqual(java.time.chrono.ChronoZonedDateTime)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupported(java.time.temporal.TemporalField)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupported(java.time.temporal.TemporalUnit)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "query(java.time.temporal.TemporalQuery)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.TemporalField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "timeLineOrder()",
+          "result": "java.util.Comparator",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toEpochSecond()",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toInstant()",
+          "result": "java.time.Instant",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toLocalDate()",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toLocalDateTime()",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toLocalTime()",
+          "result": "java.time.LocalTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalAdjuster)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalField,long)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withEarlierOffsetAtOverlap()",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withLaterOffsetAtOverlap()",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withZoneSameInstant(java.time.ZoneId)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withZoneSameLocal(java.time.ZoneId)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ChronoZonedDateTime",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.Chronology",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/Chronology.html",
+      "sourceEntry": "java.base/java/time/chrono/Chronology.java",
+      "sourceSha256": "62d9e80494356ce84fe24a1b4b4751ebff46a8a17828401b8954491143ec45b4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "compareTo(java.time.chrono.Chronology)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(int,int,int)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.chrono.Era,int,int,int)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateEpochDay(long)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow()",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.Clock)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.ZoneId)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(int,int)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(java.time.chrono.Era,int,int)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "epochSecond(int,int,int,int,int,int,java.time.ZoneOffset)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "epochSecond(java.time.chrono.Era,int,int,int,int,int,int,java.time.ZoneOffset)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eraOf(int)",
+          "result": "java.time.chrono.Era",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eras()",
+          "result": "java.util.List",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.Chronology",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableChronologies()",
+          "result": "java.util.Set",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCalendarType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayName(java.time.format.TextStyle,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getId()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isIsoBased()",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLeapYear(long)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "localDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.String)",
+          "result": "java.time.chrono.Chronology",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofLocale(java.util.Locale)",
+          "result": "java.time.chrono.Chronology",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "period(int,int,int)",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prolepticYear(java.time.chrono.Era,int)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.ChronoField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveDate(java.util.Map,java.time.format.ResolverStyle)",
+          "result": "java.time.chrono.ChronoLocalDate",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.Instant,java.time.ZoneId)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.Chronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.Era",
+      "kind": "interface",
+      "parents": [
+        "java.time.temporal.TemporalAccessor",
+        "java.time.temporal.TemporalAdjuster"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/Era.html",
+      "sourceEntry": "java.base/java/time/chrono/Era.java",
+      "sourceSha256": "23bec65439d9f9cd99b4994fc24c54449aa5f1253ef9565ed39f4fb15d488d79",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "adjustInto(java.time.temporal.Temporal)",
+          "result": "java.time.temporal.Temporal",
+          "declaredBy": "java.time.chrono.Era",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.time.temporal.TemporalField)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.Era",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayName(java.time.format.TextStyle,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.Era",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLong(java.time.temporal.TemporalField)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.Era",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.Era",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupported(java.time.temporal.TemporalField)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.Era",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "query(java.time.temporal.TemporalQuery)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.time.chrono.Era",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.TemporalField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.Era",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.HijrahChronology",
+      "kind": "class",
+      "parents": [
+        "java.time.chrono.AbstractChronology",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/HijrahChronology.html",
+      "sourceEntry": "java.base/java/time/chrono/HijrahChronology.java",
+      "sourceSha256": "12d2067bdf960abf11758e192df22f72c37256046b2fecdba071af0b3bc16e1f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "INSTANCE",
+          "result": "java.time.chrono.HijrahChronology",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "date(int,int,int)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.chrono.Era,int,int,int)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateEpochDay(long)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow()",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.Clock)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.ZoneId)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(int,int)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(java.time.chrono.Era,int,int)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eraOf(int)",
+          "result": "java.time.chrono.HijrahEra",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eras()",
+          "result": "java.util.List",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCalendarType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getId()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLeapYear(long)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "localDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prolepticYear(java.time.chrono.Era,int)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.ChronoField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveDate(java.util.Map,java.time.format.ResolverStyle)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.Instant,java.time.ZoneId)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.HijrahChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.HijrahDate",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.time.chrono.ChronoLocalDate",
+        "java.time.temporal.Temporal",
+        "java.time.temporal.TemporalAdjuster",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/HijrahDate.html",
+      "sourceEntry": "java.base/java/time/chrono/HijrahDate.java",
+      "sourceSha256": "6eb5b1ff363734903817aca00401237371d31b5238cb3dc08872e6a23da9c819",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "atTime(java.time.LocalTime)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChronology()",
+          "result": "java.time.chrono.HijrahChronology",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEra()",
+          "result": "java.time.chrono.HijrahEra",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLong(java.time.temporal.TemporalField)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLeapYear()",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lengthOfMonth()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lengthOfYear()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now()",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now(java.time.Clock)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now(java.time.ZoneId)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int,int,int)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.TemporalField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toEpochDay()",
+          "result": "long",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoLocalDateImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "until(java.time.chrono.ChronoLocalDate)",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ChronoLocalDateImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalAdjuster)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalField,long)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withVariant(java.time.chrono.HijrahChronology)",
+          "result": "java.time.chrono.HijrahDate",
+          "declaredBy": "java.time.chrono.HijrahDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.HijrahEra",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "java.time.chrono.Era"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/HijrahEra.html",
+      "sourceEntry": "java.base/java/time/chrono/HijrahEra.java",
+      "sourceSha256": "aadde057780628853da7303c2925c02fe404412cad5db0c1efd8105a136a2358",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "AH",
+          "result": "java.time.chrono.HijrahEra",
+          "declaredBy": "java.time.chrono.HijrahEra",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayName(java.time.format.TextStyle,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.HijrahEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.HijrahEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int)",
+          "result": "java.time.chrono.HijrahEra",
+          "declaredBy": "java.time.chrono.HijrahEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.TemporalField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.HijrahEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.time.chrono.HijrahEra",
+          "declaredBy": "java.time.chrono.HijrahEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.time.chrono.HijrahEra[]",
+          "declaredBy": "java.time.chrono.HijrahEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.IsoChronology",
+      "kind": "class",
+      "parents": [
+        "java.time.chrono.AbstractChronology",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/IsoChronology.html",
+      "sourceEntry": "java.base/java/time/chrono/IsoChronology.java",
+      "sourceSha256": "6a0bf8c0a5f9e0dc12c74a2807410e901d7f0dea45bbfae1f46c93264ae857b8",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "INSTANCE",
+          "result": "java.time.chrono.IsoChronology",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "date(int,int,int)",
+          "result": "java.time.LocalDate",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.chrono.Era,int,int,int)",
+          "result": "java.time.LocalDate",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.LocalDate",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateEpochDay(long)",
+          "result": "java.time.LocalDate",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow()",
+          "result": "java.time.LocalDate",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.Clock)",
+          "result": "java.time.LocalDate",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.ZoneId)",
+          "result": "java.time.LocalDate",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(int,int)",
+          "result": "java.time.LocalDate",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(java.time.chrono.Era,int,int)",
+          "result": "java.time.LocalDate",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "epochSecond(int,int,int,int,int,int,java.time.ZoneOffset)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eraOf(int)",
+          "result": "java.time.chrono.IsoEra",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eras()",
+          "result": "java.util.List",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCalendarType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getId()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isIsoBased()",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLeapYear(long)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "localDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.LocalDateTime",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "period(int,int,int)",
+          "result": "java.time.Period",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prolepticYear(java.time.chrono.Era,int)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.ChronoField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveDate(java.util.Map,java.time.format.ResolverStyle)",
+          "result": "java.time.LocalDate",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.Instant,java.time.ZoneId)",
+          "result": "java.time.ZonedDateTime",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.ZonedDateTime",
+          "declaredBy": "java.time.chrono.IsoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.IsoEra",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "java.time.chrono.Era"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/IsoEra.html",
+      "sourceEntry": "java.base/java/time/chrono/IsoEra.java",
+      "sourceSha256": "5a844a5d1ecdf48a7851180e0f62385bb3ebb6735666339f30003d3e7cc4079d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "BCE",
+          "result": "java.time.chrono.IsoEra",
+          "declaredBy": "java.time.chrono.IsoEra",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CE",
+          "result": "java.time.chrono.IsoEra",
+          "declaredBy": "java.time.chrono.IsoEra",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.IsoEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int)",
+          "result": "java.time.chrono.IsoEra",
+          "declaredBy": "java.time.chrono.IsoEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.time.chrono.IsoEra",
+          "declaredBy": "java.time.chrono.IsoEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.time.chrono.IsoEra[]",
+          "declaredBy": "java.time.chrono.IsoEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.JapaneseChronology",
+      "kind": "class",
+      "parents": [
+        "java.time.chrono.AbstractChronology",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/JapaneseChronology.html",
+      "sourceEntry": "java.base/java/time/chrono/JapaneseChronology.java",
+      "sourceSha256": "91372cf325a3ac1d19bae1a16f96496a5428e092e9342fd4b24244fbb44047cd",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "INSTANCE",
+          "result": "java.time.chrono.JapaneseChronology",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "date(int,int,int)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.chrono.Era,int,int,int)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateEpochDay(long)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow()",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.Clock)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.ZoneId)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(int,int)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(java.time.chrono.Era,int,int)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eraOf(int)",
+          "result": "java.time.chrono.JapaneseEra",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eras()",
+          "result": "java.util.List",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCalendarType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getId()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isIsoBased()",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLeapYear(long)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "localDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prolepticYear(java.time.chrono.Era,int)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.ChronoField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveDate(java.util.Map,java.time.format.ResolverStyle)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.Instant,java.time.ZoneId)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.JapaneseChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.JapaneseDate",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.time.chrono.ChronoLocalDate",
+        "java.time.temporal.Temporal",
+        "java.time.temporal.TemporalAdjuster",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/JapaneseDate.html",
+      "sourceEntry": "java.base/java/time/chrono/JapaneseDate.java",
+      "sourceSha256": "a39e018a5147f770e4bda10a5b558f64d0a9232df5cc48feaffd765f9daf68c7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "atTime(java.time.LocalTime)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChronology()",
+          "result": "java.time.chrono.JapaneseChronology",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEra()",
+          "result": "java.time.chrono.JapaneseEra",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLong(java.time.temporal.TemporalField)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupported(java.time.temporal.TemporalField)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lengthOfMonth()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lengthOfYear()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now()",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now(java.time.Clock)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now(java.time.ZoneId)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int,int,int)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.time.chrono.JapaneseEra,int,int,int)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.TemporalField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toEpochDay()",
+          "result": "long",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoLocalDateImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "until(java.time.chrono.ChronoLocalDate)",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ChronoLocalDateImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalAdjuster)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalField,long)",
+          "result": "java.time.chrono.JapaneseDate",
+          "declaredBy": "java.time.chrono.JapaneseDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.JapaneseEra",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.time.chrono.Era",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/JapaneseEra.html",
+      "sourceEntry": "java.base/java/time/chrono/JapaneseEra.java",
+      "sourceSha256": "199f85c2a7e190381b9fcd31a08471a726228bebb0782e2b715ab82ee16623d9",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "HEISEI",
+          "result": "java.time.chrono.JapaneseEra",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEIJI",
+          "result": "java.time.chrono.JapaneseEra",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "REIWA",
+          "result": "java.time.chrono.JapaneseEra",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOWA",
+          "result": "java.time.chrono.JapaneseEra",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TAISHO",
+          "result": "java.time.chrono.JapaneseEra",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayName(java.time.format.TextStyle,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int)",
+          "result": "java.time.chrono.JapaneseEra",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.TemporalField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.time.chrono.JapaneseEra",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.time.chrono.JapaneseEra[]",
+          "declaredBy": "java.time.chrono.JapaneseEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.MinguoChronology",
+      "kind": "class",
+      "parents": [
+        "java.time.chrono.AbstractChronology",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/MinguoChronology.html",
+      "sourceEntry": "java.base/java/time/chrono/MinguoChronology.java",
+      "sourceSha256": "78cbc0b6122b90d45875d58b385746a802d915994a24774d9ef8c1e298ef9156",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "INSTANCE",
+          "result": "java.time.chrono.MinguoChronology",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "date(int,int,int)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.chrono.Era,int,int,int)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateEpochDay(long)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow()",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.Clock)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.ZoneId)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(int,int)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(java.time.chrono.Era,int,int)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eraOf(int)",
+          "result": "java.time.chrono.MinguoEra",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eras()",
+          "result": "java.util.List",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCalendarType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getId()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isIsoBased()",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLeapYear(long)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "localDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prolepticYear(java.time.chrono.Era,int)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.ChronoField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveDate(java.util.Map,java.time.format.ResolverStyle)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.Instant,java.time.ZoneId)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.MinguoChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.MinguoDate",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.time.chrono.ChronoLocalDate",
+        "java.time.temporal.Temporal",
+        "java.time.temporal.TemporalAdjuster",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/MinguoDate.html",
+      "sourceEntry": "java.base/java/time/chrono/MinguoDate.java",
+      "sourceSha256": "691a622fdd29317be78cdf36bd9dfe98d8fb61acf8a0f8d34b8910c1fe9cb16f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "atTime(java.time.LocalTime)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChronology()",
+          "result": "java.time.chrono.MinguoChronology",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEra()",
+          "result": "java.time.chrono.MinguoEra",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLong(java.time.temporal.TemporalField)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lengthOfMonth()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now()",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now(java.time.Clock)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now(java.time.ZoneId)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int,int,int)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.TemporalField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toEpochDay()",
+          "result": "long",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoLocalDateImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "until(java.time.chrono.ChronoLocalDate)",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ChronoLocalDateImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalAdjuster)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalField,long)",
+          "result": "java.time.chrono.MinguoDate",
+          "declaredBy": "java.time.chrono.MinguoDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.MinguoEra",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "java.time.chrono.Era"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/MinguoEra.html",
+      "sourceEntry": "java.base/java/time/chrono/MinguoEra.java",
+      "sourceSha256": "71b43ef3f38ce20abfdf3887be8d3bf7df02ec60b575a910be43a6dce5696ad8",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "BEFORE_ROC",
+          "result": "java.time.chrono.MinguoEra",
+          "declaredBy": "java.time.chrono.MinguoEra",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROC",
+          "result": "java.time.chrono.MinguoEra",
+          "declaredBy": "java.time.chrono.MinguoEra",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayName(java.time.format.TextStyle,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.MinguoEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.MinguoEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int)",
+          "result": "java.time.chrono.MinguoEra",
+          "declaredBy": "java.time.chrono.MinguoEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.time.chrono.MinguoEra",
+          "declaredBy": "java.time.chrono.MinguoEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.time.chrono.MinguoEra[]",
+          "declaredBy": "java.time.chrono.MinguoEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.ThaiBuddhistChronology",
+      "kind": "class",
+      "parents": [
+        "java.time.chrono.AbstractChronology",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html",
+      "sourceEntry": "java.base/java/time/chrono/ThaiBuddhistChronology.java",
+      "sourceSha256": "6e7d8d237b7075789b7c9c6b9f0a99981b4c6a1fe665c54acc8647b9b7573cfc",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "INSTANCE",
+          "result": "java.time.chrono.ThaiBuddhistChronology",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "date(int,int,int)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.chrono.Era,int,int,int)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateEpochDay(long)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow()",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.Clock)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateNow(java.time.ZoneId)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(int,int)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dateYearDay(java.time.chrono.Era,int,int)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eraOf(int)",
+          "result": "java.time.chrono.ThaiBuddhistEra",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "eras()",
+          "result": "java.util.List",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCalendarType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getId()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isIsoBased()",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLeapYear(long)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "localDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prolepticYear(java.time.chrono.Era,int)",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.ChronoField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveDate(java.util.Map,java.time.format.ResolverStyle)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.Instant,java.time.ZoneId)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "zonedDateTime(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ChronoZonedDateTime",
+          "declaredBy": "java.time.chrono.ThaiBuddhistChronology",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.ThaiBuddhistDate",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.time.chrono.ChronoLocalDate",
+        "java.time.temporal.Temporal",
+        "java.time.temporal.TemporalAdjuster",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/ThaiBuddhistDate.html",
+      "sourceEntry": "java.base/java/time/chrono/ThaiBuddhistDate.java",
+      "sourceSha256": "947bb84c6472818d534eeed910f84a93e6efda06f5df7b0ab3f7acb11d82e3f5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "atTime(java.time.LocalTime)",
+          "result": "java.time.chrono.ChronoLocalDateTime",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "from(java.time.temporal.TemporalAccessor)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChronology()",
+          "result": "java.time.chrono.ThaiBuddhistChronology",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEra()",
+          "result": "java.time.chrono.ThaiBuddhistEra",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLong(java.time.temporal.TemporalField)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lengthOfMonth()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now()",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now(java.time.Clock)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "now(java.time.ZoneId)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int,int,int)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(java.time.temporal.TemporalAmount)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "plus(long,java.time.temporal.TemporalUnit)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(java.time.temporal.TemporalField)",
+          "result": "java.time.temporal.ValueRange",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toEpochDay()",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ChronoLocalDateImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "until(java.time.chrono.ChronoLocalDate)",
+          "result": "java.time.chrono.ChronoPeriod",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)",
+          "result": "long",
+          "declaredBy": "java.time.chrono.ChronoLocalDateImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalAdjuster)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "with(java.time.temporal.TemporalField,long)",
+          "result": "java.time.chrono.ThaiBuddhistDate",
+          "declaredBy": "java.time.chrono.ThaiBuddhistDate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.time.chrono.ThaiBuddhistEra",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "java.time.chrono.Era"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html",
+      "sourceEntry": "java.base/java/time/chrono/ThaiBuddhistEra.java",
+      "sourceSha256": "21c7e9b78e7fcd4ae0cad347101e4e16f362f0dc724498d19d4d33d52528a51d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "BE",
+          "result": "java.time.chrono.ThaiBuddhistEra",
+          "declaredBy": "java.time.chrono.ThaiBuddhistEra",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BEFORE_BE",
+          "result": "java.time.chrono.ThaiBuddhistEra",
+          "declaredBy": "java.time.chrono.ThaiBuddhistEra",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayName(java.time.format.TextStyle,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.time.chrono.ThaiBuddhistEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "int",
+          "declaredBy": "java.time.chrono.ThaiBuddhistEra",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int)",
+          "result": "java.time.chrono.ThaiBuddhistEra",
+          "declaredBy": "java.time.chrono.ThaiBuddhistEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.time.chrono.ThaiBuddhistEra",
+          "declaredBy": "java.time.chrono.ThaiBuddhistEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.time.chrono.ThaiBuddhistEra[]",
+          "declaredBy": "java.time.chrono.ThaiBuddhistEra",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

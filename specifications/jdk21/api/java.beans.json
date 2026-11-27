@@ -1,0 +1,3313 @@
+{
+  "name": "java.beans",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "java.beans.AppletInitializer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/AppletInitializer.html",
+      "sourceEntry": "java.desktop/java/beans/AppletInitializer.java",
+      "sourceSha256": "6f71acbc44b774cdb6d2444d922cfed7d26c1ba8f84dea4fcc039e45666b6d69",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "activate(java.applet.Applet)",
+          "result": "void",
+          "declaredBy": "java.beans.AppletInitializer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initialize(java.applet.Applet,java.beans.beancontext.BeanContext)",
+          "result": "void",
+          "declaredBy": "java.beans.AppletInitializer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.BeanDescriptor",
+      "kind": "class",
+      "parents": [
+        "java.beans.FeatureDescriptor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/BeanDescriptor.html",
+      "sourceEntry": "java.desktop/java/beans/BeanDescriptor.java",
+      "sourceSha256": "f395c1ad58ae1230cf928204d4a1ec6b13c2e95654f1c6873562121c0b5bb10c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Class)",
+          "result": "void",
+          "declaredBy": "java.beans.BeanDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Class,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "java.beans.BeanDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.beans.BeanDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCustomizerClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.beans.BeanDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.BeanInfo",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/BeanInfo.html",
+      "sourceEntry": "java.desktop/java/beans/BeanInfo.java",
+      "sourceSha256": "6dc16a418568d53ab4e79fb539207bebaa980b6ef8e2c0724e7d9654f32f390d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ICON_COLOR_16x16",
+          "result": "int",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ICON_COLOR_32x32",
+          "result": "int",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ICON_MONO_16x16",
+          "result": "int",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ICON_MONO_32x32",
+          "result": "int",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAdditionalBeanInfo()",
+          "result": "java.beans.BeanInfo[]",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanDescriptor()",
+          "result": "java.beans.BeanDescriptor",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultEventIndex()",
+          "result": "int",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultPropertyIndex()",
+          "result": "int",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEventSetDescriptors()",
+          "result": "java.beans.EventSetDescriptor[]",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIcon(int)",
+          "result": "java.awt.Image",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMethodDescriptors()",
+          "result": "java.beans.MethodDescriptor[]",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyDescriptors()",
+          "result": "java.beans.PropertyDescriptor[]",
+          "declaredBy": "java.beans.BeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.BeanProperty",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/BeanProperty.html",
+      "sourceEntry": "java.desktop/java/beans/BeanProperty.java",
+      "sourceSha256": "d4c588f8146f6597a35deb1962aa800c91dda69ab25b59237fed192f5a3b9b9f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "bound()",
+          "result": "boolean",
+          "declaredBy": "java.beans.BeanProperty",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "description()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.BeanProperty",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "enumerationValues()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.beans.BeanProperty",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "expert()",
+          "result": "boolean",
+          "declaredBy": "java.beans.BeanProperty",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hidden()",
+          "result": "boolean",
+          "declaredBy": "java.beans.BeanProperty",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preferred()",
+          "result": "boolean",
+          "declaredBy": "java.beans.BeanProperty",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "required()",
+          "result": "boolean",
+          "declaredBy": "java.beans.BeanProperty",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visualUpdate()",
+          "result": "boolean",
+          "declaredBy": "java.beans.BeanProperty",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.Beans",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/Beans.html",
+      "sourceEntry": "java.desktop/java/beans/Beans.java",
+      "sourceSha256": "b3e6f44d42c2280c8198ebac941e9bc384d906c66a7edd713983b1a19f77c943",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.Beans",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstanceOf(java.lang.Object,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.Beans",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "instantiate(java.lang.ClassLoader,java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.Beans",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.Beans",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.Beans",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDesignTime()",
+          "result": "boolean",
+          "declaredBy": "java.beans.Beans",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isGuiAvailable()",
+          "result": "boolean",
+          "declaredBy": "java.beans.Beans",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInstanceOf(java.lang.Object,java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "java.beans.Beans",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDesignTime(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.Beans",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setGuiAvailable(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.Beans",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.ConstructorProperties",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/ConstructorProperties.html",
+      "sourceEntry": "java.desktop/java/beans/ConstructorProperties.java",
+      "sourceSha256": "a31b7b384fb24aff1249bce818d1b443851058f747bf7c69aa5ce40acfa0eae3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "value()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.beans.ConstructorProperties",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.Customizer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/Customizer.html",
+      "sourceEntry": "java.desktop/java/beans/Customizer.java",
+      "sourceSha256": "8f527526937883b08a3cdc0a8d63a8372634703af36fc1846eda8d089171dd07",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addPropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.Customizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.Customizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.Customizer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.DefaultPersistenceDelegate",
+      "kind": "class",
+      "parents": [
+        "java.beans.PersistenceDelegate"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/DefaultPersistenceDelegate.html",
+      "sourceEntry": "java.desktop/java/beans/DefaultPersistenceDelegate.java",
+      "sourceSha256": "372d7ef4f76d3ff61b74836f753ac5d7e1c2857908ac3fda5bfd524b935f5f04",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.DefaultPersistenceDelegate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.beans.DefaultPersistenceDelegate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initialize(java.lang.Class,java.lang.Object,java.lang.Object,java.beans.Encoder)",
+          "result": "void",
+          "declaredBy": "java.beans.DefaultPersistenceDelegate",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "instantiate(java.lang.Object,java.beans.Encoder)",
+          "result": "java.beans.Expression",
+          "declaredBy": "java.beans.DefaultPersistenceDelegate",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mutatesTo(java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.DefaultPersistenceDelegate",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.DesignMode",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/DesignMode.html",
+      "sourceEntry": "java.desktop/java/beans/DesignMode.java",
+      "sourceSha256": "03d3fb9d33067fcd96245c0c1e4a040a127ca6c09b20e3029047bafb83dc142f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "PROPERTYNAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.DesignMode",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isDesignTime()",
+          "result": "boolean",
+          "declaredBy": "java.beans.DesignMode",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDesignTime(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.DesignMode",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.Encoder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/Encoder.html",
+      "sourceEntry": "java.desktop/java/beans/Encoder.java",
+      "sourceSha256": "bb14a51e5813f2acf9d94540fc1ba0639a2e9f7f1abf67101f45fb99db659898",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.Encoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.Encoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExceptionListener()",
+          "result": "java.beans.ExceptionListener",
+          "declaredBy": "java.beans.Encoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPersistenceDelegate(java.lang.Class)",
+          "result": "java.beans.PersistenceDelegate",
+          "declaredBy": "java.beans.Encoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.Encoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setExceptionListener(java.beans.ExceptionListener)",
+          "result": "void",
+          "declaredBy": "java.beans.Encoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPersistenceDelegate(java.lang.Class,java.beans.PersistenceDelegate)",
+          "result": "void",
+          "declaredBy": "java.beans.Encoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeExpression(java.beans.Expression)",
+          "result": "void",
+          "declaredBy": "java.beans.Encoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeObject(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.Encoder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeStatement(java.beans.Statement)",
+          "result": "void",
+          "declaredBy": "java.beans.Encoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.EventHandler",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.reflect.InvocationHandler"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/EventHandler.html",
+      "sourceEntry": "java.desktop/java/beans/EventHandler.java",
+      "sourceSha256": "378074f0c0d8a9e193defe32d46248de2778cefc5cd5bfdc7c88933de2e56516",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.EventHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "create(java.lang.Class,java.lang.Object,java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.EventHandler",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "create(java.lang.Class,java.lang.Object,java.lang.String,java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.EventHandler",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "create(java.lang.Class,java.lang.Object,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.EventHandler",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAction()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.EventHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEventPropertyName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.EventHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListenerMethodName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.EventHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTarget()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.EventHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.EventHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.EventSetDescriptor",
+      "kind": "class",
+      "parents": [
+        "java.beans.FeatureDescriptor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/EventSetDescriptor.html",
+      "sourceEntry": "java.desktop/java/beans/EventSetDescriptor.java",
+      "sourceSha256": "c7068714ca9e62b39917b7f544a92e488dd97745b86847ad7c93712a6aea6831",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Class,java.lang.String,java.lang.Class,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Class,java.lang.String,java.lang.Class,java.lang.String[],java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Class,java.lang.String,java.lang.Class,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Class,java.beans.MethodDescriptor[],java.lang.reflect.Method,java.lang.reflect.Method)",
+          "result": "void",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Class,java.lang.reflect.Method[],java.lang.reflect.Method,java.lang.reflect.Method)",
+          "result": "void",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Class,java.lang.reflect.Method[],java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method)",
+          "result": "void",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAddListenerMethod()",
+          "result": "java.lang.reflect.Method",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGetListenerMethod()",
+          "result": "java.lang.reflect.Method",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListenerMethodDescriptors()",
+          "result": "java.beans.MethodDescriptor[]",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListenerMethods()",
+          "result": "java.lang.reflect.Method[]",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListenerType()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRemoveListenerMethod()",
+          "result": "java.lang.reflect.Method",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInDefaultEventSet()",
+          "result": "boolean",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isUnicast()",
+          "result": "boolean",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInDefaultEventSet(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUnicast(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.EventSetDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.ExceptionListener",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/ExceptionListener.html",
+      "sourceEntry": "java.desktop/java/beans/ExceptionListener.java",
+      "sourceSha256": "e709b0f6bb9554ee98727a48bc45c322fd2631def921e22511638db9c80e6744",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "exceptionThrown(java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "java.beans.ExceptionListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.Expression",
+      "kind": "class",
+      "parents": [
+        "java.beans.Statement"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/Expression.html",
+      "sourceEntry": "java.desktop/java/beans/Expression.java",
+      "sourceSha256": "31a653b53b9873a914c61a42c609fd845ddf6ed6c46c20ef4fbea85e4382acdf",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,java.lang.Object,java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.beans.Expression",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.beans.Expression",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "execute()",
+          "result": "void",
+          "declaredBy": "java.beans.Expression",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.Expression",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setValue(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.Expression",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.Expression",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.FeatureDescriptor",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/FeatureDescriptor.html",
+      "sourceEntry": "java.desktop/java/beans/FeatureDescriptor.java",
+      "sourceSha256": "af8b288ed479825257aac28f4e6a0e800290f48730dbe132dfb3b771165e100d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "attributeNames()",
+          "result": "java.util.Enumeration",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShortDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isExpert()",
+          "result": "boolean",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isHidden()",
+          "result": "boolean",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPreferred()",
+          "result": "boolean",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDisplayName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setExpert(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setHidden(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPreferred(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setShortDescription(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setValue(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.FeatureDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.IndexedPropertyChangeEvent",
+      "kind": "class",
+      "parents": [
+        "java.beans.PropertyChangeEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/IndexedPropertyChangeEvent.html",
+      "sourceEntry": "java.desktop/java/beans/IndexedPropertyChangeEvent.java",
+      "sourceSha256": "231c65e4ccb445310c4b23d6f21c2ee5d508fc81554ea4b51acac22aab0db7ce",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "java.beans.IndexedPropertyChangeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndex()",
+          "result": "int",
+          "declaredBy": "java.beans.IndexedPropertyChangeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.IndexedPropertyDescriptor",
+      "kind": "class",
+      "parents": [
+        "java.beans.PropertyDescriptor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html",
+      "sourceEntry": "java.desktop/java/beans/IndexedPropertyDescriptor.java",
+      "sourceSha256": "a301f5bbde325ddd5b43d2fd4de3a85f51ce6d93b4eedc27b06a447bf6d8d8a2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "java.beans.IndexedPropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Class,java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.IndexedPropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method)",
+          "result": "void",
+          "declaredBy": "java.beans.IndexedPropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.IndexedPropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndexedPropertyType()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.beans.IndexedPropertyDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndexedReadMethod()",
+          "result": "java.lang.reflect.Method",
+          "declaredBy": "java.beans.IndexedPropertyDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndexedWriteMethod()",
+          "result": "java.lang.reflect.Method",
+          "declaredBy": "java.beans.IndexedPropertyDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.beans.IndexedPropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIndexedReadMethod(java.lang.reflect.Method)",
+          "result": "void",
+          "declaredBy": "java.beans.IndexedPropertyDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIndexedWriteMethod(java.lang.reflect.Method)",
+          "result": "void",
+          "declaredBy": "java.beans.IndexedPropertyDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.IntrospectionException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/IntrospectionException.html",
+      "sourceEntry": "java.desktop/java/beans/IntrospectionException.java",
+      "sourceSha256": "457474fa6c258b7fdf00725f0bd3a4aa561770e8058a8b17c6b94bb143f377fd",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.IntrospectionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.Introspector",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/Introspector.html",
+      "sourceEntry": "java.desktop/java/beans/Introspector.java",
+      "sourceSha256": "7d8260a082d3f37236274c19f777eb70accb2f844688e246df49c5e4fc46120a",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "IGNORE_ALL_BEANINFO",
+          "result": "int",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IGNORE_IMMEDIATE_BEANINFO",
+          "result": "int",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "USE_ALL_BEANINFO",
+          "result": "int",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "decapitalize(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flushCaches()",
+          "result": "void",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flushFromCaches(java.lang.Class)",
+          "result": "void",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanInfo(java.lang.Class)",
+          "result": "java.beans.BeanInfo",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanInfo(java.lang.Class,int)",
+          "result": "java.beans.BeanInfo",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanInfo(java.lang.Class,java.lang.Class)",
+          "result": "java.beans.BeanInfo",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanInfo(java.lang.Class,java.lang.Class,int)",
+          "result": "java.beans.BeanInfo",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanInfoSearchPath()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBeanInfoSearchPath(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.beans.Introspector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.JavaBean",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/JavaBean.html",
+      "sourceEntry": "java.desktop/java/beans/JavaBean.java",
+      "sourceSha256": "a3b5100914cf161787be218b74d3f4c22f212f78d717aaef6476575d1a675535",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "defaultEventSet()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.JavaBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "defaultProperty()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.JavaBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "description()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.JavaBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.MethodDescriptor",
+      "kind": "class",
+      "parents": [
+        "java.beans.FeatureDescriptor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/MethodDescriptor.html",
+      "sourceEntry": "java.desktop/java/beans/MethodDescriptor.java",
+      "sourceSha256": "4566c7ac141e07026749de0f5b2206f6f9577402eccd7e7d04f3cb90c6218fee",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.reflect.Method)",
+          "result": "void",
+          "declaredBy": "java.beans.MethodDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.reflect.Method,java.beans.ParameterDescriptor[])",
+          "result": "void",
+          "declaredBy": "java.beans.MethodDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMethod()",
+          "result": "java.lang.reflect.Method",
+          "declaredBy": "java.beans.MethodDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameterDescriptors()",
+          "result": "java.beans.ParameterDescriptor[]",
+          "declaredBy": "java.beans.MethodDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.ParameterDescriptor",
+      "kind": "class",
+      "parents": [
+        "java.beans.FeatureDescriptor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/ParameterDescriptor.html",
+      "sourceEntry": "java.desktop/java/beans/ParameterDescriptor.java",
+      "sourceSha256": "6c88b91b454a8b394808ba6f7aa7d1e44453e2a2a991ebbe2e29f69fa0413075",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.ParameterDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.PersistenceDelegate",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/PersistenceDelegate.html",
+      "sourceEntry": "java.desktop/java/beans/PersistenceDelegate.java",
+      "sourceSha256": "a9a6c632ae512e790da60a8bb9aae2d4c80d5242712b0bcd0b43d760ff572376",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.PersistenceDelegate",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initialize(java.lang.Class,java.lang.Object,java.lang.Object,java.beans.Encoder)",
+          "result": "void",
+          "declaredBy": "java.beans.PersistenceDelegate",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "instantiate(java.lang.Object,java.beans.Encoder)",
+          "result": "java.beans.Expression",
+          "declaredBy": "java.beans.PersistenceDelegate",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mutatesTo(java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.PersistenceDelegate",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeObject(java.lang.Object,java.beans.Encoder)",
+          "result": "void",
+          "declaredBy": "java.beans.PersistenceDelegate",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.PropertyChangeEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/PropertyChangeEvent.html",
+      "sourceEntry": "java.desktop/java/beans/PropertyChangeEvent.java",
+      "sourceSha256": "4b243283e769b156b2018fb205c9e6b951a44f2b762950a518aa4904f78635f7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNewValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.PropertyChangeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOldValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.PropertyChangeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropagationId()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.PropertyChangeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.PropertyChangeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPropagationId(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.PropertyChangeEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.PropertyChangeListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/PropertyChangeListener.html",
+      "sourceEntry": "java.desktop/java/beans/PropertyChangeListener.java",
+      "sourceSha256": "6dadfd810c0b827a63de92b1c88ba8a985f6ba66afe4b8238cd8c456c897cc0c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "propertyChange(java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.PropertyChangeListenerProxy",
+      "kind": "class",
+      "parents": [
+        "java.util.EventListenerProxy",
+        "java.beans.PropertyChangeListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html",
+      "sourceEntry": "java.desktop/java/beans/PropertyChangeListenerProxy.java",
+      "sourceSha256": "ea7352e2fa14150489a5a731241d53dd7c992a417b1d04e001c0714659782f4e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeListenerProxy",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.PropertyChangeListenerProxy",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "propertyChange(java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeListenerProxy",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.PropertyChangeSupport",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/PropertyChangeSupport.html",
+      "sourceEntry": "java.desktop/java/beans/PropertyChangeSupport.java",
+      "sourceSha256": "ffe028dd59d9bd36ea58922bd8ef2177aea74ace728479844cb6c44a72267625",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addPropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireIndexedPropertyChange(java.lang.String,int,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireIndexedPropertyChange(java.lang.String,int,int,int)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireIndexedPropertyChange(java.lang.String,int,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firePropertyChange(java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firePropertyChange(java.lang.String,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firePropertyChange(java.lang.String,int,int)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyChangeListeners()",
+          "result": "java.beans.PropertyChangeListener[]",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyChangeListeners(java.lang.String)",
+          "result": "java.beans.PropertyChangeListener[]",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasListeners(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.PropertyDescriptor",
+      "kind": "class",
+      "parents": [
+        "java.beans.FeatureDescriptor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/PropertyDescriptor.html",
+      "sourceEntry": "java.desktop/java/beans/PropertyDescriptor.java",
+      "sourceSha256": "ae5c6fb26b59e34fbb946919b449183ad497be4b180dbfc4e2ac1c55a1cee407",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Class,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createPropertyEditor(java.lang.Object)",
+          "result": "java.beans.PropertyEditor",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyEditorClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyType()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReadMethod()",
+          "result": "java.lang.reflect.Method",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWriteMethod()",
+          "result": "java.lang.reflect.Method",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBound()",
+          "result": "boolean",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isConstrained()",
+          "result": "boolean",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBound(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setConstrained(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPropertyEditorClass(java.lang.Class)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setReadMethod(java.lang.reflect.Method)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setWriteMethod(java.lang.reflect.Method)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyDescriptor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.PropertyEditor",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/PropertyEditor.html",
+      "sourceEntry": "java.desktop/java/beans/PropertyEditor.java",
+      "sourceSha256": "2b7f3445d8ee2c661ba217c536c7aed12111b33bba6c21af1244d33b4e3a7e8f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addPropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAsText()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCustomEditor()",
+          "result": "java.awt.Component",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaInitializationString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTags()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPaintable()",
+          "result": "boolean",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintValue(java.awt.Graphics,java.awt.Rectangle)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAsText(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setValue(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportsCustomEditor()",
+          "result": "boolean",
+          "declaredBy": "java.beans.PropertyEditor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.PropertyEditorManager",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/PropertyEditorManager.html",
+      "sourceEntry": "java.desktop/java/beans/PropertyEditorManager.java",
+      "sourceSha256": "ba7f9a81d630155b44c77c44cb57d71da66af82773828ab6cd74e1eadebf82b9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findEditor(java.lang.Class)",
+          "result": "java.beans.PropertyEditor",
+          "declaredBy": "java.beans.PropertyEditorManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEditorSearchPath()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.beans.PropertyEditorManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerEditor(java.lang.Class,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEditorSearchPath(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorManager",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.PropertyEditorSupport",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.beans.PropertyEditor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/PropertyEditorSupport.html",
+      "sourceEntry": "java.desktop/java/beans/PropertyEditorSupport.java",
+      "sourceSha256": "bc700fa1a93ad0fbd42067fd058e87c62d265504000f1f0dc2a32880cc86d17f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addPropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firePropertyChange()",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAsText()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCustomEditor()",
+          "result": "java.awt.Component",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaInitializationString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSource()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTags()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPaintable()",
+          "result": "boolean",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paintValue(java.awt.Graphics,java.awt.Rectangle)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAsText(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSource(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setValue(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportsCustomEditor()",
+          "result": "boolean",
+          "declaredBy": "java.beans.PropertyEditorSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.PropertyVetoException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/PropertyVetoException.html",
+      "sourceEntry": "java.desktop/java/beans/PropertyVetoException.java",
+      "sourceSha256": "8dcee28cdfbf560c592b047b3782730b2e52aa59a008d96a45e34b17dbb9c591",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.PropertyVetoException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyChangeEvent()",
+          "result": "java.beans.PropertyChangeEvent",
+          "declaredBy": "java.beans.PropertyVetoException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.SimpleBeanInfo",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.beans.BeanInfo"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/SimpleBeanInfo.html",
+      "sourceEntry": "java.desktop/java/beans/SimpleBeanInfo.java",
+      "sourceSha256": "4f2813f4078607b8fd5b9fc052942d491d7d9dda74e364b13b0fd71d11ed4acf",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.SimpleBeanInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAdditionalBeanInfo()",
+          "result": "java.beans.BeanInfo[]",
+          "declaredBy": "java.beans.SimpleBeanInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanDescriptor()",
+          "result": "java.beans.BeanDescriptor",
+          "declaredBy": "java.beans.SimpleBeanInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultEventIndex()",
+          "result": "int",
+          "declaredBy": "java.beans.SimpleBeanInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultPropertyIndex()",
+          "result": "int",
+          "declaredBy": "java.beans.SimpleBeanInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEventSetDescriptors()",
+          "result": "java.beans.EventSetDescriptor[]",
+          "declaredBy": "java.beans.SimpleBeanInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIcon(int)",
+          "result": "java.awt.Image",
+          "declaredBy": "java.beans.SimpleBeanInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMethodDescriptors()",
+          "result": "java.beans.MethodDescriptor[]",
+          "declaredBy": "java.beans.SimpleBeanInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyDescriptors()",
+          "result": "java.beans.PropertyDescriptor[]",
+          "declaredBy": "java.beans.SimpleBeanInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadImage(java.lang.String)",
+          "result": "java.awt.Image",
+          "declaredBy": "java.beans.SimpleBeanInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.Statement",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/Statement.html",
+      "sourceEntry": "java.desktop/java/beans/Statement.java",
+      "sourceSha256": "0fb1652db742d8d5be7837e1ada20d2785be81e3fa4865a29a126c0727315551",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.beans.Statement",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "execute()",
+          "result": "void",
+          "declaredBy": "java.beans.Statement",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getArguments()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.beans.Statement",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMethodName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.Statement",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTarget()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.Statement",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.Statement",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.Transient",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/Transient.html",
+      "sourceEntry": "java.desktop/java/beans/Transient.java",
+      "sourceSha256": "c47403cbd2fbf11cba20bff9ca6e7fc5104f8287cf6e7d4b9c3f16c5b2d530d3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "value()",
+          "result": "boolean",
+          "declaredBy": "java.beans.Transient",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.VetoableChangeListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/VetoableChangeListener.html",
+      "sourceEntry": "java.desktop/java/beans/VetoableChangeListener.java",
+      "sourceSha256": "618f13a480521e20b8f2ee79cc04eed04f2bfc25792fd7ddbdacbb0383de3976",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "vetoableChange(java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.VetoableChangeListenerProxy",
+      "kind": "class",
+      "parents": [
+        "java.util.EventListenerProxy",
+        "java.beans.VetoableChangeListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html",
+      "sourceEntry": "java.desktop/java/beans/VetoableChangeListenerProxy.java",
+      "sourceSha256": "a402c55d0511f11d1b537d6ca0f2773277a9b75e2f881af8644e4f6db2039051",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.beans.VetoableChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeListenerProxy",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropertyName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.beans.VetoableChangeListenerProxy",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "vetoableChange(java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeListenerProxy",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.VetoableChangeSupport",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/VetoableChangeSupport.html",
+      "sourceEntry": "java.desktop/java/beans/VetoableChangeSupport.java",
+      "sourceSha256": "c3f716984711f37829b124410165982c6b9e3db6c017c86d95792cf6d392733d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addVetoableChangeListener(java.beans.VetoableChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireVetoableChange(java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireVetoableChange(java.lang.String,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireVetoableChange(java.lang.String,int,int)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireVetoableChange(java.lang.String,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVetoableChangeListeners()",
+          "result": "java.beans.VetoableChangeListener[]",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVetoableChangeListeners(java.lang.String)",
+          "result": "java.beans.VetoableChangeListener[]",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasListeners(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeVetoableChangeListener(java.beans.VetoableChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.VetoableChangeSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.Visibility",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/Visibility.html",
+      "sourceEntry": "java.desktop/java/beans/Visibility.java",
+      "sourceSha256": "f154c7384aab8ac048ca190509118e27b8d4ad4252ec20120de7f5f87a8a0c79",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "avoidingGui()",
+          "result": "boolean",
+          "declaredBy": "java.beans.Visibility",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dontUseGui()",
+          "result": "void",
+          "declaredBy": "java.beans.Visibility",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "needsGui()",
+          "result": "boolean",
+          "declaredBy": "java.beans.Visibility",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "okToUseGui()",
+          "result": "void",
+          "declaredBy": "java.beans.Visibility",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.XMLDecoder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.AutoCloseable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/XMLDecoder.html",
+      "sourceEntry": "java.desktop/java/beans/XMLDecoder.java",
+      "sourceSha256": "253a2a8bd262623aa1a3d24653f28f3cac39fd6d78b4d42ec0bf7cca7d3dcb46",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.InputStream,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(org.xml.sax.InputSource)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createHandler(java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)",
+          "result": "org.xml.sax.helpers.DefaultHandler",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExceptionListener()",
+          "result": "java.beans.ExceptionListener",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOwner()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readObject()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setExceptionListener(java.beans.ExceptionListener)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOwner(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLDecoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.XMLEncoder",
+      "kind": "class",
+      "parents": [
+        "java.beans.Encoder",
+        "java.lang.AutoCloseable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/XMLEncoder.html",
+      "sourceEntry": "java.desktop/java/beans/XMLEncoder.java",
+      "sourceSha256": "0be8b74d503f54e579e1d1d1d161519e78aa970d4ac21497c221101a75c3eaa0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.OutputStream,java.lang.String,boolean,int)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.beans.XMLEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flush()",
+          "result": "void",
+          "declaredBy": "java.beans.XMLEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOwner()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.XMLEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOwner(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeExpression(java.beans.Expression)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeObject(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeStatement(java.beans.Statement)",
+          "result": "void",
+          "declaredBy": "java.beans.XMLEncoder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

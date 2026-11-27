@@ -1,0 +1,2037 @@
+{
+  "name": "javax.imageio.metadata",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.imageio.metadata.IIOInvalidTreeException",
+      "kind": "class",
+      "parents": [
+        "javax.imageio.IIOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/metadata/IIOInvalidTreeException.html",
+      "sourceEntry": "java.desktop/javax/imageio/metadata/IIOInvalidTreeException.java",
+      "sourceSha256": "14fc28f20285cb946d98c41356205d5db252c834ec8a3e92256981e291d2f96b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable,org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOInvalidTreeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOInvalidTreeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffendingNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOInvalidTreeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "offendingNode",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOInvalidTreeException",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.metadata.IIOMetadata",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html",
+      "sourceEntry": "java.desktop/javax/imageio/metadata/IIOMetadata.java",
+      "sourceSha256": "92f586bd66d6a1e20639c3a8923d0f1ff836fea35eb7dac1be7c23281d692887",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "activateController()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "controller",
+          "result": "javax.imageio.metadata.IIOMetadataController",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "defaultController",
+          "result": "javax.imageio.metadata.IIOMetadataController",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "extraMetadataFormatClassNames",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "extraMetadataFormatNames",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAsTree(java.lang.String)",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getController()",
+          "result": "javax.imageio.metadata.IIOMetadataController",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultController()",
+          "result": "javax.imageio.metadata.IIOMetadataController",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExtraMetadataFormatNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMetadataFormat(java.lang.String)",
+          "result": "javax.imageio.metadata.IIOMetadataFormat",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMetadataFormatNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNativeMetadataFormatName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardChromaNode()",
+          "result": "javax.imageio.metadata.IIOMetadataNode",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardCompressionNode()",
+          "result": "javax.imageio.metadata.IIOMetadataNode",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardDataNode()",
+          "result": "javax.imageio.metadata.IIOMetadataNode",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardDimensionNode()",
+          "result": "javax.imageio.metadata.IIOMetadataNode",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardDocumentNode()",
+          "result": "javax.imageio.metadata.IIOMetadataNode",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardTextNode()",
+          "result": "javax.imageio.metadata.IIOMetadataNode",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardTileNode()",
+          "result": "javax.imageio.metadata.IIOMetadataNode",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardTransparencyNode()",
+          "result": "javax.imageio.metadata.IIOMetadataNode",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardTree()",
+          "result": "javax.imageio.metadata.IIOMetadataNode",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasController()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadOnly()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isStandardMetadataFormatSupported()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mergeTree(java.lang.String,org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "nativeMetadataFormatClassName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "nativeMetadataFormatName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setController(javax.imageio.metadata.IIOMetadataController)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFromTree(java.lang.String,org.w3c.dom.Node)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "standardFormatSupported",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadata",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.metadata.IIOMetadataController",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataController.html",
+      "sourceEntry": "java.desktop/javax/imageio/metadata/IIOMetadataController.java",
+      "sourceSha256": "b90c153821af91b88ed8203442d362f0532616fbc88eeeefe9fd591ff153a09a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "activate(javax.imageio.metadata.IIOMetadata)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataController",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.metadata.IIOMetadataFormat",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html",
+      "sourceEntry": "java.desktop/javax/imageio/metadata/IIOMetadataFormat.java",
+      "sourceSha256": "e681b9792cc581f96568bb749a181a5e61e78c87db4f28c2e3c988192f6e9e0d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CHILD_POLICY_ALL",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHILD_POLICY_CHOICE",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHILD_POLICY_EMPTY",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHILD_POLICY_MAX",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHILD_POLICY_REPEAT",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHILD_POLICY_SEQUENCE",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHILD_POLICY_SOME",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATATYPE_BOOLEAN",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATATYPE_DOUBLE",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATATYPE_FLOAT",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATATYPE_INTEGER",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATATYPE_STRING",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VALUE_ARBITRARY",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VALUE_ENUMERATION",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VALUE_LIST",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VALUE_NONE",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VALUE_RANGE",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VALUE_RANGE_MAX_INCLUSIVE",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VALUE_RANGE_MAX_INCLUSIVE_MASK",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VALUE_RANGE_MIN_INCLUSIVE",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VALUE_RANGE_MIN_INCLUSIVE_MASK",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VALUE_RANGE_MIN_MAX_INCLUSIVE",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "canNodeAppear(java.lang.String,javax.imageio.ImageTypeSpecifier)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeDataType(java.lang.String,java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeDefaultValue(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeDescription(java.lang.String,java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeEnumerations(java.lang.String,java.lang.String)",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeListMaxLength(java.lang.String,java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeListMinLength(java.lang.String,java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeMaxValue(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeMinValue(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeNames(java.lang.String)",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeValueType(java.lang.String,java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildNames(java.lang.String)",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildPolicy(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementDescription(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementMaxChildren(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementMinChildren(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectArrayMaxLength(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectArrayMinLength(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectClass(java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectDefaultValue(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectEnumerations(java.lang.String)",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectMaxValue(java.lang.String)",
+          "result": "java.lang.Comparable",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectMinValue(java.lang.String)",
+          "result": "java.lang.Comparable",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectValueType(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRootName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAttributeRequired(java.lang.String,java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.metadata.IIOMetadataFormatImpl",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.imageio.metadata.IIOMetadataFormat"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html",
+      "sourceEntry": "java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.java",
+      "sourceSha256": "9a474f97205f90b0a75ffbb4c67f84b03af8b702adb8eab8b24fa853512b5b2c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAttribute(java.lang.String,java.lang.String,int,boolean,int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAttribute(java.lang.String,java.lang.String,int,boolean,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAttribute(java.lang.String,java.lang.String,int,boolean,java.lang.String,java.lang.String,java.lang.String,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAttribute(java.lang.String,java.lang.String,int,boolean,java.lang.String,java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addBooleanAttribute(java.lang.String,java.lang.String,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addChildElement(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addElement(java.lang.String,java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addElement(java.lang.String,java.lang.String,int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addObjectValue(java.lang.String,java.lang.Class,boolean,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addObjectValue(java.lang.String,java.lang.Class,boolean,java.lang.Object,java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addObjectValue(java.lang.String,java.lang.Class,int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addObjectValue(java.lang.String,java.lang.Class,java.lang.Object,java.lang.Comparable,java.lang.Comparable,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canNodeAppear(java.lang.String,javax.imageio.ImageTypeSpecifier)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeDataType(java.lang.String,java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeDefaultValue(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeDescription(java.lang.String,java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeEnumerations(java.lang.String,java.lang.String)",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeListMaxLength(java.lang.String,java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeListMinLength(java.lang.String,java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeMaxValue(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeMinValue(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeNames(java.lang.String)",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeValueType(java.lang.String,java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildNames(java.lang.String)",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildPolicy(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementDescription(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementMaxChildren(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementMinChildren(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectArrayMaxLength(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectArrayMinLength(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectClass(java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectDefaultValue(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectEnumerations(java.lang.String)",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectMaxValue(java.lang.String)",
+          "result": "java.lang.Comparable",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectMinValue(java.lang.String)",
+          "result": "java.lang.Comparable",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectValueType(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResourceBaseName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRootName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStandardFormatInstance()",
+          "result": "javax.imageio.metadata.IIOMetadataFormat",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAttributeRequired(java.lang.String,java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAttribute(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeElement(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeObjectValue(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setResourceBaseName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "standardMetadataFormatName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataFormatImpl",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.metadata.IIOMetadataNode",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "org.w3c.dom.Element",
+        "org.w3c.dom.NodeList"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html",
+      "sourceEntry": "java.desktop/javax/imageio/metadata/IIOMetadataNode.java",
+      "sourceSha256": "812c4619032c50a8177b1e8e8d4323fd118a047d13e6a395ac8a29e6b4b7bd8a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendChild(org.w3c.dom.Node)",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "cloneNode(boolean)",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareDocumentPosition(org.w3c.dom.Node)",
+          "result": "short",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeNS(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeNode(java.lang.String)",
+          "result": "org.w3c.dom.Attr",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributeNodeNS(java.lang.String,java.lang.String)",
+          "result": "org.w3c.dom.Attr",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "org.w3c.dom.NamedNodeMap",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBaseURI()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildNodes()",
+          "result": "org.w3c.dom.NodeList",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementsByTagName(java.lang.String)",
+          "result": "org.w3c.dom.NodeList",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementsByTagNameNS(java.lang.String,java.lang.String)",
+          "result": "org.w3c.dom.NodeList",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFeature(java.lang.String,java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFirstChild()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLastChild()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLength()",
+          "result": "int",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceURI()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNextSibling()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNodeName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNodeType()",
+          "result": "short",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNodeValue()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOwnerDocument()",
+          "result": "org.w3c.dom.Document",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParentNode()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrefix()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPreviousSibling()",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSchemaTypeInfo()",
+          "result": "org.w3c.dom.TypeInfo",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTagName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextContent()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUserData(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUserObject()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasAttribute(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasAttributeNS(java.lang.String,java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasAttributes()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasChildNodes()",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertBefore(org.w3c.dom.Node,org.w3c.dom.Node)",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDefaultNamespace(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEqualNode(org.w3c.dom.Node)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSameNode(org.w3c.dom.Node)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupported(java.lang.String,java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "item(int)",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupNamespaceURI(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupPrefix(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "normalize()",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAttribute(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAttributeNS(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAttributeNode(org.w3c.dom.Attr)",
+          "result": "org.w3c.dom.Attr",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeChild(org.w3c.dom.Node)",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replaceChild(org.w3c.dom.Node,org.w3c.dom.Node)",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttribute(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttributeNS(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttributeNode(org.w3c.dom.Attr)",
+          "result": "org.w3c.dom.Attr",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttributeNodeNS(org.w3c.dom.Attr)",
+          "result": "org.w3c.dom.Attr",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIdAttribute(java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIdAttributeNS(java.lang.String,java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIdAttributeNode(org.w3c.dom.Attr,boolean)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNodeValue(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPrefix(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTextContent(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUserData(java.lang.String,java.lang.Object,org.w3c.dom.UserDataHandler)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUserObject(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.imageio.metadata.IIOMetadataNode",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}
