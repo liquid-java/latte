@@ -1,0 +1,1095 @@
+{
+  "name": "javax.smartcardio",
+  "module": "java.smartcardio",
+  "types": [
+    {
+      "target": "javax.smartcardio.ATR",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/ATR.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/ATR.java",
+      "sourceSha256": "161c6696cc05c2e10446caf052c7ed7e3ec02d3a030e76c4926e61970deb068e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.ATR",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.smartcardio.ATR",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBytes()",
+          "result": "byte[]",
+          "declaredBy": "javax.smartcardio.ATR",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHistoricalBytes()",
+          "result": "byte[]",
+          "declaredBy": "javax.smartcardio.ATR",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.ATR",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.smartcardio.ATR",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.Card",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/Card.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/Card.java",
+      "sourceSha256": "bb729e61e6e10f746c3130d5ffc6754b971e6fb1000a21a613cd7f818a8de824",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.Card",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "beginExclusive()",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.Card",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "disconnect(boolean)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.Card",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "endExclusive()",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.Card",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getATR()",
+          "result": "javax.smartcardio.ATR",
+          "declaredBy": "javax.smartcardio.Card",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBasicChannel()",
+          "result": "javax.smartcardio.CardChannel",
+          "declaredBy": "javax.smartcardio.Card",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProtocol()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.smartcardio.Card",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openLogicalChannel()",
+          "result": "javax.smartcardio.CardChannel",
+          "declaredBy": "javax.smartcardio.Card",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "transmitControlCommand(int,byte[])",
+          "result": "byte[]",
+          "declaredBy": "javax.smartcardio.Card",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.CardChannel",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/CardChannel.java",
+      "sourceSha256": "18f9f79ee210b6f3a645b4725e2a14b818ec14494d0d00a84b4aab8ee7596448",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardChannel",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCard()",
+          "result": "javax.smartcardio.Card",
+          "declaredBy": "javax.smartcardio.CardChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChannelNumber()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.CardChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "transmit(java.nio.ByteBuffer,java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.CardChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "transmit(javax.smartcardio.CommandAPDU)",
+          "result": "javax.smartcardio.ResponseAPDU",
+          "declaredBy": "javax.smartcardio.CardChannel",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.CardException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/CardException.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/CardException.java",
+      "sourceSha256": "d8e1d9e8d3f0b373e8fd9d9105dbf298dd598e0c4a13a8d45f7378222ba21349",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.CardNotPresentException",
+      "kind": "class",
+      "parents": [
+        "javax.smartcardio.CardException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/CardNotPresentException.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/CardNotPresentException.java",
+      "sourceSha256": "b862a27532471aeded1c51c16e4e328161a3b33baf1d21b25691d71fe89cbcff",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardNotPresentException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardNotPresentException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardNotPresentException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.CardPermission",
+      "kind": "class",
+      "parents": [
+        "java.security.Permission"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/CardPermission.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/CardPermission.java",
+      "sourceSha256": "f3a38c76525b33e98fd6958c121aee13d2f7c53b45d425e6ae48326f4e4a272f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.smartcardio.CardPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getActions()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.smartcardio.CardPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.CardPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "implies(java.security.Permission)",
+          "result": "boolean",
+          "declaredBy": "javax.smartcardio.CardPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.CardTerminal",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/CardTerminal.java",
+      "sourceSha256": "24e54ff443cbb5a29f99673a901d0c4ebe4675e417a37af692cb2113bb3420c9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardTerminal",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connect(java.lang.String)",
+          "result": "javax.smartcardio.Card",
+          "declaredBy": "javax.smartcardio.CardTerminal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.smartcardio.CardTerminal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCardPresent()",
+          "result": "boolean",
+          "declaredBy": "javax.smartcardio.CardTerminal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "waitForCardAbsent(long)",
+          "result": "boolean",
+          "declaredBy": "javax.smartcardio.CardTerminal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "waitForCardPresent(long)",
+          "result": "boolean",
+          "declaredBy": "javax.smartcardio.CardTerminal",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.CardTerminals",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/CardTerminals.java",
+      "sourceSha256": "d42dab63cb50e8558cbc825a5a307c9b91a3475ca20d308119f1998602f5a7f5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardTerminals",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTerminal(java.lang.String)",
+          "result": "javax.smartcardio.CardTerminal",
+          "declaredBy": "javax.smartcardio.CardTerminals",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "list()",
+          "result": "java.util.List",
+          "declaredBy": "javax.smartcardio.CardTerminals",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "list(javax.smartcardio.CardTerminals$State)",
+          "result": "java.util.List",
+          "declaredBy": "javax.smartcardio.CardTerminals",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "waitForChange()",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CardTerminals",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "waitForChange(long)",
+          "result": "boolean",
+          "declaredBy": "javax.smartcardio.CardTerminals",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.CardTerminals$State",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/CardTerminals.java",
+      "sourceSha256": "d42dab63cb50e8558cbc825a5a307c9b91a3475ca20d308119f1998602f5a7f5",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ALL",
+          "result": "javax.smartcardio.CardTerminals$State",
+          "declaredBy": "javax.smartcardio.CardTerminals$State",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CARD_ABSENT",
+          "result": "javax.smartcardio.CardTerminals$State",
+          "declaredBy": "javax.smartcardio.CardTerminals$State",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CARD_INSERTION",
+          "result": "javax.smartcardio.CardTerminals$State",
+          "declaredBy": "javax.smartcardio.CardTerminals$State",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CARD_PRESENT",
+          "result": "javax.smartcardio.CardTerminals$State",
+          "declaredBy": "javax.smartcardio.CardTerminals$State",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CARD_REMOVAL",
+          "result": "javax.smartcardio.CardTerminals$State",
+          "declaredBy": "javax.smartcardio.CardTerminals$State",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.smartcardio.CardTerminals$State",
+          "declaredBy": "javax.smartcardio.CardTerminals$State",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.smartcardio.CardTerminals$State[]",
+          "declaredBy": "javax.smartcardio.CardTerminals$State",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.CommandAPDU",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/CommandAPDU.java",
+      "sourceSha256": "ccbe1f75b6a38a3ef1472d8fa7c47e463e1c5bf2e9ab19207ff2bfa11d531460",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[],int,int)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int,int,byte[])",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int,int,byte[],int)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int,int,byte[],int,int)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int,int,byte[],int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.nio.ByteBuffer)",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBytes()",
+          "result": "byte[]",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getCLA()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getData()",
+          "result": "byte[]",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getINS()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getNc()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getNe()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getP1()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getP2()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.smartcardio.CommandAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.ResponseAPDU",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/ResponseAPDU.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/ResponseAPDU.java",
+      "sourceSha256": "7558eaee29a706975a56be2b0028ea5e8c03a14e7de1b1dc3cc293d6d1b45e7e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.ResponseAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.smartcardio.ResponseAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBytes()",
+          "result": "byte[]",
+          "declaredBy": "javax.smartcardio.ResponseAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getData()",
+          "result": "byte[]",
+          "declaredBy": "javax.smartcardio.ResponseAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getNr()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.ResponseAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getSW()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.ResponseAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getSW1()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.ResponseAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getSW2()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.ResponseAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.smartcardio.ResponseAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.smartcardio.ResponseAPDU",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.TerminalFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/TerminalFactory.java",
+      "sourceSha256": "dea692c8c091a2f114516688c27eb206caa7f92fdff94a27a8487eff6e057458",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getDefault()",
+          "result": "javax.smartcardio.TerminalFactory",
+          "declaredBy": "javax.smartcardio.TerminalFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultType()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.smartcardio.TerminalFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.Object)",
+          "result": "javax.smartcardio.TerminalFactory",
+          "declaredBy": "javax.smartcardio.TerminalFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.Object,java.lang.String)",
+          "result": "javax.smartcardio.TerminalFactory",
+          "declaredBy": "javax.smartcardio.TerminalFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.Object,java.security.Provider)",
+          "result": "javax.smartcardio.TerminalFactory",
+          "declaredBy": "javax.smartcardio.TerminalFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.smartcardio.TerminalFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.smartcardio.TerminalFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "terminals()",
+          "result": "javax.smartcardio.CardTerminals",
+          "declaredBy": "javax.smartcardio.TerminalFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.smartcardio.TerminalFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.smartcardio.TerminalFactorySpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.smartcardio/javax/smartcardio/TerminalFactorySpi.html",
+      "sourceEntry": "java.smartcardio/javax/smartcardio/TerminalFactorySpi.java",
+      "sourceSha256": "6854ae6778c9d0300bafb7bf81f177cf2777b19b2ad41b6f02482dd3ad7fd2f7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.smartcardio.TerminalFactorySpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineTerminals()",
+          "result": "javax.smartcardio.CardTerminals",
+          "declaredBy": "javax.smartcardio.TerminalFactorySpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1758 @@
+{
+  "name": "java.lang.module",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.lang.module.Configuration",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/Configuration.html",
+      "sourceEntry": "java.base/java/lang/module/Configuration.java",
+      "sourceSha256": "4a24dcf2a0da50b833c2e8800bd18586c81e84b749fdf3f7ca883c92f1b8c7ec",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "empty()",
+          "result": "java.lang.module.Configuration",
+          "declaredBy": "java.lang.module.Configuration",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findModule(java.lang.String)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.Configuration",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "modules()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.Configuration",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parents()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.module.Configuration",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolve(java.lang.module.ModuleFinder,java.lang.module.ModuleFinder,java.util.Collection)",
+          "result": "java.lang.module.Configuration",
+          "declaredBy": "java.lang.module.Configuration",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolve(java.lang.module.ModuleFinder,java.util.List,java.lang.module.ModuleFinder,java.util.Collection)",
+          "result": "java.lang.module.Configuration",
+          "declaredBy": "java.lang.module.Configuration",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveAndBind(java.lang.module.ModuleFinder,java.lang.module.ModuleFinder,java.util.Collection)",
+          "result": "java.lang.module.Configuration",
+          "declaredBy": "java.lang.module.Configuration",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveAndBind(java.lang.module.ModuleFinder,java.util.List,java.lang.module.ModuleFinder,java.util.Collection)",
+          "result": "java.lang.module.Configuration",
+          "declaredBy": "java.lang.module.Configuration",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.Configuration",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.FindException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/FindException.html",
+      "sourceEntry": "java.base/java/lang/module/FindException.java",
+      "sourceSha256": "42a5298c20f8298a6667915325dea7ba68aa4527549313c303cb568552aef3ae",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.lang.module.FindException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.module.FindException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.lang.module.FindException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.lang.module.FindException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.InvalidModuleDescriptorException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/InvalidModuleDescriptorException.html",
+      "sourceEntry": "java.base/java/lang/module/InvalidModuleDescriptorException.java",
+      "sourceSha256": "c41711fc83c9b3c718c0a9d1e8501d1473f6812e855577e617559fa3d4af9006",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.lang.module.InvalidModuleDescriptorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.module.InvalidModuleDescriptorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accessFlags()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.lang.module.ModuleDescriptor)",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exports()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAutomatic()",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOpen()",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mainClass()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "modifiers()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newAutomaticModule(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newModule(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newModule(java.lang.String,java.util.Set)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newOpenModule(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "opens()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "packages()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provides()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rawVersion()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.io.InputStream)",
+          "result": "java.lang.module.ModuleDescriptor",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.io.InputStream,java.util.function.Supplier)",
+          "result": "java.lang.module.ModuleDescriptor",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer)",
+          "result": "java.lang.module.ModuleDescriptor",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.ByteBuffer,java.util.function.Supplier)",
+          "result": "java.lang.module.ModuleDescriptor",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requires()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toNameAndVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "uses()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "version()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.ModuleDescriptor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor$Builder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "build()",
+          "result": "java.lang.module.ModuleDescriptor",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exports(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exports(java.lang.String,java.util.Set)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exports(java.lang.module.ModuleDescriptor$Exports)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exports(java.util.Set,java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "exports(java.util.Set,java.lang.String,java.util.Set)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mainClass(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "opens(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "opens(java.lang.String,java.util.Set)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "opens(java.lang.module.ModuleDescriptor$Opens)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "opens(java.util.Set,java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "opens(java.util.Set,java.lang.String,java.util.Set)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "packages(java.util.Set)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provides(java.lang.String,java.util.List)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "provides(java.lang.module.ModuleDescriptor$Provides)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requires(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requires(java.lang.module.ModuleDescriptor$Requires)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requires(java.util.Set,java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requires(java.util.Set,java.lang.String,java.lang.module.ModuleDescriptor$Version)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "uses(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "version(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "version(java.lang.module.ModuleDescriptor$Version)",
+          "result": "java.lang.module.ModuleDescriptor$Builder",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor$Exports",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accessFlags()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.lang.module.ModuleDescriptor$Exports)",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isQualified()",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "modifiers()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "source()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "targets()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor$Exports$Modifier",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "MANDATED",
+          "result": "java.lang.module.ModuleDescriptor$Exports$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SYNTHETIC",
+          "result": "java.lang.module.ModuleDescriptor$Exports$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Exports$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports$Modifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.lang.module.ModuleDescriptor$Exports$Modifier[]",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Exports$Modifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor$Modifier",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "AUTOMATIC",
+          "result": "java.lang.module.ModuleDescriptor$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MANDATED",
+          "result": "java.lang.module.ModuleDescriptor$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OPEN",
+          "result": "java.lang.module.ModuleDescriptor$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SYNTHETIC",
+          "result": "java.lang.module.ModuleDescriptor$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Modifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.lang.module.ModuleDescriptor$Modifier[]",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Modifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor$Opens",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accessFlags()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.lang.module.ModuleDescriptor$Opens)",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isQualified()",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "modifiers()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "source()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "targets()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor$Opens$Modifier",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "MANDATED",
+          "result": "java.lang.module.ModuleDescriptor$Opens$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SYNTHETIC",
+          "result": "java.lang.module.ModuleDescriptor$Opens$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Opens$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens$Modifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.lang.module.ModuleDescriptor$Opens$Modifier[]",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Opens$Modifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor$Provides",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "compareTo(java.lang.module.ModuleDescriptor$Provides)",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Provides",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Provides",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Provides",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "providers()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Provides",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "service()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Provides",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Provides",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor$Requires",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accessFlags()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.lang.module.ModuleDescriptor$Requires)",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compiledVersion()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "modifiers()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rawCompiledVersion()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "MANDATED",
+          "result": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STATIC",
+          "result": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SYNTHETIC",
+          "result": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TRANSITIVE",
+          "result": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.lang.module.ModuleDescriptor$Requires$Modifier[]",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Requires$Modifier",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleDescriptor$Version",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleDescriptor.Version.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleDescriptor.java",
+      "sourceSha256": "68894193a1dee1dc31b85135f1e45421b43b295f429b10a7a6ca0db9f3014d49",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "compareTo(java.lang.module.ModuleDescriptor$Version)",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Version",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Version",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Version",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String)",
+          "result": "java.lang.module.ModuleDescriptor$Version",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Version",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ModuleDescriptor$Version",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleFinder",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleFinder.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleFinder.java",
+      "sourceSha256": "c33839f959c4d597e5d61b89400fee1528cb985ed644d8a177822fb06cb3299f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "compose(java.lang.module.ModuleFinder[])",
+          "result": "java.lang.module.ModuleFinder",
+          "declaredBy": "java.lang.module.ModuleFinder",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "find(java.lang.String)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.ModuleFinder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findAll()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ModuleFinder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.nio.file.Path[])",
+          "result": "java.lang.module.ModuleFinder",
+          "declaredBy": "java.lang.module.ModuleFinder",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofSystem()",
+          "result": "java.lang.module.ModuleFinder",
+          "declaredBy": "java.lang.module.ModuleFinder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleReader",
+      "kind": "interface",
+      "parents": [
+        "java.io.Closeable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleReader.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleReader.java",
+      "sourceSha256": "221a555c900f9be98d0dc2768d347047515816674601f6e0b634b0cc7c18ed93",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.lang.module.ModuleReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "find(java.lang.String)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.ModuleReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "list()",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.lang.module.ModuleReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open(java.lang.String)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.ModuleReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.lang.String)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.ModuleReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "release(java.nio.ByteBuffer)",
+          "result": "void",
+          "declaredBy": "java.lang.module.ModuleReader",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ModuleReference",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ModuleReference.html",
+      "sourceEntry": "java.base/java/lang/module/ModuleReference.java",
+      "sourceSha256": "5104773455df28c870d0ca146ee6502d2d76fe351de64243ff12985640dab7b0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.module.ModuleDescriptor,java.net.URI)",
+          "result": "void",
+          "declaredBy": "java.lang.module.ModuleReference",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "descriptor()",
+          "result": "java.lang.module.ModuleDescriptor",
+          "declaredBy": "java.lang.module.ModuleReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "location()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.module.ModuleReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "open()",
+          "result": "java.lang.module.ModuleReader",
+          "declaredBy": "java.lang.module.ModuleReference",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ResolutionException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ResolutionException.html",
+      "sourceEntry": "java.base/java/lang/module/ResolutionException.java",
+      "sourceSha256": "c4e88b54e02a1318557de902d149b6bc0cd221d8164306c92bf320c9656b07cb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.lang.module.ResolutionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.module.ResolutionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.lang.module.ResolutionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.lang.module.ResolutionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.module.ResolvedModule",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/module/ResolvedModule.html",
+      "sourceEntry": "java.base/java/lang/module/ResolvedModule.java",
+      "sourceSha256": "8081554ca563ed2a6acdf9b43a97f75eaa240c6b26b37248a7e778c6db211511",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "configuration()",
+          "result": "java.lang.module.Configuration",
+          "declaredBy": "java.lang.module.ResolvedModule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.module.ResolvedModule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.module.ResolvedModule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ResolvedModule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reads()",
+          "result": "java.util.Set",
+          "declaredBy": "java.lang.module.ResolvedModule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reference()",
+          "result": "java.lang.module.ModuleReference",
+          "declaredBy": "java.lang.module.ResolvedModule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.module.ResolvedModule",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "name": "java.util.spi",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.util.spi.AbstractResourceBundleProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.util.spi.ResourceBundleProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/spi/AbstractResourceBundleProvider.html",
+      "sourceEntry": "java.base/java/util/spi/AbstractResourceBundleProvider.java",
+      "sourceSha256": "e1183ff623cfe9f7e636de22b3bc3b89be2b3d3f1800ccdc855bdab8d4cecb74",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.spi.AbstractResourceBundleProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.util.spi.AbstractResourceBundleProvider",
+          "modifiers": 132,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBundle(java.lang.String,java.util.Locale)",
+          "result": "java.util.ResourceBundle",
+          "declaredBy": "java.util.spi.AbstractResourceBundleProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toBundleName(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.AbstractResourceBundleProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.spi.CalendarDataProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/spi/CalendarDataProvider.html",
+      "sourceEntry": "java.base/java/util/spi/CalendarDataProvider.java",
+      "sourceSha256": "48d5a8111a5806e75383ccfc34d9ced88064379f76bfa7d556064f331a2cfe28",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.spi.CalendarDataProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFirstDayOfWeek(java.util.Locale)",
+          "result": "int",
+          "declaredBy": "java.util.spi.CalendarDataProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinimalDaysInFirstWeek(java.util.Locale)",
+          "result": "int",
+          "declaredBy": "java.util.spi.CalendarDataProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.spi.CalendarNameProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/spi/CalendarNameProvider.html",
+      "sourceEntry": "java.base/java/util/spi/CalendarNameProvider.java",
+      "sourceSha256": "0ec6cbc5f4eafa69ba0e3b4d9125874061e2ac60c1a915c7f3d71d02edf9e0c7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.spi.CalendarNameProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayName(java.lang.String,int,int,int,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.CalendarNameProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayNames(java.lang.String,int,int,java.util.Locale)",
+          "result": "java.util.Map",
+          "declaredBy": "java.util.spi.CalendarNameProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.spi.CurrencyNameProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/spi/CurrencyNameProvider.html",
+      "sourceEntry": "java.base/java/util/spi/CurrencyNameProvider.java",
+      "sourceSha256": "974799a9f704832c49eac3b96688a53e48f3888a68f79ef16d73d9db47ff5efd",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.spi.CurrencyNameProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayName(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.CurrencyNameProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSymbol(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.CurrencyNameProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.spi.LocaleNameProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/spi/LocaleNameProvider.html",
+      "sourceEntry": "java.base/java/util/spi/LocaleNameProvider.java",
+      "sourceSha256": "9bf3c96db15ecf4304dabc8b1bfff16c6123f707251322356bf493c6dbf303d1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.spi.LocaleNameProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayCountry(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.LocaleNameProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayLanguage(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.LocaleNameProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayScript(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.LocaleNameProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayUnicodeExtensionKey(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.LocaleNameProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayUnicodeExtensionType(java.lang.String,java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.LocaleNameProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayVariant(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.LocaleNameProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.spi.LocaleServiceProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/spi/LocaleServiceProvider.html",
+      "sourceEntry": "java.base/java/util/spi/LocaleServiceProvider.java",
+      "sourceSha256": "9d5c8cb7625c506caca72a037d0044245ebaf551d27062e6c9c95c91f19b94aa",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.spi.LocaleServiceProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableLocales()",
+          "result": "java.util.Locale[]",
+          "declaredBy": "java.util.spi.LocaleServiceProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupportedLocale(java.util.Locale)",
+          "result": "boolean",
+          "declaredBy": "java.util.spi.LocaleServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.spi.ResourceBundleControlProvider",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/spi/ResourceBundleControlProvider.html",
+      "sourceEntry": "java.base/java/util/spi/ResourceBundleControlProvider.java",
+      "sourceSha256": "1401d6ee3ce0a811b8bff3b2bd5182c2564312746969beac22059c2dc7382d75",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getControl(java.lang.String)",
+          "result": "java.util.ResourceBundle$Control",
+          "declaredBy": "java.util.spi.ResourceBundleControlProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.spi.ResourceBundleProvider",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/spi/ResourceBundleProvider.html",
+      "sourceEntry": "java.base/java/util/spi/ResourceBundleProvider.java",
+      "sourceSha256": "5604aa91f78ccd36cd3487a82088d360a9c526a24523a2e54aefa3e282590903",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getBundle(java.lang.String,java.util.Locale)",
+          "result": "java.util.ResourceBundle",
+          "declaredBy": "java.util.spi.ResourceBundleProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.spi.TimeZoneNameProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/spi/TimeZoneNameProvider.html",
+      "sourceEntry": "java.base/java/util/spi/TimeZoneNameProvider.java",
+      "sourceSha256": "a55abb8ded26d1b4e98a2a8a3bd3bfec72cd8263dfcb7d7db9ce30dac04299b7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.spi.TimeZoneNameProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDisplayName(java.lang.String,boolean,int,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.TimeZoneNameProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGenericDisplayName(java.lang.String,int,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.TimeZoneNameProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.spi.ToolProvider",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/spi/ToolProvider.html",
+      "sourceEntry": "java.base/java/util/spi/ToolProvider.java",
+      "sourceSha256": "3d6fe7fa421c5c7399d7f20039ae35d8e9150a53daf75190fdb08f93e0cbaaaa",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "description()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.util.spi.ToolProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findFirst(java.lang.String)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.util.spi.ToolProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.spi.ToolProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "run(java.io.PrintStream,java.io.PrintStream,java.lang.String[])",
+          "result": "int",
+          "declaredBy": "java.util.spi.ToolProvider",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "run(java.io.PrintWriter,java.io.PrintWriter,java.lang.String[])",
+          "result": "int",
+          "declaredBy": "java.util.spi.ToolProvider",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

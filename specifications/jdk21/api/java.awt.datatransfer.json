@@ -1,0 +1,1110 @@
+{
+  "name": "java.awt.datatransfer",
+  "module": "java.datatransfer",
+  "types": [
+    {
+      "target": "java.awt.datatransfer.Clipboard",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/Clipboard.java",
+      "sourceSha256": "02890c687dd882a99ebe55f8e03204e55e0cf20e8082d58abc852af83f4ef382",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addFlavorListener(java.awt.datatransfer.FlavorListener)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "contents",
+          "result": "java.awt.datatransfer.Transferable",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableDataFlavors()",
+          "result": "java.awt.datatransfer.DataFlavor[]",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getContents(java.lang.Object)",
+          "result": "java.awt.datatransfer.Transferable",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getData(java.awt.datatransfer.DataFlavor)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFlavorListeners()",
+          "result": "java.awt.datatransfer.FlavorListener[]",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDataFlavorAvailable(java.awt.datatransfer.DataFlavor)",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "owner",
+          "result": "java.awt.datatransfer.ClipboardOwner",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "removeFlavorListener(java.awt.datatransfer.FlavorListener)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.Clipboard",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.ClipboardOwner",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/ClipboardOwner.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/ClipboardOwner.java",
+      "sourceSha256": "205af24c243f55bd7f9d96e5dd6590f0a966305551711d624c1c99d1843e7407",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "lostOwnership(java.awt.datatransfer.Clipboard,java.awt.datatransfer.Transferable)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.ClipboardOwner",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.DataFlavor",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Externalizable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/DataFlavor.java",
+      "sourceSha256": "616a68813b26952e6db7ae03904d3fb4093b9348e0163df0ebd1a14523c1e56d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Class,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.ClassLoader)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "allHtmlFlavor",
+          "result": "java.awt.datatransfer.DataFlavor",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.awt.datatransfer.DataFlavor)",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "fragmentHtmlFlavor",
+          "result": "java.awt.datatransfer.DataFlavor",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultRepresentationClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultRepresentationClassAsString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHumanPresentableName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMimeType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameter(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimaryType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReaderForText(java.awt.datatransfer.Transferable)",
+          "result": "java.io.Reader",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRepresentationClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextPlainUnicodeFlavor()",
+          "result": "java.awt.datatransfer.DataFlavor",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "imageFlavor",
+          "result": "java.awt.datatransfer.DataFlavor",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isFlavorJavaFileListType()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFlavorRemoteObjectType()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFlavorSerializedObjectType()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFlavorTextType()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isMimeTypeEqual(java.awt.datatransfer.DataFlavor)",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isMimeTypeEqual(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isMimeTypeSerializedObject()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRepresentationClassByteBuffer()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRepresentationClassCharBuffer()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRepresentationClassInputStream()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRepresentationClassReader()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRepresentationClassRemote()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRepresentationClassSerializable()",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "javaFileListFlavor",
+          "result": "java.awt.datatransfer.DataFlavor",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "javaJVMLocalObjectMimeType",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "javaRemoteObjectMimeType",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "javaSerializedObjectMimeType",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "match(java.awt.datatransfer.DataFlavor)",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "normalizeMimeType(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "normalizeMimeTypeParameter(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "plainTextFlavor",
+          "result": "java.awt.datatransfer.DataFlavor",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "readExternal(java.io.ObjectInput)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "selectBestTextFlavor(java.awt.datatransfer.DataFlavor[])",
+          "result": "java.awt.datatransfer.DataFlavor",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "selectionHtmlFlavor",
+          "result": "java.awt.datatransfer.DataFlavor",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setHumanPresentableName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "stringFlavor",
+          "result": "java.awt.datatransfer.DataFlavor",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryToLoadClass(java.lang.String,java.lang.ClassLoader)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeExternal(java.io.ObjectOutput)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.DataFlavor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.FlavorEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/FlavorEvent.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/FlavorEvent.java",
+      "sourceSha256": "0517ef468c80e8e9463f3f0892151112b21243fa623d2899493665c91a466bbb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.datatransfer.Clipboard)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.FlavorEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.FlavorListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/FlavorListener.java",
+      "sourceSha256": "4d8a4270ff062d2caa6de6604315d9b0c9d728a08e1cc330594bf0e4c18e3520",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "flavorsChanged(java.awt.datatransfer.FlavorEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.FlavorListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.FlavorMap",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/FlavorMap.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/FlavorMap.java",
+      "sourceSha256": "a4aaf4e887b6363bf718cb887289ccf31ec62ee1041ff7dd72ddcb90a763703b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getFlavorsForNatives(java.lang.String[])",
+          "result": "java.util.Map",
+          "declaredBy": "java.awt.datatransfer.FlavorMap",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNativesForFlavors(java.awt.datatransfer.DataFlavor[])",
+          "result": "java.util.Map",
+          "declaredBy": "java.awt.datatransfer.FlavorMap",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.FlavorTable",
+      "kind": "interface",
+      "parents": [
+        "java.awt.datatransfer.FlavorMap"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/FlavorTable.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/FlavorTable.java",
+      "sourceSha256": "62ad9faf83daf1497691de5b557ce7bbaace0f8eabdce1862db50281f45b91ec",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getFlavorsForNative(java.lang.String)",
+          "result": "java.util.List",
+          "declaredBy": "java.awt.datatransfer.FlavorTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNativesForFlavor(java.awt.datatransfer.DataFlavor)",
+          "result": "java.util.List",
+          "declaredBy": "java.awt.datatransfer.FlavorTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.MimeTypeParseException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/MimeTypeParseException.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/MimeTypeParseException.java",
+      "sourceSha256": "ffb6d5b1e6d35b864876b80bc5aeb9505088f98c6180e4b142d4c14c83f8d40d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.MimeTypeParseException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.MimeTypeParseException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.StringSelection",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.datatransfer.Transferable",
+        "java.awt.datatransfer.ClipboardOwner"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/StringSelection.java",
+      "sourceSha256": "e4ea174eced1b48fd56b6e9fbf1a799eb386eadadd6458e32d94a6a5c925aa0b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.StringSelection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransferData(java.awt.datatransfer.DataFlavor)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.datatransfer.StringSelection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransferDataFlavors()",
+          "result": "java.awt.datatransfer.DataFlavor[]",
+          "declaredBy": "java.awt.datatransfer.StringSelection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDataFlavorSupported(java.awt.datatransfer.DataFlavor)",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.StringSelection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lostOwnership(java.awt.datatransfer.Clipboard,java.awt.datatransfer.Transferable)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.StringSelection",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.SystemFlavorMap",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.datatransfer.FlavorMap",
+        "java.awt.datatransfer.FlavorTable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/SystemFlavorMap.java",
+      "sourceSha256": "312ada51c58388daca1998b7ed5c2fc6547597b721f1a05223cabd1526167732",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addFlavorForUnencodedNative(java.lang.String,java.awt.datatransfer.DataFlavor)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addUnencodedNativeForFlavor(java.awt.datatransfer.DataFlavor,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decodeDataFlavor(java.lang.String)",
+          "result": "java.awt.datatransfer.DataFlavor",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decodeJavaMIMEType(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encodeDataFlavor(java.awt.datatransfer.DataFlavor)",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encodeJavaMIMEType(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultFlavorMap()",
+          "result": "java.awt.datatransfer.FlavorMap",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFlavorsForNative(java.lang.String)",
+          "result": "java.util.List",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFlavorsForNatives(java.lang.String[])",
+          "result": "java.util.Map",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNativesForFlavor(java.awt.datatransfer.DataFlavor)",
+          "result": "java.util.List",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNativesForFlavors(java.awt.datatransfer.DataFlavor[])",
+          "result": "java.util.Map",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isJavaMIMEType(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFlavorsForNative(java.lang.String,java.awt.datatransfer.DataFlavor[])",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNativesForFlavor(java.awt.datatransfer.DataFlavor,java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.SystemFlavorMap",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.Transferable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/Transferable.java",
+      "sourceSha256": "134bee7c8541eafd66bfe41be3f01b09f78e366159b5516bb9863d34720f89ed",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getTransferData(java.awt.datatransfer.DataFlavor)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.datatransfer.Transferable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransferDataFlavors()",
+          "result": "java.awt.datatransfer.DataFlavor[]",
+          "declaredBy": "java.awt.datatransfer.Transferable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDataFlavorSupported(java.awt.datatransfer.DataFlavor)",
+          "result": "boolean",
+          "declaredBy": "java.awt.datatransfer.Transferable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.datatransfer.UnsupportedFlavorException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.datatransfer/java/awt/datatransfer/UnsupportedFlavorException.html",
+      "sourceEntry": "java.datatransfer/java/awt/datatransfer/UnsupportedFlavorException.java",
+      "sourceSha256": "933e802d76a315317e7dc913c76bdcfd6d08cca058df91bc058e1cff8f016b7d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.datatransfer.DataFlavor)",
+          "result": "void",
+          "declaredBy": "java.awt.datatransfer.UnsupportedFlavorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

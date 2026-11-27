@@ -1,0 +1,2547 @@
+{
+  "name": "java.awt.dnd",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "java.awt.dnd.Autoscroll",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/Autoscroll.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/Autoscroll.java",
+      "sourceSha256": "f5f3ce11ea4ef432dee5613b3da37759548a38a200b3c7b33fad5109b72501bc",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "autoscroll(java.awt.Point)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.Autoscroll",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAutoscrollInsets()",
+          "result": "java.awt.Insets",
+          "declaredBy": "java.awt.dnd.Autoscroll",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DnDConstants",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DnDConstants.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DnDConstants.java",
+      "sourceSha256": "7134a0b4505d4caa051d967c554e06159f2adcec552c87c1fe790800ef33e396",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ACTION_COPY",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DnDConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTION_COPY_OR_MOVE",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DnDConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTION_LINK",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DnDConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTION_MOVE",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DnDConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTION_NONE",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DnDConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTION_REFERENCE",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DnDConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragGestureEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragGestureEvent.java",
+      "sourceSha256": "11a39ed2329c92a02147e0e1de446f1dff3fe90bcd5321b97a31c5261dea40ce",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragGestureRecognizer,int,java.awt.Point,java.util.List)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getComponent()",
+          "result": "java.awt.Component",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDragAction()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDragOrigin()",
+          "result": "java.awt.Point",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDragSource()",
+          "result": "java.awt.dnd.DragSource",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceAsDragGestureRecognizer()",
+          "result": "java.awt.dnd.DragGestureRecognizer",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTriggerEvent()",
+          "result": "java.awt.event.InputEvent",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startDrag(java.awt.Cursor,java.awt.Image,java.awt.Point,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startDrag(java.awt.Cursor,java.awt.datatransfer.Transferable)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startDrag(java.awt.Cursor,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray(java.lang.Object[])",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.awt.dnd.DragGestureEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragGestureListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragGestureListener.java",
+      "sourceSha256": "2a5eccbf0efcbbc4097146a0a96e86943f32dc6e649133fcf4778b5b306ed186",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "dragGestureRecognized(java.awt.dnd.DragGestureEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragGestureRecognizer",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragGestureRecognizer.java",
+      "sourceSha256": "4829d3a9ee3eac63c0c0fc925607bd9f5fd2731efb634cc045ef1082d4426326",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSource)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSource,java.awt.Component)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSource,java.awt.Component,int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSource,java.awt.Component,int,java.awt.dnd.DragGestureListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addDragGestureListener(java.awt.dnd.DragGestureListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendEvent(java.awt.event.InputEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "component",
+          "result": "java.awt.Component",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "dragGestureListener",
+          "result": "java.awt.dnd.DragGestureListener",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "dragSource",
+          "result": "java.awt.dnd.DragSource",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "events",
+          "result": "java.util.ArrayList",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "fireDragGestureRecognized(int,java.awt.Point)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getComponent()",
+          "result": "java.awt.Component",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDragSource()",
+          "result": "java.awt.dnd.DragSource",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceActions()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTriggerEvent()",
+          "result": "java.awt.event.InputEvent",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerListeners()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeDragGestureListener(java.awt.dnd.DragGestureListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resetRecognizer()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setComponent(java.awt.Component)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSourceActions(int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "sourceActions",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "unregisterListeners()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragGestureRecognizer",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragSource",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragSource.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragSource.java",
+      "sourceSha256": "7d2eff055c808e6457adf87ef351535fa2bf03978773a1a4f3e4dedbaff75994",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DefaultCopyDrop",
+          "result": "java.awt.Cursor",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DefaultCopyNoDrop",
+          "result": "java.awt.Cursor",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DefaultLinkDrop",
+          "result": "java.awt.Cursor",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DefaultLinkNoDrop",
+          "result": "java.awt.Cursor",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DefaultMoveDrop",
+          "result": "java.awt.Cursor",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DefaultMoveNoDrop",
+          "result": "java.awt.Cursor",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addDragSourceListener(java.awt.dnd.DragSourceListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addDragSourceMotionListener(java.awt.dnd.DragSourceMotionListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDefaultDragGestureRecognizer(java.awt.Component,int,java.awt.dnd.DragGestureListener)",
+          "result": "java.awt.dnd.DragGestureRecognizer",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDragGestureRecognizer(java.lang.Class,java.awt.Component,int,java.awt.dnd.DragGestureListener)",
+          "result": "java.awt.dnd.DragGestureRecognizer",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDragSourceContext(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.Image,java.awt.Point,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)",
+          "result": "java.awt.dnd.DragSourceContext",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultDragSource()",
+          "result": "java.awt.dnd.DragSource",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDragSourceListeners()",
+          "result": "java.awt.dnd.DragSourceListener[]",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDragSourceMotionListeners()",
+          "result": "java.awt.dnd.DragSourceMotionListener[]",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDragThreshold()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFlavorMap()",
+          "result": "java.awt.datatransfer.FlavorMap",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListeners(java.lang.Class)",
+          "result": "java.util.EventListener[]",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDragImageSupported()",
+          "result": "boolean",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeDragSourceListener(java.awt.dnd.DragSourceListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeDragSourceMotionListener(java.awt.dnd.DragSourceMotionListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startDrag(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.Image,java.awt.Point,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startDrag(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.Image,java.awt.Point,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener,java.awt.datatransfer.FlavorMap)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startDrag(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startDrag(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener,java.awt.datatransfer.FlavorMap)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSource",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragSourceAdapter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.dnd.DragSourceListener",
+        "java.awt.dnd.DragSourceMotionListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragSourceAdapter.java",
+      "sourceSha256": "16891d63e3a26e5fb2405508a8af16b0e5b4d98597d8c8bef4142535975016cd",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceAdapter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragDropEnd(java.awt.dnd.DragSourceDropEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragEnter(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragExit(java.awt.dnd.DragSourceEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragMouseMoved(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragOver(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropActionChanged(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragSourceContext",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.dnd.DragSourceListener",
+        "java.awt.dnd.DragSourceMotionListener",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragSourceContext.java",
+      "sourceSha256": "056bdfa78af8d5490ed14cf8e442e8ee2609dd014c5b62c59597fa499fcc64ea",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.Image,java.awt.Point,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "CHANGED",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENTER",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OVER",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addDragSourceListener(java.awt.dnd.DragSourceListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragDropEnd(java.awt.dnd.DragSourceDropEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragEnter(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragExit(java.awt.dnd.DragSourceEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragMouseMoved(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragOver(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropActionChanged(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getComponent()",
+          "result": "java.awt.Component",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCursor()",
+          "result": "java.awt.Cursor",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDragSource()",
+          "result": "java.awt.dnd.DragSource",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceActions()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransferable()",
+          "result": "java.awt.datatransfer.Transferable",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTrigger()",
+          "result": "java.awt.dnd.DragGestureEvent",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeDragSourceListener(java.awt.dnd.DragSourceListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCursor(java.awt.Cursor)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "transferablesFlavorsChanged()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateCurrentCursor(int,int,int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceContext",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragSourceDragEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.dnd.DragSourceEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragSourceDragEvent.java",
+      "sourceSha256": "bc1afe3c36718b7652a0b4d6c8c0c4213cc187cbe1227a8d955831c66cd8b301",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSourceContext,int,int,int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSourceContext,int,int,int,int,int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDropAction()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGestureModifiers()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGestureModifiersEx()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTargetActions()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUserAction()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragSourceDropEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.dnd.DragSourceEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragSourceDropEvent.java",
+      "sourceSha256": "36fb5d749cf461f304a89deb2bf40f85830695eafeb3c2e1f627e7ad1d07bb11",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSourceContext)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSourceContext,int,boolean)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSourceContext,int,boolean,int,int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDropAction()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDropSuccess()",
+          "result": "boolean",
+          "declaredBy": "java.awt.dnd.DragSourceDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragSourceEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragSourceEvent.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragSourceEvent.java",
+      "sourceSha256": "ad9e2cc0c09eff2f599c5b861b6896d0d5b514093c3abc5eca12458536ed9418",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSourceContext)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSourceContext,int,int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDragSourceContext()",
+          "result": "java.awt.dnd.DragSourceContext",
+          "declaredBy": "java.awt.dnd.DragSourceEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocation()",
+          "result": "java.awt.Point",
+          "declaredBy": "java.awt.dnd.DragSourceEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getX()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getY()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DragSourceEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragSourceListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragSourceListener.java",
+      "sourceSha256": "b42c6a3efa9f918c42e5fb273eec203b9826041692a74113a2d77a73201a298f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "dragDropEnd(java.awt.dnd.DragSourceDropEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragEnter(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragExit(java.awt.dnd.DragSourceEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragOver(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropActionChanged(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DragSourceMotionListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DragSourceMotionListener.java",
+      "sourceSha256": "c968d4d5b1f15d502ce0478047f90b5b35d10ad47d2ab6b5f95c33db8ae9f9da",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "dragMouseMoved(java.awt.dnd.DragSourceDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DragSourceMotionListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DropTarget",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.dnd.DropTargetListener",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DropTarget.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DropTarget.java",
+      "sourceSha256": "e3b70aa23a2e68c0f93d64ad3fea1928aac6addfc1fc8ffddcbaf3230d416815",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Component,int,java.awt.dnd.DropTargetListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean,java.awt.datatransfer.FlavorMap)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Component,java.awt.dnd.DropTargetListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addDropTargetListener(java.awt.dnd.DropTargetListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotify()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clearAutoscroll()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDropTargetAutoScroller(java.awt.Component,java.awt.Point)",
+          "result": "java.awt.dnd.DropTarget$DropTargetAutoScroller",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createDropTargetContext()",
+          "result": "java.awt.dnd.DropTargetContext",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragEnter(java.awt.dnd.DropTargetDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragExit(java.awt.dnd.DropTargetEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragOver(java.awt.dnd.DropTargetDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "drop(java.awt.dnd.DropTargetDropEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropActionChanged(java.awt.dnd.DropTargetDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getComponent()",
+          "result": "java.awt.Component",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultActions()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDropTargetContext()",
+          "result": "java.awt.dnd.DropTargetContext",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFlavorMap()",
+          "result": "java.awt.datatransfer.FlavorMap",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initializeAutoscrolling(java.awt.Point)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isActive()",
+          "result": "boolean",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeDropTargetListener(java.awt.dnd.DropTargetListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotify()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setActive(boolean)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setComponent(java.awt.Component)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDefaultActions(int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFlavorMap(java.awt.datatransfer.FlavorMap)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAutoscroll(java.awt.Point)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DropTarget$DropTargetAutoScroller",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.event.ActionListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DropTarget.DropTargetAutoScroller.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DropTarget.java",
+      "sourceSha256": "e3b70aa23a2e68c0f93d64ad3fea1928aac6addfc1fc8ffddcbaf3230d416815",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.Component,java.awt.Point)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget$DropTargetAutoScroller",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "actionPerformed(java.awt.event.ActionEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget$DropTargetAutoScroller",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stop()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget$DropTargetAutoScroller",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateLocation(java.awt.Point)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTarget$DropTargetAutoScroller",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DropTargetAdapter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.dnd.DropTargetListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DropTargetAdapter.java",
+      "sourceSha256": "da106b2fa9f771c2a73e24383566575a38146df9b57a56451d6dfb8769a2c029",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetAdapter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragEnter(java.awt.dnd.DropTargetDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragExit(java.awt.dnd.DropTargetEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragOver(java.awt.dnd.DropTargetDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropActionChanged(java.awt.dnd.DropTargetDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetAdapter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DropTargetContext",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DropTargetContext.java",
+      "sourceSha256": "be6564afe2922df63e7ceca93a111322921104329c3b502193d3030225d5ff06",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "acceptDrag(int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acceptDrop(int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createTransferableProxy(java.awt.datatransfer.Transferable,boolean)",
+          "result": "java.awt.datatransfer.Transferable",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropComplete(boolean)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getComponent()",
+          "result": "java.awt.Component",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentDataFlavors()",
+          "result": "java.awt.datatransfer.DataFlavor[]",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentDataFlavorsAsList()",
+          "result": "java.util.List",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDropTarget()",
+          "result": "java.awt.dnd.DropTarget",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTargetActions()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransferable()",
+          "result": "java.awt.datatransfer.Transferable",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDataFlavorSupported(java.awt.datatransfer.DataFlavor)",
+          "result": "boolean",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rejectDrag()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rejectDrop()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTargetActions(int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DropTargetContext$TransferableProxy",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.awt.datatransfer.Transferable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DropTargetContext.TransferableProxy.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DropTargetContext.java",
+      "sourceSha256": "be6564afe2922df63e7ceca93a111322921104329c3b502193d3030225d5ff06",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getTransferData(java.awt.datatransfer.DataFlavor)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.awt.dnd.DropTargetContext$TransferableProxy",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransferDataFlavors()",
+          "result": "java.awt.datatransfer.DataFlavor[]",
+          "declaredBy": "java.awt.dnd.DropTargetContext$TransferableProxy",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDataFlavorSupported(java.awt.datatransfer.DataFlavor)",
+          "result": "boolean",
+          "declaredBy": "java.awt.dnd.DropTargetContext$TransferableProxy",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "isLocal",
+          "result": "boolean",
+          "declaredBy": "java.awt.dnd.DropTargetContext$TransferableProxy",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "transferable",
+          "result": "java.awt.datatransfer.Transferable",
+          "declaredBy": "java.awt.dnd.DropTargetContext$TransferableProxy",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DropTargetDragEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.dnd.DropTargetEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DropTargetDragEvent.java",
+      "sourceSha256": "5ec1df3153fbc936050f8c9a91f802d971b9bd2f778d45e056fe192d885a3f58",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DropTargetContext,java.awt.Point,int,int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acceptDrag(int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentDataFlavors()",
+          "result": "java.awt.datatransfer.DataFlavor[]",
+          "declaredBy": "java.awt.dnd.DropTargetDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentDataFlavorsAsList()",
+          "result": "java.util.List",
+          "declaredBy": "java.awt.dnd.DropTargetDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDropAction()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DropTargetDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocation()",
+          "result": "java.awt.Point",
+          "declaredBy": "java.awt.dnd.DropTargetDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceActions()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DropTargetDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransferable()",
+          "result": "java.awt.datatransfer.Transferable",
+          "declaredBy": "java.awt.dnd.DropTargetDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDataFlavorSupported(java.awt.datatransfer.DataFlavor)",
+          "result": "boolean",
+          "declaredBy": "java.awt.dnd.DropTargetDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rejectDrag()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetDragEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DropTargetDropEvent",
+      "kind": "class",
+      "parents": [
+        "java.awt.dnd.DropTargetEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DropTargetDropEvent.java",
+      "sourceSha256": "f7f9385cf5dc47bcac0a773526366cc7701b52133df71a134ae8800ffd412370",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DropTargetContext,java.awt.Point,int,int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DropTargetContext,java.awt.Point,int,int,boolean)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acceptDrop(int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropComplete(boolean)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentDataFlavors()",
+          "result": "java.awt.datatransfer.DataFlavor[]",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentDataFlavorsAsList()",
+          "result": "java.util.List",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDropAction()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocation()",
+          "result": "java.awt.Point",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceActions()",
+          "result": "int",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransferable()",
+          "result": "java.awt.datatransfer.Transferable",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDataFlavorSupported(java.awt.datatransfer.DataFlavor)",
+          "result": "boolean",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLocalTransfer()",
+          "result": "boolean",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rejectDrop()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetDropEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DropTargetEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DropTargetEvent.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DropTargetEvent.java",
+      "sourceSha256": "ab259d4fe48ac953cdb43051994b97a34f7289afe39d7b18e58d11d72eb5993a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DropTargetContext)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "context",
+          "result": "java.awt.dnd.DropTargetContext",
+          "declaredBy": "java.awt.dnd.DropTargetEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDropTargetContext()",
+          "result": "java.awt.dnd.DropTargetContext",
+          "declaredBy": "java.awt.dnd.DropTargetEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.DropTargetListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/DropTargetListener.java",
+      "sourceSha256": "b3525161ce582cfbdd6f6bd8779c0511503609566930baeda2077cffeff44035",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "dragEnter(java.awt.dnd.DropTargetDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragExit(java.awt.dnd.DropTargetEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dragOver(java.awt.dnd.DropTargetDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "drop(java.awt.dnd.DropTargetDropEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropActionChanged(java.awt.dnd.DropTargetDragEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.DropTargetListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.InvalidDnDOperationException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/InvalidDnDOperationException.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/InvalidDnDOperationException.java",
+      "sourceSha256": "14a705d257ea2de16806ed96172f34d9111d50e8a9e846b6fff3e79e09415ceb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.InvalidDnDOperationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.InvalidDnDOperationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.awt.dnd.MouseDragGestureRecognizer",
+      "kind": "class",
+      "parents": [
+        "java.awt.dnd.DragGestureRecognizer",
+        "java.awt.event.MouseListener",
+        "java.awt.event.MouseMotionListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html",
+      "sourceEntry": "java.desktop/java/awt/dnd/MouseDragGestureRecognizer.java",
+      "sourceSha256": "6d24f306906f26affe0f13462ae53335ac50ce924c247af232c842a64ed2d8ee",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSource)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSource,java.awt.Component)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSource,java.awt.Component,int)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.awt.dnd.DragSource,java.awt.Component,int,java.awt.dnd.DragGestureListener)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mouseClicked(java.awt.event.MouseEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mouseDragged(java.awt.event.MouseEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mouseEntered(java.awt.event.MouseEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mouseExited(java.awt.event.MouseEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mouseMoved(java.awt.event.MouseEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mousePressed(java.awt.event.MouseEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mouseReleased(java.awt.event.MouseEvent)",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerListeners()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unregisterListeners()",
+          "result": "void",
+          "declaredBy": "java.awt.dnd.MouseDragGestureRecognizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

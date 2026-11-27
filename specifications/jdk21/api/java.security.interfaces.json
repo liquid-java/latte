@@ -1,0 +1,650 @@
+{
+  "name": "java.security.interfaces",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.security.interfaces.DSAKey",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/DSAKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/DSAKey.java",
+      "sourceSha256": "784fc4704616c93322291c165eb8ab4ac0d82165744d10819e95d0f77580d7be",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.interfaces.DSAParams",
+          "declaredBy": "java.security.interfaces.DSAKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.DSAKeyPairGenerator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html",
+      "sourceEntry": "java.base/java/security/interfaces/DSAKeyPairGenerator.java",
+      "sourceSha256": "c6ef05d8c172cb2a3b7d6d54f6deda906f780d0c3ace8c92a663c8a77880c808",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "initialize(int,boolean,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "java.security.interfaces.DSAKeyPairGenerator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initialize(java.security.interfaces.DSAParams,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "java.security.interfaces.DSAKeyPairGenerator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.DSAParams",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/DSAParams.html",
+      "sourceEntry": "java.base/java/security/interfaces/DSAParams.java",
+      "sourceSha256": "90c6e6de0f2e5de10891cc21167437d1130e188b16b2b9b827e4719ee69a56de",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getG()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.DSAParams",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.DSAParams",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.DSAParams",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.DSAPrivateKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.interfaces.DSAKey",
+        "java.security.PrivateKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/DSAPrivateKey.java",
+      "sourceSha256": "8f9d5291d15c3d7e0533aea99d8bfa5835d37df8c222fd9a55fea6d8e78c3e54",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getX()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.DSAPrivateKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "java.security.interfaces.DSAPrivateKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.DSAPublicKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.interfaces.DSAKey",
+        "java.security.PublicKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/DSAPublicKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/DSAPublicKey.java",
+      "sourceSha256": "36c3c1e0a632bbfe6c07e9af607a0b07957334ed5e8875a97fb661c38a41593c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getY()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.DSAPublicKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "java.security.interfaces.DSAPublicKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.ECKey",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/ECKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/ECKey.java",
+      "sourceSha256": "42750f990a22b5505ebc07aed2790860909701cc4bbcc12989acf995863593ac",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.ECParameterSpec",
+          "declaredBy": "java.security.interfaces.ECKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.ECPrivateKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.PrivateKey",
+        "java.security.interfaces.ECKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/ECPrivateKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/ECPrivateKey.java",
+      "sourceSha256": "15e69472510775a3bffa2193da00eb891f0cfcb0290695d7b0ad069ac1860fd0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getS()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.ECPrivateKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "java.security.interfaces.ECPrivateKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.ECPublicKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.PublicKey",
+        "java.security.interfaces.ECKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/ECPublicKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/ECPublicKey.java",
+      "sourceSha256": "b9c4b63e8d622487a016ee2c465e0bf32e3d12fa211ef4f13518fae56cca62ad",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getW()",
+          "result": "java.security.spec.ECPoint",
+          "declaredBy": "java.security.interfaces.ECPublicKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "java.security.interfaces.ECPublicKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.EdECKey",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/EdECKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/EdECKey.java",
+      "sourceSha256": "4fc93bb4ef6fa641ea5b52054b72146c61aa5b59150bfd58c5862ad5bac79b5a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.NamedParameterSpec",
+          "declaredBy": "java.security.interfaces.EdECKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.EdECPrivateKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.interfaces.EdECKey",
+        "java.security.PrivateKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/EdECPrivateKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/EdECPrivateKey.java",
+      "sourceSha256": "e08f760cba2d9ae05033cba84969768efa86e81cb9cd27a504600b8a7043494c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getBytes()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.security.interfaces.EdECPrivateKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.EdECPublicKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.interfaces.EdECKey",
+        "java.security.PublicKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/EdECPublicKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/EdECPublicKey.java",
+      "sourceSha256": "562e12f3e48c4bd673c0d99b797925fcc243e7a26adde9d0315ccda09e42de50",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getPoint()",
+          "result": "java.security.spec.EdECPoint",
+          "declaredBy": "java.security.interfaces.EdECPublicKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.RSAKey",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/RSAKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/RSAKey.java",
+      "sourceSha256": "9b7217db5035fbef80d1844b984549e4d3edf1dfd4ab6fc34af73800e60edf87",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getModulus()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.AlgorithmParameterSpec",
+          "declaredBy": "java.security.interfaces.RSAKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.RSAMultiPrimePrivateCrtKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.interfaces.RSAPrivateKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.java",
+      "sourceSha256": "c6e74f8b76f45f3d425734411f312f790837ebefd64f0b96ad52ca7308f9ad80",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCrtCoefficient()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAMultiPrimePrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOtherPrimeInfo()",
+          "result": "java.security.spec.RSAOtherPrimeInfo[]",
+          "declaredBy": "java.security.interfaces.RSAMultiPrimePrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeExponentP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAMultiPrimePrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeExponentQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAMultiPrimePrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAMultiPrimePrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAMultiPrimePrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicExponent()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAMultiPrimePrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "java.security.interfaces.RSAMultiPrimePrivateCrtKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.RSAPrivateCrtKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.interfaces.RSAPrivateKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/RSAPrivateCrtKey.java",
+      "sourceSha256": "b7dd69599a155b7dae0c79570dadc8cada8d70b9660d44b6ca70652733678622",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCrtCoefficient()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAPrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeExponentP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAPrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeExponentQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAPrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAPrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAPrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicExponent()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAPrivateCrtKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "java.security.interfaces.RSAPrivateCrtKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.RSAPrivateKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.PrivateKey",
+        "java.security.interfaces.RSAKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/RSAPrivateKey.java",
+      "sourceSha256": "286ebc641a61aa09f3a53a9a7bf99a243bbd00cc3ba51dc3fd64233a44990d1e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getPrivateExponent()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAPrivateKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "java.security.interfaces.RSAPrivateKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.RSAPublicKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.PublicKey",
+        "java.security.interfaces.RSAKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/RSAPublicKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/RSAPublicKey.java",
+      "sourceSha256": "a0b80d462f33ecd08a69902b78e74fa996bdd9ef6f00f6b36f33b033923c2e4a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getPublicExponent()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.RSAPublicKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "java.security.interfaces.RSAPublicKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.XECKey",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/XECKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/XECKey.java",
+      "sourceSha256": "d220a2e60c448dcb87acbf394c35353414e2da59b099191a181563a33be86af6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.AlgorithmParameterSpec",
+          "declaredBy": "java.security.interfaces.XECKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.XECPrivateKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.interfaces.XECKey",
+        "java.security.PrivateKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/XECPrivateKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/XECPrivateKey.java",
+      "sourceSha256": "a4f773e8a9ba3c4da719da5e3933e55c41ccf86c85ab12a4c3f503fccea931e5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getScalar()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.security.interfaces.XECPrivateKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.interfaces.XECPublicKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.interfaces.XECKey",
+        "java.security.PublicKey"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/interfaces/XECPublicKey.html",
+      "sourceEntry": "java.base/java/security/interfaces/XECPublicKey.java",
+      "sourceSha256": "27d8dd1118f63b0e626e9660f01eb5e9c062b4671b9562a57f0d47319b9829a5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getU()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.interfaces.XECPublicKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

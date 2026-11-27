@@ -1,0 +1,354 @@
+{
+  "name": "java.lang.instrument",
+  "module": "java.instrument",
+  "types": [
+    {
+      "target": "java.lang.instrument.ClassDefinition",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.instrument/java/lang/instrument/ClassDefinition.html",
+      "sourceEntry": "java.instrument/java/lang/instrument/ClassDefinition.java",
+      "sourceSha256": "c8073819b21394e538fb165b053dbc153d3f626c9253590b824656a7794ad201",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Class,byte[])",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.ClassDefinition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefinitionClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.instrument.ClassDefinition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefinitionClassFile()",
+          "result": "byte[]",
+          "declaredBy": "java.lang.instrument.ClassDefinition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.instrument.ClassFileTransformer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html",
+      "sourceEntry": "java.instrument/java/lang/instrument/ClassFileTransformer.java",
+      "sourceSha256": "521cb1352fc76a6767eda99a98ddd6ad357c8c24e18a29736761d6f6d6e5bf90",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "transform(java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])",
+          "result": "byte[]",
+          "declaredBy": "java.lang.instrument.ClassFileTransformer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "transform(java.lang.Module,java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])",
+          "result": "byte[]",
+          "declaredBy": "java.lang.instrument.ClassFileTransformer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.instrument.IllegalClassFormatException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.instrument/java/lang/instrument/IllegalClassFormatException.html",
+      "sourceEntry": "java.instrument/java/lang/instrument/IllegalClassFormatException.java",
+      "sourceSha256": "4b5a9f7963139a98ee964e60d36ea31bdc9da1d778d25af6fb3ddb82daea2afd",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.IllegalClassFormatException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.IllegalClassFormatException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.instrument.Instrumentation",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.instrument/java/lang/instrument/Instrumentation.html",
+      "sourceEntry": "java.instrument/java/lang/instrument/Instrumentation.java",
+      "sourceSha256": "afbeac228887ed016a5ef0794146af659c5e44df3d80b9d8733bd06316d754b2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addTransformer(java.lang.instrument.ClassFileTransformer)",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addTransformer(java.lang.instrument.ClassFileTransformer,boolean)",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendToBootstrapClassLoaderSearch(java.util.jar.JarFile)",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "appendToSystemClassLoaderSearch(java.util.jar.JarFile)",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAllLoadedClasses()",
+          "result": "java.lang.Class[]",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInitiatedClasses(java.lang.ClassLoader)",
+          "result": "java.lang.Class[]",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectSize(java.lang.Object)",
+          "result": "long",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isModifiableClass(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isModifiableModule(java.lang.Module)",
+          "result": "boolean",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNativeMethodPrefixSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRedefineClassesSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRetransformClassesSupported()",
+          "result": "boolean",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "redefineClasses(java.lang.instrument.ClassDefinition[])",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "redefineModule(java.lang.Module,java.util.Set,java.util.Map,java.util.Map,java.util.Set,java.util.Map)",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeTransformer(java.lang.instrument.ClassFileTransformer)",
+          "result": "boolean",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "retransformClasses(java.lang.Class[])",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.Instrumentation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.instrument.UnmodifiableClassException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.instrument/java/lang/instrument/UnmodifiableClassException.html",
+      "sourceEntry": "java.instrument/java/lang/instrument/UnmodifiableClassException.java",
+      "sourceSha256": "87951e66d8b6d711d05dea193915f3af919bc4c94a2a661931f9d2cf1d5eafa1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.UnmodifiableClassException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.UnmodifiableClassException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.instrument.UnmodifiableModuleException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.instrument/java/lang/instrument/UnmodifiableModuleException.html",
+      "sourceEntry": "java.instrument/java/lang/instrument/UnmodifiableModuleException.java",
+      "sourceSha256": "898543bd251259e7aafab882dcf27009e6b2af0282cbab697876598bc2e1ffcf",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.UnmodifiableModuleException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.instrument.UnmodifiableModuleException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

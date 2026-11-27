@@ -1,0 +1,912 @@
+{
+  "name": "javax.xml.xpath",
+  "module": "java.xml",
+  "types": [
+    {
+      "target": "javax.xml.xpath.XPath",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPath.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPath.java",
+      "sourceSha256": "e055e2473aeeb31ebff612e9d9c98b2db84fbe6e9ea15c74de110519596e013d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "compile(java.lang.String)",
+          "result": "javax.xml.xpath.XPathExpression",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluate(java.lang.String,java.lang.Object)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluate(java.lang.String,java.lang.Object,javax.xml.namespace.QName)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluate(java.lang.String,org.xml.sax.InputSource)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluate(java.lang.String,org.xml.sax.InputSource,javax.xml.namespace.QName)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluateExpression(java.lang.String,java.lang.Object)",
+          "result": "javax.xml.xpath.XPathEvaluationResult",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluateExpression(java.lang.String,java.lang.Object,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluateExpression(java.lang.String,org.xml.sax.InputSource)",
+          "result": "javax.xml.xpath.XPathEvaluationResult",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluateExpression(java.lang.String,org.xml.sax.InputSource,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespaceContext()",
+          "result": "javax.xml.namespace.NamespaceContext",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getXPathFunctionResolver()",
+          "result": "javax.xml.xpath.XPathFunctionResolver",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getXPathVariableResolver()",
+          "result": "javax.xml.xpath.XPathVariableResolver",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNamespaceContext(javax.xml.namespace.NamespaceContext)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPath",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathConstants",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathConstants.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathConstants.java",
+      "sourceSha256": "a003b717ccae3924bee8163440f8aa2e9b66c9193b6a2d658c2e0cddb02ad8bd",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "BOOLEAN",
+          "result": "javax.xml.namespace.QName",
+          "declaredBy": "javax.xml.xpath.XPathConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DOM_OBJECT_MODEL",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.xpath.XPathConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NODE",
+          "result": "javax.xml.namespace.QName",
+          "declaredBy": "javax.xml.xpath.XPathConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NODESET",
+          "result": "javax.xml.namespace.QName",
+          "declaredBy": "javax.xml.xpath.XPathConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NUMBER",
+          "result": "javax.xml.namespace.QName",
+          "declaredBy": "javax.xml.xpath.XPathConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STRING",
+          "result": "javax.xml.namespace.QName",
+          "declaredBy": "javax.xml.xpath.XPathConstants",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathEvaluationResult",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathEvaluationResult.java",
+      "sourceSha256": "533b2741a9efc76660b36dd7b3b64a3cbe1163151aa2752e31d261e39f10e81b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "type()",
+          "result": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "value()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathEvaluationResult.java",
+      "sourceSha256": "533b2741a9efc76660b36dd7b3b64a3cbe1163151aa2752e31d261e39f10e81b",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ANY",
+          "result": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BOOLEAN",
+          "result": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NODE",
+          "result": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NODESET",
+          "result": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NUMBER",
+          "result": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STRING",
+          "result": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getQNameType(java.lang.Class)",
+          "result": "javax.xml.namespace.QName",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.xml.xpath.XPathEvaluationResult$XPathResultType[]",
+          "declaredBy": "javax.xml.xpath.XPathEvaluationResult$XPathResultType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathException.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathException.java",
+      "sourceSha256": "458bec19138d704a9ec2f7b2370beab88c48c2152d79b8aba6cb850654e86bc3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.xpath.XPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace()",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintStream)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintWriter)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathExpression",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathExpression.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathExpression.java",
+      "sourceSha256": "2acab5340062c7a1132b03fc85656a588c37de9b9cb885e1120bbf7276532b9e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "evaluate(java.lang.Object)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.xpath.XPathExpression",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluate(java.lang.Object,javax.xml.namespace.QName)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPathExpression",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluate(org.xml.sax.InputSource)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.xpath.XPathExpression",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluate(org.xml.sax.InputSource,javax.xml.namespace.QName)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPathExpression",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluateExpression(java.lang.Object)",
+          "result": "javax.xml.xpath.XPathEvaluationResult",
+          "declaredBy": "javax.xml.xpath.XPathExpression",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluateExpression(java.lang.Object,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPathExpression",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluateExpression(org.xml.sax.InputSource)",
+          "result": "javax.xml.xpath.XPathEvaluationResult",
+          "declaredBy": "javax.xml.xpath.XPathExpression",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluateExpression(org.xml.sax.InputSource,java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPathExpression",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathExpressionException",
+      "kind": "class",
+      "parents": [
+        "javax.xml.xpath.XPathException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathExpressionException.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathExpressionException.java",
+      "sourceSha256": "df7dce1a060e9adb9a8930fbcd093de4bcf193624965f8141c9ef6d12e3d02ce",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathExpressionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathExpressionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathFactory.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathFactory.java",
+      "sourceSha256": "41bcf32842a4121e88091c1b6084ca5a629ae0c237da4acacfbaaf06ad568de7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT_OBJECT_MODEL_URI",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT_PROPERTY_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getFeature(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isObjectModelSupported(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDefaultInstance()",
+          "result": "javax.xml.xpath.XPathFactory",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance()",
+          "result": "javax.xml.xpath.XPathFactory",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance(java.lang.String)",
+          "result": "javax.xml.xpath.XPathFactory",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.xpath.XPathFactory",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newXPath()",
+          "result": "javax.xml.xpath.XPath",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFeature(java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setProperty(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathFactoryConfigurationException",
+      "kind": "class",
+      "parents": [
+        "javax.xml.xpath.XPathException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathFactoryConfigurationException.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathFactoryConfigurationException.java",
+      "sourceSha256": "bf5bec6371a7fe9a0056a56b5bd0af46a70c2bd2e9011165e7a9f14d3355883c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathFactoryConfigurationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathFactoryConfigurationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathFunction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathFunction.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathFunction.java",
+      "sourceSha256": "1f88461f813bd320dbfe4c4662d14e3796ac2cd5bfca4701651b240a48bd8f37",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "evaluate(java.util.List)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPathFunction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathFunctionException",
+      "kind": "class",
+      "parents": [
+        "javax.xml.xpath.XPathExpressionException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathFunctionException.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathFunctionException.java",
+      "sourceSha256": "a07e95491cef22f39aab81588c0b26e5449ecac3bee9e019cf7425a23e221375",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathFunctionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.xpath.XPathFunctionException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathFunctionResolver",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathFunctionResolver.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathFunctionResolver.java",
+      "sourceSha256": "c9147c037756eae75d1c6214a9d0756ad3758dbd7a0cc572336d47d9bb4a269e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "resolveFunction(javax.xml.namespace.QName,int)",
+          "result": "javax.xml.xpath.XPathFunction",
+          "declaredBy": "javax.xml.xpath.XPathFunctionResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathNodes",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Iterable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathNodes.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathNodes.java",
+      "sourceSha256": "83500dc65cd0ebee06bffc4cc3d161b1bef74f9c20f25ae880372ba023326b4c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "javax.xml.xpath.XPathNodes",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.xml.xpath.XPathNodes",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.xml.xpath.XPathNodes",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.xpath.XPathVariableResolver",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/xpath/XPathVariableResolver.html",
+      "sourceEntry": "java.xml/javax/xml/xpath/XPathVariableResolver.java",
+      "sourceSha256": "52b8979f2ccb3f4824ee8e3dc4ee8173180c31697b52779422afaca57b49f60c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "resolveVariable(javax.xml.namespace.QName)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.xpath.XPathVariableResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

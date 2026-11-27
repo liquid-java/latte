@@ -1,0 +1,1100 @@
+{
+  "name": "javax.management.remote",
+  "module": "java.management",
+  "types": [
+    {
+      "target": "javax.management.remote.JMXAddressable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXAddressable.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXAddressable.java",
+      "sourceSha256": "d1beeaeaa7a9a96b7995784bb4493d37d2e9ad7ab071ddc814382142438a0cce",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAddress()",
+          "result": "javax.management.remote.JMXServiceURL",
+          "declaredBy": "javax.management.remote.JMXAddressable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXAuthenticator",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXAuthenticator.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXAuthenticator.java",
+      "sourceSha256": "1bbc50ecb56b90f474c7af8df8eb73c3467b94f93385268cfb3d4672b237995c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "authenticate(java.lang.Object)",
+          "result": "javax.security.auth.Subject",
+          "declaredBy": "javax.management.remote.JMXAuthenticator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXConnectionNotification",
+      "kind": "class",
+      "parents": [
+        "javax.management.Notification"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXConnectionNotification.java",
+      "sourceSha256": "7976cc8cb9b404222ccc1d1e24fd4bf357738cf3f80188f0b291db3d43d0d998",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Object,java.lang.String,long,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectionNotification",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "CLOSED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectionNotification",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FAILED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectionNotification",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NOTIFS_LOST",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectionNotification",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OPENED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectionNotification",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnectionId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectionNotification",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXConnector",
+      "kind": "interface",
+      "parents": [
+        "java.io.Closeable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXConnector.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXConnector.java",
+      "sourceSha256": "fd3c1147bc62ad4fd499600884bce945bf9a49e8109bbbc8e321c0707d0ee046",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CREDENTIALS",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnector",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connect()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connect(java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnectionId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanServerConnection()",
+          "result": "javax.management.MBeanServerConnection",
+          "declaredBy": "javax.management.remote.JMXConnector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanServerConnection(javax.security.auth.Subject)",
+          "result": "javax.management.MBeanServerConnection",
+          "declaredBy": "javax.management.remote.JMXConnector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeConnectionNotificationListener(javax.management.NotificationListener)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXConnectorFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXConnectorFactory.java",
+      "sourceSha256": "10b430a99ec9347e72844e4fe0946a7709870412754fc8188a1749e48086fdc5",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "DEFAULT_CLASS_LOADER",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectorFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROTOCOL_PROVIDER_CLASS_LOADER",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectorFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROTOCOL_PROVIDER_PACKAGES",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectorFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "connect(javax.management.remote.JMXServiceURL)",
+          "result": "javax.management.remote.JMXConnector",
+          "declaredBy": "javax.management.remote.JMXConnectorFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connect(javax.management.remote.JMXServiceURL,java.util.Map)",
+          "result": "javax.management.remote.JMXConnector",
+          "declaredBy": "javax.management.remote.JMXConnectorFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newJMXConnector(javax.management.remote.JMXServiceURL,java.util.Map)",
+          "result": "javax.management.remote.JMXConnector",
+          "declaredBy": "javax.management.remote.JMXConnectorFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXConnectorProvider",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXConnectorProvider.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXConnectorProvider.java",
+      "sourceSha256": "d83bfe64b032f1f5a51f5913fab2d5a1e5496565c469263771fa9a89f072c0c1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "newJMXConnector(javax.management.remote.JMXServiceURL,java.util.Map)",
+          "result": "javax.management.remote.JMXConnector",
+          "declaredBy": "javax.management.remote.JMXConnectorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXConnectorServer",
+      "kind": "class",
+      "parents": [
+        "javax.management.NotificationBroadcasterSupport",
+        "javax.management.remote.JMXConnectorServerMBean",
+        "javax.management.MBeanRegistration",
+        "javax.management.remote.JMXAddressable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXConnectorServer.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXConnectorServer.java",
+      "sourceSha256": "f606aa1cd8db1d81bef63f0f2723e3d575eb72d31ac7d510994540d18fc45bb3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.MBeanServer)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "AUTHENTICATOR",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "connectionClosed(java.lang.String,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connectionFailed(java.lang.String,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connectionOpened(java.lang.String,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnectionIds()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanServer()",
+          "result": "javax.management.MBeanServer",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationInfo()",
+          "result": "javax.management.MBeanNotificationInfo[]",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "postDeregister()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "postRegister(java.lang.Boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preDeregister()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preRegister(javax.management.MBeanServer,javax.management.ObjectName)",
+          "result": "javax.management.ObjectName",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toJMXConnector(java.util.Map)",
+          "result": "javax.management.remote.JMXConnector",
+          "declaredBy": "javax.management.remote.JMXConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXConnectorServerFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXConnectorServerFactory.java",
+      "sourceSha256": "a35db5c590f46c4dceb0181fcfba4c540b5053efd39818f021c54feb698512ee",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "DEFAULT_CLASS_LOADER",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectorServerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT_CLASS_LOADER_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectorServerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROTOCOL_PROVIDER_CLASS_LOADER",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectorServerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROTOCOL_PROVIDER_PACKAGES",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXConnectorServerFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "newJMXConnectorServer(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.MBeanServer)",
+          "result": "javax.management.remote.JMXConnectorServer",
+          "declaredBy": "javax.management.remote.JMXConnectorServerFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXConnectorServerMBean",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXConnectorServerMBean.java",
+      "sourceSha256": "dee3f86931e226f0ba0d487f355197f9eb6fd252c0ba3d9993167a707fee54d1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAddress()",
+          "result": "javax.management.remote.JMXServiceURL",
+          "declaredBy": "javax.management.remote.JMXConnectorServerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "java.util.Map",
+          "declaredBy": "javax.management.remote.JMXConnectorServerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnectionIds()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.management.remote.JMXConnectorServerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isActive()",
+          "result": "boolean",
+          "declaredBy": "javax.management.remote.JMXConnectorServerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "start()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stop()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXConnectorServerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toJMXConnector(java.util.Map)",
+          "result": "javax.management.remote.JMXConnector",
+          "declaredBy": "javax.management.remote.JMXConnectorServerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXConnectorServerProvider",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXConnectorServerProvider.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXConnectorServerProvider.java",
+      "sourceSha256": "0cd3de559d6f7bbc47b4972429b507cff80d458df6e16381056c75c76aaec3fe",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "newJMXConnectorServer(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.MBeanServer)",
+          "result": "javax.management.remote.JMXConnectorServer",
+          "declaredBy": "javax.management.remote.JMXConnectorServerProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXPrincipal",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.Principal",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXPrincipal.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXPrincipal.java",
+      "sourceSha256": "276cbf5c2b7ff1c566e61e3cba53323e5d456345de9459b6296cf7d883930f57",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.remote.JMXPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.remote.JMXPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXPrincipal",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXProviderException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXProviderException.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXProviderException.java",
+      "sourceSha256": "91e2c1e136be96c978f7c9a0bd1bff7009512134a25a3d221e6622ed0904e4ec",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXProviderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXProviderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXProviderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.management.remote.JMXProviderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXServerErrorException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXServerErrorException.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXServerErrorException.java",
+      "sourceSha256": "f4e15225fac3a13a2b73b285fc14193fc9d3cd378effb83588b9750aa64325a6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Error)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXServerErrorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.management.remote.JMXServerErrorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.JMXServiceURL",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/JMXServiceURL.html",
+      "sourceEntry": "java.management/javax/management/remote/JMXServiceURL.java",
+      "sourceSha256": "f66ba109a68639d8ec83b2b131e6ca94e6dcefeaedda774c5817b56a43e13567",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXServiceURL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXServiceURL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.JMXServiceURL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.remote.JMXServiceURL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHost()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXServiceURL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPort()",
+          "result": "int",
+          "declaredBy": "javax.management.remote.JMXServiceURL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProtocol()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXServiceURL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURLPath()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXServiceURL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.remote.JMXServiceURL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.JMXServiceURL",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.MBeanServerForwarder",
+      "kind": "interface",
+      "parents": [
+        "javax.management.MBeanServer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/MBeanServerForwarder.html",
+      "sourceEntry": "java.management/javax/management/remote/MBeanServerForwarder.java",
+      "sourceSha256": "781c3afa25599dd36902f24b1aa561fa4d676b85c43fa7dbe749a0f44a95a18d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getMBeanServer()",
+          "result": "javax.management.MBeanServer",
+          "declaredBy": "javax.management.remote.MBeanServerForwarder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMBeanServer(javax.management.MBeanServer)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.MBeanServerForwarder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.NotificationResult",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/NotificationResult.html",
+      "sourceEntry": "java.management/javax/management/remote/NotificationResult.java",
+      "sourceSha256": "a4624d04099cf011964ef811bc76b6e259e08e9c15854844530f4a3826939917",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(long,long,javax.management.remote.TargetedNotification[])",
+          "result": "void",
+          "declaredBy": "javax.management.remote.NotificationResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEarliestSequenceNumber()",
+          "result": "long",
+          "declaredBy": "javax.management.remote.NotificationResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNextSequenceNumber()",
+          "result": "long",
+          "declaredBy": "javax.management.remote.NotificationResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTargetedNotifications()",
+          "result": "javax.management.remote.TargetedNotification[]",
+          "declaredBy": "javax.management.remote.NotificationResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.NotificationResult",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.SubjectDelegationPermission",
+      "kind": "class",
+      "parents": [
+        "java.security.BasicPermission"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/SubjectDelegationPermission.html",
+      "sourceEntry": "java.management/javax/management/remote/SubjectDelegationPermission.java",
+      "sourceSha256": "427b45cb591a3562fff6339345a602371857e5408f4619bf5cbd2a4200189165",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.SubjectDelegationPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.SubjectDelegationPermission",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.TargetedNotification",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/remote/TargetedNotification.html",
+      "sourceEntry": "java.management/javax/management/remote/TargetedNotification.java",
+      "sourceSha256": "02452edea74fdd3fe699fb8bb113b805f85deb597df6124f892cac27adf03230",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.Notification,java.lang.Integer)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.TargetedNotification",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getListenerID()",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.remote.TargetedNotification",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotification()",
+          "result": "javax.management.Notification",
+          "declaredBy": "javax.management.remote.TargetedNotification",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.TargetedNotification",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

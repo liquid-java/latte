@@ -1,0 +1,2857 @@
+{
+  "name": "javax.crypto",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "javax.crypto.AEADBadTagException",
+      "kind": "class",
+      "parents": [
+        "javax.crypto.BadPaddingException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/AEADBadTagException.html",
+      "sourceEntry": "java.base/javax/crypto/AEADBadTagException.java",
+      "sourceSha256": "a262c21cfa13402f47197a07d3a8943144193c4980aaefb51f871e074cbc932a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.AEADBadTagException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.AEADBadTagException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.BadPaddingException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/BadPaddingException.html",
+      "sourceEntry": "java.base/javax/crypto/BadPaddingException.java",
+      "sourceSha256": "b260fc5d525e4cab76b8fc8f56f6f985e0c56c1571385ba7392927332758b555",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.BadPaddingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.BadPaddingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.Cipher",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/Cipher.html",
+      "sourceEntry": "java.base/javax/crypto/Cipher.java",
+      "sourceSha256": "8343d82f2afd35a25ec67dad6a50ebbe73b64a1962e0d5000d3d32b6e4875c33",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.crypto.CipherSpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DECRYPT_MODE",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENCRYPT_MODE",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PRIVATE_KEY",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PUBLIC_KEY",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SECRET_KEY",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNWRAP_MODE",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WRAP_MODE",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "doFinal()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doFinal(byte[])",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doFinal(byte[],int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doFinal(byte[],int,int)",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doFinal(byte[],int,int,byte[])",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doFinal(byte[],int,int,byte[],int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doFinal(java.nio.ByteBuffer,java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBlockSize()",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExemptionMechanism()",
+          "result": "javax.crypto.ExemptionMechanism",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIV()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.crypto.Cipher",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.crypto.Cipher",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.crypto.Cipher",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxAllowedKeyLength(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxAllowedParameterSpec(java.lang.String)",
+          "result": "java.security.spec.AlgorithmParameterSpec",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputSize(int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameters()",
+          "result": "java.security.AlgorithmParameters",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(int,java.security.Key)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(int,java.security.Key,java.security.AlgorithmParameters)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(int,java.security.Key,java.security.AlgorithmParameters,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(int,java.security.Key,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(int,java.security.cert.Certificate)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(int,java.security.cert.Certificate,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unwrap(byte[],java.lang.String,int)",
+          "result": "java.security.Key",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "update(byte[])",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "update(byte[],int,int)",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "update(byte[],int,int,byte[])",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "update(byte[],int,int,byte[],int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "update(java.nio.ByteBuffer,java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAAD(byte[])",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAAD(byte[],int,int)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAAD(java.nio.ByteBuffer)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(java.security.Key)",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.Cipher",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.CipherInputStream",
+      "kind": "class",
+      "parents": [
+        "java.io.FilterInputStream"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/CipherInputStream.html",
+      "sourceEntry": "java.base/javax/crypto/CipherInputStream.java",
+      "sourceSha256": "d519e40ab75d4c4998b2093cc7648a47f6c062e054a1800a8d8d889147e96f40",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherInputStream",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.InputStream,javax.crypto.Cipher)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherInputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "available()",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherInputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherInputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "markSupported()",
+          "result": "boolean",
+          "declaredBy": "javax.crypto.CipherInputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read()",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherInputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(byte[])",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherInputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(byte[],int,int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherInputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "skip(long)",
+          "result": "long",
+          "declaredBy": "javax.crypto.CipherInputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.CipherOutputStream",
+      "kind": "class",
+      "parents": [
+        "java.io.FilterOutputStream"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/CipherOutputStream.html",
+      "sourceEntry": "java.base/javax/crypto/CipherOutputStream.java",
+      "sourceSha256": "476be0c18e1bd443e6feb012547a635d94e02497e98f87029b934d996afdb687",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherOutputStream",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.OutputStream,javax.crypto.Cipher)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherOutputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherOutputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flush()",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherOutputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(byte[])",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherOutputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(byte[],int,int)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherOutputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(int)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherOutputStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.CipherSpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/CipherSpi.html",
+      "sourceEntry": "java.base/javax/crypto/CipherSpi.java",
+      "sourceSha256": "42e841adf871b277543456dd2dcded0e12fa9e5d8bfec3fcaa3d62a3427247f4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineDoFinal(byte[],int,int)",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineDoFinal(byte[],int,int,byte[],int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineDoFinal(java.nio.ByteBuffer,java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetBlockSize()",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetIV()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetKeySize(java.security.Key)",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetOutputSize(int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetParameters()",
+          "result": "java.security.AlgorithmParameters",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(int,java.security.Key,java.security.AlgorithmParameters,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(int,java.security.Key,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(int,java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineSetMode(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineSetPadding(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineUnwrap(byte[],java.lang.String,int)",
+          "result": "java.security.Key",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineUpdate(byte[],int,int)",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineUpdate(byte[],int,int,byte[],int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineUpdate(java.nio.ByteBuffer,java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineUpdateAAD(byte[],int,int)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineUpdateAAD(java.nio.ByteBuffer)",
+          "result": "void",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineWrap(java.security.Key)",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.CipherSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.DecapsulateException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/DecapsulateException.html",
+      "sourceEntry": "java.base/javax/crypto/DecapsulateException.java",
+      "sourceSha256": "ea786596bedde99558d13f6b44d6935136a0bd96c22630e98e12ac6f2807e8c1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.DecapsulateException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.crypto.DecapsulateException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.EncryptedPrivateKeyInfo",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html",
+      "sourceEntry": "java.base/javax/crypto/EncryptedPrivateKeyInfo.java",
+      "sourceSha256": "e107314affcdccbc85334176669271440658ab366ff66c3fe21306b6039e4a93",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,byte[])",
+          "result": "void",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.AlgorithmParameters,byte[])",
+          "result": "void",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgParameters()",
+          "result": "java.security.AlgorithmParameters",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncryptedData()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeySpec(java.security.Key)",
+          "result": "java.security.spec.PKCS8EncodedKeySpec",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeySpec(java.security.Key,java.lang.String)",
+          "result": "java.security.spec.PKCS8EncodedKeySpec",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeySpec(java.security.Key,java.security.Provider)",
+          "result": "java.security.spec.PKCS8EncodedKeySpec",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeySpec(javax.crypto.Cipher)",
+          "result": "java.security.spec.PKCS8EncodedKeySpec",
+          "declaredBy": "javax.crypto.EncryptedPrivateKeyInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.ExemptionMechanism",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/ExemptionMechanism.html",
+      "sourceEntry": "java.base/javax/crypto/ExemptionMechanism.java",
+      "sourceSha256": "fe31dce85fe84c9740cfb02a3b47c13b92509d5c0d2e2818916117cddd8a224f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.crypto.ExemptionMechanismSpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "genExemptionBlob()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "genExemptionBlob(byte[])",
+          "result": "int",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "genExemptionBlob(byte[],int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.crypto.ExemptionMechanism",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.crypto.ExemptionMechanism",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.crypto.ExemptionMechanism",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOutputSize(int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.Key)",
+          "result": "void",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.Key,java.security.AlgorithmParameters)",
+          "result": "void",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.Key,java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCryptoAllowed(java.security.Key)",
+          "result": "boolean",
+          "declaredBy": "javax.crypto.ExemptionMechanism",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.ExemptionMechanismException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/ExemptionMechanismException.html",
+      "sourceEntry": "java.base/javax/crypto/ExemptionMechanismException.java",
+      "sourceSha256": "541a18effb60458636e6eff581154b064369bc6e941feb0c6c6b8f845f31d12e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.ExemptionMechanismException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.ExemptionMechanismException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.ExemptionMechanismSpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/ExemptionMechanismSpi.html",
+      "sourceEntry": "java.base/javax/crypto/ExemptionMechanismSpi.java",
+      "sourceSha256": "4120016389d443320a5005b0f5427c0080ab7a574c8091a930dbce8a9106c85f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.ExemptionMechanismSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenExemptionBlob()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.ExemptionMechanismSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenExemptionBlob(byte[],int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.ExemptionMechanismSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetOutputSize(int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.ExemptionMechanismSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(java.security.Key)",
+          "result": "void",
+          "declaredBy": "javax.crypto.ExemptionMechanismSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(java.security.Key,java.security.AlgorithmParameters)",
+          "result": "void",
+          "declaredBy": "javax.crypto.ExemptionMechanismSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(java.security.Key,java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "javax.crypto.ExemptionMechanismSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.IllegalBlockSizeException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/IllegalBlockSizeException.html",
+      "sourceEntry": "java.base/javax/crypto/IllegalBlockSizeException.java",
+      "sourceSha256": "e30ad3cf017e42b9720cb2ee2348d91b1e5e7bac03fe4af2192b95dfaab83e6b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.IllegalBlockSizeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.IllegalBlockSizeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KEM",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KEM.html",
+      "sourceEntry": "java.base/javax/crypto/KEM.java",
+      "sourceSha256": "4d72cc54037f08c19c9c86be2a160c6525ab8ff98818e0020b810c2aa8d3e3f7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.KEM",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.crypto.KEM",
+          "declaredBy": "javax.crypto.KEM",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.crypto.KEM",
+          "declaredBy": "javax.crypto.KEM",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.crypto.KEM",
+          "declaredBy": "javax.crypto.KEM",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDecapsulator(java.security.PrivateKey)",
+          "result": "javax.crypto.KEM$Decapsulator",
+          "declaredBy": "javax.crypto.KEM",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDecapsulator(java.security.PrivateKey,java.security.spec.AlgorithmParameterSpec)",
+          "result": "javax.crypto.KEM$Decapsulator",
+          "declaredBy": "javax.crypto.KEM",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newEncapsulator(java.security.PublicKey)",
+          "result": "javax.crypto.KEM$Encapsulator",
+          "declaredBy": "javax.crypto.KEM",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newEncapsulator(java.security.PublicKey,java.security.SecureRandom)",
+          "result": "javax.crypto.KEM$Encapsulator",
+          "declaredBy": "javax.crypto.KEM",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newEncapsulator(java.security.PublicKey,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)",
+          "result": "javax.crypto.KEM$Encapsulator",
+          "declaredBy": "javax.crypto.KEM",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KEM$Decapsulator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KEM.Decapsulator.html",
+      "sourceEntry": "java.base/javax/crypto/KEM.java",
+      "sourceSha256": "4d72cc54037f08c19c9c86be2a160c6525ab8ff98818e0020b810c2aa8d3e3f7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "decapsulate(byte[])",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.KEM$Decapsulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decapsulate(byte[],int,int,java.lang.String)",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.KEM$Decapsulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encapsulationSize()",
+          "result": "int",
+          "declaredBy": "javax.crypto.KEM$Decapsulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "providerName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.KEM$Decapsulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "secretSize()",
+          "result": "int",
+          "declaredBy": "javax.crypto.KEM$Decapsulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KEM$Encapsulated",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KEM.Encapsulated.html",
+      "sourceEntry": "java.base/javax/crypto/KEM.java",
+      "sourceSha256": "4d72cc54037f08c19c9c86be2a160c6525ab8ff98818e0020b810c2aa8d3e3f7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.crypto.SecretKey,byte[],byte[])",
+          "result": "void",
+          "declaredBy": "javax.crypto.KEM$Encapsulated",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encapsulation()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.KEM$Encapsulated",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "key()",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.KEM$Encapsulated",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "params()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.KEM$Encapsulated",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KEM$Encapsulator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KEM.Encapsulator.html",
+      "sourceEntry": "java.base/javax/crypto/KEM.java",
+      "sourceSha256": "4d72cc54037f08c19c9c86be2a160c6525ab8ff98818e0020b810c2aa8d3e3f7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "encapsulate()",
+          "result": "javax.crypto.KEM$Encapsulated",
+          "declaredBy": "javax.crypto.KEM$Encapsulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encapsulate(int,int,java.lang.String)",
+          "result": "javax.crypto.KEM$Encapsulated",
+          "declaredBy": "javax.crypto.KEM$Encapsulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "encapsulationSize()",
+          "result": "int",
+          "declaredBy": "javax.crypto.KEM$Encapsulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "providerName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.KEM$Encapsulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "secretSize()",
+          "result": "int",
+          "declaredBy": "javax.crypto.KEM$Encapsulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KEMSpi",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KEMSpi.html",
+      "sourceEntry": "java.base/javax/crypto/KEMSpi.java",
+      "sourceSha256": "6e5aa61f5fe6e00fcff22c9b39e3b36dd5b220beafcfd5f5a5b67586d6ad4e95",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "engineNewDecapsulator(java.security.PrivateKey,java.security.spec.AlgorithmParameterSpec)",
+          "result": "javax.crypto.KEMSpi$DecapsulatorSpi",
+          "declaredBy": "javax.crypto.KEMSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineNewEncapsulator(java.security.PublicKey,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)",
+          "result": "javax.crypto.KEMSpi$EncapsulatorSpi",
+          "declaredBy": "javax.crypto.KEMSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KEMSpi$DecapsulatorSpi",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KEMSpi.DecapsulatorSpi.html",
+      "sourceEntry": "java.base/javax/crypto/KEMSpi.java",
+      "sourceSha256": "6e5aa61f5fe6e00fcff22c9b39e3b36dd5b220beafcfd5f5a5b67586d6ad4e95",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "engineDecapsulate(byte[],int,int,java.lang.String)",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.KEMSpi$DecapsulatorSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineEncapsulationSize()",
+          "result": "int",
+          "declaredBy": "javax.crypto.KEMSpi$DecapsulatorSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineSecretSize()",
+          "result": "int",
+          "declaredBy": "javax.crypto.KEMSpi$DecapsulatorSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KEMSpi$EncapsulatorSpi",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KEMSpi.EncapsulatorSpi.html",
+      "sourceEntry": "java.base/javax/crypto/KEMSpi.java",
+      "sourceSha256": "6e5aa61f5fe6e00fcff22c9b39e3b36dd5b220beafcfd5f5a5b67586d6ad4e95",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "engineEncapsulate(int,int,java.lang.String)",
+          "result": "javax.crypto.KEM$Encapsulated",
+          "declaredBy": "javax.crypto.KEMSpi$EncapsulatorSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineEncapsulationSize()",
+          "result": "int",
+          "declaredBy": "javax.crypto.KEMSpi$EncapsulatorSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineSecretSize()",
+          "result": "int",
+          "declaredBy": "javax.crypto.KEMSpi$EncapsulatorSpi",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KeyAgreement",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KeyAgreement.html",
+      "sourceEntry": "java.base/javax/crypto/KeyAgreement.java",
+      "sourceSha256": "365a27169dac2b9587e4c1733215ef82915d1496a63f491963c5da00f0bbe921",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.crypto.KeyAgreementSpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doPhase(java.security.Key,boolean)",
+          "result": "java.security.Key",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateSecret()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateSecret(byte[],int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateSecret(java.lang.String)",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.crypto.KeyAgreement",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.crypto.KeyAgreement",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.crypto.KeyAgreement",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.Key)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.Key,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.Key,java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyAgreement",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KeyAgreementSpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KeyAgreementSpi.html",
+      "sourceEntry": "java.base/javax/crypto/KeyAgreementSpi.java",
+      "sourceSha256": "45ce7c55c30ab8c3aed6f7e09c93a8fb5ccd1f98787e5117d11d54e05dc544e4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyAgreementSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineDoPhase(java.security.Key,boolean)",
+          "result": "java.security.Key",
+          "declaredBy": "javax.crypto.KeyAgreementSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateSecret()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.KeyAgreementSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateSecret(byte[],int)",
+          "result": "int",
+          "declaredBy": "javax.crypto.KeyAgreementSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateSecret(java.lang.String)",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.KeyAgreementSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(java.security.Key,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyAgreementSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyAgreementSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KeyGenerator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KeyGenerator.html",
+      "sourceEntry": "java.base/javax/crypto/KeyGenerator.java",
+      "sourceSha256": "d7f75b4508778d1f5af81f4ac56de6f45d3fcefb2a49890bc384ad94ae2f729b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.crypto.KeyGeneratorSpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateKey()",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.crypto.KeyGenerator",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.crypto.KeyGenerator",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.crypto.KeyGenerator",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(int)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(int,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyGenerator",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.KeyGeneratorSpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/KeyGeneratorSpi.html",
+      "sourceEntry": "java.base/javax/crypto/KeyGeneratorSpi.java",
+      "sourceSha256": "802a1dfd012296bf1f82a2f364b466cc67cb0543b974e052fd7de4cde48d53b5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyGeneratorSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateKey()",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.KeyGeneratorSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(int,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyGeneratorSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyGeneratorSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)",
+          "result": "void",
+          "declaredBy": "javax.crypto.KeyGeneratorSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.Mac",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/Mac.html",
+      "sourceEntry": "java.base/javax/crypto/Mac.java",
+      "sourceSha256": "06edc836543381b9f7955c6782ac77b1f3ef62be908593c3005fa16971adec69",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.crypto.MacSpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doFinal()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doFinal(byte[])",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doFinal(byte[],int)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.crypto.Mac",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.crypto.Mac",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.crypto.Mac",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMacLength()",
+          "result": "int",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.Key)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(java.security.Key,java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "update(byte)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "update(byte[])",
+          "result": "void",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "update(byte[],int,int)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "update(java.nio.ByteBuffer)",
+          "result": "void",
+          "declaredBy": "javax.crypto.Mac",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.MacSpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/MacSpi.html",
+      "sourceEntry": "java.base/javax/crypto/MacSpi.java",
+      "sourceSha256": "e983829354264a43eca1d69ec2321e36b781d386426f04a31e58ae79729ee1bf",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.MacSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.crypto.MacSpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineDoFinal()",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.MacSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetMacLength()",
+          "result": "int",
+          "declaredBy": "javax.crypto.MacSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineInit(java.security.Key,java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "javax.crypto.MacSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineReset()",
+          "result": "void",
+          "declaredBy": "javax.crypto.MacSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineUpdate(byte)",
+          "result": "void",
+          "declaredBy": "javax.crypto.MacSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineUpdate(byte[],int,int)",
+          "result": "void",
+          "declaredBy": "javax.crypto.MacSpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineUpdate(java.nio.ByteBuffer)",
+          "result": "void",
+          "declaredBy": "javax.crypto.MacSpi",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.NoSuchPaddingException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/NoSuchPaddingException.html",
+      "sourceEntry": "java.base/javax/crypto/NoSuchPaddingException.java",
+      "sourceSha256": "5d7806eb59e7329ef3bd67d27024ea7f01036048ebb4ad5742ceb825a2d2618e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.NoSuchPaddingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.NoSuchPaddingException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.NullCipher",
+      "kind": "class",
+      "parents": [
+        "javax.crypto.Cipher"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/NullCipher.html",
+      "sourceEntry": "java.base/javax/crypto/NullCipher.java",
+      "sourceSha256": "d93169d7cd6365466a9afdbe400ab3b9a19de7497c74918183b2ac67c3a13f7f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.NullCipher",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.SealedObject",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/SealedObject.html",
+      "sourceEntry": "java.base/javax/crypto/SealedObject.java",
+      "sourceSha256": "536f9aa395833a274b3bdc3f4b17d604b801502a02407c315d017310403a7e9f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.Serializable,javax.crypto.Cipher)",
+          "result": "void",
+          "declaredBy": "javax.crypto.SealedObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.crypto.SealedObject)",
+          "result": "void",
+          "declaredBy": "javax.crypto.SealedObject",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "encodedParams",
+          "result": "byte[]",
+          "declaredBy": "javax.crypto.SealedObject",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.SealedObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObject(java.security.Key)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.crypto.SealedObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObject(java.security.Key,java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.crypto.SealedObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObject(javax.crypto.Cipher)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.crypto.SealedObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.SecretKey",
+      "kind": "interface",
+      "parents": [
+        "java.security.Key",
+        "javax.security.auth.Destroyable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/SecretKey.html",
+      "sourceEntry": "java.base/javax/crypto/SecretKey.java",
+      "sourceSha256": "d72ff99a2a5c12a988f50ca190f8b8a1e30bd98ee0910f2567c43ab58d03df40",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "serialVersionUID",
+          "result": "long",
+          "declaredBy": "javax.crypto.SecretKey",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.SecretKeyFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/SecretKeyFactory.html",
+      "sourceEntry": "java.base/javax/crypto/SecretKeyFactory.java",
+      "sourceSha256": "326d059f51de6106d818898bb57ff9715fd120c75ea350f9d64c005c9a7a73c4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.crypto.SecretKeyFactorySpi,java.security.Provider,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.SecretKeyFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generateSecret(java.security.spec.KeySpec)",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.SecretKeyFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.crypto.SecretKeyFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.crypto.SecretKeyFactory",
+          "declaredBy": "javax.crypto.SecretKeyFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.lang.String)",
+          "result": "javax.crypto.SecretKeyFactory",
+          "declaredBy": "javax.crypto.SecretKeyFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String,java.security.Provider)",
+          "result": "javax.crypto.SecretKeyFactory",
+          "declaredBy": "javax.crypto.SecretKeyFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeySpec(javax.crypto.SecretKey,java.lang.Class)",
+          "result": "java.security.spec.KeySpec",
+          "declaredBy": "javax.crypto.SecretKeyFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProvider()",
+          "result": "java.security.Provider",
+          "declaredBy": "javax.crypto.SecretKeyFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "translateKey(javax.crypto.SecretKey)",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.SecretKeyFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.SecretKeyFactorySpi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/SecretKeyFactorySpi.html",
+      "sourceEntry": "java.base/javax/crypto/SecretKeyFactorySpi.java",
+      "sourceSha256": "0ea23aa997c055e70e6e79e3358da4c72910ed9833946231ab35fc97a729b90b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.SecretKeyFactorySpi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGenerateSecret(java.security.spec.KeySpec)",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.SecretKeyFactorySpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineGetKeySpec(javax.crypto.SecretKey,java.lang.Class)",
+          "result": "java.security.spec.KeySpec",
+          "declaredBy": "javax.crypto.SecretKeyFactorySpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "engineTranslateKey(javax.crypto.SecretKey)",
+          "result": "javax.crypto.SecretKey",
+          "declaredBy": "javax.crypto.SecretKeyFactorySpi",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.crypto.ShortBufferException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/ShortBufferException.html",
+      "sourceEntry": "java.base/javax/crypto/ShortBufferException.java",
+      "sourceSha256": "20e501ec0f86c5e2a6c27ed572b55e398eb1be5697aab2ee51e916b84fee2f6e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.crypto.ShortBufferException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.crypto.ShortBufferException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

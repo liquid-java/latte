@@ -1,0 +1,632 @@
+{
+  "name": "javax.management.timer",
+  "module": "java.management",
+  "types": [
+    {
+      "target": "javax.management.timer.Timer",
+      "kind": "class",
+      "parents": [
+        "javax.management.NotificationBroadcasterSupport",
+        "javax.management.timer.TimerMBean",
+        "javax.management.MBeanRegistration"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/timer/Timer.html",
+      "sourceEntry": "java.management/javax/management/timer/Timer.java",
+      "sourceSha256": "b2fbddcfe9fe4c7d691d6328fcc4f7b46f01cf3a416f0a3411595af138fa3fa0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ONE_DAY",
+          "result": "long",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ONE_HOUR",
+          "result": "long",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ONE_MINUTE",
+          "result": "long",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ONE_SECOND",
+          "result": "long",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ONE_WEEK",
+          "result": "long",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long,boolean)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAllNotificationIDs()",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDate(java.lang.Integer)",
+          "result": "java.util.Date",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFixedRate(java.lang.Integer)",
+          "result": "java.lang.Boolean",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNbNotifications()",
+          "result": "int",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getNbOccurences(java.lang.Integer)",
+          "result": "java.lang.Long",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationIDs(java.lang.String)",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationInfo()",
+          "result": "javax.management.MBeanNotificationInfo[]",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationMessage(java.lang.Integer)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationType(java.lang.Integer)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationUserData(java.lang.Integer)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeriod(java.lang.Integer)",
+          "result": "java.lang.Long",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSendPastNotifications()",
+          "result": "boolean",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isActive()",
+          "result": "boolean",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "postDeregister()",
+          "result": "void",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "postRegister(java.lang.Boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preDeregister()",
+          "result": "void",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preRegister(javax.management.MBeanServer,javax.management.ObjectName)",
+          "result": "javax.management.ObjectName",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAllNotifications()",
+          "result": "void",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotification(java.lang.Integer)",
+          "result": "void",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotifications(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSendPastNotifications(boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "start()",
+          "result": "void",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stop()",
+          "result": "void",
+          "declaredBy": "javax.management.timer.Timer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.timer.TimerMBean",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/timer/TimerMBean.html",
+      "sourceEntry": "java.management/javax/management/timer/TimerMBean.java",
+      "sourceSha256": "61cc40ff71df71efe330d7c5b5550e74154e0a6b09cea031ba7b8831434bb361",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long,boolean)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAllNotificationIDs()",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDate(java.lang.Integer)",
+          "result": "java.util.Date",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFixedRate(java.lang.Integer)",
+          "result": "java.lang.Boolean",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNbNotifications()",
+          "result": "int",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNbOccurences(java.lang.Integer)",
+          "result": "java.lang.Long",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationIDs(java.lang.String)",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationMessage(java.lang.Integer)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationType(java.lang.Integer)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationUserData(java.lang.Integer)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPeriod(java.lang.Integer)",
+          "result": "java.lang.Long",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSendPastNotifications()",
+          "result": "boolean",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isActive()",
+          "result": "boolean",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAllNotifications()",
+          "result": "void",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotification(java.lang.Integer)",
+          "result": "void",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotifications(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSendPastNotifications(boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "start()",
+          "result": "void",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stop()",
+          "result": "void",
+          "declaredBy": "javax.management.timer.TimerMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.timer.TimerNotification",
+      "kind": "class",
+      "parents": [
+        "javax.management.Notification"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/timer/TimerNotification.html",
+      "sourceEntry": "java.management/javax/management/timer/TimerNotification.java",
+      "sourceSha256": "a09e66d6688709ebecce23cf1f20907678ded35cf83d4a805de41705f8da94e2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Object,long,long,java.lang.String,java.lang.Integer)",
+          "result": "void",
+          "declaredBy": "javax.management.timer.TimerNotification",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotificationID()",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.timer.TimerNotification",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "name": "java.rmi.registry",
+  "module": "java.rmi",
+  "types": [
+    {
+      "target": "java.rmi.registry.LocateRegistry",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html",
+      "sourceEntry": "java.rmi/java/rmi/registry/LocateRegistry.java",
+      "sourceSha256": "1b7e720eabe85e7526be3ed4760fe2bd3077c6379c204b92f1b4905245342817",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createRegistry(int)",
+          "result": "java.rmi.registry.Registry",
+          "declaredBy": "java.rmi.registry.LocateRegistry",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createRegistry(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)",
+          "result": "java.rmi.registry.Registry",
+          "declaredBy": "java.rmi.registry.LocateRegistry",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRegistry()",
+          "result": "java.rmi.registry.Registry",
+          "declaredBy": "java.rmi.registry.LocateRegistry",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRegistry(int)",
+          "result": "java.rmi.registry.Registry",
+          "declaredBy": "java.rmi.registry.LocateRegistry",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRegistry(java.lang.String)",
+          "result": "java.rmi.registry.Registry",
+          "declaredBy": "java.rmi.registry.LocateRegistry",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRegistry(java.lang.String,int)",
+          "result": "java.rmi.registry.Registry",
+          "declaredBy": "java.rmi.registry.LocateRegistry",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRegistry(java.lang.String,int,java.rmi.server.RMIClientSocketFactory)",
+          "result": "java.rmi.registry.Registry",
+          "declaredBy": "java.rmi.registry.LocateRegistry",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.registry.Registry",
+      "kind": "interface",
+      "parents": [
+        "java.rmi.Remote"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/registry/Registry.html",
+      "sourceEntry": "java.rmi/java/rmi/registry/Registry.java",
+      "sourceSha256": "e6fe4de7517970311d10957730333ef1819491c608e62869128855d599cf3dc9",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "REGISTRY_PORT",
+          "result": "int",
+          "declaredBy": "java.rmi.registry.Registry",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "bind(java.lang.String,java.rmi.Remote)",
+          "result": "void",
+          "declaredBy": "java.rmi.registry.Registry",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "list()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.rmi.registry.Registry",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookup(java.lang.String)",
+          "result": "java.rmi.Remote",
+          "declaredBy": "java.rmi.registry.Registry",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rebind(java.lang.String,java.rmi.Remote)",
+          "result": "void",
+          "declaredBy": "java.rmi.registry.Registry",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unbind(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.rmi.registry.Registry",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.rmi.registry.RegistryHandler",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/java/rmi/registry/RegistryHandler.html",
+      "sourceEntry": "java.rmi/java/rmi/registry/RegistryHandler.java",
+      "sourceSha256": "f6a3501ee9e01fcc686524b2dd073cffc446c4c0a7188083be725a02d5143f45",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "registryImpl(int)",
+          "result": "java.rmi.registry.Registry",
+          "declaredBy": "java.rmi.registry.RegistryHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registryStub(java.lang.String,int)",
+          "result": "java.rmi.registry.Registry",
+          "declaredBy": "java.rmi.registry.RegistryHandler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

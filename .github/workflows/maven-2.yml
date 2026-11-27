@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main, feat/latte-liquid-typechecking]
+    branches: [main, feat/latte-liquid-typechecking, feat/external-library-refinements]
 
 jobs:
   verify:
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: temurin
           cache: maven
       - name: Verify and audit upstream compatibility

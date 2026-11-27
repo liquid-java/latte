@@ -1,0 +1,3289 @@
+{
+  "excluded": [
+    {
+      "diagnostics": [
+        {
+          "column": 24,
+          "file": "test/jdk/java/io/ByteArrayOutputStream/Write.java",
+          "kind": "PERMISSION",
+          "line": 54,
+          "message": "Expected BORROWED but got SHARED"
+        },
+        {
+          "column": 24,
+          "file": "test/jdk/java/io/ByteArrayOutputStream/Write.java",
+          "kind": "SHARED_REFINEMENT",
+          "line": 54,
+          "message": "A shared argument cannot carry a refinement"
+        },
+        {
+          "column": 27,
+          "file": "test/jdk/java/io/ByteArrayOutputStream/Write.java",
+          "kind": "REFINEMENT",
+          "line": 54,
+          "message": "Cannot establish refinement"
+        },
+        {
+          "column": 13,
+          "file": "test/jdk/java/io/ByteArrayOutputStream/Write.java",
+          "kind": "SHARED_REFINEMENT",
+          "line": 54,
+          "message": "A shared receiver cannot carry state refinements"
+        }
+      ],
+      "file": "test/jdk/java/io/ByteArrayOutputStream/Write.java",
+      "lines": [
+        54
+      ],
+      "reason": "doBoundsTest is called only with invalid offsets/lengths or a null array; the catch blocks identify IndexOutOfBoundsException and NullPointerException as expected. Normal writeTest failures remain.",
+      "remainingTypeDiagnostics": 6,
+      "sourceSha256": "dc06b596de0ba83d52b8fc5b42b7308a1039c7c96e87363547fb2632c72d0be5"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 50,
+          "file": "test/jdk/java/lang/Math/Clamp.java",
+          "kind": "REFINEMENT",
+          "line": 80,
+          "message": "Cannot establish refinement"
+        },
+        {
+          "column": 56,
+          "file": "test/jdk/java/lang/Math/Clamp.java",
+          "kind": "REFINEMENT",
+          "line": 82,
+          "message": "Cannot establish refinement"
+        },
+        {
+          "column": 50,
+          "file": "test/jdk/java/lang/Math/Clamp.java",
+          "kind": "REFINEMENT",
+          "line": 120,
+          "message": "Cannot establish refinement"
+        },
+        {
+          "column": 56,
+          "file": "test/jdk/java/lang/Math/Clamp.java",
+          "kind": "REFINEMENT",
+          "line": 122,
+          "message": "Cannot establish refinement"
+        }
+      ],
+      "file": "test/jdk/java/lang/Math/Clamp.java",
+      "lines": [
+        80,
+        82,
+        120,
+        122
+      ],
+      "reason": "Each lambda is passed to checkIllegalArgumentException, whose implementation fails the test if IllegalArgumentException is not thrown. Valid table-driven calls remain.",
+      "remainingTypeDiagnostics": 2,
+      "sourceSha256": "2af16fb7340b8a1ed934bd2a8f8c4c1e7a85490c3978ebe83be90a77db34ec09"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 32,
+          "file": "test/jdk/java/lang/String/CompactString/NegativeSize.java",
+          "kind": "SHARED_REFINEMENT",
+          "line": 61,
+          "message": "A shared receiver cannot carry state refinements"
+        }
+      ],
+      "file": "test/jdk/java/lang/String/CompactString/NegativeSize.java",
+      "lines": [
+        61
+      ],
+      "reason": "The entire negative test expects an OutOfMemoryError from oversized UTF-16 String construction and rejects the former NegativeArraySizeException. Ignore the fall-through length() diagnostic in that exception-expected scenario.",
+      "remainingTypeDiagnostics": 0,
+      "sourceSha256": "d272363fba2631a0d7109c74ebbcfc9689b95cacaaa6597a419e8de6235ee977"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 42,
+          "file": "test/jdk/java/lang/String/Exceptions.java",
+          "kind": "REFINEMENT",
+          "line": 98,
+          "message": "Cannot establish refinement"
+        }
+      ],
+      "file": "test/jdk/java/lang/String/Exceptions.java",
+      "lines": [
+        98
+      ],
+      "reason": "The anonymous Runnable containing new String((char[]) null) is passed to tryCatch with NullPointerException.class at line 96. tryCatch fails the test when that exception is not thrown. This custom helper was missed by the initial exception filter and was identified during refinement investigation.",
+      "remainingTypeDiagnostics": 0,
+      "sourceSha256": "eb93137fa653bca49926ee870084940bd040a14ca8b2c97f4c11c4a5a9a2818d"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 39,
+          "file": "test/jdk/java/util/ArrayList/ArrayManagement.java",
+          "kind": "REFINEMENT",
+          "line": 209,
+          "message": "Cannot establish refinement"
+        }
+      ],
+      "file": "test/jdk/java/util/ArrayList/ArrayManagement.java",
+      "lines": [
+        209
+      ],
+      "reason": "negativeCapacity deliberately supplies -1 and Integer.MIN_VALUE; normal return calls fail(\"should throw\"), while IllegalArgumentException is caught as success.",
+      "remainingTypeDiagnostics": 6,
+      "sourceSha256": "f671f616a8c0834ed8f4e7b8b3b002fb0d8eec61b4979452247d00bee0f7d562"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 27,
+          "file": "test/jdk/java/util/Random/RandomTest.java",
+          "kind": "REFINEMENT",
+          "line": 148,
+          "message": "Cannot establish refinement"
+        }
+      ],
+      "file": "test/jdk/java/util/Random/RandomTest.java",
+      "lines": [
+        148
+      ],
+      "reason": "testNextIntBoundedNeg has @Test(expectedExceptions = IllegalArgumentException.class) and passes -17 to nextInt.",
+      "remainingTypeDiagnostics": 0,
+      "sourceSha256": "d42064b5aef0e7783c581be0a2429a5e9bf74a67b4d915eb5a62e7defdcd0b4b"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 40,
+          "file": "test/jdk/javax/crypto/spec/GCMParameterSpec/GCMParameterSpecTest.java",
+          "kind": "PERMISSION",
+          "line": 92,
+          "message": "Expected BORROWED but got SHARED"
+        },
+        {
+          "column": 34,
+          "file": "test/jdk/javax/crypto/spec/GCMParameterSpec/GCMParameterSpecTest.java",
+          "kind": "REFINEMENT",
+          "line": 92,
+          "message": "Cannot establish refinement"
+        },
+        {
+          "column": 40,
+          "file": "test/jdk/javax/crypto/spec/GCMParameterSpec/GCMParameterSpecTest.java",
+          "kind": "SHARED_REFINEMENT",
+          "line": 92,
+          "message": "A shared argument cannot carry a refinement"
+        }
+      ],
+      "file": "test/jdk/javax/crypto/spec/GCMParameterSpec/GCMParameterSpecTest.java",
+      "lines": [
+        92
+      ],
+      "reason": "newGCMParameterSpecFail counts normal construction as a failure and accepts IllegalArgumentException. The separate newGCMParameterSpecPass failures remain.",
+      "remainingTypeDiagnostics": 3,
+      "sourceSha256": "808a5ec8e4d797155611e2097a1df3ebeaaacde610bc487447fc0a13901cb982"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 60,
+          "file": "test/jdk/javax/crypto/spec/IvParameterSpec/NullIV.java",
+          "kind": "REFINEMENT",
+          "line": 38,
+          "message": "Cannot establish refinement"
+        }
+      ],
+      "file": "test/jdk/javax/crypto/spec/IvParameterSpec/NullIV.java",
+      "lines": [
+        38
+      ],
+      "reason": "The null-IV constructor is followed by an explicit failure if it returns, and NullPointerException is caught as success.",
+      "remainingTypeDiagnostics": 0,
+      "sourceSha256": "4e45f8ba53987f3f1714816b863fe83ea7e408fa3f13f632e02133bda7768c5c"
+    }
+  ],
+  "inputReportSha256": "2f97ec04d5d9c2b972d57ef30eb78ecdb41d13677dd55ea22fee632ff06461fa",
+  "policy": "Remove introduced type diagnostics attributable to explicitly exception-expected test scenarios, including fall-through code after an operation expected to throw. Keep failures in normal paths of mixed files, ordinary setup and error-reporting code, unrelated calls inside a try block, platform-dependent success/exception cases, and non-source-located diagnostics. Existing syntax diagnostics and incomplete analyses are not reclassified.",
+  "remainingFiles": {
+    "test/jdk/java/awt/AlphaComposite/WindowAlphaCompositeTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/CardLayout/RemoveComponentTest/RemoveComponentTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Clipboard/PasteNullToTextComponentsTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/ColorClass/AlphaColorTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/7097771/bug7097771.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/CompEventOnHiddenComponent/CompEventOnHiddenComponent.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/ComponentLeakTest/ComponentLeakTest.java": {
+      "kinds": {
+        "PERMISSION": 48
+      },
+      "typeDiagnostics": 48
+    },
+    "test/jdk/java/awt/Component/ComponentRedrawnTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/ComponentSerializationTest/ComponentSerializationTest.java": {
+      "kinds": {
+        "PERMISSION": 6,
+        "SHARED_REFINEMENT": 8
+      },
+      "typeDiagnostics": 14
+    },
+    "test/jdk/java/awt/Component/Displayable.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/FlickeringOnScroll/FlickeringOnScroll.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/FocusRepaintTest/FocusRepaintTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/GetListenersTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Component/GetScreenLocTest/ComponentGetLocationOnScreenNPETest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/GetScreenLocTest/GetScreenLocTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/Headless/HeadlessComponent.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/Headless/HeadlessContainer.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/Headless/HeadlessPanel.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/MinMaxSizeDefensive/GetSizesTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/NoUpdateUponShow/NoUpdateUponShow.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/PaintAll/PaintAll.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/PaintGlitchTest/PaintGlitchTest.java": {
+      "kinds": {
+        "PERMISSION": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/Component/ProcessEvent/ProcessEvent.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Component/Revalidate/Revalidate.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/SetFontOrBackground/SetBgrFnt.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/TreeLockDeadlock/TreeLockDeadlock.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Component/UpdatingBootTime.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Component/ZOrderTest/ZOrderTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Component/isLightweightCrash/IsLightweightCrash.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Container/FindComponentTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Cursor/BlockedWindowTest/BlockedWindowTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Cursor/SingleColorCursorTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Desktop/BrowseTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Desktop/DesktopEventsExceptions/DesktopEventsExceptions.java": {
+      "kinds": {
+        "PERMISSION": 4
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/awt/Desktop/EditAndPrintTest/EditAndPrintTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Desktop/MailTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Desktop/OpenTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/ChoiceModalDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/CloseDialog/CloseDialogTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/ClosingParentTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/ComponentShownEvent.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/CrashXCheckJni/CrashXCheckJni.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/DialogBackgroundTest.java": {
+      "kinds": {
+        "PERMISSION": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/Dialog/DialogDisposeLeak.java": {
+      "kinds": {
+        "PERMISSION": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/Dialog/DialogInitialResizability.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/DialogLocationTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/DialogModalityTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/DialogOverflowSizeTest/DialogSizeOverflowTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/DialogResizeTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/DialogResizeTest2.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/DialogSystemMenu/DialogSystemMenu.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/EnabledResetTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/FileDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/FileDialogUIUpdate.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/FileDialogUserFilterTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/GetLocationTest_1.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Dialog/HideDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Dialog/JaWSTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/ModalDialogOnNonEdt.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/ModalDialogPermission/ModalDialogPermission.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/ModalDialogTest/ModalDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/ModalExcludedTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/NestedDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/Dialog/NestedDialogs/Modal/NestedModalDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/Dialog/NestedDialogs/Modeless/NestedModelessDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/Dialog/NewMessagePumpTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Dialog/NonResizableDialogSysMenuResize/NonResizableDialogSysMenuResize.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/TaskbarIconTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/TopmostModalDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Dialog/ValidateOnShow/ValidateOnShow.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Dialog/WindowInputBlock.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/EventQueue/NonComponentSourcePost.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/FileDialog/FileDialogForDirectories.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/FileDialog/FileDialogMemoryLeak/FileDialogLeakTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/FileDialog/FileDialogReturnTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/FileDialog/ModalFocus/FileDialogModalFocusTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/ActualFocusedWindowTest/ActualFocusedWindowBlockingTest.java": {
+      "kinds": {
+        "PERMISSION": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/Focus/ActualFocusedWindowTest/ActualFocusedWindowRetaining.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/ChildWindowFocusTest/ChildWindowFocusTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/CloseDialogActivateOwnerTest/CloseDialogActivateOwnerTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Focus/ComponentLostFocusTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/DisposedWindow/DisposeDialogNotActivateOwnerTest/DisposeDialogNotActivateOwnerTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/EmptyWindowKeyTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Focus/FocusForRemovedComponentTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/ModalDialogActivationTest/ModalDialogActivationTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Focus/ModalDialogInFocusEventTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/ModalDialogInitialFocusTest/ModalDialogInitialFocusTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/OwnedWindowFocusIMECrashTest/OwnedWindowFocusIMECrashTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/RestoreFocusOnDisabledComponentTest/RestoreFocusOnDisabledComponentTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Focus/RollbackFocusFromAnotherWindowTest/RollbackFocusFromAnotherWindowTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/TemporaryLostComponentDeadlock.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/WindowDisposeFocusTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Focus/WindowInitialFocusTest/WindowInitialFocusTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Focus/WindowIsFocusableAccessByThreadsTest/WindowIsFocusableAccessByThreadsTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Focus/WindowUpdateFocusabilityTest/WindowUpdateFocusabilityTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Frame/MiscUndecorated/ActiveAWTWindowTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Frame/MiscUndecorated/ActiveSwingWindowTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Frame/WindowDragTest/WindowDragTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Frame/WindowMoveTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/FullScreen/FullscreenWindowProps/FullscreenWindowProps.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/GradientPaint/LinearColorSpaceGradientTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Graphics2D/LargeWindowPaintTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Graphics2D/WhiteTextColorTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/GraphicsDevice/CloneConfigsTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/GraphicsDevice/DisplayModes/CycleDMImage.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/KeyboardFocusmanager/ConsumeNextMnemonicKeyTypedTest/ConsumeForModalDialogTest/ConsumeForModalDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/KeyboardFocusmanager/TypeAhead/EnqueueWithDialogButtonTest/EnqueueWithDialogButtonTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/KeyboardFocusmanager/TypeAhead/EnqueueWithDialogTest/EnqueueWithDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/KeyboardFocusmanager/TypeAhead/TestDialogTypeAhead.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Mixing/setComponentZOrder.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Modal/DialogLosesFocusTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Modal/ModalDialogCannotBeMadeNonModalTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Modal/ModalDialogMultiscreenTest/ModalDialogMultiscreenTest.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 5
+    },
+    "test/jdk/java/awt/Modal/NonModalDialogReceiveEventsAfterModalTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Modal/ParentCatchupDraggingChildDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Modal/PrintDialogsTest/PrintDialogsTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Mouse/EnterExitEvents/DragWindowOutOfFrameTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Mouse/EnterExitEvents/DragWindowTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Mouse/EnterExitEvents/ModalDialogEnterExitEventsTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Mouse/RemovedComponentMouseListener/RemovedComponentMouseListener.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/MultipleGradientPaint/MultiGradientTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Multiscreen/DialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Multiscreen/WindowGCChangeTest/WindowGCChangeTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Paint/ComponentIsNotDrawnAfterRemoveAddTest/ComponentIsNotDrawnAfterRemoveAddTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 6
+      },
+      "typeDiagnostics": 7
+    },
+    "test/jdk/java/awt/PrintJob/PrintComponentTest.java": {
+      "kinds": {
+        "PERMISSION": 5
+      },
+      "typeDiagnostics": 5
+    },
+    "test/jdk/java/awt/PrintJob/Security/SecurityDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/ScrollPane/ComponentScrollTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/ScrollPane/ScrollPaneComponentTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Toolkit/DesktopProperties/DesktopPropertyTest.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "REFINEMENT": 1
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/TrayIcon/ActionEventMask/ActionEventMask.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/AddPopupAfterShowTest/AddPopupAfterShowTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/DragEventSource/DragEventSource.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/awt/TrayIcon/FocusLostAfterTrayTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/MiddleButtonEventTest/MiddleButtonEventTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/MouseMoveTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/MouseMovedTest/MouseMovedTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/RightClickWhenBalloonDisplayed/RightClickWhenBalloonDisplayed.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/TrayIconEventModifiers/TrayIconEventModifiersTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/TrayIconMethodsTest/TrayIconMethodsTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/TrayIconPopup/TrayIconPopupClickTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/TrayIconPopup/TrayIconPopupTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/TrayIcon/TrayIconTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/WMSpecificTests/Metacity/FullscreenDialogModality.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/AlwaysOnTop/AlwaysOnTopEvenOfWindow.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/AlwaysOnTop/AutoTestOnTop.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 8
+      },
+      "typeDiagnostics": 9
+    },
+    "test/jdk/java/awt/Window/AlwaysOnTop/TestAlwaysOnTopBeforeShow.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/BackgroundIsNotUpdated/BackgroundIsNotUpdated.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/FullWindowContentTest/FullWindowContentRenderTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/GetWindowsTest/GetWindowsTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/Grab/GrabTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/GrabSequence/GrabSequence.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/HandleWindowDestroyTest/HandleWindowDestroyTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/LocationByPlatform/TestLocationByPlatform.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/LocationByPlatformWithControls/TestLocationByPlatformWithControls.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/MainKeyWindowTest/TestMainKeyWindow.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Window/NoResizeEvent/NoResizeEvent.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/PropertyChangeListenerLockSerialization/PropertyChangeListenerLockSerialization.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/ProxyCrash/PopupProxyCrash.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/ShapedAndTranslucentWindows/FocusAWTTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/ShapedAndTranslucentWindows/SetShape.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/ShapedAndTranslucentWindows/SetShapeAndClick.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/ShapedAndTranslucentWindows/SetShapeDynamicallyAndClick.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/ShapedAndTranslucentWindows/TranslucentChoice.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/ShapedAndTranslucentWindows/TranslucentWindowClick.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/TestAppFreeze.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/TopLevelLocation/TopLevelLocation.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/TranslucentJAppletTest/TranslucentJAppletTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/TranslucentShapedFrameTest/TranslucentShapedFrameTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/WindowClosedEvents/WindowClosedEventOnDispose.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/WindowIconUpdateOnDPIChanging/WindowIconUpdateOnDPIChangingTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/WindowOwner.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/WindowResizing/DoubleClickTitleBarTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/Window/WindowResizingOnDPIChanging/WindowResizingOnDPIChangingTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Window/WindowResizingOnDPIChanging/WindowResizingOnMovingToAnotherDisplay.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Window/WindowResizingOnDPIChanging/WindowResizingOnSetLocationTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/Window/bug4189244.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/dnd/MissingEventsOnModalDialog/MissingEventsOnModalDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/dnd/ModalDialogDeadlockTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/dnd/ModalDialogOnDragDeadlockTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/dnd/ModalDialogOnDropDeadlockTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/dnd/SameJVMModalDialogDeadlockTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/event/ComponentEvent/ComponentResizedTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/event/HierarchyEvent/HierarchyEventOnWindowTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/event/MouseEvent/DisabledComponents/DisabledComponentsTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/event/WindowActivatedEventTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/font/NumericShaper/EasternArabicTest.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 4
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/awt/font/NumericShaper/MTTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/font/NumericShaper/ShaperTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/font/NumericShaper/ShapingTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/hidpi/properties/HiDPIPropertiesWindowsTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/image/BufferedImage/GrayAATextTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/image/ColorModel/DrawCustomColorModel.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/image/Headless/HeadlessColorModel.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/image/multiresolution/MultiResolutionTrayIconTest/MultiResolutionTrayIconTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/print/Dialog/DialogOrient.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/awt/print/Dialog/DialogOwnerTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/awt/print/Dialog/RestoreActiveWindowTest/RestoreActiveWindowTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/print/PageFormat/PageSetupDialog.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/print/PageFormat/WrongPaperForBookPrintingTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/awt/print/PrinterJob/PageDialogTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/print/PrinterJob/PrintDialog.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/awt/print/PrinterJob/PrintDialogCancel.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/awt/print/PrinterJob/PrinterJobDialogBugDemo.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/awt/print/PrinterJob/XparColor.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/io/ByteArrayInputStream/ReadAllReadNTransferTo.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/io/ByteArrayOutputStream/EncodingTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/io/ByteArrayOutputStream/Write.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 4
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/io/ByteArrayOutputStream/WriteToReleasesCarrier.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 4
+      },
+      "typeDiagnostics": 7
+    },
+    "test/jdk/java/lang/Character/CharPropTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/Character/CheckScript.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 6
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/lang/Character/Supplementary.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 15
+      },
+      "typeDiagnostics": 17
+    },
+    "test/jdk/java/lang/Character/UnicodeBlock/CheckBlocks.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/Character/UnicodeCasingTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 5
+      },
+      "typeDiagnostics": 5
+    },
+    "test/jdk/java/lang/ClassLoader/RecursiveSystemLoader.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/ClassLoader/defineClass/DefineClassByteBuffer.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Double/NaNInfinityParsing.java": {
+      "kinds": {
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/Double/ParseDouble.java": {
+      "kinds": {
+        "REFINEMENT": 3,
+        "SHARED_REFINEMENT": 5
+      },
+      "typeDiagnostics": 8
+    },
+    "test/jdk/java/lang/Double/ToHexString.java": {
+      "kinds": {
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/Float/NaNInfinityParsing.java": {
+      "kinds": {
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/Float/ParseFloat.java": {
+      "kinds": {
+        "REFINEMENT": 3,
+        "SHARED_REFINEMENT": 5
+      },
+      "typeDiagnostics": 8
+    },
+    "test/jdk/java/lang/Integer/BitTwiddle.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Integer/Unsigned.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/IntegralPrimitiveToString.java": {
+      "kinds": {
+        "PERMISSION": 4
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/lang/Long/BitTwiddle.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Long/Unsigned.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Math/AbsTests.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Math/Clamp.java": {
+      "kinds": {
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/ProcessBuilder/ArgCheck.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/lang/ProcessBuilder/ProcessStartLoggingTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/ProcessBuilder/ReaderWriterTest.java": {
+      "kinds": {
+        "REFINEMENT": 6,
+        "SHARED_REFINEMENT": 15
+      },
+      "typeDiagnostics": 21
+    },
+    "test/jdk/java/lang/ProcessBuilder/SecurityManagerClinit.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StackWalker/AcrossThreads.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StackWalker/CallerFromMain.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StackWalker/DumpStackTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/StackWalker/GetCallerClassTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StackWalker/MultiThreadStackWalk.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StackWalker/ReflectionFrames.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StrictMath/ExhaustingTests.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StrictMath/HyperbolicTests.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StrictMath/InverseTrigTests.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StrictMath/TrigTests.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/String/Chars.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/lang/String/Encodings.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/lang/String/EqualsIgnoreCase.java": {
+      "kinds": {
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 5
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/lang/String/Indent.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 4
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/lang/String/IndexOfBeginEnd.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/String/IsEmpty.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/String/SpecialCasingTest.java": {
+      "kinds": {
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 6
+      },
+      "typeDiagnostics": 7
+    },
+    "test/jdk/java/lang/String/Split.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/lang/String/StringContentEqualsBug.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/String/StringRacyConstructor.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "REFINEMENT": 5,
+        "SHARED_REFINEMENT": 16
+      },
+      "typeDiagnostics": 24
+    },
+    "test/jdk/java/lang/String/StringRepeat.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 6
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/lang/String/Supplementary.java": {
+      "kinds": {
+        "PERMISSION": 4,
+        "SHARED_REFINEMENT": 21
+      },
+      "typeDiagnostics": 25
+    },
+    "test/jdk/java/lang/String/TranslateEscapes.java": {
+      "kinds": {
+        "REFINEMENT": 2,
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 5
+    },
+    "test/jdk/java/lang/String/UnicodeCasingTest.java": {
+      "kinds": {
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 9
+      },
+      "typeDiagnostics": 10
+    },
+    "test/jdk/java/lang/String/concat/WithSecurityManager.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StringBuffer/AppendStringBuilder.java": {
+      "kinds": {
+        "REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StringBuffer/CompactStringBuffer.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/StringBuilder/AppendStringBuffer.java": {
+      "kinds": {
+        "REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/StringBuilder/CompactStringBuilder.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/StringBuilder/StringBufferRepeat.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/StringBuilder/StringBuilderRepeat.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/System/FileEncodingTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/Logger/custom/CustomLoggerTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/Logger/default/DefaultLoggerTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/BaseLoggerFinderTest/BaseLoggerFinderTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/DefaultLoggerFinderTest/DefaultLoggerFinderTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/LoggerFinderAPI/LoggerFinderAPI.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/lang/System/LoggerFinder/RecursiveLoading/PlatformRecursiveLoadingTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/RecursiveLoading/RecursiveLoadingTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/BaseDefaultLoggerFinderTest/BaseDefaultLoggerFinderTest.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 11
+      },
+      "typeDiagnostics": 13
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/BaseLoggerBridgeTest/BaseLoggerBridgeTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/BasePlatformLoggerTest/BasePlatformLoggerTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/BootstrapLogger/BootstrapLoggerAPIsTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/BootstrapLogger/BootstrapLoggerTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/LoggerBridgeTest/LoggerBridgeTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/LoggerFinderLoaderTest/LoggerFinderLoaderTest.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 12
+      },
+      "typeDiagnostics": 14
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/PlatformLoggerBridgeTest/PlatformLoggerBridgeTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/SimpleConsoleLoggerTest/SimpleConsoleLoggerTest.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 11
+      },
+      "typeDiagnostics": 13
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/SystemLoggerInPlatformLoader/SystemLoggerInPlatformLoader.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/api/LoggerFinderAPITest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/System/LoggerFinder/internal/backend/LoggerFinderBackendTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/lang/System/LoggerFinder/jdk/DefaultLoggerBridgeTest/DefaultLoggerBridgeTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/LoggerFinder/jdk/DefaultPlatformLoggerTest/DefaultPlatformLoggerTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/System/i18nEnvArg.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Thread/BuilderTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 6
+      },
+      "typeDiagnostics": 7
+    },
+    "test/jdk/java/lang/Thread/GenerifyStackTraces.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Thread/HoldsLock.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Thread/ITLConstructor.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Thread/UncaughtExceptionsTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Thread/virtual/ThreadAPI.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/Thread/virtual/TracePinnedThreads.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/Thread/virtual/TraceVirtualThreadLocals.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/ThreadLocal/TestThreadId.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/ThreadLocal/ThreadLocalSupplierTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/instrument/TransformerManagementThreadRemoveTests.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/invoke/MethodHandles/CatchExceptionTest.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 5
+    },
+    "test/jdk/java/lang/invoke/MethodHandles/classData/ClassDataTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/invoke/MethodHandlesGeneralTest.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/lang/invoke/MethodHandlesPermuteArgumentsTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/invoke/MethodTypeTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/management/ManagementFactory/ThreadMXBeanProxy.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/management/OperatingSystemMXBean/GetSystemLoadAverage.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/management/ThreadMXBean/AllThreadIds.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/management/ThreadMXBean/ResetPeakThreadCount.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/management/ThreadMXBean/ThreadBlockedCount.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/management/ThreadMXBean/ThreadCpuTime.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/management/ThreadMXBean/ThreadStackTrace.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/management/ThreadMXBean/ThreadUserTime.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/management/ThreadMXBean/VirtualThreadDeadlocks.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2,
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/lang/module/ModuleDescriptorTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/lang/reflect/AccessFlag/RequiredMethodParameterFlagTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/lang/template/StringTemplateTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 6,
+        "SHARED_REFINEMENT": 7
+      },
+      "typeDiagnostics": 14
+    },
+    "test/jdk/java/math/BigDecimal/ConstructorUnscaledValue.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/math/BigDecimal/SerializationTests.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/math/BigDecimal/StringConstructor.java": {
+      "kinds": {
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/math/BigInteger/SerializationTests.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/math/BigInteger/largeMemory/SymmetricRangeTests.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 8
+      },
+      "typeDiagnostics": 8
+    },
+    "test/jdk/java/net/Authenticator/AuthNPETest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/net/Authenticator/B4678055.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/Authenticator/B4722333.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/Authenticator/B4759514.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/net/Authenticator/B4769350.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/net/Authenticator/B4921848.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/Authenticator/B4962064.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/Authenticator/B6870935.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/net/Authenticator/B8034170.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/net/Authenticator/BasicTest.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/net/Authenticator/BasicTest3.java": {
+      "kinds": {
+        "PERMISSION": 4,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/net/Authenticator/BasicTest4.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/net/Authenticator/Deadlock.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/net/Authenticator/GetAuthenticatorTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/HttpURLConnection/HttpURLConWithProxy.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/HttpURLConnection/HttpURLConnUsingProxy.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/HttpURLConnection/HttpURLProxySelectionTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/HttpURLConnection/NoProxyTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/ProxySelector/ProxyTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/Socket/HttpProxy.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/net/Socket/ProxyCons.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/Socks/BadProxySelector.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/URI/Test.java": {
+      "kinds": {
+        "REFINEMENT": 2,
+        "SHARED_REFINEMENT": 8
+      },
+      "typeDiagnostics": 10
+    },
+    "test/jdk/java/net/URL/PerConnectionProxy.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/httpclient/HttpClientBuilderTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/httpclient/HttpClientExceptionTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/httpclient/PlainProxyConnectionTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/httpclient/ProxySelectorTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/net/httpclient/ProxyTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/net/httpclient/http2/ProxyTest2.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/net/httpclient/websocket/WebSocketProxyTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/nio/Buffer/Chars.java": {
+      "kinds": {
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/nio/Buffer/EqualsCompareTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/nio/Buffer/LimitDirectMemory.java": {
+      "kinds": {
+        "REFINEMENT": 2,
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 5
+    },
+    "test/jdk/java/nio/channels/FileChannel/ClosedByInterrupt.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/nio/channels/FileChannel/InterruptDeadlock.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/InterruptMapDeadlock.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/LargeGatheringWrite.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/nio/channels/FileChannel/LongTransferTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/MapTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/MapToMemorySegmentTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/Position.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/Pread.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/Pwrite.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/Read.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/ReadToLimit.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/Transfer2GPlus.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/TransferFromExtend.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/nio/channels/FileChannel/TransferToAppending.java": {
+      "kinds": {
+        "REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/TransferToChannel.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/nio/channels/FileChannel/directio/PreadDirect.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/directio/PwriteDirect.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/channels/FileChannel/directio/ReadDirect.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/file/Path/MacToRealPathWithSM.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/nio/file/Path/PathOps.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/security/KeyRep/Serial.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 10
+      },
+      "typeDiagnostics": 10
+    },
+    "test/jdk/java/security/KeyRep/SerialDSAPubKey.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/security/cert/CertPathValidatorException/Serial.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/text/Normalizer/ConformanceTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/time/tck/java/time/TCKLocalDate.java": {
+      "kinds": {
+        "PERMISSION": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/time/tck/java/time/TCKLocalDateTime.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/time/tck/java/time/chrono/serial/TCKChronoLocalDateSerialization.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/time/tck/java/time/serial/TCKDurationSerialization.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/time/tck/java/time/serial/TCKInstantSerialization.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/time/tck/java/time/serial/TCKLocalDateSerialization.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/time/tck/java/time/serial/TCKLocalDateTimeSerialization.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/time/tck/java/time/serial/TCKLocalTimeSerialization.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 4
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/time/tck/java/time/serial/TCKMonthDaySerialization.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/time/tck/java/time/serial/TCKYearMonthSerialization.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/time/tck/java/time/serial/TCKYearSerialization.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/time/tck/java/time/serial/TCKZoneOffsetSerialization.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/time/test/java/time/TestLocalDate.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/time/test/java/time/format/TestZoneOffsetParser.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 9
+      },
+      "typeDiagnostics": 9
+    },
+    "test/jdk/java/time/test/java/util/TestFormatter.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/util/ArrayList/ArrayManagement.java": {
+      "kinds": {
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 5
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/util/ArrayList/IteratorMicroBenchmark.java": {
+      "kinds": {
+        "REFINEMENT": 4,
+        "SHARED_REFINEMENT": 10
+      },
+      "typeDiagnostics": 14
+    },
+    "test/jdk/java/util/ArrayList/SubListModCount.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/Arrays/ArrayObjectMethods.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/util/Arrays/ArraysEqCmpTest.java": {
+      "kinds": {
+        "PERMISSION": 6,
+        "SHARED_REFINEMENT": 4
+      },
+      "typeDiagnostics": 10
+    },
+    "test/jdk/java/util/Arrays/CopyMethods.java": {
+      "kinds": {
+        "PERMISSION": 8,
+        "SHARED_REFINEMENT": 8
+      },
+      "typeDiagnostics": 16
+    },
+    "test/jdk/java/util/Arrays/FloatDoubleOrder.java": {
+      "kinds": {
+        "PERMISSION": 4,
+        "SHARED_REFINEMENT": 4
+      },
+      "typeDiagnostics": 8
+    },
+    "test/jdk/java/util/Formatter/Close.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/Formatter/Flush.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/Formatter/HexFloatZeroPadding.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 6
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/java/util/Locale/CompatWarning.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/Locale/HashCodeShouldBeThreadSafe.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/Locale/ISO639.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/util/Locale/LSRDataTest.java": {
+      "kinds": {
+        "REFINEMENT": 3,
+        "SHARED_REFINEMENT": 6
+      },
+      "typeDiagnostics": 9
+    },
+    "test/jdk/java/util/Locale/LocaleCmdOverrides.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/Locale/LocaleEnhanceTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/util/Locale/LocaleMatchingTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/Locale/LocaleShouldSetFromCLI.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/util/Locale/ProviderPoolMultiThreadAccess.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/PluggableLocale/SupportedLocalesTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/Random/RandomNextDoubleBoundary.java": {
+      "kinds": {
+        "REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/Random/RandomTestChiSquared.java": {
+      "kinds": {
+        "REFINEMENT": 2,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/util/Random/RandomTestMoments.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/concurrent/CountDownLatch/Basic.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/concurrent/Semaphore/PermitOverflow.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/concurrent/TimeUnit/Basic.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/logging/HigherResolutionTimeStamps/SimpleFormatterNanos.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/logging/HigherResolutionTimeStamps/XmlFormatterNanos.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/util/logging/XMLFormatterDate.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/regex/ImmutableMatchResultTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 11
+      },
+      "typeDiagnostics": 12
+    },
+    "test/jdk/java/util/stream/test/org/openjdk/tests/java/util/SplittableRandomTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/zip/ZipFile/CenSizeTooLarge.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/java/util/zip/ZipFile/ClearStaleZipFileInputStreams.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/zip/ZipFile/Comment.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 5
+      },
+      "typeDiagnostics": 5
+    },
+    "test/jdk/java/util/zip/ZipFile/CorruptedZipFiles.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/zip/ZipFile/GetInputStreamNPETest.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "REFINEMENT": 2,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 7
+    },
+    "test/jdk/java/util/zip/ZipFile/InvalidBytesInEntryNameOrComment.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/util/zip/ZipFile/InvalidCommentLengthTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/util/zip/ZipFile/MultiThreadedReadTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/zip/ZipFile/ReadLongZipFileName.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/java/util/zip/ZipFile/Zip64SizeTest.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/java/util/zip/ZipFile/ZipEntryFreeTest.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/java/util/zip/ZipFile/ZipFileDuplicateEntryTest.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 6
+    },
+    "test/jdk/javax/crypto/spec/GCMParameterSpec/GCMParameterSpecTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/naming/ldap/LdapName/NameTests.java": {
+      "kinds": {
+        "REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/smartcardio/CommandAPDUTest.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "SHARED_REFINEMENT": 2
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/javax/swing/Headless/HeadlessJTable.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/javax/swing/JTable/4170447/bug4170447.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/javax/swing/JTable/4235420/bug4235420.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/6263446/bug6263446.java": {
+      "kinds": {
+        "SHARED_REFINEMENT": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/6567433/UpdateUIRecursionTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/6777378/bug6777378.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/6894632/bug6894632.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/6937798/bug6937798.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/swing/JTable/7055065/bug7055065.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/swing/JTable/7068740/bug7068740.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/8031971/bug8031971.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/8032874/bug8032874.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/javax/swing/JTable/8080972/TestJTableCellEditor.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/8133919/DrawGridLinesTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/CheckBoxFirstClick.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/swing/JTable/DefaultRowSorterCacheTest.java": {
+      "kinds": {
+        "PERMISSION": 3
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/swing/JTable/IllegalStateException.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/swing/JTable/InternationalCharacters.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/swing/JTable/JTableEditorNPE.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/JTableOrientationNavTest/JTableOrientationNavTest.java": {
+      "kinds": {
+        "PERMISSION": 4,
+        "SHARED_REFINEMENT": 4
+      },
+      "typeDiagnostics": 8
+    },
+    "test/jdk/javax/swing/JTable/JTableScrollPrintTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/JTableScrollTest.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/swing/JTable/KeyBoardNavigation/KeyBoardNavigation.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/swing/JTable/PrintAllPagesTest.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/PrintManualTest_FitWidthMultiple.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/ShiftClick.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/swing/JTable/SorterIOOBEtest/DefaultRowSorterIOOBEtest.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "REFINEMENT": 2,
+        "SHARED_REFINEMENT": 3
+      },
+      "typeDiagnostics": 7
+    },
+    "test/jdk/javax/swing/JTable/Tab.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 3
+    },
+    "test/jdk/javax/swing/JTable/Test6888156.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/TestClearSel.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/bug4118307.java": {
+      "kinds": {
+        "PERMISSION": 2,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 4
+    },
+    "test/jdk/javax/swing/JTable/bug4128506.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/javax/swing/JTable/bug4193727.java": {
+      "kinds": {
+        "PERMISSION": 2
+      },
+      "typeDiagnostics": 2
+    },
+    "test/jdk/javax/swing/JTable/bug4226181.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/bug4239157.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTable/bug4242631.java": {
+      "kinds": {
+        "PERMISSION": 1,
+        "REFINEMENT": 1,
+        "SHARED_REFINEMENT": 11
+      },
+      "typeDiagnostics": 13
+    },
+    "test/jdk/javax/swing/JTable/bug4247487.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/JTableHeader/JTableHeaderExceptionTest.java": {
+      "kinds": {
+        "PERMISSION": 3,
+        "REFINEMENT": 2
+      },
+      "typeDiagnostics": 5
+    },
+    "test/jdk/javax/swing/SwingWorker/6432565/bug6432565.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/SwingWorker/6493680/bug6493680.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/SwingWorker/6608234/CheckCancellationException.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/SwingWorker/6880336/NestedWorkers.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/SwingWorker/TestDoneBeforeDoInBackground.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/plaf/nimbus/8080972/TestAbstractRegionPainter.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    },
+    "test/jdk/javax/swing/plaf/nimbus/AbstractRegionPainter/PaintContextScaleValidation.java": {
+      "kinds": {
+        "PERMISSION": 1
+      },
+      "typeDiagnostics": 1
+    }
+  },
+  "retainedBoundaryExamples": [
+    {
+      "file": "test/jdk/java/util/ArrayList/SubListModCount.java",
+      "line": 38,
+      "reason": "root.add(42) is expected to succeed; later subList.size() calls expect ConcurrentModificationException."
+    },
+    {
+      "file": "test/jdk/java/nio/channels/FileChannel/ClosedByInterrupt.java",
+      "line": 127,
+      "reason": "Random.nextInt is normal setup for channel operations; the expected ClosedByInterruptException comes from channel I/O."
+    },
+    {
+      "file": "test/jdk/java/lang/Character/Supplementary.java",
+      "line": 71,
+      "reason": "str.toCharArray() prepares input for a separate exception-testing helper and is itself expected to succeed."
+    },
+    {
+      "file": "test/jdk/java/awt/Desktop/DesktopEventsExceptions/DesktopEventsExceptions.java",
+      "line": 68,
+      "reason": "The test checks both successful and exceptional construction depending on desktop/headless support; it is not exclusively an exception-expected scenario."
+    }
+  ],
+  "review": "Inspected enclosing methods, annotations, try/catch regions and invocation ancestors for every source-located introduced diagnostic in all 487 affected files using Spoon. Reviewed custom exception helpers and declarative failure markers against source. Source hashes match the original audit. No re-execution of the verifier or JDK tests was needed. Follow-up refinement investigation found one missed custom tryCatch helper in java/lang/String/Exceptions.java; the filter now excludes it as well.",
+  "sourceCommit": "7a7090bd432d6e8b4e6106593957513a84e7add4",
+  "summary": {
+    "excludedTypeDiagnostics": 16,
+    "filesRemovedEntirely": [
+      "test/jdk/java/lang/String/CompactString/NegativeSize.java",
+      "test/jdk/java/lang/String/Exceptions.java",
+      "test/jdk/java/util/Random/RandomTest.java",
+      "test/jdk/javax/crypto/spec/IvParameterSpec/NullIV.java"
+    ],
+    "inconclusiveSourcePairsUnchanged": 92,
+    "mixedFilesStillCounted": [
+      "test/jdk/java/io/ByteArrayOutputStream/Write.java",
+      "test/jdk/java/lang/Math/Clamp.java",
+      "test/jdk/java/util/ArrayList/ArrayManagement.java",
+      "test/jdk/javax/crypto/spec/GCMParameterSpec/GCMParameterSpecTest.java"
+    ],
+    "originalTypeDiagnostics": 1174,
+    "originalTypeErrorFiles": 487,
+    "remainingDiagnosticKinds": {
+      "PERMISSION": 566,
+      "REFINEMENT": 106,
+      "SHARED_REFINEMENT": 486
+    },
+    "remainingTypeDiagnostics": 1158,
+    "remainingTypeErrorFiles": 483
+  }
+}

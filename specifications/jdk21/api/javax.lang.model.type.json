@@ -1,0 +1,925 @@
+{
+  "name": "javax.lang.model.type",
+  "module": "java.compiler",
+  "types": [
+    {
+      "target": "javax.lang.model.type.ArrayType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.ReferenceType"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/ArrayType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/ArrayType.java",
+      "sourceSha256": "6cfc06ed87c02e4674210ec2849464553e6d8e3c571d238bdcf10e4bd8489eaa",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getComponentType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.type.ArrayType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.DeclaredType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.ReferenceType"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/DeclaredType.java",
+      "sourceSha256": "db7618fe7e0ac688622c13269ec18c781a7fb12060d70eff6446a3a9005a1ad3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.type.DeclaredType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnclosingType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.type.DeclaredType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeArguments()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.type.DeclaredType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.ErrorType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.DeclaredType"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/ErrorType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/ErrorType.java",
+      "sourceSha256": "43927f72456e41e4ce42460d1debfa88fda6749aa0c88ffa9f849a97023b4d14",
+      "members": []
+    },
+    {
+      "target": "javax.lang.model.type.ExecutableType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.TypeMirror"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/ExecutableType.java",
+      "sourceSha256": "e5fc345fa7b79a500d77e952bb2bcf2001ba8ee223c383735230ff541d8c76c8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getParameterTypes()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.type.ExecutableType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReceiverType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.type.ExecutableType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReturnType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.type.ExecutableType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThrownTypes()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.type.ExecutableType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeVariables()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.type.ExecutableType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.IntersectionType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.TypeMirror"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/IntersectionType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/IntersectionType.java",
+      "sourceSha256": "ac9521966e58c9869e36378c20d0c6922a9e7f4ecb0eccdb6951d155f5240c81",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getBounds()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.type.IntersectionType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.MirroredTypeException",
+      "kind": "class",
+      "parents": [
+        "javax.lang.model.type.MirroredTypesException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/MirroredTypeException.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/MirroredTypeException.java",
+      "sourceSha256": "7417332c0004380762bdc4c0eb7fda4ddab44f5269593596d4d830e3a994ab26",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.lang.model.type.TypeMirror)",
+          "result": "void",
+          "declaredBy": "javax.lang.model.type.MirroredTypeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeMirror()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.type.MirroredTypeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.MirroredTypesException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/MirroredTypesException.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/MirroredTypesException.java",
+      "sourceSha256": "4f67d01378847e756b940a18b01539e0c588a39084909bc763df5db0dc691746",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.lang.model.type.MirroredTypesException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeMirrors()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.type.MirroredTypesException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.NoType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.TypeMirror"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/NoType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/NoType.java",
+      "sourceSha256": "ce89bdce05c8599426974ed98d3804f90bdff9b2a391441923e94532e5168961",
+      "members": []
+    },
+    {
+      "target": "javax.lang.model.type.NullType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.ReferenceType"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/NullType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/NullType.java",
+      "sourceSha256": "223a2b7e7b840b4424449cbb34847d0d574d4bedad687270bee835ddc0f52183",
+      "members": []
+    },
+    {
+      "target": "javax.lang.model.type.PrimitiveType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.TypeMirror"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/PrimitiveType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/PrimitiveType.java",
+      "sourceSha256": "161d210205280ab379d8cb63314e026b65207532c087f30adf237ce497200f75",
+      "members": []
+    },
+    {
+      "target": "javax.lang.model.type.ReferenceType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.TypeMirror"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/ReferenceType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/ReferenceType.java",
+      "sourceSha256": "6fef8d6e2512c6ba5b6aaa6aeca6d0c12a80dbe8f2b3b3f4a5d715d5017939fa",
+      "members": []
+    },
+    {
+      "target": "javax.lang.model.type.TypeKind",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/TypeKind.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/TypeKind.java",
+      "sourceSha256": "ea081ec37f7a5ce0a774e5010b55017469ec5c346a1ea91f39b1b737a804da6d",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ARRAY",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BOOLEAN",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BYTE",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHAR",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DECLARED",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DOUBLE",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ERROR",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EXECUTABLE",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FLOAT",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INT",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERSECTION",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LONG",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODULE",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NONE",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NULL",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OTHER",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PACKAGE",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHORT",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TYPEVAR",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNION",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VOID",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WILDCARD",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "isPrimitive()",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.lang.model.type.TypeKind[]",
+          "declaredBy": "javax.lang.model.type.TypeKind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.TypeMirror",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.AnnotatedConstruct"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/TypeMirror.java",
+      "sourceSha256": "1590de905cb33774296a9dc6e95123a4fd263d302f87fde6b44f87f0fd1f828f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(javax.lang.model.type.TypeVisitor,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeMirror",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.lang.model.type.TypeMirror",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAnnotation(java.lang.Class)",
+          "result": "java.lang.annotation.Annotation",
+          "declaredBy": "javax.lang.model.type.TypeMirror",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAnnotationMirrors()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.type.TypeMirror",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAnnotationsByType(java.lang.Class)",
+          "result": "java.lang.annotation.Annotation[]",
+          "declaredBy": "javax.lang.model.type.TypeMirror",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKind()",
+          "result": "javax.lang.model.type.TypeKind",
+          "declaredBy": "javax.lang.model.type.TypeMirror",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.lang.model.type.TypeMirror",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.lang.model.type.TypeMirror",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.TypeVariable",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.ReferenceType"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/TypeVariable.java",
+      "sourceSha256": "4eb077673f33f7ec2911e1de10b0b41424b726bc5d75dad67b093bc9202821f1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asElement()",
+          "result": "javax.lang.model.element.Element",
+          "declaredBy": "javax.lang.model.type.TypeVariable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLowerBound()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.type.TypeVariable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUpperBound()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.type.TypeVariable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.TypeVisitor",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/TypeVisitor.java",
+      "sourceSha256": "8890913c46d8b79862c8eaa0ca6b08568c458168f6bf0f36edc5697b26baea0a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "visit(javax.lang.model.type.TypeMirror)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visit(javax.lang.model.type.TypeMirror,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitArray(javax.lang.model.type.ArrayType,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitDeclared(javax.lang.model.type.DeclaredType,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitError(javax.lang.model.type.ErrorType,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitExecutable(javax.lang.model.type.ExecutableType,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitIntersection(javax.lang.model.type.IntersectionType,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitNoType(javax.lang.model.type.NoType,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitNull(javax.lang.model.type.NullType,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitPrimitive(javax.lang.model.type.PrimitiveType,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitTypeVariable(javax.lang.model.type.TypeVariable,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitUnion(javax.lang.model.type.UnionType,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitUnknown(javax.lang.model.type.TypeMirror,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "visitWildcard(javax.lang.model.type.WildcardType,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.TypeVisitor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.UnionType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.TypeMirror"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/UnionType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/UnionType.java",
+      "sourceSha256": "5335d7112965050246b3ae954d341fbd74951574eceab15efba29091a4ee1be0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAlternatives()",
+          "result": "java.util.List",
+          "declaredBy": "javax.lang.model.type.UnionType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.UnknownTypeException",
+      "kind": "class",
+      "parents": [
+        "javax.lang.model.UnknownEntityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/UnknownTypeException.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/UnknownTypeException.java",
+      "sourceSha256": "bda285005592f3326928ebc4ee6f26834dd7fdd4588c91bbd6721d1496d85c43",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.lang.model.type.TypeMirror,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.lang.model.type.UnknownTypeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getArgument()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.lang.model.type.UnknownTypeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUnknownType()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.type.UnknownTypeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.lang.model.type.WildcardType",
+      "kind": "interface",
+      "parents": [
+        "javax.lang.model.type.TypeMirror"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/lang/model/type/WildcardType.html",
+      "sourceEntry": "java.compiler/javax/lang/model/type/WildcardType.java",
+      "sourceSha256": "9ea71d43b51aede7078eb5a17e9b935390ceb750b589b326d2a54456dfd8d026",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getExtendsBound()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.type.WildcardType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSuperBound()",
+          "result": "javax.lang.model.type.TypeMirror",
+          "declaredBy": "javax.lang.model.type.WildcardType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -25,7 +25,7 @@ class LatteAnalysisTest {
   static Checked check(String source) {
     var launcher = new Launcher();
     launcher.getEnvironment().setNoClasspath(true);
-    launcher.getEnvironment().setComplianceLevel(17);
+    launcher.getEnvironment().setComplianceLevel(21);
     launcher.addInputResource(new VirtualFile(source, "Sample.java"));
     var model = launcher.buildModel();
     return new Checked(model, new LatteAnalysis().analyze(model));

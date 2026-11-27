@@ -1,0 +1,344 @@
+{
+  "name": "javax.sound.sampled.spi",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.sound.sampled.spi.AudioFileReader",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html",
+      "sourceEntry": "java.desktop/javax/sound/sampled/spi/AudioFileReader.java",
+      "sourceSha256": "436c27d22867b8ff1912e9de2571df2e98b22f892920b1f9256157b5233a4cc3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileReader",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAudioFileFormat(java.io.File)",
+          "result": "javax.sound.sampled.AudioFileFormat",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAudioFileFormat(java.io.InputStream)",
+          "result": "javax.sound.sampled.AudioFileFormat",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAudioFileFormat(java.net.URL)",
+          "result": "javax.sound.sampled.AudioFileFormat",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAudioInputStream(java.io.File)",
+          "result": "javax.sound.sampled.AudioInputStream",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAudioInputStream(java.io.InputStream)",
+          "result": "javax.sound.sampled.AudioInputStream",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAudioInputStream(java.net.URL)",
+          "result": "javax.sound.sampled.AudioInputStream",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.sampled.spi.AudioFileWriter",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html",
+      "sourceEntry": "java.desktop/javax/sound/sampled/spi/AudioFileWriter.java",
+      "sourceSha256": "f61dad06dd44b94b7c892b0285ae6b0e9b51a18cd49eddb3fb53fd725eb64b7e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileWriter",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAudioFileTypes()",
+          "result": "javax.sound.sampled.AudioFileFormat$Type[]",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAudioFileTypes(javax.sound.sampled.AudioInputStream)",
+          "result": "javax.sound.sampled.AudioFileFormat$Type[]",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type,javax.sound.sampled.AudioInputStream)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileWriter",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat$Type,java.io.File)",
+          "result": "int",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat$Type,java.io.OutputStream)",
+          "result": "int",
+          "declaredBy": "javax.sound.sampled.spi.AudioFileWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.sampled.spi.FormatConversionProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html",
+      "sourceEntry": "java.desktop/javax/sound/sampled/spi/FormatConversionProvider.java",
+      "sourceSha256": "65290a6c97af20ae2bf0a759ff02edce1d75acc1176ce834e2f18b9bcfc54705",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAudioInputStream(javax.sound.sampled.AudioFormat$Encoding,javax.sound.sampled.AudioInputStream)",
+          "result": "javax.sound.sampled.AudioInputStream",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAudioInputStream(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioInputStream)",
+          "result": "javax.sound.sampled.AudioInputStream",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceEncodings()",
+          "result": "javax.sound.sampled.AudioFormat$Encoding[]",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTargetEncodings()",
+          "result": "javax.sound.sampled.AudioFormat$Encoding[]",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTargetEncodings(javax.sound.sampled.AudioFormat)",
+          "result": "javax.sound.sampled.AudioFormat$Encoding[]",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTargetFormats(javax.sound.sampled.AudioFormat$Encoding,javax.sound.sampled.AudioFormat)",
+          "result": "javax.sound.sampled.AudioFormat[]",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isConversionSupported(javax.sound.sampled.AudioFormat$Encoding,javax.sound.sampled.AudioFormat)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isConversionSupported(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioFormat)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSourceEncodingSupported(javax.sound.sampled.AudioFormat$Encoding)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isTargetEncodingSupported(javax.sound.sampled.AudioFormat$Encoding)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.sampled.spi.FormatConversionProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sound.sampled.spi.MixerProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html",
+      "sourceEntry": "java.desktop/javax/sound/sampled/spi/MixerProvider.java",
+      "sourceSha256": "b38e349d93e2b6559a5b5355585fd4026a5edeffcef34f65f4195a1b4fd02344",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sound.sampled.spi.MixerProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMixer(javax.sound.sampled.Mixer$Info)",
+          "result": "javax.sound.sampled.Mixer",
+          "declaredBy": "javax.sound.sampled.spi.MixerProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMixerInfo()",
+          "result": "javax.sound.sampled.Mixer$Info[]",
+          "declaredBy": "javax.sound.sampled.spi.MixerProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isMixerSupported(javax.sound.sampled.Mixer$Info)",
+          "result": "boolean",
+          "declaredBy": "javax.sound.sampled.spi.MixerProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,824 @@
+{
+  "name": "org.w3c.dom.ls",
+  "module": "java.xml",
+  "types": [
+    {
+      "target": "org.w3c.dom.ls.DOMImplementationLS",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/DOMImplementationLS.java",
+      "sourceSha256": "8525146cdf46786729caa6a0db334f3c2f25bd68b94503f3cc0cadd038c6174a",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "MODE_ASYNCHRONOUS",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.DOMImplementationLS",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODE_SYNCHRONOUS",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.DOMImplementationLS",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createLSInput()",
+          "result": "org.w3c.dom.ls.LSInput",
+          "declaredBy": "org.w3c.dom.ls.DOMImplementationLS",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createLSOutput()",
+          "result": "org.w3c.dom.ls.LSOutput",
+          "declaredBy": "org.w3c.dom.ls.DOMImplementationLS",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createLSParser(short,java.lang.String)",
+          "result": "org.w3c.dom.ls.LSParser",
+          "declaredBy": "org.w3c.dom.ls.DOMImplementationLS",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createLSSerializer()",
+          "result": "org.w3c.dom.ls.LSSerializer",
+          "declaredBy": "org.w3c.dom.ls.DOMImplementationLS",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ls.LSException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/LSException.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/LSException.java",
+      "sourceSha256": "b97744f0b0a352b01049bd5444cf8dc8b971ed084f87d6fce879d5fa239b3935",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(short,java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "PARSE_ERR",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SERIALIZE_ERR",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "code",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ls.LSInput",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/LSInput.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/LSInput.java",
+      "sourceSha256": "562d3d86f4912ce668419a39b0ab56d041aac3096448a40cfa898952a33ce1af",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getBaseURI()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getByteStream()",
+          "result": "java.io.InputStream",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCertifiedText()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharacterStream()",
+          "result": "java.io.Reader",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoding()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicId()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStringData()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemId()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBaseURI(java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setByteStream(java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCertifiedText(boolean)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCharacterStream(java.io.Reader)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEncoding(java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPublicId(java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setStringData(java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSystemId(java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSInput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ls.LSLoadEvent",
+      "kind": "interface",
+      "parents": [
+        "org.w3c.dom.events.Event"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/LSLoadEvent.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/LSLoadEvent.java",
+      "sourceSha256": "620dee75c6d2b79f1557eb362cfe87b1bd818cd722ee12a6cbca98aecb6b72e4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getInput()",
+          "result": "org.w3c.dom.ls.LSInput",
+          "declaredBy": "org.w3c.dom.ls.LSLoadEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNewDocument()",
+          "result": "org.w3c.dom.Document",
+          "declaredBy": "org.w3c.dom.ls.LSLoadEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ls.LSOutput",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/LSOutput.java",
+      "sourceSha256": "dd55611b64931c6b28c659cfcdab568342c114488d982d63f243bc49a707ecbe",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getByteStream()",
+          "result": "java.io.OutputStream",
+          "declaredBy": "org.w3c.dom.ls.LSOutput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharacterStream()",
+          "result": "java.io.Writer",
+          "declaredBy": "org.w3c.dom.ls.LSOutput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoding()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.ls.LSOutput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemId()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.ls.LSOutput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setByteStream(java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSOutput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCharacterStream(java.io.Writer)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSOutput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEncoding(java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSOutput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSystemId(java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSOutput",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ls.LSParser",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/LSParser.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/LSParser.java",
+      "sourceSha256": "9b5e25fdd71f023044f8a202837331eb69df46c8a2e27635378ddd05f8bcd0c6",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ACTION_APPEND_AS_CHILDREN",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTION_INSERT_AFTER",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTION_INSERT_BEFORE",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTION_REPLACE",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTION_REPLACE_CHILDREN",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "abort()",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAsync()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBusy()",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDomConfig()",
+          "result": "org.w3c.dom.DOMConfiguration",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFilter()",
+          "result": "org.w3c.dom.ls.LSParserFilter",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(org.w3c.dom.ls.LSInput)",
+          "result": "org.w3c.dom.Document",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseURI(java.lang.String)",
+          "result": "org.w3c.dom.Document",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short)",
+          "result": "org.w3c.dom.Node",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFilter(org.w3c.dom.ls.LSParserFilter)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ls.LSParserFilter",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/LSParserFilter.java",
+      "sourceSha256": "6762b4c5981203b71356936293e224307ae3ca1de14d0a45dce44ba64cc8b5e1",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "FILTER_ACCEPT",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParserFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FILTER_INTERRUPT",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParserFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FILTER_REJECT",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParserFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FILTER_SKIP",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParserFilter",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "acceptNode(org.w3c.dom.Node)",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParserFilter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWhatToShow()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.ls.LSParserFilter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "startElement(org.w3c.dom.Element)",
+          "result": "short",
+          "declaredBy": "org.w3c.dom.ls.LSParserFilter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ls.LSProgressEvent",
+      "kind": "interface",
+      "parents": [
+        "org.w3c.dom.events.Event"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/LSProgressEvent.java",
+      "sourceSha256": "6ec8a67caa56065d4e3be21f49456fc08f8670d0daab4edf82d4e0f99d5a249f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getInput()",
+          "result": "org.w3c.dom.ls.LSInput",
+          "declaredBy": "org.w3c.dom.ls.LSProgressEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPosition()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.ls.LSProgressEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTotalSize()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.ls.LSProgressEvent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ls.LSResourceResolver",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/LSResourceResolver.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/LSResourceResolver.java",
+      "sourceSha256": "78ff434c72d91ac205e1750632230443374ba86ba3488bbd5c05f6727ad26145",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "resolveResource(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+          "result": "org.w3c.dom.ls.LSInput",
+          "declaredBy": "org.w3c.dom.ls.LSResourceResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ls.LSSerializer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/LSSerializer.java",
+      "sourceSha256": "73263324ed4c45c65e74dc02f7c2e38440ac9f0b3b1f451f9a396da28ac64881",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getDomConfig()",
+          "result": "org.w3c.dom.DOMConfiguration",
+          "declaredBy": "org.w3c.dom.ls.LSSerializer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFilter()",
+          "result": "org.w3c.dom.ls.LSSerializerFilter",
+          "declaredBy": "org.w3c.dom.ls.LSSerializer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNewLine()",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.ls.LSSerializer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFilter(org.w3c.dom.ls.LSSerializerFilter)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSSerializer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNewLine(java.lang.String)",
+          "result": "void",
+          "declaredBy": "org.w3c.dom.ls.LSSerializer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "write(org.w3c.dom.Node,org.w3c.dom.ls.LSOutput)",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.ls.LSSerializer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeToString(org.w3c.dom.Node)",
+          "result": "java.lang.String",
+          "declaredBy": "org.w3c.dom.ls.LSSerializer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeToURI(org.w3c.dom.Node,java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "org.w3c.dom.ls.LSSerializer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "org.w3c.dom.ls.LSSerializerFilter",
+      "kind": "interface",
+      "parents": [
+        "org.w3c.dom.traversal.NodeFilter"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/org/w3c/dom/ls/LSSerializerFilter.html",
+      "sourceEntry": "java.xml/org/w3c/dom/ls/LSSerializerFilter.java",
+      "sourceSha256": "79d13f64417d3101485ce1802fc98668e004e09fb308fc88c8bcd0965a0467d1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getWhatToShow()",
+          "result": "int",
+          "declaredBy": "org.w3c.dom.ls.LSSerializerFilter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

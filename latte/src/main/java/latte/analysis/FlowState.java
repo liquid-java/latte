@@ -218,7 +218,13 @@ public record FlowState(
 
   public Permission permission(Reference value) {
     if (value.scalar()) return Permission.IMMUTABLE;
-    return value.objects().stream()
+    var owners = new HashSet<>(value.objects());
+    var pending = new ArrayDeque<>(owners);
+    while (!pending.isEmpty()) {
+      var backing = heap.get(new Field(pending.removeFirst(), ViewFacts.BACKING));
+      if (backing != null) for (var id : backing.objects()) if (owners.add(id)) pending.addLast(id);
+    }
+    return owners.stream()
         .map(id -> permissions.getOrDefault(id, Permission.SHARED))
         .reduce(Permission::join)
         .orElse(Permission.FREE);
@@ -316,12 +322,18 @@ public record FlowState(
 
   /** Forget field contents after a call, retaining all possible existing aliases. */
   public FlowState havocHeap(Reference roots, String site) {
-    var reachable = reachable(roots);
+    return havocHeap(roots, site, false);
+  }
+
+  /** An array-slot footprint cannot mutate the objects previously stored in those slots. */
+  public FlowState havocHeap(Reference roots, String site, boolean arraySlotsOnly) {
+    var reachable = arraySlotsOnly ? roots.objects() : reachable(roots);
     var updatedHeap = new HashMap<>(heap);
     var updatedPermissions = new HashMap<>(permissions);
     for (var entry : heap.entrySet()) {
       var field = entry.getKey();
-      if (!reachable.contains(field.owner())) continue;
+      if (!reachable.contains(field.owner()) || arraySlotsOnly && !ArraySlots.isSlot(field.name()))
+        continue;
       // A call can mutate a captured object, but cannot rebind a Java closure's captures.
       if (field.name().startsWith(ClosureFacts.CAPTURE)) continue;
       var declared = fieldPermissions.getOrDefault(field.name(), Permission.SHARED);

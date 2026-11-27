@@ -1,0 +1,1835 @@
+{
+  "name": "java.lang.constant",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.lang.constant.ClassDesc",
+      "kind": "interface",
+      "parents": [
+        "java.lang.constant.ConstantDesc",
+        "java.lang.invoke.TypeDescriptor$OfField"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/ClassDesc.html",
+      "sourceEntry": "java.base/java/lang/constant/ClassDesc.java",
+      "sourceSha256": "9194cb7f42b4dd2b140beb4bcb6f0cc58cefdff2e927245e44e548d719ba4300",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "arrayType()",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayType(int)",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "componentType()",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "descriptorString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "displayName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isArray()",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isClassOrInterface()",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPrimitive()",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nested(java.lang.String)",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nested(java.lang.String,java.lang.String[])",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.String)",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.String,java.lang.String)",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofDescriptor(java.lang.String)",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofInternalName(java.lang.String)",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "packageName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveConstantDesc(java.lang.invoke.MethodHandles$Lookup)",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.constant.ClassDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.Constable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/Constable.html",
+      "sourceEntry": "java.base/java/lang/constant/Constable.java",
+      "sourceSha256": "fba762f796c48a0969c6e24e4a885849b6e30157cf269c067d0deb69b904a3e2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "describeConstable()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.lang.constant.Constable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.ConstantDesc",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/ConstantDesc.html",
+      "sourceEntry": "java.base/java/lang/constant/ConstantDesc.java",
+      "sourceSha256": "91a6d8836df95f7fea765f86af48ed90657f97ff83692861e35f76edc8ca4c1a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "resolveConstantDesc(java.lang.invoke.MethodHandles$Lookup)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.constant.ConstantDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.ConstantDescs",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/ConstantDescs.html",
+      "sourceEntry": "java.base/java/lang/constant/ConstantDescs.java",
+      "sourceSha256": "2ecf80f698499af80cb466dd69594b147b19e1757b41795630e8ecf2b04ad4d0",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "BSM_CLASS_DATA",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BSM_CLASS_DATA_AT",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BSM_ENUM_CONSTANT",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BSM_EXPLICIT_CAST",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BSM_GET_STATIC_FINAL",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BSM_INVOKE",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BSM_NULL_CONSTANT",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BSM_PRIMITIVE_CLASS",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BSM_VARHANDLE_ARRAY",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BSM_VARHANDLE_FIELD",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BSM_VARHANDLE_STATIC_FIELD",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Boolean",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Byte",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_CallSite",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Character",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Class",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_ClassDesc",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Collection",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_ConstantBootstraps",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_ConstantDesc",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_DirectMethodHandleDesc",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Double",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_DynamicCallSiteDesc",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_DynamicConstantDesc",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Enum",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_EnumDesc",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Exception",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Float",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Integer",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_List",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Long",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Map",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_MethodHandle",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_MethodHandleDesc",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_MethodHandleDesc_Kind",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_MethodHandles",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_MethodHandles_Lookup",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_MethodType",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_MethodTypeDesc",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Number",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Object",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Set",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Short",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_String",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Throwable",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_VarHandle",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_VarHandleDesc",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_Void",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_boolean",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_byte",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_char",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_double",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_float",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_int",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_long",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_short",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CD_void",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CLASS_INIT_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FALSE",
+          "result": "java.lang.constant.DynamicConstantDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INIT_NAME",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MTD_void",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NULL",
+          "result": "java.lang.constant.ConstantDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TRUE",
+          "result": "java.lang.constant.DynamicConstantDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "ofCallsiteBootstrap(java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.ClassDesc,java.lang.constant.ClassDesc[])",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofConstantBootstrap(java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.ClassDesc,java.lang.constant.ClassDesc[])",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.ConstantDescs",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.DirectMethodHandleDesc",
+      "kind": "interface",
+      "parents": [
+        "java.lang.constant.MethodHandleDesc"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/DirectMethodHandleDesc.html",
+      "sourceEntry": "java.base/java/lang/constant/DirectMethodHandleDesc.java",
+      "sourceSha256": "73eaba07bbc83bf95cc1e0914e2c0a51e5b6a988032b8d58fba2db520d07ba33",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "isOwnerInterface()",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "kind()",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lookupDescriptor()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "methodName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "owner()",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "refKind()",
+          "result": "int",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.DirectMethodHandleDesc$Kind",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/DirectMethodHandleDesc.Kind.html",
+      "sourceEntry": "java.base/java/lang/constant/DirectMethodHandleDesc.java",
+      "sourceSha256": "73eaba07bbc83bf95cc1e0914e2c0a51e5b6a988032b8d58fba2db520d07ba33",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CONSTRUCTOR",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GETTER",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERFACE_SPECIAL",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERFACE_STATIC",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERFACE_VIRTUAL",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SETTER",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SPECIAL",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STATIC",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STATIC_GETTER",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STATIC_SETTER",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VIRTUAL",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "isInterface",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "field",
+          "signature": "refKind",
+          "result": "int",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(int)",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(int,boolean)",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.lang.constant.DirectMethodHandleDesc$Kind[]",
+          "declaredBy": "java.lang.constant.DirectMethodHandleDesc$Kind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.DynamicCallSiteDesc",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/DynamicCallSiteDesc.html",
+      "sourceEntry": "java.base/java/lang/constant/DynamicCallSiteDesc.java",
+      "sourceSha256": "e506b23820cee0bd2e6e65ee04e5cb5a2bcc7261f4fb13b84a015157cd5aa21d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "bootstrapArgs()",
+          "result": "java.lang.constant.ConstantDesc[]",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bootstrapMethod()",
+          "result": "java.lang.constant.MethodHandleDesc",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invocationName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invocationType()",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.constant.DirectMethodHandleDesc,java.lang.String,java.lang.constant.MethodTypeDesc)",
+          "result": "java.lang.constant.DynamicCallSiteDesc",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.constant.DirectMethodHandleDesc,java.lang.String,java.lang.constant.MethodTypeDesc,java.lang.constant.ConstantDesc[])",
+          "result": "java.lang.constant.DynamicCallSiteDesc",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.constant.DirectMethodHandleDesc,java.lang.constant.MethodTypeDesc)",
+          "result": "java.lang.constant.DynamicCallSiteDesc",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveCallSiteDesc(java.lang.invoke.MethodHandles$Lookup)",
+          "result": "java.lang.invoke.CallSite",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withArgs(java.lang.constant.ConstantDesc[])",
+          "result": "java.lang.constant.DynamicCallSiteDesc",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "withNameAndType(java.lang.String,java.lang.constant.MethodTypeDesc)",
+          "result": "java.lang.constant.DynamicCallSiteDesc",
+          "declaredBy": "java.lang.constant.DynamicCallSiteDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.DynamicConstantDesc",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.constant.ConstantDesc"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/DynamicConstantDesc.html",
+      "sourceEntry": "java.base/java/lang/constant/DynamicConstantDesc.java",
+      "sourceSha256": "9d8b28d1df8ea29740ff703fd19ebd4e0062aa7f312131b48b2a4c552cb71a3c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.constant.DirectMethodHandleDesc,java.lang.String,java.lang.constant.ClassDesc,java.lang.constant.ConstantDesc[])",
+          "result": "void",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 132,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bootstrapArgs()",
+          "result": "java.lang.constant.ConstantDesc[]",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bootstrapArgsList()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bootstrapMethod()",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "constantName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "constantType()",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.constant.DirectMethodHandleDesc)",
+          "result": "java.lang.constant.DynamicConstantDesc",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.constant.DirectMethodHandleDesc,java.lang.constant.ConstantDesc[])",
+          "result": "java.lang.constant.DynamicConstantDesc",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofCanonical(java.lang.constant.DirectMethodHandleDesc,java.lang.String,java.lang.constant.ClassDesc,java.lang.constant.ConstantDesc[])",
+          "result": "java.lang.constant.ConstantDesc",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofNamed(java.lang.constant.DirectMethodHandleDesc,java.lang.String,java.lang.constant.ClassDesc,java.lang.constant.ConstantDesc[])",
+          "result": "java.lang.constant.DynamicConstantDesc",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveConstantDesc(java.lang.invoke.MethodHandles$Lookup)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.DynamicConstantDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.MethodHandleDesc",
+      "kind": "interface",
+      "parents": [
+        "java.lang.constant.ConstantDesc"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
+      "sourceEntry": "java.base/java/lang/constant/MethodHandleDesc.java",
+      "sourceSha256": "e6468d5061945b8ca0cc3e4ec0037619f22b7eb44dc964919b1bd80253c08377",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asType(java.lang.constant.MethodTypeDesc)",
+          "result": "java.lang.constant.MethodHandleDesc",
+          "declaredBy": "java.lang.constant.MethodHandleDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.MethodHandleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invocationType()",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.MethodHandleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.constant.DirectMethodHandleDesc$Kind,java.lang.constant.ClassDesc,java.lang.String,java.lang.String)",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.MethodHandleDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofConstructor(java.lang.constant.ClassDesc,java.lang.constant.ClassDesc[])",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.MethodHandleDesc",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofField(java.lang.constant.DirectMethodHandleDesc$Kind,java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.ClassDesc)",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.MethodHandleDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofMethod(java.lang.constant.DirectMethodHandleDesc$Kind,java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.MethodTypeDesc)",
+          "result": "java.lang.constant.DirectMethodHandleDesc",
+          "declaredBy": "java.lang.constant.MethodHandleDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveConstantDesc(java.lang.invoke.MethodHandles$Lookup)",
+          "result": "java.lang.invoke.MethodHandle",
+          "declaredBy": "java.lang.constant.MethodHandleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.MethodTypeDesc",
+      "kind": "interface",
+      "parents": [
+        "java.lang.constant.ConstantDesc",
+        "java.lang.invoke.TypeDescriptor$OfMethod"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
+      "sourceEntry": "java.base/java/lang/constant/MethodTypeDesc.java",
+      "sourceSha256": "521b80726c838189f3f8ebc8130747c4de8bfdcd6c571a442f1892b37a02fad5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "changeParameterType(int,java.lang.constant.ClassDesc)",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "changeReturnType(java.lang.constant.ClassDesc)",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "descriptorString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "displayDescriptor()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropParameterTypes(int,int)",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertParameterTypes(int,java.lang.constant.ClassDesc[])",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.constant.ClassDesc)",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.constant.ClassDesc,java.lang.constant.ClassDesc[])",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.constant.ClassDesc,java.util.List)",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofDescriptor(java.lang.String)",
+          "result": "java.lang.constant.MethodTypeDesc",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterArray()",
+          "result": "java.lang.constant.ClassDesc[]",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterCount()",
+          "result": "int",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterList()",
+          "result": "java.util.List",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parameterType(int)",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "resolveConstantDesc(java.lang.invoke.MethodHandles$Lookup)",
+          "result": "java.lang.invoke.MethodType",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "returnType()",
+          "result": "java.lang.constant.ClassDesc",
+          "declaredBy": "java.lang.constant.MethodTypeDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.ModuleDesc",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/ModuleDesc.html",
+      "sourceEntry": "java.base/java/lang/constant/ModuleDesc.java",
+      "sourceSha256": "9882546fdd39dfd0f1be8a90dbf64c3e8e27bc420c5a1ef4e655654b9bffd530",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.ModuleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.ModuleDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.String)",
+          "result": "java.lang.constant.ModuleDesc",
+          "declaredBy": "java.lang.constant.ModuleDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.constant.PackageDesc",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/constant/PackageDesc.html",
+      "sourceEntry": "java.base/java/lang/constant/PackageDesc.java",
+      "sourceSha256": "b4e26a4843aede256cf05de6cc86ded50526c2f148356e83b5a4aaf996ed061c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.constant.PackageDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "internalName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.PackageDesc",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.constant.PackageDesc",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.String)",
+          "result": "java.lang.constant.PackageDesc",
+          "declaredBy": "java.lang.constant.PackageDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofInternalName(java.lang.String)",
+          "result": "java.lang.constant.PackageDesc",
+          "declaredBy": "java.lang.constant.PackageDesc",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

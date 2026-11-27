@@ -1,0 +1,1103 @@
+{
+  "name": "javax.swing.undo",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.swing.undo.AbstractUndoableEdit",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.swing.undo.UndoableEdit",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html",
+      "sourceEntry": "java.desktop/javax/swing/undo/AbstractUndoableEdit.java",
+      "sourceSha256": "73d4445f250f0c2343b4fa6274f99821ce8f06834ae3710048342d2df8bbb9bd",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "RedoName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UndoName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addEdit(javax.swing.undo.UndoableEdit)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canRedo()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canUndo()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "die()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRedoPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUndoPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSignificant()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "redo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replaceEdit(javax.swing.undo.UndoableEdit)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.AbstractUndoableEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.undo.CannotRedoException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/undo/CannotRedoException.html",
+      "sourceEntry": "java.desktop/javax/swing/undo/CannotRedoException.java",
+      "sourceSha256": "c9344bb13dc8bab78fe80dd44c0ebe01b54045ce9c672545579e44970e7e516a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.CannotRedoException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.undo.CannotUndoException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/undo/CannotUndoException.html",
+      "sourceEntry": "java.desktop/javax/swing/undo/CannotUndoException.java",
+      "sourceSha256": "e7b1c08c1157ffcaab7c77433aae6bed590cdeb73804498ac1225c181c3459d8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.CannotUndoException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.undo.CompoundEdit",
+      "kind": "class",
+      "parents": [
+        "javax.swing.undo.AbstractUndoableEdit"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html",
+      "sourceEntry": "java.desktop/javax/swing/undo/CompoundEdit.java",
+      "sourceSha256": "517bc2e2b2dd27880f096867850ae679c38a5c7d0919c09bba2322e98d94d51e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addEdit(javax.swing.undo.UndoableEdit)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canRedo()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canUndo()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "die()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "edits",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "end()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRedoPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUndoPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInProgress()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSignificant()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lastEdit()",
+          "result": "javax.swing.undo.UndoableEdit",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "redo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.CompoundEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.undo.StateEdit",
+      "kind": "class",
+      "parents": [
+        "javax.swing.undo.AbstractUndoableEdit"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/undo/StateEdit.html",
+      "sourceEntry": "java.desktop/javax/swing/undo/StateEdit.java",
+      "sourceSha256": "3a841e89782c49fce7c11053d8f66d9f1b3017a12f9adfc9a4749e2d14ff255d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.undo.StateEditable)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.swing.undo.StateEditable,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "RCSID",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "end()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(javax.swing.undo.StateEditable,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "object",
+          "result": "javax.swing.undo.StateEditable",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "postState",
+          "result": "java.util.Hashtable",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "preState",
+          "result": "java.util.Hashtable",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "redo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeRedundantState()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "undoRedoName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.StateEdit",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.undo.StateEditable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/undo/StateEditable.html",
+      "sourceEntry": "java.desktop/javax/swing/undo/StateEditable.java",
+      "sourceSha256": "0c21c6175afb5c98251506ad318f018b5b7cfb1f5601b00aa853fd2d2bc9c8ad",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "RCSID",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.StateEditable",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "restoreState(java.util.Hashtable)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.StateEditable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "storeState(java.util.Hashtable)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.StateEditable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.undo.UndoManager",
+      "kind": "class",
+      "parents": [
+        "javax.swing.undo.CompoundEdit",
+        "javax.swing.event.UndoableEditListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/undo/UndoManager.html",
+      "sourceEntry": "java.desktop/javax/swing/undo/UndoManager.java",
+      "sourceSha256": "5efcab0ba1a2e459a9883a3a810648b208df3ae6e2e4dfb4f7023fc3339891a1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addEdit(javax.swing.undo.UndoableEdit)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canRedo()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canUndo()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canUndoOrRedo()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "discardAllEdits()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "editToBeRedone()",
+          "result": "javax.swing.undo.UndoableEdit",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "editToBeUndone()",
+          "result": "javax.swing.undo.UndoableEdit",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "end()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLimit()",
+          "result": "int",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRedoPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUndoOrRedoPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUndoPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "redo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "redoTo(javax.swing.undo.UndoableEdit)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLimit(int)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "trimEdits(int,int)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "trimForLimit()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undoOrRedo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undoTo(javax.swing.undo.UndoableEdit)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undoableEditHappened(javax.swing.event.UndoableEditEvent)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.undo.UndoableEdit",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html",
+      "sourceEntry": "java.desktop/javax/swing/undo/UndoableEdit.java",
+      "sourceSha256": "018c509f05032e290c96c17719d643412af327f8ad1854c028d0626ada93f1ed",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addEdit(javax.swing.undo.UndoableEdit)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canRedo()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "canUndo()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "die()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRedoPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUndoPresentationName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSignificant()",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "redo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replaceEdit(javax.swing.undo.UndoableEdit)",
+          "result": "boolean",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undo()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEdit",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.swing.undo.UndoableEditSupport",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html",
+      "sourceEntry": "java.desktop/javax/swing/undo/UndoableEditSupport.java",
+      "sourceSha256": "53a64adeadf6d9bfe7a47be707e25b7b9e36bc581fc742bd3343028bed65441b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "_postEdit(javax.swing.undo.UndoableEdit)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addUndoableEditListener(javax.swing.event.UndoableEditListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "beginUpdate()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "compoundEdit",
+          "result": "javax.swing.undo.CompoundEdit",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "createCompoundEdit()",
+          "result": "javax.swing.undo.CompoundEdit",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "endUpdate()",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUndoableEditListeners()",
+          "result": "javax.swing.event.UndoableEditListener[]",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUpdateLevel()",
+          "result": "int",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "listeners",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "postEdit(javax.swing.undo.UndoableEdit)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "realSource",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "removeUndoableEditListener(javax.swing.event.UndoableEditListener)",
+          "result": "void",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "updateLevel",
+          "result": "int",
+          "declaredBy": "javax.swing.undo.UndoableEditSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    }
+  ]
+}

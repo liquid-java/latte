@@ -1,0 +1,3399 @@
+{
+  "name": "java.util.concurrent.atomic",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.util.concurrent.atomic.AtomicBoolean",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicBoolean.java",
+      "sourceSha256": "96e03342774bdc5ab196416f1986a56c905a4693c9a1818ee0df390b17626de2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(boolean)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchange(boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeAcquire(boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeRelease(boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAcquire()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpaque()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlain()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lazySet(boolean)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(boolean)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOpaque(boolean)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPlain(boolean)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRelease(boolean)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetAcquire(boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetPlain(boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetRelease(boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetVolatile(boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicBoolean",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicInteger",
+      "kind": "class",
+      "parents": [
+        "java.lang.Number",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicInteger.java",
+      "sourceSha256": "a22a8f2de0605e22c232269d78cd6db98a12aa3883c0028535b895cd41866720",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulateAndGet(int,java.util.function.IntBinaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAndGet(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchange(int,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeAcquire(int,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeRelease(int,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decrementAndGet()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doubleValue()",
+          "result": "double",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "floatValue()",
+          "result": "float",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAcquire()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAccumulate(int,java.util.function.IntBinaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAdd(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndDecrement()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndIncrement()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndUpdate(java.util.function.IntUnaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpaque()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlain()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "incrementAndGet()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValue()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lazySet(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longValue()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOpaque(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPlain(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRelease(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAndGet(java.util.function.IntUnaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetAcquire(int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetPlain(int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetRelease(int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetVolatile(int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicInteger",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicIntegerArray",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicIntegerArray.java",
+      "sourceSha256": "2249c57f91883c3736314f235dfc5ad831eb9282113a6d2a9e86f8a0a6f95460",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int[])",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulateAndGet(int,int,java.util.function.IntBinaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAndGet(int,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchange(int,int,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeAcquire(int,int,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeRelease(int,int,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(int,int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decrementAndGet(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAcquire(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAccumulate(int,int,java.util.function.IntBinaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAdd(int,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndDecrement(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndIncrement(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(int,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndUpdate(int,java.util.function.IntUnaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpaque(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlain(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "incrementAndGet(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lazySet(int,int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "length()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(int,int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOpaque(int,int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPlain(int,int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRelease(int,int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAndGet(int,java.util.function.IntUnaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(int,int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetAcquire(int,int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetPlain(int,int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetRelease(int,int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetVolatile(int,int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.java",
+      "sourceSha256": "86cbef0364c74433310eda540e5a370f37d8a3bf2c130e6e89a2b18dbdef8a88",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulateAndGet(java.lang.Object,int,java.util.function.IntBinaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAndGet(java.lang.Object,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(java.lang.Object,int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decrementAndGet(java.lang.Object)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAccumulate(java.lang.Object,int,java.util.function.IntBinaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAdd(java.lang.Object,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndDecrement(java.lang.Object)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndIncrement(java.lang.Object)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(java.lang.Object,int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndUpdate(java.lang.Object,java.util.function.IntUnaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "incrementAndGet(java.lang.Object)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lazySet(java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newUpdater(java.lang.Class,java.lang.String)",
+          "result": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAndGet(java.lang.Object,java.util.function.IntUnaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(java.lang.Object,int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicIntegerFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicLong",
+      "kind": "class",
+      "parents": [
+        "java.lang.Number",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicLong.java",
+      "sourceSha256": "f6bbca6ce50db11061946699bfef58e7cbbc2b8db88acfc6f0be5ed83f002f74",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulateAndGet(long,java.util.function.LongBinaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAndGet(long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchange(long,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeAcquire(long,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeRelease(long,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decrementAndGet()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doubleValue()",
+          "result": "double",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "floatValue()",
+          "result": "float",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAcquire()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAccumulate(long,java.util.function.LongBinaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAdd(long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndDecrement()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndIncrement()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndUpdate(java.util.function.LongUnaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpaque()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlain()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "incrementAndGet()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValue()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lazySet(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longValue()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOpaque(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPlain(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRelease(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAndGet(java.util.function.LongUnaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetAcquire(long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetPlain(long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetRelease(long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetVolatile(long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLong",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicLongArray",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicLongArray.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicLongArray.java",
+      "sourceSha256": "35057ec7a55fda5acab0151c504a9427cb12635fe2c48536a2759e2374a7c7c3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(long[])",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulateAndGet(int,long,java.util.function.LongBinaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAndGet(int,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchange(int,long,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeAcquire(int,long,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeRelease(int,long,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(int,long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decrementAndGet(int)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAcquire(int)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAccumulate(int,long,java.util.function.LongBinaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAdd(int,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndDecrement(int)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndIncrement(int)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(int,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndUpdate(int,java.util.function.LongUnaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpaque(int)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlain(int)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "incrementAndGet(int)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lazySet(int,long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "length()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(int,long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOpaque(int,long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPlain(int,long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRelease(int,long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAndGet(int,java.util.function.LongUnaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(int,long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetAcquire(int,long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetPlain(int,long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetRelease(int,long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetVolatile(int,long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.java",
+      "sourceSha256": "b207c6e8222e2a87edcc0007de0268efe179affb475b8be7b7ee0954f66d7cb2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulateAndGet(java.lang.Object,long,java.util.function.LongBinaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAndGet(java.lang.Object,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(java.lang.Object,long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decrementAndGet(java.lang.Object)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAccumulate(java.lang.Object,long,java.util.function.LongBinaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAdd(java.lang.Object,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndDecrement(java.lang.Object)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndIncrement(java.lang.Object)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(java.lang.Object,long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndUpdate(java.lang.Object,java.util.function.LongUnaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "incrementAndGet(java.lang.Object)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lazySet(java.lang.Object,long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newUpdater(java.lang.Class,java.lang.String)",
+          "result": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.Object,long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAndGet(java.lang.Object,java.util.function.LongUnaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(java.lang.Object,long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicLongFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicMarkableReference",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicMarkableReference.java",
+      "sourceSha256": "8f159a89cfbe8e7cbe3a6e691421b678fbbe74bcc95c06f4af97aeb8d7c4f908",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,boolean)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicMarkableReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "attemptMark(java.lang.Object,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicMarkableReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicMarkableReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(boolean[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicMarkableReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReference()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicMarkableReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isMarked()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicMarkableReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.Object,boolean)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicMarkableReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicMarkableReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicReference",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicReference.java",
+      "sourceSha256": "5c3dd523115fd5c7711ed590e43987545a6299a1f49e6e5310ecfe0e99a9ae1d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulateAndGet(java.lang.Object,java.util.function.BinaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchange(java.lang.Object,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeAcquire(java.lang.Object,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeRelease(java.lang.Object,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAcquire()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAccumulate(java.lang.Object,java.util.function.BinaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndUpdate(java.util.function.UnaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpaque()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlain()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lazySet(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOpaque(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPlain(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRelease(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAndGet(java.util.function.UnaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetAcquire(java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetPlain(java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetRelease(java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetVolatile(java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReference",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicReferenceArray",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicReferenceArray.java",
+      "sourceSha256": "2d88f7193bb71f20c2abf307959dcc1b4c34a24d2034a10332cf8d6ef69a1522",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulateAndGet(int,java.lang.Object,java.util.function.BinaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchange(int,java.lang.Object,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeAcquire(int,java.lang.Object,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndExchangeRelease(int,java.lang.Object,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(int,java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAcquire(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAccumulate(int,java.lang.Object,java.util.function.BinaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(int,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndUpdate(int,java.util.function.UnaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpaque(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPlain(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lazySet(int,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "length()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(int,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOpaque(int,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPlain(int,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRelease(int,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAndGet(int,java.util.function.UnaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(int,java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetAcquire(int,java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetPlain(int,java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetRelease(int,java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSetVolatile(int,java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceArray",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.java",
+      "sourceSha256": "2e641dc1c1ebacbae4b4c9dcb8368cc2226bd113ac4c78ab1e48c9be88188cb5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulateAndGet(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndAccumulate(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndSet(java.lang.Object,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAndUpdate(java.lang.Object,java.util.function.UnaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lazySet(java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newUpdater(java.lang.Class,java.lang.Class,java.lang.String)",
+          "result": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "updateAndGet(java.lang.Object,java.util.function.UnaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicReferenceFieldUpdater",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.AtomicStampedReference",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/AtomicStampedReference.java",
+      "sourceSha256": "e6e3990500953278bf7f8133669bdd646474bd65761fc9c9b4a4e0e7662cdca7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicStampedReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "attemptStamp(java.lang.Object,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicStampedReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSet(java.lang.Object,java.lang.Object,int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicStampedReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int[])",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicStampedReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReference()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.atomic.AtomicStampedReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStamp()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.AtomicStampedReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set(java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.AtomicStampedReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "weakCompareAndSet(java.lang.Object,java.lang.Object,int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.atomic.AtomicStampedReference",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.DoubleAccumulator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Number",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/DoubleAccumulator.java",
+      "sourceSha256": "04c13fee40a4b4ff6653c3cac894d160424e4a83c2a3ab3986efc8f0c7ec9e81",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.function.DoubleBinaryOperator,double)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulate(double)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doubleValue()",
+          "result": "double",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "floatValue()",
+          "result": "float",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "double",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThenReset()",
+          "result": "double",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValue()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longValue()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.DoubleAdder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Number",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/DoubleAdder.java",
+      "sourceSha256": "238db2656f9460075c271e6f7453fbee7311d81ef8c72c6dbb3171cf345f7b87",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(double)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doubleValue()",
+          "result": "double",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "floatValue()",
+          "result": "float",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValue()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longValue()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sum()",
+          "result": "double",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sumThenReset()",
+          "result": "double",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.DoubleAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.LongAccumulator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Number",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/LongAccumulator.java",
+      "sourceSha256": "dd5cec1caf85bcaae63403319854742c722a04136c7896fa7b595eafca7a4b6c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.function.LongBinaryOperator,long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.LongAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "accumulate(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.LongAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doubleValue()",
+          "result": "double",
+          "declaredBy": "java.util.concurrent.atomic.LongAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "floatValue()",
+          "result": "float",
+          "declaredBy": "java.util.concurrent.atomic.LongAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.LongAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getThenReset()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.LongAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValue()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.LongAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longValue()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.LongAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.LongAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.LongAccumulator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.atomic.LongAdder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Number",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html",
+      "sourceEntry": "java.base/java/util/concurrent/atomic/LongAdder.java",
+      "sourceSha256": "37988a472618eedad109571f74ef4c6b27dff1efa904058dfa056a5010fe0818",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "decrement()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doubleValue()",
+          "result": "double",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "floatValue()",
+          "result": "float",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "increment()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intValue()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longValue()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sum()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sumThenReset()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.atomic.LongAdder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

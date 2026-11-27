@@ -1,0 +1,5642 @@
+{
+  "name": "java.text",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.text.Annotation",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/Annotation.html",
+      "sourceEntry": "java.base/java/text/Annotation.java",
+      "sourceSha256": "e25bbfacc9b54bf34c21b129265a586d09bb88da8f8c7c5503c13b27f724a062",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.text.Annotation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.Annotation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.Annotation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.AttributedCharacterIterator",
+      "kind": "interface",
+      "parents": [
+        "java.text.CharacterIterator"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/AttributedCharacterIterator.html",
+      "sourceEntry": "java.base/java/text/AttributedCharacterIterator.java",
+      "sourceSha256": "80b00bc7a17739b121af596d4b376af486e66bf5448b9710438c9450fb929510",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAllAttributeKeys()",
+          "result": "java.util.Set",
+          "declaredBy": "java.text.AttributedCharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.text.AttributedCharacterIterator$Attribute)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.AttributedCharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "java.util.Map",
+          "declaredBy": "java.text.AttributedCharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRunLimit()",
+          "result": "int",
+          "declaredBy": "java.text.AttributedCharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRunLimit(java.text.AttributedCharacterIterator$Attribute)",
+          "result": "int",
+          "declaredBy": "java.text.AttributedCharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRunLimit(java.util.Set)",
+          "result": "int",
+          "declaredBy": "java.text.AttributedCharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRunStart()",
+          "result": "int",
+          "declaredBy": "java.text.AttributedCharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRunStart(java.text.AttributedCharacterIterator$Attribute)",
+          "result": "int",
+          "declaredBy": "java.text.AttributedCharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRunStart(java.util.Set)",
+          "result": "int",
+          "declaredBy": "java.text.AttributedCharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.AttributedCharacterIterator$Attribute",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html",
+      "sourceEntry": "java.base/java/text/AttributedCharacterIterator.java",
+      "sourceSha256": "80b00bc7a17739b121af596d4b376af486e66bf5448b9710438c9450fb929510",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.AttributedCharacterIterator$Attribute",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "INPUT_METHOD_SEGMENT",
+          "result": "java.text.AttributedCharacterIterator$Attribute",
+          "declaredBy": "java.text.AttributedCharacterIterator$Attribute",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LANGUAGE",
+          "result": "java.text.AttributedCharacterIterator$Attribute",
+          "declaredBy": "java.text.AttributedCharacterIterator$Attribute",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "READING",
+          "result": "java.text.AttributedCharacterIterator$Attribute",
+          "declaredBy": "java.text.AttributedCharacterIterator$Attribute",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.AttributedCharacterIterator$Attribute",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.AttributedCharacterIterator$Attribute",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.AttributedCharacterIterator$Attribute",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readResolve()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.AttributedCharacterIterator$Attribute",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.AttributedCharacterIterator$Attribute",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.AttributedString",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/AttributedString.html",
+      "sourceEntry": "java.base/java/text/AttributedString.java",
+      "sourceSha256": "c7ce89ad8efd5bee9f21ffe77bf4bce467379724bb70738087ca87d93bc91a1d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.util.Map)",
+          "result": "void",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.text.AttributedCharacterIterator)",
+          "result": "void",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.text.AttributedCharacterIterator,int,int)",
+          "result": "void",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.text.AttributedCharacterIterator,int,int,java.text.AttributedCharacterIterator$Attribute[])",
+          "result": "void",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAttribute(java.text.AttributedCharacterIterator$Attribute,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAttribute(java.text.AttributedCharacterIterator$Attribute,java.lang.Object,int,int)",
+          "result": "void",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAttributes(java.util.Map,int,int)",
+          "result": "void",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIterator()",
+          "result": "java.text.AttributedCharacterIterator",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIterator(java.text.AttributedCharacterIterator$Attribute[])",
+          "result": "java.text.AttributedCharacterIterator",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIterator(java.text.AttributedCharacterIterator$Attribute[],int,int)",
+          "result": "java.text.AttributedCharacterIterator",
+          "declaredBy": "java.text.AttributedString",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.Bidi",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/Bidi.html",
+      "sourceEntry": "java.base/java/text/Bidi.java",
+      "sourceSha256": "e80d31885e1496983e5a5afef6a27b2514e80a04b1417847f290c201f8fee481",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(char[],int,byte[],int,int,int)",
+          "result": "void",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.text.AttributedCharacterIterator)",
+          "result": "void",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DIRECTION_DEFAULT_LEFT_TO_RIGHT",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DIRECTION_DEFAULT_RIGHT_TO_LEFT",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DIRECTION_LEFT_TO_RIGHT",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DIRECTION_RIGHT_TO_LEFT",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "baseIsLeftToRight()",
+          "result": "boolean",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createLineBidi(int,int)",
+          "result": "java.text.Bidi",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBaseLevel()",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLength()",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLevelAt(int)",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRunCount()",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRunLevel(int)",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRunLimit(int)",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRunStart(int)",
+          "result": "int",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLeftToRight()",
+          "result": "boolean",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isMixed()",
+          "result": "boolean",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRightToLeft()",
+          "result": "boolean",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reorderVisually(byte[],int,java.lang.Object[],int,int)",
+          "result": "void",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requiresBidi(char[],int,int)",
+          "result": "boolean",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.Bidi",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.BreakIterator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/BreakIterator.html",
+      "sourceEntry": "java.base/java/text/BreakIterator.java",
+      "sourceSha256": "47e41ee427597739e2dbdae7d451b0446891df67a67e692f2800310e14c22707",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DONE",
+          "result": "int",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "current()",
+          "result": "int",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "first()",
+          "result": "int",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "following(int)",
+          "result": "int",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableLocales()",
+          "result": "java.util.Locale[]",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharacterInstance()",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharacterInstance(java.util.Locale)",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLineInstance()",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLineInstance(java.util.Locale)",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSentenceInstance()",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSentenceInstance(java.util.Locale)",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getText()",
+          "result": "java.text.CharacterIterator",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWordInstance()",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWordInstance(java.util.Locale)",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isBoundary(int)",
+          "result": "boolean",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "last()",
+          "result": "int",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "next()",
+          "result": "int",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "next(int)",
+          "result": "int",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preceding(int)",
+          "result": "int",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previous()",
+          "result": "int",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setText(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setText(java.text.CharacterIterator)",
+          "result": "void",
+          "declaredBy": "java.text.BreakIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.CharacterIterator",
+      "kind": "interface",
+      "parents": [
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/CharacterIterator.html",
+      "sourceEntry": "java.base/java/text/CharacterIterator.java",
+      "sourceSha256": "5ad699cfc8aa5f0e34515e70cbedc1a30e594b5878626e0d8f3aed427ed65ad2",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "DONE",
+          "result": "char",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "current()",
+          "result": "char",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "first()",
+          "result": "char",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeginIndex()",
+          "result": "int",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEndIndex()",
+          "result": "int",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndex()",
+          "result": "int",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "last()",
+          "result": "char",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "next()",
+          "result": "char",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previous()",
+          "result": "char",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIndex(int)",
+          "result": "char",
+          "declaredBy": "java.text.CharacterIterator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.ChoiceFormat",
+      "kind": "class",
+      "parents": [
+        "java.text.NumberFormat"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/ChoiceFormat.html",
+      "sourceEntry": "java.base/java/text/ChoiceFormat.java",
+      "sourceSha256": "8d88cf035356b25fefa8f107675cbbf9b0e7869ff600aac545e5b2a4631b5dd5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(double[],java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "applyPattern(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(double,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(long,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormats()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLimits()",
+          "result": "double[]",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextDouble(double)",
+          "result": "double",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextDouble(double,boolean)",
+          "result": "double",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String,java.text.ParsePosition)",
+          "result": "java.lang.Number",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previousDouble(double)",
+          "result": "double",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setChoices(double[],java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toPattern()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.ChoiceFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.CollationElementIterator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/CollationElementIterator.html",
+      "sourceEntry": "java.base/java/text/CollationElementIterator.java",
+      "sourceSha256": "babee6893fb168c159106e32e5a8022cd4cf1a1b2704c86f92dbd242046ec962",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NULLORDER",
+          "result": "int",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxExpansion(int)",
+          "result": "int",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffset()",
+          "result": "int",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "next()",
+          "result": "int",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previous()",
+          "result": "int",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "primaryOrder(int)",
+          "result": "int",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "secondaryOrder(int)",
+          "result": "short",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOffset(int)",
+          "result": "void",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setText(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setText(java.text.CharacterIterator)",
+          "result": "void",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tertiaryOrder(int)",
+          "result": "short",
+          "declaredBy": "java.text.CollationElementIterator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.CollationKey",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/CollationKey.html",
+      "sourceEntry": "java.base/java/text/CollationKey.java",
+      "sourceSha256": "27923063163669a0d343b95cadec5e8be2a6945d7270900fa129442f19e67037",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.CollationKey",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.text.CollationKey)",
+          "result": "int",
+          "declaredBy": "java.text.CollationKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.CollationKey",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toByteArray()",
+          "result": "byte[]",
+          "declaredBy": "java.text.CollationKey",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.Collator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.util.Comparator",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/Collator.html",
+      "sourceEntry": "java.base/java/text/Collator.java",
+      "sourceSha256": "d3ce2e822e7535850a8492eb7c1edd252ab5c3d5be3a482a5c9704c771c64347",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "CANONICAL_DECOMPOSITION",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FULL_DECOMPOSITION",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IDENTICAL",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NO_DECOMPOSITION",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PRIMARY",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SECONDARY",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TERTIARY",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compare(java.lang.Object,java.lang.Object)",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compare(java.lang.String,java.lang.String)",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.String,java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableLocales()",
+          "result": "java.util.Locale[]",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCollationKey(java.lang.String)",
+          "result": "java.text.CollationKey",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDecomposition()",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance()",
+          "result": "java.text.Collator",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.util.Locale)",
+          "result": "java.text.Collator",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStrength()",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDecomposition(int)",
+          "result": "void",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setStrength(int)",
+          "result": "void",
+          "declaredBy": "java.text.Collator",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.CompactNumberFormat",
+      "kind": "class",
+      "parents": [
+        "java.text.NumberFormat"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/CompactNumberFormat.html",
+      "sourceEntry": "java.base/java/text/CompactNumberFormat.java",
+      "sourceSha256": "705397ab837c86ebe46dc6ae12f238cec3e72b73e5d17e6d7002f7a88d4981d5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.text.DecimalFormatSymbols,java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.text.DecimalFormatSymbols,java.lang.String[],java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.text.CompactNumberFormat",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(double,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(long,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "formatToCharacterIterator(java.lang.Object)",
+          "result": "java.text.AttributedCharacterIterator",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGroupingSize()",
+          "result": "int",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRoundingMode()",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isGroupingUsed()",
+          "result": "boolean",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isParseBigDecimal()",
+          "result": "boolean",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isParseIntegerOnly()",
+          "result": "boolean",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String,java.text.ParsePosition)",
+          "result": "java.lang.Number",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setGroupingSize(int)",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setGroupingUsed(boolean)",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaximumFractionDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaximumIntegerDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMinimumFractionDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMinimumIntegerDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setParseBigDecimal(boolean)",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setParseIntegerOnly(boolean)",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRoundingMode(java.math.RoundingMode)",
+          "result": "void",
+          "declaredBy": "java.text.CompactNumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.DateFormat",
+      "kind": "class",
+      "parents": [
+        "java.text.Format"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/DateFormat.html",
+      "sourceEntry": "java.base/java/text/DateFormat.java",
+      "sourceSha256": "edd812f4cb961cd7b0c3b3ae4c571a815bf4009a94b9892def9bcdf002d7662e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "AM_PM_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATE_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DAY_OF_WEEK_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DAY_OF_WEEK_IN_MONTH_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DAY_OF_YEAR_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ERA_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FULL",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HOUR0_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HOUR1_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HOUR_OF_DAY0_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HOUR_OF_DAY1_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LONG",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEDIUM",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MILLISECOND_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MINUTE_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MONTH_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SECOND_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHORT",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TIMEZONE_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WEEK_OF_MONTH_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WEEK_OF_YEAR_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "YEAR_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "calendar",
+          "result": "java.util.Calendar",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.util.Date)",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.util.Date,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableLocales()",
+          "result": "java.util.Locale[]",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCalendar()",
+          "result": "java.util.Calendar",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateInstance()",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateInstance(int)",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateInstance(int,java.util.Locale)",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateTimeInstance()",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateTimeInstance(int,int)",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateTimeInstance(int,int,java.util.Locale)",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance()",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumberFormat()",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTimeInstance()",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTimeInstance(int)",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTimeInstance(int,java.util.Locale)",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTimeZone()",
+          "result": "java.util.TimeZone",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLenient()",
+          "result": "boolean",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "numberFormat",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String)",
+          "result": "java.util.Date",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String,java.text.ParsePosition)",
+          "result": "java.util.Date",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseObject(java.lang.String,java.text.ParsePosition)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCalendar(java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLenient(boolean)",
+          "result": "void",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNumberFormat(java.text.NumberFormat)",
+          "result": "void",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTimeZone(java.util.TimeZone)",
+          "result": "void",
+          "declaredBy": "java.text.DateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.DateFormat$Field",
+      "kind": "class",
+      "parents": [
+        "java.text.Format$Field"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/DateFormat.Field.html",
+      "sourceEntry": "java.base/java/text/DateFormat.java",
+      "sourceSha256": "edd812f4cb961cd7b0c3b3ae4c571a815bf4009a94b9892def9bcdf002d7662e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "AM_PM",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DAY_OF_MONTH",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DAY_OF_WEEK",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DAY_OF_WEEK_IN_MONTH",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DAY_OF_YEAR",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ERA",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HOUR0",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HOUR1",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HOUR_OF_DAY0",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HOUR_OF_DAY1",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MILLISECOND",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MINUTE",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MONTH",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SECOND",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TIME_ZONE",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WEEK_OF_MONTH",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WEEK_OF_YEAR",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "YEAR",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getCalendarField()",
+          "result": "int",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofCalendarField(int)",
+          "result": "java.text.DateFormat$Field",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readResolve()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.DateFormat$Field",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.DateFormatSymbols",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/DateFormatSymbols.html",
+      "sourceEntry": "java.base/java/text/DateFormatSymbols.java",
+      "sourceSha256": "a2b05666db2678b1d5b9b791cdd997a7dcd29c6ce7732788f5669adf352ec23f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Locale)",
+          "result": "void",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAmPmStrings()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableLocales()",
+          "result": "java.util.Locale[]",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEras()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance()",
+          "result": "java.text.DateFormatSymbols",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.util.Locale)",
+          "result": "java.text.DateFormatSymbols",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocalPatternChars()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMonths()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShortMonths()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShortWeekdays()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWeekdays()",
+          "result": "java.lang.String[]",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getZoneStrings()",
+          "result": "java.lang.String[][]",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAmPmStrings(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEras(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocalPatternChars(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMonths(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setShortMonths(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setShortWeekdays(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setWeekdays(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setZoneStrings(java.lang.String[][])",
+          "result": "void",
+          "declaredBy": "java.text.DateFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.DecimalFormat",
+      "kind": "class",
+      "parents": [
+        "java.text.NumberFormat"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/DecimalFormat.html",
+      "sourceEntry": "java.base/java/text/DecimalFormat.java",
+      "sourceSha256": "3ff1bedeb8fc79c5735128cdce3c03426901f1c147b4ee6f77afdbd9c90e0226",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.text.DecimalFormatSymbols)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "applyLocalizedPattern(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "applyPattern(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(double,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(long,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "formatToCharacterIterator(java.lang.Object)",
+          "result": "java.text.AttributedCharacterIterator",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrency()",
+          "result": "java.util.Currency",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDecimalFormatSymbols()",
+          "result": "java.text.DecimalFormatSymbols",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGroupingSize()",
+          "result": "int",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaximumFractionDigits()",
+          "result": "int",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaximumIntegerDigits()",
+          "result": "int",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinimumFractionDigits()",
+          "result": "int",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinimumIntegerDigits()",
+          "result": "int",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMultiplier()",
+          "result": "int",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNegativePrefix()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNegativeSuffix()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPositivePrefix()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPositiveSuffix()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRoundingMode()",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDecimalSeparatorAlwaysShown()",
+          "result": "boolean",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isParseBigDecimal()",
+          "result": "boolean",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String,java.text.ParsePosition)",
+          "result": "java.lang.Number",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCurrency(java.util.Currency)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDecimalFormatSymbols(java.text.DecimalFormatSymbols)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDecimalSeparatorAlwaysShown(boolean)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setGroupingSize(int)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setGroupingUsed(boolean)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaximumFractionDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaximumIntegerDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMinimumFractionDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMinimumIntegerDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMultiplier(int)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNegativePrefix(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNegativeSuffix(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setParseBigDecimal(boolean)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPositivePrefix(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPositiveSuffix(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRoundingMode(java.math.RoundingMode)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toLocalizedPattern()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toPattern()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.DecimalFormatSymbols",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.Cloneable",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/DecimalFormatSymbols.html",
+      "sourceEntry": "java.base/java/text/DecimalFormatSymbols.java",
+      "sourceSha256": "82571a92859c456c53982541de7a031b39c63e42924955adbe408cbf3310067c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Locale)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableLocales()",
+          "result": "java.util.Locale[]",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrency()",
+          "result": "java.util.Currency",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrencySymbol()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDecimalSeparator()",
+          "result": "char",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDigit()",
+          "result": "char",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExponentSeparator()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGroupingSeparator()",
+          "result": "char",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInfinity()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance()",
+          "result": "java.text.DecimalFormatSymbols",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.util.Locale)",
+          "result": "java.text.DecimalFormatSymbols",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInternationalCurrencySymbol()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinusSign()",
+          "result": "char",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMonetaryDecimalSeparator()",
+          "result": "char",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMonetaryGroupingSeparator()",
+          "result": "char",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNaN()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPatternSeparator()",
+          "result": "char",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPerMill()",
+          "result": "char",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPercent()",
+          "result": "char",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getZeroDigit()",
+          "result": "char",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCurrency(java.util.Currency)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCurrencySymbol(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDecimalSeparator(char)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDigit(char)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setExponentSeparator(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setGroupingSeparator(char)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInfinity(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInternationalCurrencySymbol(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMinusSign(char)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMonetaryDecimalSeparator(char)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMonetaryGroupingSeparator(char)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNaN(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPatternSeparator(char)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPerMill(char)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPercent(char)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setZeroDigit(char)",
+          "result": "void",
+          "declaredBy": "java.text.DecimalFormatSymbols",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.FieldPosition",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/FieldPosition.html",
+      "sourceEntry": "java.base/java/text/FieldPosition.java",
+      "sourceSha256": "1538a9072bbc1af3e9d249f62e77406e1ba19e8ab39c72b98a7a6175a55b6180",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.text.Format$Field)",
+          "result": "void",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.text.Format$Field,int)",
+          "result": "void",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeginIndex()",
+          "result": "int",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEndIndex()",
+          "result": "int",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getField()",
+          "result": "int",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFieldAttribute()",
+          "result": "java.text.Format$Field",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBeginIndex(int)",
+          "result": "void",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEndIndex(int)",
+          "result": "void",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.FieldPosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.Format",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/Format.html",
+      "sourceEntry": "java.base/java/text/Format.java",
+      "sourceSha256": "d806e4fa58985a6e1ac7a8e3126df4658f72180ecb982fbeed209187fa830347",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.Format",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.Format",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.lang.Object)",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.Format",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.Format",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "formatToCharacterIterator(java.lang.Object)",
+          "result": "java.text.AttributedCharacterIterator",
+          "declaredBy": "java.text.Format",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseObject(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.Format",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseObject(java.lang.String,java.text.ParsePosition)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.Format",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.Format$Field",
+      "kind": "class",
+      "parents": [
+        "java.text.AttributedCharacterIterator$Attribute"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/Format.Field.html",
+      "sourceEntry": "java.base/java/text/Format.java",
+      "sourceSha256": "d806e4fa58985a6e1ac7a8e3126df4658f72180ecb982fbeed209187fa830347",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.Format$Field",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.MessageFormat",
+      "kind": "class",
+      "parents": [
+        "java.text.Format"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/MessageFormat.html",
+      "sourceEntry": "java.base/java/text/MessageFormat.java",
+      "sourceSha256": "1f62fecccaec0d0964625dee672cb9067d37bbb520e127d647dda7097ce6266d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.util.Locale)",
+          "result": "void",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "applyPattern(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.lang.Object[],java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.lang.String,java.lang.Object[])",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "formatToCharacterIterator(java.lang.Object)",
+          "result": "java.text.AttributedCharacterIterator",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormats()",
+          "result": "java.text.Format[]",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormatsByArgumentIndex()",
+          "result": "java.text.Format[]",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String)",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String,java.text.ParsePosition)",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseObject(java.lang.String,java.text.ParsePosition)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFormat(int,java.text.Format)",
+          "result": "void",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFormatByArgumentIndex(int,java.text.Format)",
+          "result": "void",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFormats(java.text.Format[])",
+          "result": "void",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFormatsByArgumentIndex(java.text.Format[])",
+          "result": "void",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocale(java.util.Locale)",
+          "result": "void",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toPattern()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.MessageFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.MessageFormat$Field",
+      "kind": "class",
+      "parents": [
+        "java.text.Format$Field"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/MessageFormat.Field.html",
+      "sourceEntry": "java.base/java/text/MessageFormat.java",
+      "sourceSha256": "1f62fecccaec0d0964625dee672cb9067d37bbb520e127d647dda7097ce6266d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.MessageFormat$Field",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ARGUMENT",
+          "result": "java.text.MessageFormat$Field",
+          "declaredBy": "java.text.MessageFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "readResolve()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.MessageFormat$Field",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.Normalizer",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/Normalizer.html",
+      "sourceEntry": "java.base/java/text/Normalizer.java",
+      "sourceSha256": "4aa05db90e28d6f26a13bce4c85bee57cb98896634316efbee2437a4f1256610",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "isNormalized(java.lang.CharSequence,java.text.Normalizer$Form)",
+          "result": "boolean",
+          "declaredBy": "java.text.Normalizer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "normalize(java.lang.CharSequence,java.text.Normalizer$Form)",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.Normalizer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.Normalizer$Form",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/Normalizer.Form.html",
+      "sourceEntry": "java.base/java/text/Normalizer.java",
+      "sourceSha256": "4aa05db90e28d6f26a13bce4c85bee57cb98896634316efbee2437a4f1256610",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NFC",
+          "result": "java.text.Normalizer$Form",
+          "declaredBy": "java.text.Normalizer$Form",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NFD",
+          "result": "java.text.Normalizer$Form",
+          "declaredBy": "java.text.Normalizer$Form",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NFKC",
+          "result": "java.text.Normalizer$Form",
+          "declaredBy": "java.text.Normalizer$Form",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NFKD",
+          "result": "java.text.Normalizer$Form",
+          "declaredBy": "java.text.Normalizer$Form",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.text.Normalizer$Form",
+          "declaredBy": "java.text.Normalizer$Form",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.text.Normalizer$Form[]",
+          "declaredBy": "java.text.Normalizer$Form",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.NumberFormat",
+      "kind": "class",
+      "parents": [
+        "java.text.Format"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/NumberFormat.html",
+      "sourceEntry": "java.base/java/text/NumberFormat.java",
+      "sourceSha256": "8ecfab357e57ba593406a7ab181b862116a0c2275db5ebdba9526638921b5810",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "FRACTION_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTEGER_FIELD",
+          "result": "int",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(double)",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(double,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(long)",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(long,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAvailableLocales()",
+          "result": "java.util.Locale[]",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompactNumberInstance()",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompactNumberInstance(java.util.Locale,java.text.NumberFormat$Style)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrency()",
+          "result": "java.util.Currency",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrencyInstance()",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrencyInstance(java.util.Locale)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance()",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.util.Locale)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIntegerInstance()",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIntegerInstance(java.util.Locale)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaximumFractionDigits()",
+          "result": "int",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaximumIntegerDigits()",
+          "result": "int",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinimumFractionDigits()",
+          "result": "int",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinimumIntegerDigits()",
+          "result": "int",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumberInstance()",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumberInstance(java.util.Locale)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPercentInstance()",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPercentInstance(java.util.Locale)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRoundingMode()",
+          "result": "java.math.RoundingMode",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isGroupingUsed()",
+          "result": "boolean",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isParseIntegerOnly()",
+          "result": "boolean",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String)",
+          "result": "java.lang.Number",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String,java.text.ParsePosition)",
+          "result": "java.lang.Number",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parseObject(java.lang.String,java.text.ParsePosition)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCurrency(java.util.Currency)",
+          "result": "void",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setGroupingUsed(boolean)",
+          "result": "void",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaximumFractionDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaximumIntegerDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMinimumFractionDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMinimumIntegerDigits(int)",
+          "result": "void",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setParseIntegerOnly(boolean)",
+          "result": "void",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRoundingMode(java.math.RoundingMode)",
+          "result": "void",
+          "declaredBy": "java.text.NumberFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.NumberFormat$Field",
+      "kind": "class",
+      "parents": [
+        "java.text.Format$Field"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/NumberFormat.Field.html",
+      "sourceEntry": "java.base/java/text/NumberFormat.java",
+      "sourceSha256": "8ecfab357e57ba593406a7ab181b862116a0c2275db5ebdba9526638921b5810",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "CURRENCY",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DECIMAL_SEPARATOR",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EXPONENT",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EXPONENT_SIGN",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EXPONENT_SYMBOL",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FRACTION",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GROUPING_SEPARATOR",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTEGER",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PERCENT",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PERMILLE",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PREFIX",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SIGN",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SUFFIX",
+          "result": "java.text.NumberFormat$Field",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "readResolve()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.NumberFormat$Field",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.NumberFormat$Style",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/NumberFormat.Style.html",
+      "sourceEntry": "java.base/java/text/NumberFormat.java",
+      "sourceSha256": "8ecfab357e57ba593406a7ab181b862116a0c2275db5ebdba9526638921b5810",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "LONG",
+          "result": "java.text.NumberFormat$Style",
+          "declaredBy": "java.text.NumberFormat$Style",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHORT",
+          "result": "java.text.NumberFormat$Style",
+          "declaredBy": "java.text.NumberFormat$Style",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.text.NumberFormat$Style",
+          "declaredBy": "java.text.NumberFormat$Style",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.text.NumberFormat$Style[]",
+          "declaredBy": "java.text.NumberFormat$Style",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.ParseException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/ParseException.html",
+      "sourceEntry": "java.base/java/text/ParseException.java",
+      "sourceSha256": "3ad90e71557f2f38bd6c874499038313eadf94fcc944f59fdc60836d7235ff76",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "java.text.ParseException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getErrorOffset()",
+          "result": "int",
+          "declaredBy": "java.text.ParseException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.ParsePosition",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/ParsePosition.html",
+      "sourceEntry": "java.base/java/text/ParsePosition.java",
+      "sourceSha256": "f90d0732f8d5610c9e24c6cd3a2e8f8914760796820ab699ff8b816f685c7510",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.text.ParsePosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.ParsePosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getErrorIndex()",
+          "result": "int",
+          "declaredBy": "java.text.ParsePosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndex()",
+          "result": "int",
+          "declaredBy": "java.text.ParsePosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.ParsePosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setErrorIndex(int)",
+          "result": "void",
+          "declaredBy": "java.text.ParsePosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIndex(int)",
+          "result": "void",
+          "declaredBy": "java.text.ParsePosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.ParsePosition",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.RuleBasedCollator",
+      "kind": "class",
+      "parents": [
+        "java.text.Collator"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/RuleBasedCollator.html",
+      "sourceEntry": "java.base/java/text/RuleBasedCollator.java",
+      "sourceSha256": "4d7ceda3394a409a99cbab019304ee640d25332b0a0806c73f3d60d326afed28",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.RuleBasedCollator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.RuleBasedCollator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compare(java.lang.String,java.lang.String)",
+          "result": "int",
+          "declaredBy": "java.text.RuleBasedCollator",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.RuleBasedCollator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCollationElementIterator(java.lang.String)",
+          "result": "java.text.CollationElementIterator",
+          "declaredBy": "java.text.RuleBasedCollator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCollationElementIterator(java.text.CharacterIterator)",
+          "result": "java.text.CollationElementIterator",
+          "declaredBy": "java.text.RuleBasedCollator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCollationKey(java.lang.String)",
+          "result": "java.text.CollationKey",
+          "declaredBy": "java.text.RuleBasedCollator",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRules()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.RuleBasedCollator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.RuleBasedCollator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.SimpleDateFormat",
+      "kind": "class",
+      "parents": [
+        "java.text.DateFormat"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/SimpleDateFormat.html",
+      "sourceEntry": "java.base/java/text/SimpleDateFormat.java",
+      "sourceSha256": "8d674368364aaa83bac9566fd8e2a4eb4ae3e845287a774d1cd4b5d863518255",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.text.DateFormatSymbols)",
+          "result": "void",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.util.Locale)",
+          "result": "void",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "applyLocalizedPattern(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "applyPattern(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "format(java.util.Date,java.lang.StringBuffer,java.text.FieldPosition)",
+          "result": "java.lang.StringBuffer",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "formatToCharacterIterator(java.lang.Object)",
+          "result": "java.text.AttributedCharacterIterator",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get2DigitYearStart()",
+          "result": "java.util.Date",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateFormatSymbols()",
+          "result": "java.text.DateFormatSymbols",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String,java.text.ParsePosition)",
+          "result": "java.util.Date",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "set2DigitYearStart(java.util.Date)",
+          "result": "void",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDateFormatSymbols(java.text.DateFormatSymbols)",
+          "result": "void",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toLocalizedPattern()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toPattern()",
+          "result": "java.lang.String",
+          "declaredBy": "java.text.SimpleDateFormat",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.StringCharacterIterator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.text.CharacterIterator"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/StringCharacterIterator.html",
+      "sourceEntry": "java.base/java/text/StringCharacterIterator.java",
+      "sourceSha256": "70e377a98891d4a89c71a939504b9f03e80714c877e82d77a64af8caa0b9bea0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,int,int,int)",
+          "result": "void",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "current()",
+          "result": "char",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "first()",
+          "result": "char",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeginIndex()",
+          "result": "int",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEndIndex()",
+          "result": "int",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndex()",
+          "result": "int",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "last()",
+          "result": "char",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "next()",
+          "result": "char",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previous()",
+          "result": "char",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIndex(int)",
+          "result": "char",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setText(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.text.StringCharacterIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2141 @@
+{
+  "name": "javax.tools",
+  "module": "java.compiler",
+  "types": [
+    {
+      "target": "javax.tools.Diagnostic",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/Diagnostic.html",
+      "sourceEntry": "java.compiler/javax/tools/Diagnostic.java",
+      "sourceSha256": "381450266f08a144a37127ed0401ae505e60fa29be3bb8228808a6736af1f8d2",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "NOPOS",
+          "result": "long",
+          "declaredBy": "javax.tools.Diagnostic",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getCode()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.Diagnostic",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnNumber()",
+          "result": "long",
+          "declaredBy": "javax.tools.Diagnostic",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getEndPosition()",
+          "result": "long",
+          "declaredBy": "javax.tools.Diagnostic",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getKind()",
+          "result": "javax.tools.Diagnostic$Kind",
+          "declaredBy": "javax.tools.Diagnostic",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLineNumber()",
+          "result": "long",
+          "declaredBy": "javax.tools.Diagnostic",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage(java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.Diagnostic",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPosition()",
+          "result": "long",
+          "declaredBy": "javax.tools.Diagnostic",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getSource()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.tools.Diagnostic",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStartPosition()",
+          "result": "long",
+          "declaredBy": "javax.tools.Diagnostic",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.Diagnostic$Kind",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html",
+      "sourceEntry": "java.compiler/javax/tools/Diagnostic.java",
+      "sourceSha256": "381450266f08a144a37127ed0401ae505e60fa29be3bb8228808a6736af1f8d2",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ERROR",
+          "result": "javax.tools.Diagnostic$Kind",
+          "declaredBy": "javax.tools.Diagnostic$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MANDATORY_WARNING",
+          "result": "javax.tools.Diagnostic$Kind",
+          "declaredBy": "javax.tools.Diagnostic$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NOTE",
+          "result": "javax.tools.Diagnostic$Kind",
+          "declaredBy": "javax.tools.Diagnostic$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OTHER",
+          "result": "javax.tools.Diagnostic$Kind",
+          "declaredBy": "javax.tools.Diagnostic$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WARNING",
+          "result": "javax.tools.Diagnostic$Kind",
+          "declaredBy": "javax.tools.Diagnostic$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.tools.Diagnostic$Kind",
+          "declaredBy": "javax.tools.Diagnostic$Kind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.tools.Diagnostic$Kind[]",
+          "declaredBy": "javax.tools.Diagnostic$Kind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.DiagnosticCollector",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.tools.DiagnosticListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/DiagnosticCollector.html",
+      "sourceEntry": "java.compiler/javax/tools/DiagnosticCollector.java",
+      "sourceSha256": "0e2ca4e9500be3375f0c0f412342688efcbaaeaee82fb3f7cefc8efdd50af8b2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.tools.DiagnosticCollector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDiagnostics()",
+          "result": "java.util.List",
+          "declaredBy": "javax.tools.DiagnosticCollector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "report(javax.tools.Diagnostic)",
+          "result": "void",
+          "declaredBy": "javax.tools.DiagnosticCollector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.DiagnosticListener",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/DiagnosticListener.html",
+      "sourceEntry": "java.compiler/javax/tools/DiagnosticListener.java",
+      "sourceSha256": "58282ddcee381dc574093fbe4daf496214018588673673fa2eaee1d221f612cd",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "report(javax.tools.Diagnostic)",
+          "result": "void",
+          "declaredBy": "javax.tools.DiagnosticListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.DocumentationTool",
+      "kind": "interface",
+      "parents": [
+        "javax.tools.Tool",
+        "javax.tools.OptionChecker"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/DocumentationTool.html",
+      "sourceEntry": "java.compiler/javax/tools/DocumentationTool.java",
+      "sourceSha256": "5d3c3e2033b22f7989387aa77bbcf032c971f734f544ec11015bdba3e19c899f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getStandardFileManager(javax.tools.DiagnosticListener,java.util.Locale,java.nio.charset.Charset)",
+          "result": "javax.tools.StandardJavaFileManager",
+          "declaredBy": "javax.tools.DocumentationTool",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTask(java.io.Writer,javax.tools.JavaFileManager,javax.tools.DiagnosticListener,java.lang.Class,java.lang.Iterable,java.lang.Iterable)",
+          "result": "javax.tools.DocumentationTool$DocumentationTask",
+          "declaredBy": "javax.tools.DocumentationTool",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.DocumentationTool$DocumentationTask",
+      "kind": "interface",
+      "parents": [
+        "java.util.concurrent.Callable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html",
+      "sourceEntry": "java.compiler/javax/tools/DocumentationTool.java",
+      "sourceSha256": "5d3c3e2033b22f7989387aa77bbcf032c971f734f544ec11015bdba3e19c899f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addModules(java.lang.Iterable)",
+          "result": "void",
+          "declaredBy": "javax.tools.DocumentationTool$DocumentationTask",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "call()",
+          "result": "java.lang.Boolean",
+          "declaredBy": "javax.tools.DocumentationTool$DocumentationTask",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocale(java.util.Locale)",
+          "result": "void",
+          "declaredBy": "javax.tools.DocumentationTool$DocumentationTask",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.DocumentationTool$Location",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "javax.tools.JavaFileManager$Location"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html",
+      "sourceEntry": "java.compiler/javax/tools/DocumentationTool.java",
+      "sourceSha256": "5d3c3e2033b22f7989387aa77bbcf032c971f734f544ec11015bdba3e19c899f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "DOCLET_PATH",
+          "result": "javax.tools.DocumentationTool$Location",
+          "declaredBy": "javax.tools.DocumentationTool$Location",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DOCUMENTATION_OUTPUT",
+          "result": "javax.tools.DocumentationTool$Location",
+          "declaredBy": "javax.tools.DocumentationTool$Location",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SNIPPET_PATH",
+          "result": "javax.tools.DocumentationTool$Location",
+          "declaredBy": "javax.tools.DocumentationTool$Location",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TAGLET_PATH",
+          "result": "javax.tools.DocumentationTool$Location",
+          "declaredBy": "javax.tools.DocumentationTool$Location",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.DocumentationTool$Location",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOutputLocation()",
+          "result": "boolean",
+          "declaredBy": "javax.tools.DocumentationTool$Location",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.tools.DocumentationTool$Location",
+          "declaredBy": "javax.tools.DocumentationTool$Location",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.tools.DocumentationTool$Location[]",
+          "declaredBy": "javax.tools.DocumentationTool$Location",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.FileObject",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/FileObject.html",
+      "sourceEntry": "java.compiler/javax/tools/FileObject.java",
+      "sourceSha256": "9c0d11bf059515487e27210fe41100246318895d0d059aa193218c0876938aa6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "delete()",
+          "result": "boolean",
+          "declaredBy": "javax.tools.FileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharContent(boolean)",
+          "result": "java.lang.CharSequence",
+          "declaredBy": "javax.tools.FileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLastModified()",
+          "result": "long",
+          "declaredBy": "javax.tools.FileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.FileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openInputStream()",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.tools.FileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openOutputStream()",
+          "result": "java.io.OutputStream",
+          "declaredBy": "javax.tools.FileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openReader(boolean)",
+          "result": "java.io.Reader",
+          "declaredBy": "javax.tools.FileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openWriter()",
+          "result": "java.io.Writer",
+          "declaredBy": "javax.tools.FileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toUri()",
+          "result": "java.net.URI",
+          "declaredBy": "javax.tools.FileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.ForwardingFileObject",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.tools.FileObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/ForwardingFileObject.html",
+      "sourceEntry": "java.compiler/javax/tools/ForwardingFileObject.java",
+      "sourceSha256": "b46dfe4715a3f05fb2738763a266fc2afad0c1fe6e30592bff8baf801fc79822",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.tools.FileObject)",
+          "result": "void",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "delete()",
+          "result": "boolean",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "fileObject",
+          "result": "javax.tools.FileObject",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharContent(boolean)",
+          "result": "java.lang.CharSequence",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLastModified()",
+          "result": "long",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openInputStream()",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openOutputStream()",
+          "result": "java.io.OutputStream",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openReader(boolean)",
+          "result": "java.io.Reader",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openWriter()",
+          "result": "java.io.Writer",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toUri()",
+          "result": "java.net.URI",
+          "declaredBy": "javax.tools.ForwardingFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.ForwardingJavaFileManager",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.tools.JavaFileManager"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html",
+      "sourceEntry": "java.compiler/javax/tools/ForwardingJavaFileManager.java",
+      "sourceSha256": "72a81345af880761ad6dc8745d004639dcf13d87b7a725341be2dfe4762a1c85",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.tools.JavaFileManager)",
+          "result": "void",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(javax.tools.JavaFileManager$Location,javax.tools.FileObject)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "fileManager",
+          "result": "javax.tools.JavaFileManager",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "flush()",
+          "result": "void",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClassLoader(javax.tools.JavaFileManager$Location)",
+          "result": "java.lang.ClassLoader",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileForInput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String)",
+          "result": "javax.tools.FileObject",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileForOutput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String,javax.tools.FileObject)",
+          "result": "javax.tools.FileObject",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileForOutputForOriginatingFiles(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String,javax.tools.FileObject[])",
+          "result": "javax.tools.FileObject",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileForInput(javax.tools.JavaFileManager$Location,java.lang.String,javax.tools.JavaFileObject$Kind)",
+          "result": "javax.tools.JavaFileObject",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileForOutput(javax.tools.JavaFileManager$Location,java.lang.String,javax.tools.JavaFileObject$Kind,javax.tools.FileObject)",
+          "result": "javax.tools.JavaFileObject",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileForOutputForOriginatingFiles(javax.tools.JavaFileManager$Location,java.lang.String,javax.tools.JavaFileObject$Kind,javax.tools.FileObject[])",
+          "result": "javax.tools.JavaFileObject",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocationForModule(javax.tools.JavaFileManager$Location,java.lang.String)",
+          "result": "javax.tools.JavaFileManager$Location",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocationForModule(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject)",
+          "result": "javax.tools.JavaFileManager$Location",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServiceLoader(javax.tools.JavaFileManager$Location,java.lang.Class)",
+          "result": "java.util.ServiceLoader",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "handleOption(java.lang.String,java.util.Iterator)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasLocation(javax.tools.JavaFileManager$Location)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "inferBinaryName(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "inferModuleName(javax.tools.JavaFileManager$Location)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSameFile(javax.tools.FileObject,javax.tools.FileObject)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSupportedOption(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "list(javax.tools.JavaFileManager$Location,java.lang.String,java.util.Set,boolean)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "listLocationsForModules(javax.tools.JavaFileManager$Location)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.ForwardingJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.ForwardingJavaFileObject",
+      "kind": "class",
+      "parents": [
+        "javax.tools.ForwardingFileObject",
+        "javax.tools.JavaFileObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html",
+      "sourceEntry": "java.compiler/javax/tools/ForwardingJavaFileObject.java",
+      "sourceSha256": "b6459770aae4e7b559c4e72d530f3a72ccee9a408c1e456f471d2ce381f7b8b7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.tools.JavaFileObject)",
+          "result": "void",
+          "declaredBy": "javax.tools.ForwardingJavaFileObject",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessLevel()",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.tools.ForwardingJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKind()",
+          "result": "javax.tools.JavaFileObject$Kind",
+          "declaredBy": "javax.tools.ForwardingJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNestingKind()",
+          "result": "javax.lang.model.element.NestingKind",
+          "declaredBy": "javax.tools.ForwardingJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNameCompatible(java.lang.String,javax.tools.JavaFileObject$Kind)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.ForwardingJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.JavaCompiler",
+      "kind": "interface",
+      "parents": [
+        "javax.tools.Tool",
+        "javax.tools.OptionChecker"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/JavaCompiler.html",
+      "sourceEntry": "java.compiler/javax/tools/JavaCompiler.java",
+      "sourceSha256": "869b3969905c0d620fd5d5a395c5d56d2a3b00bf93a121a412703be169066ff0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getStandardFileManager(javax.tools.DiagnosticListener,java.util.Locale,java.nio.charset.Charset)",
+          "result": "javax.tools.StandardJavaFileManager",
+          "declaredBy": "javax.tools.JavaCompiler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTask(java.io.Writer,javax.tools.JavaFileManager,javax.tools.DiagnosticListener,java.lang.Iterable,java.lang.Iterable,java.lang.Iterable)",
+          "result": "javax.tools.JavaCompiler$CompilationTask",
+          "declaredBy": "javax.tools.JavaCompiler",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.JavaCompiler$CompilationTask",
+      "kind": "interface",
+      "parents": [
+        "java.util.concurrent.Callable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html",
+      "sourceEntry": "java.compiler/javax/tools/JavaCompiler.java",
+      "sourceSha256": "869b3969905c0d620fd5d5a395c5d56d2a3b00bf93a121a412703be169066ff0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addModules(java.lang.Iterable)",
+          "result": "void",
+          "declaredBy": "javax.tools.JavaCompiler$CompilationTask",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "call()",
+          "result": "java.lang.Boolean",
+          "declaredBy": "javax.tools.JavaCompiler$CompilationTask",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocale(java.util.Locale)",
+          "result": "void",
+          "declaredBy": "javax.tools.JavaCompiler$CompilationTask",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setProcessors(java.lang.Iterable)",
+          "result": "void",
+          "declaredBy": "javax.tools.JavaCompiler$CompilationTask",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.JavaFileManager",
+      "kind": "interface",
+      "parents": [
+        "java.io.Closeable",
+        "java.io.Flushable",
+        "javax.tools.OptionChecker"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/JavaFileManager.html",
+      "sourceEntry": "java.compiler/javax/tools/JavaFileManager.java",
+      "sourceSha256": "69ce22a1a5f56ec90639d917a9c03647bb4b0f3ea4c8ef1c62dd37dff3e87081",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(javax.tools.JavaFileManager$Location,javax.tools.FileObject)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flush()",
+          "result": "void",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClassLoader(javax.tools.JavaFileManager$Location)",
+          "result": "java.lang.ClassLoader",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileForInput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String)",
+          "result": "javax.tools.FileObject",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileForOutput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String,javax.tools.FileObject)",
+          "result": "javax.tools.FileObject",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFileForOutputForOriginatingFiles(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String,javax.tools.FileObject[])",
+          "result": "javax.tools.FileObject",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileForInput(javax.tools.JavaFileManager$Location,java.lang.String,javax.tools.JavaFileObject$Kind)",
+          "result": "javax.tools.JavaFileObject",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileForOutput(javax.tools.JavaFileManager$Location,java.lang.String,javax.tools.JavaFileObject$Kind,javax.tools.FileObject)",
+          "result": "javax.tools.JavaFileObject",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileForOutputForOriginatingFiles(javax.tools.JavaFileManager$Location,java.lang.String,javax.tools.JavaFileObject$Kind,javax.tools.FileObject[])",
+          "result": "javax.tools.JavaFileObject",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocationForModule(javax.tools.JavaFileManager$Location,java.lang.String)",
+          "result": "javax.tools.JavaFileManager$Location",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocationForModule(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject)",
+          "result": "javax.tools.JavaFileManager$Location",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServiceLoader(javax.tools.JavaFileManager$Location,java.lang.Class)",
+          "result": "java.util.ServiceLoader",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "handleOption(java.lang.String,java.util.Iterator)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasLocation(javax.tools.JavaFileManager$Location)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "inferBinaryName(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "inferModuleName(javax.tools.JavaFileManager$Location)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSameFile(javax.tools.FileObject,javax.tools.FileObject)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "list(javax.tools.JavaFileManager$Location,java.lang.String,java.util.Set,boolean)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "listLocationsForModules(javax.tools.JavaFileManager$Location)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.JavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.JavaFileManager$Location",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html",
+      "sourceEntry": "java.compiler/javax/tools/JavaFileManager.java",
+      "sourceSha256": "69ce22a1a5f56ec90639d917a9c03647bb4b0f3ea4c8ef1c62dd37dff3e87081",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.JavaFileManager$Location",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isModuleOrientedLocation()",
+          "result": "boolean",
+          "declaredBy": "javax.tools.JavaFileManager$Location",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOutputLocation()",
+          "result": "boolean",
+          "declaredBy": "javax.tools.JavaFileManager$Location",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.JavaFileObject",
+      "kind": "interface",
+      "parents": [
+        "javax.tools.FileObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/JavaFileObject.html",
+      "sourceEntry": "java.compiler/javax/tools/JavaFileObject.java",
+      "sourceSha256": "f176687650466c9cf43d339253335f8a09ee5332e4bee21f924fb826449fa07c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAccessLevel()",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.tools.JavaFileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKind()",
+          "result": "javax.tools.JavaFileObject$Kind",
+          "declaredBy": "javax.tools.JavaFileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNestingKind()",
+          "result": "javax.lang.model.element.NestingKind",
+          "declaredBy": "javax.tools.JavaFileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNameCompatible(java.lang.String,javax.tools.JavaFileObject$Kind)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.JavaFileObject",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.JavaFileObject$Kind",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html",
+      "sourceEntry": "java.compiler/javax/tools/JavaFileObject.java",
+      "sourceSha256": "f176687650466c9cf43d339253335f8a09ee5332e4bee21f924fb826449fa07c",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CLASS",
+          "result": "javax.tools.JavaFileObject$Kind",
+          "declaredBy": "javax.tools.JavaFileObject$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HTML",
+          "result": "javax.tools.JavaFileObject$Kind",
+          "declaredBy": "javax.tools.JavaFileObject$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OTHER",
+          "result": "javax.tools.JavaFileObject$Kind",
+          "declaredBy": "javax.tools.JavaFileObject$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SOURCE",
+          "result": "javax.tools.JavaFileObject$Kind",
+          "declaredBy": "javax.tools.JavaFileObject$Kind",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "extension",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.JavaFileObject$Kind",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.tools.JavaFileObject$Kind",
+          "declaredBy": "javax.tools.JavaFileObject$Kind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.tools.JavaFileObject$Kind[]",
+          "declaredBy": "javax.tools.JavaFileObject$Kind",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.OptionChecker",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/OptionChecker.html",
+      "sourceEntry": "java.compiler/javax/tools/OptionChecker.java",
+      "sourceSha256": "f39b6fab02549fbf44eeec6d0314c94aefcc632024024feb3ba6b4295086e84a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "isSupportedOption(java.lang.String)",
+          "result": "int",
+          "declaredBy": "javax.tools.OptionChecker",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.SimpleJavaFileObject",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.tools.JavaFileObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html",
+      "sourceEntry": "java.compiler/javax/tools/SimpleJavaFileObject.java",
+      "sourceSha256": "4c7f1eee1c8b89638b9e181573d2ef65f989bf436a8290a08e585fa36a38d05f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URI,javax.tools.JavaFileObject$Kind)",
+          "result": "void",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "delete()",
+          "result": "boolean",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessLevel()",
+          "result": "javax.lang.model.element.Modifier",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharContent(boolean)",
+          "result": "java.lang.CharSequence",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKind()",
+          "result": "javax.tools.JavaFileObject$Kind",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLastModified()",
+          "result": "long",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNestingKind()",
+          "result": "javax.lang.model.element.NestingKind",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNameCompatible(java.lang.String,javax.tools.JavaFileObject$Kind)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "kind",
+          "result": "javax.tools.JavaFileObject$Kind",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "openInputStream()",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openOutputStream()",
+          "result": "java.io.OutputStream",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openReader(boolean)",
+          "result": "java.io.Reader",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "openWriter()",
+          "result": "java.io.Writer",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toUri()",
+          "result": "java.net.URI",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "uri",
+          "result": "java.net.URI",
+          "declaredBy": "javax.tools.SimpleJavaFileObject",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.StandardJavaFileManager",
+      "kind": "interface",
+      "parents": [
+        "javax.tools.JavaFileManager"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html",
+      "sourceEntry": "java.compiler/javax/tools/StandardJavaFileManager.java",
+      "sourceSha256": "a9a4384b2a094c0a204d46a77c4f1b77e43cc76dfe473989cf368cad8f167880",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "asPath(javax.tools.FileObject)",
+          "result": "java.nio.file.Path",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileObjects(java.io.File[])",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileObjects(java.lang.String[])",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileObjects(java.nio.file.Path[])",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileObjectsFromFiles(java.lang.Iterable)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileObjectsFromPaths(java.lang.Iterable)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileObjectsFromPaths(java.util.Collection)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJavaFileObjectsFromStrings(java.lang.Iterable)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocation(javax.tools.JavaFileManager$Location)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocationAsPaths(javax.tools.JavaFileManager$Location)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSameFile(javax.tools.FileObject,javax.tools.FileObject)",
+          "result": "boolean",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocation(javax.tools.JavaFileManager$Location,java.lang.Iterable)",
+          "result": "void",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocationForModule(javax.tools.JavaFileManager$Location,java.lang.String,java.util.Collection)",
+          "result": "void",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocationFromPaths(javax.tools.JavaFileManager$Location,java.util.Collection)",
+          "result": "void",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPathFactory(javax.tools.StandardJavaFileManager$PathFactory)",
+          "result": "void",
+          "declaredBy": "javax.tools.StandardJavaFileManager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.StandardJavaFileManager$PathFactory",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/StandardJavaFileManager.PathFactory.html",
+      "sourceEntry": "java.compiler/javax/tools/StandardJavaFileManager.java",
+      "sourceSha256": "a9a4384b2a094c0a204d46a77c4f1b77e43cc76dfe473989cf368cad8f167880",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getPath(java.lang.String,java.lang.String[])",
+          "result": "java.nio.file.Path",
+          "declaredBy": "javax.tools.StandardJavaFileManager$PathFactory",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.StandardLocation",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum",
+        "javax.tools.JavaFileManager$Location"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/StandardLocation.html",
+      "sourceEntry": "java.compiler/javax/tools/StandardLocation.java",
+      "sourceSha256": "123c0558bffa8fb465ef26cbf16bc47dfe9640ebceafbbe5f2dee0dca8306336",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ANNOTATION_PROCESSOR_MODULE_PATH",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ANNOTATION_PROCESSOR_PATH",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CLASS_OUTPUT",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CLASS_PATH",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODULE_PATH",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODULE_SOURCE_PATH",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NATIVE_HEADER_OUTPUT",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PATCH_MODULE_PATH",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PLATFORM_CLASS_PATH",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SOURCE_OUTPUT",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SOURCE_PATH",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SYSTEM_MODULES",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UPGRADE_MODULE_PATH",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isModuleOrientedLocation()",
+          "result": "boolean",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOutputLocation()",
+          "result": "boolean",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "locationFor(java.lang.String)",
+          "result": "javax.tools.JavaFileManager$Location",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "javax.tools.StandardLocation",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "javax.tools.StandardLocation[]",
+          "declaredBy": "javax.tools.StandardLocation",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.Tool",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/Tool.html",
+      "sourceEntry": "java.compiler/javax/tools/Tool.java",
+      "sourceSha256": "2083e71344c76ed0cea76c0636f906a7ea6ae20ffd0bb8423bf2632728ffb90b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getSourceVersions()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.tools.Tool",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "name()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.tools.Tool",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "run(java.io.InputStream,java.io.OutputStream,java.io.OutputStream,java.lang.String[])",
+          "result": "int",
+          "declaredBy": "javax.tools.Tool",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.tools.ToolProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/tools/ToolProvider.html",
+      "sourceEntry": "java.compiler/javax/tools/ToolProvider.java",
+      "sourceSha256": "712fdeccf7fb16fdd50a4e98d22eade3c559ce2e18ca8553c98b0e4f685899a3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getSystemDocumentationTool()",
+          "result": "javax.tools.DocumentationTool",
+          "declaredBy": "javax.tools.ToolProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemJavaCompiler()",
+          "result": "javax.tools.JavaCompiler",
+          "declaredBy": "javax.tools.ToolProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSystemToolClassLoader()",
+          "result": "java.lang.ClassLoader",
+          "declaredBy": "javax.tools.ToolProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

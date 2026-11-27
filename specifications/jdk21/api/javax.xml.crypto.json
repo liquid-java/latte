@@ -1,0 +1,863 @@
+{
+  "name": "javax.xml.crypto",
+  "module": "java.xml.crypto",
+  "types": [
+    {
+      "target": "javax.xml.crypto.AlgorithmMethod",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/AlgorithmMethod.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/AlgorithmMethod.java",
+      "sourceSha256": "a457a0521ff8b34cc8970baedcf0f7280b103046153f2af8d6cb778a6ad03700",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.AlgorithmMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameterSpec()",
+          "result": "java.security.spec.AlgorithmParameterSpec",
+          "declaredBy": "javax.xml.crypto.AlgorithmMethod",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.Data",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/Data.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/Data.java",
+      "sourceSha256": "cbdbb7d003520ab5d7c48e4f5754ac61c57a30c0ab575cbf6b4c2ad595a7a6b8",
+      "members": []
+    },
+    {
+      "target": "javax.xml.crypto.KeySelector",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/KeySelector.java",
+      "sourceSha256": "c54790d76340c33845bc06c855f9de4ef720bceaa0fdc66d01ebe6dc521dffc9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.KeySelector",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "select(javax.xml.crypto.dsig.keyinfo.KeyInfo,javax.xml.crypto.KeySelector$Purpose,javax.xml.crypto.AlgorithmMethod,javax.xml.crypto.XMLCryptoContext)",
+          "result": "javax.xml.crypto.KeySelectorResult",
+          "declaredBy": "javax.xml.crypto.KeySelector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "singletonKeySelector(java.security.Key)",
+          "result": "javax.xml.crypto.KeySelector",
+          "declaredBy": "javax.xml.crypto.KeySelector",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.KeySelector$Purpose",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/KeySelector.java",
+      "sourceSha256": "c54790d76340c33845bc06c855f9de4ef720bceaa0fdc66d01ebe6dc521dffc9",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "DECRYPT",
+          "result": "javax.xml.crypto.KeySelector$Purpose",
+          "declaredBy": "javax.xml.crypto.KeySelector$Purpose",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENCRYPT",
+          "result": "javax.xml.crypto.KeySelector$Purpose",
+          "declaredBy": "javax.xml.crypto.KeySelector$Purpose",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SIGN",
+          "result": "javax.xml.crypto.KeySelector$Purpose",
+          "declaredBy": "javax.xml.crypto.KeySelector$Purpose",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VERIFY",
+          "result": "javax.xml.crypto.KeySelector$Purpose",
+          "declaredBy": "javax.xml.crypto.KeySelector$Purpose",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.KeySelector$Purpose",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.KeySelectorException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/KeySelectorException.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/KeySelectorException.java",
+      "sourceSha256": "36e943d8898a183d4f73330515cec455881d4bb064d254216f8b47eb1f15fe54",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.KeySelectorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.KeySelectorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.KeySelectorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.KeySelectorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.crypto.KeySelectorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.KeySelectorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintStream)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.KeySelectorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintWriter)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.KeySelectorException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.KeySelectorResult",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/KeySelectorResult.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/KeySelectorResult.java",
+      "sourceSha256": "5e256c90e4df04e9f55a5f5873327bbdc7e8dbf0f292f9c69f06b58b687752bc",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getKey()",
+          "result": "java.security.Key",
+          "declaredBy": "javax.xml.crypto.KeySelectorResult",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.MarshalException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/MarshalException.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/MarshalException.java",
+      "sourceSha256": "995cbe4439a33470319e619dd60d0c0b408ed3dc21c46bca1a7a07e4162e58b9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.MarshalException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.MarshalException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.MarshalException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.MarshalException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.crypto.MarshalException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.MarshalException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintStream)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.MarshalException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintWriter)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.MarshalException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.NoSuchMechanismException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/NoSuchMechanismException.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/NoSuchMechanismException.java",
+      "sourceSha256": "37c82e0d8c7f1bff053085dc3b51d002b6c61897fcad19da57cbb6d75a3f04e4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.NoSuchMechanismException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.NoSuchMechanismException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.NoSuchMechanismException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.NoSuchMechanismException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.crypto.NoSuchMechanismException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.NoSuchMechanismException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintStream)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.NoSuchMechanismException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintWriter)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.NoSuchMechanismException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.NodeSetData",
+      "kind": "interface",
+      "parents": [
+        "javax.xml.crypto.Data",
+        "java.lang.Iterable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/NodeSetData.java",
+      "sourceSha256": "4d3276a12e768b725eed942bcdfe4ede7b302573def08acbd03e4d86c689e085",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.Iterator",
+          "declaredBy": "javax.xml.crypto.NodeSetData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.OctetStreamData",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.xml.crypto.Data"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/OctetStreamData.java",
+      "sourceSha256": "54426797d300bd9618902b9f1a99e27f7691dc64415a593487014c2acf29d118",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.OctetStreamData",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.io.InputStream,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.OctetStreamData",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMimeType()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.OctetStreamData",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOctetStream()",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.xml.crypto.OctetStreamData",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURI()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.OctetStreamData",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.URIDereferencer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/URIDereferencer.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/URIDereferencer.java",
+      "sourceSha256": "51f9abc8b673357d0c043d67fa5389b033b2fa53927a102ceccc5465717e1c5c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "dereference(javax.xml.crypto.URIReference,javax.xml.crypto.XMLCryptoContext)",
+          "result": "javax.xml.crypto.Data",
+          "declaredBy": "javax.xml.crypto.URIDereferencer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.URIReference",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/URIReference.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/URIReference.java",
+      "sourceSha256": "3d2efdba1dfd753703564738cb1269de08fbf572d26a8985725d0d4282c749b4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.URIReference",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURI()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.URIReference",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.URIReferenceException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/URIReferenceException.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/URIReferenceException.java",
+      "sourceSha256": "ca1e8213f11b8b0fda14f78b2f7f2a7007cbd182b69e4acf0724ea63f872f283",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.URIReferenceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.URIReferenceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.URIReferenceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable,javax.xml.crypto.URIReference)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.URIReferenceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.URIReferenceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.crypto.URIReferenceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURIReference()",
+          "result": "javax.xml.crypto.URIReference",
+          "declaredBy": "javax.xml.crypto.URIReferenceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace()",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.URIReferenceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintStream)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.URIReferenceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printStackTrace(java.io.PrintWriter)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.URIReferenceException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.XMLCryptoContext",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/XMLCryptoContext.java",
+      "sourceSha256": "49053aa0333def555f9123a6329ed5a6023b499ec00b0b46715fcc850807f5d8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBaseURI()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultNamespacePrefix()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeySelector()",
+          "result": "javax.xml.crypto.KeySelector",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNamespacePrefix(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURIDereferencer()",
+          "result": "javax.xml.crypto.URIDereferencer",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.lang.Object,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putNamespacePrefix(java.lang.String,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBaseURI(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDefaultNamespacePrefix(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setKeySelector(javax.xml.crypto.KeySelector)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setProperty(java.lang.String,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setURIDereferencer(javax.xml.crypto.URIDereferencer)",
+          "result": "void",
+          "declaredBy": "javax.xml.crypto.XMLCryptoContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.crypto.XMLStructure",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml.crypto/javax/xml/crypto/XMLStructure.html",
+      "sourceEntry": "java.xml.crypto/javax/xml/crypto/XMLStructure.java",
+      "sourceSha256": "c0da4a199bd14be2bb5cee2473a648e7fc3f48816fc8079cc2bb6cbab28d7741",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "isFeatureSupported(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.crypto.XMLStructure",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

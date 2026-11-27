@@ -1,0 +1,288 @@
+{
+  "name": "java.text.spi",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.text.spi.BreakIteratorProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/spi/BreakIteratorProvider.html",
+      "sourceEntry": "java.base/java/text/spi/BreakIteratorProvider.java",
+      "sourceSha256": "30513d8a9bc31b8bcc261aa6eef570f9e727e2021eb6b31a65c6c5dc1d9ca259",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.spi.BreakIteratorProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharacterInstance(java.util.Locale)",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.spi.BreakIteratorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLineInstance(java.util.Locale)",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.spi.BreakIteratorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSentenceInstance(java.util.Locale)",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.spi.BreakIteratorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWordInstance(java.util.Locale)",
+          "result": "java.text.BreakIterator",
+          "declaredBy": "java.text.spi.BreakIteratorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.spi.CollatorProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/spi/CollatorProvider.html",
+      "sourceEntry": "java.base/java/text/spi/CollatorProvider.java",
+      "sourceSha256": "f2801b95ce4120f75e6b7df60246d12d59cf7124d235c923508cebb2d0be7615",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.spi.CollatorProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.util.Locale)",
+          "result": "java.text.Collator",
+          "declaredBy": "java.text.spi.CollatorProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.spi.DateFormatProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/spi/DateFormatProvider.html",
+      "sourceEntry": "java.base/java/text/spi/DateFormatProvider.java",
+      "sourceSha256": "33d1c7c14cef498ae4e17f572ed2405e41418c44234914ebcafbadbeabe79091",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.spi.DateFormatProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateInstance(int,java.util.Locale)",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.spi.DateFormatProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDateTimeInstance(int,int,java.util.Locale)",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.spi.DateFormatProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTimeInstance(int,java.util.Locale)",
+          "result": "java.text.DateFormat",
+          "declaredBy": "java.text.spi.DateFormatProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.spi.DateFormatSymbolsProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/spi/DateFormatSymbolsProvider.html",
+      "sourceEntry": "java.base/java/text/spi/DateFormatSymbolsProvider.java",
+      "sourceSha256": "23def6732db0ae012f12a0192c7a6298635e3fc36894661ed7415799a61fe672",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.spi.DateFormatSymbolsProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.util.Locale)",
+          "result": "java.text.DateFormatSymbols",
+          "declaredBy": "java.text.spi.DateFormatSymbolsProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.spi.DecimalFormatSymbolsProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/spi/DecimalFormatSymbolsProvider.html",
+      "sourceEntry": "java.base/java/text/spi/DecimalFormatSymbolsProvider.java",
+      "sourceSha256": "68694b3da815bee4c323cef2392fe01ff0521ed817fcaa13da3b62656d3418a9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.spi.DecimalFormatSymbolsProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.util.Locale)",
+          "result": "java.text.DecimalFormatSymbols",
+          "declaredBy": "java.text.spi.DecimalFormatSymbolsProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.text.spi.NumberFormatProvider",
+      "kind": "class",
+      "parents": [
+        "java.util.spi.LocaleServiceProvider"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/text/spi/NumberFormatProvider.html",
+      "sourceEntry": "java.base/java/text/spi/NumberFormatProvider.java",
+      "sourceSha256": "8ddeb54ffe8f40934df6da8618c99f1e0cc427b1ea323e2a3b3be5a7047420b1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.text.spi.NumberFormatProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompactNumberInstance(java.util.Locale,java.text.NumberFormat$Style)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.spi.NumberFormatProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrencyInstance(java.util.Locale)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.spi.NumberFormatProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIntegerInstance(java.util.Locale)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.spi.NumberFormatProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNumberInstance(java.util.Locale)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.spi.NumberFormatProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPercentInstance(java.util.Locale)",
+          "result": "java.text.NumberFormat",
+          "declaredBy": "java.text.spi.NumberFormatProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

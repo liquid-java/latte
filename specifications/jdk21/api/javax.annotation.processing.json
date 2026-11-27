@@ -1,0 +1,701 @@
+{
+  "name": "javax.annotation.processing",
+  "module": "java.compiler",
+  "types": [
+    {
+      "target": "javax.annotation.processing.AbstractProcessor",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.annotation.processing.Processor"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/AbstractProcessor.java",
+      "sourceSha256": "5277fbb7385fef3a09f4a10af898d0615d9184ea7a3ad6e7e9b209e30fc8df85",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.AbstractProcessor",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompletions(javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror,javax.lang.model.element.ExecutableElement,java.lang.String)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.annotation.processing.AbstractProcessor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedAnnotationTypes()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.annotation.processing.AbstractProcessor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedOptions()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.annotation.processing.AbstractProcessor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedSourceVersion()",
+          "result": "javax.lang.model.SourceVersion",
+          "declaredBy": "javax.annotation.processing.AbstractProcessor",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(javax.annotation.processing.ProcessingEnvironment)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.AbstractProcessor",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInitialized()",
+          "result": "boolean",
+          "declaredBy": "javax.annotation.processing.AbstractProcessor",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "process(java.util.Set,javax.annotation.processing.RoundEnvironment)",
+          "result": "boolean",
+          "declaredBy": "javax.annotation.processing.AbstractProcessor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "processingEnv",
+          "result": "javax.annotation.processing.ProcessingEnvironment",
+          "declaredBy": "javax.annotation.processing.AbstractProcessor",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.Completion",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/Completion.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/Completion.java",
+      "sourceSha256": "e3468935b439df3a8ff8650c7db1929aff9d6f1abcf080042583bcbf0d9350e4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.annotation.processing.Completion",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.annotation.processing.Completion",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.Completions",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/Completions.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/Completions.java",
+      "sourceSha256": "fbbda8f98d8cb52ad524ece808e370b13c432aae8bd9b57d188ef4e48fbace04",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "of(java.lang.String)",
+          "result": "javax.annotation.processing.Completion",
+          "declaredBy": "javax.annotation.processing.Completions",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.String,java.lang.String)",
+          "result": "javax.annotation.processing.Completion",
+          "declaredBy": "javax.annotation.processing.Completions",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.Filer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/Filer.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/Filer.java",
+      "sourceSha256": "da00b3237714b6cf087e721e258425a66b245f2ecf51acac3b435e92a008894c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createClassFile(java.lang.CharSequence,javax.lang.model.element.Element[])",
+          "result": "javax.tools.JavaFileObject",
+          "declaredBy": "javax.annotation.processing.Filer",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element[])",
+          "result": "javax.tools.FileObject",
+          "declaredBy": "javax.annotation.processing.Filer",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createSourceFile(java.lang.CharSequence,javax.lang.model.element.Element[])",
+          "result": "javax.tools.JavaFileObject",
+          "declaredBy": "javax.annotation.processing.Filer",
+          "modifiers": 1153,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence)",
+          "result": "javax.tools.FileObject",
+          "declaredBy": "javax.annotation.processing.Filer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.FilerException",
+      "kind": "class",
+      "parents": [
+        "java.io.IOException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/FilerException.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/FilerException.java",
+      "sourceSha256": "ec83d9c0a1d133e57155bbe68eddc340a25f4711a41aa699eb4353615c08ab90",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.FilerException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.Generated",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/Generated.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/Generated.java",
+      "sourceSha256": "fca1708d178b9cd6e4c9e78dde14f5ea185355410b87a6b1b820977ab804d171",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "comments()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.annotation.processing.Generated",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "date()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.annotation.processing.Generated",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "value()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.annotation.processing.Generated",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.Messager",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/Messager.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/Messager.java",
+      "sourceSha256": "4844e75a621854639f4b42f6f82d3205a44ee8eb3b10cf8cc6b2184843fb7eef",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "printError(java.lang.CharSequence)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Messager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printError(java.lang.CharSequence,javax.lang.model.element.Element)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Messager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printMessage(javax.tools.Diagnostic$Kind,java.lang.CharSequence)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Messager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printMessage(javax.tools.Diagnostic$Kind,java.lang.CharSequence,javax.lang.model.element.Element)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Messager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printMessage(javax.tools.Diagnostic$Kind,java.lang.CharSequence,javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Messager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printMessage(javax.tools.Diagnostic$Kind,java.lang.CharSequence,javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror,javax.lang.model.element.AnnotationValue)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Messager",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printNote(java.lang.CharSequence)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Messager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printNote(java.lang.CharSequence,javax.lang.model.element.Element)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Messager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printWarning(java.lang.CharSequence)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Messager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "printWarning(java.lang.CharSequence,javax.lang.model.element.Element)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Messager",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.ProcessingEnvironment",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/ProcessingEnvironment.java",
+      "sourceSha256": "02222fd421346c60568e3a7052cafe61bf32c5aad85d20489731b658c6463262",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getElementUtils()",
+          "result": "javax.lang.model.util.Elements",
+          "declaredBy": "javax.annotation.processing.ProcessingEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFiler()",
+          "result": "javax.annotation.processing.Filer",
+          "declaredBy": "javax.annotation.processing.ProcessingEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.annotation.processing.ProcessingEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessager()",
+          "result": "javax.annotation.processing.Messager",
+          "declaredBy": "javax.annotation.processing.ProcessingEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOptions()",
+          "result": "java.util.Map",
+          "declaredBy": "javax.annotation.processing.ProcessingEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceVersion()",
+          "result": "javax.lang.model.SourceVersion",
+          "declaredBy": "javax.annotation.processing.ProcessingEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeUtils()",
+          "result": "javax.lang.model.util.Types",
+          "declaredBy": "javax.annotation.processing.ProcessingEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPreviewEnabled()",
+          "result": "boolean",
+          "declaredBy": "javax.annotation.processing.ProcessingEnvironment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.Processor",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/Processor.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/Processor.java",
+      "sourceSha256": "cc5f0f0c0eda8d74afce0277d637a6ca6e3b0d8cdf7b33565fefcde2601c0c94",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCompletions(javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror,javax.lang.model.element.ExecutableElement,java.lang.String)",
+          "result": "java.lang.Iterable",
+          "declaredBy": "javax.annotation.processing.Processor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedAnnotationTypes()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.annotation.processing.Processor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedOptions()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.annotation.processing.Processor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSupportedSourceVersion()",
+          "result": "javax.lang.model.SourceVersion",
+          "declaredBy": "javax.annotation.processing.Processor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "init(javax.annotation.processing.ProcessingEnvironment)",
+          "result": "void",
+          "declaredBy": "javax.annotation.processing.Processor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "process(java.util.Set,javax.annotation.processing.RoundEnvironment)",
+          "result": "boolean",
+          "declaredBy": "javax.annotation.processing.Processor",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.RoundEnvironment",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/RoundEnvironment.java",
+      "sourceSha256": "44208df22613c2f8e56eff69ca09f3537bb78f0743c236518abfe8dde553ef25",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "errorRaised()",
+          "result": "boolean",
+          "declaredBy": "javax.annotation.processing.RoundEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementsAnnotatedWith(java.lang.Class)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.annotation.processing.RoundEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementsAnnotatedWith(javax.lang.model.element.TypeElement)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.annotation.processing.RoundEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementsAnnotatedWithAny(java.util.Set)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.annotation.processing.RoundEnvironment",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement[])",
+          "result": "java.util.Set",
+          "declaredBy": "javax.annotation.processing.RoundEnvironment",
+          "modifiers": 129,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRootElements()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.annotation.processing.RoundEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "processingOver()",
+          "result": "boolean",
+          "declaredBy": "javax.annotation.processing.RoundEnvironment",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.SupportedAnnotationTypes",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/SupportedAnnotationTypes.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/SupportedAnnotationTypes.java",
+      "sourceSha256": "b11dc972bd68d4d13a6df43648c7a2cbc6f847c9f0038475043ddc150e50be78",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "value()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.annotation.processing.SupportedAnnotationTypes",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.SupportedOptions",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/SupportedOptions.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/SupportedOptions.java",
+      "sourceSha256": "5a7df0b6d03eef49cf7a4a7c95a91dfcf08700aadbb636b21452894d6f6b0cc6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "value()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.annotation.processing.SupportedOptions",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.annotation.processing.SupportedSourceVersion",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html",
+      "sourceEntry": "java.compiler/javax/annotation/processing/SupportedSourceVersion.java",
+      "sourceSha256": "dd57f90ac93f0e4e30b7315b848fe1d18f7008757fa6c21a30e03bc88edddfca",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "value()",
+          "result": "javax.lang.model.SourceVersion",
+          "declaredBy": "javax.annotation.processing.SupportedSourceVersion",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

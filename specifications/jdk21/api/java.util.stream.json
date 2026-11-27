@@ -1,0 +1,2940 @@
+{
+  "name": "java.util.stream",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.util.stream.BaseStream",
+      "kind": "interface",
+      "parents": [
+        "java.lang.AutoCloseable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/BaseStream.html",
+      "sourceEntry": "java.base/java/util/stream/BaseStream.java",
+      "sourceSha256": "45331705d8cd10ef360ac1ac535cc84d206332765dac142bb4f9809c19779524",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "java.util.stream.BaseStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isParallel()",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.BaseStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.util.stream.BaseStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "onClose(java.lang.Runnable)",
+          "result": "java.util.stream.BaseStream",
+          "declaredBy": "java.util.stream.BaseStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parallel()",
+          "result": "java.util.stream.BaseStream",
+          "declaredBy": "java.util.stream.BaseStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequential()",
+          "result": "java.util.stream.BaseStream",
+          "declaredBy": "java.util.stream.BaseStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "spliterator()",
+          "result": "java.util.Spliterator",
+          "declaredBy": "java.util.stream.BaseStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unordered()",
+          "result": "java.util.stream.BaseStream",
+          "declaredBy": "java.util.stream.BaseStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.Collector",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Collector.html",
+      "sourceEntry": "java.base/java/util/stream/Collector.java",
+      "sourceSha256": "2c40775adef5c2a04bd0b8c319cd25579743a9bf0aea4cbb964225978edd362c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accumulator()",
+          "result": "java.util.function.BiConsumer",
+          "declaredBy": "java.util.stream.Collector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "characteristics()",
+          "result": "java.util.Set",
+          "declaredBy": "java.util.stream.Collector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "combiner()",
+          "result": "java.util.function.BinaryOperator",
+          "declaredBy": "java.util.stream.Collector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "finisher()",
+          "result": "java.util.function.Function",
+          "declaredBy": "java.util.stream.Collector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.function.Function,java.util.stream.Collector$Characteristics[])",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collector",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector$Characteristics[])",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collector",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supplier()",
+          "result": "java.util.function.Supplier",
+          "declaredBy": "java.util.stream.Collector",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.Collector$Characteristics",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Collector.Characteristics.html",
+      "sourceEntry": "java.base/java/util/stream/Collector.java",
+      "sourceSha256": "2c40775adef5c2a04bd0b8c319cd25579743a9bf0aea4cbb964225978edd362c",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CONCURRENT",
+          "result": "java.util.stream.Collector$Characteristics",
+          "declaredBy": "java.util.stream.Collector$Characteristics",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "IDENTITY_FINISH",
+          "result": "java.util.stream.Collector$Characteristics",
+          "declaredBy": "java.util.stream.Collector$Characteristics",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNORDERED",
+          "result": "java.util.stream.Collector$Characteristics",
+          "declaredBy": "java.util.stream.Collector$Characteristics",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.util.stream.Collector$Characteristics",
+          "declaredBy": "java.util.stream.Collector$Characteristics",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.util.stream.Collector$Characteristics[]",
+          "declaredBy": "java.util.stream.Collector$Characteristics",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.Collectors",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Collectors.html",
+      "sourceEntry": "java.base/java/util/stream/Collectors.java",
+      "sourceSha256": "0d0221d083f9c5f1c29fa39c1a4c7fb9faf003f014b38a4a2f2f574a9110b989",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "averagingDouble(java.util.function.ToDoubleFunction)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "averagingInt(java.util.function.ToIntFunction)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "averagingLong(java.util.function.ToLongFunction)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "collectingAndThen(java.util.stream.Collector,java.util.function.Function)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "counting()",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "filtering(java.util.function.Predicate,java.util.stream.Collector)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flatMapping(java.util.function.Function,java.util.stream.Collector)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "groupingBy(java.util.function.Function)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "groupingBy(java.util.function.Function,java.util.function.Supplier,java.util.stream.Collector)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "groupingBy(java.util.function.Function,java.util.stream.Collector)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "groupingByConcurrent(java.util.function.Function)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "groupingByConcurrent(java.util.function.Function,java.util.function.Supplier,java.util.stream.Collector)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "groupingByConcurrent(java.util.function.Function,java.util.stream.Collector)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "joining()",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "joining(java.lang.CharSequence)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "joining(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapping(java.util.function.Function,java.util.stream.Collector)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "maxBy(java.util.Comparator)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "minBy(java.util.Comparator)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "partitioningBy(java.util.function.Predicate)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "partitioningBy(java.util.function.Predicate,java.util.stream.Collector)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reducing(java.lang.Object,java.util.function.BinaryOperator)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reducing(java.lang.Object,java.util.function.Function,java.util.function.BinaryOperator)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reducing(java.util.function.BinaryOperator)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "summarizingDouble(java.util.function.ToDoubleFunction)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "summarizingInt(java.util.function.ToIntFunction)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "summarizingLong(java.util.function.ToLongFunction)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "summingDouble(java.util.function.ToDoubleFunction)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "summingInt(java.util.function.ToIntFunction)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "summingLong(java.util.function.ToLongFunction)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "teeing(java.util.stream.Collector,java.util.stream.Collector,java.util.function.BiFunction)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toCollection(java.util.function.Supplier)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toConcurrentMap(java.util.function.Function,java.util.function.Function)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toConcurrentMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toConcurrentMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator,java.util.function.Supplier)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toList()",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toMap(java.util.function.Function,java.util.function.Function)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator,java.util.function.Supplier)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toSet()",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toUnmodifiableList()",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toUnmodifiableMap(java.util.function.Function,java.util.function.Function)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toUnmodifiableMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toUnmodifiableSet()",
+          "result": "java.util.stream.Collector",
+          "declaredBy": "java.util.stream.Collectors",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.DoubleStream",
+      "kind": "interface",
+      "parents": [
+        "java.util.stream.BaseStream"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/DoubleStream.html",
+      "sourceEntry": "java.base/java/util/stream/DoubleStream.java",
+      "sourceSha256": "7cd71556890144560e65eab1b34f116481d5f4b3f15fdd03c1d722f8adf899da",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allMatch(java.util.function.DoublePredicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "anyMatch(java.util.function.DoublePredicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "average()",
+          "result": "java.util.OptionalDouble",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "boxed()",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "builder()",
+          "result": "java.util.stream.DoubleStream$Builder",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "collect(java.util.function.Supplier,java.util.function.ObjDoubleConsumer,java.util.function.BiConsumer)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "concat(java.util.stream.DoubleStream,java.util.stream.DoubleStream)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "count()",
+          "result": "long",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "distinct()",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropWhile(java.util.function.DoublePredicate)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "empty()",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "filter(java.util.function.DoublePredicate)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findAny()",
+          "result": "java.util.OptionalDouble",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findFirst()",
+          "result": "java.util.OptionalDouble",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flatMap(java.util.function.DoubleFunction)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forEach(java.util.function.DoubleConsumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forEachOrdered(java.util.function.DoubleConsumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generate(java.util.function.DoubleSupplier)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterate(double,java.util.function.DoublePredicate,java.util.function.DoubleUnaryOperator)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterate(double,java.util.function.DoubleUnaryOperator)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.PrimitiveIterator$OfDouble",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(long)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "map(java.util.function.DoubleUnaryOperator)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapMulti(java.util.stream.DoubleStream$DoubleMapMultiConsumer)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToInt(java.util.function.DoubleToIntFunction)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToLong(java.util.function.DoubleToLongFunction)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToObj(java.util.function.DoubleFunction)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "max()",
+          "result": "java.util.OptionalDouble",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "min()",
+          "result": "java.util.OptionalDouble",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "noneMatch(java.util.function.DoublePredicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(double)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(double[])",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parallel()",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "peek(java.util.function.DoubleConsumer)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reduce(double,java.util.function.DoubleBinaryOperator)",
+          "result": "double",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reduce(java.util.function.DoubleBinaryOperator)",
+          "result": "java.util.OptionalDouble",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequential()",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "skip(long)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sorted()",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "spliterator()",
+          "result": "java.util.Spliterator$OfDouble",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sum()",
+          "result": "double",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "summaryStatistics()",
+          "result": "java.util.DoubleSummaryStatistics",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "takeWhile(java.util.function.DoublePredicate)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "double[]",
+          "declaredBy": "java.util.stream.DoubleStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.DoubleStream$Builder",
+      "kind": "interface",
+      "parents": [
+        "java.util.function.DoubleConsumer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/DoubleStream.Builder.html",
+      "sourceEntry": "java.base/java/util/stream/DoubleStream.java",
+      "sourceSha256": "7cd71556890144560e65eab1b34f116481d5f4b3f15fdd03c1d722f8adf899da",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(double)",
+          "result": "void",
+          "declaredBy": "java.util.stream.DoubleStream$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(double)",
+          "result": "java.util.stream.DoubleStream$Builder",
+          "declaredBy": "java.util.stream.DoubleStream$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "build()",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.DoubleStream$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.DoubleStream$DoubleMapMultiConsumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/DoubleStream.DoubleMapMultiConsumer.html",
+      "sourceEntry": "java.base/java/util/stream/DoubleStream.java",
+      "sourceSha256": "7cd71556890144560e65eab1b34f116481d5f4b3f15fdd03c1d722f8adf899da",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(double,java.util.function.DoubleConsumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.DoubleStream$DoubleMapMultiConsumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.IntStream",
+      "kind": "interface",
+      "parents": [
+        "java.util.stream.BaseStream"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/IntStream.html",
+      "sourceEntry": "java.base/java/util/stream/IntStream.java",
+      "sourceSha256": "620c46ace2477bfbaa30309bdb0cf15e4a027c15737f10f16be15b66469a4051",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allMatch(java.util.function.IntPredicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "anyMatch(java.util.function.IntPredicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asDoubleStream()",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asLongStream()",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "average()",
+          "result": "java.util.OptionalDouble",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "boxed()",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "builder()",
+          "result": "java.util.stream.IntStream$Builder",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "collect(java.util.function.Supplier,java.util.function.ObjIntConsumer,java.util.function.BiConsumer)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "concat(java.util.stream.IntStream,java.util.stream.IntStream)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "count()",
+          "result": "long",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "distinct()",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropWhile(java.util.function.IntPredicate)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "empty()",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "filter(java.util.function.IntPredicate)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findAny()",
+          "result": "java.util.OptionalInt",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findFirst()",
+          "result": "java.util.OptionalInt",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flatMap(java.util.function.IntFunction)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forEach(java.util.function.IntConsumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forEachOrdered(java.util.function.IntConsumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generate(java.util.function.IntSupplier)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterate(int,java.util.function.IntPredicate,java.util.function.IntUnaryOperator)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterate(int,java.util.function.IntUnaryOperator)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.PrimitiveIterator$OfInt",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(long)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "map(java.util.function.IntUnaryOperator)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapMulti(java.util.stream.IntStream$IntMapMultiConsumer)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToDouble(java.util.function.IntToDoubleFunction)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToLong(java.util.function.IntToLongFunction)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToObj(java.util.function.IntFunction)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "max()",
+          "result": "java.util.OptionalInt",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "min()",
+          "result": "java.util.OptionalInt",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "noneMatch(java.util.function.IntPredicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(int[])",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parallel()",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "peek(java.util.function.IntConsumer)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(int,int)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rangeClosed(int,int)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reduce(int,java.util.function.IntBinaryOperator)",
+          "result": "int",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reduce(java.util.function.IntBinaryOperator)",
+          "result": "java.util.OptionalInt",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequential()",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "skip(long)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sorted()",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "spliterator()",
+          "result": "java.util.Spliterator$OfInt",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sum()",
+          "result": "int",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "summaryStatistics()",
+          "result": "java.util.IntSummaryStatistics",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "takeWhile(java.util.function.IntPredicate)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "int[]",
+          "declaredBy": "java.util.stream.IntStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.IntStream$Builder",
+      "kind": "interface",
+      "parents": [
+        "java.util.function.IntConsumer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/IntStream.Builder.html",
+      "sourceEntry": "java.base/java/util/stream/IntStream.java",
+      "sourceSha256": "620c46ace2477bfbaa30309bdb0cf15e4a027c15737f10f16be15b66469a4051",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(int)",
+          "result": "void",
+          "declaredBy": "java.util.stream.IntStream$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(int)",
+          "result": "java.util.stream.IntStream$Builder",
+          "declaredBy": "java.util.stream.IntStream$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "build()",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.IntStream$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.IntStream$IntMapMultiConsumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/IntStream.IntMapMultiConsumer.html",
+      "sourceEntry": "java.base/java/util/stream/IntStream.java",
+      "sourceSha256": "620c46ace2477bfbaa30309bdb0cf15e4a027c15737f10f16be15b66469a4051",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(int,java.util.function.IntConsumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.IntStream$IntMapMultiConsumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.LongStream",
+      "kind": "interface",
+      "parents": [
+        "java.util.stream.BaseStream"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/LongStream.html",
+      "sourceEntry": "java.base/java/util/stream/LongStream.java",
+      "sourceSha256": "c67a6ccaf743642865390785642e7c2b4a8bea9b86f49b5068c4ab1e4633c545",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allMatch(java.util.function.LongPredicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "anyMatch(java.util.function.LongPredicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asDoubleStream()",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "average()",
+          "result": "java.util.OptionalDouble",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "boxed()",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "builder()",
+          "result": "java.util.stream.LongStream$Builder",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "collect(java.util.function.Supplier,java.util.function.ObjLongConsumer,java.util.function.BiConsumer)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "concat(java.util.stream.LongStream,java.util.stream.LongStream)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "count()",
+          "result": "long",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "distinct()",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropWhile(java.util.function.LongPredicate)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "empty()",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "filter(java.util.function.LongPredicate)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findAny()",
+          "result": "java.util.OptionalLong",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findFirst()",
+          "result": "java.util.OptionalLong",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flatMap(java.util.function.LongFunction)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forEach(java.util.function.LongConsumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forEachOrdered(java.util.function.LongConsumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generate(java.util.function.LongSupplier)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterate(long,java.util.function.LongPredicate,java.util.function.LongUnaryOperator)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterate(long,java.util.function.LongUnaryOperator)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.PrimitiveIterator$OfLong",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(long)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "map(java.util.function.LongUnaryOperator)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapMulti(java.util.stream.LongStream$LongMapMultiConsumer)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToDouble(java.util.function.LongToDoubleFunction)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToInt(java.util.function.LongToIntFunction)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToObj(java.util.function.LongFunction)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "max()",
+          "result": "java.util.OptionalLong",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "min()",
+          "result": "java.util.OptionalLong",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "noneMatch(java.util.function.LongPredicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(long)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(long[])",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parallel()",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "peek(java.util.function.LongConsumer)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "range(long,long)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rangeClosed(long,long)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reduce(java.util.function.LongBinaryOperator)",
+          "result": "java.util.OptionalLong",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reduce(long,java.util.function.LongBinaryOperator)",
+          "result": "long",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequential()",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "skip(long)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sorted()",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "spliterator()",
+          "result": "java.util.Spliterator$OfLong",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sum()",
+          "result": "long",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "summaryStatistics()",
+          "result": "java.util.LongSummaryStatistics",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "takeWhile(java.util.function.LongPredicate)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "long[]",
+          "declaredBy": "java.util.stream.LongStream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.LongStream$Builder",
+      "kind": "interface",
+      "parents": [
+        "java.util.function.LongConsumer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/LongStream.Builder.html",
+      "sourceEntry": "java.base/java/util/stream/LongStream.java",
+      "sourceSha256": "c67a6ccaf743642865390785642e7c2b4a8bea9b86f49b5068c4ab1e4633c545",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(long)",
+          "result": "void",
+          "declaredBy": "java.util.stream.LongStream$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(long)",
+          "result": "java.util.stream.LongStream$Builder",
+          "declaredBy": "java.util.stream.LongStream$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "build()",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.LongStream$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.LongStream$LongMapMultiConsumer",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/LongStream.LongMapMultiConsumer.html",
+      "sourceEntry": "java.base/java/util/stream/LongStream.java",
+      "sourceSha256": "c67a6ccaf743642865390785642e7c2b4a8bea9b86f49b5068c4ab1e4633c545",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(long,java.util.function.LongConsumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.LongStream$LongMapMultiConsumer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.Stream",
+      "kind": "interface",
+      "parents": [
+        "java.util.stream.BaseStream"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.html",
+      "sourceEntry": "java.base/java/util/stream/Stream.java",
+      "sourceSha256": "3524f25b18c080153554ee03c85d7c82a6b3180c1b5153702358126cf2056f8f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allMatch(java.util.function.Predicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "anyMatch(java.util.function.Predicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "builder()",
+          "result": "java.util.stream.Stream$Builder",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "collect(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BiConsumer)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "collect(java.util.stream.Collector)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "concat(java.util.stream.Stream,java.util.stream.Stream)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "count()",
+          "result": "long",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "distinct()",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dropWhile(java.util.function.Predicate)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "empty()",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "filter(java.util.function.Predicate)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findAny()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findFirst()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flatMap(java.util.function.Function)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flatMapToDouble(java.util.function.Function)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flatMapToInt(java.util.function.Function)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flatMapToLong(java.util.function.Function)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forEach(java.util.function.Consumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forEachOrdered(java.util.function.Consumer)",
+          "result": "void",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "generate(java.util.function.Supplier)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterate(java.lang.Object,java.util.function.Predicate,java.util.function.UnaryOperator)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterate(java.lang.Object,java.util.function.UnaryOperator)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(long)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "map(java.util.function.Function)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapMulti(java.util.function.BiConsumer)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapMultiToDouble(java.util.function.BiConsumer)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapMultiToInt(java.util.function.BiConsumer)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapMultiToLong(java.util.function.BiConsumer)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToDouble(java.util.function.ToDoubleFunction)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToInt(java.util.function.ToIntFunction)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mapToLong(java.util.function.ToLongFunction)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "max(java.util.Comparator)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "min(java.util.Comparator)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "noneMatch(java.util.function.Predicate)",
+          "result": "boolean",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.Object)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "of(java.lang.Object[])",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 137,
+          "varargs": true,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "ofNullable(java.lang.Object)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "peek(java.util.function.Consumer)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reduce(java.lang.Object,java.util.function.BiFunction,java.util.function.BinaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reduce(java.lang.Object,java.util.function.BinaryOperator)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reduce(java.util.function.BinaryOperator)",
+          "result": "java.util.Optional",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "skip(long)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sorted()",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sorted(java.util.Comparator)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "takeWhile(java.util.function.Predicate)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray(java.util.function.IntFunction)",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toList()",
+          "result": "java.util.List",
+          "declaredBy": "java.util.stream.Stream",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.Stream$Builder",
+      "kind": "interface",
+      "parents": [
+        "java.util.function.Consumer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/Stream.Builder.html",
+      "sourceEntry": "java.base/java/util/stream/Stream.java",
+      "sourceSha256": "3524f25b18c080153554ee03c85d7c82a6b3180c1b5153702358126cf2056f8f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "accept(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.stream.Stream$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(java.lang.Object)",
+          "result": "java.util.stream.Stream$Builder",
+          "declaredBy": "java.util.stream.Stream$Builder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "build()",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.Stream$Builder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.stream.StreamSupport",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/stream/StreamSupport.html",
+      "sourceEntry": "java.base/java/util/stream/StreamSupport.java",
+      "sourceSha256": "5460d4c1f98d9c576c398336f0295cd88fd30f6a23ce6fa48cc9cfe64a714b79",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "doubleStream(java.util.Spliterator$OfDouble,boolean)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.StreamSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doubleStream(java.util.function.Supplier,int,boolean)",
+          "result": "java.util.stream.DoubleStream",
+          "declaredBy": "java.util.stream.StreamSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intStream(java.util.Spliterator$OfInt,boolean)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.StreamSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "intStream(java.util.function.Supplier,int,boolean)",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.util.stream.StreamSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longStream(java.util.Spliterator$OfLong,boolean)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.StreamSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "longStream(java.util.function.Supplier,int,boolean)",
+          "result": "java.util.stream.LongStream",
+          "declaredBy": "java.util.stream.StreamSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stream(java.util.Spliterator,boolean)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.StreamSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stream(java.util.function.Supplier,int,boolean)",
+          "result": "java.util.stream.Stream",
+          "declaredBy": "java.util.stream.StreamSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

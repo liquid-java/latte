@@ -1,0 +1,1370 @@
+{
+  "change": "Exclude synthetic array constructors from JDK member classification; identify source declarations without assuming an enclosing CtType exists. Ordinary references and conservative result guarantees remain intact.",
+  "files": {
+    "test/jdk/java/lang/StackWalker/LocalsAndOperands.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 6,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "f9fd25de03bfd006319bfa225e2d7950cc77420541aea0b4c101f82d19096dc8",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9
+        },
+        "elapsedSeconds": 9.697,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9
+        },
+        "elapsedSeconds": 4.223,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/StringBuilder/RacingSBThreads.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "7a70f2487ae0e3429dffd49149eca8546385202fbdd878b9339165d9b11a7f1d",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 2,
+          "REFINEMENT": 1,
+          "SHARED_REFINEMENT": 1
+        },
+        "elapsedSeconds": 12.601,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 1
+        },
+        "elapsedSeconds": 7.835,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/System/LoggerFinder/SignedLoggerFinderTest/SignedLoggerFinderTest.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "4605a52b56e4a2c4ee33aeb5cbaada50f6df39020ece39983c8cb38402230e57",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "SHARED_REFINEMENT": 1
+        },
+        "elapsedSeconds": 7.332,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 2.343,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/Thread/jni/AttachCurrentThread/AttachTest.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "baa6ab89ac5a4d73c43d644994565842cb596f36dbdf5ac70ff3c936ab06cc8d",
+      "withCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 5.599,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 1.335,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/MethodHandles/TestTableSwitch.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "5a7c9f0bf3dbfef93d86924c7ac7d8f362678a686763d23535cabf8b7afc10e3",
+      "withCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 7.382,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 2.869,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/MethodHandlesArityLimitsTest.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "7b2c7aad605128320991b99ceb42b47817998ba66a643fbec9f0c80a0f32f362",
+      "withCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 6.193,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 1.726,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestAccessBoolean.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "c27844e521a9ac0fb0b54206d1c47adafc1cce2a7048de66007fd541a41f76e9",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 18,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 14.471,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 18,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 8.361,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestAccessByte.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "79fcf8c1faf08758d900cc1b14f1896dc24827a96807a9e81529e466e43db507",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 15,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 14.051,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 15,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 8.597,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestAccessChar.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "04b1ed4d2848f8a4db68acf8fa23438cbbfcf8a1c403dd66e88f52bd362f0641",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 15,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 14.348,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 15,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 8.665,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestAccessDouble.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "18a59bf70901870e0307996cc78ca3ec8e97c7a273a1e8fac5486c5424e95fce",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 18,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 11.599,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 18,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 6.515,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestAccessFloat.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "2e00d1bf7eadf85b66baccdab84fa190ba770e507df3d353dbf9ee5daf33cf3c",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 18,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 12.032,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 18,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 7.152,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestAccessInt.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "386990a1a16bb2e94080a52bd4ec6ee212a4bb53394335416158890ffe90ba9c",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 15,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 11.896,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 15,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 7.602,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestAccessLong.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "91a41b2e033ff8b20034496ed728c6a0dab5f220827b92caabcae2b296838f4d",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 15,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 12.213,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 15,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 7.992,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestAccessModeMethodNames.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "14c5a269f248fd065a38ec53630024eb7d2ff10a102c26d1fffca1960060a62f",
+      "withCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 4.708,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 1.697,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestAccessShort.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "963350cfb3ae1c9ac151a81b2658c4a30e5d2583cb8398b3379c9348a52d8423",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 15,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 11.724,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 15,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 6.954,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestAccessString.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "a50a20887e01859c22fb9c69de224014b4ac9d8d114806bf21bdf5e3d999fba6",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 19,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 10.751,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 19,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 6.038,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestByteArrayAsChar.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 4,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "95eec7b30195d51aeb6838cb88b1a3208f9a22079c1272656ebe19a50ff9d057",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 21,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 33.793,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 21,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 24.684,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestByteArrayAsDouble.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 4,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "fa57113dcef118c278dbbac253e8cbaf97c0de2d7f28b52a2c97271f4c748a05",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 21,
+          "SYNTAX": 9
+        },
+        "elapsedSeconds": 40.937,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 21,
+          "SYNTAX": 9
+        },
+        "elapsedSeconds": 32.072,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestByteArrayAsFloat.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 4,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "85fba3faa24d25006960bd9e0ca9f9186e72c07f05768769ee193a3045372fc5",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 21,
+          "SYNTAX": 9
+        },
+        "elapsedSeconds": 32.728,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 21,
+          "SYNTAX": 9
+        },
+        "elapsedSeconds": 26.357,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestByteArrayAsInt.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 4,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "fe380aeaa5cbe36b7cd781e14d5697b587c4bed98a812a1008a4f66d61f7ac02",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 20,
+          "SYNTAX": 9
+        },
+        "elapsedSeconds": 39.829,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 20,
+          "SYNTAX": 9
+        },
+        "elapsedSeconds": 31.347,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestByteArrayAsLong.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 4,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "530b9a375b4b60173c5b3a23adfd1ecbd23fb0225a002d6ee8f1da699f2f9576",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 20,
+          "SYNTAX": 9
+        },
+        "elapsedSeconds": 39.299,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 20,
+          "SYNTAX": 9
+        },
+        "elapsedSeconds": 32.9,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestByteArrayAsShort.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 4,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "d96361358001ec568a529645c0fd3dc017623447a6e2b1587aceb749528464c3",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 21,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 33.341,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 21,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 27.522,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestExact.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 4,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "7f1a7fdc2e897c444cff305a9a85b81e5d56182da4e978a3d52036ed1d8bdeaa",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 3
+        },
+        "elapsedSeconds": 5.371,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 3
+        },
+        "elapsedSeconds": 1.874,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodHandleAccessBoolean.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "a384f8ce4af268a4d8ff392f135c425265beb3f9382443fff8aaa012b488e849",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 8.628,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 5.385,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodHandleAccessByte.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "9c9241cb8b20331788a26bb64560c82db4860a98291f55f8b2aa9b37b14cca38",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 6,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 10.24,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 6,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 6.034,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodHandleAccessChar.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "116c4010399264fc441d8de399ec9dc0d4efe158f3f4356b0dc3f76d37e36dd9",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 6,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 9.855,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 6,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 5.677,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodHandleAccessDouble.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "c597df6c48f5768c2c5c09efd45fb880d8518fd2fc1fab96bc586196787f165e",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 8.612,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 4.894,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodHandleAccessFloat.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "9a591dfaaa45e4bb58d1b20c8b1ef57fd44ca1f503b58bc60c341f0288fe47fc",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 8.452,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 4.79,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodHandleAccessInt.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "9f4fdb42d9f6c281e6378d91924bb261e5ecd34921d6077a1f17296fe5987b69",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 6,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 11.271,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 6,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 6.591,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodHandleAccessLong.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "0870fe81bf8a5e65b7ec5dfffe91702e243390ea78f270651afef523f30e23cb",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 6,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 12.673,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 6,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 6.159,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodHandleAccessShort.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "91bc55f27a8a39f4c694faf256bc9b04c6c82fa4e7ada58b291966fce71f13c8",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 6,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 11.31,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 6,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 6.552,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodHandleAccessString.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "8594e8b42eb7ba968c6796beebefe45a4e30217d3046abe5aa3e5f79ae2fc9cd",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 9.515,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9,
+          "SYNTAX": 13
+        },
+        "elapsedSeconds": 6.576,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodTypeBoolean.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "75d0110a7d2a16a4bacb3881f9a3d144e556f6a4bea6c77fb2e4df4d8d4d3656",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 14.008,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 6.921,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodTypeByte.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "b6221071c592df779e513dadb81439ddc482b5f6099ea48946672aee0d812bd5",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 15.008,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 7.51,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodTypeChar.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "f7c360a82179012d920532a205b6158bc932dbc7d4cb4b510d8431442a6b8798",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 17.537,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 7.577,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodTypeDouble.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "2b3e020855c0f60001d9849eeefcc3d6cff5c8f7929408345a8d14acd940073e",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 11.762,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 6.017,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodTypeFloat.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "5033c3afa4b6b706f6b74de68ece33b1358d4c1c5bb1057e88e4d547ae2b3d81",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 12.377,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 6.001,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodTypeInt.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "b521164c3051a10bfc0b6ed124ab7a45e4383176b0004c3e6bfbc32e58645e2e",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 16.548,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 7.405,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodTypeLong.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "560cdc3c75c72d85c2cd187bbd56fbecb3b06a7358a5cb9dfea286da0d25b11b",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 15.882,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 6.732,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodTypeShort.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "6149228a77531a2af3617035651ca50c7b7e106b1e68253718e384dd52e65093",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 16.069,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 7.629,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestMethodTypeString.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "dbe537f296210b182b17c6fac73d85e023b6859b90c3c2fd9ae66ee64a645823",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 10.928,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "SYNTAX": 1
+        },
+        "elapsedSeconds": 5.558,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/invoke/VarHandles/VarHandleTestReflection.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "db8421d72381c5c7bae26726646ef9fed099e9a4efca3cf33b17aac90ffc5ff3",
+      "withCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 4.472,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 1.256,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/lang/management/CompositeData/ThreadInfoCompositeData.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 7,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "d55eefad7ac2ff4a92d4c41156f67e7cea1ae5b8471639e72920e63904872d1e",
+      "withCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 8.257,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 4.285,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/net/httpclient/HttpClientLocalAddrTest.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "83245da0f7818179cbdf8c24b9f917ae62811d3d836274fea22aa12394d97654",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 2
+        },
+        "elapsedSeconds": 6.197,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 2
+        },
+        "elapsedSeconds": 3.055,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/nio/Buffer/BulkPutBuffer.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 2,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "5e8f39c7981a406640e7545307fdd0d69c42c3d3885f8e1e5910fdb1093a5bdf",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 5
+        },
+        "elapsedSeconds": 8.351,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 4
+        },
+        "elapsedSeconds": 4.694,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/nio/Buffer/ByteBufferViews.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "a594648756ebaa103af5655bfdd18f4722b879803ba43e1d5c0b581ec15a0e03",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 2
+        },
+        "elapsedSeconds": 12.131,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 2
+        },
+        "elapsedSeconds": 8.215,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/Arrays/SortingNearlySortedPrimitive.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "115b5f613ede691a5709ac830a183da20861833c9d9875fd06c924b00929634a",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 9,
+          "SHARED_REFINEMENT": 6
+        },
+        "elapsedSeconds": 57.04,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 3
+        },
+        "elapsedSeconds": 54.211,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/Arrays/largeMemory/ParallelPrefix.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "475b963e3539070db0273c3a2cb2ed173cad6ba218958471b91b81ff286a9ebc",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 7
+        },
+        "elapsedSeconds": 20.096,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 7
+        },
+        "elapsedSeconds": 17.41,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/Collection/RandomizedIteration.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "31d01cb38fd797b5cd17dbaf5e05069a3a2ee1c80b072823ebb62275980d983e",
+      "withCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 4.659,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 1.516,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/Locale/AvailableLocalesTest.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "95de4d383e616bc9289059193d4a692412ab1c601d3c3baf50a6a0308676454a",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "SHARED_REFINEMENT": 2
+        },
+        "elapsedSeconds": 4.502,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 1.439,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/Objects/CheckIndex.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "24b95507db100496e99117695bd257ebc5509aa92cff64f8a7ba584fbc4f118f",
+      "withCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 120.252,
+        "status": "timeout"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 120.27,
+        "status": "timeout"
+      }
+    },
+    "test/jdk/java/util/Objects/CheckLongIndex.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 3,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "6bb5cd6ff764140c0c2163b26d53379638ac80cc920cf7245aaa47b932f66abc",
+      "withCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 120.286,
+        "status": "timeout"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 120.269,
+        "status": "timeout"
+      }
+    },
+    "test/jdk/java/util/PluggableLocale/LocaleNameProviderTest.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "7df18835f77b83470125997d3e624ae53fd4900c7c8de62499ce6c46b6e05342",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 1,
+          "SHARED_REFINEMENT": 3
+        },
+        "elapsedSeconds": 4.563,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 1
+        },
+        "elapsedSeconds": 1.36,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/Random/RandomStreamTest.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "55aeca237262af1abe6a387f89ff7a28e159dff0498ae1cdf3a0f90c588f86f5",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8,
+          "REFINEMENT": 3
+        },
+        "elapsedSeconds": 4.948,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 8
+        },
+        "elapsedSeconds": 1.93,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/SequencedCollection/Basic.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "e18627d767ab2418fe0a08a261a92776ee74a8005562c9999225bc6ca3fee351",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "REFINEMENT": 19,
+          "SHARED_REFINEMENT": 31,
+          "SYNTAX": 3
+        },
+        "elapsedSeconds": 9.245,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 3.713,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/SequencedCollection/BasicMap.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "f3d5b533f34ff5eb740270f7b419f9131d2a13a11daa6128701ffc4b2131497f",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "REFINEMENT": 12,
+          "SHARED_REFINEMENT": 30,
+          "SYNTAX": 3
+        },
+        "elapsedSeconds": 10.821,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 4.286,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/stream/test/org/openjdk/tests/java/util/stream/CollectorsTest.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "e985d0ee94c0d364eaf4db7d003951176e1629164bbe05743a512e40d59f985a",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 25
+        },
+        "elapsedSeconds": 10.323,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 24
+        },
+        "elapsedSeconds": 4.834,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/zip/ZipFile/TestZipFile.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 4,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "bed17e6dd0e3f1feaef54390ccff81af455c02fab3e0b843d7e35e34a7ec3106",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "REFINEMENT": 2
+        },
+        "elapsedSeconds": 15.192,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {},
+        "elapsedSeconds": 11.272,
+        "status": "analyzed"
+      }
+    },
+    "test/jdk/java/util/zip/ZipFile/TestZipFileEncodings.java": {
+      "metadataReplay": {
+        "arrayConstructorReferences": 1,
+        "catalogDiagnostics": 0,
+        "status": "completed"
+      },
+      "sourceSha256": "1aa05ffeb6a8667058d0e79387a4dd3fe7afa2701925c7df45deb51a297ef0cc",
+      "withCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 5,
+          "REFINEMENT": 3,
+          "SHARED_REFINEMENT": 1
+        },
+        "elapsedSeconds": 6.971,
+        "status": "analyzed"
+      },
+      "withoutCatalog": {
+        "diagnosticCounts": {
+          "PERMISSION": 5
+        },
+        "elapsedSeconds": 4.029,
+        "status": "analyzed"
+      }
+    }
+  },
+  "metadataMethod": "Load each unchanged source in a Java 21 no-classpath Spoon model with all JDK packages, run ExternalSpecifications.collect (which calls Jdk21Coverage.annotate), and assert every array constructor reference has no Jdk21Coverage.Use. This phase-only check does not run Latte ownership or LiquidTypeChecking.",
+  "originalReportSha256": "2f97ec04d5d9c2b972d57ef30eb78ecdb41d13677dd55ea22fee632ff06461fa",
+  "run": {
+    "catalogSha256": "590df34b79bb2f471021cdfafce2742a7953b072ee36974e8ff6824dc6195d13",
+    "driverSha256": "a56ce98421e8041395fdcbde72adffd4094a0b70ce06e5da4d0598219a6178b8",
+    "jarSha256": "e6cd30d919cad1752b03b1bfee545dd1e7716646086f81fdca55720a80cc8137",
+    "java": "openjdk version \"21.0.13.1\" 2026-11-17 LTS\nOpenJDK Runtime Environment Temurin-21.0.13.1+2 (build 21.0.13.1+2-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.13.1+2 (build 21.0.13.1+2-LTS, mixed mode, sharing)\n",
+    "mode": "individual unchanged sources, no-classpath; both passes in both modes",
+    "revision": "7a7090bd432d6e8b4e6106593957513a84e7add4",
+    "timeoutSeconds": 120,
+    "workerSha256": "ea4e2f6e0688134b9e1210f932c6afb28d0bf9076c11b1f3ba8a3b70da42a882"
+  },
+  "source": {
+    "archiveSha256": "2f00670ffe781881c6fdb60f49ecdfd12a6c0f5e2943b94d17b1f4bc714397f9",
+    "commit": "7a7090bd432d6e8b4e6106593957513a84e7add4",
+    "repository": "openjdk/jdk21u",
+    "tag": "jdk-21.0.13.1+2"
+  },
+  "summary": {
+    "arrayConstructorReferences": 117,
+    "catalogCompletedWithoutDiagnostics": 7,
+    "compatibilityExactMatches": 180,
+    "compatibilityInputs": 311,
+    "metadataCompleted": 59,
+    "nullDereferences": 0,
+    "sources": 59,
+    "unitTests": 575,
+    "withCatalog": {
+      "analyzed": 57,
+      "timeout": 2
+    },
+    "withoutCatalog": {
+      "analyzed": 57,
+      "timeout": 2
+    }
+  }
+}

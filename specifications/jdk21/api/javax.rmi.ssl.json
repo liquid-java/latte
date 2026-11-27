@@ -1,0 +1,163 @@
+{
+  "name": "javax.rmi.ssl",
+  "module": "java.rmi",
+  "types": [
+    {
+      "target": "javax.rmi.ssl.SslRMIClientSocketFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.rmi.server.RMIClientSocketFactory",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/javax/rmi/ssl/SslRMIClientSocketFactory.html",
+      "sourceEntry": "java.rmi/javax/rmi/ssl/SslRMIClientSocketFactory.java",
+      "sourceSha256": "11af287273c45ea02fe40e3ee6083577140c9fd52d99205f1f9aaad34e8df713",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.rmi.ssl.SslRMIClientSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createSocket(java.lang.String,int)",
+          "result": "java.net.Socket",
+          "declaredBy": "javax.rmi.ssl.SslRMIClientSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.rmi.ssl.SslRMIClientSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.rmi.ssl.SslRMIClientSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.rmi.ssl.SslRMIServerSocketFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.rmi.server.RMIServerSocketFactory"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html",
+      "sourceEntry": "java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.java",
+      "sourceSha256": "af792e90f1011617b13d6f31c0ba2e92948d1ef5d244c27bcd37a1d8fb8e76db",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.rmi.ssl.SslRMIServerSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String[],java.lang.String[],boolean)",
+          "result": "void",
+          "declaredBy": "javax.rmi.ssl.SslRMIServerSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.net.ssl.SSLContext,java.lang.String[],java.lang.String[],boolean)",
+          "result": "void",
+          "declaredBy": "javax.rmi.ssl.SslRMIServerSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createServerSocket(int)",
+          "result": "java.net.ServerSocket",
+          "declaredBy": "javax.rmi.ssl.SslRMIServerSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.rmi.ssl.SslRMIServerSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnabledCipherSuites()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.rmi.ssl.SslRMIServerSocketFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnabledProtocols()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.rmi.ssl.SslRMIServerSocketFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNeedClientAuth()",
+          "result": "boolean",
+          "declaredBy": "javax.rmi.ssl.SslRMIServerSocketFactory",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.rmi.ssl.SslRMIServerSocketFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

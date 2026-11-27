@@ -1,0 +1,2194 @@
+{
+  "name": "java.util.concurrent.locks",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.util.concurrent.locks.AbstractOwnableSynchronizer",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/AbstractOwnableSynchronizer.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/AbstractOwnableSynchronizer.java",
+      "sourceSha256": "1883e4f1e03d8926619e7d5588c59bceec8f5dafd401131fdf2fb7287c5d4592",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractOwnableSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExclusiveOwnerThread()",
+          "result": "java.lang.Thread",
+          "declaredBy": "java.util.concurrent.locks.AbstractOwnableSynchronizer",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setExclusiveOwnerThread(java.lang.Thread)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractOwnableSynchronizer",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+      "kind": "class",
+      "parents": [
+        "java.util.concurrent.locks.AbstractOwnableSynchronizer",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java",
+      "sourceSha256": "703ef8f66c06c6af7b143d5620d92ff4af8b2089064ff0e164e777b312c0a3a6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acquire(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acquireInterruptibly(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acquireShared(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acquireSharedInterruptibly(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSetState(long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExclusiveQueuedThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFirstQueuedThread()",
+          "result": "java.lang.Thread",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueueLength()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueuedThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSharedQueuedThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getState()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitingThreads(java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasContended()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasQueuedPredecessors()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasQueuedThreads()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasWaiters(java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isHeldExclusively()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isQueued(java.lang.Thread)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "owns(java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "release(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseShared(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setState(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryAcquire(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryAcquireNanos(long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryAcquireShared(long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryAcquireSharedNanos(long,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryRelease(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryReleaseShared(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.util.concurrent.locks.Condition",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java",
+      "sourceSha256": "703ef8f66c06c6af7b143d5620d92ff4af8b2089064ff0e164e777b312c0a3a6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "await()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "await(long,java.util.concurrent.TimeUnit)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitNanos(long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitUninterruptibly()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitUntil(java.util.Date)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitQueueLength()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitingThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasWaiters()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "signal()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "signalAll()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+      "kind": "class",
+      "parents": [
+        "java.util.concurrent.locks.AbstractOwnableSynchronizer",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.java",
+      "sourceSha256": "d283f30ede5819ac17f90e2f781198361bf1d528614f59a1eed2d85ff076847f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acquire(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acquireInterruptibly(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acquireShared(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acquireSharedInterruptibly(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareAndSetState(int,int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExclusiveQueuedThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFirstQueuedThread()",
+          "result": "java.lang.Thread",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueueLength()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueuedThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSharedQueuedThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getState()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitingThreads(java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasContended()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasQueuedPredecessors()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasQueuedThreads()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasWaiters(java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isHeldExclusively()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isQueued(java.lang.Thread)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "owns(java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "release(int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseShared(int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setState(int)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryAcquire(int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryAcquireNanos(int,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryAcquireShared(int)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryAcquireSharedNanos(int,long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryRelease(int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryReleaseShared(int)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.util.concurrent.locks.Condition",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.java",
+      "sourceSha256": "d283f30ede5819ac17f90e2f781198361bf1d528614f59a1eed2d85ff076847f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "await()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "await(long,java.util.concurrent.TimeUnit)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitNanos(long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitUninterruptibly()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitUntil(java.util.Date)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitQueueLength()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitingThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasWaiters()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "signal()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "signalAll()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.Condition",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/Condition.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/Condition.java",
+      "sourceSha256": "efabd3a9ea1bca3dde612d77b8623e0726b6622c85a3387ae3b7fd874dd3523c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "await()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.Condition",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "await(long,java.util.concurrent.TimeUnit)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.Condition",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitNanos(long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.Condition",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitUninterruptibly()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.Condition",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "awaitUntil(java.util.Date)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.Condition",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "signal()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.Condition",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "signalAll()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.Condition",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.Lock",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/Lock.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/Lock.java",
+      "sourceSha256": "5b88a5b37da7cd877f6e6510f8b6c0cfd88e3a29f1e79caf3588697d45e85e2f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "lock()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.Lock",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lockInterruptibly()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.Lock",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newCondition()",
+          "result": "java.util.concurrent.locks.Condition",
+          "declaredBy": "java.util.concurrent.locks.Lock",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.Lock",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock(long,java.util.concurrent.TimeUnit)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.Lock",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unlock()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.Lock",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.LockSupport",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/LockSupport.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/LockSupport.java",
+      "sourceSha256": "c97f8ca3d6ee2f835e4410502fe2ec1eadebc6e67c91eddcb64ef9536e6c39c8",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getBlocker(java.lang.Thread)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.util.concurrent.locks.LockSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "park()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.LockSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "park(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.LockSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parkNanos(java.lang.Object,long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.LockSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parkNanos(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.LockSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parkUntil(java.lang.Object,long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.LockSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parkUntil(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.LockSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCurrentBlocker(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.LockSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unpark(java.lang.Thread)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.LockSupport",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.ReadWriteLock",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/ReadWriteLock.java",
+      "sourceSha256": "0e82784f66cfbb9c798344870251362319f339f497dfd23aea87e5e08810628a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "readLock()",
+          "result": "java.util.concurrent.locks.Lock",
+          "declaredBy": "java.util.concurrent.locks.ReadWriteLock",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeLock()",
+          "result": "java.util.concurrent.locks.Lock",
+          "declaredBy": "java.util.concurrent.locks.ReadWriteLock",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.ReentrantLock",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.util.concurrent.locks.Lock",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/ReentrantLock.java",
+      "sourceSha256": "3fa6f4aaf254b75355b1dffc993a64f3ae315098f98455ad68f48e46b5faf417",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(boolean)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHoldCount()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getOwner()",
+          "result": "java.lang.Thread",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueueLength()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueuedThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitQueueLength(java.util.concurrent.locks.Condition)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitingThreads(java.util.concurrent.locks.Condition)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasQueuedThread(java.lang.Thread)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasQueuedThreads()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasWaiters(java.util.concurrent.locks.Condition)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFair()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isHeldByCurrentThread()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLocked()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lock()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lockInterruptibly()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newCondition()",
+          "result": "java.util.concurrent.locks.Condition",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock(long,java.util.concurrent.TimeUnit)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unlock()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.ReentrantReadWriteLock",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.util.concurrent.locks.ReadWriteLock",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/ReentrantReadWriteLock.java",
+      "sourceSha256": "0dd8abebf0cd8813aaf773b28e779e51385978eb66c9726a758751a95c1d6e84",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(boolean)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOwner()",
+          "result": "java.lang.Thread",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueueLength()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueuedReaderThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueuedThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueuedWriterThreads()",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReadHoldCount()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReadLockCount()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitQueueLength(java.util.concurrent.locks.Condition)",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWaitingThreads(java.util.concurrent.locks.Condition)",
+          "result": "java.util.Collection",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWriteHoldCount()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasQueuedThread(java.lang.Thread)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasQueuedThreads()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasWaiters(java.util.concurrent.locks.Condition)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFair()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWriteLocked()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWriteLockedByCurrentThread()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readLock()",
+          "result": "java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeLock()",
+          "result": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.util.concurrent.locks.Lock",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/ReentrantReadWriteLock.java",
+      "sourceSha256": "0dd8abebf0cd8813aaf773b28e779e51385978eb66c9726a758751a95c1d6e84",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.concurrent.locks.ReentrantReadWriteLock)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lock()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lockInterruptibly()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newCondition()",
+          "result": "java.util.concurrent.locks.Condition",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock(long,java.util.concurrent.TimeUnit)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unlock()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.util.concurrent.locks.Lock",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/ReentrantReadWriteLock.java",
+      "sourceSha256": "0dd8abebf0cd8813aaf773b28e779e51385978eb66c9726a758751a95c1d6e84",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.concurrent.locks.ReentrantReadWriteLock)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getHoldCount()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isHeldByCurrentThread()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lock()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lockInterruptibly()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newCondition()",
+          "result": "java.util.concurrent.locks.Condition",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryLock(long,java.util.concurrent.TimeUnit)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unlock()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.util.concurrent.locks.StampedLock",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/locks/StampedLock.html",
+      "sourceEntry": "java.base/java/util/concurrent/locks/StampedLock.java",
+      "sourceSha256": "2591b3f110de788952d696dc5ec8ee0483524c4f26bd4a15c66140445d867d28",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asReadLock()",
+          "result": "java.util.concurrent.locks.Lock",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asReadWriteLock()",
+          "result": "java.util.concurrent.locks.ReadWriteLock",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asWriteLock()",
+          "result": "java.util.concurrent.locks.Lock",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReadLockCount()",
+          "result": "int",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLockStamp(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isOptimisticReadStamp(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadLockStamp(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadLocked()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWriteLockStamp(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWriteLocked()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readLock()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readLockInterruptibly()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryConvertToOptimisticRead(long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryConvertToReadLock(long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryConvertToWriteLock(long)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryOptimisticRead()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryReadLock()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryReadLock(long,java.util.concurrent.TimeUnit)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryUnlockRead()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryUnlockWrite()",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryWriteLock()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "tryWriteLock(long,java.util.concurrent.TimeUnit)",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unlock(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unlockRead(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unlockWrite(long)",
+          "result": "void",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validate(long)",
+          "result": "boolean",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeLock()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeLockInterruptibly()",
+          "result": "long",
+          "declaredBy": "java.util.concurrent.locks.StampedLock",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

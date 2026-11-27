@@ -1,0 +1,2585 @@
+{
+  "name": "javax.management.openmbean",
+  "module": "java.management",
+  "types": [
+    {
+      "target": "javax.management.openmbean.ArrayType",
+      "kind": "class",
+      "parents": [
+        "javax.management.openmbean.OpenType"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/ArrayType.html",
+      "sourceEntry": "java.management/javax/management/openmbean/ArrayType.java",
+      "sourceSha256": "88a67f5c8645869e551f77def6ab5d0c64daf3acd014113feab4baf9b741251d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,javax.management.openmbean.OpenType)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.openmbean.SimpleType,boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getArrayType(javax.management.openmbean.OpenType)",
+          "result": "javax.management.openmbean.ArrayType",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDimension()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getElementOpenType()",
+          "result": "javax.management.openmbean.OpenType",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimitiveArrayType(java.lang.Class)",
+          "result": "javax.management.openmbean.ArrayType",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPrimitiveArray()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.ArrayType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.CompositeData",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/CompositeData.html",
+      "sourceEntry": "java.management/javax/management/openmbean/CompositeData.java",
+      "sourceSha256": "1aae024d6ed624cd17e46b4006b1033992fc7c6bbf70c9701dabf998458d2188",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.CompositeData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.CompositeData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.CompositeData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.CompositeData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAll(java.lang.String[])",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.management.openmbean.CompositeData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompositeType()",
+          "result": "javax.management.openmbean.CompositeType",
+          "declaredBy": "javax.management.openmbean.CompositeData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.CompositeData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.CompositeData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.util.Collection",
+          "declaredBy": "javax.management.openmbean.CompositeData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.CompositeDataInvocationHandler",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.lang.reflect.InvocationHandler"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/CompositeDataInvocationHandler.html",
+      "sourceEntry": "java.management/javax/management/openmbean/CompositeDataInvocationHandler.java",
+      "sourceSha256": "69d8ac5e83655c0299c635e4cc8eda2b5e37d08e2e39da481125a1c2e975bca4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.openmbean.CompositeData)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.CompositeDataInvocationHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompositeData()",
+          "result": "javax.management.openmbean.CompositeData",
+          "declaredBy": "javax.management.openmbean.CompositeDataInvocationHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.CompositeDataInvocationHandler",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.CompositeDataSupport",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.management.openmbean.CompositeData",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html",
+      "sourceEntry": "java.management/javax/management/openmbean/CompositeDataSupport.java",
+      "sourceSha256": "58a71e2b36e56974456662a28e6bb2b798f0ae44a8bb2dfac2bede353c7b68ac",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.openmbean.CompositeType,java.lang.String[],java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.openmbean.CompositeType,java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAll(java.lang.String[])",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCompositeType()",
+          "result": "javax.management.openmbean.CompositeType",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.util.Collection",
+          "declaredBy": "javax.management.openmbean.CompositeDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.CompositeDataView",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/CompositeDataView.html",
+      "sourceEntry": "java.management/javax/management/openmbean/CompositeDataView.java",
+      "sourceSha256": "9147467c6b00ba64a5cc5ffbb7b91d0b4f30189e7cf7c175072e7e6d938fdfba",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "toCompositeData(javax.management.openmbean.CompositeType)",
+          "result": "javax.management.openmbean.CompositeData",
+          "declaredBy": "javax.management.openmbean.CompositeDataView",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.CompositeType",
+      "kind": "class",
+      "parents": [
+        "javax.management.openmbean.OpenType"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/CompositeType.html",
+      "sourceEntry": "java.management/javax/management/openmbean/CompositeType.java",
+      "sourceSha256": "ef3f033aa23e0b9f15d88f2a97d9106ac3eb6595aecae20b12bfd097d76f4082",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],javax.management.openmbean.OpenType[])",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.CompositeType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.CompositeType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.CompositeType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.CompositeType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType(java.lang.String)",
+          "result": "javax.management.openmbean.OpenType",
+          "declaredBy": "javax.management.openmbean.CompositeType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.CompositeType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.CompositeType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "keySet()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.openmbean.CompositeType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.CompositeType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.InvalidKeyException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/InvalidKeyException.html",
+      "sourceEntry": "java.management/javax/management/openmbean/InvalidKeyException.java",
+      "sourceSha256": "86a576a07288031c76f679a4c47403d127a6e48bb24658a5738f13d8eb49ff2d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.InvalidKeyException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.InvalidKeyException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.InvalidOpenTypeException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/InvalidOpenTypeException.html",
+      "sourceEntry": "java.management/javax/management/openmbean/InvalidOpenTypeException.java",
+      "sourceSha256": "72f2848d71920977ab9b8c635332361450897277f235a958c6328c18abc1578d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.InvalidOpenTypeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.InvalidOpenTypeException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.KeyAlreadyExistsException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/KeyAlreadyExistsException.html",
+      "sourceEntry": "java.management/javax/management/openmbean/KeyAlreadyExistsException.java",
+      "sourceSha256": "7ee52c1bd75fe0ea640c0fabe12529345a3deb7861a56a24321fdc68cd9971eb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.KeyAlreadyExistsException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.KeyAlreadyExistsException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenDataException",
+      "kind": "class",
+      "parents": [
+        "javax.management.JMException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenDataException.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenDataException.java",
+      "sourceSha256": "787034fc046e3010f786a111b48b3ae9e0457ff9ad7bd0952e776f96ef4c394d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenDataException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenDataException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenMBeanAttributeInfo",
+      "kind": "interface",
+      "parents": [
+        "javax.management.openmbean.OpenMBeanParameterInfo"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenMBeanAttributeInfo.java",
+      "sourceSha256": "f736ec3eec205054b5d987f706b5903425ff368cbd1b0acd05b02a4cfc68d8c5",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isIs()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadable()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWritable()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+      "kind": "class",
+      "parents": [
+        "javax.management.MBeanAttributeInfo",
+        "javax.management.openmbean.OpenMBeanAttributeInfo"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.java",
+      "sourceSha256": "4e45c2bd6ddb94df2418568669aa46cc351248200787a4515f42ff2d78dbb5af",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,java.lang.Object,java.lang.Comparable,java.lang.Comparable)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,java.lang.Object,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,javax.management.Descriptor)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLegalValues()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxValue()",
+          "result": "java.lang.Comparable",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinValue()",
+          "result": "java.lang.Comparable",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpenType()",
+          "result": "javax.management.openmbean.OpenType",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasDefaultValue()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasLegalValues()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasMaxValue()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasMinValue()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanAttributeInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenMBeanConstructorInfo",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfo.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenMBeanConstructorInfo.java",
+      "sourceSha256": "c8458af2c63e39ca62b2aae6b9773716ecb0706ffe68f1c1b891142883846d2b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSignature()",
+          "result": "javax.management.MBeanParameterInfo[]",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenMBeanConstructorInfoSupport",
+      "kind": "class",
+      "parents": [
+        "javax.management.MBeanConstructorInfo",
+        "javax.management.openmbean.OpenMBeanConstructorInfo"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.java",
+      "sourceSha256": "0ad4a6783410067c1aeb5a824c2558213f1a43e21c84adeca99cb8b9d14e897d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[])",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.Descriptor)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanConstructorInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenMBeanInfo",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenMBeanInfo.java",
+      "sourceSha256": "e61101ce50d4e5a6a2c9d2a1e48b396a6252fa162673b526deb7967c31fc5dc7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "javax.management.MBeanAttributeInfo[]",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClassName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConstructors()",
+          "result": "javax.management.MBeanConstructorInfo[]",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNotifications()",
+          "result": "javax.management.MBeanNotificationInfo[]",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOperations()",
+          "result": "javax.management.MBeanOperationInfo[]",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenMBeanInfoSupport",
+      "kind": "class",
+      "parents": [
+        "javax.management.MBeanInfo",
+        "javax.management.openmbean.OpenMBeanInfo"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenMBeanInfoSupport.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenMBeanInfoSupport.java",
+      "sourceSha256": "c092ebeda7ae8808531015a92dc7896bdcbaddb4238eea198544c2bd39b57223",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanAttributeInfo[],javax.management.openmbean.OpenMBeanConstructorInfo[],javax.management.openmbean.OpenMBeanOperationInfo[],javax.management.MBeanNotificationInfo[])",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanAttributeInfo[],javax.management.openmbean.OpenMBeanConstructorInfo[],javax.management.openmbean.OpenMBeanOperationInfo[],javax.management.MBeanNotificationInfo[],javax.management.Descriptor)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenMBeanOperationInfo",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenMBeanOperationInfo.java",
+      "sourceSha256": "7af59c6f64742aa42a20cf8aa44305dd5d3cd99a2b2b7d01e6715b35db3bd03f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getImpact()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReturnOpenType()",
+          "result": "javax.management.openmbean.OpenType",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReturnType()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSignature()",
+          "result": "javax.management.MBeanParameterInfo[]",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenMBeanOperationInfoSupport",
+      "kind": "class",
+      "parents": [
+        "javax.management.MBeanOperationInfo",
+        "javax.management.openmbean.OpenMBeanOperationInfo"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfoSupport.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenMBeanOperationInfoSupport.java",
+      "sourceSha256": "d3501a0de5c4bb702d5d82fb9404a266459dccb7e904b4fbf8d77532f04f33e7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.openmbean.OpenType,int)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.openmbean.OpenType,int,javax.management.Descriptor)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReturnOpenType()",
+          "result": "javax.management.openmbean.OpenType",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanOperationInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenMBeanParameterInfo",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenMBeanParameterInfo.java",
+      "sourceSha256": "85e2d14b8bedef531123ae5c29b00e62f86e0f58fce84bbdf4b4c830006f45ea",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLegalValues()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxValue()",
+          "result": "java.lang.Comparable",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinValue()",
+          "result": "java.lang.Comparable",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpenType()",
+          "result": "javax.management.openmbean.OpenType",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasDefaultValue()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasLegalValues()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasMaxValue()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasMinValue()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+      "kind": "class",
+      "parents": [
+        "javax.management.MBeanParameterInfo",
+        "javax.management.openmbean.OpenMBeanParameterInfo"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.java",
+      "sourceSha256": "7e28dd4de48eb3191e7a89f77e8b0f95457d1bc5b835d64a17de8244b9dee44f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenType)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object,java.lang.Comparable,java.lang.Comparable)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,javax.management.Descriptor)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultValue()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLegalValues()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxValue()",
+          "result": "java.lang.Comparable",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinValue()",
+          "result": "java.lang.Comparable",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOpenType()",
+          "result": "javax.management.openmbean.OpenType",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasDefaultValue()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasLegalValues()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasMaxValue()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasMinValue()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenMBeanParameterInfoSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.OpenType",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/OpenType.html",
+      "sourceEntry": "java.management/javax/management/openmbean/OpenType.java",
+      "sourceSha256": "a20ddcc9dfd9d69b09c3b59f7da582a83bc372474e493228a3e4694c2d87f14a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ALLOWED_CLASSNAMES",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ALLOWED_CLASSNAMES_LIST",
+          "result": "java.util.List",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getClassName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isArray()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.OpenType",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.SimpleType",
+      "kind": "class",
+      "parents": [
+        "javax.management.openmbean.OpenType"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/SimpleType.html",
+      "sourceEntry": "java.management/javax/management/openmbean/SimpleType.java",
+      "sourceSha256": "f64deda802f32fad7df7f59285b820ae69e114751d847dc6a4286354619589b9",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "BIGDECIMAL",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BIGINTEGER",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BOOLEAN",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BYTE",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHARACTER",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATE",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DOUBLE",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FLOAT",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTEGER",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LONG",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OBJECTNAME",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHORT",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STRING",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VOID",
+          "result": "javax.management.openmbean.SimpleType",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readResolve()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.SimpleType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.TabularData",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/TabularData.html",
+      "sourceEntry": "java.management/javax/management/openmbean/TabularData.java",
+      "sourceSha256": "e0cf347d4de4d07953bf9304ded8ea64eaf3ba962685276077ac69ce2c93be77",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "calculateIndex(javax.management.openmbean.CompositeData)",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.Object[])",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsValue(javax.management.openmbean.CompositeData)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object[])",
+          "result": "javax.management.openmbean.CompositeData",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTabularType()",
+          "result": "javax.management.openmbean.TabularType",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "keySet()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(javax.management.openmbean.CompositeData)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putAll(javax.management.openmbean.CompositeData[])",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Object[])",
+          "result": "javax.management.openmbean.CompositeData",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.util.Collection",
+          "declaredBy": "javax.management.openmbean.TabularData",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.TabularDataSupport",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.management.openmbean.TabularData",
+        "java.util.Map",
+        "java.lang.Cloneable",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html",
+      "sourceEntry": "java.management/javax/management/openmbean/TabularDataSupport.java",
+      "sourceSha256": "cca78b67ffc8dcc20848c37f558ddd39070044bb2c04ddb85179059a5dfa2602",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.openmbean.TabularType)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.openmbean.TabularType,int,float)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "calculateIndex(javax.management.openmbean.CompositeData)",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.Object[])",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsValue(javax.management.openmbean.CompositeData)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "entrySet()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Object[])",
+          "result": "javax.management.openmbean.CompositeData",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTabularType()",
+          "result": "javax.management.openmbean.TabularType",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "keySet()",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.lang.Object,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(javax.management.openmbean.CompositeData)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putAll(java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putAll(javax.management.openmbean.CompositeData[])",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Object[])",
+          "result": "javax.management.openmbean.CompositeData",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.util.Collection",
+          "declaredBy": "javax.management.openmbean.TabularDataSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.openmbean.TabularType",
+      "kind": "class",
+      "parents": [
+        "javax.management.openmbean.OpenType"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/openmbean/TabularType.html",
+      "sourceEntry": "java.management/javax/management/openmbean/TabularType.java",
+      "sourceSha256": "fb593e4c3ba8d4063f1ce43fa38585dddf8e3f2eba010ca47adbac54b5ad14b1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,javax.management.openmbean.CompositeType,java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.management.openmbean.TabularType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndexNames()",
+          "result": "java.util.List",
+          "declaredBy": "javax.management.openmbean.TabularType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRowType()",
+          "result": "javax.management.openmbean.CompositeType",
+          "declaredBy": "javax.management.openmbean.TabularType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.management.openmbean.TabularType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValue(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.management.openmbean.TabularType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.openmbean.TabularType",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

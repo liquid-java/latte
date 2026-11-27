@@ -1,0 +1,3000 @@
+{
+  "name": "javax.sql.rowset",
+  "module": "java.sql.rowset",
+  "types": [
+    {
+      "target": "javax.sql.rowset.BaseRowSet",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/BaseRowSet.java",
+      "sourceSha256": "89ff88f04d9a9278c952a5f81ed3f75383be938853d31e51eb9a5930b73f1c52",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ASCII_STREAM_PARAM",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BINARY_STREAM_PARAM",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNICODE_STREAM_PARAM",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addRowSetListener(javax.sql.RowSetListener)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "asciiStream",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "binaryStream",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "charStream",
+          "result": "java.io.Reader",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "clearParameters()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCommand()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConcurrency()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDataSourceName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEscapeProcessing()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFetchDirection()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFetchSize()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxFieldSize()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaxRows()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPassword()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQueryTimeout()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShowDeleted()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransactionIsolation()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTypeMap()",
+          "result": "java.util.Map",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUrl()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getUsername()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initParams()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadOnly()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "notifyCursorMoved()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "notifyRowChanged()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "notifyRowSetChanged()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeRowSetListener(javax.sql.RowSetListener)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setArray(int,java.sql.Array)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAsciiStream(int,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAsciiStream(int,java.io.InputStream,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAsciiStream(java.lang.String,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAsciiStream(java.lang.String,java.io.InputStream,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBigDecimal(int,java.math.BigDecimal)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBigDecimal(java.lang.String,java.math.BigDecimal)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBinaryStream(int,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBinaryStream(int,java.io.InputStream,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBinaryStream(java.lang.String,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBinaryStream(java.lang.String,java.io.InputStream,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(int,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(int,java.io.InputStream,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(int,java.sql.Blob)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(java.lang.String,java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(java.lang.String,java.io.InputStream,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBlob(java.lang.String,java.sql.Blob)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBoolean(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBoolean(java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setByte(int,byte)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setByte(java.lang.String,byte)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBytes(int,byte[])",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBytes(java.lang.String,byte[])",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCharacterStream(int,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCharacterStream(int,java.io.Reader,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCharacterStream(java.lang.String,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCharacterStream(java.lang.String,java.io.Reader,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(int,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(int,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(int,java.sql.Clob)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(java.lang.String,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(java.lang.String,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setClob(java.lang.String,java.sql.Clob)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCommand(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setConcurrency(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDataSourceName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDate(int,java.sql.Date)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDate(int,java.sql.Date,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDate(java.lang.String,java.sql.Date)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDate(java.lang.String,java.sql.Date,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDouble(int,double)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDouble(java.lang.String,double)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEscapeProcessing(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFetchDirection(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFetchSize(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFloat(int,float)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFloat(java.lang.String,float)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInt(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setInt(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLong(int,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLong(java.lang.String,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaxFieldSize(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMaxRows(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNCharacterStream(int,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNCharacterStream(int,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNCharacterStream(java.lang.String,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNCharacterStream(java.lang.String,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(int,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(int,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(int,java.sql.NClob)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(java.lang.String,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(java.lang.String,java.io.Reader,long)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNClob(java.lang.String,java.sql.NClob)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNString(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNString(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNull(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNull(int,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNull(java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNull(java.lang.String,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(int,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(int,java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(int,java.lang.Object,int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(java.lang.String,java.lang.Object,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setObject(java.lang.String,java.lang.Object,int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPassword(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setQueryTimeout(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setReadOnly(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRef(int,java.sql.Ref)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRowId(int,java.sql.RowId)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setRowId(java.lang.String,java.sql.RowId)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSQLXML(int,java.sql.SQLXML)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSQLXML(java.lang.String,java.sql.SQLXML)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setShort(int,short)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setShort(java.lang.String,short)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setShowDeleted(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setString(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setString(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTime(int,java.sql.Time)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTime(int,java.sql.Time,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTime(java.lang.String,java.sql.Time)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTime(java.lang.String,java.sql.Time,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTimestamp(int,java.sql.Timestamp)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTimestamp(int,java.sql.Timestamp,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTimestamp(java.lang.String,java.sql.Timestamp)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTimestamp(java.lang.String,java.sql.Timestamp,java.util.Calendar)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTransactionIsolation(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setType(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTypeMap(java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setURL(int,java.net.URL)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUnicodeStream(int,java.io.InputStream,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUrl(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setUsername(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "unicodeStream",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.sql.rowset.BaseRowSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.CachedRowSet",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.RowSet",
+        "javax.sql.rowset.Joinable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/CachedRowSet.java",
+      "sourceSha256": "449a482fa2bb14d06a0ce9d224b93faadb39283f9e5a49a3971fdbaafe3fc9f9",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "COMMIT_ON_ACCEPT_CHANGES",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "acceptChanges()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "acceptChanges(java.sql.Connection)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnUpdated(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "columnUpdated(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "commit()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createCopy()",
+          "result": "javax.sql.rowset.CachedRowSet",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createCopyNoConstraints()",
+          "result": "javax.sql.rowset.CachedRowSet",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createCopySchema()",
+          "result": "javax.sql.rowset.CachedRowSet",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createShared()",
+          "result": "javax.sql.RowSet",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "execute(java.sql.Connection)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeyColumns()",
+          "result": "int[]",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOriginal()",
+          "result": "java.sql.ResultSet",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOriginalRow()",
+          "result": "java.sql.ResultSet",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPageSize()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRowSetWarnings()",
+          "result": "javax.sql.rowset.RowSetWarning",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShowDeleted()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSyncProvider()",
+          "result": "javax.sql.rowset.spi.SyncProvider",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTableName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextPage()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "populate(java.sql.ResultSet)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "populate(java.sql.ResultSet,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previousPage()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "release()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "restoreOriginal()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rollback()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rollback(java.sql.Savepoint)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rowSetPopulated(javax.sql.RowSetEvent,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setKeyColumns(int[])",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMetaData(javax.sql.RowSetMetaData)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setOriginalRow()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPageSize(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setShowDeleted(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSyncProvider(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTableName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toCollection()",
+          "result": "java.util.Collection",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toCollection(int)",
+          "result": "java.util.Collection",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toCollection(java.lang.String)",
+          "result": "java.util.Collection",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undoDelete()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undoInsert()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "undoUpdate()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.CachedRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.FilteredRowSet",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.rowset.WebRowSet"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/FilteredRowSet.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/FilteredRowSet.java",
+      "sourceSha256": "02e603b80d191405e8339b7791da50a972c2ae148e57dcf632e80e43e948d346",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getFilter()",
+          "result": "javax.sql.rowset.Predicate",
+          "declaredBy": "javax.sql.rowset.FilteredRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFilter(javax.sql.rowset.Predicate)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.FilteredRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.JdbcRowSet",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.RowSet",
+        "javax.sql.rowset.Joinable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/JdbcRowSet.java",
+      "sourceSha256": "47fb268b04f54ceee6ec6563d7414e623149e9abe06f49a13f5b2ad5e9b3dc9b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "commit()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JdbcRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAutoCommit()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.JdbcRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRowSetWarnings()",
+          "result": "javax.sql.rowset.RowSetWarning",
+          "declaredBy": "javax.sql.rowset.JdbcRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShowDeleted()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.JdbcRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rollback()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JdbcRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rollback(java.sql.Savepoint)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JdbcRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAutoCommit(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JdbcRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setShowDeleted(boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JdbcRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.JoinRowSet",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.rowset.WebRowSet"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/JoinRowSet.java",
+      "sourceSha256": "288b7a6cf4100a8337386b6407755274cb2da8e85cc05fca18ff15cd1698049e",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CROSS_JOIN",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FULL_JOIN",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INNER_JOIN",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LEFT_OUTER_JOIN",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RIGHT_OUTER_JOIN",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addRowSet(javax.sql.RowSet,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addRowSet(javax.sql.RowSet,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addRowSet(javax.sql.RowSet[],int[])",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addRowSet(javax.sql.RowSet[],java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addRowSet(javax.sql.rowset.Joinable)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJoinType()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRowSetNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRowSets()",
+          "result": "java.util.Collection",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getWhereClause()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setJoinType(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportsCrossJoin()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportsFullJoin()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportsInnerJoin()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportsLeftOuterJoin()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportsRightOuterJoin()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toCachedRowSet()",
+          "result": "javax.sql.rowset.CachedRowSet",
+          "declaredBy": "javax.sql.rowset.JoinRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.Joinable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/Joinable.java",
+      "sourceSha256": "0be36ab5a861d6540b82cdde55a24b581d47dced24b03d8ed293997d4047c33f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getMatchColumnIndexes()",
+          "result": "int[]",
+          "declaredBy": "javax.sql.rowset.Joinable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMatchColumnNames()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.sql.rowset.Joinable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMatchColumn(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.Joinable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMatchColumn(int[])",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.Joinable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMatchColumn(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.Joinable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMatchColumn(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.Joinable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unsetMatchColumn(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.Joinable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unsetMatchColumn(int[])",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.Joinable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unsetMatchColumn(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.Joinable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unsetMatchColumn(java.lang.String[])",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.Joinable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.Predicate",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/Predicate.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/Predicate.java",
+      "sourceSha256": "d578f88bad62716bcc0b58d656aee44d642ca55434db420737b03661dfd74996",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "evaluate(java.lang.Object,int)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.Predicate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluate(java.lang.Object,java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.Predicate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "evaluate(javax.sql.RowSet)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.Predicate",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.RowSetFactory",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/RowSetFactory.java",
+      "sourceSha256": "6e8a5e96649b3ac39eb68d7eb109a1fb2e2b817104bd88ff54ab1397ccfee575",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "createCachedRowSet()",
+          "result": "javax.sql.rowset.CachedRowSet",
+          "declaredBy": "javax.sql.rowset.RowSetFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createFilteredRowSet()",
+          "result": "javax.sql.rowset.FilteredRowSet",
+          "declaredBy": "javax.sql.rowset.RowSetFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createJdbcRowSet()",
+          "result": "javax.sql.rowset.JdbcRowSet",
+          "declaredBy": "javax.sql.rowset.RowSetFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createJoinRowSet()",
+          "result": "javax.sql.rowset.JoinRowSet",
+          "declaredBy": "javax.sql.rowset.RowSetFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createWebRowSet()",
+          "result": "javax.sql.rowset.WebRowSet",
+          "declaredBy": "javax.sql.rowset.RowSetFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.RowSetMetaDataImpl",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.sql.RowSetMetaData",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.java",
+      "sourceSha256": "67fd8bb3b7523c32135531fe2cc04a1dfdec26186fb48b9fdab7869095901cc4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCatalogName(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnClassName(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnCount()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnDisplaySize(int)",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnLabel(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnName(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnType(int)",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getColumnTypeName(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrecision(int)",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getScale(int)",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSchemaName(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTableName(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAutoIncrement(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCaseSensitive(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCurrency(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDefinitelyWritable(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNullable(int)",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadOnly(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSearchable(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSigned(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWrapperFor(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isWritable(int)",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAutoIncrement(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCaseSensitive(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCatalogName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnCount(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnDisplaySize(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnLabel(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnType(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setColumnTypeName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCurrency(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNullable(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setPrecision(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setScale(int,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSchemaName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSearchable(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSigned(int,boolean)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTableName(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unwrap(java.lang.Class)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.sql.rowset.RowSetMetaDataImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.RowSetProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/RowSetProvider.java",
+      "sourceSha256": "04cbbf426dddca7ec2c23c04fe65cb732107a6697d0fc9f9e717cce3d889647e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFactory()",
+          "result": "javax.sql.rowset.RowSetFactory",
+          "declaredBy": "javax.sql.rowset.RowSetProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newFactory(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.sql.rowset.RowSetFactory",
+          "declaredBy": "javax.sql.rowset.RowSetProvider",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.RowSetWarning",
+      "kind": "class",
+      "parents": [
+        "java.sql.SQLException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/RowSetWarning.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/RowSetWarning.java",
+      "sourceSha256": "def5d2c7eeaa9c9cf1ef473131d4e088ac6d747ea9912e2729523c0dcb11216b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetWarning",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetWarning",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetWarning",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetWarning",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNextWarning()",
+          "result": "javax.sql.rowset.RowSetWarning",
+          "declaredBy": "javax.sql.rowset.RowSetWarning",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNextWarning(javax.sql.rowset.RowSetWarning)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.RowSetWarning",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.WebRowSet",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.rowset.CachedRowSet"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/WebRowSet.java",
+      "sourceSha256": "30c4f5b9c0e706bff26218efd9d798cd90c30c420d6c2bbf4b781650dd27a7e4",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "PUBLIC_XML_SCHEMA",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.WebRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SCHEMA_SYSTEM_ID",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.WebRowSet",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "readXml(java.io.InputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.WebRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readXml(java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.WebRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeXml(java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.WebRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeXml(java.io.Writer)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.WebRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeXml(java.sql.ResultSet,java.io.OutputStream)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.WebRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeXml(java.sql.ResultSet,java.io.Writer)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.WebRowSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

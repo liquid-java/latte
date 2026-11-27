@@ -1,0 +1,323 @@
+{
+  "ablationHarnessSource": "import java.nio.file.*;\nimport java.util.*;\nimport spoon.Launcher;\nimport spoon.reflect.declaration.CtMethod;\nimport spoon.reflect.visitor.filter.TypeFilter;\nimport latte.api.*;\nimport latte.analysis.*;\nimport latte.refinement.LiquidTypeChecking;\nimport com.google.gson.GsonBuilder;\npublic class EffectAblation {\n  public static void main(String[] args) throws Exception {\n    var launcher = new Launcher();\n    launcher.getEnvironment().setComplianceLevel(21);\n    launcher.getEnvironment().setNoClasspath(true);\n    launcher.getEnvironment().setCommentEnabled(false);\n    launcher.addInputResource(args[0]);\n    Jdk21Contracts.addTo(launcher,List.of(\"all\"));\n    var model = launcher.buildModel();\n    if (args[1].equals(\"without-summaries\"))\n      for (var method : model.getElements(new TypeFilter<>(CtMethod.class)))\n        for (var annotation : List.copyOf(method.getAnnotations()))\n          if (Set.of(\"Modifies\",\"ReturnsView\").contains(annotation.getAnnotationType().getSimpleName()))\n            method.removeAnnotation(annotation);\n    var diagnostics = new ArrayList<Diagnostic>(new LatteAnalysis().analyze(model));\n    diagnostics.addAll(new LiquidTypeChecking().analyze(model));\n    Files.writeString(Path.of(args[2]),new GsonBuilder().setPrettyPrinting().create().toJson(diagnostics.stream().distinct().toList())+\"\\n\");\n  }\n}\n",
+  "cases": {
+    "ArrayConstructorReference.java": {
+      "accepted": true,
+      "diagnostics": [],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "examples/jdk21-audit/ArrayConstructorReference.java",
+      "sourceSha256": "2f5eabbefbeef3f374a5ec9a83965009fca04dee1e374ee5c33e7da832ff6a9b"
+    },
+    "ArrayLengthBounds.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 5,
+          "kind": "REFINEMENT",
+          "line": 9,
+          "message": "Cannot establish refinement"
+        }
+      ],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "examples/jdk21-audit/ArrayLengthBounds.java",
+      "sourceSha256": "b1053b8096085a80a67fdb1e61db49cdf4acddf01c5bdd7b5dbd5cf703f7d7cb"
+    },
+    "BranchOwnershipLimit.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 13,
+          "kind": "SHARED_REFINEMENT",
+          "line": 15,
+          "message": "A shared receiver cannot carry state refinements"
+        }
+      ],
+      "jdkPackages": [],
+      "source": "examples/refinements/BranchOwnershipLimit.java",
+      "sourceSha256": "f085d09dbb10510b1f918e4d67c1443ceea00189d94236a54f77e6bd04fafdc4"
+    },
+    "ClampTable.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 48,
+          "kind": "REFINEMENT",
+          "line": 11,
+          "message": "Cannot establish refinement"
+        },
+        {
+          "column": 26,
+          "kind": "REFINEMENT",
+          "line": 17,
+          "message": "Cannot establish refinement"
+        }
+      ],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "examples/jdk21-audit/ClampTable.java",
+      "sourceSha256": "1013343a46aba13fab2dbc6b532aeb5ce004fc4b747c59997e6700c99b95ba7a"
+    },
+    "ConservativeArrayCopy.java": {
+      "accepted": true,
+      "diagnostics": [],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "examples/jdk21-audit/ConservativeArrayCopy.java",
+      "sourceSha256": "167dc4e1dca0694b576d93c6d67a37da0a2db706f3066ba0264a0783d777e43e",
+      "withoutModifiesAndReturnsView": [
+        {
+          "column": 5,
+          "kind": "PERMISSION",
+          "line": 10,
+          "message": "Non-distinct parameters or receiver in call"
+        }
+      ]
+    },
+    "ConstructorFootprint.java": {
+      "accepted": true,
+      "diagnostics": [],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "embedded:ConstructorFootprint.java",
+      "sourceSha256": "d4b502a256524f998368545034e6d557692ba223ba8a6d77a3b4e07d9741f21c",
+      "sourceText": "import specification.*;\nimport liquidjava.specification.*;\nclass Library { Library(Object[] values) {} }\n@ExternalRefinementsFor(\"Library\") interface LibrarySpec {\n  @Modifies({}) void Library(@Borrowed Object[] values);\n}\nclass ConstructorFootprint {\n  @StateSet({\"open\",\"closed\"}) static class Resource {\n    @StateRefinement(to=\"open(this)\") Resource() {}\n    @StateRefinement(from=\"open(this)\") void read() {}\n  }\n  void run() {\n    Resource resource = new Resource(); Resource[] values = {resource};\n    new Library(values);\n    values[0].read();\n  }\n}\n",
+      "withoutModifiesAndReturnsView": [
+        {
+          "column": 5,
+          "kind": "SHARED_REFINEMENT",
+          "line": 15,
+          "message": "A shared receiver cannot carry state refinements"
+        }
+      ]
+    },
+    "EffectAndOwnershipContracts.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 9,
+          "kind": "REFINEMENT",
+          "line": 43,
+          "message": "Cannot establish refinement"
+        },
+        {
+          "column": 5,
+          "kind": "SHARED_REFINEMENT",
+          "line": 49,
+          "message": "A shared receiver cannot carry state refinements"
+        }
+      ],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "examples/jdk21/EffectAndOwnershipContracts.java",
+      "sourceSha256": "5db54162388eb6175d6693974f0746ff33464fcc4eeb687d51420a1abbb26d3b"
+    },
+    "HelperBounds.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 33,
+          "kind": "REFINEMENT",
+          "line": 8,
+          "message": "Cannot establish refinement"
+        }
+      ],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "examples/jdk21-audit/HelperBounds.java",
+      "sourceSha256": "b6952562fc8be51c94f6dd1aa6e3b648cfb99132a38e3012a40e60a0ac7ede04"
+    },
+    "InferredOwnershipRelease.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 9,
+          "kind": "PERMISSION",
+          "line": 28,
+          "message": "Expected FREE but got UNIQUE"
+        },
+        {
+          "column": 17,
+          "kind": "PERMISSION",
+          "line": 34,
+          "message": "Expected FREE but got UNIQUE"
+        }
+      ],
+      "jdkPackages": [],
+      "source": "examples/refinements/InferredOwnershipRelease.java",
+      "sourceSha256": "042f5bc9ad73d6e0cfbb2d8dd967abc06cbb916079a121718cfcb83b8277adde"
+    },
+    "LocalCaptures.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 9,
+          "kind": "STATE",
+          "line": 25,
+          "message": "Cannot establish state refinement"
+        },
+        {
+          "column": 9,
+          "kind": "SHARED_REFINEMENT",
+          "line": 35,
+          "message": "A shared receiver cannot carry state refinements"
+        }
+      ],
+      "jdkPackages": [],
+      "source": "examples/refinements/LocalCaptures.java",
+      "sourceSha256": "671ad4e817d20d91602c17a70a39c00c9351c1ea64255a68c26218d6d1326176"
+    },
+    "LocalListView.java": {
+      "accepted": true,
+      "diagnostics": [],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "examples/jdk21-audit/LocalListView.java",
+      "sourceSha256": "04c38f1169e95845ab0319d71ab544997355e2fd7cbb35b7765f108365de6e2f",
+      "withoutModifiesAndReturnsView": [
+        {
+          "column": 5,
+          "kind": "SHARED_REFINEMENT",
+          "line": 6,
+          "message": "A shared receiver cannot carry state refinements"
+        }
+      ]
+    },
+    "OverrideConstructorEffects.java": {
+      "accepted": false,
+      "control": "Forwarding.add passes; WithException.add has the same forwarding call plus conditional new Error and is rejected for exceeding the footprint.",
+      "diagnostics": [
+        {
+          "column": 27,
+          "kind": "PERMISSION",
+          "line": 7,
+          "message": "Override exceeds external Modifies footprint"
+        }
+      ],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "embedded:OverrideConstructorEffects.java",
+      "sourceSha256": "e761f19e80d8329c4e0c0e9f9f47f9fc21a898463cee66439a3fdf361960ba35",
+      "sourceText": "import java.util.ArrayList;\nclass OverrideConstructorEffects {\n  static class Forwarding extends ArrayList<Integer> {\n    @Override public void add(int index, Integer value) { super.add(index, value); }\n  }\n  static class WithException extends ArrayList<Integer> {\n    @Override public void add(int index, Integer value) {\n      if (value == 13) throw new Error(\"unlucky\");\n      super.add(index, value);\n    }\n  }\n}\n"
+    },
+    "RandomOverride.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 5,
+          "kind": "REFINEMENT",
+          "line": 9,
+          "message": "Cannot establish refinement"
+        }
+      ],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "examples/jdk21-audit/RandomOverride.java",
+      "sourceSha256": "c3427bff0216fa8555261f68ee1cc56a98b2d6ef7085299ea83f92725d46155d"
+    },
+    "ReadOnlyAliasedArguments.java": {
+      "accepted": false,
+      "control": "distinctArrays() has no diagnostic. Both inputs in sameArray() are a single controlled local array, not shared inputs.",
+      "diagnostics": [
+        {
+          "column": 5,
+          "kind": "PERMISSION",
+          "line": 4,
+          "message": "Non-distinct parameters or receiver in call"
+        }
+      ],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "embedded:ReadOnlyAliasedArguments.java",
+      "sourceSha256": "e05a6bc815c989f7b2422857056b61393e64ab99bbbb82e4ed648eff3f772633",
+      "sourceText": "class ReadOnlyAliasedArguments {\n  void sameArray() {\n    int[] values = {1,2};\n    java.util.Arrays.equals(values, values);\n  }\n  void distinctArrays() {\n    int[] first = {1,2}; int[] second = {1,2};\n    java.util.Arrays.equals(first, second);\n  }\n}\n"
+    },
+    "RepeatedAllocationLimit.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 29,
+          "kind": "SHARED_REFINEMENT",
+          "line": 12,
+          "message": "A shared receiver cannot carry state refinements"
+        }
+      ],
+      "jdkPackages": [],
+      "source": "embedded:RepeatedAllocationLimit.java",
+      "sourceSha256": "690bb61b8f722620c29e03c53be19b2fee4fef082420ceee50934aa430d173ef",
+      "sourceText": "import liquidjava.specification.*;\nclass RepeatedAllocationLimit {\n  @StateSet({\"open\", \"closed\"}) static class Resource {\n    @StateRefinement(to=\"open(this)\") Resource() {}\n    @StateRefinement(from=\"open(this)\") void read() {}\n  }\n  void repeated() {\n    Resource previous = null;\n    for (int i = 0; i < 3; i++) {\n      Resource current = new Resource();\n      current.read();\n      if (previous != null) previous.read(); // Expect: SHARED_REFINEMENT\n      previous = current;\n    }\n  }\n  void separateSites() {\n    Resource first = new Resource(); first.read();\n    Resource second = new Resource(); first.read(); second.read();\n    Resource third = new Resource(); second.read(); third.read();\n  }\n}\n"
+    },
+    "SharedArrayHelper.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 36,
+          "kind": "PERMISSION",
+          "line": 8,
+          "message": "Expected BORROWED but got SHARED"
+        },
+        {
+          "column": 36,
+          "kind": "SHARED_REFINEMENT",
+          "line": 8,
+          "message": "A shared argument cannot carry a refinement"
+        }
+      ],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "examples/jdk21-audit/SharedArrayHelper.java",
+      "sourceSha256": "1fcad2e2aae42e4a2542d2d2f140930c5d479a83294a4895dc110fc5d90f2ef4"
+    },
+    "StringFacts.java": {
+      "accepted": false,
+      "diagnostics": [
+        {
+          "column": 25,
+          "kind": "REFINEMENT",
+          "line": 7,
+          "message": "Cannot establish refinement"
+        }
+      ],
+      "jdkPackages": [
+        "all"
+      ],
+      "source": "examples/jdk21-audit/StringFacts.java",
+      "sourceSha256": "69e4714990f6218ebf94b0406029bf3bafb662b8e52eaa891a6415e03b2c8c9f",
+      "withoutModifiesAndReturnsView": [
+        {
+          "column": 25,
+          "kind": "REFINEMENT",
+          "line": 7,
+          "message": "Cannot establish refinement"
+        },
+        {
+          "column": 25,
+          "kind": "REFINEMENT",
+          "line": 24,
+          "message": "Cannot establish refinement"
+        }
+      ]
+    }
+  },
+  "checkerSha256": "0def215d6bf2718cc3ce9b7ecd1ba9b6d2e6d32fd552903918046494e9cdb1c4",
+  "method": "Current packaged checker; normal catalog for JDK examples, no bundled catalog for repository ownership examples. Controlled ablation removes only Modifies and ReturnsView annotations from the current Spoon catalog model, keeping the same checker and all other 501 contracts.",
+  "runtimeWitness": {
+    "exitCode": 0,
+    "javaRelease": 21,
+    "method": "Executed the unchanged standalone OpenJDK test; assertions are explicit failure counters and throws, not Java assert statements.",
+    "source": "test/jdk/java/util/ArrayList/SubListModCount.java"
+  }
+}

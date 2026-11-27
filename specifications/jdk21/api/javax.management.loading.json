@@ -1,0 +1,627 @@
+{
+  "name": "javax.management.loading",
+  "module": "java.management",
+  "types": [
+    {
+      "target": "javax.management.loading.ClassLoaderRepository",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html",
+      "sourceEntry": "java.management/javax/management/loading/ClassLoaderRepository.java",
+      "sourceSha256": "d85b1f1de7c213cc28c1ea427ede26a50987cb0868f99fd07dfed3e3fe54d829",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "loadClass(java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.management.loading.ClassLoaderRepository",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClassBefore(java.lang.ClassLoader,java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.management.loading.ClassLoaderRepository",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClassWithout(java.lang.ClassLoader,java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.management.loading.ClassLoaderRepository",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.loading.DefaultLoaderRepository",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/loading/DefaultLoaderRepository.html",
+      "sourceEntry": "java.management/javax/management/loading/DefaultLoaderRepository.java",
+      "sourceSha256": "5f61004eca21e2d0df16860e5476a4891b5674c80ea9b73347be354a3bbceebc",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.management.loading.DefaultLoaderRepository",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClass(java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.management.loading.DefaultLoaderRepository",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClassWithout(java.lang.ClassLoader,java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.management.loading.DefaultLoaderRepository",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.loading.MLet",
+      "kind": "class",
+      "parents": [
+        "java.net.URLClassLoader",
+        "javax.management.loading.MLetMBean",
+        "javax.management.MBeanRegistration",
+        "java.io.Externalizable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/loading/MLet.html",
+      "sourceEntry": "java.management/javax/management/loading/MLet.java",
+      "sourceSha256": "50e1bf97df8b0b3a869e9e2526716c2ddc50dd19e2c694a928b9f16c1c64c502",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL[])",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL[],boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL[],java.lang.ClassLoader)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL[],java.lang.ClassLoader,boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory,boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addURL(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addURL(java.net.URL)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "check(java.lang.String,java.net.URL,java.lang.String,javax.management.loading.MLetContent)",
+          "result": "java.net.URL",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findClass(java.lang.String)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "findLibrary(java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLibraryDirectory()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeansFromURL(java.lang.String)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeansFromURL(java.net.URL)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURLs()",
+          "result": "java.net.URL[]",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "loadClass(java.lang.String,javax.management.loading.ClassLoaderRepository)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "postDeregister()",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "postRegister(java.lang.Boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preDeregister()",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "preRegister(javax.management.MBeanServer,javax.management.ObjectName)",
+          "result": "javax.management.ObjectName",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readExternal(java.io.ObjectInput)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLibraryDirectory(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeExternal(java.io.ObjectOutput)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.loading.MLetContent",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/loading/MLetContent.html",
+      "sourceEntry": "java.management/javax/management/loading/MLetContent.java",
+      "sourceSha256": "1683cff2fba4c0bde2ed3741a396ba7e8cf1eddd0332688508c44ed53df83029",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL,java.util.Map,java.util.List,java.util.List)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "java.util.Map",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCode()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCodeBase()",
+          "result": "java.net.URL",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDocumentBase()",
+          "result": "java.net.URL",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getJarFiles()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameterTypes()",
+          "result": "java.util.List",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParameterValues()",
+          "result": "java.util.List",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSerializedObject()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.loading.MLetContent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.loading.MLetMBean",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/loading/MLetMBean.html",
+      "sourceEntry": "java.management/javax/management/loading/MLetMBean.java",
+      "sourceSha256": "d534145f9e3a982d03e334dfc11ace53b64d66248b3ca7b3442ea292c4700e0b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addURL(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLetMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addURL(java.net.URL)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLetMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLibraryDirectory()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.loading.MLetMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeansFromURL(java.lang.String)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.loading.MLetMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeansFromURL(java.net.URL)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.loading.MLetMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResource(java.lang.String)",
+          "result": "java.net.URL",
+          "declaredBy": "javax.management.loading.MLetMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResourceAsStream(java.lang.String)",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.management.loading.MLetMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResources(java.lang.String)",
+          "result": "java.util.Enumeration",
+          "declaredBy": "javax.management.loading.MLetMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURLs()",
+          "result": "java.net.URL[]",
+          "declaredBy": "javax.management.loading.MLetMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLibraryDirectory(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.MLetMBean",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.loading.PrivateClassLoader",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/loading/PrivateClassLoader.html",
+      "sourceEntry": "java.management/javax/management/loading/PrivateClassLoader.java",
+      "sourceSha256": "89bf5c205b43abac8d76a473bef896d0bc92b7a07277ed5bf65aafab4d52b2dc",
+      "members": []
+    },
+    {
+      "target": "javax.management.loading.PrivateMLet",
+      "kind": "class",
+      "parents": [
+        "javax.management.loading.MLet",
+        "javax.management.loading.PrivateClassLoader"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/loading/PrivateMLet.html",
+      "sourceEntry": "java.management/javax/management/loading/PrivateMLet.java",
+      "sourceSha256": "e1456df3b7ec247b6b22fb4a5e096e6787029a1d3947e34f8d867846821283b4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL[],boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.PrivateMLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL[],java.lang.ClassLoader,boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.PrivateMLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory,boolean)",
+          "result": "void",
+          "declaredBy": "javax.management.loading.PrivateMLet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1554 @@
+{
+  "name": "javax.management.remote.rmi",
+  "module": "java.management.rmi",
+  "types": [
+    {
+      "target": "javax.management.remote.rmi.RMIConnection",
+      "kind": "interface",
+      "parents": [
+        "java.io.Closeable",
+        "java.rmi.Remote"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html",
+      "sourceEntry": "java.management.rmi/javax/management/remote/rmi/RMIConnection.java",
+      "sourceSha256": "0ee3aeeecdad5459bf6335c4e04109cd1ebc8674d31fa414ee361e1e35f50cd1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])",
+          "result": "java.lang.Integer[]",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fetchNotifications(long,int,long)",
+          "result": "javax.management.remote.NotificationResult",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes(javax.management.ObjectName,java.lang.String[],javax.security.auth.Subject)",
+          "result": "javax.management.AttributeList",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnectionId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultDomain(javax.security.auth.Subject)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDomains(javax.security.auth.Subject)",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanCount(javax.security.auth.Subject)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.MBeanInfo",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoke(javax.management.ObjectName,java.lang.String,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)",
+          "result": "boolean",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRegistered(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "boolean",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "queryNames(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttribute(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttributes(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "javax.management.AttributeList",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.rmi.RMIConnectionImpl",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.management.remote.rmi.RMIConnection",
+        "java.rmi.server.Unreferenced"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html",
+      "sourceEntry": "java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.java",
+      "sourceSha256": "0b9c3329c531d530d338337df985bade0558f8384ed888ef95b4f73d18106af0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.remote.rmi.RMIServerImpl,java.lang.String,java.lang.ClassLoader,javax.security.auth.Subject,java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])",
+          "result": "java.lang.Integer[]",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fetchNotifications(long,int,long)",
+          "result": "javax.management.remote.NotificationResult",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes(javax.management.ObjectName,java.lang.String[],javax.security.auth.Subject)",
+          "result": "javax.management.AttributeList",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnectionId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultDomain(javax.security.auth.Subject)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDomains(javax.security.auth.Subject)",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanCount(javax.security.auth.Subject)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.MBeanInfo",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoke(javax.management.ObjectName,java.lang.String,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)",
+          "result": "boolean",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRegistered(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "boolean",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "queryNames(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttribute(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttributes(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "javax.management.AttributeList",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unreferenced()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+      "kind": "class",
+      "parents": [
+        "java.rmi.server.RemoteStub",
+        "javax.management.remote.rmi.RMIConnection"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html",
+      "sourceEntry": "java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.java",
+      "sourceSha256": "8be9006895af62c6a84d172d0633e20931ad251ee92d3ad2a87aafbadc1486ea",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.rmi.server.RemoteRef)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])",
+          "result": "java.lang.Integer[]",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fetchNotifications(long,int,long)",
+          "result": "javax.management.remote.NotificationResult",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes(javax.management.ObjectName,java.lang.String[],javax.security.auth.Subject)",
+          "result": "javax.management.AttributeList",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnectionId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultDomain(javax.security.auth.Subject)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDomains(javax.security.auth.Subject)",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanCount(javax.security.auth.Subject)",
+          "result": "java.lang.Integer",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.MBeanInfo",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "javax.management.ObjectInstance",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "invoke(javax.management.ObjectName,java.lang.String,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)",
+          "result": "boolean",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isRegistered(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "boolean",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "queryNames(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "java.util.Set",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttribute(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttributes(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)",
+          "result": "javax.management.AttributeList",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectionImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.rmi.RMIConnector",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.management.remote.JMXConnector",
+        "java.io.Serializable",
+        "javax.management.remote.JMXAddressable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html",
+      "sourceEntry": "java.management.rmi/javax/management/remote/rmi/RMIConnector.java",
+      "sourceSha256": "564efcfa17bf419db4ff02289f1e3e2b5e65cdf80939bb063a9d95f4be824e1f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.remote.JMXServiceURL,java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.remote.rmi.RMIServer,java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connect()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connect(java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAddress()",
+          "result": "javax.management.remote.JMXServiceURL",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConnectionId()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanServerConnection()",
+          "result": "javax.management.MBeanServerConnection",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanServerConnection(javax.security.auth.Subject)",
+          "result": "javax.management.MBeanServerConnection",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeConnectionNotificationListener(javax.management.NotificationListener)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnector",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.rmi.RMIConnectorServer",
+      "kind": "class",
+      "parents": [
+        "javax.management.remote.JMXConnectorServer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html",
+      "sourceEntry": "java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.java",
+      "sourceSha256": "05f42499cf461d4c73889da508269ec2d35b3f33d8ab7b47e2640dde9b7bd9e7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.remote.JMXServiceURL,java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.MBeanServer)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.remote.rmi.RMIServerImpl,javax.management.MBeanServer)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "CREDENTIALS_FILTER_PATTERN",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "JNDI_REBIND_ATTRIBUTE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RMI_CLIENT_SOCKET_FACTORY_ATTRIBUTE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SERIAL_FILTER_PATTERN",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "connectionClosed(java.lang.String,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connectionFailed(java.lang.String,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "connectionOpened(java.lang.String,java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAddress()",
+          "result": "javax.management.remote.JMXServiceURL",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttributes()",
+          "result": "java.util.Map",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isActive()",
+          "result": "boolean",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "start()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "stop()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toJMXConnector(java.util.Map)",
+          "result": "javax.management.remote.JMXConnector",
+          "declaredBy": "javax.management.remote.rmi.RMIConnectorServer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.rmi.RMIJRMPServerImpl",
+      "kind": "class",
+      "parents": [
+        "javax.management.remote.rmi.RMIServerImpl"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management.rmi/javax/management/remote/rmi/RMIJRMPServerImpl.html",
+      "sourceEntry": "java.management.rmi/javax/management/remote/rmi/RMIJRMPServerImpl.java",
+      "sourceSha256": "4d514ec98b6dbc69ba565d8d9884aaaa4fd2c1dad1f5f40bd80eed290494a077",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIJRMPServerImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "closeClient(javax.management.remote.rmi.RMIConnection)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIJRMPServerImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "closeServer()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIJRMPServerImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "export()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIJRMPServerImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProtocol()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIJRMPServerImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "makeClient(java.lang.String,javax.security.auth.Subject)",
+          "result": "javax.management.remote.rmi.RMIConnection",
+          "declaredBy": "javax.management.remote.rmi.RMIJRMPServerImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toStub()",
+          "result": "java.rmi.Remote",
+          "declaredBy": "javax.management.remote.rmi.RMIJRMPServerImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.rmi.RMIServer",
+      "kind": "interface",
+      "parents": [
+        "java.rmi.Remote"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServer.html",
+      "sourceEntry": "java.management.rmi/javax/management/remote/rmi/RMIServer.java",
+      "sourceSha256": "bc396aa24d5224ccfd1f78b4ecaa626cb7693c0cc68bae6d9d5f86fb209e50ee",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIServer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newClient(java.lang.Object)",
+          "result": "javax.management.remote.rmi.RMIConnection",
+          "declaredBy": "javax.management.remote.rmi.RMIServer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.rmi.RMIServerImpl",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Closeable",
+        "javax.management.remote.rmi.RMIServer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html",
+      "sourceEntry": "java.management.rmi/javax/management/remote/rmi/RMIServerImpl.java",
+      "sourceSha256": "e1b16dc8c7c56fdcdcf4d4b6f23a620527e30345a487b8aad45f19dc85d9d580",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Map)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clientClosed(javax.management.remote.rmi.RMIConnection)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "close()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "closeClient(javax.management.remote.rmi.RMIConnection)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "closeServer()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "export()",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDefaultClassLoader()",
+          "result": "java.lang.ClassLoader",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMBeanServer()",
+          "result": "javax.management.MBeanServer",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProtocol()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "makeClient(java.lang.String,javax.security.auth.Subject)",
+          "result": "javax.management.remote.rmi.RMIConnection",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 1028,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newClient(java.lang.Object)",
+          "result": "javax.management.remote.rmi.RMIConnection",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDefaultClassLoader(java.lang.ClassLoader)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setMBeanServer(javax.management.MBeanServer)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toStub()",
+          "result": "java.rmi.Remote",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.management.remote.rmi.RMIServerImpl_Stub",
+      "kind": "class",
+      "parents": [
+        "java.rmi.server.RemoteStub",
+        "javax.management.remote.rmi.RMIServer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html",
+      "sourceEntry": "java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.java",
+      "sourceSha256": "a17986e447377f367f1b0f3be967a8f17e7b26d03cb912a73f15b77a98c9711b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.rmi.server.RemoteRef)",
+          "result": "void",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newClient(java.lang.Object)",
+          "result": "javax.management.remote.rmi.RMIConnection",
+          "declaredBy": "javax.management.remote.rmi.RMIServerImpl_Stub",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1767 @@
+{
+  "name": "javax.print.attribute",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.print.attribute.Attribute",
+      "kind": "interface",
+      "parents": [
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/Attribute.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/Attribute.java",
+      "sourceSha256": "b1c67c1296c72e5291890234db945b748c85114217b8c61bdf49f1eea239dbff",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCategory()",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.print.attribute.Attribute",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.Attribute",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.AttributeSet",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/AttributeSet.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/AttributeSet.java",
+      "sourceSha256": "62cfe30bcd76d4855275dd4fcd57e9f373ad6b1d9ae71a5b3221c6b97a3e6dbf",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "add(javax.print.attribute.Attribute)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(javax.print.attribute.AttributeSet)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsValue(javax.print.attribute.Attribute)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Class)",
+          "result": "javax.print.attribute.Attribute",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(javax.print.attribute.Attribute)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "javax.print.attribute.Attribute[]",
+          "declaredBy": "javax.print.attribute.AttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.AttributeSetUtilities",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/AttributeSetUtilities.java",
+      "sourceSha256": "864ea791e572ca6f9c1849e3ce28dbe5597b1ecffd03af98fde2addd35f37fee",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "synchronizedView(javax.print.attribute.AttributeSet)",
+          "result": "javax.print.attribute.AttributeSet",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "synchronizedView(javax.print.attribute.DocAttributeSet)",
+          "result": "javax.print.attribute.DocAttributeSet",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "synchronizedView(javax.print.attribute.PrintJobAttributeSet)",
+          "result": "javax.print.attribute.PrintJobAttributeSet",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "synchronizedView(javax.print.attribute.PrintRequestAttributeSet)",
+          "result": "javax.print.attribute.PrintRequestAttributeSet",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "synchronizedView(javax.print.attribute.PrintServiceAttributeSet)",
+          "result": "javax.print.attribute.PrintServiceAttributeSet",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unmodifiableView(javax.print.attribute.AttributeSet)",
+          "result": "javax.print.attribute.AttributeSet",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unmodifiableView(javax.print.attribute.DocAttributeSet)",
+          "result": "javax.print.attribute.DocAttributeSet",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unmodifiableView(javax.print.attribute.PrintJobAttributeSet)",
+          "result": "javax.print.attribute.PrintJobAttributeSet",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unmodifiableView(javax.print.attribute.PrintRequestAttributeSet)",
+          "result": "javax.print.attribute.PrintRequestAttributeSet",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unmodifiableView(javax.print.attribute.PrintServiceAttributeSet)",
+          "result": "javax.print.attribute.PrintServiceAttributeSet",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verifyAttributeCategory(java.lang.Object,java.lang.Class)",
+          "result": "java.lang.Class",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verifyAttributeValue(java.lang.Object,java.lang.Class)",
+          "result": "javax.print.attribute.Attribute",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "verifyCategoryForValue(java.lang.Class,javax.print.attribute.Attribute)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.AttributeSetUtilities",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.DateTimeSyntax",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/DateTimeSyntax.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/DateTimeSyntax.java",
+      "sourceSha256": "f7b7c3990d5b96c046cc3e796df6221cb4f1d366f4b6c2c9948cf30ce034baa0",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.util.Date)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.DateTimeSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.DateTimeSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "java.util.Date",
+          "declaredBy": "javax.print.attribute.DateTimeSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.DateTimeSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.DateTimeSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.DocAttribute",
+      "kind": "interface",
+      "parents": [
+        "javax.print.attribute.Attribute"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/DocAttribute.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/DocAttribute.java",
+      "sourceSha256": "0c0c01cf00ead97acb2f7c826452ce379fadefe8d25358357a72e9fa78634c71",
+      "members": []
+    },
+    {
+      "target": "javax.print.attribute.DocAttributeSet",
+      "kind": "interface",
+      "parents": [
+        "javax.print.attribute.AttributeSet"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/DocAttributeSet.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/DocAttributeSet.java",
+      "sourceSha256": "77d3da354d28fb4b6d457817088a930f54c0f928bf641f8c9683aef0a940dd66",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "add(javax.print.attribute.Attribute)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.DocAttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(javax.print.attribute.AttributeSet)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.DocAttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.EnumSyntax",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/EnumSyntax.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/EnumSyntax.java",
+      "sourceSha256": "73b32e541e3e599c293ab1adb5295c9860c2c8a1a4c5f59ac807947cf8028ee1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.EnumSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clone()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.print.attribute.EnumSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEnumValueTable()",
+          "result": "javax.print.attribute.EnumSyntax[]",
+          "declaredBy": "javax.print.attribute.EnumSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOffset()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.EnumSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStringTable()",
+          "result": "java.lang.String[]",
+          "declaredBy": "javax.print.attribute.EnumSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.EnumSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.EnumSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readResolve()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.print.attribute.EnumSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.EnumSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.HashAttributeSet",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.print.attribute.AttributeSet",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/HashAttributeSet.java",
+      "sourceSha256": "277309c7f466f69cd45765b17e77ed02ad9f331b426d78a297ea186c0118f375",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.Attribute)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.Attribute,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.AttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.AttributeSet,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.Attribute[])",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.Attribute[],java.lang.Class)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(javax.print.attribute.Attribute)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(javax.print.attribute.AttributeSet)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsValue(javax.print.attribute.Attribute)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.Class)",
+          "result": "javax.print.attribute.Attribute",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(javax.print.attribute.Attribute)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "javax.print.attribute.Attribute[]",
+          "declaredBy": "javax.print.attribute.HashAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.HashDocAttributeSet",
+      "kind": "class",
+      "parents": [
+        "javax.print.attribute.HashAttributeSet",
+        "javax.print.attribute.DocAttributeSet",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/HashDocAttributeSet.java",
+      "sourceSha256": "7c5e769fe286819a05fee534e2f0b36e9bd0972d18617c0b70e7826be6d229df",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashDocAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.DocAttribute)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashDocAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.DocAttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashDocAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.DocAttribute[])",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashDocAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.HashPrintJobAttributeSet",
+      "kind": "class",
+      "parents": [
+        "javax.print.attribute.HashAttributeSet",
+        "javax.print.attribute.PrintJobAttributeSet",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/HashPrintJobAttributeSet.java",
+      "sourceSha256": "9d380dae7373a9ece33d4f0a5a99cfd895a9b2c7f50324f8e1ebaf4e67b49eeb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintJobAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.PrintJobAttribute)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintJobAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.PrintJobAttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintJobAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.PrintJobAttribute[])",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintJobAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.HashPrintRequestAttributeSet",
+      "kind": "class",
+      "parents": [
+        "javax.print.attribute.HashAttributeSet",
+        "javax.print.attribute.PrintRequestAttributeSet",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.java",
+      "sourceSha256": "0a234f98b371df8f7026e01e102c643736f4bdb77257eb4a3c2fa70192a85025",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintRequestAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.PrintRequestAttribute)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintRequestAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.PrintRequestAttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintRequestAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.PrintRequestAttribute[])",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintRequestAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.HashPrintServiceAttributeSet",
+      "kind": "class",
+      "parents": [
+        "javax.print.attribute.HashAttributeSet",
+        "javax.print.attribute.PrintServiceAttributeSet",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/HashPrintServiceAttributeSet.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/HashPrintServiceAttributeSet.java",
+      "sourceSha256": "32b561bfc2abddb08ef541851fbb297e783fd0a54a22dc4cd5e6488ea41d8648",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintServiceAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.PrintServiceAttribute)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintServiceAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.PrintServiceAttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintServiceAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.print.attribute.PrintServiceAttribute[])",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.HashPrintServiceAttributeSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.IntegerSyntax",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/IntegerSyntax.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/IntegerSyntax.java",
+      "sourceSha256": "11e687e69d49a9d4d1faaccc79b18f520315ab1a73e173881d8c7e68f31950a9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.IntegerSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.IntegerSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.IntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.IntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.IntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.IntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.PrintJobAttribute",
+      "kind": "interface",
+      "parents": [
+        "javax.print.attribute.Attribute"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/PrintJobAttribute.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/PrintJobAttribute.java",
+      "sourceSha256": "e2451dd60070d4418bdc5ec6251f89ff3775e7f6f2cdceb3d2a34ca5edede5ae",
+      "members": []
+    },
+    {
+      "target": "javax.print.attribute.PrintJobAttributeSet",
+      "kind": "interface",
+      "parents": [
+        "javax.print.attribute.AttributeSet"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/PrintJobAttributeSet.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/PrintJobAttributeSet.java",
+      "sourceSha256": "5a6bf350b7c7f90bb97dd227adb4ef274890ce4acdcfeb255c403d4efcef2502",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "add(javax.print.attribute.Attribute)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.PrintJobAttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(javax.print.attribute.AttributeSet)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.PrintJobAttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.PrintRequestAttribute",
+      "kind": "interface",
+      "parents": [
+        "javax.print.attribute.Attribute"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/PrintRequestAttribute.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/PrintRequestAttribute.java",
+      "sourceSha256": "a16c7eff1b3edaceff34a1170fc3ea05995efa375d81975e17b1e0b8ec55d5b1",
+      "members": []
+    },
+    {
+      "target": "javax.print.attribute.PrintRequestAttributeSet",
+      "kind": "interface",
+      "parents": [
+        "javax.print.attribute.AttributeSet"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/PrintRequestAttributeSet.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/PrintRequestAttributeSet.java",
+      "sourceSha256": "9545d943b43c34dae08fb352732321af478a72bb9cc9f11f00ab4bbe6e4561d0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "add(javax.print.attribute.Attribute)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.PrintRequestAttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(javax.print.attribute.AttributeSet)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.PrintRequestAttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.PrintServiceAttribute",
+      "kind": "interface",
+      "parents": [
+        "javax.print.attribute.Attribute"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/PrintServiceAttribute.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/PrintServiceAttribute.java",
+      "sourceSha256": "f3e77c36aa027cccb7d5bf8b85bde813b6362af25a231f0e2a8ff03a369ec55e",
+      "members": []
+    },
+    {
+      "target": "javax.print.attribute.PrintServiceAttributeSet",
+      "kind": "interface",
+      "parents": [
+        "javax.print.attribute.AttributeSet"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/PrintServiceAttributeSet.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/PrintServiceAttributeSet.java",
+      "sourceSha256": "e798406f918b7bb15d20c2fea73c64001f0fdcad1d84b9557270b23a1ff4a257",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "add(javax.print.attribute.Attribute)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.PrintServiceAttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(javax.print.attribute.AttributeSet)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.PrintServiceAttributeSet",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.ResolutionSyntax",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/ResolutionSyntax.java",
+      "sourceSha256": "0714129e5398a93f845d2fc851c6a108f8a84e51b0692644ca868a4337140390",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DPCM",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DPI",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCrossFeedResolution(int)",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCrossFeedResolutionDphi()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFeedResolution(int)",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFeedResolutionDphi()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResolution(int)",
+          "result": "int[]",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "lessThanOrEquals(javax.print.attribute.ResolutionSyntax)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString(int,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.ResolutionSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.SetOfIntegerSyntax",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/SetOfIntegerSyntax.java",
+      "sourceSha256": "7bff054d180b5cf5085c0d12d765005e5c91e179a47cdbda383eb64ce23deea6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int[][])",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(int)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(javax.print.attribute.IntegerSyntax)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMembers()",
+          "result": "int[][]",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "next(int)",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.SetOfIntegerSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.Size2DSyntax",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/Size2DSyntax.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/Size2DSyntax.java",
+      "sourceSha256": "887a0803d01e19e028aa9857471889fcaf72d49dc944c4cff8eb7c3b52616b8a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(float,float,int)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "INCH",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MM",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSize(int)",
+          "result": "float[]",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getX(int)",
+          "result": "float",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getXMicrometers()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getY(int)",
+          "result": "float",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getYMicrometers()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString(int,java.lang.String)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.Size2DSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.SupportedValuesAttribute",
+      "kind": "interface",
+      "parents": [
+        "javax.print.attribute.Attribute"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/SupportedValuesAttribute.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/SupportedValuesAttribute.java",
+      "sourceSha256": "b6a2fbbf7569142dc2b473e7b99b04127687bb9a22db7a25c10370cff5da972e",
+      "members": []
+    },
+    {
+      "target": "javax.print.attribute.TextSyntax",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/TextSyntax.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/TextSyntax.java",
+      "sourceSha256": "b23500f7d5e23a9b8162481284ed1f39244092ec9b6da7b94bb7ba890bf111df",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.util.Locale)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.TextSyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.TextSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.print.attribute.TextSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getValue()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.TextSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.TextSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.TextSyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.URISyntax",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable",
+        "java.lang.Cloneable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/URISyntax.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/URISyntax.java",
+      "sourceSha256": "d295dc439e9ceb41919b55a699553fb72dd556213a047bf192cccaeb0fb588c3",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.net.URI)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.URISyntax",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "javax.print.attribute.URISyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getURI()",
+          "result": "java.net.URI",
+          "declaredBy": "javax.print.attribute.URISyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "javax.print.attribute.URISyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.print.attribute.URISyntax",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.print.attribute.UnmodifiableSetException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/print/attribute/UnmodifiableSetException.html",
+      "sourceEntry": "java.desktop/javax/print/attribute/UnmodifiableSetException.java",
+      "sourceSha256": "37a18bdc832225d94f3df9dde8190f4da83e6e005b0c84100d301ead212de3ee",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.UnmodifiableSetException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.print.attribute.UnmodifiableSetException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

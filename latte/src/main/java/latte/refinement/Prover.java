@@ -64,39 +64,66 @@ public final class Prover implements AutoCloseable {
     };
   }
 
-  @SuppressWarnings({"rawtypes", "unchecked"})
-  private Expr<?> translate(Term term) {
-    if (term instanceof Term.Binary binary && Set.of("&&", "||").contains(binary.operator())) {
-      // Constructor heaps and loop paths can accumulate thousands of assumptions. Flatten
-      // associative boolean terms iteratively instead of exhausting the Java stack.
-      var pending = new ArrayDeque<Term>();
-      var operands = new ArrayList<BoolExpr>();
-      pending.push(term);
-      while (!pending.isEmpty()) {
-        var next = pending.pop();
-        if (next instanceof Term.Binary nested && nested.operator().equals(binary.operator())) {
-          pending.push(nested.right());
-          pending.push(nested.left());
-        } else operands.add(bool(translate(next)));
+  private Expr<?> translate(Term root) {
+    // Terms form a shared graph: path merges can reuse entire earlier conditions. Identity
+    // keys avoid recursive record hashCode/equals and translate each node only once per query.
+    var translated = new IdentityHashMap<Term, Expr<?>>();
+    var pending = new ArrayDeque<Term>();
+    pending.push(root);
+    while (!pending.isEmpty()) {
+      var term = pending.peek();
+      if (translated.containsKey(term)) {
+        pending.pop();
+        continue;
       }
-      var expressions = operands.toArray(BoolExpr[]::new);
-      return binary.operator().equals("&&")
-          ? context.mkAnd(expressions)
-          : context.mkOr(expressions);
+      var children = operands(term);
+      boolean ready = true;
+      for (int i = children.size() - 1; i >= 0; i--) {
+        var child = children.get(i);
+        if (!translated.containsKey(child)) {
+          pending.push(child);
+          ready = false;
+        }
+      }
+      if (ready) {
+        translated.put(term, translateNode(term, translated));
+        pending.pop();
+      }
     }
+    return translated.get(root);
+  }
+
+  private static List<Term> operands(Term term) {
+    return switch (term) {
+      case Term.Unary unary -> List.of(unary.operand());
+      case Term.Binary binary -> List.of(binary.left(), binary.right());
+      case Term.Choice choice -> List.of(choice.condition(), choice.yes(), choice.no());
+      case Term.Call call -> call.arguments();
+      case Term.ArrayConstant array -> List.of(array.value());
+      case Term.ArrayStore array -> List.of(array.array(), array.index(), array.value());
+      case Term.ArraySelect array -> List.of(array.array(), array.index());
+      case Term.Literal ignored -> List.of();
+      case Term.Symbol ignored -> List.of();
+      case Term.Name ignored -> List.of();
+      case Term.ArraySymbol ignored -> List.of();
+    };
+  }
+
+  @SuppressWarnings({"rawtypes", "unchecked"})
+  private Expr<?> translateNode(Term term, Map<Term, Expr<?>> translated) {
     if (term instanceof Term.ArraySymbol array)
       return context.mkConst(
           array.name(), context.mkArraySort(context.getIntSort(), sort(array.elementSort())));
     if (term instanceof Term.ArrayConstant array)
-      return context.mkConstArray(context.getIntSort(), translate(array.value()));
+      return context.mkConstArray(context.getIntSort(), translated.get(array.value()));
     if (term instanceof Term.ArrayStore array)
       return context.mkStore(
-          (ArrayExpr) translate(array.array()),
-          integer(translate(array.index())),
-          translate(array.value()));
+          (ArrayExpr) translated.get(array.array()),
+          integer(translated.get(array.index())),
+          translated.get(array.value()));
     if (term instanceof Term.ArraySelect array)
       return context.mkSelect(
-          (ArrayExpr) translate(array.array()), integer(translate(array.index())));
+          (ArrayExpr) translated.get(array.array()), integer(translated.get(array.index())));
     if (term instanceof Term.Literal literal)
       return switch (literal.sort()) {
         case BOOL -> context.mkBool(Boolean.parseBoolean(literal.value()));
@@ -110,18 +137,18 @@ public final class Prover implements AutoCloseable {
     if (term instanceof Term.Name name)
       throw new IllegalArgumentException("Unknown refinement name: " + name.value());
     if (term instanceof Term.Choice choice) {
-      var yes = translate(choice.yes());
-      var no = translate(choice.no());
+      var yes = translated.get(choice.yes());
+      var no = translated.get(choice.no());
       if (FloatingPoint.floating(yes) || FloatingPoint.floating(no)) {
         var common = floating.common(yes, no);
         yes = floating.convert(yes, common);
         no = floating.convert(no, common);
       } else if (yes instanceof RealExpr && no instanceof IntExpr n) no = context.mkInt2Real(n);
       else if (no instanceof RealExpr && yes instanceof IntExpr n) yes = context.mkInt2Real(n);
-      return context.mkITE(bool(translate(choice.condition())), yes, no);
+      return context.mkITE(bool(translated.get(choice.condition())), yes, no);
     }
     if (term instanceof Term.Unary unary) {
-      var operand = translate(unary.operand());
+      var operand = translated.get(unary.operand());
       if (operand instanceof FPExpr fp)
         return switch (unary.operator()) {
           case "-" -> context.mkFPNeg(fp);
@@ -143,7 +170,7 @@ public final class Prover implements AutoCloseable {
         var declaration =
             declarations.computeIfAbsent(
                 call.name(), name -> context.mkFuncDecl(name, new Sort[] {referenceSort}, target));
-        return context.mkApp(declaration, translate(call.arguments().get(0)));
+        return context.mkApp(declaration, translated.get(call.arguments().get(0)));
       }
       if (call.name().startsWith("instanceof:")) {
         var declaration =
@@ -151,10 +178,10 @@ public final class Prover implements AutoCloseable {
                 call.name(),
                 name ->
                     context.mkFuncDecl(name, new Sort[] {referenceSort}, context.getBoolSort()));
-        return context.mkApp(declaration, translate(call.arguments().get(0)));
+        return context.mkApp(declaration, translated.get(call.arguments().get(0)));
       }
       if (call.name().startsWith("require:")) {
-        var operand = translate(call.arguments().get(0));
+        var operand = translated.get(call.arguments().get(0));
         var target = Term.Sort.valueOf(call.name().substring(8));
         if (target == Term.Sort.FLOAT32 || target == Term.Sort.FLOAT64) {
           if (operand instanceof ArithExpr<?>
@@ -167,7 +194,7 @@ public final class Prover implements AutoCloseable {
             "Argument mismatch: expected " + target + ", got " + operand.getSort());
       }
       if (call.name().startsWith("cast:")) {
-        var operand = translate(call.arguments().get(0));
+        var operand = translated.get(call.arguments().get(0));
         var target = call.name().substring(5);
         if (operand.getSort().equals(referenceSort)) {
           var declaration =
@@ -187,8 +214,8 @@ public final class Prover implements AutoCloseable {
       if (call.name().startsWith("bit:")) {
         var parts = call.name().split(":");
         int width = Integer.parseInt(parts[2]);
-        var left = context.mkInt2BV(width, integer(translate(call.arguments().get(0))));
-        var count = integer(translate(call.arguments().get(1)));
+        var left = context.mkInt2BV(width, integer(translated.get(call.arguments().get(0))));
+        var count = integer(translated.get(call.arguments().get(1)));
         boolean shift = Set.of("SL", "SR", "USR").contains(parts[1]);
         var right =
             context.mkInt2BV(width, shift ? context.mkMod(count, context.mkInt(width)) : count);
@@ -219,7 +246,7 @@ public final class Prover implements AutoCloseable {
                       sort(signature.result())));
       var arguments = new Expr<?>[call.arguments().size()];
       for (int i = 0; i < arguments.length; i++) {
-        arguments[i] = translate(call.arguments().get(i));
+        arguments[i] = translated.get(call.arguments().get(i));
         var expected = signature.parameters().get(i);
         if (expected == Term.Sort.FLOAT32 || expected == Term.Sort.FLOAT64)
           arguments[i] = floating.convert(arguments[i], floating.sort(expected));
@@ -229,8 +256,8 @@ public final class Prover implements AutoCloseable {
       return declaration.apply(arguments);
     }
     var binary = (Term.Binary) term;
-    var left = translate(binary.left());
-    var right = translate(binary.right());
+    var left = translated.get(binary.left());
+    var right = translated.get(binary.right());
     if (binary.operator().equals("===")) return context.mkEq(left, right);
     if (FloatingPoint.floating(left) || FloatingPoint.floating(right))
       return floating.binary(binary.operator(), left, right);

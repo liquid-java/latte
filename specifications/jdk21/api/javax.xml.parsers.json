@@ -1,0 +1,978 @@
+{
+  "name": "javax.xml.parsers",
+  "module": "java.xml",
+  "types": [
+    {
+      "target": "javax.xml.parsers.DocumentBuilder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html",
+      "sourceEntry": "java.xml/javax/xml/parsers/DocumentBuilder.java",
+      "sourceSha256": "fd70dad1fb7ee4618873940daf2cc238275faadcd2d9326e48b5fad11b023800",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDOMImplementation()",
+          "result": "org.w3c.dom.DOMImplementation",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSchema()",
+          "result": "javax.xml.validation.Schema",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNamespaceAware()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValidating()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isXIncludeAware()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDocument()",
+          "result": "org.w3c.dom.Document",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.io.File)",
+          "result": "org.w3c.dom.Document",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.io.InputStream)",
+          "result": "org.w3c.dom.Document",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.io.InputStream,java.lang.String)",
+          "result": "org.w3c.dom.Document",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String)",
+          "result": "org.w3c.dom.Document",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(org.xml.sax.InputSource)",
+          "result": "org.w3c.dom.Document",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEntityResolver(org.xml.sax.EntityResolver)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setErrorHandler(org.xml.sax.ErrorHandler)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilder",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.parsers.DocumentBuilderFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html",
+      "sourceEntry": "java.xml/javax/xml/parsers/DocumentBuilderFactory.java",
+      "sourceSha256": "4c3fe2e9380df8305cf839418cd0508ed85a158ebd72a155d5a2fb36a06dc67f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAttribute(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFeature(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSchema()",
+          "result": "javax.xml.validation.Schema",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCoalescing()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isExpandEntityReferences()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isIgnoringComments()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isIgnoringElementContentWhitespace()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNamespaceAware()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValidating()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isXIncludeAware()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDefaultInstance()",
+          "result": "javax.xml.parsers.DocumentBuilderFactory",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDefaultNSInstance()",
+          "result": "javax.xml.parsers.DocumentBuilderFactory",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDocumentBuilder()",
+          "result": "javax.xml.parsers.DocumentBuilder",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance()",
+          "result": "javax.xml.parsers.DocumentBuilderFactory",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.parsers.DocumentBuilderFactory",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newNSInstance()",
+          "result": "javax.xml.parsers.DocumentBuilderFactory",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newNSInstance(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.parsers.DocumentBuilderFactory",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttribute(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCoalescing(boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setExpandEntityReferences(boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFeature(java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIgnoringComments(boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setIgnoringElementContentWhitespace(boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNamespaceAware(boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSchema(javax.xml.validation.Schema)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setValidating(boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setXIncludeAware(boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.DocumentBuilderFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.parsers.FactoryConfigurationError",
+      "kind": "class",
+      "parents": [
+        "java.lang.Error"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/parsers/FactoryConfigurationError.html",
+      "sourceEntry": "java.xml/javax/xml/parsers/FactoryConfigurationError.java",
+      "sourceSha256": "3d0f18927788a5aa97ecf4a8dcc800c9fd01ec7a9e8018378a6afe0fad1d1dc6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Exception)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Exception,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCause()",
+          "result": "java.lang.Throwable",
+          "declaredBy": "javax.xml.parsers.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getException()",
+          "result": "java.lang.Exception",
+          "declaredBy": "javax.xml.parsers.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMessage()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.xml.parsers.FactoryConfigurationError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.parsers.ParserConfigurationException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/parsers/ParserConfigurationException.html",
+      "sourceEntry": "java.xml/javax/xml/parsers/ParserConfigurationException.java",
+      "sourceSha256": "6177a1db691263613e680a3c111e9bcbea4378d9b73a2438066872082f4c4237",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.ParserConfigurationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.ParserConfigurationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.parsers.SAXParser",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/parsers/SAXParser.html",
+      "sourceEntry": "java.xml/javax/xml/parsers/SAXParser.java",
+      "sourceSha256": "ce45d2c08446fb29570f14c63341342e431bd352c45e23c30f5714fb5f69ffbe",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParser()",
+          "result": "org.xml.sax.Parser",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProperty(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSchema()",
+          "result": "javax.xml.validation.Schema",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getXMLReader()",
+          "result": "org.xml.sax.XMLReader",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNamespaceAware()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValidating()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isXIncludeAware()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.io.File,org.xml.sax.HandlerBase)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.io.File,org.xml.sax.helpers.DefaultHandler)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.io.InputStream,org.xml.sax.HandlerBase)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.io.InputStream,org.xml.sax.HandlerBase,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.io.InputStream,org.xml.sax.helpers.DefaultHandler)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.io.InputStream,org.xml.sax.helpers.DefaultHandler,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String,org.xml.sax.HandlerBase)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(java.lang.String,org.xml.sax.helpers.DefaultHandler)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(org.xml.sax.InputSource,org.xml.sax.HandlerBase)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "parse(org.xml.sax.InputSource,org.xml.sax.helpers.DefaultHandler)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setProperty(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParser",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.xml.parsers.SAXParserFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html",
+      "sourceEntry": "java.xml/javax/xml/parsers/SAXParserFactory.java",
+      "sourceSha256": "d205cbae96ccbee92800e44ca38d8624e27c77caf9a47e5712840e76460ec336",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFeature(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSchema()",
+          "result": "javax.xml.validation.Schema",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isNamespaceAware()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValidating()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isXIncludeAware()",
+          "result": "boolean",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDefaultInstance()",
+          "result": "javax.xml.parsers.SAXParserFactory",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newDefaultNSInstance()",
+          "result": "javax.xml.parsers.SAXParserFactory",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance()",
+          "result": "javax.xml.parsers.SAXParserFactory",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newInstance(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.parsers.SAXParserFactory",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newNSInstance()",
+          "result": "javax.xml.parsers.SAXParserFactory",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newNSInstance(java.lang.String,java.lang.ClassLoader)",
+          "result": "javax.xml.parsers.SAXParserFactory",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "newSAXParser()",
+          "result": "javax.xml.parsers.SAXParser",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFeature(java.lang.String,boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setNamespaceAware(boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSchema(javax.xml.validation.Schema)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setValidating(boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setXIncludeAware(boolean)",
+          "result": "void",
+          "declaredBy": "javax.xml.parsers.SAXParserFactory",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

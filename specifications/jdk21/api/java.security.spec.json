@@ -1,0 +1,2100 @@
+{
+  "name": "java.security.spec",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.security.spec.AlgorithmParameterSpec",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/AlgorithmParameterSpec.html",
+      "sourceEntry": "java.base/java/security/spec/AlgorithmParameterSpec.java",
+      "sourceSha256": "9ddb2929ac0423f11196f889fce2fff51bb6ece484c549378ec967e449449079",
+      "members": []
+    },
+    {
+      "target": "java.security.spec.DSAGenParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html",
+      "sourceEntry": "java.base/java/security/spec/DSAGenParameterSpec.java",
+      "sourceSha256": "c8cbfabffa9ca8e28d2ecf4ba51fc9f4d3826c7cb6e68efac66cb1331292bb54",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int)",
+          "result": "void",
+          "declaredBy": "java.security.spec.DSAGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,int)",
+          "result": "void",
+          "declaredBy": "java.security.spec.DSAGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimePLength()",
+          "result": "int",
+          "declaredBy": "java.security.spec.DSAGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSeedLength()",
+          "result": "int",
+          "declaredBy": "java.security.spec.DSAGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSubprimeQLength()",
+          "result": "int",
+          "declaredBy": "java.security.spec.DSAGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.DSAParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.AlgorithmParameterSpec",
+        "java.security.interfaces.DSAParams"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/DSAParameterSpec.html",
+      "sourceEntry": "java.base/java/security/spec/DSAParameterSpec.java",
+      "sourceSha256": "f4695e8c26d34a2e285876ba75a0535865b0d0dc9de064c35cc89690b3498818",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.DSAParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getG()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.DSAPrivateKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/DSAPrivateKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/DSAPrivateKeySpec.java",
+      "sourceSha256": "e9d4f396e921e167df6e9ac189c77099fbd46cbebacb7d0f6d0faa46cc0a65d8",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.DSAPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getG()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getX()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.DSAPublicKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/DSAPublicKeySpec.java",
+      "sourceSha256": "3d1d758d1343ddef0137e5a613cb96520423000260afeba164c75c56cfcc2185",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.DSAPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getG()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getY()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.DSAPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.ECField",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/ECField.html",
+      "sourceEntry": "java.base/java/security/spec/ECField.java",
+      "sourceSha256": "0941c843e7c23d45d58269feba0d7f0d44060b5b61597392bf3e47b6fe43d8d0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getFieldSize()",
+          "result": "int",
+          "declaredBy": "java.security.spec.ECField",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.ECFieldF2m",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.ECField"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/ECFieldF2m.html",
+      "sourceEntry": "java.base/java/security/spec/ECFieldF2m.java",
+      "sourceSha256": "76495851b667f6dce0f11ac504c44e017eced513622fc1396bd9b452e7e4b6b1",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.security.spec.ECFieldF2m",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int[])",
+          "result": "void",
+          "declaredBy": "java.security.spec.ECFieldF2m",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.ECFieldF2m",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.security.spec.ECFieldF2m",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFieldSize()",
+          "result": "int",
+          "declaredBy": "java.security.spec.ECFieldF2m",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getM()",
+          "result": "int",
+          "declaredBy": "java.security.spec.ECFieldF2m",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMidTermsOfReductionPolynomial()",
+          "result": "int[]",
+          "declaredBy": "java.security.spec.ECFieldF2m",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getReductionPolynomial()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.ECFieldF2m",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.security.spec.ECFieldF2m",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.ECFieldFp",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.ECField"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/ECFieldFp.html",
+      "sourceEntry": "java.base/java/security/spec/ECFieldFp.java",
+      "sourceSha256": "cb06a13f05aedcd4cfd91e7b852c71604eb7c8712abc00c7c7c23a79dba47d33",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.ECFieldFp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.security.spec.ECFieldFp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFieldSize()",
+          "result": "int",
+          "declaredBy": "java.security.spec.ECFieldFp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.ECFieldFp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.security.spec.ECFieldFp",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.ECGenParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.security.spec.NamedParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/ECGenParameterSpec.html",
+      "sourceEntry": "java.base/java/security/spec/ECGenParameterSpec.java",
+      "sourceSha256": "1845b5ee25fc697c3b3e20e1d5846f9b192d8c0febca66b0425747be8684384b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.spec.ECGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.ECParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/ECParameterSpec.html",
+      "sourceEntry": "java.base/java/security/spec/ECParameterSpec.java",
+      "sourceSha256": "3eebe1ccd0e89e1cda977e70c45de193908840e1f3c03af29623fef9c032a25d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.spec.EllipticCurve,java.security.spec.ECPoint,java.math.BigInteger,int)",
+          "result": "void",
+          "declaredBy": "java.security.spec.ECParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCofactor()",
+          "result": "int",
+          "declaredBy": "java.security.spec.ECParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurve()",
+          "result": "java.security.spec.EllipticCurve",
+          "declaredBy": "java.security.spec.ECParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGenerator()",
+          "result": "java.security.spec.ECPoint",
+          "declaredBy": "java.security.spec.ECParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOrder()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.ECParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.ECPoint",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/ECPoint.html",
+      "sourceEntry": "java.base/java/security/spec/ECPoint.java",
+      "sourceSha256": "803d28db5e151a80e9ff5017b37d96023d0d3cac524a21fc9f2271152fbe72ce",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.ECPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "POINT_INFINITY",
+          "result": "java.security.spec.ECPoint",
+          "declaredBy": "java.security.spec.ECPoint",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.security.spec.ECPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAffineX()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.ECPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAffineY()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.ECPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.security.spec.ECPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.ECPrivateKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/ECPrivateKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/ECPrivateKeySpec.java",
+      "sourceSha256": "90c3fc56b230ca2a27d905b5a98b6f64e1a25dd9a5000c9d489b8bb7e21ab625",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.security.spec.ECParameterSpec)",
+          "result": "void",
+          "declaredBy": "java.security.spec.ECPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.ECParameterSpec",
+          "declaredBy": "java.security.spec.ECPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getS()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.ECPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.ECPublicKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/ECPublicKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/ECPublicKeySpec.java",
+      "sourceSha256": "e1d948c836d938684ac139d8db4da79aeabd2ae2809b1f3f5656354ea484bd34",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.spec.ECPoint,java.security.spec.ECParameterSpec)",
+          "result": "void",
+          "declaredBy": "java.security.spec.ECPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.ECParameterSpec",
+          "declaredBy": "java.security.spec.ECPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getW()",
+          "result": "java.security.spec.ECPoint",
+          "declaredBy": "java.security.spec.ECPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.EdDSAParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/EdDSAParameterSpec.html",
+      "sourceEntry": "java.base/java/security/spec/EdDSAParameterSpec.java",
+      "sourceSha256": "0b69bc6f8efb417bb7331cbd415ad44db7c753d4b1eb9210eb33a6ecd49d7838",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(boolean)",
+          "result": "void",
+          "declaredBy": "java.security.spec.EdDSAParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(boolean,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.spec.EdDSAParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getContext()",
+          "result": "java.util.Optional",
+          "declaredBy": "java.security.spec.EdDSAParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPrehash()",
+          "result": "boolean",
+          "declaredBy": "java.security.spec.EdDSAParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.EdECPoint",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/EdECPoint.html",
+      "sourceEntry": "java.base/java/security/spec/EdECPoint.java",
+      "sourceSha256": "649d6eff8701950d1fa6f0db719129ec664ee92d1d50e8d4ab44f7315c32178a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(boolean,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.EdECPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getY()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.EdECPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isXOdd()",
+          "result": "boolean",
+          "declaredBy": "java.security.spec.EdECPoint",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.EdECPrivateKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/EdECPrivateKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/EdECPrivateKeySpec.java",
+      "sourceSha256": "7e637abe73f6b495f445bdc31a1b5279e0cde05466dc493973b0cb9fc23530c6",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.spec.NamedParameterSpec,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.spec.EdECPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBytes()",
+          "result": "byte[]",
+          "declaredBy": "java.security.spec.EdECPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.NamedParameterSpec",
+          "declaredBy": "java.security.spec.EdECPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.EdECPublicKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/EdECPublicKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/EdECPublicKeySpec.java",
+      "sourceSha256": "697a8bd6d584a8c755782a3edabf361652d24338e87b8a42ff02ce8f22792f2e",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.spec.NamedParameterSpec,java.security.spec.EdECPoint)",
+          "result": "void",
+          "declaredBy": "java.security.spec.EdECPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.NamedParameterSpec",
+          "declaredBy": "java.security.spec.EdECPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPoint()",
+          "result": "java.security.spec.EdECPoint",
+          "declaredBy": "java.security.spec.EdECPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.EllipticCurve",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/EllipticCurve.html",
+      "sourceEntry": "java.base/java/security/spec/EllipticCurve.java",
+      "sourceSha256": "719240d7dbecb93ecb14c6aac35208668fce9cd97821b29c5a4c5c243cb3beae",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.EllipticCurve",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.spec.EllipticCurve",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.security.spec.EllipticCurve",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getA()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.EllipticCurve",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getB()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.EllipticCurve",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getField()",
+          "result": "java.security.spec.ECField",
+          "declaredBy": "java.security.spec.EllipticCurve",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSeed()",
+          "result": "byte[]",
+          "declaredBy": "java.security.spec.EllipticCurve",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.security.spec.EllipticCurve",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.EncodedKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/EncodedKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/EncodedKeySpec.java",
+      "sourceSha256": "3f5996c9db61e4c325e2c92cfda60f841bbce82c5ccf8587e3277f7d80183d0f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.spec.EncodedKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[],java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.spec.EncodedKeySpec",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.spec.EncodedKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "java.security.spec.EncodedKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormat()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.spec.EncodedKeySpec",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.InvalidKeySpecException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/InvalidKeySpecException.html",
+      "sourceEntry": "java.base/java/security/spec/InvalidKeySpecException.java",
+      "sourceSha256": "267e6369bc9e0a470e6c484ebb6c439568104abb2ac47425cf240692a98b2764",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.spec.InvalidKeySpecException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.spec.InvalidKeySpecException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.spec.InvalidKeySpecException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.security.spec.InvalidKeySpecException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.InvalidParameterSpecException",
+      "kind": "class",
+      "parents": [
+        "java.security.GeneralSecurityException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/InvalidParameterSpecException.html",
+      "sourceEntry": "java.base/java/security/spec/InvalidParameterSpecException.java",
+      "sourceSha256": "5d054f96f72e8a0db615b64320ea045528eff6defc19cd0888f86bbd7e0115e2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.security.spec.InvalidParameterSpecException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.spec.InvalidParameterSpecException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.KeySpec",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/KeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/KeySpec.java",
+      "sourceSha256": "27cdb9c28ab21d92a1ce25077a4cbfeff6df0b4085e315b409d214b4d524d3c6",
+      "members": []
+    },
+    {
+      "target": "java.security.spec.MGF1ParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html",
+      "sourceEntry": "java.base/java/security/spec/MGF1ParameterSpec.java",
+      "sourceSha256": "0ef6faf6c8e85c3871c2ded789c8a86d83337aecee29a46aebfc0b5e2380f8ab",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA1",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA224",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA256",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA384",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA3_224",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA3_256",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA3_384",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA3_512",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA512",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA512_224",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHA512_256",
+          "result": "java.security.spec.MGF1ParameterSpec",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDigestAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.spec.MGF1ParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.NamedParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/NamedParameterSpec.html",
+      "sourceEntry": "java.base/java/security/spec/NamedParameterSpec.java",
+      "sourceSha256": "f32af26e3e214d6204455975e1a522e8d708f99498a7941f7cd24230c26e5936",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.spec.NamedParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ED25519",
+          "result": "java.security.spec.NamedParameterSpec",
+          "declaredBy": "java.security.spec.NamedParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ED448",
+          "result": "java.security.spec.NamedParameterSpec",
+          "declaredBy": "java.security.spec.NamedParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "X25519",
+          "result": "java.security.spec.NamedParameterSpec",
+          "declaredBy": "java.security.spec.NamedParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "X448",
+          "result": "java.security.spec.NamedParameterSpec",
+          "declaredBy": "java.security.spec.NamedParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.spec.NamedParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.PKCS8EncodedKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.security.spec.EncodedKeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/PKCS8EncodedKeySpec.java",
+      "sourceSha256": "834b774b4b8ccb2b47e74699fb5a6eb69047a2d98052225f93a340bfdb31f884",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.spec.PKCS8EncodedKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[],java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.spec.PKCS8EncodedKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "java.security.spec.PKCS8EncodedKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormat()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.spec.PKCS8EncodedKeySpec",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.PSSParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/PSSParameterSpec.html",
+      "sourceEntry": "java.base/java/security/spec/PSSParameterSpec.java",
+      "sourceSha256": "dfb1557bce41a083dc53641be289e3ec1f81d3ada20db1a80a1b4b453db76b96",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "java.security.spec.PSSParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.String,java.security.spec.AlgorithmParameterSpec,int,int)",
+          "result": "void",
+          "declaredBy": "java.security.spec.PSSParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DEFAULT",
+          "result": "java.security.spec.PSSParameterSpec",
+          "declaredBy": "java.security.spec.PSSParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TRAILER_FIELD_BC",
+          "result": "int",
+          "declaredBy": "java.security.spec.PSSParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDigestAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.spec.PSSParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMGFAlgorithm()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.spec.PSSParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMGFParameters()",
+          "result": "java.security.spec.AlgorithmParameterSpec",
+          "declaredBy": "java.security.spec.PSSParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSaltLength()",
+          "result": "int",
+          "declaredBy": "java.security.spec.PSSParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTrailerField()",
+          "result": "int",
+          "declaredBy": "java.security.spec.PSSParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.spec.PSSParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.RSAKeyGenParameterSpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html",
+      "sourceEntry": "java.base/java/security/spec/RSAKeyGenParameterSpec.java",
+      "sourceSha256": "9c0bbdc8ce645f7172b36561cf9115e4bc4a7c240d829bb3bc76bd2b35d3a09a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAKeyGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAKeyGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "F0",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAKeyGenParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "F4",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAKeyGenParameterSpec",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeyParams()",
+          "result": "java.security.spec.AlgorithmParameterSpec",
+          "declaredBy": "java.security.spec.RSAKeyGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getKeysize()",
+          "result": "int",
+          "declaredBy": "java.security.spec.RSAKeyGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicExponent()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAKeyGenParameterSpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.RSAMultiPrimePrivateCrtKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.security.spec.RSAPrivateKeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/RSAMultiPrimePrivateCrtKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/RSAMultiPrimePrivateCrtKeySpec.java",
+      "sourceSha256": "c5cb55fb37b16cdd265ed051dee96fd2450ad21a72b0ee7369861ed7c66af0b5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.security.spec.RSAOtherPrimeInfo[])",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAMultiPrimePrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.security.spec.RSAOtherPrimeInfo[],java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAMultiPrimePrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCrtCoefficient()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAMultiPrimePrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOtherPrimeInfo()",
+          "result": "java.security.spec.RSAOtherPrimeInfo[]",
+          "declaredBy": "java.security.spec.RSAMultiPrimePrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeExponentP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAMultiPrimePrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeExponentQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAMultiPrimePrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAMultiPrimePrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAMultiPrimePrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicExponent()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAMultiPrimePrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.RSAOtherPrimeInfo",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/RSAOtherPrimeInfo.html",
+      "sourceEntry": "java.base/java/security/spec/RSAOtherPrimeInfo.java",
+      "sourceSha256": "92ab0ae82833f5e5bd55d4914da33cb507faeb4dc6fffcb2896221235bdedd15",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAOtherPrimeInfo",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCrtCoefficient()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAOtherPrimeInfo",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getExponent()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAOtherPrimeInfo",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrime()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAOtherPrimeInfo",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.RSAPrivateCrtKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.security.spec.RSAPrivateKeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/RSAPrivateCrtKeySpec.java",
+      "sourceSha256": "7190de4ada27d53cd7746d6a75c89a49e82e5dbcd6e67f655561b7a7f198498f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAPrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAPrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCrtCoefficient()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAPrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeExponentP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAPrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeExponentQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAPrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeP()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAPrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrimeQ()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAPrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicExponent()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAPrivateCrtKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.RSAPrivateKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/RSAPrivateKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/RSAPrivateKeySpec.java",
+      "sourceSha256": "d1ad68b4cc4b689aa97e1124be1636a66cb5f02e0f0eae772b5f00f15668e959",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getModulus()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.AlgorithmParameterSpec",
+          "declaredBy": "java.security.spec.RSAPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPrivateExponent()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.RSAPublicKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/RSAPublicKeySpec.java",
+      "sourceSha256": "6dc3a14b37314ed10a56533b42644be0a7e9671744d09ae47f979a569d237c62",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)",
+          "result": "void",
+          "declaredBy": "java.security.spec.RSAPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getModulus()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.AlgorithmParameterSpec",
+          "declaredBy": "java.security.spec.RSAPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPublicExponent()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.RSAPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.X509EncodedKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.security.spec.EncodedKeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/X509EncodedKeySpec.java",
+      "sourceSha256": "61826fe7d57f3a91a266748eb986c928a6482ba39fd5bdfddaa314c7c5147812",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[])",
+          "result": "void",
+          "declaredBy": "java.security.spec.X509EncodedKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(byte[],java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.security.spec.X509EncodedKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEncoded()",
+          "result": "byte[]",
+          "declaredBy": "java.security.spec.X509EncodedKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormat()",
+          "result": "java.lang.String",
+          "declaredBy": "java.security.spec.X509EncodedKeySpec",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.XECPrivateKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/XECPrivateKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/XECPrivateKeySpec.java",
+      "sourceSha256": "aaf1460d0bb05d432e2f96afda787441b45e0b549af1677bef4055e87e5eec2c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.spec.AlgorithmParameterSpec,byte[])",
+          "result": "void",
+          "declaredBy": "java.security.spec.XECPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.AlgorithmParameterSpec",
+          "declaredBy": "java.security.spec.XECPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getScalar()",
+          "result": "byte[]",
+          "declaredBy": "java.security.spec.XECPrivateKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.security.spec.XECPublicKeySpec",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.security.spec.KeySpec"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/spec/XECPublicKeySpec.html",
+      "sourceEntry": "java.base/java/security/spec/XECPublicKeySpec.java",
+      "sourceSha256": "f92697968c86316b994eec4058f60bcf05e1df4a172264a6ce0ac36e20b55a87",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.security.spec.AlgorithmParameterSpec,java.math.BigInteger)",
+          "result": "void",
+          "declaredBy": "java.security.spec.XECPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getParams()",
+          "result": "java.security.spec.AlgorithmParameterSpec",
+          "declaredBy": "java.security.spec.XECPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getU()",
+          "result": "java.math.BigInteger",
+          "declaredBy": "java.security.spec.XECPublicKeySpec",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

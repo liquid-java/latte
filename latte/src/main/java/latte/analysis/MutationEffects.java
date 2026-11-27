@@ -49,6 +49,8 @@ public final class MutationEffects {
 
   public static Effect on(CtExecutable<?> method) {
     if (method != null && method.getMetadata(KEY) instanceof Effect effect) return effect;
+    var specified = ExternalSummaries.effects(method);
+    if (specified.isPresent()) return specified.get();
     var external = ExternalSpecifications.binding(method);
     if (external.isPresent()) {
       var roots = new HashMap<Integer, Set<String>>();

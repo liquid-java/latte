@@ -1,0 +1,515 @@
+{
+  "name": "java.lang.annotation",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.lang.annotation.Annotation",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Annotation.html",
+      "sourceEntry": "java.base/java/lang/annotation/Annotation.java",
+      "sourceSha256": "8fe3fdabb97848987fe0ca1e1720e1b8d571e0b0d61bf7a17411aa49fe5c6b09",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "annotationType()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.annotation.Annotation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.lang.annotation.Annotation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.lang.annotation.Annotation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.annotation.Annotation",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.annotation.AnnotationFormatError",
+      "kind": "class",
+      "parents": [
+        "java.lang.Error"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/AnnotationFormatError.html",
+      "sourceEntry": "java.base/java/lang/annotation/AnnotationFormatError.java",
+      "sourceSha256": "1fc141f2bdb88c3ed02423a24267a57323f1a86e6119419dc4bd0bd07275cd88",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.annotation.AnnotationFormatError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.lang.annotation.AnnotationFormatError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Throwable)",
+          "result": "void",
+          "declaredBy": "java.lang.annotation.AnnotationFormatError",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.annotation.AnnotationTypeMismatchException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/AnnotationTypeMismatchException.html",
+      "sourceEntry": "java.base/java/lang/annotation/AnnotationTypeMismatchException.java",
+      "sourceSha256": "753f0252789103d2babadbdf1b87e414d0c63f4120627b27bed9821c87bb80bc",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.reflect.Method,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.annotation.AnnotationTypeMismatchException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "element()",
+          "result": "java.lang.reflect.Method",
+          "declaredBy": "java.lang.annotation.AnnotationTypeMismatchException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "foundType()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.annotation.AnnotationTypeMismatchException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.annotation.Documented",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Documented.html",
+      "sourceEntry": "java.base/java/lang/annotation/Documented.java",
+      "sourceSha256": "f52c3322077963d482d7bf13738352f9eae2b182f12acbf604c2be7fa4698a66",
+      "members": []
+    },
+    {
+      "target": "java.lang.annotation.ElementType",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/ElementType.html",
+      "sourceEntry": "java.base/java/lang/annotation/ElementType.java",
+      "sourceSha256": "9e8a05a95af59919f77bfbee3355201f570297650d0b5657502f792de1bc0674",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ANNOTATION_TYPE",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CONSTRUCTOR",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FIELD",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LOCAL_VARIABLE",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "METHOD",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODULE",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PACKAGE",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PARAMETER",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RECORD_COMPONENT",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TYPE",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TYPE_PARAMETER",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TYPE_USE",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.lang.annotation.ElementType",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.lang.annotation.ElementType[]",
+          "declaredBy": "java.lang.annotation.ElementType",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.annotation.IncompleteAnnotationException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/IncompleteAnnotationException.html",
+      "sourceEntry": "java.base/java/lang/annotation/IncompleteAnnotationException.java",
+      "sourceSha256": "906ac85e9085aa7808d72a3fbccd8b49e6b829d9bd0bd7a9e817cabac2484c1c",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.Class,java.lang.String)",
+          "result": "void",
+          "declaredBy": "java.lang.annotation.IncompleteAnnotationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "annotationType()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.annotation.IncompleteAnnotationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "elementName()",
+          "result": "java.lang.String",
+          "declaredBy": "java.lang.annotation.IncompleteAnnotationException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.annotation.Inherited",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Inherited.html",
+      "sourceEntry": "java.base/java/lang/annotation/Inherited.java",
+      "sourceSha256": "72871c3ae0fb4e095ba5dda912f57388667ef79691deed7a85e023622fd5b80b",
+      "members": []
+    },
+    {
+      "target": "java.lang.annotation.Native",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Native.html",
+      "sourceEntry": "java.base/java/lang/annotation/Native.java",
+      "sourceSha256": "3ff0a014cb5930e7b20195fc67d7740a409464ada6fb6d80d019e95daccd2af1",
+      "members": []
+    },
+    {
+      "target": "java.lang.annotation.Repeatable",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Repeatable.html",
+      "sourceEntry": "java.base/java/lang/annotation/Repeatable.java",
+      "sourceSha256": "4051726010879c75877cf4bcf93a833919902e9679b9971e9c5e5976c9d42057",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "value()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.lang.annotation.Repeatable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.annotation.Retention",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Retention.html",
+      "sourceEntry": "java.base/java/lang/annotation/Retention.java",
+      "sourceSha256": "06fbd95fbdb6be7f70cac733dcabb1ac8c137d050781c7506a7b925c42994911",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "value()",
+          "result": "java.lang.annotation.RetentionPolicy",
+          "declaredBy": "java.lang.annotation.Retention",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.annotation.RetentionPolicy",
+      "kind": "enum",
+      "parents": [
+        "java.lang.Enum"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/RetentionPolicy.html",
+      "sourceEntry": "java.base/java/lang/annotation/RetentionPolicy.java",
+      "sourceSha256": "7450946b5e81a57041a627cd8bac5dae0dfe9bddaa9b36b101d969150113e4a3",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CLASS",
+          "result": "java.lang.annotation.RetentionPolicy",
+          "declaredBy": "java.lang.annotation.RetentionPolicy",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RUNTIME",
+          "result": "java.lang.annotation.RetentionPolicy",
+          "declaredBy": "java.lang.annotation.RetentionPolicy",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SOURCE",
+          "result": "java.lang.annotation.RetentionPolicy",
+          "declaredBy": "java.lang.annotation.RetentionPolicy",
+          "modifiers": 16409,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "inherited-method",
+          "signature": "ordinal()",
+          "result": "int",
+          "declaredBy": "java.lang.Enum",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "valueOf(java.lang.String)",
+          "result": "java.lang.annotation.RetentionPolicy",
+          "declaredBy": "java.lang.annotation.RetentionPolicy",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "values()",
+          "result": "java.lang.annotation.RetentionPolicy[]",
+          "declaredBy": "java.lang.annotation.RetentionPolicy",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.lang.annotation.Target",
+      "kind": "annotation",
+      "parents": [
+        "java.lang.annotation.Annotation"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Target.html",
+      "sourceEntry": "java.base/java/lang/annotation/Target.java",
+      "sourceSha256": "949153f4ec4ecaa6f24a526b9c0f9b3ef78d8b5156dbcbc37f95c87e1d523ba6",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "value()",
+          "result": "java.lang.annotation.ElementType[]",
+          "declaredBy": "java.lang.annotation.Target",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

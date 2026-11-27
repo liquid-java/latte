@@ -1,0 +1,2167 @@
+{
+  "name": "java.beans.beancontext",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "java.beans.beancontext.BeanContext",
+      "kind": "interface",
+      "parents": [
+        "java.beans.beancontext.BeanContextChild",
+        "java.util.Collection",
+        "java.beans.DesignMode",
+        "java.beans.Visibility"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContext.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContext.java",
+      "sourceSha256": "be16d4a540d5870ffb5e0bded5134a89c6e1e36adab055dfd37e4164a6beb4d1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResource(java.lang.String,java.beans.beancontext.BeanContextChild)",
+          "result": "java.net.URL",
+          "declaredBy": "java.beans.beancontext.BeanContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResourceAsStream(java.lang.String,java.beans.beancontext.BeanContextChild)",
+          "result": "java.io.InputStream",
+          "declaredBy": "java.beans.beancontext.BeanContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "globalHierarchyLock",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.beancontext.BeanContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "instantiateChild(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.beancontext.BeanContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextChild",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextChild.java",
+      "sourceSha256": "d4a4f94f1b926b58e5e9251bc6d204106966b4054301428348a06f373260f9a0",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChild",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChild",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanContext()",
+          "result": "java.beans.beancontext.BeanContext",
+          "declaredBy": "java.beans.beancontext.BeanContextChild",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChild",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChild",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBeanContext(java.beans.beancontext.BeanContext)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChild",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextChildComponentProxy",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextChildComponentProxy.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextChildComponentProxy.java",
+      "sourceSha256": "113bf3e5e0e7ec6d4e60b9b9856e73480f47a14c64217bc2eb0b5a525f534f4e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getComponent()",
+          "result": "java.awt.Component",
+          "declaredBy": "java.beans.beancontext.BeanContextChildComponentProxy",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextChildSupport",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.beans.beancontext.BeanContextChild",
+        "java.beans.beancontext.BeanContextServicesListener",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextChildSupport.java",
+      "sourceSha256": "b4629f739fdc069ce1380be4648b0a316b22391f6c8527ddc43e98758abbe701",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContextChild)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "beanContext",
+          "result": "java.beans.beancontext.BeanContext",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "beanContextChildPeer",
+          "result": "java.beans.beancontext.BeanContextChild",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireVetoableChange(java.lang.String,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanContext()",
+          "result": "java.beans.beancontext.BeanContext",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanContextChildPeer()",
+          "result": "java.beans.beancontext.BeanContextChild",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initializeBeanContextResources()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDelegated()",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "pcSupport",
+          "result": "java.beans.PropertyChangeSupport",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "rejectedSetBCOnce",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseBeanContextResources()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBeanContext(java.beans.beancontext.BeanContext)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validatePendingSetBeanContext(java.beans.beancontext.BeanContext)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "vcSupport",
+          "result": "java.beans.VetoableChangeSupport",
+          "declaredBy": "java.beans.beancontext.BeanContextChildSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextContainerProxy",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextContainerProxy.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextContainerProxy.java",
+      "sourceSha256": "46cfa8acfb5f89e4af7ebf07e694f8a60de8414102b832609e610f995556a709",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getContainer()",
+          "result": "java.awt.Container",
+          "declaredBy": "java.beans.beancontext.BeanContextContainerProxy",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextEvent.java",
+      "sourceSha256": "ea1c6b6f71ba1a1ea1dee5df18882838f945a9097b19c5bf8d3398aff164f534",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContext)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanContext()",
+          "result": "java.beans.beancontext.BeanContext",
+          "declaredBy": "java.beans.beancontext.BeanContextEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getPropagatedFrom()",
+          "result": "java.beans.beancontext.BeanContext",
+          "declaredBy": "java.beans.beancontext.BeanContextEvent",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isPropagated()",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextEvent",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "propagatedFrom",
+          "result": "java.beans.beancontext.BeanContext",
+          "declaredBy": "java.beans.beancontext.BeanContextEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "setPropagatedFrom(java.beans.beancontext.BeanContext)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextEvent",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextMembershipEvent",
+      "kind": "class",
+      "parents": [
+        "java.beans.beancontext.BeanContextEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextMembershipEvent.java",
+      "sourceSha256": "51cca04f994b020eaba58be6f9f2f1efc389a1a3564d82050f6373186a1c7ed5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContext,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextMembershipEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContext,java.util.Collection)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextMembershipEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "children",
+          "result": "java.util.Collection",
+          "declaredBy": "java.beans.beancontext.BeanContextMembershipEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextMembershipEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.beans.beancontext.BeanContextMembershipEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "java.beans.beancontext.BeanContextMembershipEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.beans.beancontext.BeanContextMembershipEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextMembershipListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextMembershipListener.java",
+      "sourceSha256": "4011f5dbe74ce826d3e155fab2f81bd788444d0ff36a8421d877b6b591eff3c3",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextMembershipListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextMembershipListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextProxy",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextProxy.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextProxy.java",
+      "sourceSha256": "37cc56ed2a38da98f4761687aaa773f62c3e8152c138ad59f56ee4cdf6f6b73e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getBeanContextProxy()",
+          "result": "java.beans.beancontext.BeanContextChild",
+          "declaredBy": "java.beans.beancontext.BeanContextProxy",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServiceAvailableEvent",
+      "kind": "class",
+      "parents": [
+        "java.beans.beancontext.BeanContextEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.java",
+      "sourceSha256": "09a0f1a207683f80312394eb499f9c760c2bd0948ca8dbdb02b336c6ba009b62",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContextServices,java.lang.Class)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceAvailableEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentServiceSelectors()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceAvailableEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServiceClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceAvailableEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceAsBeanContextServices()",
+          "result": "java.beans.beancontext.BeanContextServices",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceAvailableEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serviceClass",
+          "result": "java.lang.Class",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceAvailableEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServiceProvider",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServiceProvider.java",
+      "sourceSha256": "2164255c2d670ffb7e6c702c17e5fde2da5f9c1bd382a20f721922b2f0a10077",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCurrentServiceSelectors(java.beans.beancontext.BeanContextServices,java.lang.Class)",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Class,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServiceProviderBeanInfo",
+      "kind": "interface",
+      "parents": [
+        "java.beans.BeanInfo"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProviderBeanInfo.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServiceProviderBeanInfo.java",
+      "sourceSha256": "f2db08d00866a37b9a72633dc96339adcf2d6d56923a221db8b775f302965996",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getServicesBeanInfo()",
+          "result": "java.beans.BeanInfo[]",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceProviderBeanInfo",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServiceRevokedEvent",
+      "kind": "class",
+      "parents": [
+        "java.beans.beancontext.BeanContextEvent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.java",
+      "sourceSha256": "ff830831ab03467704024394f53d09cfe429220981ffa510399a50aebf67cb1a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContextServices,java.lang.Class,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceRevokedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getServiceClass()",
+          "result": "java.lang.Class",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceRevokedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSourceAsBeanContextServices()",
+          "result": "java.beans.beancontext.BeanContextServices",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceRevokedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isCurrentServiceInvalidNow()",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceRevokedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isServiceClass(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceRevokedEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serviceClass",
+          "result": "java.lang.Class",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceRevokedEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServiceRevokedListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.java",
+      "sourceSha256": "b534995658cd7a83f5d86f8ce9122ce73823f3463f02be998891e40d3f9ecb7b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServiceRevokedListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServices",
+      "kind": "interface",
+      "parents": [
+        "java.beans.beancontext.BeanContext",
+        "java.beans.beancontext.BeanContextServicesListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServices.java",
+      "sourceSha256": "fee826e569911feab5861989b312d322da7c273abbd6a08f33351cfa8c24304d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServices",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextServices",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentServiceClasses()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.beans.beancontext.BeanContextServices",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentServiceSelectors(java.lang.Class)",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.beans.beancontext.BeanContextServices",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Class,java.lang.Object,java.beans.beancontext.BeanContextServiceRevokedListener)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.beancontext.BeanContextServices",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasService(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextServices",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServices",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServices",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "revokeService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServices",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServicesListener",
+      "kind": "interface",
+      "parents": [
+        "java.beans.beancontext.BeanContextServiceRevokedListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServicesListener.java",
+      "sourceSha256": "cf8c788dbde02980945b9c91ffd87fae1362dc12fab91bfd808c7f9b1ca706ef",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServicesSupport",
+      "kind": "class",
+      "parents": [
+        "java.beans.beancontext.BeanContextSupport",
+        "java.beans.beancontext.BeanContextServices"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServicesSupport.java",
+      "sourceSha256": "dc07796eb3c0dcfd82ea074ab636363c07da1ba059b2317a7b5ea2c959f0d30f",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContextServices)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContextServices,java.util.Locale)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "bcsListeners",
+          "result": "java.util.ArrayList",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "bcsPreDeserializationHook(java.io.ObjectInputStream)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bcsPreSerializationHook(java.io.ObjectOutputStream)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "childJustRemovedHook(java.lang.Object,java.beans.beancontext.BeanContextSupport$BCSChild)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createBCSChild(java.lang.Object,java.lang.Object)",
+          "result": "java.beans.beancontext.BeanContextSupport$BCSChild",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createBCSSServiceProvider(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider)",
+          "result": "java.beans.beancontext.BeanContextServicesSupport$BCSSServiceProvider",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireServiceAdded(java.beans.beancontext.BeanContextServiceAvailableEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireServiceAdded(java.lang.Class)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireServiceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireServiceRevoked(java.lang.Class,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanContextServicesPeer()",
+          "result": "java.beans.beancontext.BeanContextServices",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildBeanContextServicesListener(java.lang.Object)",
+          "result": "java.beans.beancontext.BeanContextServicesListener",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentServiceClasses()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCurrentServiceSelectors(java.lang.Class)",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Class,java.lang.Object,java.beans.beancontext.BeanContextServiceRevokedListener)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasService(java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initialize()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initializeBeanContextResources()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "proxy",
+          "result": "java.beans.beancontext.BeanContextServicesSupport$BCSSProxyServiceProvider",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseBeanContextResources()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "revokeService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serializable",
+          "result": "int",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "services",
+          "result": "java.util.HashMap",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServicesSupport$BCSSChild",
+      "kind": "class",
+      "parents": [
+        "java.beans.beancontext.BeanContextSupport$BCSChild"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.BCSSChild.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServicesSupport.java",
+      "sourceSha256": "dc07796eb3c0dcfd82ea074ab636363c07da1ba059b2317a7b5ea2c959f0d30f",
+      "members": []
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServicesSupport$BCSSProxyServiceProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.beans.beancontext.BeanContextServiceProvider",
+        "java.beans.beancontext.BeanContextServiceRevokedListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.BCSSProxyServiceProvider.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServicesSupport.java",
+      "sourceSha256": "dc07796eb3c0dcfd82ea074ab636363c07da1ba059b2317a7b5ea2c959f0d30f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCurrentServiceSelectors(java.beans.beancontext.BeanContextServices,java.lang.Class)",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport$BCSSProxyServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Class,java.lang.Object)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport$BCSSProxyServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "releaseService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport$BCSSProxyServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport$BCSSProxyServiceProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextServicesSupport$BCSSServiceProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.BCSSServiceProvider.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextServicesSupport.java",
+      "sourceSha256": "dc07796eb3c0dcfd82ea074ab636363c07da1ba059b2317a7b5ea2c959f0d30f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getServiceProvider()",
+          "result": "java.beans.beancontext.BeanContextServiceProvider",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport$BCSSServiceProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "serviceProvider",
+          "result": "java.beans.beancontext.BeanContextServiceProvider",
+          "declaredBy": "java.beans.beancontext.BeanContextServicesSupport$BCSSServiceProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextSupport",
+      "kind": "class",
+      "parents": [
+        "java.beans.beancontext.BeanContextChildSupport",
+        "java.beans.beancontext.BeanContext",
+        "java.io.Serializable",
+        "java.beans.PropertyChangeListener",
+        "java.beans.VetoableChangeListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextSupport.java",
+      "sourceSha256": "9fb60e57733f07f8d9131d9a5750c41e24ac3caba2ec953068740a178cdaee9b",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContext)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContext,java.util.Locale)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContext,java.util.Locale,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.beans.beancontext.BeanContext,java.util.Locale,boolean,boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(java.util.Collection)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "avoidingGui()",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "bcmListeners",
+          "result": "java.util.ArrayList",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "bcsChildren()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bcsPreDeserializationHook(java.io.ObjectInputStream)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "bcsPreSerializationHook(java.io.ObjectOutputStream)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "childDeserializedHook(java.lang.Object,java.beans.beancontext.BeanContextSupport$BCSChild)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "childJustAddedHook(java.lang.Object,java.beans.beancontext.BeanContextSupport$BCSChild)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "childJustRemovedHook(java.lang.Object,java.beans.beancontext.BeanContextSupport$BCSChild)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "children",
+          "result": "java.util.HashMap",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 132,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "classEquals(java.lang.Class,java.lang.Class)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsAll(java.util.Collection)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "containsKey(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "copyChildren()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "createBCSChild(java.lang.Object,java.lang.Object)",
+          "result": "java.beans.beancontext.BeanContextSupport$BCSChild",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "deserialize(java.io.ObjectInputStream,java.util.Collection)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "designTime",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "dontUseGui()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireChildrenAdded(java.beans.beancontext.BeanContextMembershipEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "fireChildrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeanContextPeer()",
+          "result": "java.beans.beancontext.BeanContext",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildBeanContextChild(java.lang.Object)",
+          "result": "java.beans.beancontext.BeanContextChild",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildBeanContextMembershipListener(java.lang.Object)",
+          "result": "java.beans.beancontext.BeanContextMembershipListener",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildPropertyChangeListener(java.lang.Object)",
+          "result": "java.beans.PropertyChangeListener",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildSerializable(java.lang.Object)",
+          "result": "java.io.Serializable",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildVetoableChangeListener(java.lang.Object)",
+          "result": "java.beans.VetoableChangeListener",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChildVisibility(java.lang.Object)",
+          "result": "java.beans.Visibility",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 28,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResource(java.lang.String,java.beans.beancontext.BeanContextChild)",
+          "result": "java.net.URL",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getResourceAsStream(java.lang.String,java.beans.beancontext.BeanContextChild)",
+          "result": "java.io.InputStream",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "initialize()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 36,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "instantiateChild(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDesignTime()",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSerializing()",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "iterator()",
+          "result": "java.util.Iterator",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "locale",
+          "result": "java.util.Locale",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "needsGui()",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "okToUseGui",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "okToUseGui()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "propertyChange(java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readChildren(java.io.ObjectInputStream)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(java.lang.Object,boolean)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAll(java.util.Collection)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "retainAll(java.util.Collection)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "serialize(java.io.ObjectOutputStream,java.util.Collection)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 20,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDesignTime(boolean)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocale(java.util.Locale)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 33,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray(java.lang.Object[])",
+          "result": "java.lang.Object[]",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validatePendingAdd(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "validatePendingRemove(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "vetoableChange(java.beans.PropertyChangeEvent)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeChildren(java.io.ObjectOutputStream)",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextSupport$BCSChild",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.io.Serializable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.BCSChild.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextSupport.java",
+      "sourceSha256": "9fb60e57733f07f8d9131d9a5750c41e24ac3caba2ec953068740a178cdaee9b",
+      "members": []
+    },
+    {
+      "target": "java.beans.beancontext.BeanContextSupport$BCSIterator",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "java.util.Iterator"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.BCSIterator.html",
+      "sourceEntry": "java.desktop/java/beans/beancontext/BeanContextSupport.java",
+      "sourceSha256": "9fb60e57733f07f8d9131d9a5750c41e24ac3caba2ec953068740a178cdaee9b",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "hasNext()",
+          "result": "boolean",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport$BCSIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "next()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport$BCSIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove()",
+          "result": "void",
+          "declaredBy": "java.beans.beancontext.BeanContextSupport$BCSIterator",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,662 @@
+{
+  "name": "javax.sql.rowset.spi",
+  "module": "java.sql.rowset",
+  "types": [
+    {
+      "target": "javax.sql.rowset.spi.SyncFactory",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/spi/SyncFactory.java",
+      "sourceSha256": "9f7ba73d33118cc365013c2bf78779588d2968879b5c42fbf5f3f7eed8320938",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ROWSET_SYNC_PROVIDER",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROWSET_SYNC_PROVIDER_VERSION",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROWSET_SYNC_VENDOR",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getInstance(java.lang.String)",
+          "result": "javax.sql.rowset.spi.SyncProvider",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLogger()",
+          "result": "java.util.logging.Logger",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRegisteredProviders()",
+          "result": "java.util.Enumeration",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSyncFactory()",
+          "result": "javax.sql.rowset.spi.SyncFactory",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "registerProvider(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setJNDIContext(javax.naming.Context)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLogger(java.util.logging.Logger)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLogger(java.util.logging.Logger,java.util.logging.Level)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "unregisterProvider(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactory",
+          "modifiers": 41,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.spi.SyncFactoryException",
+      "kind": "class",
+      "parents": [
+        "java.sql.SQLException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactoryException.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/spi/SyncFactoryException.java",
+      "sourceSha256": "139909d327b348367a32b4ef423a124d84dd0efdee32a59f95057f5b783db2f9",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactoryException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncFactoryException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.spi.SyncProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/spi/SyncProvider.java",
+      "sourceSha256": "702c4d4f045ddf9cfa99188e715a7af63209157734e551a9c1f6c0a177b55378",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "DATASOURCE_DB_LOCK",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATASOURCE_NO_LOCK",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATASOURCE_ROW_LOCK",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATASOURCE_TABLE_LOCK",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GRADE_CHECK_ALL_AT_COMMIT",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GRADE_CHECK_MODIFIED_AT_COMMIT",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GRADE_LOCK_WHEN_LOADED",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GRADE_LOCK_WHEN_MODIFIED",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GRADE_NONE",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NONUPDATABLE_VIEW_SYNC",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UPDATABLE_VIEW_SYNC",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getDataSourceLock()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProviderGrade()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getProviderID()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRowSetReader()",
+          "result": "javax.sql.RowSetReader",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getRowSetWriter()",
+          "result": "javax.sql.RowSetWriter",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVendor()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getVersion()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setDataSourceLock(int)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "supportsUpdatableView()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.spi.SyncProviderException",
+      "kind": "class",
+      "parents": [
+        "java.sql.SQLException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProviderException.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/spi/SyncProviderException.java",
+      "sourceSha256": "63a2c1c7be99d750496f1641f33f695d78d031853faece57e315fdf215fe6f1a",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncProviderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncProviderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.sql.rowset.spi.SyncResolver)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncProviderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSyncResolver()",
+          "result": "javax.sql.rowset.spi.SyncResolver",
+          "declaredBy": "javax.sql.rowset.spi.SyncProviderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSyncResolver(javax.sql.rowset.spi.SyncResolver)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncProviderException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.spi.SyncResolver",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.RowSet"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/spi/SyncResolver.java",
+      "sourceSha256": "311a0988147adb8601c46f432d876f8c256a2a66f015fa48bc77db7e165d0f7b",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "DELETE_ROW_CONFLICT",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INSERT_ROW_CONFLICT",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "NO_ROW_CONFLICT",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UPDATE_ROW_CONFLICT",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getConflictValue(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getConflictValue(java.lang.String)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStatus()",
+          "result": "int",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "nextConflict()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "previousConflict()",
+          "result": "boolean",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setResolvedValue(int,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setResolvedValue(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.SyncResolver",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.spi.TransactionalWriter",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.RowSetWriter"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.java",
+      "sourceSha256": "fbdedce883290075ffe7ceff9f9762b9400e658f13b0fd7164d9d2e0c32cba0d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "commit()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.TransactionalWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rollback()",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.TransactionalWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rollback(java.sql.Savepoint)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.TransactionalWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.spi.XmlReader",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.RowSetReader"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlReader.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/spi/XmlReader.java",
+      "sourceSha256": "1b15f806c11aed5c692c63c41ff9e828fa8e3f2e5fc2396a36c9af4b87ce9928",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "readXML(javax.sql.rowset.WebRowSet,java.io.Reader)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.XmlReader",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.sql.rowset.spi.XmlWriter",
+      "kind": "interface",
+      "parents": [
+        "javax.sql.RowSetWriter"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlWriter.html",
+      "sourceEntry": "java.sql.rowset/javax/sql/rowset/spi/XmlWriter.java",
+      "sourceSha256": "a909910f606078e39747c1ff19502ea6ef93f49aa3e9d7eeb51a4d1e874dd97a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "writeXML(javax.sql.rowset.WebRowSet,java.io.Writer)",
+          "result": "void",
+          "declaredBy": "javax.sql.rowset.spi.XmlWriter",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "name": "javax.imageio.event",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.imageio.event.IIOReadProgressListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html",
+      "sourceEntry": "java.desktop/javax/imageio/event/IIOReadProgressListener.java",
+      "sourceSha256": "c09bc5f414c74c9c67d359e795abb491d9c2f9bb1771e904cffb79e677133f1e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "imageComplete(javax.imageio.ImageReader)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "imageProgress(javax.imageio.ImageReader,float)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "imageStarted(javax.imageio.ImageReader,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "readAborted(javax.imageio.ImageReader)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequenceComplete(javax.imageio.ImageReader)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "sequenceStarted(javax.imageio.ImageReader,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "thumbnailComplete(javax.imageio.ImageReader)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "thumbnailProgress(javax.imageio.ImageReader,float)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "thumbnailStarted(javax.imageio.ImageReader,int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.event.IIOReadUpdateListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html",
+      "sourceEntry": "java.desktop/javax/imageio/event/IIOReadUpdateListener.java",
+      "sourceSha256": "45cf81f61aaf3549c5a39984f060aa658459287c6221c07722651ddd12bda28a",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "imageUpdate(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadUpdateListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "passComplete(javax.imageio.ImageReader,java.awt.image.BufferedImage)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadUpdateListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "passStarted(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadUpdateListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "thumbnailPassComplete(javax.imageio.ImageReader,java.awt.image.BufferedImage)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadUpdateListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "thumbnailPassStarted(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadUpdateListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "thumbnailUpdate(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int[])",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadUpdateListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.event.IIOReadWarningListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html",
+      "sourceEntry": "java.desktop/javax/imageio/event/IIOReadWarningListener.java",
+      "sourceSha256": "37172e7124ff21361c3ffcfca13a3bb35d14d298470fce1931954a1b6f0323ce",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "warningOccurred(javax.imageio.ImageReader,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOReadWarningListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.event.IIOWriteProgressListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html",
+      "sourceEntry": "java.desktop/javax/imageio/event/IIOWriteProgressListener.java",
+      "sourceSha256": "bdad10ba692c48371d941e179e51adc34b859a18c377cc1f0557ba539c9a8a95",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "imageComplete(javax.imageio.ImageWriter)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOWriteProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "imageProgress(javax.imageio.ImageWriter,float)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOWriteProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "imageStarted(javax.imageio.ImageWriter,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOWriteProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "thumbnailComplete(javax.imageio.ImageWriter)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOWriteProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "thumbnailProgress(javax.imageio.ImageWriter,float)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOWriteProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "thumbnailStarted(javax.imageio.ImageWriter,int,int)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOWriteProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "writeAborted(javax.imageio.ImageWriter)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOWriteProgressListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.imageio.event.IIOWriteWarningListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/event/IIOWriteWarningListener.html",
+      "sourceEntry": "java.desktop/javax/imageio/event/IIOWriteWarningListener.java",
+      "sourceSha256": "178addc575d031e2210b5d15e9c3fa1e292fd10d8d83c3d784888c3046162ab7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "warningOccurred(javax.imageio.ImageWriter,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.imageio.event.IIOWriteWarningListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

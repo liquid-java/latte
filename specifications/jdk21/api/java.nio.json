@@ -1,0 +1,3814 @@
+{
+  "name": "java.nio",
+  "module": "java.base",
+  "types": [
+    {
+      "target": "java.nio.Buffer",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/Buffer.html",
+      "sourceEntry": "java.base/java/nio/Buffer.java",
+      "sourceSha256": "99840c098eeb9f828a22d7d162f35aa33fb3ce7cb831fe8934dbeb0a04bdd45c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "array()",
+          "result": "java.lang.Object",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayOffset()",
+          "result": "int",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "capacity()",
+          "result": "int",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "java.nio.Buffer",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "duplicate()",
+          "result": "java.nio.Buffer",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flip()",
+          "result": "java.nio.Buffer",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasArray()",
+          "result": "boolean",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasRemaining()",
+          "result": "boolean",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDirect()",
+          "result": "boolean",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isReadOnly()",
+          "result": "boolean",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit()",
+          "result": "int",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(int)",
+          "result": "java.nio.Buffer",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mark()",
+          "result": "java.nio.Buffer",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position()",
+          "result": "int",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "position(int)",
+          "result": "java.nio.Buffer",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remaining()",
+          "result": "int",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.Buffer",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rewind()",
+          "result": "java.nio.Buffer",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice()",
+          "result": "java.nio.Buffer",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice(int,int)",
+          "result": "java.nio.Buffer",
+          "declaredBy": "java.nio.Buffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.BufferOverflowException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/BufferOverflowException.html",
+      "sourceEntry": "java.base/java/nio/BufferOverflowException.java",
+      "sourceSha256": "eac1a2f1a6040b20b9d5f91f3635b5a638640c0dc6d79a728d261b542b33d412",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.BufferOverflowException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.BufferUnderflowException",
+      "kind": "class",
+      "parents": [
+        "java.lang.RuntimeException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/BufferUnderflowException.html",
+      "sourceEntry": "java.base/java/nio/BufferUnderflowException.java",
+      "sourceSha256": "64f4a304a7ac65de2dbe8c9a66f3e7cef4f0623d995a5f2bf75d05bf3f656fa5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.BufferUnderflowException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.ByteBuffer",
+      "kind": "class",
+      "parents": [
+        "java.nio.Buffer",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/ByteBuffer.html",
+      "sourceEntry": "java.base/java/nio/ByteBuffer.java",
+      "sourceSha256": "fe270abc098a6d69b0f43a552f8be5a0d0f227df74bc2fd2a48c20659bc1c3d1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "alignedSlice(int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "alignmentOffset(int,int)",
+          "result": "int",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocate(int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "allocateDirect(int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "array()",
+          "result": "byte[]",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayOffset()",
+          "result": "int",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asCharBuffer()",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asDoubleBuffer()",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asFloatBuffer()",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asIntBuffer()",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asLongBuffer()",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asReadOnlyBuffer()",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asShortBuffer()",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compact()",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "duplicate()",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flip()",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "byte",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(byte[])",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(byte[],int,int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "byte",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,byte[])",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,byte[],int,int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChar()",
+          "result": "char",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChar(int)",
+          "result": "char",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDouble()",
+          "result": "double",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getDouble(int)",
+          "result": "double",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFloat()",
+          "result": "float",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFloat(int)",
+          "result": "float",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInt()",
+          "result": "int",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getInt(int)",
+          "result": "int",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLong()",
+          "result": "long",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLong(int)",
+          "result": "long",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShort()",
+          "result": "short",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getShort(int)",
+          "result": "short",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasArray()",
+          "result": "boolean",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDirect()",
+          "result": "boolean",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mark()",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mismatch(java.nio.ByteBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "order()",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "order(java.nio.ByteOrder)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position(int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(byte)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(byte[])",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(byte[],int,int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,byte)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,byte[])",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,byte[],int,int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,java.nio.ByteBuffer,int,int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.nio.ByteBuffer)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putChar(char)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putChar(int,char)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putDouble(double)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putDouble(int,double)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putFloat(float)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putFloat(int,float)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putInt(int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putInt(int,int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putLong(int,long)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putLong(long)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putShort(int,short)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "putShort(short)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rewind()",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice()",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice(int,int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(byte[])",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(byte[],int,int)",
+          "result": "java.nio.ByteBuffer",
+          "declaredBy": "java.nio.ByteBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.ByteOrder",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/ByteOrder.html",
+      "sourceEntry": "java.base/java/nio/ByteOrder.java",
+      "sourceSha256": "db970286047fea426b11888b170078df8c42edceb221ff3ca871a8b457022b47",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "BIG_ENDIAN",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.nio.ByteOrder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LITTLE_ENDIAN",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.nio.ByteOrder",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "nativeOrder()",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.nio.ByteOrder",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.ByteOrder",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.CharBuffer",
+      "kind": "class",
+      "parents": [
+        "java.nio.Buffer",
+        "java.lang.Comparable",
+        "java.lang.Appendable",
+        "java.lang.CharSequence",
+        "java.lang.Readable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/CharBuffer.html",
+      "sourceEntry": "java.base/java/nio/CharBuffer.java",
+      "sourceSha256": "f0eca7928ce42b1053d204a204cc2f18bdd7c94b41d8ecdef94fa37e38cbf236",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allocate(int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "append(char)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "append(java.lang.CharSequence)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "append(java.lang.CharSequence,int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "array()",
+          "result": "char[]",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayOffset()",
+          "result": "int",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asReadOnlyBuffer()",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "charAt(int)",
+          "result": "char",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "chars()",
+          "result": "java.util.stream.IntStream",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compact()",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.nio.CharBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "duplicate()",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flip()",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "char",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(char[])",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(char[],int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "char",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,char[])",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,char[],int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasArray()",
+          "result": "boolean",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDirect()",
+          "result": "boolean",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEmpty()",
+          "result": "boolean",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "length()",
+          "result": "int",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mark()",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mismatch(java.nio.CharBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "order()",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position(int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(char)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(char[])",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(char[],int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,char)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,char[])",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,char[],int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,java.nio.CharBuffer,int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.lang.String)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.lang.String,int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.nio.CharBuffer)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "read(java.nio.CharBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rewind()",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice()",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice(int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "subSequence(int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(char[])",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(char[],int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(java.lang.CharSequence)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(java.lang.CharSequence,int,int)",
+          "result": "java.nio.CharBuffer",
+          "declaredBy": "java.nio.CharBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.DoubleBuffer",
+      "kind": "class",
+      "parents": [
+        "java.nio.Buffer",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/DoubleBuffer.html",
+      "sourceEntry": "java.base/java/nio/DoubleBuffer.java",
+      "sourceSha256": "0b9a5d3d294f3107d4858d2f804efd24b47737489675f5026c41ca41dc3a549f",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allocate(int)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "array()",
+          "result": "double[]",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayOffset()",
+          "result": "int",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asReadOnlyBuffer()",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compact()",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.nio.DoubleBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "duplicate()",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flip()",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "double",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(double[])",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(double[],int,int)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "double",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,double[])",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,double[],int,int)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasArray()",
+          "result": "boolean",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDirect()",
+          "result": "boolean",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(int)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mark()",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mismatch(java.nio.DoubleBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "order()",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position(int)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(double)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(double[])",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(double[],int,int)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,double)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,double[])",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,double[],int,int)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,java.nio.DoubleBuffer,int,int)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.nio.DoubleBuffer)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rewind()",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice()",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice(int,int)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(double[])",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(double[],int,int)",
+          "result": "java.nio.DoubleBuffer",
+          "declaredBy": "java.nio.DoubleBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.FloatBuffer",
+      "kind": "class",
+      "parents": [
+        "java.nio.Buffer",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/FloatBuffer.html",
+      "sourceEntry": "java.base/java/nio/FloatBuffer.java",
+      "sourceSha256": "383d403d99c981ddebe3fa82213e280f4fab5cf8d7782518a680e96c8d1036fd",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allocate(int)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "array()",
+          "result": "float[]",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayOffset()",
+          "result": "int",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asReadOnlyBuffer()",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compact()",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.nio.FloatBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "duplicate()",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flip()",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "float",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(float[])",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(float[],int,int)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "float",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,float[])",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,float[],int,int)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasArray()",
+          "result": "boolean",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDirect()",
+          "result": "boolean",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(int)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mark()",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mismatch(java.nio.FloatBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "order()",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position(int)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(float)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(float[])",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(float[],int,int)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,float)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,float[])",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,float[],int,int)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,java.nio.FloatBuffer,int,int)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.nio.FloatBuffer)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rewind()",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice()",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice(int,int)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(float[])",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(float[],int,int)",
+          "result": "java.nio.FloatBuffer",
+          "declaredBy": "java.nio.FloatBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.IntBuffer",
+      "kind": "class",
+      "parents": [
+        "java.nio.Buffer",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/IntBuffer.html",
+      "sourceEntry": "java.base/java/nio/IntBuffer.java",
+      "sourceSha256": "dda033dbc5fc5d906e6af4ed7a73140eb7e01c0bf81d47a34af0ba8e3a4f3d5d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allocate(int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "array()",
+          "result": "int[]",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayOffset()",
+          "result": "int",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asReadOnlyBuffer()",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compact()",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.nio.IntBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "duplicate()",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flip()",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "int",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "int",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,int[])",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,int[],int,int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int[])",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int[],int,int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasArray()",
+          "result": "boolean",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDirect()",
+          "result": "boolean",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mark()",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mismatch(java.nio.IntBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "order()",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position(int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,int[])",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,int[],int,int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,java.nio.IntBuffer,int,int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int[])",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int[],int,int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.nio.IntBuffer)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rewind()",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice()",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice(int,int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(int[])",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(int[],int,int)",
+          "result": "java.nio.IntBuffer",
+          "declaredBy": "java.nio.IntBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.InvalidMarkException",
+      "kind": "class",
+      "parents": [
+        "java.lang.IllegalStateException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/InvalidMarkException.html",
+      "sourceEntry": "java.base/java/nio/InvalidMarkException.java",
+      "sourceSha256": "ba9f87e669767b6d3a8a44a0c378dc7a66c36b7b6cb79f8c9fcfefad08ae38c5",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.InvalidMarkException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.LongBuffer",
+      "kind": "class",
+      "parents": [
+        "java.nio.Buffer",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/LongBuffer.html",
+      "sourceEntry": "java.base/java/nio/LongBuffer.java",
+      "sourceSha256": "9e1ab26b368476dff1c1b098200545096de022da30d231c52b3d69d7d72ca969",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allocate(int)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "array()",
+          "result": "long[]",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayOffset()",
+          "result": "int",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asReadOnlyBuffer()",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compact()",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.nio.LongBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "duplicate()",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flip()",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "long",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "long",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,long[])",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,long[],int,int)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(long[])",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(long[],int,int)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasArray()",
+          "result": "boolean",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDirect()",
+          "result": "boolean",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(int)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mark()",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mismatch(java.nio.LongBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "order()",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position(int)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,java.nio.LongBuffer,int,int)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,long)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,long[])",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,long[],int,int)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.nio.LongBuffer)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(long)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(long[])",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(long[],int,int)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rewind()",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice()",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice(int,int)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(long[])",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(long[],int,int)",
+          "result": "java.nio.LongBuffer",
+          "declaredBy": "java.nio.LongBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.MappedByteBuffer",
+      "kind": "class",
+      "parents": [
+        "java.nio.ByteBuffer"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/MappedByteBuffer.html",
+      "sourceEntry": "java.base/java/nio/MappedByteBuffer.java",
+      "sourceSha256": "27c6eb4e48b34f4817e9de88ec22f68fe1c698c1510a84bdd73800517d310e3c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compact()",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "duplicate()",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flip()",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "force()",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "force(int,int)",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isLoaded()",
+          "result": "boolean",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(int)",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "load()",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mark()",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position(int)",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rewind()",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice()",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice(int,int)",
+          "result": "java.nio.MappedByteBuffer",
+          "declaredBy": "java.nio.MappedByteBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.ReadOnlyBufferException",
+      "kind": "class",
+      "parents": [
+        "java.lang.UnsupportedOperationException"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/ReadOnlyBufferException.html",
+      "sourceEntry": "java.base/java/nio/ReadOnlyBufferException.java",
+      "sourceSha256": "5c44ea139e3feab96cbde47f33885dec21a7f92cd8f1c7b4656c7da19e424670",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "java.nio.ReadOnlyBufferException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "java.nio.ShortBuffer",
+      "kind": "class",
+      "parents": [
+        "java.nio.Buffer",
+        "java.lang.Comparable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/ShortBuffer.html",
+      "sourceEntry": "java.base/java/nio/ShortBuffer.java",
+      "sourceSha256": "bcf75a6f8711b4ebc1a65aaea9f05c7799a32124fd78e58a3a6f9aa736f09b49",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "allocate(int)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "array()",
+          "result": "short[]",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "arrayOffset()",
+          "result": "int",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "asReadOnlyBuffer()",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compact()",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "compareTo(java.nio.ShortBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "duplicate()",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "equals(java.lang.Object)",
+          "result": "boolean",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "flip()",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get()",
+          "result": "short",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int)",
+          "result": "short",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,short[])",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(int,short[],int,int)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(short[])",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(short[],int,int)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hasArray()",
+          "result": "boolean",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "hashCode()",
+          "result": "int",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isDirect()",
+          "result": "boolean",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "limit(int)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mark()",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "mismatch(java.nio.ShortBuffer)",
+          "result": "int",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "order()",
+          "result": "java.nio.ByteOrder",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "position(int)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,java.nio.ShortBuffer,int,int)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,short)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,short[])",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(int,short[],int,int)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(java.nio.ShortBuffer)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(short)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(short[])",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "put(short[],int,int)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "reset()",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rewind()",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 17,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice()",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "slice(int,int)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(short[])",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "wrap(short[],int,int)",
+          "result": "java.nio.ShortBuffer",
+          "declaredBy": "java.nio.ShortBuffer",
+          "modifiers": 9,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

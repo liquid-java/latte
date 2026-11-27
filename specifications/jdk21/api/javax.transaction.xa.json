@@ -1,0 +1,588 @@
+{
+  "name": "javax.transaction.xa",
+  "module": "java.transaction.xa",
+  "types": [
+    {
+      "target": "javax.transaction.xa.XAException",
+      "kind": "class",
+      "parents": [
+        "java.lang.Exception"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.transaction.xa/javax/transaction/xa/XAException.html",
+      "sourceEntry": "java.transaction.xa/javax/transaction/xa/XAException.java",
+      "sourceSha256": "3d909d832170f5da26cc905684e0ba96c8016bd194dc2a0e5925b2ca423f52d2",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(int)",
+          "result": "void",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "XAER_ASYNC",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XAER_DUPID",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XAER_INVAL",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XAER_NOTA",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XAER_OUTSIDE",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XAER_PROTO",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XAER_RMERR",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XAER_RMFAIL",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_HEURCOM",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_HEURHAZ",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_HEURMIX",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_HEURRB",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_NOMIGRATE",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RBBASE",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RBCOMMFAIL",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RBDEADLOCK",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RBEND",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RBINTEGRITY",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RBOTHER",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RBPROTO",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RBROLLBACK",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RBTIMEOUT",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RBTRANSIENT",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RDONLY",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RETRY",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "errorCode",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAException",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.transaction.xa.XAResource",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html",
+      "sourceEntry": "java.transaction.xa/javax/transaction/xa/XAResource.java",
+      "sourceSha256": "2748acec898c07a100bf68cf5d37ee607249792febf0fb524710e138a632ebfa",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "TMENDRSCAN",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TMFAIL",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TMJOIN",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TMNOFLAGS",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TMONEPHASE",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TMRESUME",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TMSTARTRSCAN",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TMSUCCESS",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TMSUSPEND",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_OK",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "XA_RDONLY",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "commit(javax.transaction.xa.Xid,boolean)",
+          "result": "void",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "end(javax.transaction.xa.Xid,int)",
+          "result": "void",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "forget(javax.transaction.xa.Xid)",
+          "result": "void",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTransactionTimeout()",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isSameRM(javax.transaction.xa.XAResource)",
+          "result": "boolean",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "prepare(javax.transaction.xa.Xid)",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "recover(int)",
+          "result": "javax.transaction.xa.Xid[]",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "rollback(javax.transaction.xa.Xid)",
+          "result": "void",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTransactionTimeout(int)",
+          "result": "boolean",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "start(javax.transaction.xa.Xid,int)",
+          "result": "void",
+          "declaredBy": "javax.transaction.xa.XAResource",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.transaction.xa.Xid",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html",
+      "sourceEntry": "java.transaction.xa/javax/transaction/xa/Xid.java",
+      "sourceSha256": "994e082a24bac07a801756c8f34a5570ea73ffa93ff58a79189e1f1dde3dea3f",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "MAXBQUALSIZE",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.Xid",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MAXGTRIDSIZE",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.Xid",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getBranchQualifier()",
+          "result": "byte[]",
+          "declaredBy": "javax.transaction.xa.Xid",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFormatId()",
+          "result": "int",
+          "declaredBy": "javax.transaction.xa.Xid",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getGlobalTransactionId()",
+          "result": "byte[]",
+          "declaredBy": "javax.transaction.xa.Xid",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "name": "javax.naming.event",
+  "module": "java.naming",
+  "types": [
+    {
+      "target": "javax.naming.event.EventContext",
+      "kind": "interface",
+      "parents": [
+        "javax.naming.Context"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/event/EventContext.html",
+      "sourceEntry": "java.naming/javax/naming/event/EventContext.java",
+      "sourceSha256": "5f61e49673cb9e55c101d4313b2bc23b1754149896a2d0986baadb696446683a",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "OBJECT_SCOPE",
+          "result": "int",
+          "declaredBy": "javax.naming.event.EventContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ONELEVEL_SCOPE",
+          "result": "int",
+          "declaredBy": "javax.naming.event.EventContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SUBTREE_SCOPE",
+          "result": "int",
+          "declaredBy": "javax.naming.event.EventContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addNamingListener(java.lang.String,int,javax.naming.event.NamingListener)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.EventContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNamingListener(javax.naming.Name,int,javax.naming.event.NamingListener)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.EventContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeNamingListener(javax.naming.event.NamingListener)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.EventContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "targetMustExist()",
+          "result": "boolean",
+          "declaredBy": "javax.naming.event.EventContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.event.EventDirContext",
+      "kind": "interface",
+      "parents": [
+        "javax.naming.event.EventContext",
+        "javax.naming.directory.DirContext"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/event/EventDirContext.html",
+      "sourceEntry": "java.naming/javax/naming/event/EventDirContext.java",
+      "sourceSha256": "1feb69f4acc96b271a1d4f70526145e8d0cf29cf4b7f3df9ab3fae24c47d1f1e",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addNamingListener(java.lang.String,java.lang.String,java.lang.Object[],javax.naming.directory.SearchControls,javax.naming.event.NamingListener)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.EventDirContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNamingListener(java.lang.String,java.lang.String,javax.naming.directory.SearchControls,javax.naming.event.NamingListener)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.EventDirContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNamingListener(javax.naming.Name,java.lang.String,java.lang.Object[],javax.naming.directory.SearchControls,javax.naming.event.NamingListener)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.EventDirContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addNamingListener(javax.naming.Name,java.lang.String,javax.naming.directory.SearchControls,javax.naming.event.NamingListener)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.EventDirContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.event.NamespaceChangeListener",
+      "kind": "interface",
+      "parents": [
+        "javax.naming.event.NamingListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html",
+      "sourceEntry": "java.naming/javax/naming/event/NamespaceChangeListener.java",
+      "sourceSha256": "3fc309e8d029d43730cf5fb9a6fe8dcf6de9b5b0ce3f86efcd582760d98614fb",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "objectAdded(javax.naming.event.NamingEvent)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.NamespaceChangeListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "objectRemoved(javax.naming.event.NamingEvent)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.NamespaceChangeListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "objectRenamed(javax.naming.event.NamingEvent)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.NamespaceChangeListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.event.NamingEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/event/NamingEvent.html",
+      "sourceEntry": "java.naming/javax/naming/event/NamingEvent.java",
+      "sourceSha256": "a21ac88a82f44dcb6b61f7ff4bc75d467e0c441dd7a31fe87f29541d38d02adb",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.naming.event.EventContext,int,javax.naming.Binding,javax.naming.Binding,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "OBJECT_ADDED",
+          "result": "int",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OBJECT_CHANGED",
+          "result": "int",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OBJECT_REMOVED",
+          "result": "int",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OBJECT_RENAMED",
+          "result": "int",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "changeInfo",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "dispatch(javax.naming.event.NamingListener)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getChangeInfo()",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEventContext()",
+          "result": "javax.naming.event.EventContext",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getNewBinding()",
+          "result": "javax.naming.Binding",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getOldBinding()",
+          "result": "javax.naming.Binding",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "int",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "newBinding",
+          "result": "javax.naming.Binding",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "oldBinding",
+          "result": "javax.naming.Binding",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "type",
+          "result": "int",
+          "declaredBy": "javax.naming.event.NamingEvent",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.event.NamingExceptionEvent",
+      "kind": "class",
+      "parents": [
+        "java.util.EventObject"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html",
+      "sourceEntry": "java.naming/javax/naming/event/NamingExceptionEvent.java",
+      "sourceSha256": "0855fcccd33202f25bb220e1e4ffb53a182e01ba442e6c4ebb3492e0677b532d",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.naming.event.EventContext,javax.naming.NamingException)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.NamingExceptionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "dispatch(javax.naming.event.NamingListener)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.NamingExceptionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEventContext()",
+          "result": "javax.naming.event.EventContext",
+          "declaredBy": "javax.naming.event.NamingExceptionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getException()",
+          "result": "javax.naming.NamingException",
+          "declaredBy": "javax.naming.event.NamingExceptionEvent",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.event.NamingListener",
+      "kind": "interface",
+      "parents": [
+        "java.util.EventListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/event/NamingListener.html",
+      "sourceEntry": "java.naming/javax/naming/event/NamingListener.java",
+      "sourceSha256": "03c620567f299119333ae98bf18ab62714f09e937ac04a72b658e43f3358ace4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "namingExceptionThrown(javax.naming.event.NamingExceptionEvent)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.NamingListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.naming.event.ObjectChangeListener",
+      "kind": "interface",
+      "parents": [
+        "javax.naming.event.NamingListener"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html",
+      "sourceEntry": "java.naming/javax/naming/event/ObjectChangeListener.java",
+      "sourceSha256": "0686b1f2b9a1aecd898bf26d4d9d23b89d789e1037eed2319e790e7a8a257bb4",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "objectChanged(javax.naming.event.NamingEvent)",
+          "result": "void",
+          "declaredBy": "javax.naming.event.ObjectChangeListener",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}

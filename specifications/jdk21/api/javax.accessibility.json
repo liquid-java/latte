@@ -1,0 +1,3809 @@
+{
+  "name": "javax.accessibility",
+  "module": "java.desktop",
+  "types": [
+    {
+      "target": "javax.accessibility.AccessibilityProvider",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibilityProvider.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibilityProvider.java",
+      "sourceSha256": "4cd5fe6b7a2a8419f6dc661cb2a36b53fcf5e2bdda783edc5edb17087beb4546",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibilityProvider",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "activate()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibilityProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibilityProvider",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.Accessible",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/Accessible.html",
+      "sourceEntry": "java.desktop/javax/accessibility/Accessible.java",
+      "sourceSha256": "4cdea005debcfa44b6e9e747cc15ea103884ebb27fd4d7d68f1131d3b6dd4936",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAccessibleContext()",
+          "result": "javax.accessibility.AccessibleContext",
+          "declaredBy": "javax.accessibility.Accessible",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleAction",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleAction.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleAction.java",
+      "sourceSha256": "b25aee9ed0464b91ed16c00c620b550c1573e7768f7754704e9d7c131d0591ef",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CLICK",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleAction",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DECREMENT",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleAction",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INCREMENT",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleAction",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TOGGLE_EXPAND",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleAction",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TOGGLE_POPUP",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleAction",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "doAccessibleAction(int)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleAction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleActionCount()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleAction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleActionDescription(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleAction",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleAttributeSequence",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleAttributeSequence.java",
+      "sourceSha256": "a175ef869a3967f19d8e4bd6c272511de9f3ed33398bb625653be030d03869af",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,javax.swing.text.AttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleAttributeSequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "attributes",
+          "result": "javax.swing.text.AttributeSet",
+          "declaredBy": "javax.accessibility.AccessibleAttributeSequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "endIndex",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleAttributeSequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "startIndex",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleAttributeSequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleBundle",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleBundle.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleBundle.java",
+      "sourceSha256": "fa67bbfd06ce6c4979bc7c577c25f4d246050132c02afef84b681c611eb19060",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleBundle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "key",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleBundle",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toDisplayString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleBundle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toDisplayString(java.lang.String,java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleBundle",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toDisplayString(java.util.Locale)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleBundle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleBundle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleComponent",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleComponent.java",
+      "sourceSha256": "d2bcc29cd72df584f9a587cd028dda9e0aa3872728505f0907a35c6dc2f0ca74",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addFocusListener(java.awt.event.FocusListener)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(java.awt.Point)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleAt(java.awt.Point)",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBackground()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBounds()",
+          "result": "java.awt.Rectangle",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCursor()",
+          "result": "java.awt.Cursor",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFont()",
+          "result": "java.awt.Font",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFontMetrics(java.awt.Font)",
+          "result": "java.awt.FontMetrics",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getForeground()",
+          "result": "java.awt.Color",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocation()",
+          "result": "java.awt.Point",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocationOnScreen()",
+          "result": "java.awt.Point",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSize()",
+          "result": "java.awt.Dimension",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isEnabled()",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isFocusTraversable()",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isShowing()",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isVisible()",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeFocusListener(java.awt.event.FocusListener)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "requestFocus()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBackground(java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setBounds(java.awt.Rectangle)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCursor(java.awt.Cursor)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setEnabled(boolean)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setFont(java.awt.Font)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setForeground(java.awt.Color)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setLocation(java.awt.Point)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setSize(java.awt.Dimension)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setVisible(boolean)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleContext",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleContext.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleContext.java",
+      "sourceSha256": "8b28a43fdf4206052b85bdfafef02cee3a9cc493469b4499dbd7c2ea445e2574",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_ACTION_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_CARET_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_CHILD_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_COMPONENT_BOUNDS_CHANGED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_DESCRIPTION_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_HYPERTEXT_OFFSET",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_INVALIDATE_CHILDREN",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_NAME_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_SELECTION_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_STATE_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_TABLE_CAPTION_CHANGED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_TABLE_MODEL_CHANGED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_TABLE_ROW_HEADER_CHANGED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_TABLE_SUMMARY_CHANGED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_TEXT_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_VALUE_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ACCESSIBLE_VISIBLE_DATA_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "accessibleDescription",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "accessibleName",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "accessibleParent",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "addPropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleAction()",
+          "result": "javax.accessibility.AccessibleAction",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleChild(int)",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleChildrenCount()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "refined",
+          "reason": "audited-source-contract"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleComponent()",
+          "result": "javax.accessibility.AccessibleComponent",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleEditableText()",
+          "result": "javax.accessibility.AccessibleEditableText",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleIcon()",
+          "result": "javax.accessibility.AccessibleIcon[]",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleIndexInParent()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleName()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleParent()",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleRelationSet()",
+          "result": "javax.accessibility.AccessibleRelationSet",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleRole()",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleSelection()",
+          "result": "javax.accessibility.AccessibleSelection",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleStateSet()",
+          "result": "javax.accessibility.AccessibleStateSet",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleTable()",
+          "result": "javax.accessibility.AccessibleTable",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleText()",
+          "result": "javax.accessibility.AccessibleText",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleValue()",
+          "result": "javax.accessibility.AccessibleValue",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLocale()",
+          "result": "java.util.Locale",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removePropertyChangeListener(java.beans.PropertyChangeListener)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleDescription(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleName(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleParent(javax.accessibility.Accessible)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleContext",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleEditableText",
+      "kind": "interface",
+      "parents": [
+        "javax.accessibility.AccessibleText"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleEditableText.java",
+      "sourceSha256": "49786f382efd67919f1ff5c879879c14269b2b011bdf8480a1abe5a3e760930c",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "cut(int,int)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleEditableText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "delete(int,int)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleEditableText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextRange(int,int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleEditableText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "insertTextAtIndex(int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleEditableText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "paste(int)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleEditableText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "replaceText(int,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleEditableText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "selectText(int,int)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleEditableText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAttributes(int,int,javax.swing.text.AttributeSet)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleEditableText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTextContents(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleEditableText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleExtendedComponent",
+      "kind": "interface",
+      "parents": [
+        "javax.accessibility.AccessibleComponent"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleExtendedComponent.java",
+      "sourceSha256": "8118ed5bb301995c0f855d05e61aa7a4b8841ce79c1c0c1be47462e506534cd1",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAccessibleKeyBinding()",
+          "result": "javax.accessibility.AccessibleKeyBinding",
+          "declaredBy": "javax.accessibility.AccessibleExtendedComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTitledBorderText()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleExtendedComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getToolTipText()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleExtendedComponent",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleExtendedTable",
+      "kind": "interface",
+      "parents": [
+        "javax.accessibility.AccessibleTable"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleExtendedTable.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleExtendedTable.java",
+      "sourceSha256": "b533768c9b65eaac0b51bd14e81109bce9f3fce92410135dad5d56d49b23a5d7",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAccessibleColumn(int)",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleExtendedTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleIndex(int,int)",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleExtendedTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleRow(int)",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleExtendedTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleExtendedText",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleExtendedText.java",
+      "sourceSha256": "7d15dd0eaddcac0bc1bf58ab62a87c721f3646186670e32fffcf6a95a16c9daa",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "ATTRIBUTE_RUN",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleExtendedText",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LINE",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleExtendedText",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextBounds(int,int)",
+          "result": "java.awt.Rectangle",
+          "declaredBy": "javax.accessibility.AccessibleExtendedText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextRange(int,int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleExtendedText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextSequenceAfter(int,int)",
+          "result": "javax.accessibility.AccessibleTextSequence",
+          "declaredBy": "javax.accessibility.AccessibleExtendedText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextSequenceAt(int,int)",
+          "result": "javax.accessibility.AccessibleTextSequence",
+          "declaredBy": "javax.accessibility.AccessibleExtendedText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTextSequenceBefore(int,int)",
+          "result": "javax.accessibility.AccessibleTextSequence",
+          "declaredBy": "javax.accessibility.AccessibleExtendedText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleHyperlink",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object",
+        "javax.accessibility.AccessibleAction"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleHyperlink.java",
+      "sourceSha256": "2a5093c5d7d8f96bd3e3d25b8216c18d35ab285b8ee67eaccca6e399ad5db8a4",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleHyperlink",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "doAccessibleAction(int)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleHyperlink",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleActionAnchor(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.accessibility.AccessibleHyperlink",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleActionCount()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleHyperlink",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleActionDescription(int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleHyperlink",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleActionObject(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.accessibility.AccessibleHyperlink",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getEndIndex()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleHyperlink",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStartIndex()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleHyperlink",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isValid()",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleHyperlink",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleHypertext",
+      "kind": "interface",
+      "parents": [
+        "javax.accessibility.AccessibleText"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleHypertext.java",
+      "sourceSha256": "8effa77fb1d841632bdb458963abe8b05eab213b893a9385eef8f402a8a068bb",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getLink(int)",
+          "result": "javax.accessibility.AccessibleHyperlink",
+          "declaredBy": "javax.accessibility.AccessibleHypertext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLinkCount()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleHypertext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLinkIndex(int)",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleHypertext",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleIcon",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleIcon.java",
+      "sourceSha256": "108a6cd669ba73e1a84e82eb57706a3bdcfb77e24e80c37789e8cf598378961d",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAccessibleIconDescription()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleIcon",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleIconHeight()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleIcon",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleIconWidth()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleIcon",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleIconDescription(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleIcon",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleKeyBinding",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleKeyBinding.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleKeyBinding.java",
+      "sourceSha256": "eaeb93a542122a0e97ccddf4ca7615c668a4fb083546c8f43916562effeb5c72",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAccessibleKeyBinding(int)",
+          "result": "java.lang.Object",
+          "declaredBy": "javax.accessibility.AccessibleKeyBinding",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleKeyBindingCount()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleKeyBinding",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleRelation",
+      "kind": "class",
+      "parents": [
+        "javax.accessibility.AccessibleBundle"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleRelation.java",
+      "sourceSha256": "1607d02e7393259226b334a19df0ba48acf67b896569b95e84d96c505819dc12",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String,java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "CHILD_NODE_OF",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHILD_NODE_OF_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CONTROLLED_BY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CONTROLLED_BY_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CONTROLLER_FOR",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CONTROLLER_FOR_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EMBEDDED_BY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EMBEDDED_BY_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EMBEDS",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EMBEDS_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FLOWS_FROM",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FLOWS_FROM_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FLOWS_TO",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FLOWS_TO_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LABELED_BY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LABELED_BY_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LABEL_FOR",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LABEL_FOR_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEMBER_OF",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MEMBER_OF_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PARENT_WINDOW_OF",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PARENT_WINDOW_OF_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SUBWINDOW_OF",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SUBWINDOW_OF_PROPERTY",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getKey()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getTarget()",
+          "result": "java.lang.Object[]",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTarget(java.lang.Object)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setTarget(java.lang.Object[])",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleRelation",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleRelationSet",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleRelationSet.java",
+      "sourceSha256": "9c88f3edae266f618c85573a845a6a87b52f220ee373e2d59ae82f8546ae4397",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.accessibility.AccessibleRelation[])",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(javax.accessibility.AccessibleRelation)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(javax.accessibility.AccessibleRelation[])",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(java.lang.String)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "get(java.lang.String)",
+          "result": "javax.accessibility.AccessibleRelation",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "relations",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(javax.accessibility.AccessibleRelation)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "size()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "javax.accessibility.AccessibleRelation[]",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleRelationSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleResourceBundle",
+      "kind": "class",
+      "parents": [
+        "java.util.ListResourceBundle"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleResourceBundle.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleResourceBundle.java",
+      "sourceSha256": "7841d7a914d563e4d6d702dd4bfa3b22da5542ee0e46ff7a1c628cbd5d9ff8fa",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleResourceBundle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getContents()",
+          "result": "java.lang.Object[][]",
+          "declaredBy": "javax.accessibility.AccessibleResourceBundle",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleRole",
+      "kind": "class",
+      "parents": [
+        "javax.accessibility.AccessibleBundle"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleRole.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleRole.java",
+      "sourceSha256": "8813bef44397515881cb5a6553f75b745c42b75db7bd8c9a49bb94dcd806a8ac",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ALERT",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "AWT_COMPONENT",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CANVAS",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHECK_BOX",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COLOR_CHOOSER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COLUMN_HEADER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COMBO_BOX",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DATE_EDITOR",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DESKTOP_ICON",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DESKTOP_PANE",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DIALOG",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "DIRECTORY_PANE",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EDITBAR",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FILE_CHOOSER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FILLER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FONT_CHOOSER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FOOTER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FRAME",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GLASS_PANE",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "GROUP_BOX",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HEADER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HTML_CONTAINER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HYPERLINK",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ICON",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INTERNAL_FRAME",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LABEL",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LAYERED_PANE",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LIST",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "LIST_ITEM",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MENU",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MENU_BAR",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MENU_ITEM",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OPTION_PANE",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PAGE_TAB",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PAGE_TAB_LIST",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PANEL",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PARAGRAPH",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PASSWORD_TEXT",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "POPUP_MENU",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROGRESS_BAR",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PROGRESS_MONITOR",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PUSH_BUTTON",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RADIO_BUTTON",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROOT_PANE",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ROW_HEADER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RULER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SCROLL_BAR",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SCROLL_PANE",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SEPARATOR",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SLIDER",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SPIN_BOX",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SPLIT_PANE",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "STATUS_BAR",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SWING_COMPONENT",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TABLE",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TEXT",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TOGGLE_BUTTON",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TOOL_BAR",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TOOL_TIP",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TREE",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UNKNOWN",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VIEWPORT",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WINDOW",
+          "result": "javax.accessibility.AccessibleRole",
+          "declaredBy": "javax.accessibility.AccessibleRole",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleSelection",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleSelection.java",
+      "sourceSha256": "e29422916ff41f259e93642c9cecd35c1064aa5d614c304030a3b02d15ad8af9",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "addAccessibleSelection(int)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleSelection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clearAccessibleSelection()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleSelection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleSelection(int)",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.accessibility.AccessibleSelection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleSelectionCount()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleSelection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAccessibleChildSelected(int)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleSelection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "removeAccessibleSelection(int)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleSelection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "selectAllAccessibleSelection()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleSelection",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleState",
+      "kind": "class",
+      "parents": [
+        "javax.accessibility.AccessibleBundle"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleState.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleState.java",
+      "sourceSha256": "8928c1ad44f7201d4e9cbdb52f9f892a9cb78a4719029026c9a5d3f2b36b30ba",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "ACTIVE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ARMED",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "BUSY",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "CHECKED",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "COLLAPSED",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EDITABLE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ENABLED",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EXPANDABLE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "EXPANDED",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FOCUSABLE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "FOCUSED",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "HORIZONTAL",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "ICONIFIED",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INDETERMINATE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MANAGES_DESCENDANTS",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MODAL",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MULTISELECTABLE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "MULTI_LINE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "OPAQUE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "PRESSED",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "RESIZABLE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SELECTABLE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SELECTED",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SHOWING",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SINGLE_LINE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TRANSIENT",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "TRUNCATED",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VERTICAL",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "VISIBLE",
+          "result": "javax.accessibility.AccessibleState",
+          "declaredBy": "javax.accessibility.AccessibleState",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleStateSet",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleStateSet.java",
+      "sourceSha256": "9c7079180d0852677f544c72d5ba10268cefd5e542ac21ab9b72a68f7bf3c415",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleStateSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "constructor",
+          "signature": "<init>(javax.accessibility.AccessibleState[])",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleStateSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "add(javax.accessibility.AccessibleState)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleStateSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "addAll(javax.accessibility.AccessibleState[])",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleStateSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "clear()",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleStateSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "contains(javax.accessibility.AccessibleState)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleStateSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "remove(javax.accessibility.AccessibleState)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleStateSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "states",
+          "result": "java.util.Vector",
+          "declaredBy": "javax.accessibility.AccessibleStateSet",
+          "modifiers": 4,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "toArray()",
+          "result": "javax.accessibility.AccessibleState[]",
+          "declaredBy": "javax.accessibility.AccessibleStateSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "toString()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleStateSet",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleStreamable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleStreamable.java",
+      "sourceSha256": "314b0c39e458c4415b084367abf5195bb6f5970c60ac907a925c7af1a0e8d515",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getMimeTypes()",
+          "result": "java.awt.datatransfer.DataFlavor[]",
+          "declaredBy": "javax.accessibility.AccessibleStreamable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getStream(java.awt.datatransfer.DataFlavor)",
+          "result": "java.io.InputStream",
+          "declaredBy": "javax.accessibility.AccessibleStreamable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleTable",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleTable.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleTable.java",
+      "sourceSha256": "5fd9e8e2d586ec63f9158694bcd40238e6435b9565c37cea7343b674e3bfcbd2",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getAccessibleAt(int,int)",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleCaption()",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleColumnCount()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleColumnDescription(int)",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleColumnExtentAt(int,int)",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleColumnHeader()",
+          "result": "javax.accessibility.AccessibleTable",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleRowCount()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleRowDescription(int)",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleRowExtentAt(int,int)",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleRowHeader()",
+          "result": "javax.accessibility.AccessibleTable",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAccessibleSummary()",
+          "result": "javax.accessibility.Accessible",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectedAccessibleColumns()",
+          "result": "int[]",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectedAccessibleRows()",
+          "result": "int[]",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAccessibleColumnSelected(int)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAccessibleRowSelected(int)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "isAccessibleSelected(int,int)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleCaption(javax.accessibility.Accessible)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleColumnDescription(int,javax.accessibility.Accessible)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleColumnHeader(javax.accessibility.AccessibleTable)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleRowDescription(int,javax.accessibility.Accessible)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleRowHeader(javax.accessibility.AccessibleTable)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setAccessibleSummary(javax.accessibility.Accessible)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleTable",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleTableModelChange",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleTableModelChange.java",
+      "sourceSha256": "99e8fd51516430260b81934de6a3b31c997159ae2635e0089fc0bc67f5651047",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "DELETE",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTableModelChange",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "INSERT",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTableModelChange",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "UPDATE",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTableModelChange",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getFirstColumn()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTableModelChange",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getFirstRow()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTableModelChange",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLastColumn()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTableModelChange",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getLastRow()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTableModelChange",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getType()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTableModelChange",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleText",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleText.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleText.java",
+      "sourceSha256": "02f09b2f9b75d72a496d9364b3469ace22d0b9d98f9c2d05106aa0847cc81d6c",
+      "members": [
+        {
+          "kind": "field",
+          "signature": "CHARACTER",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "SENTENCE",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "WORD",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 25,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "method",
+          "signature": "getAfterIndex(int,int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getAtIndex(int,int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getBeforeIndex(int,int)",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCaretPosition()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharCount()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharacterAttribute(int)",
+          "result": "javax.swing.text.AttributeSet",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getCharacterBounds(int)",
+          "result": "java.awt.Rectangle",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getIndexAtPoint(java.awt.Point)",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectedText()",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectionEnd()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getSelectionStart()",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleText",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleTextSequence",
+      "kind": "class",
+      "parents": [
+        "java.lang.Object"
+      ],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleTextSequence.java",
+      "sourceSha256": "039646e999d83f47be8521d26ea85f58135c26389e5077c6902207e840882af7",
+      "members": [
+        {
+          "kind": "constructor",
+          "signature": "<init>(int,int,java.lang.String)",
+          "result": "void",
+          "declaredBy": "javax.accessibility.AccessibleTextSequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "effects-aliases-and-result-unconstrained"
+        },
+        {
+          "kind": "field",
+          "signature": "endIndex",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTextSequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "startIndex",
+          "result": "int",
+          "declaredBy": "javax.accessibility.AccessibleTextSequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        },
+        {
+          "kind": "field",
+          "signature": "text",
+          "result": "java.lang.String",
+          "declaredBy": "javax.accessibility.AccessibleTextSequence",
+          "modifiers": 1,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "field-type-only-no-value-or-ownership-guarantee"
+        }
+      ]
+    },
+    {
+      "target": "javax.accessibility.AccessibleValue",
+      "kind": "interface",
+      "parents": [],
+      "documentation": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/accessibility/AccessibleValue.html",
+      "sourceEntry": "java.desktop/javax/accessibility/AccessibleValue.java",
+      "sourceSha256": "db84f1d19ea18e9d7b6fc33dfe792a10415fcfa0381a96d825ab438ff794f463",
+      "members": [
+        {
+          "kind": "method",
+          "signature": "getCurrentAccessibleValue()",
+          "result": "java.lang.Number",
+          "declaredBy": "javax.accessibility.AccessibleValue",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMaximumAccessibleValue()",
+          "result": "java.lang.Number",
+          "declaredBy": "javax.accessibility.AccessibleValue",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "getMinimumAccessibleValue()",
+          "result": "java.lang.Number",
+          "declaredBy": "javax.accessibility.AccessibleValue",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        },
+        {
+          "kind": "method",
+          "signature": "setCurrentAccessibleValue(java.lang.Number)",
+          "result": "boolean",
+          "declaredBy": "javax.accessibility.AccessibleValue",
+          "modifiers": 1025,
+          "varargs": false,
+          "policy": "conservative",
+          "reason": "provider-or-callback-effects-and-result-unconstrained"
+        }
+      ]
+    }
+  ]
+}
